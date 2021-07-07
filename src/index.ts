@@ -6,12 +6,15 @@ import TurndownService from "turndown";
 type CustomFeed = {
   lastBuildDate: string;
 };
+
+type Category = { $: { term: string } }[];
+
 type CustomItem = {
   title: string;
   id: string;
   link: string;
   updated: string;
-  category: { $: { term: string } }[];
+  category: Category;
   content: string;
 };
 
@@ -29,6 +32,9 @@ const turndownService = new TurndownService();
 
 const categoriesMap: Partial<{ [key: string]: string[] }> = {};
 
+const parseCategory = (category: Category): string[] =>
+  category.map((cat) => Object.values(cat.$)).flat();
+
 (async () => {
   fs.readFile(
     path.join(__dirname, "../input/help.combined.rss"),
@@ -38,12 +44,20 @@ const categoriesMap: Partial<{ [key: string]: string[] }> = {};
 
       parsed.items.forEach((item) => {
         const markdown = turndownService.turndown(item.content);
+        const content = `
+---
+title: ${item.title}
+categories: ${parseCategory(item.category).join(",")}
+---
+
+${markdown}
+        `;
+
         fs.writeFile(
           path.join(__dirname, `../export/${item.id}.ms`),
-          markdown,
+          content,
           (error) => console.error(error?.message)
         );
-
         // This generates an object of categories => articles
         item.category.forEach((catObj) => {
           const catName = catObj["$"]["term"];
