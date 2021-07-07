@@ -54,7 +54,7 @@ ${markdown}
         `;
 
         fs.writeFile(
-          path.join(__dirname, `../export/${item.id}.ms`),
+          path.join(__dirname, `../export/${item.id}.md`),
           content,
           (error) => console.error(error?.message)
         );
