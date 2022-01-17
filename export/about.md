@@ -1,4 +1,3 @@
-
 ---
 title: About UniProt
 categories: About_UniProt,Staff,UniProtKB,UniRef,UniParc,help
@@ -30,60 +29,59 @@ UniProt activities at PIR have benefited from NIH grants HHSN266200400061C (2004
 
 #### Further information
 
-*   [The Universal Protein Resource](http://www.uniprot.org/docs/uniprot%5Fflyer.pdf)
-    
-    Printable reference card for the UniProt databases
-    
+- [The Universal Protein Resource](http://www.uniprot.org/docs/uniprot%5Fflyer.pdf)
 
-*   [How to cite us](http://www.uniprot.org/help/publications)
+Printable reference card for the UniProt databases
+
+
+- [How to cite us](http://www.uniprot.org/help/publications)
 
 #### Contact the UniProt consortium members
 
-![image](http://www.uniprot.org/images/embl%2Dlogo.png)  
-  
-[European Bioinformatics Institute (EMBL-EBI)](https://www.ebi.ac.uk/)  
-  
-Wellcome Trust Genome Campus  
-  
-Hinxton Cambridge CB10 1SD  
-  
-United Kingdom  
-  
-Phone: (+44 1223) 494 444  
-  
+![image](http://www.uniprot.org/images/embl%2Dlogo.png)
+
+[European Bioinformatics Institute (EMBL-EBI)](https://www.ebi.ac.uk/)
+
+Wellcome Trust Genome Campus
+
+Hinxton Cambridge CB10 1SD
+
+United Kingdom
+
+Phone: (+44 1223) 494 444
+
 Fax: (+44 1223) 494 468
 
 ![image](http://www.uniprot.org/images/logos/logo%5Fsib.png)
 
-[SIB Swiss Institute of Bioinformatics](https://www.sib.swiss/)  
-  
-Centre Medical Universitaire  
-  
-1, rue Michel Servet  
-  
-1211 Geneva 4  
-  
-Switzerland  
-  
-Phone: (+41 22) 379 50 50  
-  
+[SIB Swiss Institute of Bioinformatics](https://www.sib.swiss/)
+
+Centre Medical Universitaire
+
+1, rue Michel Servet
+
+1211 Geneva 4
+
+Switzerland
+
+Phone: (+41 22) 379 50 50
+
 Fax: (+41 22) 379 58 58
 
 ![image](http://www.uniprot.org/images/logos/logo%5Fpir.png)
 
-[Protein Information Resource (PIR)](http://pir.georgetown.edu/)  
-  
-Georgetown University Medical Center  
-  
-3300 Whitehaven Street NW  
-  
-Suite 1200  
-  
-Washington, DC 20007  
-  
-United States of America  
-  
-Phone: (+1 202) 687 1039  
-  
+[Protein Information Resource (PIR)](http://pir.georgetown.edu/)
+
+Georgetown University Medical Center
+
+3300 Whitehaven Street NW
+
+Suite 1200
+
+Washington, DC 20007
+
+United States of America
+
+Phone: (+1 202) 687 1039
+
 Fax: (+1 202) 687 0057
-        

@@ -1,4 +1,3 @@
-
 ---
 title: What is the difference between the GO annotation included in the UniProtKB entry view, and the information accessible via the link "Complete GO annotation"?
 categories: UniProtKB,Ontology,Release,faq
@@ -10,7 +9,6 @@ UniProt is [released every eight weeks](http://www.uniprot.org/help/synchronizat
 
 See also:
 
-*   [What are the differences between UniProtKB keywords and the GO terms?](http://www.uniprot.org/faq/23)
-*   [Gene Ontology (GO)](http://www.uniprot.org/manual/gene%5Fontology)
-*   [How frequently is UniProt released? What is the synchronization delay with other databases?](http://www.uniprot.org/faq/49)
-        
+- [What are the differences between UniProtKB keywords and the GO terms?](http://www.uniprot.org/faq/23)
+- [Gene Ontology (GO)](http://www.uniprot.org/manual/gene%5Fontology)
+- [How frequently is UniProt released? What is the synchronization delay with other databases?](http://www.uniprot.org/faq/49)

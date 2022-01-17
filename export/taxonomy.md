@@ -1,4 +1,3 @@
-
 ---
 title: Taxonomy
 categories: Taxonomy,Controlled_vocabulary,help
@@ -18,42 +17,42 @@ You can query the UniProt taxonomy by taxon names or NCBI taxonomy identifiers. 
 
 The organism denomination used in UniProtKB consists of the Latin scientific name, usually composed of the genus and species names (binomial system developed by Linnaeus), followed optionally by the English common name and a synonym.
 
-Example: Cardamine pratensis (Cuckoo flower) (Alpine bitter cress)
+Example: Cardaminepratensis (Cuckoo flower) (Alpine bitter cress)
 
 The synonym can be a common name in English or in Latin in the case of some historical legacy names.
 
-Example: Radianthus magnifica (Magnificent sea anemone) (Heteractis magnifica)
+Example: Radianthusmagnifica (Magnificent sea anemone) (Heteractis magnifica)
 
 In the case of viruses, the denomination does not follow the binomial system. The English common name is used as the scientific name, sometimes followed by an acronym. Where possible, viruses are named according to the nomenclature of the [International Committee on Taxonomy of Viruses (ICTV)](https://talk.ictvonline.org/).
 
 #### Organism mnemonic
 
-A mnemonic organism identification code of at most 5 alphanumeric characters is used in the [entry name](http://www.uniprot.org/manual/entry%5Fname) of UniProtKB entries, e.g. [SP0A\_**BACSU**](http://www.uniprot.org/uniprot/P06534). This code is generally made of the first three letters of the genus name and the first two letters of the species name.
+A mnemonic organism identification code of at most 5 alphanumeric characters is used in the [entry name](http://www.uniprot.org/manual/entry%5Fname) of UniProtKB entries, e.g. [SP0A\_ **BACSU**](http://www.uniprot.org/uniprot/P06534). This code is generally made of the first three letters of the genus name and the first two letters of the species name.
 
-Examples:  
-  
-**PSEPU** is for **Pse**udomonas **pu**tida  
-  
-**NAJNI** is for **Naj**a **ni**vea.
+Examples:
+
+**PSEPU** is for **Pse** udomonas **pu** tida
+
+**NAJNI** is for **Naj** a **ni** vea.
 
 However, for a number of species commonly encountered in UniProtKB, we use self-explanatory codes. There are 16 of those codes:
 
-*   BOVIN for Bovine
-*   CHICK for Chicken
-*   ECOLI for _Escherichia coli_
-*   HORSE for Horse
-*   HUMAN for _Homo sapiens_
-*   MAIZE for Maize (_Zea mays_)
-*   MOUSE for Mouse
-*   PEA for Garden pea (_Pisum sativum_)
-*   PIG for Pig
-*   RABIT for Rabbit
-*   RAT for Rat
-*   SHEEP for Sheep
-*   SOYBN for Soybean (_Glycine max_)
-*   TOBAC for Common tobacco (_Nicotina tabacum_)
-*   WHEAT for Wheat (_Triticum aestivum_)
-*   YEAST for Baker's yeast (_Saccharomyces cerevisiae_)
+- BOVIN for Bovine
+- CHICK for Chicken
+- ECOLI for_Escherichia coli_
+- HORSE for Horse
+- HUMAN for_Homo sapiens_
+- MAIZE for Maize ( _Zea mays_)
+- MOUSE for Mouse
+- PEA for Garden pea ( _Pisum sativum_)
+- PIG for Pig
+- RABIT for Rabbit
+- RAT for Rat
+- SHEEP for Sheep
+- SOYBN for Soybean ( _Glycine max_)
+- TOBAC for Common tobacco ( _Nicotina tabacum_)
+- WHEAT for Wheat ( _Triticum aestivum_)
+- YEAST for Baker's yeast ( _Saccharomyces cerevisiae_)
 
 Since the above rules cannot apply to viruses, we give them arbitrary, but generally easy-to-remember, identification codes.
 
@@ -61,10 +60,10 @@ A full list of organism mnemonics is available in our [Controlled vocabulary of 
 
 Codes starting with the digit 9 are used for higher nodes that group together organisms at a given taxonomic level.
 
-Examples:  
-  
-9AMPH is for Amphibia  
-  
+Examples:
+
+9AMPH is for Amphibia
+
 9COLE is for Coleoptera.
 
 #### Other organism names
@@ -89,18 +88,17 @@ Note: Some of the strains present in the [strain list](http://www.uniprot.org/do
 
 A list of natural hosts is given for all viruses with at least one entry in UniProtKB/Swiss-Prot. Viral hosts data appears in the 'Virus host' field of UniProtKB entries (see example [Q8JP02](http://www.uniprot.org/uniprot/Q8JP02)).
 
-A virus is an inert particle outside its hosts. The virion (so called because it is not visible under the microscope), on its own, has neither metabolism, nor any replication capability, nor autonomous evolution. A virus cannot be considered a living organism outside its host. The viral taxonomy is arbitrarily based on the nature of viral genomes, and viruses in a same family can infect a wide range of hosts, from mammals to insects. The nature of the host does not always appear in the virus name, e.g. the hosts of the [Yellow head virus](http://www.uniprot.org/taxonomy/96029) are shrimps.  
-  
+A virus is an inert particle outside its hosts. The virion (so called because it is not visible under the microscope), on its own, has neither metabolism, nor any replication capability, nor autonomous evolution. A virus cannot be considered a living organism outside its host. The viral taxonomy is arbitrarily based on the nature of viral genomes, and viruses in a same family can infect a wide range of hosts, from mammals to insects. The nature of the host does not always appear in the virus name, e.g. the hosts of the [Yellow head virus](http://www.uniprot.org/taxonomy/96029) are shrimps.
+
 There are numerous virus-host interactions:
 
-*   shut-off of traduction
-*   immunoevasion
-*   latency
-*   oncogenesis on the virus side and antiviral state
-*   antigen presentation
-*   immune system on the host side
+- shut-off of traduction
+- immunoevasion
+- latency
+- oncogenesis on the virus side and antiviral state
+- antigen presentation
+- immune system on the host side
 
 These interactions appear in the annotation of viral UniProtKB entries under various annotation types such as function, subunit, subcellular location and PTM.
 
 Related document: [Controlled vocabulary of species](http://www.uniprot.org/docs/speclist)
-        

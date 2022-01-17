@@ -1,4 +1,3 @@
-
 ---
 title: How frequently is UniProt released? What is the synchronization delay with other databases? Can I gain access to previous releases?
 categories: UniProtKB,UniRef,UniParc,Cross-references,Download,Release,faq
@@ -20,9 +19,8 @@ However, UniProtKB data is "frozen" significantly earlier than the public releas
 
 We archive previous releases on our [ftp site](ftp://ftp.uniprot.org/pub/databases/uniprot/previous%5Freleases) for at least 2 years. Beyond that time, we archive the first release of a year, YYYY\_01. We therefore recommend that you **use the first release of a year if you develop a tool** trained on a given release or subset, in order to allow the readers of your publication to reproduce your work at a later point in time.
 
-See also:  
-  
+See also:
+
 [Cogs of data in UniProt (UniProt blog)](https://insideuniprot.blogspot.com/2018/08/) (referring to the previous 4-week release cycle instead of the current 8 weeks)
 
 Related terms: update frequency, release archive
-        

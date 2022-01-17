@@ -1,4 +1,3 @@
-
 ---
 title: Alternative products
 categories: Sequence,manual
@@ -8,8 +7,8 @@ This subsection of the 'Sequence' section lists the alternative protein sequence
 
 ### 1\. General information
 
-We give the number of alternative protein sequences described in the entry and the biological event(s) which lead to the production of these isoforms (alternative promoter usage, alternative splicing, alternative initiation and/or ribosomal frameshifting). Additional information is provided, if available.  
-  
+We give the number of alternative protein sequences described in the entry and the biological event(s) which lead to the production of these isoforms (alternative promoter usage, alternative splicing, alternative initiation and/or ribosomal frameshifting). Additional information is provided, if available.
+
 Example: [P04150](http://www.uniprot.org/uniprot/P04150#sequences)
 
 ### 2\. Isoform-specific information
@@ -18,12 +17,12 @@ For each isoform, we provide the following information:
 
 #### Identifier
 
-Each isoform is characterized by a unique identifier, which is composed of the primary accession number of the entry, followed by a dash and a number.  
-  
+Each isoform is characterized by a unique identifier, which is composed of the primary accession number of the entry, followed by a dash and a number.
+
 Example: [P04150-2](http://www.uniprot.org/uniprot/P04150#sequences)
 
-When alternative protein sequences differ significantly, we create separate entries and list all isoforms in each of them. Consequently, isoforms produced from a single gene listed in one entry may have identifiers derived from different primary accession numbers.  
-  
+When alternative protein sequences differ significantly, we create separate entries and list all isoforms in each of them. Consequently, isoforms produced from a single gene listed in one entry may have identifiers derived from different primary accession numbers.
+
 Examples: [P42166](http://www.uniprot.org/uniprot/P42166#sequences), [P42167](http://www.uniprot.org/uniprot/P42167#sequences)
 
 #### Name and synomym(s)
@@ -32,12 +31,12 @@ We provide the name and synomym(s) of the isoform, which are used in the literat
 
 #### Description of the sequence differences
 
-We clearly describe the alternative sequences with respect to the [canonical sequence](http://www.uniprot.org/help/canonical%5Fand%5Fisoforms) displayed by default in the entry.  
-  
+We clearly describe the alternative sequences with respect to the [canonical sequence](http://www.uniprot.org/help/canonical%5Fand%5Fisoforms) displayed by default in the entry.
+
 _Note_: The so-called 'canonical' sequence is the most prevalent sequence and/or the most similar sequence among orthologous species. All [positional information](http://www.uniprot.org/help/sequence%5Fannotation) in the entry refers to it.
 
-_Note_: If an isoform has been reported to exist in the literature, but we are not able to determine its sequence, we add the tag 'Sequence is not available'.  
-  
+_Note_: If an isoform has been reported to exist in the literature, but we are not able to determine its sequence, we add the tag 'Sequence is not available'.
+
 Example: [P21836](http://www.uniprot.org/uniprot/P21836#sequences) (Isoform H)
 
 #### Additional comments
@@ -50,16 +49,16 @@ Example: [P04150](http://www.uniprot.org/uniprot/P04150#sequences)
 
 **Information about the evidence for the existence of the isoform**
 
-We include alternative protein sequences produced by alternative splicing only if there is experimental evidence that they exist (at least one publication) or if there is at least one mRNA with correct intron/exon boundaries. The tag 'No experimental confirmation available' is added in the 'Note=' topic when the protein sequence derives from the translation of a single mRNA. This tag is thus often used for isoforms that have been identified by large scale cDNA sequencing projects. We consider the isoform to be 'confirmed' if it has been isolated at least twice (from different cDNA libraries) or when the same isoform is also found in a closely related species.  
-  
+We include alternative protein sequences produced by alternative splicing only if there is experimental evidence that they exist (at least one publication) or if there is at least one mRNA with correct intron/exon boundaries. The tag 'No experimental confirmation available' is added in the 'Note=' topic when the protein sequence derives from the translation of a single mRNA. This tag is thus often used for isoforms that have been identified by large scale cDNA sequencing projects. We consider the isoform to be 'confirmed' if it has been isolated at least twice (from different cDNA libraries) or when the same isoform is also found in a closely related species.
+
 Example: [Q62141](http://www.uniprot.org/uniprot/Q62141#sequences)
 
 Note that alternative sequences produced by alternative promoter usage, alternative initiation and ribosomal frameshifting are only annotated if their existence has been experimentally proven and documented in at least in one publication.
 
 **Description of conflict(s), variant(s) and/or posttranslational modification(s)**
 
-In most cases, this type of annotations are described in the specific subsection, positions being provided with respect to the canonical sequence. However, some variations may be isoform-specific, i.e. the amino acids involved are not present in the canonical sequence. These variations are then described in the 'Alternative products' section and the position(s) refer to the sequence of the actual isoform.  
-  
+In most cases, this type of annotations are described in the specific subsection, positions being provided with respect to the canonical sequence. However, some variations may be isoform-specific, i.e. the amino acids involved are not present in the canonical sequence. These variations are then described in the 'Alternative products' section and the position(s) refer to the sequence of the actual isoform.
+
 Example: [P08631](http://www.uniprot.org/uniprot/P08631#sequences)
 
 Other information can be found in various sections such as ['Function'](http://www.uniprot.org/manual/function), ['Expression'](http://www.uniprot.org/manual/tissue%5Fspecificity), etc.
@@ -87,4 +86,3 @@ Related keywords: [Alternative splicing](http://www.uniprot.org/keywords/25), [A
 [What are UniProtKB's criteria for defining a CDS as a protein?](http://www.uniprot.org/faq/25)
 
 Related terms: splice variant, splice isoform
-        

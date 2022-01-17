@@ -1,4 +1,3 @@
-
 ---
 title: Why don't all UniProtKB/Swiss-Prot annotations have evidence?
 categories: faq
@@ -10,7 +9,6 @@ The website's search engine handles annotations without evidence by assigning th
 
 See also:
 
-*   [Evidence attribution](http://www.uniprot.org/manual/evidences)
+- [Evidence attribution](http://www.uniprot.org/manual/evidences)
 
 Related terms: retrofit
-        

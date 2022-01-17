@@ -1,4 +1,3 @@
-
 ---
 title: How can I (programmatically) obtain the number of results returned by my query?
 categories: Programmatic_access,Text_search,Technical,faq
@@ -8,7 +7,6 @@ If you are accessing UniProt programmatically, using our [REST API](http://www.u
 
 This returns the entry count, allowing you to count the hits without actually retrieving them.
 
-See also:  
-  
+See also:
+
 [REST API - Access the UniProt website programmatically](http://www.uniprot.org/help/api)
-        

@@ -1,4 +1,3 @@
-
 ---
 title: Assessing proteome completeness and quality
 categories: help
@@ -6,8 +5,8 @@ categories: help
 
 In order to assess quality and completeness of [proteomes](http://www.uniprot.org/proteomes), we provide two values:
 
-*   Statistical evaluation and classification of the proteome by the **Complete Proteome Detector (CPD)** algorithm (developed by UniProt)
-*   The [BUSCO score](https://www.sib.swiss/about%2Dsib/news/10131%2Dgauging%2Dthe%2Dcompleteness%2Dof%2Dgenomics%2Ddata%2Dwith%2Dbusco) of the proteome, which was developed to quantify genomic data completeness in terms of expected gene content.
+- Statistical evaluation and classification of the proteome by the**Complete Proteome Detector (CPD)** algorithm (developed by UniProt)
+- The[BUSCO score](https://www.sib.swiss/about%2Dsib/news/10131%2Dgauging%2Dthe%2Dcompleteness%2Dof%2Dgenomics%2Ddata%2Dwith%2Dbusco) of the proteome, which was developed to quantify genomic data completeness in terms of expected gene content.
 
 ### Complete Proteome Detector (CPD)
 
@@ -20,4 +19,3 @@ This evaluation classifies each proteome into three possible categories (in term
 For eukaryotic and bacterial proteomes, we also provide the [BUSCO score](https://www.sib.swiss/about%2Dsib/news/10131%2Dgauging%2Dthe%2Dcompleteness%2Dof%2Dgenomics%2Ddata%2Dwith%2Dbusco), which was developed to quantify genomic data completeness in terms of expected gene content.
 
 This score includes percentages of complete (C) single-copy (S) genes, complete (C) duplicated (D) genes, fragmented (F) and missing (F) genes, as well as the total number of orthologous clusters (n) used in the BUSCO assessment.
-        

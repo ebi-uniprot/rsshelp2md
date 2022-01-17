@@ -1,4 +1,3 @@
-
 ---
 title: Annotation guidelines
 categories: Biocuration,UniProtKB,Protein_existence,Names_and_taxonomy,help
@@ -8,12 +7,12 @@ categories: Biocuration,UniProtKB,Protein_existence,Names_and_taxonomy,help
 
 This document describes the manual curation procedure used by the UniProt Consortium members. The UniProt manual curation process comprises manual review of results from a range of sequence analysis programs and literature curation of experimental data as well as attribution of all information to its original source.
 
-UniProtKB/Swiss-Prot document: [Standard operating procedure (SOP) for UniProt manual curation](http://www.uniprot.org/docs/sop%5Fmanual%5Fcuration.pdf)  
-  
+UniProtKB/Swiss-Prot document: [Standard operating procedure (SOP) for UniProt manual curation](http://www.uniprot.org/docs/sop%5Fmanual%5Fcuration.pdf)
+
 UniProt web page: [UniProt manual annotation program](http://www.uniprot.org/program/)
 
-[How do we manually annotate a UniProtKB entry?](http://www.uniprot.org/faq/45)  
-  
+[How do we manually annotate a UniProtKB entry?](http://www.uniprot.org/faq/45)
+
 [Why is UniProtKB composed of 2 sections, UniProtKB/Swiss-Prot and UniProtKB/TrEMBL?](http://www.uniprot.org/faq/7)
 
 #### Protein naming guidelines
@@ -34,9 +33,8 @@ The document ['Protein nomenclature publication list'](http://www.uniprot.org/do
 
 Some of protein sequences exhibit strong similarity to known proteins in closely related species. For other proteins there is experimental evidence, such as Edman sequencing, clear identification by mass spectrometry (MSI), X-ray or NMR structure, detection by antibodies, etc. However, for some other proteins, there is no evidence at all. To indicate these different levels of evidence for the existence of a protein, we have introduced a PE (Protein Existence) level. The following document lists the criteria used to assign a protein existence (PE) level to entries.
 
-UniProtKB/Swiss-Prot document: [Criteria used to assign the PE level of entries](http://www.uniprot.org/docs/pe%5Fcriteria)  
-  
+UniProtKB/Swiss-Prot document: [Criteria used to assign the PE level of entries](http://www.uniprot.org/docs/pe%5Fcriteria)
+
 User manual: [Protein existence](http://www.uniprot.org/manual/protein%5Fexistence)
 
 [Why do we keep dubious sequences in UniProtKB? How to discard them from a protein set?](http://www.uniprot.org/faq/40)
-        

@@ -1,4 +1,3 @@
-
 ---
 title: Downloaded data seems incomplete or corrupted - how can I get help with download problems?
 categories: Download,Technical,faq
@@ -6,8 +5,8 @@ categories: Download,Technical,faq
 
 **FTP downloads**
 
-Every folder on our [FTP server](ftp://ftp.uniprot.org/) contains a file called RELEASE.metalink that specifies the size and MD5 checksum of every file in that folder, e.g.  
-  
+Every folder on our [FTP server](ftp://ftp.uniprot.org/) contains a file called RELEASE.metalink that specifies the size and MD5 checksum of every file in that folder, e.g.
+
 [ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink](ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink)
 
 [Metalink](http://en.wikipedia.org/wiki/Metalink) is an extensible metadata file format that describes one or more computer files available for download. It facilitates file verification and recovery from data corruption and lists alternate download sources (mirror URIs).
@@ -16,7 +15,9 @@ Various command line download tools, e.g. [cURL](http://curl.haxx.se/) version 7
 
 Example: The following command will download all files in the `current_release/` folder and verify their MD5 checksums:
 
-curl --metalink ftp://ftp.uniprot.org/pub/databases/uniprot/current\_release/RELEASE.metalink
+```
+curl --metalink ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/RELEASE.metalink
+```
 
 They will be downloaded from one of the alternative locations mentioned in the metalink file. If one FTP server goes down during a download, programs can automatically switch to another mirror location. Some programs can also download segments from several FTP locations at the same time, which can make downloads much faster.
 
@@ -24,10 +25,10 @@ If you need to use a secure file transfer protocol, you can download the same da
 
 Please note that UniProt can be downloaded from the consortium member FTP sites at three different geographical locations:
 
-USA: [ftp://ftp.uniprot.org/pub/databases/uniprot](ftp://ftp.uniprot.org/pub/databases/uniprot)  
-  
-UK: [ftp://ftp.ebi.ac.uk/pub/databases/uniprot](ftp://ftp.ebi.ac.uk/pub/databases/uniprot)  
-  
+USA: [ftp://ftp.uniprot.org/pub/databases/uniprot](ftp://ftp.uniprot.org/pub/databases/uniprot)
+
+UK: [ftp://ftp.ebi.ac.uk/pub/databases/uniprot](ftp://ftp.ebi.ac.uk/pub/databases/uniprot)
+
 Switzerland: [ftp://ftp.expasy.org/databases/uniprot](ftp://ftp.expasy.org/databases/uniprot)
 
 **HTTP downloads**
@@ -38,19 +39,22 @@ Due to HTTP transport unreliability (HTTP streams tend to fail after a while due
 
 2) If the number of results x is greater than 50000, repeat your query and append the following to the URL:
 
+```
 &offset=0&limit=50000
 &offset=50000&limit=50000
 &offset=100000&limit=50000 etc.
+```
 
 Also use `compress=yes`
 
 e.g. (using 50 instead of 50000 to make the file more manageable in the browser)
 
+```
 https://www.uniprot.org/uniprot/?query=organism:%22Homo%20sapiens%20(Human)%20%5B9606%5D%22&fil=&offset=0&limit=50&compress=yes&format=fasta
 https://www.uniprot.org/uniprot/?query=organism:%22Homo%20sapiens%20(Human)%20%5B9606%5D%22&fil=&offset=50&limit=50&compress=yes&format=fasta
 https://www.uniprot.org/uniprot/?query=organism:%22Homo%20sapiens%20(Human)%20%5B9606%5D%22&fil=&offset=100&limit=50&compress=yes&format=fasta
+```
 
 etc.
 
 3) Once you have your download, use `gzip -t` to check the integrity of your file. Uncompress the chunks and concatenate them into a single download file.
-        

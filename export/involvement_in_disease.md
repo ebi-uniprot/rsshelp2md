@@ -1,4 +1,3 @@
-
 ---
 title: Involvement in disease
 categories: Pathology_and_biotech,manual
@@ -14,12 +13,12 @@ Examples: [Q01718](http://www.uniprot.org/uniprot/Q01718#pathology%5Fand%5Fbiote
 
 The "Note=" field is also used to indicate the role of a protein in disease manifestation in cases where the protein is functionally impaired although the corresponding coding gene does not contain any mutation.
 
-Examples:  
-  
-[P15289](http://www.uniprot.org/uniprot/P15289#pathology%5Fand%5Fbiotech) (causative gene [Q8NBK3](http://www.uniprot.org/uniprot/Q8NBK3#pathology%5Fand%5Fbiotech))  
-  
-[Q15465](http://www.uniprot.org/uniprot/Q15465#pathology%5Fand%5Fbiotech) (causative gene [Q8WVP7](http://www.uniprot.org/uniprot/Q8WVP7#pathology%5Fand%5Fbiotech))  
-  
+Examples:
+
+[P15289](http://www.uniprot.org/uniprot/P15289#pathology%5Fand%5Fbiotech) (causative gene [Q8NBK3](http://www.uniprot.org/uniprot/Q8NBK3#pathology%5Fand%5Fbiotech))
+
+[Q15465](http://www.uniprot.org/uniprot/Q15465#pathology%5Fand%5Fbiotech) (causative gene [Q8WVP7](http://www.uniprot.org/uniprot/Q8WVP7#pathology%5Fand%5Fbiotech))
+
 [Q9NR56](http://www.uniprot.org/uniprot/Q9NR56#pathology%5Fand%5Fbiotech) (causative gene [Q09013](http://www.uniprot.org/uniprot/Q09013#pathology%5Fand%5Fbiotech))
 
 The accession numbers of OMIM entries that describe a phenotype (or a gene and phenotype) are shown in this subsection, as well as in the 'Organism-Specific Databases' subsection of the ['Cross-references'](http://www.uniprot.org/manual/cross%5Freferences%5Fsection) section, which also provides links to OMIM entries that describe the gene itself.
@@ -32,7 +31,7 @@ Examples: [P11308](http://www.uniprot.org/uniprot/P11308#pathology%5Fand%5Fbiote
 
 If the sequence position of the translocation breakpoint is known and causes a fusion protein, it is annotated in the ['Site'](http://www.uniprot.org/manual/site) subsection.
 
-Example: In Q8IZP0 the annotation in the ['Pathology and Biotech'](http://www.uniprot.org/uniprot/Q8IZP0#pathology%5Fand%5Fbiotech%5Fsection) section is completed by information at the sequence level (['Site'](http://www.uniprot.org/manual/site) subsection).
+Example: In Q8IZP0 the annotation in the ['Pathology and Biotech'](http://www.uniprot.org/uniprot/Q8IZP0#pathology%5Fand%5Fbiotech%5Fsection) section is completed by information at the sequence level ( ['Site'](http://www.uniprot.org/manual/site) subsection).
 
 Related keyword: [Chromosomal rearrangement](http://www.uniprot.org/keywords/160).
 
@@ -49,4 +48,3 @@ Controlled vocabulary used for the annotation of genetic diseases in UniProtKB/S
 [How can I get all the proteins involved in a given disease?](http://www.uniprot.org/faq/19)
 
 [How can I get medical advice from UniProtKB?](http://www.uniprot.org/faq/32)
-        

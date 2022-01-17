@@ -1,4 +1,3 @@
-
 ---
 title: Pathway
 categories: Function,manual
@@ -22,9 +21,8 @@ Example: [P00562](http://www.uniprot.org/uniprot/P00562#function)
 
 #### Related documents
 
-[Index of metabolic and biosynthesis pathways](http://www.uniprot.org/docs/pathway)  
-  
-[Controlled vocabulary of metabolic pathways](http://www.uniprot.org/docs/pathlist)  
-  
+[Index of metabolic and biosynthesis pathways](http://www.uniprot.org/docs/pathway)
+
+[Controlled vocabulary of metabolic pathways](http://www.uniprot.org/docs/pathlist)
+
 [Linking proteins via pathways (UniProt Blog)](http://insideuniprot.blogspot.ch/2015/09/linking%2Dproteins%2Dvia%2Dpathways.html)
-        

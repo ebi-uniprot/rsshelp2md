@@ -1,4 +1,3 @@
-
 ---
 title: Evidence
 categories: manual
@@ -14,31 +13,40 @@ ECO comprises two high-level classes, **evidence** and **assertion method**. Evi
 
 Here are some examples of how evidence descriptions look in the UniProtKB flat file format:
 
-*   An evidence type without source: `{type}`, e.g.
-    
-    {ECO:0000305}
-    {ECO:0000250}
-    {ECO:0000255}
-    
+- An evidence type without source:`{type}`, e.g.
 
-*   An evidence type with source: `{type|source}`, e.g.
-    
-    {ECO:0000269|PubMed:24356955}
-    {ECO:0000303|Ref.6}
-    {ECO:0000305|PubMed:22388736}
-    {ECO:0000250|UniProtKB:P11497}
-    {ECO:0000255|HAMAP-Rule:MF\_03130}
-    {ECO:0000256|HAMAP-Rule:MF\_03130}
-    {ECO:0000312|EMBL:AAY86039.1}
-    {ECO:0000313|EMBL:AAY86039.1}
-    {ECO:0000244|PDB:1V90}
-    {ECO:0000213|PDB:1V90}
-    
+```
+{ECO:0000305}
+{ECO:0000250}
+{ECO:0000255}
 
-*   Several evidence attributions: `{type|source, type|source, ...}`, e.g.
-    
-    {ECO:0000269|PubMed:10433554, ECO:0000303|Ref.6}
-    
+```
+
+
+- An evidence type with source:`{type|source}`, e.g.
+
+```
+{ECO:0000269|PubMed:24356955}
+{ECO:0000303|Ref.6}
+{ECO:0000305|PubMed:22388736}
+{ECO:0000250|UniProtKB:P11497}
+{ECO:0000255|HAMAP-Rule:MF_03130}
+{ECO:0000256|HAMAP-Rule:MF_03130}
+{ECO:0000312|EMBL:AAY86039.1}
+{ECO:0000313|EMBL:AAY86039.1}
+{ECO:0000244|PDB:1V90}
+{ECO:0000213|PDB:1V90}
+
+```
+
+
+- Several evidence attributions:`{type|source, type|source, ...}`, e.g.
+
+```
+{ECO:0000269|PubMed:10433554, ECO:0000303|Ref.6}
+
+```
+
 
 On the website, these descriptions are transformed to make them more user-friendly. The ECO codes are replaced by easy to understand labels and the sources are accessible by clicking on an arrow to list the hyper-linked sources. Evidence that is used in manual assertions is colored gold, e.g.
 
@@ -54,16 +62,14 @@ UniRule annotation
 
 Manual assertion according to rules
 
-*   [HAMAP-Rule:MF\_03130](http://hamap.expasy.org/unirule/MF_03130)
+- [HAMAP-Rule:MF\_03130](http://hamap.expasy.org/unirule/MF_03130)
 
-  
-  
 Imported
 
 Manual assertion inferred from database entries
 
-*   [EMBL:AAY86039.1](https://www.ebi.ac.uk/ena/browser/view/AAY86039)
-*   [MGI:87860](http://www.informatics.jax.org/marker/MGI:87860)
+- [EMBL:AAY86039.1](https://www.ebi.ac.uk/ena/browser/view/AAY86039)
+- [MGI:87860](http://www.informatics.jax.org/marker/MGI:87860)
 
 and those that are used in automatic assertions are colored blue, e.g.
 
@@ -71,16 +77,14 @@ UniRule annotation
 
 Automatic assertion according to rules
 
-*   [PIRNR:PIRNR036489](http://pir.georgetown.edu/cgi-bin/pirrule?id=PIRNR036489)
+- [PIRNR:PIRNR036489](http://pir.georgetown.edu/cgi-bin/pirrule?id=PIRNR036489)
 
-  
-  
 Imported
 
 Automatic assertion inferred from database entries
 
-*   [EMBL:ABC70327.1](https://www.ebi.ac.uk/ena/browser/view/ABC70327)
-*   [MGI:96952](http://www.informatics.jax.org/marker/MGI:96952)
+- [EMBL:ABC70327.1](https://www.ebi.ac.uk/ena/browser/view/ABC70327)
+- [MGI:96952](http://www.informatics.jax.org/marker/MGI:96952)
 
 ### Evidence types that are used in UniProtKB
 
@@ -96,19 +100,28 @@ Example: [D9N129](http://www.uniprot.org/uniprot/D9N129#function)
 
 Manual assertion based on experiment
 
-*   **"The WD40-repeat proteins WDR-20 and WDR-48 bind and activate the deubiquitinating enzyme USP-46 to promote the abundance of the glutamate receptor GLR-1 in the ventral nerve cord of Caenorhabditis elegans."**  
-      
-    [Dahlberg C.L.](http://www.uniprot.org/?query=author:%22Dahlberg+C.L.%22), [Juo P.](http://www.uniprot.org/?query=author:%22Juo+P.%22)  
-      
-    [J. Biol. Chem. 289:3444-3456(2014)](http://dx.doi.org/10.1074/jbc.M113.507541) \[[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/24356955)\] \[[Europe PMC](http://europepmc.org/abstract/MED/24356955)\] \[[Abstract](http://www.uniprot.org/citations/24356955)\]
-    
-    **Cited for**: FUNCTION, INTERACTION WITH USP-46, TISSUE SPECIFICITY, DISRUPTION PHENOTYPE.
-    
+- **"The WD40-repeat proteins WDR-20 and WDR-48 bind and activate the deubiquitinating enzyme USP-46 to promote the abundance of the glutamate receptor GLR-1 in the ventral nerve cord of Caenorhabditis elegans."**
 
+
+
+[Dahlberg C.L.](http://www.uniprot.org/?query=author:%22Dahlberg+C.L.%22), [Juo P.](http://www.uniprot.org/?query=author:%22Juo+P.%22)
+
+
+
+[J. Biol. Chem. 289:3444-3456(2014)](http://dx.doi.org/10.1074/jbc.M113.507541) \[ [PubMed](http://www.ncbi.nlm.nih.gov/pubmed/24356955)\] \[ [Europe PMC](http://europepmc.org/abstract/MED/24356955)\] \[ [Abstract](http://www.uniprot.org/citations/24356955)\]
+
+
+
+**Cited for**: FUNCTION, INTERACTION WITH USP-46, TISSUE SPECIFICITY, DISRUPTION PHENOTYPE.
+
+
+```
 CC   -!- FUNCTION: Together with wdr-48, binds to and stimulates the
 CC       activity of the deubiquitinating enzyme usp-46, leading to
 CC       deubiquitination and stabilization of the glr-1 glutamate
 CC       receptor. {ECO:0000269|PubMed:24356955}.
+
+```
 
 ##### Non-traceable author statement evidence
 
@@ -120,19 +133,28 @@ Example: [Q24145](http://www.uniprot.org/uniprot/Q24145#function)
 
 Manual assertion based on opinion
 
-*   **"Shark, a Src homology 2, ankyrin repeat, tyrosine kinase, is expressed on the apical surfaces of ectodermal epithelia."**  
-      
-    [Ferrante A.W. Jr.](http://www.uniprot.org/?query=author:%22Ferrante+A.W.+Jr.%22), [Reinke R.](http://www.uniprot.org/?query=author:%22Reinke+R.%22), [Stanley E.R.](http://www.uniprot.org/?query=author:%22Stanley+E.R.%22)  
-      
-    [Proc. Natl. Acad. Sci. U.S.A. 92:1911-1915(1995)](http://dx.doi.org/10.1073/pnas.92.6.1911) \[[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/7892198)\] \[[Europe PMC](http://europepmc.org/abstract/MED/7892198)\] \[[Abstract](http://www.uniprot.org/citations/7892198)\]
-    
-    **Cited for**: NUCLEOTIDE SEQUENCE \[MRNA\], FUNCTION, SUBCELLULAR LOCATION, TISSUE SPECIFICITY, DEVELOPMENTAL STAGE.
-    
+- **"Shark, a Src homology 2, ankyrin repeat, tyrosine kinase, is expressed on the apical surfaces of ectodermal epithelia."**
 
+
+
+[Ferrante A.W. Jr.](http://www.uniprot.org/?query=author:%22Ferrante+A.W.+Jr.%22), [Reinke R.](http://www.uniprot.org/?query=author:%22Reinke+R.%22), [Stanley E.R.](http://www.uniprot.org/?query=author:%22Stanley+E.R.%22)
+
+
+
+[Proc. Natl. Acad. Sci. U.S.A. 92:1911-1915(1995)](http://dx.doi.org/10.1073/pnas.92.6.1911) \[ [PubMed](http://www.ncbi.nlm.nih.gov/pubmed/7892198)\] \[ [Europe PMC](http://europepmc.org/abstract/MED/7892198)\] \[ [Abstract](http://www.uniprot.org/citations/7892198)\]
+
+
+
+**Cited for**: NUCLEOTIDE SEQUENCE \[MRNA\], FUNCTION, SUBCELLULAR LOCATION, TISSUE SPECIFICITY, DEVELOPMENTAL STAGE.
+
+
+```
 CC   -!- FUNCTION: May be involved in signal transduction on the apical
 CC       surface of ectodermal epithelia regulating their polarity during
 CC       invagination. Crumbs (crb) may be the intracellular signal.
 CC       {ECO:0000303|PubMed:7892198}.
+
+```
 
 ##### Curator inference evidence
 
@@ -144,19 +166,28 @@ Example: [Q9UKV3](http://www.uniprot.org/uniprot/Q9UKV3#miscellaneous)
 
 Manual assertion inferred from experiment in
 
-*   **"The structure of the ASAP core complex reveals the existence of a Pinin-containing PSAP complex."**  
-      
-    [Murachelli A.G.](http://www.uniprot.org/?query=author:%22Murachelli+A.G.%22), [Ebert J.](http://www.uniprot.org/?query=author:%22Ebert+J.%22), [Basquin C.](http://www.uniprot.org/?query=author:%22Basquin+C.%22), [Le Hir H.](http://www.uniprot.org/?query=author:%22Le+Hir+H.%22), [Conti E.](http://www.uniprot.org/?query=author:%22Conti+E.%22)  
-      
-    [Nat. Struct. Mol. Biol. 19:378-386(2012)](http://dx.doi.org/10.1038/nsmb.2242) \[[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/22388736)\] \[[Europe PMC](http://europepmc.org/abstract/MED/22388736)\] \[[Abstract](http://www.uniprot.org/citations/22388736)\]
-    
-    **Cited for**: INTERACTION WITH RNPS1, COMPOSITION OF THE ASAP COMPLEX, FUNCTION OF THE ASAP COMPLEX.
-    
+- **"The structure of the ASAP core complex reveals the existence of a Pinin-containing PSAP complex."**
 
+
+
+[Murachelli A.G.](http://www.uniprot.org/?query=author:%22Murachelli+A.G.%22), [Ebert J.](http://www.uniprot.org/?query=author:%22Ebert+J.%22), [Basquin C.](http://www.uniprot.org/?query=author:%22Basquin+C.%22), [Le Hir H.](http://www.uniprot.org/?query=author:%22Le+Hir+H.%22), [Conti E.](http://www.uniprot.org/?query=author:%22Conti+E.%22)
+
+
+
+[Nat. Struct. Mol. Biol. 19:378-386(2012)](http://dx.doi.org/10.1038/nsmb.2242) \[ [PubMed](http://www.ncbi.nlm.nih.gov/pubmed/22388736)\] \[ [Europe PMC](http://europepmc.org/abstract/MED/22388736)\] \[ [Abstract](http://www.uniprot.org/citations/22388736)\]
+
+
+
+**Cited for**: INTERACTION WITH RNPS1, COMPOSITION OF THE ASAP COMPLEX, FUNCTION OF THE ASAP COMPLEX.
+
+
+```
 CC   -!- CAUTION: Structural and functional studies of the ASAP complex
 CC       have been conducted with a chimeric complex involving a conserved
 CC       fragment of Drosophila melanogaster Acinus/hkl.
 CC       {ECO:0000305|PubMed:22388736}.
+
+```
 
 Example: [P62196](http://www.uniprot.org/uniprot/P62196#ptm%5Fprocessing)
 
@@ -164,16 +195,25 @@ Example: [P62196](http://www.uniprot.org/uniprot/P62196#ptm%5Fprocessing)
 
 Manual assertion inferred from experiment in
 
-*   **"Mapping the murine cardiac 26S proteasome complexes."**  
-      
-    [Gomes A.V.](http://www.uniprot.org/?query=author:%22Gomes+A.V.%22), [Zong C.](http://www.uniprot.org/?query=author:%22Zong+C.%22), [Edmondson R.D.](http://www.uniprot.org/?query=author:%22Edmondson+R.D.%22), [Li X.](http://www.uniprot.org/?query=author:%22Li+X.%22), [Stefani E.](http://www.uniprot.org/?query=author:%22Stefani+E.%22), [Zhang J.](http://www.uniprot.org/?query=author:%22Zhang+J.%22), [Jones R.C.](http://www.uniprot.org/?query=author:%22Jones+R.C.%22), [Thyparambil S.](http://www.uniprot.org/?query=author:%22Thyparambil+S.%22), [Wang G.W.](http://www.uniprot.org/?query=author:%22Wang+G.W.%22), [Qiao X.](http://www.uniprot.org/?query=author:%22Qiao+X.%22), [Bardag-Gorce F.](http://www.uniprot.org/?query=author:%22Bardag-Gorce+F.%22), [Ping P.](http://www.uniprot.org/?query=author:%22Ping+P.%22)  
-      
-    [Circ. Res. 99:362-371(2006)](http://dx.doi.org/10.1161/01.RES.0000237386.98506.f7) \[[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/16857966)\] \[[Europe PMC](http://europepmc.org/abstract/MED/16857966)\] \[[Abstract](http://www.uniprot.org/citations/16857966)\]
-    
-    **Cited for**: IDENTIFICATION IN THE 19S PROTEASOME REGULATORY COMPLEX, ACETYLATION AT ALA-2.
-    
+- **"Mapping the murine cardiac 26S proteasome complexes."**
 
-FT   INIT\_MET      1      1       Removed. {ECO:0000305|PubMed:16857966}.
+
+
+[Gomes A.V.](http://www.uniprot.org/?query=author:%22Gomes+A.V.%22), [Zong C.](http://www.uniprot.org/?query=author:%22Zong+C.%22), [Edmondson R.D.](http://www.uniprot.org/?query=author:%22Edmondson+R.D.%22), [Li X.](http://www.uniprot.org/?query=author:%22Li+X.%22), [Stefani E.](http://www.uniprot.org/?query=author:%22Stefani+E.%22), [Zhang J.](http://www.uniprot.org/?query=author:%22Zhang+J.%22), [Jones R.C.](http://www.uniprot.org/?query=author:%22Jones+R.C.%22), [Thyparambil S.](http://www.uniprot.org/?query=author:%22Thyparambil+S.%22), [Wang G.W.](http://www.uniprot.org/?query=author:%22Wang+G.W.%22), [Qiao X.](http://www.uniprot.org/?query=author:%22Qiao+X.%22), [Bardag-Gorce F.](http://www.uniprot.org/?query=author:%22Bardag-Gorce+F.%22), [Ping P.](http://www.uniprot.org/?query=author:%22Ping+P.%22)
+
+
+
+[Circ. Res. 99:362-371(2006)](http://dx.doi.org/10.1161/01.RES.0000237386.98506.f7) \[ [PubMed](http://www.ncbi.nlm.nih.gov/pubmed/16857966)\] \[ [Europe PMC](http://europepmc.org/abstract/MED/16857966)\] \[ [Abstract](http://www.uniprot.org/citations/16857966)\]
+
+
+
+**Cited for**: IDENTIFICATION IN THE 19S PROTEASOME REGULATORY COMPLEX, ACETYLATION AT ALA-2.
+
+
+```
+FT   INIT_MET      1      1       Removed. {ECO:0000305|PubMed:16857966}.
+
+```
 
 ##### Sequence similarity evidence
 
@@ -185,10 +225,13 @@ By similarity
 
 Manual assertion inferred from sequence similarity
 
-*   [UniProtKB:P11498](http://www.uniprot.org/uniprot/P11498)
+- [UniProtKB:P11498](http://www.uniprot.org/uniprot/P11498)
 
-FT   MOD\_RES     609    609       N6-biotinyllysine.
+```
+FT   MOD_RES     609    609       N6-biotinyllysine.
 FT                                {ECO:0000250|UniProtKB:P11498}.
+
+```
 
 #### Evidence that is used in manual and automatic assertions
 
@@ -204,30 +247,29 @@ UniRule annotation
 
 Manual assertion according to rules
 
-*   [HAMAP-Rule:MF\_00979](http://hamap.expasy.org/unirule/MF_00979)
+- [HAMAP-Rule:MF\_00979](http://hamap.expasy.org/unirule/MF_00979)
 
-  
-  
 PROSITE-ProRule annotations
 
 Manual assertion according to rules
 
-*   [PROSITE-ProRule:PRU00169](http://prosite.expasy.org/unirule/PRU00169)
+- [PROSITE-ProRule:PRU00169](http://prosite.expasy.org/unirule/PRU00169)
 
-  
-  
 Sequence Analysis
 
 Manual assertion according to rules
 
+```
 CC   -!- SIMILARITY: Belongs to the BamA family. {ECO:0000255|HAMAP-
-CC       Rule:MF\_01430}.
-FT   TOPO\_DOM    790    803       Extracellular; loop 8. {ECO:0000305}.
+CC       Rule:MF_01430}.
+FT   TOPO_DOM    790    803       Extracellular; loop 8. {ECO:0000305}.
 FT   TRANSMEM    804    808       Beta stranded.
 FT                                {ECO:0000269|PubMed:24914988}.
 FT   DOMAIN       24     91       POTRA 1. {ECO:0000255|PROSITE-
 FT                                ProRule:PRU01115,
 FT                                ECO:0000305|PubMed:14559180}.
+
+```
 
 Example: [Q86NT5](http://www.uniprot.org/uniprot/Q86NT5#function)
 
@@ -235,24 +277,21 @@ UniRule annotation
 
 Automatic assertion according to rules
 
-*   [PIRSR000106-3](http://www.uniprot.org/unirule/UR000176873)
+- [PIRSR000106-3](http://www.uniprot.org/unirule/UR000176873)
 
-  
-  
 UniRule annotation
 
 Automatic assertion according to rules
 
-*   [RuleBase:RU003426](http://www.uniprot.org/unirule/UR000000446)
+- [RuleBase:RU003426](http://www.uniprot.org/unirule/UR000000446)
 
-  
-  
 Sequence analysis
 
 Automatic assertion according to rules
 
-*   [SAM:Phobius](http://www.uniprot.org/help/sam)
+- [SAM:Phobius](http://www.uniprot.org/help/sam)
 
+```
 CC   -!- SIMILARITY: Belongs to the malic enzymes family.
 CC       {ECO:0000256|RuleBase:RU003426}.
 KW   Membrane {ECO:0000256|SAM:Phobius};
@@ -264,6 +303,8 @@ FT   TRANSMEM    327    345       Helical. {ECO:0000256|SAM:Phobius}.
 FT   METAL       277    277       Divalent metal cation.
 FT                                {ECO:0000256|PIRSR:PIRSR000106-3}.
 
+```
+
 ##### Imported information evidence
 
 We use the ECO code [ECO:0000312](http://bioportal.bioontology.org/ontologies/50043/?p=terms%26conceptid=ECO:0000312) in manual assertions and [ECO:0000313](http://bioportal.bioontology.org/ontologies/50043/?p=terms%26conceptid=ECO:0000313) in automatic assertions, respectively, for information which has been imported from another database. The database name and identifier of the entry from which the information has been imported are provided.
@@ -274,10 +315,13 @@ Imported
 
 Manual assertion inferred from database entries
 
-*   [EMBL:AAY86039.1](https://www.ebi.ac.uk/ena/browser/view/AAY86039)
-*   [MGI:87860](http://www.informatics.jax.org/marker/MGI:87860)
+- [EMBL:AAY86039.1](https://www.ebi.ac.uk/ena/browser/view/AAY86039)
+- [MGI:87860](http://www.informatics.jax.org/marker/MGI:87860)
 
+```
 GN   Name=Abl2 {ECO:0000312|EMBL:AAY86039.1, ECO:0000312|MGI:MGI:87860};
+
+```
 
 Example: [Q2L9A9](http://www.uniprot.org/uniprot/Q2L9A9#names%5Fand%5Ftaxonomy)
 
@@ -285,10 +329,13 @@ Imported
 
 Automatic assertion inferred from database entries
 
-*   [EMBL:ABC70327.1](https://www.ebi.ac.uk/ena/browser/view/ABC70327)
-*   [MGI:96952](http://www.informatics.jax.org/marker/MGI:96952)
+- [EMBL:ABC70327.1](https://www.ebi.ac.uk/ena/browser/view/ABC70327)
+- [MGI:96952](http://www.informatics.jax.org/marker/MGI:96952)
 
+```
 GN   Name=Mdm2 {ECO:0000313|EMBL:ABC70327.1, ECO:0000313|MGI:MGI:96952};
+
+```
 
 ##### Combinatorial evidence
 
@@ -300,15 +347,17 @@ Combined sources
 
 Manual assertion inferred from algorithms based on publications or databases entries
 
-*   [PDB:1V90](http://www.ebi.ac.uk/pdbe-srv/view/entry/1V90)
+- [PDB:1V90](http://www.ebi.ac.uk/pdbe-srv/view/entry/1V90)
 
+```
 FT   STRAND        5      7       {ECO:0000244|PDB:1V90}.
 FT   TURN         11     13       {ECO:0000244|PDB:1V90}.
 FT   STRAND       26     29       {ECO:0000244|PDB:1V90}.
 
+```
+
 #### Related documents
 
-[Why don't all UniProtKB/Swiss-Prot annotations have evidence?](http://www.uniprot.org/faq/evidence%5Fin%5Fswissprot)  
-  
-[How can I query UniProtKB annotations by evidence?](http://www.uniprot.org/faq/evidence%5Ftable) - A guide to evidence codes and labels in entry view and advanced search
-        
+[Why don't all UniProtKB/Swiss-Prot annotations have evidence?](http://www.uniprot.org/faq/evidence%5Fin%5Fswissprot)
+
+[How can I query UniProtKB annotations by evidence?](http://www.uniprot.org/faq/evidence%5Ftable) \- A guide to evidence codes and labels in entry view and advanced search

@@ -1,4 +1,3 @@
-
 ---
 title: Alternative sequence
 categories: Sequence,manual
@@ -29,4 +28,3 @@ Related terms: splice variant, splice isoform
 [How do I get the nucleotide sequence that corresponds to the canonical UniProtKB sequence?](http://www.uniprot.org/faq/35)
 
 [What are UniProtKB's criteria for defining a CDS as a protein?](http://www.uniprot.org/faq/25)
-        

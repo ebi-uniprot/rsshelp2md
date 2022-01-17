@@ -1,4 +1,3 @@
-
 ---
 title: Modified residue
 categories: PTM_processing,manual
@@ -12,15 +11,21 @@ We describe the chemical nature of the modified residue using a controlled vocab
 
 We provide additional information concerning the modification, such as:
 
-1.  the **form of the protein** which undergoes the modification; this may be either a specific **isoform**, a particular **processed or modified form** of the protein, or a specific **sequence variant**;  
-      
-    Examples: [P41500](http://www.uniprot.org/uniprot/P41500#ptm%5Fprocessing) (isoform), [P84715](http://www.uniprot.org/uniprot/P84715#ptm%5Fprocessing) (processed form), [P68871](http://www.uniprot.org/uniprot/P68871#ptm%5Fprocessing) (sequence variant)
-2.  the **enzyme** which carries out the modification ('by...'). For proteins of infectious organisms, such as viruses, phages and bacteria, we also indicate whether the modification is carried out by a **host** protein;  
-      
-    Examples: [P03279](http://www.uniprot.org/uniprot/P03279#ptm%5Fprocessing) (modifying enzyme indicated), [Q53EZ4](http://www.uniprot.org/uniprot/Q53EZ4#ptm%5Fprocessing) (viral protein modified by host protein)
-3.  information on the **frequency** of the modification or the **relationship with another feature** ('partial', 'alternate', 'transient'). The term **'partial'** indicates that not all protein molecules are modified, **'alternate'** means that the same amino acid can be modified in more than one way, and **'transient'** is applied to exceptional cases of otherwise stable modifications. For partial modifications, we do not propagate this comment to homologous proteins and we do not specify the fraction of proteins modified, as this may depend on the experimental conditions.  
-      
-    Examples: [P16157](http://www.uniprot.org/uniprot/P16157#ptm%5Fprocessing) (partial modification), [Q9UKV3](http://www.uniprot.org/uniprot/Q9UKV3#ptm%5Fprocessing) (alternate modification), [Q9FX54](http://www.uniprot.org/uniprot/Q9FX54#ptm%5Fprocessing) (transient modification)
+1. the**form of the protein** which undergoes the modification; this may be either a specific **isoform**, a particular **processed or modified form** of the protein, or a specific **sequence variant**;
+
+
+
+Examples: [P41500](http://www.uniprot.org/uniprot/P41500#ptm%5Fprocessing) (isoform), [P84715](http://www.uniprot.org/uniprot/P84715#ptm%5Fprocessing) (processed form), [P68871](http://www.uniprot.org/uniprot/P68871#ptm%5Fprocessing) (sequence variant)
+2. the**enzyme** which carries out the modification ('by...'). For proteins of infectious organisms, such as viruses, phages and bacteria, we also indicate whether the modification is carried out by a **host** protein;
+
+
+
+Examples: [P03279](http://www.uniprot.org/uniprot/P03279#ptm%5Fprocessing) (modifying enzyme indicated), [Q53EZ4](http://www.uniprot.org/uniprot/Q53EZ4#ptm%5Fprocessing) (viral protein modified by host protein)
+3. information on the**frequency** of the modification or the **relationship with another feature** ('partial', 'alternate', 'transient'). The term **'partial'** indicates that not all protein molecules are modified, **'alternate'** means that the same amino acid can be modified in more than one way, and **'transient'** is applied to exceptional cases of otherwise stable modifications. For partial modifications, we do not propagate this comment to homologous proteins and we do not specify the fraction of proteins modified, as this may depend on the experimental conditions.
+
+
+
+Examples: [P16157](http://www.uniprot.org/uniprot/P16157#ptm%5Fprocessing) (partial modification), [Q9UKV3](http://www.uniprot.org/uniprot/Q9UKV3#ptm%5Fprocessing) (alternate modification), [Q9FX54](http://www.uniprot.org/uniprot/Q9FX54#ptm%5Fprocessing) (transient modification)
 
 See also the subsection [Post-translational modifications](http://www.uniprot.org/help/post%2Dtranslational%5Fmodification) for additional information on modifications for which **position-specific data is not yet available**.
 
@@ -28,18 +33,18 @@ See also the subsection [Post-translational modifications](http://www.uniprot.or
 
 We annotate experimentally determined sites of modification. These are propagated 'By similarity' to related orthologs provided the following criteria are met:
 
-1.  the modification should be necessary for protein function (and therefore likely to occur in related organisms);
-2.  the enzyme which performs the modification must exist in the related organism, or the same type of modification must have already been observed (this condition is mandatory);
-3.  the modified residue and the surrounding region should be conserved in the orthologous protein (this condition is also mandatory).
+1. the modification should be necessary for protein function (and therefore likely to occur in related organisms);
+2. the enzyme which performs the modification must exist in the related organism, or the same type of modification must have already been observed (this condition is mandatory);
+3. the modified residue and the surrounding region should be conserved in the orthologous protein (this condition is also mandatory).
 
-Propagation is generally restricted to closely related species, e.g. among mammals or bacteria from the same taxonomic group. We usually do not propagate information concerning modified residues among plants or unicellular fungi. Specific details regarding the type of modification may be generalized during propagation. For instance, a particular lysine can be subjected to mono-or dimethylation in _E.coli_ strain K12, but this information is not propagated to the _E.coli_ O157:H7 orthologous entry, where we simply indicate that methylation occurs.  
-  
+Propagation is generally restricted to closely related species, e.g. among mammals or bacteria from the same taxonomic group. We usually do not propagate information concerning modified residues among plants or unicellular fungi. Specific details regarding the type of modification may be generalized during propagation. For instance, a particular lysine can be subjected to mono-or dimethylation in _E.coli_ strain K12, but this information is not propagated to the _E.coli_ O157:H7 orthologous entry, where we simply indicate that methylation occurs.
+
 Example: [P0CE47](http://www.uniprot.org/uniprot/P0CE47#ptm_processing) (source entry), [P0A6N3](http://www.uniprot.org/uniprot/P0A6N3#ptm_processing) (orthologous entry)
 
 **Sites that are not modified**
 
-When a site is found not to be modified, and if this is of biological significance, we indicate it in the 'Site' subsection. This information is not propagated in related entries.  
-  
+When a site is found not to be modified, and if this is of biological significance, we indicate it in the 'Site' subsection. This information is not propagated in related entries.
+
 Examples: [Q10471](http://www.uniprot.org/uniprot/Q10471#ptm_processing), [P62152](http://www.uniprot.org/uniprot/P62152#ptm_processing), [P32457](http://www.uniprot.org/uniprot/P32457#ptm_processing), [P07173](http://www.uniprot.org/uniprot/P07173#ptm_processing).
 
 **Unknown sites bearing unknown modifications**
@@ -170,10 +175,10 @@ The N-terminal glutamine of extracellular and multi-pass membrane proteins can b
 
 This modification can also occur from a glutamate residue but this seems to be extremely rare, and may be correlated with an extreme acidic context of the protein involved. We specify it by indicating 'Pyrrolidone carboxylic acid (Glu)' in the 'Description' field.
 
-This modification has been observed in eukaryotes (including mammals, plants, insects), archaea (including halobacteria) and bacteria (including proteobacteria and actinobacteria).  
-  
-Synonyms: pyrrolidone carboxylic acid (Pca), pyroglutamic acid (Pga), pyroglutamate (pyro-Glu, pGlu, Pyr).  
-  
+This modification has been observed in eukaryotes (including mammals, plants, insects), archaea (including halobacteria) and bacteria (including proteobacteria and actinobacteria).
+
+Synonyms: pyrrolidone carboxylic acid (Pca), pyroglutamic acid (Pga), pyroglutamate (pyro-Glu, pGlu, Pyr).
+
 _Note_: Pyro-Glu is often indicated in papers as 'pGlu' and sometimes, in one-letter code as "U", although this is now used for selenocysteine. In figures of publications, it may be cited as Z, pQ or E.
 
 Examples: [P30233](http://www.uniprot.org/uniprot/P30233#ptm_processing), [P68000](http://www.uniprot.org/uniprot/P68000#ptm_processing), [P02945](http://www.uniprot.org/uniprot/P02945#ptm_processing)
@@ -200,8 +205,8 @@ Examples: [O93456](http://www.uniprot.org/uniprot/O93456#ptm_processing), [P2382
 
 Example: [P29006](http://www.uniprot.org/uniprot/P29006#ptm_processing)
 
-When D-amino acids are found as partners of a cross-link, it is indicated in the 'Cross-link' subsection.  
-  
+When D-amino acids are found as partners of a cross-link, it is indicated in the 'Cross-link' subsection.
+
 Examples: [P08136](http://www.uniprot.org/uniprot/P08136#ptm_processing), [O07623](http://www.uniprot.org/uniprot/O07623#ptm_processing)
 
 ### 7\. Hydroxylation
@@ -250,9 +255,9 @@ Examples: [Q8CG16](http://www.uniprot.org/uniprot/Q8CG16#ptm_processing), [O8827
 
 ### 8\. Sulfation
 
-Extracellular tyrosines of secreted and multi-pass membrane proteins can  
-  
-be modified by the addition of a sulfate group. Cytoplasmic serine and threonine residues can also undergo sulfation, although very rarely. Although the function of this modification has not yet been fully elucidated, it may serve to enhance protein stability and modulate protein-protein interactions. When carbohydrates attached to proteins are sulfated, we indicate this fact in the '[Post-translational modification](http://www.uniprot.org/manual/post-translational_modification)' subsection. Sulfation has been observed in eukaryotes only.
+Extracellular tyrosines of secreted and multi-pass membrane proteins can
+
+be modified by the addition of a sulfate group. Cytoplasmic serine and threonine residues can also undergo sulfation, although very rarely. Although the function of this modification has not yet been fully elucidated, it may serve to enhance protein stability and modulate protein-protein interactions. When carbohydrates attached to proteins are sulfated, we indicate this fact in the ' [Post-translational modification](http://www.uniprot.org/manual/post-translational_modification)' subsection. Sulfation has been observed in eukaryotes only.
 
 Related keyword: [Sulfation](http://www.uniprot.org/keywords/765)
 
@@ -266,8 +271,8 @@ Example: [Q7LZ52](http://www.uniprot.org/uniprot/Q7LZ52#ptm_processing)
 
 Examples: [Q01974](http://www.uniprot.org/uniprot/Q01974#ptm_processing), [Q8IIJ9](http://www.uniprot.org/uniprot/Q8IIJ9#ptm_processing)
 
-We annotate not only experimentally determined sites of tyrosine sulfation (as well as that on serine and threonine residues), but also tyrosine sulfation sites predicted with the ['Sulfinator'](http://web.expasy.org/sulfinator/) tool. Sulfation prediction is taken into account only when this modification is known to occur on the protein concerned but the exact site is not known. The annotation of a predicted site is flagged with 'Sequence Analysis' (Sequence Model).  
-  
+We annotate not only experimentally determined sites of tyrosine sulfation (as well as that on serine and threonine residues), but also tyrosine sulfation sites predicted with the ['Sulfinator'](http://web.expasy.org/sulfinator/) tool. Sulfation prediction is taken into account only when this modification is known to occur on the protein concerned but the exact site is not known. The annotation of a predicted site is flagged with 'Sequence Analysis' (Sequence Model).
+
 Example: [P30443](http://www.uniprot.org/uniprot/P30443#ptm_processing)
 
 ### 9\. Flavin-binding
@@ -282,9 +287,9 @@ Related keywords: [Flavoprotein](http://www.uniprot.org/keywords/285), [FAD](htt
 
 Sulfur occurs in many different oxidation states in biological systems. In response to mild oxidative stress, reactive oxygen and nitrogen species, such as peroxides, superoxide, nitric oxide or peroxinitrite, can oxidize cytoplasmic cysteines to cysteine sulfenic acid (-SOH), S-nitrosocysteine (-SNO) and sulfinic acid (-SO2H)(single, single and double oxidation state, respectively). These modifications can alter protein activity, protein-protein interactions, or protein stability.
 
-Cysteine sulfenic acid is extremely reactive. It is generally stabilized  
-  
-by either the formation of a disulfide bond (in this case the residue is called a cystine) or glutathione binding or reduced by specific enzymes to cysteine. Disulfide bonds are annotated in the '[Disulfide bond](http://www.uniprot.org/manual/disulfid)' subsection.
+Cysteine sulfenic acid is extremely reactive. It is generally stabilized
+
+by either the formation of a disulfide bond (in this case the residue is called a cystine) or glutathione binding or reduced by specific enzymes to cysteine. Disulfide bonds are annotated in the ' [Disulfide bond](http://www.uniprot.org/manual/disulfid)' subsection.
 
 In response to severe oxidative stress, cysteines are irreversibly oxidized to cysteine sulfonic acid (-SO3) or cysteic acid, which generally leads to protein inactivation and degradation. We do not annotate this modification.
 
@@ -305,4 +310,3 @@ Related keyword: [S-nitrosylation](http://www.uniprot.org/keywords/702)
 The nature of the post-translationally formed amino acid is annotated by using a controlled vocabulary. The currently defined list of controlled vocabulary, as well as other information, such as the target amino acid, the related keyword, the taxonomic range and the subcellular location of the modification, are available in [ptmlist.txt](http://www.uniprot.org/docs/ptmlist) document. Links to the RESID database are also provided to help gain a better insight into every modification.
 
 See also: [Evidence](http://www.uniprot.org/manual/evidences), [Post-translational modifications](http://www.uniprot.org/help/post%2Dtranslational%5Fmodification), [Advanced search](http://www.uniprot.org/help/advanced%5Fsearch)
-        

@@ -1,4 +1,3 @@
-
 ---
 title: Are UniRef cluster identifiers permanent? How can I link to UniRef clusters?
 categories: UniRef,faq
@@ -27,4 +26,3 @@ These URLs will continue to work, even if the representative member and thus the
 See also:
 
 [How to link to UniProt entries (UniProtKB, UniParc and UniRef)](http://www.uniprot.org/help/linking%5Fto%5Funiprot)
-        

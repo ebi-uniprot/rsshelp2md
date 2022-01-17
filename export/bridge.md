@@ -1,4 +1,3 @@
-
 ---
 title: Alan J. Bridge
 categories: help
@@ -8,16 +7,16 @@ Group Leader [Swiss-Prot](https://www.sib.swiss/alan%2Dbridge%2Dgroup)
 
 E-mail: alan.bridge@nullsib.nullswiss
 
-SIB Swiss Institute of Bioinformatics  
-  
-CMU, Rue Michel Servet, 1  
-  
-CH-1211 Geneva  
-  
-Switzerland  
-  
-Phone: +41 (0)22 379 4172  
-  
+SIB Swiss Institute of Bioinformatics
+
+CMU, Rue Michel Servet, 1
+
+CH-1211 Geneva
+
+Switzerland
+
+Phone: +41 (0)22 379 4172
+
 Fax: +41 (0)22 379 5858
 
 #### Short biography
@@ -27,4 +26,3 @@ Dr. Alan Bridge joined the Swiss-Prot group at the SIB Swiss Institute of Bioinf
 #### Group
 
 The [Swiss-Prot group](https://www.sib.swiss/alan%2Dbridge%2Dgroup) develops, annotates and maintains the UniProtKB/Swiss-Prot protein sequence database, and also other databases including PROSITE, a database of protein families and domains, and ENZYME, a database of enzyme nomenclature. The group also co-heads the development and maintenance of the ExPASy proteomics website, a life sciences portal which serves as an entry point to several databases and to various online bioinformatics tools.
-        

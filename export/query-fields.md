@@ -1,4 +1,3 @@
-
 ---
 title: UniProtKB query fields
 categories: Text_search,Technical,Website,help
@@ -6,360 +5,51 @@ categories: Text_search,Technical,Website,help
 
 Supported query fields for searching specific data in UniProtKB (see also [query syntax](http://www.uniprot.org/help/text-search)).
 
-Field
-
-Example
-
-Description
-
-accession
-
-`[accession:P62988](http://www.uniprot.org/uniprot/?query=accession:P62988)`
-
-Lists all entries with the primary or secondary [accession number](http://www.uniprot.org/manual/accession_numbers) P62988.
-
-active
-
-`[active:no](http://www.uniprot.org/uniprot/?query=active:no)`
-
-Lists all obsolete entries.
-
-annotation
-
-`[annotation:(type:non-positional)](http://www.uniprot.org/uniprot/?query=annotation:(type:non-positional))  
-  
-[annotation:(type:positional)](http://www.uniprot.org/uniprot/?query=annotation:(type:positional))  
-  
-[annotation:(type:mod_res "Pyrrolidone carboxylic acid" evidence:experimental)](http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3Amod_res++%22Pyrrolidone+carboxylic+acid%22+evidence%3Aexperimental%29)`
-
-Lists all entries with:
-
-*   any [general annotation (comments \[CC\])](http://www.uniprot.org/help/general_annotation)
-*   any [sequence annotation (features \[FT\])](http://www.uniprot.org/help/sequence_annotation)
-*   at least one amino acid modified with a Pyrrolidone carboxylic acid group
-
-author
-
-`[author:ashburner](http://www.uniprot.org/uniprot/?query=author:ashburner)`
-
-Lists all entries with at least one reference co-authored by Michael Ashburner.
-
-cdantigen
-
-`[cdantigen:CD233](http://www.uniprot.org/uniprot/?query=cdantigen:CD233)`
-
-Lists all entries whose cluster of differentiation number is CD233 (see [cdlist.txt](http://www.uniprot.org/docs/cdlist)).
-
-chebi
-
-`[chebi:18420](http://www.uniprot.org/uniprot/?query=chebi:18420)`
-
-Lists all entries which are associated with the small molecule corresponding to ChEBI identifier 18420, Mg(2+) (see [How can I search UniProt for chemical or reaction data?](http://www.uniprot.org/help/chemical_data_search)).
-
-citation
-
-`[citation:("intracellular structural proteins")](http://www.uniprot.org/uniprot/?query=citation%3A%28%22intracellular+structural+proteins%22%29)  
-  
-[citation:(author:ashburner journal:nature)](http://www.uniprot.org/uniprot/?query=citation%3A%28author%3Aashburner+journal%3Anature%29) [citation:9169874](http://www.uniprot.org/uniprot/?query=citation%3A9169874)`
-
-Lists all entries with a [literature citation](http://www.uniprot.org/citations):
-
-*   containing the phrase "intracellular structural proteins" in either title or abstract
-*   co-authored by Michael Ashburner and published in Nature
-*   with the [PubMed](http://www.ncbi.nlm.nih.gov/pubmed) identifier 9169874
-
-cluster
-
-`[cluster:(uniprot:A5YMT3 identity:0.9)](http://www.uniprot.org/uniprot/?query=cluster%3a(uniprot%3aA5YMT3+AND+identity%3a0.9))`
-
-Lists all entries in the UniRef 90% identity cluster whose representative sequence is UniProtKB entry A5YMT3 ([about UniRef](http://www.uniprot.org/help/uniref)).
-
-count
-
-`[annotation:(type:transmem count:5)](http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3Atransmem+count%3A5%29)  
-  
-[annotation:(type:transmem count:[5 TO *])](http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3Atransmem+count%3A%5B5+TO+*%5D%29)  
-  
-[database:(type:pdb count:[20 TO *])](http://www.uniprot.org/uniprot/?query=database%3A%28type%3Apdb+count%3A%5B20+TO+*%5D%29)  
-  
-`
-
-Lists all entries with:
-
-*   exactly 5 transmembrane regions
-*   5 or more transmembrane regions
-*   3 or more Cofactor comments
-*   20 or more cross-references to PDB
-
-created
-
-`[created:[20121001 TO *]](http://www.uniprot.org/uniprot/?query=created%3A%5B20121001+TO+*%5D)  
-  
-[reviewed:yes AND created:[current TO *]](http://www.uniprot.org/uniprot/?query=reviewed%3Ayes+AND+created%3A%5Bcurrent+TO+*%5D)`
-
-Lists all entries created since October 1st 2012.  
-  
-Lists all new UniProtKB/Swiss-Prot entries in the last release.
-
-database
-
-`[database:(type:pfam)](http://www.uniprot.org/uniprot/?query=database:(type:pfam))  
-  
-[database:(type:pdb 1aut)](http://www.uniprot.org/uniprot/?query=database:(type:pdb%201aut))`
-
-Lists all entries with:
-
-*   a cross-reference to the Pfam database
-*   a cross-reference to the PDB database entry 1aut
-
-(see [Databases cross-referenced in UniProtKB](http://www.uniprot.org/docs/dbxref) and [Database mapping](http://www.uniprot.org/help/mapping))
-
-ec
-
-`[ec:3.2.1.23](http://www.uniprot.org/uniprot/?query=ec:3.2.1.23)`
-
-Lists all beta-galactosidases ([Enzyme nomenclature database](http://enzyme.expasy.org/)).
-
-evidence
-
-`[annotation:(type:signal evidence:ECO_0000269)](http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3Asignal+evidence%3AECO_0000269%29)  
-  
-[(type:mod_res phosphoserine evidence:ECO_0000269)](http://www.uniprot.org/uniprot/?query=annotation%3A(type%3Amod_res+phosphoserine+evidence%3AECO_0000269))  
-  
-[annotation:(type:function AND evidence:ECO_0000255)](http://www.uniprot.org/uniprot/?query=annotation%3A(type%3Afunction+evidence%3AECO_0000255))`
-
-Lists all entries with:
-
-*   a signal sequence whose positions have been experimentally proven
-*   experimentally proven phosphoserine sites
-*   a function manually asserted according to rules
-
-(see [Evidence attribution](http://www.uniprot.org/help/evidences))
-
-existence
-
-`[existence:"inferred from homology"](http://www.uniprot.org/uniprot/?query=existence%3A%22inferred+from+homology%22)`
-
-See [Protein existence criteria](http://www.uniprot.org/docs/pe_criteria).
-
-family
-
-`[family:serpin](http://www.uniprot.org/uniprot/?query=family:serpin)`
-
-Lists all entries belonging to the Serpin family of proteins ([Index of protein domains and families](http://www.uniprot.org/docs/similar)).
-
-fragment
-
-`[fragment:yes](http://www.uniprot.org/uniprot/?query=fragment:yes)`
-
-Lists all entries with an incomplete sequence.
-
-gene
-
-`[gene:HPSE](http://www.uniprot.org/uniprot/?query=gene:HPSE)`
-
-Lists all entries for proteins encoded by gene HPSE, but also by HPSE2.
-
-gene\_exact
-
-`[gene_exact:HPSE](http://www.uniprot.org/uniprot/?query=gene_exact:HPSE)`
-
-Lists all entries for proteins encoded by gene HPSE, but excluding variations like HPSE2 or HPSE\_0.
-
-goa
-
-`[goa:(cytoskeleton)](http://www.uniprot.org/uniprot/?query=goa:(cytoskeleton))  
-  
-[go:0015629](http://www.uniprot.org/uniprot/?query=go:0015629)`
-
-Lists all entries associated with:
-
-*   a GO term containing the word "cytoskeleton"
-*   the GO term Actin cytoskeleton and any subclasses
-
-host
-
-`[host:mouse](http://www.uniprot.org/uniprot/?query=host:mouse)  
-  
-[host:10090](http://www.uniprot.org/uniprot/?query=host:10090)  
-  
-[host:40674](http://www.uniprot.org/uniprot/?query=host:40674)`
-
-Lists all entries for viruses infecting:
-
-*   organisms with a name containing the word "mouse" (including Arabidopsis thaliana (Mouse-ear cress)!)
-*   Mus musculus (Mouse)
-*   all mammals (all taxa classified under the taxonomy node for Mammalia)
-
-id
-
-`[id:P00750](http://www.uniprot.org/uniprot/?query=id:P00750)`
-
-Returns the entry with the primary [accession number](http://www.uniprot.org/manual/accession_numbers) P00750.
-
-inchikey
-
-`[inchikey:WQZGKKKJIJFFOK-GASJEMHNSA-N](http://www.uniprot.org/uniprot/?query=inchikey:WQZGKKKJIJFFOK-GASJEMHNSA-N)`
-
-Returns entries associated with the small molecule identified by the [InChIKey](https://en.wikipedia.org/wiki/International_Chemical_Identifier#InChIKey) WQZGKKKJIJFFOK-GASJEMHNSA-N, i.e. D-glucopyranose (see [How can I search UniProt for chemical or reaction data?](http://www.uniprot.org/help/chemical_data_search))
-
-inn
-
-`[inn:Anakinra](http://www.uniprot.org/uniprot/?query=inn:Anakinra)`
-
-Lists all entries whose "International Nonproprietary Name" is Anakinra.
-
-interactor
-
-`[interactor:P00520](http://www.uniprot.org/uniprot/?query=interactor:P00520)`
-
-Lists all entries describing interactions with the protein described by entry P00520.
-
-keyword
-
-`[keyword:toxin](http://www.uniprot.org/uniprot/?query=keyword:toxin)  
-  
-[keyword:"Toxin [KW-0800]"](http://www.uniprot.org/uniprot/?query=keyword:%22Toxin%20[KW-0800]%22)`
-
-Lists all entries associated with a keyword matching "Toxin" in its name or description ([UniProtKB Keywords](http://www.uniprot.org/keywords)). Lists all entries associated with the UniProtKB keyword [Toxin](http://www.uniprot.org/keywords/KW-0800).
-
-length
-
-`[length:[500 TO 700]](http://www.uniprot.org/uniprot/?query=length%3A%5B500+TO+700%5D)`
-
-Lists all entries describing sequences of length between 500 and 700 residues.
-
-lineage
-
-This field is a synonym for the field `taxonomy`.
-
-mass
-
-`[mass:[500000 TO *]](http://www.uniprot.org/uniprot/?query=mass%3A%5B500000+TO+*%5D)`
-
-Lists all entries describing sequences with a mass of at least 500,000 Da.
-
-method
-
-`[method:maldi](http://www.uniprot.org/uniprot/?query=method:maldi)  
-  
-[method:xray](http://www.uniprot.org/uniprot/?query=method:maldi)`
-
-Lists all entries for proteins identified by: matrix-assisted laser desorption/ionization (MALDI), crystallography (X-Ray). The `method` field searches names of physico-chemical identification methods in the ['Biophysicochemical properties' subsection](http://www.uniprot.org/help/biophysicochemical_properties) of the ['Function' section](http://www.uniprot.org/help/function_section), the 'Publications' and 'Cross-references' sections.
-
-mnemonic
-
-`[mnemonic:ATP6_HUMAN](http://www.uniprot.org/uniprot/?query=mnemonic:ATP6_HUMAN)`
-
-Lists all entries with entry name (ID) ATP6\_HUMAN. Searches also obsolete entry names ([What is the difference between an accession number (AC) and the entry name?](http://www.uniprot.org/faq/6)).
-
-modified
-
-`[modified:[20120101 TO 20120301]](http://www.uniprot.org/uniprot/?query=modified:[20120101%20TO%2020120301])  
-  
-[reviewed:yes AND modified:[current TO *]](http://www.uniprot.org/uniprot/?query=reviewed%3Ayes+AND+modified%3A[current+TO+*])`
-
-Lists all entries that were last modified between January and March 2012.  
-  
-Lists all UniProtKB/Swiss-Prot entries modified in the last release.
-
-name
-
-`[name:"prion protein"](http://www.uniprot.org/uniprot/?query=name%3A%22prion+protein%22)`
-
-Lists all entries for prion proteins.
-
-organelle
-
-`[organelle:Mitochondrion](http://www.uniprot.org/uniprot/?query=organelle:Mitochondrion)`
-
-Lists all entries for proteins encoded by a gene of the mitochondrial chromosome.
-
-organism
-
-`[organism:"Ovis aries"](http://www.uniprot.org/uniprot/?query=organism%3A%22Ovis+aries%22)  
-  
-[organism:9940](http://www.uniprot.org/uniprot/?query=organism%3A%22Ovis+aries%22)  
-  
-[organism:sheep](http://www.uniprot.org/uniprot/?query=organism:sheep)  
-  
-`
-
-Lists all entries for proteins expressed in sheep (first 2 examples) and organisms whose name contains the term "sheep" ([UniProt taxonomy](http://www.uniprot.org/taxonomy)).
-
-plasmid
-
-`[plasmid:ColE1](http://www.uniprot.org/uniprot/?query=plasmid:ColE1)`
-
-Lists all entries for proteins encoded by a gene of plasmid ColE1 ([Controlled vocabulary of plasmids](http://www.uniprot.org/docs/plasmid)).
-
-proteome
-
-`[proteome:UP000005640](http://www.uniprot.org/uniprot/?query=proteome:UP000005640)`
-
-Lists all entries from the human [proteome](http://www.uniprot.org/proteomes).
-
-proteomecomponent
-
-`[proteomecomponent:"chromosome 1" and organism:9606](http://www.uniprot.org/uniprot/?query=proteomecomponent:%22chromosome%201%22+organism%3A%22Homo+sapiens+%28Human%29+[9606]%22)`
-
-Lists all entries from the human chromosome 1.
-
-replaces
-
-`[replaces:P02023](http://www.uniprot.org/uniprot/?query=replaces:P02023)`
-
-Lists all entries that were created from a merge with entry P02023 ([see FAQ](http://www.uniprot.org/faq/6)).
-
-reviewed
-
-`[reviewed:yes](http://www.uniprot.org/uniprot/?query=reviewed:yes)`
-
-Lists all UniProtKB/Swiss-Prot entries ([about UniProtKB](http://www.uniprot.org/help/uniprotkb)).
-
-scope
-
-`[scope:mutagenesis](http://www.uniprot.org/uniprot/?query=scope:mutagenesis)`
-
-Lists all entries containing a reference that was used to gather information about mutagenesis (Entry view: "Cited for", [See 'Publications' section of the user manual](http://www.uniprot.org/manual/references)).
-
-sequence
-
-`[sequence:P05067-9](http://www.uniprot.org/uniprot/?query=sequence:P05067-9)`
-
-Lists all entries containing a link to isoform 9 of the sequence described in entry P05067. Allows searching by specific sequence identifier.
-
-sequence\_modified
-
-`[sequence_modified:[20120101 TO 20120301]](http://www.uniprot.org/uniprot/?query=sequence_modified:[20120101%20TO%2020120301])  
-  
-[reviewed:yes AND sequence_modified:[current TO *]](http://www.uniprot.org/uniprot/?query=reviewed%3Ayes+AND+sequence_modified%3A[current+TO+*])`
-
-Lists all entries whose sequences were last modified between January and March 2012.  
-  
-Lists all UniProtKB/Swiss-Prot entries whose sequences were modified in the last release.
-
-strain
-
-`[strain:wistar](http://www.uniprot.org/uniprot/?query=strain:wistar)`
-
-Lists all entries containing a reference relevant to strain wistar ([Lists of strains in reference comments](http://www.uniprot.org/docs/strains) and [Taxonomy help: organism strains](http://www.uniprot.org/help/taxonomy#strain)).
-
-taxonomy
-
-`[taxonomy:40674](http://www.uniprot.org/uniprot/?query=taxonomy:40674)`
-
-Lists all entries for proteins expressed in [Mammals](http://www.uniprot.org/taxonomy/40674). This field is used to retrieve entries for all organisms classified below a given taxonomic node ([taxonomy classification](http://www.uniprot.org/help/taxonomy#lineage)).
-
-tissue
-
-`[tissue:liver](http://www.uniprot.org/uniprot/?query=tissue:liver)`
-
-Lists all entries containing a reference describing the protein sequence obtained from a clone isolated from liver ([Controlled vocabulary of tissues](http://www.uniprot.org/docs/tisslist)).
-
-web
-
-`[web:wikipedia](http://www.uniprot.org/uniprot/?query=web:wikipedia)`
-
-Lists all entries for proteins that are described in [Wikipedia](http://wikipedia.org/).
-        
+| Field | Example | Description |
+| --- | --- | --- |
+| accession | `<a href="http://www.uniprot.org/uniprot/?query=accession:P62988" data-index="2">accession:P62988</a>` | Lists all entries with the primary or secondary<br> [accession number](http://www.uniprot.org/manual/accession_numbers) P62988. |
+| active | `<a href="http://www.uniprot.org/uniprot/?query=active:no" data-index="4">active:no</a> ` | Lists all obsolete entries. |
+| annotation | `<br>        <a href="http://www.uniprot.org/uniprot/?query=annotation:(type:non-positional)" data-index="5">annotation:(type:non-positional)</a><br>        <br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=annotation:(type:positional)" data-index="6">annotation:(type:positional)</a><br>        <br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3Amod_res++%22Pyrrolidone+carboxylic+acid%22+evidence%3Aexperimental%29" data-index="7"><br>        annotation:(type:mod_res "Pyrrolidone carboxylic acid" evidence:experimental)<br>        </a><br>      ` | Lists all entries with:<br> <br>- any[general annotation (comments \[CC\])](http://www.uniprot.org/help/general_annotation)<br>- any[sequence annotation (features \[FT\])](http://www.uniprot.org/help/sequence_annotation)<br>- at least one amino acid modified with a Pyrrolidone carboxylic acid group |
+| author | `<br>        <a href="http://www.uniprot.org/uniprot/?query=author:ashburner" data-index="10">author:ashburner</a><br>      ` | Lists all entries with at least one reference co-authored by Michael Ashburner. |
+| cdantigen | `<br>        <a href="http://www.uniprot.org/uniprot/?query=cdantigen:CD233" data-index="11">cdantigen:CD233</a><br>      ` | Lists all entries whose cluster of differentiation number is CD233 (see [cdlist.txt](http://www.uniprot.org/docs/cdlist)). |
+| chebi | `<br>        <a href="http://www.uniprot.org/uniprot/?query=chebi:18420" data-index="13">chebi:18420</a><br>      ` | Lists all entries which are associated with the small molecule corresponding to ChEBI identifier 18420, Mg(2+) (see [How can I search UniProt for chemical or reaction data?](http://www.uniprot.org/help/chemical_data_search)). |
+| citation | `<br>        <a href="http://www.uniprot.org/uniprot/?query=citation%3A%28%22intracellular+structural+proteins%22%29" data-index="15">citation:("intracellular structural proteins")</a><br>        <br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=citation%3A%28author%3Aashburner+journal%3Anature%29" data-index="16">citation:(author:ashburner journal:nature)</a><br>        <a href="http://www.uniprot.org/uniprot/?query=citation%3A9169874" data-index="17">citation:9169874</a><br>      ` | Lists all entries with a [literature citation](http://www.uniprot.org/citations):<br> <br>- containing the phrase "intracellular structural proteins" in either title or abstract<br>- co-authored by Michael Ashburner and published in Nature<br>- with the[PubMed](http://www.ncbi.nlm.nih.gov/pubmed) identifier 9169874 |
+| cluster | `<br>        <a href="http://www.uniprot.org/uniprot/?query=cluster%3a(uniprot%3aA5YMT3+AND+identity%3a0.9)" data-index="20">cluster:(uniprot:A5YMT3 identity:0.9)</a><br>      ` | Lists all entries in the UniRef 90% identity cluster whose<br> representative sequence is UniProtKB entry A5YMT3 ( [about UniRef](http://www.uniprot.org/help/uniref)). |
+| count | `<br>     <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3Atransmem+count%3A5%29" data-index="22">annotation:(type:transmem count:5)</a><br/><br/><br>     <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3Atransmem+count%3A%5B5+TO+*%5D%29" data-index="23">annotation:(type:transmem count:[5 TO *])</a><br/><br/><br>     <a href="http://www.uniprot.org/uniprot/?query=database%3A%28type%3Apdb+count%3A%5B20+TO+*%5D%29" data-index="24">database:(type:pdb count:[20 TO *])</a><br/><br/><br>    ` | Lists all entries with:<br> <br>- exactly 5 transmembrane regions<br>- 5 or more transmembrane regions<br>- 3 or more Cofactor comments<br>- 20 or more cross-references to PDB |
+| created | `<br>        <a href="http://www.uniprot.org/uniprot/?query=created%3A%5B20121001+TO+*%5D" data-index="25">created:[20121001 TO *]</a><br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=reviewed%3Ayes+AND+created%3A%5Bcurrent+TO+*%5D" data-index="26">reviewed:yes AND created:[current TO *]</a><br>      ` | Lists all entries created since October 1st 2012.<br> Lists all new UniProtKB/Swiss-Prot entries in the last release. |
+| database | `<br>        <a href="http://www.uniprot.org/uniprot/?query=database:(type:pfam)" data-index="27">database:(type:pfam)</a><br>        <br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=database:(type:pdb%201aut)" data-index="28">database:(type:pdb 1aut)</a><br>      ` | Lists all entries with:<br> <br>- a cross-reference to the Pfam database<br>- a cross-reference to the PDB database entry 1aut<br> (see [Databases cross-referenced in UniProtKB](http://www.uniprot.org/docs/dbxref) and [Database mapping](http://www.uniprot.org/help/mapping)) |
+| ec | `<br>        <a href="http://www.uniprot.org/uniprot/?query=ec:3.2.1.23" data-index="31">ec:3.2.1.23</a><br>      ` | Lists all beta-galactosidases ( [Enzyme nomenclature database](http://enzyme.expasy.org/)). |
+| evidence | `<br>     <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3Asignal+evidence%3AECO_0000269%29" data-index="33">annotation:(type:signal evidence:ECO_0000269)</a><br/><br/><br>     <a href="http://www.uniprot.org/uniprot/?query=annotation%3A(type%3Amod_res+phosphoserine+evidence%3AECO_0000269)" data-index="34">(type:mod_res phosphoserine evidence:ECO_0000269)</a><br/><br/><br>     <a href="http://www.uniprot.org/uniprot/?query=annotation%3A(type%3Afunction+evidence%3AECO_0000255)" data-index="35">annotation:(type:function AND evidence:ECO_0000255)</a><br>    ` | Lists all entries with:<br> <br>- a signal sequence whose positions have been experimentally proven<br>- experimentally proven phosphoserine sites<br>- a function manually asserted according to rules<br> (see [Evidence attribution](http://www.uniprot.org/help/evidences)) |
+| existence | `<br>        <a href="http://www.uniprot.org/uniprot/?query=existence%3A%22inferred+from+homology%22" data-index="37">existence:"inferred from homology"</a><br>      ` | See [Protein existence criteria](http://www.uniprot.org/docs/pe_criteria). |
+| family | `<br>        <a href="http://www.uniprot.org/uniprot/?query=family:serpin" data-index="39">family:serpin</a><br>      ` | Lists all entries belonging to the Serpin family of proteins ( [Index of protein domains and families](http://www.uniprot.org/docs/similar)). |
+| fragment | `<br>        <a href="http://www.uniprot.org/uniprot/?query=fragment:yes" data-index="41">fragment:yes</a><br>      ` | Lists all entries with an incomplete sequence. |
+| gene | `<br>        <a href="http://www.uniprot.org/uniprot/?query=gene:HPSE" data-index="42">gene:HPSE</a><br>      ` | Lists all entries for proteins encoded by gene HPSE, but also by HPSE2. |
+| gene\_exact | `<br>        <a href="http://www.uniprot.org/uniprot/?query=gene_exact:HPSE" data-index="43">gene_exact:HPSE</a><br>      ` | Lists all entries for proteins encoded by gene HPSE, but excluding variations like HPSE2 or HPSE\_0. |
+| goa | `<br>        <a href="http://www.uniprot.org/uniprot/?query=goa:(cytoskeleton)" data-index="44">goa:(cytoskeleton)</a><br>        <br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=go:0015629" data-index="45">go:0015629</a><br>      ` | Lists all entries associated with:<br> <br>- a GO term containing the word "cytoskeleton"<br>- the GO term Actin cytoskeleton and any subclasses |
+| host | `<br>        <a href="http://www.uniprot.org/uniprot/?query=host:mouse" data-index="46">host:mouse</a><br>        <br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=host:10090" data-index="47">host:10090</a><br>        <br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=host:40674" data-index="48">host:40674</a><br>      ` | Lists all entries for viruses infecting:<br> <br>- organisms with a name containing the word "mouse" (including Arabidopsis thaliana (Mouse-ear cress)!)<br>- Mus musculus (Mouse)<br>- all mammals (all taxa classified under the taxonomy node for Mammalia) |
+| id | `<a href="http://www.uniprot.org/uniprot/?query=id:P00750" data-index="49">id:P00750</a>` | Returns the entry with the primary<br> [accession number](http://www.uniprot.org/manual/accession_numbers) P00750. |
+| inchikey | `<a href="http://www.uniprot.org/uniprot/?query=inchikey:WQZGKKKJIJFFOK-GASJEMHNSA-N" data-index="51">inchikey:WQZGKKKJIJFFOK-GASJEMHNSA-N</a>` | Returns entries associated with the small molecule identified by the [InChIKey](https://en.wikipedia.org/wiki/International_Chemical_Identifier#InChIKey) WQZGKKKJIJFFOK-GASJEMHNSA-N, i.e. D-glucopyranose (see [How can I search UniProt for chemical or reaction data?](http://www.uniprot.org/help/chemical_data_search)) |
+| inn | `<br>        <a href="http://www.uniprot.org/uniprot/?query=inn:Anakinra" data-index="54">inn:Anakinra</a><br>      ` | Lists all entries whose "International Nonproprietary Name" is Anakinra. |
+| interactor | `<br>        <a href="http://www.uniprot.org/uniprot/?query=interactor:P00520" data-index="55">interactor:P00520</a><br>      ` | Lists all entries describing interactions with the protein described by<br> entry P00520. |
+| keyword | `<br>        <a href="http://www.uniprot.org/uniprot/?query=keyword:toxin" data-index="56">keyword:toxin</a><br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=keyword:%22Toxin%20[KW-0800]%22" data-index="57">keyword:"Toxin [KW-0800]"</a><br>      ` | Lists all entries associated with a keyword matching "Toxin" in its name or description ( [UniProtKB Keywords](http://www.uniprot.org/keywords)).<br> Lists all entries associated with the UniProtKB keyword [Toxin](http://www.uniprot.org/keywords/KW-0800). |
+| length | `<br>        <a href="http://www.uniprot.org/uniprot/?query=length%3A%5B500+TO+700%5D" data-index="60">length:[500 TO 700]</a><br>      ` | Lists all entries describing sequences of length between 500 and 700 residues. |
+| lineage |  | This field is a synonym for the field `taxonomy`. |
+| mass | `<br>        <a href="http://www.uniprot.org/uniprot/?query=mass%3A%5B500000+TO+*%5D" data-index="61">mass:[500000 TO *]</a><br>      ` | Lists all entries describing sequences with a mass of at least 500,000 Da. |
+| method | `<br>        <a href="http://www.uniprot.org/uniprot/?query=method:maldi" data-index="62">method:maldi</a><br>        <br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=method:maldi" data-index="63">method:xray</a><br>      ` | Lists all entries for proteins identified by: matrix-assisted laser<br> desorption/ionization (MALDI), crystallography (X-Ray). The<br> `method` field searches names of physico-chemical<br> identification methods in the ['Biophysicochemical properties' subsection](http://www.uniprot.org/help/biophysicochemical_properties) of the ['Function' section](http://www.uniprot.org/help/function_section), the 'Publications' and<br> 'Cross-references' sections. |
+| mnemonic | `<br>        <a href="http://www.uniprot.org/uniprot/?query=mnemonic:ATP6_HUMAN" data-index="66">mnemonic:ATP6_HUMAN</a><br>      ` | Lists all entries with entry name (ID) ATP6\_HUMAN. Searches also<br> obsolete entry names ( [What is the difference between an\<br> accession number (AC) and the entry name?](http://www.uniprot.org/faq/6)). |
+| modified | `<br>        <a href="http://www.uniprot.org/uniprot/?query=modified:[20120101%20TO%2020120301]" data-index="68">modified:[20120101 TO 20120301]</a><br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=reviewed%3Ayes+AND+modified%3A[current+TO+*]" data-index="69">reviewed:yes AND modified:[current TO *]</a><br>      ` | Lists all entries that were last modified between January and March 2012.<br> Lists all UniProtKB/Swiss-Prot entries modified in the last release. |
+| name | `<br>        <a href="http://www.uniprot.org/uniprot/?query=name%3A%22prion+protein%22" data-index="70">name:"prion protein"</a><br>      ` | Lists all entries for prion proteins. |
+| organelle | `<br>        <a href="http://www.uniprot.org/uniprot/?query=organelle:Mitochondrion" data-index="71">organelle:Mitochondrion</a><br>      ` | Lists all entries for proteins encoded by a gene of the mitochondrial<br> chromosome. |
+| organism | `<br>        <a href="http://www.uniprot.org/uniprot/?query=organism%3A%22Ovis+aries%22" data-index="72">organism:"Ovis aries"</a><br>        <br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=organism%3A%22Ovis+aries%22" data-index="73">organism:9940</a><br>        <br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=organism:sheep" data-index="74">organism:sheep</a><br>        <br/><br/><br>      ` | Lists all entries for proteins expressed in sheep (first 2 examples) and<br> organisms whose name contains the term "sheep" ( [UniProt taxonomy](http://www.uniprot.org/taxonomy)). |
+| plasmid | `<br>        <a href="http://www.uniprot.org/uniprot/?query=plasmid:ColE1" data-index="76">plasmid:ColE1</a><br>      ` | Lists all entries for proteins encoded by a gene of plasmid ColE1 ( [Controlled vocabulary of plasmids](http://www.uniprot.org/docs/plasmid)). |
+| proteome | `<br>        <a href="http://www.uniprot.org/uniprot/?query=proteome:UP000005640" data-index="78">proteome:UP000005640</a><br>      ` | Lists all entries from the human [proteome](http://www.uniprot.org/proteomes). |
+| proteomecomponent | `<br>        <a href="http://www.uniprot.org/uniprot/?query=proteomecomponent:%22chromosome%201%22+organism%3A%22Homo+sapiens+%28Human%29+[9606]%22" data-index="80">proteomecomponent:"chromosome 1" and organism:9606</a><br>      ` | Lists all entries from the human chromosome 1. |
+| replaces | `<br>        <a href="http://www.uniprot.org/uniprot/?query=replaces:P02023" data-index="81">replaces:P02023</a><br>      ` | Lists all entries that were created from a merge with entry P02023 ( [see FAQ](http://www.uniprot.org/faq/6)). |
+| reviewed | `<br>        <a href="http://www.uniprot.org/uniprot/?query=reviewed:yes" data-index="83">reviewed:yes</a><br>      ` | Lists all UniProtKB/Swiss-Prot entries ( [about\<br> UniProtKB](http://www.uniprot.org/help/uniprotkb)). |
+| scope | `<br>        <a href="http://www.uniprot.org/uniprot/?query=scope:mutagenesis" data-index="85">scope:mutagenesis</a><br>      ` | Lists all entries containing a reference that was used to gather<br> information about mutagenesis (Entry view: "Cited for", [See\<br> 'Publications' section of the user manual](http://www.uniprot.org/manual/references)). |
+| sequence | `<br>        <a href="http://www.uniprot.org/uniprot/?query=sequence:P05067-9" data-index="87">sequence:P05067-9</a><br>      ` | Lists all entries containing a link to isoform 9 of the sequence<br> described in entry P05067. Allows searching by specific sequence<br> identifier. |
+| sequence\_modified | `<br>        <a href="http://www.uniprot.org/uniprot/?query=sequence_modified:[20120101%20TO%2020120301]" data-index="88">sequence_modified:[20120101 TO 20120301]</a><br/><br/><br>        <a href="http://www.uniprot.org/uniprot/?query=reviewed%3Ayes+AND+sequence_modified%3A[current+TO+*]" data-index="89">reviewed:yes AND sequence_modified:[current TO *]</a><br>      ` | Lists all entries whose sequences were last modified between January and March 2012.<br> Lists all UniProtKB/Swiss-Prot entries whose sequences were modified in the last release. |
+| strain | `<br>        <a href="http://www.uniprot.org/uniprot/?query=strain:wistar" data-index="90">strain:wistar</a><br>      ` | Lists all entries containing a reference relevant to strain wistar ( [Lists of strains in reference comments](http://www.uniprot.org/docs/strains) and [Taxonomy help: organism strains](http://www.uniprot.org/help/taxonomy#strain)). |
+| taxonomy | `<br>        <a href="http://www.uniprot.org/uniprot/?query=taxonomy:40674" data-index="93">taxonomy:40674</a><br>      ` | Lists all entries for proteins expressed in [Mammals](http://www.uniprot.org/taxonomy/40674). This field is used to retrieve<br> entries for all organisms classified below a given taxonomic node ( [taxonomy classification](http://www.uniprot.org/help/taxonomy#lineage)). |
+| tissue | `<br>        <a href="http://www.uniprot.org/uniprot/?query=tissue:liver" data-index="96">tissue:liver</a><br>      ` | Lists all entries containing a reference describing the protein sequence<br> obtained from a clone isolated from liver ( [Controlled vocabulary of tissues](http://www.uniprot.org/docs/tisslist)). |
+| web | `<br>        <a href="http://www.uniprot.org/uniprot/?query=web:wikipedia" data-index="98">web:wikipedia</a><br>      ` | Lists all entries for proteins that are described in [Wikipedia](http://wikipedia.org/). |

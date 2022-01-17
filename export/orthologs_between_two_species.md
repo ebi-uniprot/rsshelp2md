@@ -1,4 +1,3 @@
-
 ---
 title: Is there a download file available where all UniProt IDs from X.laevis are matched to their human equivalents (homologs)? How can I obtain an ortholog mapping of human proteins to S.pombe proteins?
 categories: UniProtKB,Text_search,Cross-references,Taxonomy,faq
@@ -24,11 +23,10 @@ Once you are happy with the view, click on "Download" and select the tab-separat
 
 If you want to sort on the OrthoDB identifiers instead, this cannot be done via the web interface, but once you have downloaded the file, you can open it in Excel and sort there.
 
-See also:  
-  
-[How is orthology established in UniProtKB/Swiss-Prot?](http://www.uniprot.org/faq/39)  
-  
-[List of phylogenomic databases cross-referenced in UniProtKB](http://www.uniprot.org/database/?query=category:%22Phylogenomic+databases%22)  
-  
+See also:
+
+[How is orthology established in UniProtKB/Swiss-Prot?](http://www.uniprot.org/faq/39)
+
+[List of phylogenomic databases cross-referenced in UniProtKB](http://www.uniprot.org/database/?query=category:%22Phylogenomic+databases%22)
+
 [Customize display options](http://www.uniprot.org/help/customize)
-        

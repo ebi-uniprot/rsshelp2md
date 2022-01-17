@@ -1,4 +1,3 @@
-
 ---
 title: Subunit structure
 categories: Interaction,manual
@@ -8,8 +7,8 @@ This subsection of the ['Interaction'](http://www.uniprot.org/help/interaction%5
 
 ### 1\. Quaternary structure
 
-The composition of the quaternary structure is explicitly described. Chains or subunits are cited either specifically with gene names or in a generic way if there are a number of interchangeable participants.  
-  
+The composition of the quaternary structure is explicitly described. Chains or subunits are cited either specifically with gene names or in a generic way if there are a number of interchangeable participants.
+
 Examples: [P83448](http://www.uniprot.org/uniprot/P83448#interaction), [P57530](http://www.uniprot.org/uniprot/P57530#interaction), [P32323](http://www.uniprot.org/uniprot/P32323#interaction)
 
 ### 2\. Protein-protein interactions
@@ -24,21 +23,20 @@ Examples: [Q9Y3D6](http://www.uniprot.org/uniprot/Q9Y3D6#interaction), [O60239](
 
 ### 3\. Host-pathogen protein-protein interactions
 
-For interactions with viral proteins, the viral gene name is preceded by an indication of its viral origin, typically the virus name abbreviation from the '[Organism](http://www.uniprot.org/manual/organism-name)' section.  
-  
+For interactions with viral proteins, the viral gene name is preceded by an indication of its viral origin, typically the virus name abbreviation from the ' [Organism](http://www.uniprot.org/manual/organism-name)' section.
+
 Example: [O60238](http://www.uniprot.org/uniprot/O60238#interaction)
 
 Related keyword: [Host-virus interaction](http://www.uniprot.org/keywords/945)
 
 ### 4\. Protein-complex interactions
 
-Stable complexes are described with a list of all known participating subunits, including the protein is described in the entry.  
-  
+Stable complexes are described with a list of all known participating subunits, including the protein is described in the entry.
+
 Examples: [Q13098](http://www.uniprot.org/uniprot/Q13098#interaction), [Q6P2C8](http://www.uniprot.org/uniprot/Q6P2C8#interaction)
 
 Interactions can be propagated ['By similarity'](http://www.uniprot.org/help/evidences#ECO:0000250) to closely related species.
 
-See also:  
-  
+See also:
+
 [Understanding protein complexes with UniProtKB and the Complex Portal (UniProt Blog)](https://insideuniprot.blogspot.com/2020/02/understanding%2Dprotein%2Dcomplexes%2Dwith.html)
-        

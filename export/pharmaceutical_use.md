@@ -1,4 +1,3 @@
-
 ---
 title: Pharmaceutical use
 categories: Pathology_and_biotech,manual
@@ -13,4 +12,3 @@ Related keyword: [Pharmaceutical](http://www.uniprot.org/keywords/582)
 #### Related document
 
 [Where can I buy protein X? Which company sells protein Y? Where can I buy strain Z?](http://www.uniprot.org/faq/29)
-        

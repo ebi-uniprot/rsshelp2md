@@ -1,4 +1,3 @@
-
 ---
 title: Disruption phenotype
 categories: Pathology_and_biotech,manual
@@ -11,4 +10,3 @@ This subsection contains information on null mutants caused by random or targete
 Example: [Q8K1M6](http://www.uniprot.org/uniprot/Q8K1M6#pathology%5Fand%5Fbiotech)
 
 To avoid description of phenotypes due to partial or dominant negative mutants, missense mutations are not described in this subsection, but in the "Mutagenesis:"/manual/mutagen" subsection.
-        

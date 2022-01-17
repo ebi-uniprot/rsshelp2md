@@ -1,4 +1,3 @@
-
 ---
 title: I would like to test the performance of a sequence-based prediction method: Can I use UniProt to build a negative data set?
 categories: UniProtKB,Text_search,Non-experimental_qualifiers,Sequence,Biocuration,faq
@@ -14,9 +13,8 @@ In order to obtain a reliable predictor, we recommend to be extremely conservati
 
 See also:
 
-*   [Evidence attribution](http://www.uniprot.org/manual/evidences)
-*   [Modified residue](http://www.uniprot.org/manual/mod%5Fres)
-*   [How do we manually annotate a UniProtKB entry?](http://www.uniprot.org/faq/45)
-*   [How to retrieve sets of protein sequences?](http://www.uniprot.org/faq/38)
-*   [Release cycle, synchronization issues and archival of previous releases](http://www.uniprot.org/help/synchronization)
-        
+- [Evidence attribution](http://www.uniprot.org/manual/evidences)
+- [Modified residue](http://www.uniprot.org/manual/mod%5Fres)
+- [How do we manually annotate a UniProtKB entry?](http://www.uniprot.org/faq/45)
+- [How to retrieve sets of protein sequences?](http://www.uniprot.org/faq/38)
+- [Release cycle, synchronization issues and archival of previous releases](http://www.uniprot.org/help/synchronization)

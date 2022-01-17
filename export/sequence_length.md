@@ -1,4 +1,3 @@
-
 ---
 title: Sequence length
 categories: Sequence,manual
@@ -9,4 +8,3 @@ This indicates the number of amino acids in the canonical sequence displayed by 
 #### Related document
 
 [What is the canonical sequence? Are all isoforms described in one entry? How can I retrieve them?](http://www.uniprot.org/faq/30)
-        

@@ -1,4 +1,3 @@
-
 ---
 title: How can I get medical advice from UniProtKB?
 categories: UniProtKB,Text_search,Pathology_and_biotech,faq
@@ -10,7 +9,7 @@ UniProtKB/Swiss-Prot contains a limited amount of **information concerning genet
 
 see:
 
-*   [How can I get all the proteins involved in a given disease?](http://www.uniprot.org/faq/19)
+- [How can I get all the proteins involved in a given disease?](http://www.uniprot.org/faq/19)
 
 Much more information on diseases is available from the [OMIM database](http://www.omim.org/).
 
@@ -18,9 +17,8 @@ In case you are interested in a "rare" genetic disease you can look up the [Orph
 
 In addition, the following sites may be of help as they offer a variety of links to information sources on medical topics:
 
-*   [HON - The Health On the Net foundation server](http://www.hon.ch/)
-*   [MedicineNet - Medical Reference Site](http://www.medicinenet.com/)
-*   [MedSite Navigator - Medical and Biotech site](http://www.medsitenavigator.com/)
-*   [Medline Plus: NLM list of resources for health questions](http://medlineplus.nlm.nih.gov/medlineplus/)
-*   [The Medical Reference Resource Library](http://www.guidetohealthcareschools.com/library/medical%2Dreference)
-        
+- [HON - The Health On the Net foundation server](http://www.hon.ch/)
+- [MedicineNet - Medical Reference Site](http://www.medicinenet.com/)
+- [MedSite Navigator - Medical and Biotech site](http://www.medsitenavigator.com/)
+- [Medline Plus: NLM list of resources for health questions](http://medlineplus.nlm.nih.gov/medlineplus/)
+- [The Medical Reference Resource Library](http://www.guidetohealthcareschools.com/library/medical%2Dreference)

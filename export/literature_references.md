@@ -1,4 +1,3 @@
-
 ---
 title: On what basis are literature references inserted in UniProtKB/Swiss-Prot entries?
 categories: UniProtKB,Publications,Biocuration,faq
@@ -16,13 +15,14 @@ See for example: [P02768](http://www.uniprot.org/uniprot/P02768/publications) .
 
 In the flat file format, these are some of the scopes of the references in the P02768 entry:
 
-RP   NUCLEOTIDE SEQUENCE \[MRNA\] (ISOFORM 1), AND VARIANT LYS-420.
+```
+RP   NUCLEOTIDE SEQUENCE [MRNA] (ISOFORM 1), AND VARIANT LYS-420.
     ...
-    RP   NUCLEOTIDE SEQUENCE \[GENOMIC DNA\].
+    RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
     ...
-    RP   NUCLEOTIDE SEQUENCE \[LARGE SCALE MRNA\] (ISOFORMS 1 AND 2).
+    RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORMS 1 AND 2).
     ...
-    RP   NUCLEOTIDE SEQUENCE \[LARGE SCALE GENOMIC DNA\].
+    RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
     ...
     RP   PROTEIN SEQUENCE OF 25-609.
     ...
@@ -48,6 +48,8 @@ RP   NUCLEOTIDE SEQUENCE \[MRNA\] (ISOFORM 1), AND VARIANT LYS-420.
     RP   VARIANT TYR-73, AND MASS SPECTROMETRY.
     RP   CHARACTERIZATION OF VARIANT KENITRA.
 
+```
+
 In order to keep up with the explosive growth of literature and to give our users access to additional publications, we decided to integrate additional sources of literature from other annotated databases into UniProtKB, such as Entrez Gene (GeneRIFs), SGD, MGI, GAD and PDB. This additional bibliography is available from the 'Publications' section, e.g. [P03875](http://www.uniprot.org/uniprot/P03875/publications) .
 
 If you see that a (or your) publication is missing, do not hesitate to [contact us](http://www.uniprot.org/contact) .
@@ -64,6 +66,5 @@ Example: [Kuopio ischaemic heart disease risk factor study](http://www.uniprot.o
 
 See also:
 
-*   [How do we manually annotate a UniProtKB entry?](http://www.uniprot.org/faq/45)
-*   [References](http://www.uniprot.org/manual/references)
-        
+- [How do we manually annotate a UniProtKB entry?](http://www.uniprot.org/faq/45)
+- [References](http://www.uniprot.org/manual/references)

@@ -1,4 +1,3 @@
-
 ---
 title: UniProtKB filter options
 categories: UniProtKB,Text_search,Website,help
@@ -26,13 +25,12 @@ If you have performed a full text search and your search terms can be found in o
 
 #### Notes
 
-*   An active filter is graphically highlighted in the filter panel.
+- An active filter is graphically highlighted in the filter panel.
 
-*   All the filters described here can be un-selected by clicking on the cross to their right.
+- All the filters described here can be un-selected by clicking on the cross to their right.
 
-*   Only filters which are valid for your search results will appear. For example, if the search term is not found in the gene name of any of your results, the gene name filter will not appear.
+- Only filters which are valid for your search results will appear. For example, if the search term is not found in the gene name of any of your results, the gene name filter will not appear.
 
-*   Only filters which would further narrow down your search results will appear. For example, in a full text search with [polytrichum commune](http://www.uniprot.org/uniprot/?query=polytrichum%20commune), the result only contains entries from the organism [Polytrichum commune (Haircap moss)](http://www.uniprot.org/taxonomy/3213) and there will not be a filter to restrict the terms to the organism field.
+- Only filters which would further narrow down your search results will appear. For example, in a full text search with[polytrichum commune](http://www.uniprot.org/uniprot/?query=polytrichum%20commune), the result only contains entries from the organism [Polytrichum commune (Haircap moss)](http://www.uniprot.org/taxonomy/3213) and there will not be a filter to restrict the terms to the organism field.
 
 [UniProtKB tutorial/video](https://www.youtube.com/watch?v=ado1r8IDm3U)
-        

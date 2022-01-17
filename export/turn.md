@@ -1,4 +1,3 @@
-
 ---
 title: Turn
 categories: 3D_structure,manual
@@ -10,7 +9,6 @@ In UniProtKB the positions of hydrogen-bonded turns are neither predicted by com
 
 See also:
 
-[Helix](http://www.uniprot.org/help/helix)  
-  
+[Helix](http://www.uniprot.org/help/helix)
+
 [Beta strand](http://www.uniprot.org/help/strand)
-        

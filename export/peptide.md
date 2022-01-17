@@ -1,4 +1,3 @@
-
 ---
 title: Peptide
 categories: PTM_processing,manual
@@ -12,15 +11,14 @@ The processing events that may contribute to the formation of a mature peptide a
 
 The 'Description' field of each 'Peptide' corresponds to the peptide name listed in the ['Protein name'](http://www.uniprot.org/manual/protein%5Fname) subsection, under the heading "Cleaved into the following x chains:", where 'x' represents the number of chains described in the 'PTM/Processing' section.
 
-There can be more than one 'Peptide' subsection per protein entry.  
-  
+There can be more than one 'Peptide' subsection per protein entry.
+
 Example: [Q9SE35](http://www.uniprot.org/uniprot/Q9SE35#ptm%5Fprocessing)
 
 Each peptide has a [stable identifier](http://www.uniprot.org/help/sequence%5Fannotation#annotation%5Fid).
 
 See also:
 
-*   [Chain (describing polypeptidic protein chains)](http://www.uniprot.org/manual/chain)
-*   [Evidence](http://www.uniprot.org/help/evidences)
-*   [Sequence annotation (features)](http://www.uniprot.org/help/sequence%5Fannotation)
-        
+- [Chain (describing polypeptidic protein chains)](http://www.uniprot.org/manual/chain)
+- [Evidence](http://www.uniprot.org/help/evidences)
+- [Sequence annotation (features)](http://www.uniprot.org/help/sequence%5Fannotation)

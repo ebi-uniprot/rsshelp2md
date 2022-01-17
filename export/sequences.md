@@ -1,4 +1,3 @@
-
 ---
 title: Sequences
 categories: Sequence,manual
@@ -20,8 +19,8 @@ References:
 
 [IUPAC-IUBMB Joint Commission on Biochemical Nomenclature (JCBN) and Nomenclature Committee of IUBMB (NC-IUBMB), newsletter 1999](http://dx.doi.org/doi:10.1046/j.1432-1327.1999.news99.x)
 
-Press W.H., Flannery B.P., Teukolsky S.A., Vetterling W.T.  
-  
+Press W.H., Flannery B.P., Teukolsky S.A., Vetterling W.T.
+
 ["Numerical recipes in C", 2nd ed., pp896-902, Cambridge University Press (1993)](http://www.nrbook.com/a/bookcpdf.php)
 
 #### Related documents
@@ -37,4 +36,3 @@ Press W.H., Flannery B.P., Teukolsky S.A., Vetterling W.T.
 [How do I get the nucleotide sequence that corresponds to the canonical UniProtKB sequence?](http://www.uniprot.org/faq/35)
 
 [How to retrieve a complete set of protein sequences?](http://www.uniprot.org/faq/38)
-        

@@ -1,4 +1,3 @@
-
 ---
 title: Sequence similarities
 categories: Family_and_domains,manual
@@ -20,9 +19,8 @@ Example: [P40939](http://www.uniprot.org/uniprot/P40939#family_and_domains), [O7
 
 #### Related documents
 
-[Index of protein families](http://www.uniprot.org/docs/similar)  
-  
-[How is orthology established in UniProtKB/Swiss-Prot?](http://www.uniprot.org/faq/39)  
-  
+[Index of protein families](http://www.uniprot.org/docs/similar)
+
+[How is orthology established in UniProtKB/Swiss-Prot?](http://www.uniprot.org/faq/39)
+
 [How is protein family membership assigned in UniProtKB?](http://www.uniprot.org/faq/41)
-        

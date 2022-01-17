@@ -1,4 +1,3 @@
-
 ---
 title: Region
 categories: Family_and_domains,manual
@@ -12,13 +11,12 @@ Examples: [Q8CJF7](http://www.uniprot.org/uniprot/Q8CJF7#family_and_domains), [P
 
 See also:
 
-[DNA binding](http://www.uniprot.org/help/dna%5Fbind)  
-  
-[Domain](http://www.uniprot.org/help/domain)  
-  
-[Motif](http://www.uniprot.org/help/motif)  
-  
-[Repeat](http://www.uniprot.org/help/repeat)  
-  
+[DNA binding](http://www.uniprot.org/help/dna%5Fbind)
+
+[Domain](http://www.uniprot.org/help/domain)
+
+[Motif](http://www.uniprot.org/help/motif)
+
+[Repeat](http://www.uniprot.org/help/repeat)
+
 [Zinc finger](http://www.uniprot.org/help/zn%5Ffing)
-        

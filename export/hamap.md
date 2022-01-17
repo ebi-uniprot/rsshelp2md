@@ -1,4 +1,3 @@
-
 ---
 title: What is HAMAP?
 categories: UniProtKB,Family_and_domains,Automatic_annotation,faq
@@ -12,6 +11,5 @@ More information on the [HAMAP website](http://hamap.expasy.org/).
 
 See also:
 
-*   [How is orthology established in UniProtKB/Swiss-Prot?](http://www.uniprot.org/faq/39)
-*   [How is protein family membership assigned in UniProtKB?](http://www.uniprot.org/faq/41)
-        
+- [How is orthology established in UniProtKB/Swiss-Prot?](http://www.uniprot.org/faq/39)
+- [How is protein family membership assigned in UniProtKB?](http://www.uniprot.org/faq/41)

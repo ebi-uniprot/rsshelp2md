@@ -1,4 +1,3 @@
-
 ---
 title: Entry history
 categories: Entry_information,manual
@@ -21,4 +20,3 @@ A comprehensive archive of UniProtKB/Swiss-Prot and UniProtKB/TrEMBL entry versi
 [How do I get notified automatically of updates to UniProtKB?](http://www.uniprot.org/faq/20)
 
 [When was sequence Xxxx entered in UniProtKB/Swiss-Prot?](http://www.uniprot.org/faq/36)
-        

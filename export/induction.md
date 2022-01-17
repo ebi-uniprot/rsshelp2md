@@ -1,4 +1,3 @@
-
 ---
 title: Induction
 categories: Expression,manual
@@ -12,5 +11,4 @@ Transcriptional regulation by transcription factors or repressors is only rarely
 
 Example: [Q59385](http://www.uniprot.org/uniprot/Q59385#expression)
 
-This subsection does not describe the regulation of activity, which can be found in the subsection '[Activity regulation](http://www.uniprot.org/manual/activity_regulation)' for enzymes, transporters and microbial transcription factors, and in other subsections, such as '[Function](http://www.uniprot.org/manual/function)'.
-        
+This subsection does not describe the regulation of activity, which can be found in the subsection ' [Activity regulation](http://www.uniprot.org/manual/activity_regulation)' for enzymes, transporters and microbial transcription factors, and in other subsections, such as ' [Function](http://www.uniprot.org/manual/function)'.

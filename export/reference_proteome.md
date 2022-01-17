@@ -1,4 +1,3 @@
-
 ---
 title: What are reference proteomes?
 categories: Proteomes,Taxonomy,UniProtKB,Keywords,Sequence,faq
@@ -22,9 +21,8 @@ UniProtKB entries from these reference proteomes are tagged with the keyword [Re
 
 See also:
 
-[What are proteomes?](http://www.uniprot.org/help/proteome)  
-  
-[Search and browse proteomes](http://www.uniprot.org/proteomes)  
-  
+[What are proteomes?](http://www.uniprot.org/help/proteome)
+
+[Search and browse proteomes](http://www.uniprot.org/proteomes)
+
 [List of UniProtKB reference proteomes](http://www.uniprot.org/proteomes/?query=reference:yes)
-        

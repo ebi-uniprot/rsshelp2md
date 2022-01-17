@@ -1,4 +1,3 @@
-
 ---
 title: Automatic gene-centric isoform mapping for eukaryotic reference proteome entries
 categories: help
@@ -12,10 +11,9 @@ A single gene can code for multiple proteins through biological events such as [
 
 See also:
 
-*   [Why is UniProtKB composed of 2 sections, UniProtKB/Swiss-Prot and UniProtKB/TrEMBL?](http://www.uniprot.org/help/uniprotkb%5Fsections)
-*   [How do we manually annotate a UniProtKB entry?](http://www.uniprot.org/faq/45)
-*   [What is the canonical sequence? Are all isoforms described in one entry?](http://www.uniprot.org/faq/30)
-*   [What are reference proteomes?](http://www.uniprot.org/faq/47)
-*   [Sequences](http://www.uniprot.org/manual/sequences)
-*   [Alternative products](http://www.uniprot.org/manual/alternative%5Fproducts)
-        
+- [Why is UniProtKB composed of 2 sections, UniProtKB/Swiss-Prot and UniProtKB/TrEMBL?](http://www.uniprot.org/help/uniprotkb%5Fsections)
+- [How do we manually annotate a UniProtKB entry?](http://www.uniprot.org/faq/45)
+- [What is the canonical sequence? Are all isoforms described in one entry?](http://www.uniprot.org/faq/30)
+- [What are reference proteomes?](http://www.uniprot.org/faq/47)
+- [Sequences](http://www.uniprot.org/manual/sequences)
+- [Alternative products](http://www.uniprot.org/manual/alternative%5Fproducts)

@@ -1,4 +1,3 @@
-
 ---
 title: Repeat
 categories: Family_and_domains,manual
@@ -10,16 +9,16 @@ Repeats vary from short amino acid repetitions, such as the polyglutamine tracts
 
 ### 1\. Annotation of specific repeated sequence motifs
 
-Certain repeats may be restricted to, or typical of, a specific protein or protein family. When these repeats have a specific name, that name is applied to each such repeat:  
-  
+Certain repeats may be restricted to, or typical of, a specific protein or protein family. When these repeats have a specific name, that name is applied to each such repeat:
+
 Examples: [Q03763](http://www.uniprot.org/uniprot/Q03763#family%5Fand%5Fdomains), [P20811](http://www.uniprot.org/uniprot/P20811#family%5Fand%5Fdomains)
 
-When no standard name exists, the ['Region'](http://www.uniprot.org/manual/region) subsection is used to describe the region containing all the repeats and, when possible, the pattern of the repeat. The 'Repeat' subsection is then used simply to specify the number and position of each such repeat.  
-  
+When no standard name exists, the ['Region'](http://www.uniprot.org/manual/region) subsection is used to describe the region containing all the repeats and, when possible, the pattern of the repeat. The 'Repeat' subsection is then used simply to specify the number and position of each such repeat.
+
 Example: [Q96NY7](http://www.uniprot.org/uniprot/Q96NY7#family%5Fand%5Fdomains)
 
-_Conventions_: We define repeats as 'half-length' or 'truncated' when appropriate and as 'approximate', 'degenerate' or 'atypical' when they deviate significantly from the consensus sequence. We also omit the position of each individual repeat when they are extremely abundant.  
-  
+_Conventions_: We define repeats as 'half-length' or 'truncated' when appropriate and as 'approximate', 'degenerate' or 'atypical' when they deviate significantly from the consensus sequence. We also omit the position of each individual repeat when they are extremely abundant.
+
 Examples: [P15497](http://www.uniprot.org/uniprot/P15497#family%5Fand%5Fdomains), [P38479](http://www.uniprot.org/uniprot/P38479#family%5Fand%5Fdomains), [P15305](http://www.uniprot.org/uniprot/P15305#family%5Fand%5Fdomains)
 
 ### 2\. Annotation of predicted repeats
@@ -28,15 +27,14 @@ A large number of repeated domains have been modelled by InterPro and by the REP
 
 See also:
 
-[Evidence](http://www.uniprot.org/manual/evidences)  
-  
-[DNA binding](http://www.uniprot.org/help/dna%5Fbind)  
-  
-[Domain](http://www.uniprot.org/help/domain)  
-  
-[Motif](http://www.uniprot.org/help/motif)  
-  
-[Region](http://www.uniprot.org/help/region)  
-  
+[Evidence](http://www.uniprot.org/manual/evidences)
+
+[DNA binding](http://www.uniprot.org/help/dna%5Fbind)
+
+[Domain](http://www.uniprot.org/help/domain)
+
+[Motif](http://www.uniprot.org/help/motif)
+
+[Region](http://www.uniprot.org/help/region)
+
 [Zinc finger](http://www.uniprot.org/help/zn%5Ffing)
-        

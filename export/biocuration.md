@@ -1,4 +1,3 @@
-
 ---
 title: Biocuration in UniProt
 categories: Biocuration,Automatic_annotation,UniProtKB,help
@@ -12,12 +11,12 @@ One of the central activities of the UniProt Consortium is the biocuration of th
 
 Manual curation consists of a critical review of experimental and predicted data for each protein as well as manual verification of each protein sequence. Curation methods applied to UniProtKB/Swiss-Prot include manual extraction and structuring of information from the literature, manual verification of results from computational analyses, mining and integration of large-scale data sets, and continuous updating as new information becomes available.
 
-See also:  
-  
-[How do we manually annotate a UniProtKB entry](http://www.uniprot.org/help/manual%5Fcuration)  
-  
-[Standard operating procedure (SOP) for UniProt manual curation](http://www.uniprot.org/docs/sop%5Fmanual%5Fcuration.pdf)  
-  
+See also:
+
+[How do we manually annotate a UniProtKB entry](http://www.uniprot.org/help/manual%5Fcuration)
+
+[Standard operating procedure (SOP) for UniProt manual curation](http://www.uniprot.org/docs/sop%5Fmanual%5Fcuration.pdf)
+
 [Manual curation priorities and projects](http://www.uniprot.org/help/?fil=section:biocuration)
 
 #### UniProt automatic annotation
@@ -27,4 +26,3 @@ UniProt has developed two complementary approaches to automatically annotate pro
 #### UniProt annotation flow diagram
 
 ![UniProt annotation flow diagram](http://www.uniprot.org/images/annotation.png)
-        

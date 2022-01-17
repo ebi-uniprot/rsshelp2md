@@ -1,4 +1,3 @@
-
 ---
 title: Toxic dose
 categories: Pathology_and_biotech,manual
@@ -10,7 +9,6 @@ LD(50) is the amount of a toxin, given all at once, which causes the death of 50
 
 Examples: [Q86LR2](http://www.uniprot.org/uniprot/Q86LR2#pathology_and_biotech), [P13208](http://www.uniprot.org/uniprot/P13208#pathology_and_biotech), [P17727](http://www.uniprot.org/uniprot/P17727#pathology_and_biotech), [P60276](http://www.uniprot.org/uniprot/P60276#pathology_and_biotech), [P49126](http://www.uniprot.org/uniprot/P49126#pathology_and_biotech), [P69835](http://www.uniprot.org/uniprot/P69835#pathology_and_biotech)
 
-In order to facilitate the interpretation of information, we describe the mode of toxin delivery (such as intraperitoneal, intravenous, intramuscular, subcutaneous, intracerebroventricular, intracranial or intraabdominal injection) and the test species used.  
-  
+In order to facilitate the interpretation of information, we describe the mode of toxin delivery (such as intraperitoneal, intravenous, intramuscular, subcutaneous, intracerebroventricular, intracranial or intraabdominal injection) and the test species used.
+
 Example: [P55902](http://www.uniprot.org/uniprot/P55902#pathology%5Fand%5Fbiotech)
-        

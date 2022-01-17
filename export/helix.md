@@ -1,4 +1,3 @@
-
 ---
 title: Helix
 categories: 3D_structure,manual
@@ -12,7 +11,6 @@ In UniProtKB, the positions of helical regions are neither predicted by computat
 
 See also:
 
-[Turn](http://www.uniprot.org/help/turn)  
-  
+[Turn](http://www.uniprot.org/help/turn)
+
 [Beta strand](http://www.uniprot.org/help/strand)
-        

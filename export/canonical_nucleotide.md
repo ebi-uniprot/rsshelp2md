@@ -1,4 +1,3 @@
-
 ---
 title: How do I get the nucleotide sequence that corresponds to the canonical UniProtKB sequence?
 categories: UniProtKB,Sequence,Cross-references,Text_search,faq
@@ -26,11 +25,10 @@ However, some of the resources to which we link contain information that is spec
 
 See also:
 
-*   [What is the canonical sequence? Are all isoforms described in one entry?](http://www.uniprot.org/faq/30)
-*   [How redundant are the UniProt databases?](http://www.uniprot.org/faq/33)
-*   [Sequences](http://www.uniprot.org/manual/sequences)
-*   [Alternative sequence](http://www.uniprot.org/manual/var%5Fseq)
-*   [Sequence conflict](http://www.uniprot.org/manual/conflict)
-*   [Cross-references section](http://www.uniprot.org/help/cross%5Freferences%5Fsection)
-*   [Cross-references for isoform sequences](http://www.uniprot.org/help/isoform%5Fcrossreferences)
-        
+- [What is the canonical sequence? Are all isoforms described in one entry?](http://www.uniprot.org/faq/30)
+- [How redundant are the UniProt databases?](http://www.uniprot.org/faq/33)
+- [Sequences](http://www.uniprot.org/manual/sequences)
+- [Alternative sequence](http://www.uniprot.org/manual/var%5Fseq)
+- [Sequence conflict](http://www.uniprot.org/manual/conflict)
+- [Cross-references section](http://www.uniprot.org/help/cross%5Freferences%5Fsection)
+- [Cross-references for isoform sequences](http://www.uniprot.org/help/isoform%5Fcrossreferences)

@@ -1,4 +1,3 @@
-
 ---
 title: Chordata protein annotation project
 categories: biocuration,project
@@ -18,15 +17,14 @@ To this aim, we are updating sequences which show discrepancies with those predi
 
 We also continuously update human entries with functional annotation, including novel structural, post-translational modification, interaction and enzymatic activity data. In order to identify candidates for re-annotation, we use, among others, information extraction tools such as the [STRING database](http://string.embl.de/). In addition, we regularly add new sequence variants and maintain disease information. Indeed, this annotation project includes the Variation Annotation project, the goal of which is to annotate all known human genetic diseases and disease-linked protein variants, as well as neutral polymorphisms.
 
-*   All manually reviewed human entries can be found [here](http://www.uniprot.org/uniprot/?query=organism:9606+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Chordata/statistics/#Homosapiens)
+- All manually reviewed human entries can be found[here](http://www.uniprot.org/uniprot/?query=organism:9606+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Chordata/statistics/#Homosapiens)
 
 ### Annotation of other mammalian and chordata proteins
 
 In addition to the review of the human proteome, other mammalian and non-mammalian chordata proteins are increasingly being manually annotated with special emphasis on species such as _Xenopus laevis_, _Xenopus tropicalis_ and _Danio rerio_ (Zebrafish) which are important model organisms for studying embryonic development and cell biology. We work in close collaboration with species-specific resources and model organism databases, such as [HGNC](http://www.genenames.org/), [MGI](http://www.informatics.jax.org/), [RGD](http://rgd.mcw.edu/), [Zfin](http://zfin.org/) and [Xenbase](http://www.xenbase.org/), to ensure consistency between UniProt and these resources.
 
-*   All manually reviewed mouse entries can be found [here](http://www.uniprot.org/uniprot/?query=organism:10090+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Chordata/statistics/#Musmusculus)
-*   All manually reviewed rat entries can be found [here](http://www.uniprot.org/uniprot/?query=organism:10116+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Chordata/statistics/#Rattusnorvegicus)
-*   All manually reviewed _Xenopus laevis_ entries can be found [here](http://www.uniprot.org/uniprot/?query=organism:8355+AND+reviewed:yes)
-*   All manually reviewed _Xenopus tropicalis_ entries can be found [here](http://www.uniprot.org/uniprot/?query=organism:8364+AND+reviewed:yes)
-*   All manually reviewed _Danio rerio_ (Zebrafish) entries can be found [here](http://www.uniprot.org/uniprot/?query=organism:7955+AND+reviewed:yes)
-        
+- All manually reviewed mouse entries can be found[here](http://www.uniprot.org/uniprot/?query=organism:10090+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Chordata/statistics/#Musmusculus)
+- All manually reviewed rat entries can be found[here](http://www.uniprot.org/uniprot/?query=organism:10116+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Chordata/statistics/#Rattusnorvegicus)
+- All manually reviewed_Xenopus laevis_ entries can be found [here](http://www.uniprot.org/uniprot/?query=organism:8355+AND+reviewed:yes)
+- All manually reviewed_Xenopus tropicalis_ entries can be found [here](http://www.uniprot.org/uniprot/?query=organism:8364+AND+reviewed:yes)
+- All manually reviewed_Danio rerio_ (Zebrafish) entries can be found [here](http://www.uniprot.org/uniprot/?query=organism:7955+AND+reviewed:yes)

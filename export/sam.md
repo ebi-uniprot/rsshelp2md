@@ -1,4 +1,3 @@
-
 ---
 title: SAM - Sequence Analysis Methods for automatic annotation of unreviewed entries
 categories: help
@@ -10,11 +9,11 @@ UniProt's [Automatic Annotation pipeline](http://www.uniprot.org/help/automatic%
 
 Predictions of sequence features such as [Signal](http://www.uniprot.org/help/signal), [Transmembrane](http://www.uniprot.org/help/transmem), [Coiled coil](http://www.uniprot.org/help/coiled) and [intrinsically disordered](https://en.wikipedia.org/wiki/Intrinsically%5Fdisordered%5Fproteins) regions (the latter described in [Region](http://www.uniprot.org/help/region) and [Compositional bias](http://www.uniprot.org/help/compbias) annotations) are generated using the following software from external providers:
 
-*   [TMHMM](http://www.cbs.dtu.dk/services/TMHMM/)
-*   [SignalP](http://www.cbs.dtu.dk/services/SignalP/)
-*   [Phobius](http://phobius.sbc.su.se/)
-*   [Coils](http://embnet.vital/%2Dit.ch/software/COILS%5Fform.html)
-*   [MobiDB-lite](http://protein.bio.unipd.it/mobidblite/)
+- [TMHMM](http://www.cbs.dtu.dk/services/TMHMM/)
+- [SignalP](http://www.cbs.dtu.dk/services/SignalP/)
+- [Phobius](http://phobius.sbc.su.se/)
+- [Coils](http://embnet.vital/%2Dit.ch/software/COILS%5Fform.html)
+- [MobiDB-lite](http://protein.bio.unipd.it/mobidblite/)
 
 These methods are applied to UniProtKB sequences by [InterPro](http://www.ebi.ac.uk/interpro) to predict sequence features. More annotations (mainly [keywords](http://www.uniprot.org/help/keywords)) are then added automatically to enrich the generated predictions. The new predictions are propagated to all the UniProtKB/TrEMBL records that do not already contain such feature predictions from the [UniRule](http://www.uniprot.org/help/unirule) automatic annotation system.
 
@@ -30,12 +29,12 @@ TMHMM and Phobius predictors are used to infer transmembrane regions. If there i
 
 #### Signal peptide
 
-TMHMM, SignalP and Phobius predictors are used to infer signal peptides. If there is a prediction from SignalP and none from TMHMM in the same range, the signal peptide is annotated.  
-  
-If SignalP and Phobius both predict a signal peptide, then it is annotated.  
-  
-When predicted N-terminal signal peptides (as predicted by SignalP) and transmembrane regions (as predicted by TMHMM) overlap, then the prediction returned by Phobius is used to discriminate between the two possibilities.  
-  
+TMHMM, SignalP and Phobius predictors are used to infer signal peptides. If there is a prediction from SignalP and none from TMHMM in the same range, the signal peptide is annotated.
+
+If SignalP and Phobius both predict a signal peptide, then it is annotated.
+
+When predicted N-terminal signal peptides (as predicted by SignalP) and transmembrane regions (as predicted by TMHMM) overlap, then the prediction returned by Phobius is used to discriminate between the two possibilities.
+
 In all the above cases, we annotate the sequence region predicted by SignalP.
 
 #### Coiled coil region
@@ -48,9 +47,8 @@ The [MobiDB-lite method](https://doi.org/10.1093/bioinformatics/btx015) uses sev
 
 ### Related information
 
-[Transmembrane regions in reviewed entries](http://www.uniprot.org/help/transmem)  
-  
-[Signal peptides in reviewed entries](http://www.uniprot.org/help/signal)  
-  
+[Transmembrane regions in reviewed entries](http://www.uniprot.org/help/transmem)
+
+[Signal peptides in reviewed entries](http://www.uniprot.org/help/signal)
+
 [Coiled coil regions in reviewed entries](http://www.uniprot.org/help/coiled)
-        

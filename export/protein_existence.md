@@ -1,4 +1,3 @@
-
 ---
 title: Protein existence
 categories: Protein_existence,manual
@@ -10,14 +9,14 @@ While it gives information on the existence of a protein, it may happen that the
 
 In UniProtKB there are 5 types of evidence for the existence of a protein:
 
-1\. Experimental evidence at protein level  
-  
-2\. Experimental evidence at transcript level  
-  
-3\. Protein inferred from homology  
-  
-4\. Protein predicted  
-  
+1\. Experimental evidence at protein level
+
+2\. Experimental evidence at transcript level
+
+3\. Protein inferred from homology
+
+4\. Protein predicted
+
 5\. Protein uncertain
 
 The value **'Experimental evidence at protein level'** indicates that there is clear experimental evidence for the existence of the protein. The criteria include partial or complete Edman sequencing, clear identification by mass spectrometry, X-ray or NMR structure, good quality protein-protein interaction or detection of the protein by antibodies.
@@ -36,7 +35,6 @@ The 'protein existence' value is assigned automatically, based on the annotation
 
 #### Related documents
 
-[Criteria description for protein existence](http://www.uniprot.org/docs/pe%5Fcriteria)  
-  
+[Criteria description for protein existence](http://www.uniprot.org/docs/pe%5Fcriteria)
+
 [Why do we keep dubious sequences in UniProtKB? How to discard them from a protein set?](http://www.uniprot.org/help/dubious%5Fsequences)
-        

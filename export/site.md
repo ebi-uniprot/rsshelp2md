@@ -1,4 +1,3 @@
-
 ---
 title: Site
 categories: Function,Pathology_and_biotech,PTM_processing,manual
@@ -14,12 +13,12 @@ The 'Site' subsection is frequently used for:
 
 Example: [P09884](http://www.uniprot.org/uniprot/P09884)
 
-When the protease is known, it is specified:  
-  
+When the protease is known, it is specified:
+
 Example: [Q8K1S2](http://www.uniprot.org/uniprot/Q8K1S2)
 
-Autocatalytic cleavages are specified:  
-  
+Autocatalytic cleavages are specified:
+
 Example: [Q02936](http://www.uniprot.org/uniprot/Q02936)
 
 Related keyword: [Autocatalytic cleavage](http://www.uniprot.org/keywords/68)
@@ -28,8 +27,8 @@ Related keyword: [Autocatalytic cleavage](http://www.uniprot.org/keywords/68)
 
 Example: [P00995](http://www.uniprot.org/uniprot/P00995)
 
-When the protease that is subject to inhibition is known, it is specified:  
-  
+When the protease that is subject to inhibition is known, it is specified:
+
 Example: [P01070](http://www.uniprot.org/uniprot/P01070)
 
 Related keyword: [Protease inhibitor](http://www.uniprot.org/keywords/646)
@@ -41,4 +40,3 @@ Example: [Q9UDY8](http://www.uniprot.org/uniprot/Q9UDY8)
 Related keyword: [Chromosomal rearrangement](http://www.uniprot.org/keywords/160)
 
 Each 'Site' subsection may refer to a single amino acid or to a peptide bond, which is represented by the positions of the two flanking amino acids.
-        

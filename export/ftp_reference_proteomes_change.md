@@ -1,4 +1,3 @@
-
 ---
 title: Changes to the FTP repository for reference proteomes
 categories: changes
@@ -10,25 +9,24 @@ Example: [UP000005640](http://www.uniprot.org/proteomes/UP000005640)
 
 Current FTP folder and files:
 
-ftp://ftp.uniprot.org/pub/databases/uniprot/current\_release/knowledgebase/reference\_proteomes/**Eukaryota/**
+ftp://ftp.uniprot.org/pub/databases/uniprot/current\_release/knowledgebase/reference\_proteomes/ **Eukaryota/**
 
-*   UP000005640\_9606.fasta.gz
-*   UP000005640\_9606\_additional.fasta.gz
-*   UP000005640\_9606\_DNA.fasta.gz
-*   UP000005640\_9606\_DNA.miss.gz
-*   UP000005640\_9606.idmapping.gz
-*   UP000005640\_9606.gene2acc.gz
+- UP000005640\_9606.fasta.gz
+- UP000005640\_9606\_additional.fasta.gz
+- UP000005640\_9606\_DNA.fasta.gz
+- UP000005640\_9606\_DNA.miss.gz
+- UP000005640\_9606.idmapping.gz
+- UP000005640\_9606.gene2acc.gz
 
 New FTP folder and files:
 
-ftp://ftp.uniprot.org/pub/databases/uniprot/current\_release/knowledgebase/reference\_proteomes/**Eukaryota/UP000005640/**
+ftp://ftp.uniprot.org/pub/databases/uniprot/current\_release/knowledgebase/reference\_proteomes/ **Eukaryota/UP000005640/**
 
-*   **UP000005640\_9606.dat.gz** — _UniProtKB text format_
-*   **UP000005640\_9606.xml.gz** — _UniProtKB XML format_
-*   UP000005640\_9606.fasta.gz
-*   UP000005640\_9606\_additional.fasta.gz
-*   UP000005640\_9606\_DNA.fasta.gz
-*   UP000005640\_9606\_DNA.miss.gz
-*   UP000005640\_9606.idmapping.gz
-*   UP000005640\_9606.gene2acc.gz
-        
+- **UP000005640\_9606.dat.gz** — _UniProtKB text format_
+- **UP000005640\_9606.xml.gz** — _UniProtKB XML format_
+- UP000005640\_9606.fasta.gz
+- UP000005640\_9606\_additional.fasta.gz
+- UP000005640\_9606\_DNA.fasta.gz
+- UP000005640\_9606\_DNA.miss.gz
+- UP000005640\_9606.idmapping.gz
+- UP000005640\_9606.gene2acc.gz
