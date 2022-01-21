@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 import os.path
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote
 import re
 import base64
+from ftplib import FTP
 import pypandoc
 import feedparser
 from bs4 import BeautifulSoup
@@ -53,7 +54,8 @@ def replace_see_also_with_ul(parent):
     if child[0].text != 'See also:' or not parent.find_all('br'):
         return
     lis = ''.join([f'<li>{el}</li>' for el in child[1:] if el.name != 'br'])
-    paragraph = BeautifulSoup(f'<p>See also:<ul>{lis}</ul></p>')
+    paragraph = BeautifulSoup(
+        f'<p>See also:<ul>{lis}</ul></p>', features='html.parser')
     parent.replace_with(paragraph)
 
 
@@ -77,13 +79,16 @@ def is_image_encoded(src):
 
 
 def save_image_from_url(src):
-    response = requests.get(src, headers=headers)
-    if response.status_code == 200:
-        image_file_name = os.path.basename(src)
-        image_file_path = os.path.join(images_path, image_file_name)
-        with open(image_file_path, 'wb') as f:
-            f.write(response.content)
-    return image_file_path
+    try:
+        response = requests.get(src, headers=headers)
+        if response.status_code == 200:
+            image_file_name = os.path.basename(src)
+            image_file_path = os.path.join(images_path, image_file_name)
+            with open(image_file_path, 'wb') as f:
+                f.write(response.content)
+        return image_file_path
+    except requests.Timeout:
+        return None
 
 
 def add_padding_to_encoded_string(image_data):
@@ -125,7 +130,7 @@ def find_and_save_images(soup, entry_id):
 
 def does_page_exist(url):
     try:
-        response = requests.get(url, headers=headers)
+        response = requests.get(url, headers=headers, timeout=10)
     except Exception:
         return False
     return response.ok
@@ -135,6 +140,24 @@ def is_anchor_in_page(anchor, driver):
     for _ in driver.find_elements_by_id(anchor):
         return True
     return False
+
+
+def is_ftp_url_ok(parsed):
+    ftp = FTP(parsed.netloc)
+    try:
+        ftp.login()
+        path = unquote(parsed.path)
+    except:
+        return False
+    try:
+        ftp.cwd(path)
+        return True
+    except:
+        try:
+            ftp.size(path)
+            return True
+        except:
+            return False
 
 
 def is_uniprot_beta_link_ok(parsed):
@@ -156,17 +179,20 @@ def is_uniprot_beta_link_ok(parsed):
 
 def check_and_standardize_link(url, el):
     parsed = urlparse(url)
+    # Not checking
     if parsed.scheme == 'ftp':
-        return None, None
+        return is_ftp_url_ok(parsed), None
     paths = os.path.split(parsed.path)
     # Check if this is uniprot.org
-    if paths[0] == uniprotOrgKBPath:
-        paths = [uniprotBetaKBPath, *paths[1:]]
-        parsed = parsed._replace(path=os.path.join(*paths))
+    if parsed.hostname == uniprotOrgURL:
+        # Check if this uniprot(kb) and if so replace path
+        if paths[0] == uniprotOrgKBPath:
+            paths = [uniprotBetaKBPath, *paths[1:]]
+            parsed = parsed._replace(path=os.path.join(*paths))
+            el.attrs['href'] = parsed.geturl()
         # Check that the corresponding beta page exists
         beta_parsed = parsed._replace(netloc=uniprotBetaURL)
         ok, anchor_found = is_uniprot_beta_link_ok(beta_parsed)
-        el.attrs['href'] = beta_parsed.geturl()
         return ok, anchor_found
     else:
         # Well this isn't ideal but not sure how else to handle this
@@ -179,11 +205,14 @@ def check_and_standardize_all_links(soup):
     dead_links = []
     dead_anchors = []
     for el in soup.find_all('a'):
+        if 'href' not in el.attrs:
+            dead_links.append(','.join(el.attrs.values()))
+            continue
         url = el.attrs['href']
         ok, anchor_found = check_and_standardize_link(url, el)
-        if not ok:
+        if ok is not None and not ok:
             dead_links.append(url)
-        if anchor_found is not None and anchor_found:
+        if anchor_found is not None and not anchor_found:
             dead_anchors.append(url)
         print(url, ok, anchor_found)
     return dead_links, dead_anchors
@@ -195,7 +224,7 @@ def main():
         feed = feedparser.parse(rss)
 
     for i, entry in enumerate(feed['entries']):
-        # if i < 49:
+        # if i < 156:
         #     continue
         print(i, entry.id)
         html = entry['content'][0]['value']
