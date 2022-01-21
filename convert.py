@@ -29,12 +29,21 @@ report_path = os.path.join(export_path, 'report')
 for p in [images_path, html_path, markdown_path, report_path]:
     Path(p).mkdir(parents=True, exist_ok=True)
 
-uniprotOrgURL = 'www.uniprot.org'
-uniprotBetaURL = 'beta.uniprot.org'
-uniprotOrgKBPath = '/uniprot'
-uniprotBetaKBPath = '/uniprotkb'
+uniprot_org_url = 'www.uniprot.org'
+uniprot_beta_url = 'beta.uniprot.org'
+uniprot_org_kb_path = '/uniprot'
+uniprot_beta_kb_path = '/uniprotkb'
+
+re_base64 = re.compile(
+    r'data:image\/(?P<image_type>\w+);base64,(?P<image_data>.*)')
 
 table_string = '<table'
+
+image_count = 0
+
+
+def get_github_image_path(
+    image): return f'https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/{image}'
 
 
 def get_joined_categories(entry):
@@ -82,7 +91,7 @@ def save_image_from_url(src):
     try:
         response = requests.get(src, headers=headers)
         if response.status_code == 200:
-            image_file_name = os.path.basename(src)
+            image_file_name = unquote(os.path.basename(src))
             image_file_path = os.path.join(images_path, image_file_name)
             with open(image_file_path, 'wb') as f:
                 f.write(response.content)
@@ -95,15 +104,15 @@ def add_padding_to_encoded_string(image_data):
     return image_data + '=' * (-len(image_data) % 4)
 
 
-def save_image_from_encoded_string(src, image_file_basename):
-    re_base64 = re.compile(
-        r'data:image\/(?P<image_type>\w+);base64,(?P<image_data>.*)')
+def save_image_from_encoded_string(src, entry_id):
     m = re_base64.match(src)
     assert m
     d = m.groupdict()
     image_type = d['image_type']
     image_data = d['image_data']
-    image_file_name = f'{image_file_basename}.{image_type}'
+    global image_count
+    image_count += 1
+    image_file_name = f'{entry_id}-{image_count}.{image_type}'
     image_file_path = os.path.join(images_path, image_file_name)
     with open(image_file_path, 'wb') as f:
         f.write(base64.b64decode(add_padding_to_encoded_string(image_data)))
@@ -111,21 +120,18 @@ def save_image_from_encoded_string(src, image_file_basename):
 
 
 def find_and_save_images(soup, entry_id):
-    encoded_img_counter = 1
     for el in soup.find_all('img'):
         src = el.attrs['src']
         try:
             if is_image_encoded(src):
-                image_file_basename = f'{entry_id}-{encoded_img_counter}'
-                encoded_img_counter += 1
-                image_file_path = save_image_from_encoded_string(
-                    src, image_file_basename)
+                image_file_path = save_image_from_encoded_string(src, entry_id)
             else:
                 image_file_path = save_image_from_url(src)
         except Exception as e:
             print(el.attrs['src'])
             raise e
-        el.attrs['src'] = image_file_path
+        el.attrs['src'] = get_github_image_path(
+            os.path.basename(image_file_path))
 
 
 def does_page_exist(url):
@@ -143,8 +149,8 @@ def is_anchor_in_page(anchor, driver):
 
 
 def is_ftp_url_ok(parsed):
-    ftp = FTP(parsed.netloc)
     try:
+        ftp = FTP(parsed.netloc)
         ftp.login()
         path = unquote(parsed.path)
     except:
@@ -162,7 +168,7 @@ def is_ftp_url_ok(parsed):
 
 def is_uniprot_beta_link_ok(parsed):
     url = parsed.geturl()
-    assert uniprotBetaURL in url
+    assert uniprot_beta_url in url
     driver = webdriver.Chrome(
         options=options, executable_path=os.path.expanduser('~/bin/chromedriver'))
     driver.get(url)
@@ -184,14 +190,14 @@ def check_and_standardize_link(url, el):
         return is_ftp_url_ok(parsed), None
     paths = os.path.split(parsed.path)
     # Check if this is uniprot.org
-    if parsed.hostname == uniprotOrgURL:
+    if parsed.hostname == uniprot_org_url:
         # Check if this uniprot(kb) and if so replace path
-        if paths[0] == uniprotOrgKBPath:
-            paths = [uniprotBetaKBPath, *paths[1:]]
+        if paths[0] == uniprot_org_kb_path:
+            paths = [uniprot_beta_kb_path, *paths[1:]]
             parsed = parsed._replace(path=os.path.join(*paths))
             el.attrs['href'] = parsed.geturl()
         # Check that the corresponding beta page exists
-        beta_parsed = parsed._replace(netloc=uniprotBetaURL)
+        beta_parsed = parsed._replace(netloc=uniprot_beta_url)
         ok, anchor_found = is_uniprot_beta_link_ok(beta_parsed)
         return ok, anchor_found
     else:
@@ -206,7 +212,7 @@ def check_and_standardize_all_links(soup):
     dead_anchors = []
     for el in soup.find_all('a'):
         if 'href' not in el.attrs:
-            dead_links.append(','.join(el.attrs.values()))
+            dead_links.append(f'Anchor tag: {",".join(el.attrs.values())}')
             continue
         url = el.attrs['href']
         ok, anchor_found = check_and_standardize_link(url, el)
@@ -224,8 +230,8 @@ def main():
         feed = feedparser.parse(rss)
 
     for i, entry in enumerate(feed['entries']):
-        # if i < 156:
-        #     continue
+        if i < 102:
+            continue
         print(i, entry.id)
         html = entry['content'][0]['value']
         soup = BeautifulSoup(html, features='html.parser')
