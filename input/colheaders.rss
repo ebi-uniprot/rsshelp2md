@@ -1,0 +1,2748 @@
+<feed xml:lang="en-US" xml:base="http://www.uniprot.org" xmlns="http://www.w3.org/2005/Atom">
+            <link rel="self" type="application/atom+xml" href="/memiki/pages/1204.atom"/>
+            <id>urn:uniprot:documentation:ColumnHeaderInfo</id>
+            <title>ColumnHeaderInfo</title>
+            <published>2015-03-27T12:55:56Z</published>
+            <updated>2021-10-07T10:52:35Z</updated>
+            <category term="colheaders"/>
+            <entry>
+                            <id>3d</id>
+                            <title>3D</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Experimental method(s) used to obtain 3D structure(s), when available (number of PDB cross-references)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_ABSORPTION</id>
+                            <title>Absorption</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Indicates the wavelength at which photoreactive protein shows maximal light absorption (<a href="/manual/biophysicochemical%5Fproperties">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>active</id>
+                            <title>Active</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Indicates whether the entry is active in the source database</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_ACTIVE_SITE</id>
+                            <title>Active site</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Amino acid(s) directly involved in the activity of the enzyme (<a href="/manual/act%5Fsite">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_ENZYME_REGULATION</id>
+                            <title>Activity regulation</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-08-23T16:03:19Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of the regulation of the catalytic activity of an enzyme, transporter, transcription factor (<a href="/manual/activity%5Fregulation">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blastAlignment</id>
+                            <title>Alignment overview</title>
+                            <author><name>uniprot</name></author>
+                            <published>2013-09-09T10:13:08Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>alignments</id>
+                            <title>Alignments</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Gives access to binary alignments between the Query and the hit sequences (with sequence annotation highlighting option)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_ALLERGEN</id>
+                            <title>Allergenic properties</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Information relevant to allergenic proteins (<a href="/manual/allergenic%5Fproperties">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_ALTERNATIVE_PRODUCTS</id>
+                            <title>Alternative products</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Information on the different isoforms encoded by the same gene (<a href="/manual/alternative%5Fproducts">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_ALTERNATIVE_SEQUENCE</id>
+                            <title>Alternative sequence</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Amino acid change(s) due to alternative splicing (or other events) producing alternate protein isoforms (<a href="/manual/var%5Fseq">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>annotation_score</id>
+                            <title>Annotation</title>
+                            <author><name>uniprot</name></author>
+                            <published>2013-12-05T08:52:17Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Annotation score</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>unirule_annnotation_types_added</id>
+                            <title>Annotation covered</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-08-20T06:04:45Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Types of annotations that the rule can add to UniProtKB entries</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_BETA_STRAND</id>
+                            <title>Beta strand</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Positions of the experimentally determined beta strand region(s) (<a href="/manual/strand">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_BINDING_SITE</id>
+                            <title>Binding site</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Binding site for any chemical group (co-enzyme, prosthetic group, etc.) (<a href="/manual/binding">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>busco_score</id>
+                            <title>BUSCO</title>
+                            <author><name>uniprot</name></author>
+                            <published>2019-11-21T10:33:25Z</published>
+                            <updated>2021-10-07T10:52:35Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The Benchmarking Universal Single-Copy Ortholog (BUSCO) assessment tool is used, for eukaryotic and bacterial proteomes, to provide quantitative measures of UniProt proteome data completeness in terms of expected gene content. BUSCO scores include percentages of complete (C) single-copy (S) genes, complete (C) duplicated (D) genes, fragmented (F) and missing (M) genes, as well as the total number of orthologous clusters (n) used in the BUSCO assessment, and the name of the taxonomic lineage dataset used.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_BIOTECHNOLOGY</id>
+                            <title>Biotechnological use</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Use of a protein in a biotechnological process (<a href="/manual/biotechnological%5Fuse">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_CALCIUM_BIND</id>
+                            <title>Calcium binding</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Position of a calcium-binding region (<a href="/manual/ca%5Fbind">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_CATALYTIC_ACTIVITY</id>
+                            <title>Catalytic activity</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Reaction(s) catalyzed by an enzyme (<a href="/manual/catalytic%5Factivity">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_CAUTION</id>
+                            <title>Caution</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Warning about possible errors and/or grounds for confusion (<a href="/manual/caution">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_CHAIN</id>
+                            <title>Chain</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of the mature polypeptide following processing (<a href="/manual/chain">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>checksum</id>
+                            <title>Checksum</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Cyclic redundancy check value (CRC64)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>citation_mapping_id</id>
+                            <title>Citation mapping ID</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Mapped PubMed ID</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>citation_scope</id>
+                            <title>Cited for</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="internal"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Source(s) of the data (Strain / Plasmid / Transposon / Tissue)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniref_cluster_id</id>
+                            <title>Cluster ID</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Unique and stable entry identifier</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>members_uniref</id>
+                            <title>Cluster members</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>UniProt entries belonging to the UniRef cluster</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniref_cluster_name</id>
+                            <title>Cluster name</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Protein name of the representative UniRef cluster member</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_COFACTOR</id>
+                            <title>Cofactor</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>List of non-protein substance(s) required for the enzyme activity (<a href="/manual/cofactor">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_COILED_COIL</id>
+                            <title>Coiled-coil</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Positions of region of coiled coil (<a href="/manual/coiled">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>common_taxon</id>
+                            <title>Common taxon</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Lowest common taxonomic node shared by all clusters</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>common_taxon_id</id>
+                            <title>Common taxon ID</title>
+                            <author><name>uniprot</name></author>
+                            <published>2016-07-01T10:41:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>NCBI taxonomy identifier of the lowest common node shared by all clusters</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>cpd_score</id>
+                            <title>CPD</title>
+                            <author><name>uniprot</name></author>
+                            <published>2019-11-21T10:35:28Z</published>
+                            <updated>2019-12-13T15:19:21Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Complete Proteome Detector (CPD) is an algorithm which employs statistical evaluation of the completeness and quality of proteomes in UniProt, by looking at the sizes of taxonomically close proteomes. Possible values are 'Standard', 'Close to Standard' and 'Outlier'.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_COMPOSITIONAL_BIAS</id>
+                            <title>Compositional bias</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Region of compositional bias within the protein and description of the particular amino acids that are over-represented within this regions (<a href="/manual/compbias">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_CROSS_LINK</id>
+                            <title>Cross-link</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Residues participating in covalent linkage(s) between proteins (<a href="/manual/crosslnk">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>crossref_data</id>
+                            <title>Cross-references</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Cross-references that point to external resources (<a href="/manual/cross%5Freferences">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>database</id>
+                            <title>Database</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Source database</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>creation_date_uniref</id>
+                            <title>Date of creation</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Date of the entry creation</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>creation_date</id>
+                            <title>Date of creation</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Date of the entry creation (<a href="/manual/entry%5Fhistory">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>modification_annotation_date</id>
+                            <title>Date of last modification</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Date of the latest annotation update.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>modification_sequence_date</id>
+                            <title>Date of last sequence modification</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Date of the latest protein sequence update.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_DEVELOPMENTAL_STAGE</id>
+                            <title>Developmental stage</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of expression during the stage of cell, tissue or organism development (<a href="/manual/developmental%5Fstage">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>involvement_in_disease</id>
+                            <title>Disease</title>
+                            <author><name>uniprot</name></author>
+                            <published>2013-07-03T14:50:46Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="uniprotkb"/><category term="simpleCols"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Human diseases in which the protein is involved</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>disease_id</id>
+                            <title>Disease</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-07-06T09:08:41Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>List of human diseases (controlled vocabulary)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_DISRUPTION_PHENOTYPE</id>
+                            <title>Disruption phenotype</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of the phenotype(s) associated with the experimental disruption of the gene (<a href="/manual/disruption%5Fphenotype">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_DISULFIDE_BOND</id>
+                            <title>Disulfide bond</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Cysteine residues participating in disulfide bonds (<a href="/manual/disulfid">more...</a> )</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_DNA_BINDING</id>
+                            <title>DNA binding</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of the position and type of each DNA-binding domain present within the protein (<a href="/manual/dna%5Fbind">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_DOMAIN_EXTENT</id>
+                            <title>Domain</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Position and type of each modular protein domain (<a href="/manual/domain">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>domain_count</id>
+                            <title>Domain count</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Number of domain(s) in the canonical sequence</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>domains</id>
+                            <title>Domains</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Type (and number) of domains in the canonical sequence, as listed in the 'General annotation (Comments)' section</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>e-value</id>
+                            <title>E-value</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Expect value that describes the number of hits one can 'expect' to see by chance</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>ec_numbers</id>
+                            <title>EC number</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Enzyme Commission (EC) number assigned to the protein</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>entry_uniref</id>
+                            <title>Entry</title>
+                            <author><name>uniprot</name></author>
+                            <published>2013-07-19T11:16:39Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Entry corresponding to the cluster</p>
+                                </div>
+                            </content>
+                            used only in the "similar proteins" section of uniprot entry view
+                        </entry><entry>
+                            <id>entry</id>
+                            <title>Entry</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-04-16T15:12:47Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Unique and stable entry identifier</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>accession_numbers</id>
+                            <title>Entry</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Accession number and link to the original record</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>entry_name</id>
+                            <title>Entry name</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Mnemonic identifier of a UniProtKB entry (<a href="/manual/entry%5Fname">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_ERRONEOUS_GENE_MODEL_PREDICTION</id>
+                            <title>Erroneous gene model prediction</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Discrepancies between the canonical and submitted sequences due to an erroneous gene model prediction</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_ERRONEOUS_INITIATION</id>
+                            <title>Erroneous initiation</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Discrepancies between the canonical and submitted sequences due to a different translation initiation site</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_ERRONEOUS_TERMINATION</id>
+                            <title>Erroneous termination</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Discrepancies between the canonical and submitted sequences due to a different termination site</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_ERRONEOUS_TRANSLATION</id>
+                            <title>Erroneous translation</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Discrepancies between the canonical and submitted sequences due to an erroneous open reading frame assignment</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>feature_subsection</id>
+                            <title>Features</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Type(s) and number of features annotated in the 'Sequence annotation (Features)' section of the entry</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>first_seen</id>
+                            <title>First seen</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Date when source database entry was associated with this sequence for the first time</p>
+                                </div>
+                            </content>
+                            Used in both UniParc search results and entry view!
+                        </entry><entry>
+                            <id>sequence_status</id>
+                            <title>Fragment</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Indicates if the protein sequence is a fragment</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_FRAMESHIFT</id>
+                            <title>Frameshift</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Discrepancies between the canonical and submitted sequences due to the insertion or deletion of one or more nucleotides causing a frameshift in the underlying DNA</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_FUNCTION</id>
+                            <title>Function</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2019-07-03T09:20:27Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>General description of a protein's function(s) (<a href="/manual/function">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>encoded_on</id>
+                            <title>Gene encoded by</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Location of the gene if not on the main chromosomal element(s) (<a href="/manual/encoded%5Fon">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>gene_name</id>
+                            <title>Gene name</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-03-30T16:57:34Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Name of the gene encoding the protein</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>gene_names</id>
+                            <title>Gene names</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="uniparc"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Name(s) of the gene(s) encoding the protein (<a href="/manual/gene%5Fname">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>gene_ontology</id>
+                            <title>Gene ontology (GO)</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Gene Ontology (GO) terms associated with the entry (<a href="/manual/gene%5Fontology">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>go_id</id>
+                            <title>Gene ontology IDs</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Gene Ontology (GO) identifiers associated with the entry</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation</id>
+                            <title>General annotation (Comments)</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Sequence position-independent annotation (comments) (<a href="/manual/general%5Fannotation">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>genome_assembly_representation</id>
+                            <title>Genome representation (RefSeq)</title>
+                            <author><name>uniprot</name></author>
+                            <published>2019-11-21T10:43:21Z</published>
+                            <updated>2019-12-13T15:26:00Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>NCBI RefSeq’s assessment of genome assembly representation</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>genome_accession</id>
+                            <title>Genome accession</title>
+                            <author><name>uniprot</name></author>
+                            <published>2016-03-24T11:37:58Z</published>
+                            <updated>2019-02-01T15:49:26Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Genome accession number associated with the proteome component</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_GLYCOSYLATION</id>
+                            <title>Glycosylation</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Position and description of a covalently attached glycan group(s) (<a href="/manual/carbohyd">more...</a> )</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_HELIX</id>
+                            <title>Helix</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Positions of the experimentally determined helical region(s) (<a href="/manual/helix">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>hit_length</id>
+                            <title>Hit length</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Length of the hit sequence</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>identifier</id>
+                            <title>Identifier</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-04-16T16:47:46Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Source database entry identifier</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>identity_uniref</id>
+                            <title>Identity</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Identity threshold to the seed sequence (100%, 90% or 50%)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>identity_blast</id>
+                            <title>Identity</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Percentage of identical amino acids between the query and the hit sequences</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_INDUCTION</id>
+                            <title>Induction</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of the regulation of gene expression by environmental factors (<a href="/manual/induction">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_INITIATOR_METHIONINE</id>
+                            <title>Initiator methionine</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Indicates if the initiator methionine is cleaved in the mature protein (<a href="/manual/init%5Fmet">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>binary_interactions</id>
+                            <title>Interacts with</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Cross-references to UniProtKB entries describing protein interactors, as reported in the Intact database (<a href="/manual/binary%5Finteractions">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>interpro</id>
+                            <title>InterPro</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Cross-references to related InterPro information</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_INTRAMEMBRANE</id>
+                            <title>Intramembrane</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Extent of a region in a membrane, which does not cross it (<a href="/manual/intramem">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_DISEASE</id>
+                            <title>Involvement in disease</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of the disease(s) associated with the defect in a protein("more...":/manual/involvement_in_disease)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>keyword_id</id>
+                            <title>Keyword ID</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Keyword identifier</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>keywords</id>
+                            <title>Keywords</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>List of UniProtKB keywords (controlled vocabulary) (<a href="/manual/keywords">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_KINETICS</id>
+                            <title>Kinetics</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of kinetic data, including the Michaelis-Menten constant (KM) and maximal velocity (Vmax) (<a href="/manual/biophysicochemical%5Fproperties">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>proteome_last_mod</id>
+                            <title>Last modified</title>
+                            <author><name>uniprot</name></author>
+                            <published>2013-06-21T10:28:18Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Date of last proteome update</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>last_seen</id>
+                            <title>Last seen</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Date when source database entry was last confirmed to be associated with this sequence</p>
+                                </div>
+                            </content>
+                            Used in both UniParc search results and entry view!
+                        </entry><entry>
+                            <id>length_uniprotkb</id>
+                            <title>Length</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Length of the canonical sequence</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>length_uniref</id>
+                            <title>Length</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Length of the representative sequence</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>length</id>
+                            <title>Length</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Sequence length</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>lenght</id>
+                            <title>Length</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Sequence length (number of amino acids)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_LIPIDATION</id>
+                            <title>Lipidation</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Position and description of a covalently attached lipid group(s) (<a href="/manual/lipid">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>mapped_pubmed_id</id>
+                            <title>Mapped PubMed ID</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>List of NCBI PubMed identifiers (PubMed IDs) computationally mapped to the entry</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>mass_uniprot</id>
+                            <title>Mass (Da)</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-06-12T10:22:31Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Molecular mass in Daltons (Da), calculated from the full precursor canonical sequence, without PTMs and other sequence features considered.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_MASS_SPECTROMETRY</id>
+                            <title>Mass spectrometry</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Information derived from mass spectrometry experiments (<a href="/manual/mass%5Fspectrometry">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>match_length</id>
+                            <title>Match length</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Length of the matched database sequence in amino acids</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>matched_hit</id>
+                            <title>Matched hit (sqrt scale)</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Graphical view of the identity between the UniProt matched sequence and the Query sequence</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>matched_text</id>
+                            <title>Matched text</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/><category term="uniref"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Shows the context in which your query matches UniProt annotation</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_METAL_BINDING</id>
+                            <title>Metal binding</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Binding site for a metal ion (<a href="/manual/metal">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_GENERAL</id>
+                            <title>Miscellaneous</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Any relevant information that could not be stored in any other UniProtKB sections (<a href="/manual/miscellaneous">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_MODIFIED_RESIDUE</id>
+                            <title>Modified residue</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Position and description of a post-translational modification (PTM) excluding lipids, glycans and protein cross-links (<a href="/manual/mod%5Fres">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_MOTIF</id>
+                            <title>Motif</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Short (up to 20 amino acids) sequence motif of biological interest (<a href="/manual/motif">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_MUTAGENESIS</id>
+                            <title>Mutagenesis</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Position of the site which has been experimentally altered by mutagenesis and description of the associated phenotype (<a href="/manual/mutagen">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_NATURAL_VARIANT</id>
+                            <title>Natural variant</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of a natural variant of the protein (<a href="/manual/variant">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>gi</id>
+                            <title>NCBI GI</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>NCBI sequence identifier (<a href="http://www.ncbi.nlm.nih.gov/Sitemap/sequenceIDs.html">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_NON_ADJACENT_RESIDUES</id>
+                            <title>Non-adjacent residues</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Indicates that two residues in the sequence are not consecutive (<a href="/manual/non%5Fcons">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_NON_STANDARD_RESIDUE</id>
+                            <title>Non-standard residue</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Occurence of non-standard amino acid (selenocysteine or pyrrolysine) in the protein sequence (<a href="/manual/non%5Fstd">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_NON_TERMINAL_RESIDUE</id>
+                            <title>Non-terminal residue</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Indicates that the residue is not terminal as the protein is not complete (<a href="/manual/non%5Fter">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_NUCLEOTIDE_BINDING</id>
+                            <title>Nucleotide binding</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Nucleotide phosphate binding region (<a href="/manual/np%5Fbind">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>organism_name</id>
+                            <title>Organism</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Scientific name (and synonyms) of the source organism (<a href="/manual/organism-name">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>organism_id</id>
+                            <title>Organism ID</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>NCBI taxonomy identifier of the source organism (TaxId) (<a href="/manual/taxonomic%5Fidentifier">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>organism_ids</id>
+                            <title>Organism IDs</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/><category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>NCBI taxonomy identifiers of the source organisms (TaxIds) (<a href="/manual/taxonomic%5Fidentifier">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>organisms</id>
+                            <title>Organisms</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniref"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Scientific names (and synonyms) of the source organisms (<a href="/manual/organism-name">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>pathway</id>
+                            <title>Pathway</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Pathway in which the protein is involved (<a href="/manual/pathway">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_PEPTIDE</id>
+                            <title>Peptide</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Position and length of the active peptide in the mature protein (<a href="/manual/peptide">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_PH_DEPENDENCE</id>
+                            <title>pH dependence</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Optimum pH for protein activity, effect of pH variation and pH stability of the protein (<a href="/manual/biophysicochemical%5Fproperties">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_PHARMACEUTICAL</id>
+                            <title>Pharmaceutical use</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Use of a protein as a pharmaceutical drug (<a href="/manual/pharmaceutical%5Fuse">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_POLYMORPHISM</id>
+                            <title>Polymorphism</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Sequence position-independent description of amino acid polymorphism(s) (<a href="/manual/polymorphism">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>positives</id>
+                            <title>Positives</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Percentage of amino acids that lead to a positive score in the scoring matrix</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_PTM</id>
+                            <title>Post-translational modification</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Sequence position-independent description of post-translational modifications (<a href="/manual/post-translational%5Fmodification">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>unirule_protein_name_predicted</id>
+                            <title>Predicted protein name</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-09-04T10:04:22Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary> Protein name(s) predicted by the rule</summary>
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Protein name(s) predicted by the annotation rule</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_PROPEPTIDE</id>
+                            <title>Propeptide</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Part of the protein that is cleaved during maturation or activation (<a href="/manual/propep">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>protein_existence</id>
+                            <title>Protein existence</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Evidence supporting the existence of the protein (<a href="/manual/protein%5Fexistence">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>protein_family</id>
+                            <title>Protein families</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Name of family(ies) to which the protein belongs to</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>protein_name</id>
+                            <title>Protein name</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-03-30T16:56:22Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Name of the protein</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>protein_names</id>
+                            <title>Protein names</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="uniparc"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Name(s) and synonym(s) of the protein (<a href="/manual/protein%5Fnames">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>unirule_uniprot_count</id>
+                            <title>Proteins annotated</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-08-20T06:01:31Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Number of proteins annotated by the rule</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>proteome</id>
+                            <title>Proteome</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-03-27T17:14:53Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Unique proteome identifier and component</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>proteome_id</id>
+                            <title>Proteome ID</title>
+                            <author><name>uniprot</name></author>
+                            <published>2013-06-21T10:23:25Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Unique proteome identifier</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>proteomes</id>
+                            <title>Proteomes</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-05-19T10:26:05Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Unique proteome identifier(s) and component(s)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>pubmed_id</id>
+                            <title>PubMed ID</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>List of NCBI PubMed identifiers (PubMed IDs) associated with the entry</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>query_hit</id>
+                            <title>Query hit</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Graphical view of the identity between the Query sequence and the UniProt matched sequence</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>query_length</id>
+                            <title>Query length</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Length of the Query sequence</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>rawScore</id>
+                            <title>Raw score</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-03-27T12:17:12Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Raw (numerical) annotation score</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_REDOX_POTENTIAL</id>
+                            <title>Redox potential</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Value of the standard (midpoint) oxido-reduction potential(s) for electron transport proteins (<a href="/manual/biophysicochemical%5Fproperties">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>reference_sequence</id>
+                            <title>Reference sequence</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Reference sequence of the cluster</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_REGION</id>
+                            <title>Region</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Region of interest in the sequence (<a href="/manual/region">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>related_uniprotkb</id>
+                            <title>Related</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-04-21T07:50:10Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Related UniProtKB entry citing this source database entry</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniref_related_clusters</id>
+                            <title>Related clusters</title>
+                            <author><name>uniprot</name></author>
+                            <published>2013-04-11T12:04:43Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Other clusters which the member belongs to</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_REPEAT</id>
+                            <title>Repeat</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Positions and types of repeated sequence motifs or repeated domains within the protein (<a href="/manual/repeat">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_RNA_EDITING</id>
+                            <title>RNA editing</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of RNA editing events (<a href="/manual/rna%5Fediting">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>role</id>
+                            <title>Role</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Seed of UniRef cluster or not</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>score_blast</id>
+                            <title>Score</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Raw score calculated by Blast according to the substitution scores of the alignment</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>section</id>
+                            <title>Section</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Section</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_uniparc</id>
+                            <title>Sequence</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Amino acid sequence</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_uniprotkb</id>
+                            <title>Sequence</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Canonical protein sequence as displayed by default in the entry</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation</id>
+                            <title>Sequence annotation (Features)</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Sequence position-dependent annotation (features) (<a href="/manual/sequence%5Fannotation">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_SEQUENCE_CAUTION</id>
+                            <title>Sequence caution</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Warning about possible errors related to a protein sequence (<a href="/manual/sequence%5Fcaution">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_SEQUENCE_CONFLICT</id>
+                            <title>Sequence conflict</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of sequence discrepancies of unknown origin (<a href="/manual/conflict">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_SIMILARITY</id>
+                            <title>Sequence similarities</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of the sequence similarity(ies) with other proteins (family and domain) (<a href="/manual/sequence%5Fsimilarities">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_SEQUENCE_UNCERTAINTY</id>
+                            <title>Sequence uncertainty</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Regions of uncertainty in the sequence (<a href="/manual/unsure">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_SIGNAL</id>
+                            <title>Signal peptide</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Extent of the sequence targeting proteins to the secretory pathway or periplasmic space (<a href="/manual/signal">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_SITE</id>
+                            <title>Site </title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Interesting single amino acid site on the sequence (<a href="/manual/site">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>size</id>
+                            <title>Size</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Number of cluster member(s)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>entry_status</id>
+                            <title>Status</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/><category term="uniprotkb"/><category term="uniref"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Indicates whether the entry has been reviewed by a curator (UniProtKB/Swiss-Prot: gold symbol) or automatically annotated (UniProtKB/TrEMBL: grey symbol) (<a href="/faq/7">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>subcellular_location</id>
+                            <title>Subcellular location</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of the subcellular location(s) of the mature protein (<a href="/manual/subcellular%5Flocation">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>subcellular_location_id</id>
+                            <title>Subcellular location ID</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>List of subcellular location identifiers (controlled vocabulary)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_SUBUNIT</id>
+                            <title>Subunit structure</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of protein interaction and quaternary structure (<a href="/manual/subunit%5Fstructure">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>taxon_id</id>
+                            <title>Taxon ID</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Taxonomic lineage identifier</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>taxon_mnemonic</id>
+                            <title>Taxon mnemonic</title>
+                            <author><name>uniprot</name></author>
+                            <published>2016-03-03T15:32:02Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Mnemonic organism identification code of at most 5 alphanumeric characters used in the entry names of UniProtKB entries</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>taxonomic_identifier</id>
+                            <title>Taxonomic identifier</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-10-11T08:20:03Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>NCBI taxonomy identifier of the source organism (Taxid)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>taxonomic_lineage_name</id>
+                            <title>Taxonomic lineage</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-10-11T08:16:44Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Hierarchical classification of the source organism (<a href="/manual/taxonomic%5Flineage">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>taxonomic_lineage_id</id>
+                            <title>Taxonomic lineage IDs</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-04-20T08:13:54Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            <category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Hierarchical classification of the source organism (<a href="/manual/taxonomic%5Flineage">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>unirule_taxonomic_scope</id>
+                            <title>Taxonomic scope</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-08-20T06:03:29Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The taxonomic scope to which the annotation rule applies</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_TEMPERATURE_DEPENDENCE</id>
+                            <title>Temperature dependence</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Optimum temperature for enzyme activity and/or effect of temperature variation on activity (<a href="/manual/biophysicochemical%5Fproperties">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>timeline</id>
+                            <title>Timeline</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Overview of the sequence history in time (active or not)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_TISSUE_SPECIFICITY</id>
+                            <title>Tissue specificity</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of the expression of a gene in tissues (at the protein and/or RNA level) (<a href="/manual/tissue%5Fspecificity">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>tools</id>
+                            <title>Tools</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Links to sequence analysis tools, including Blast, PeptideCutter, etc.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_TOPOLOGICAL_DOMAIN</id>
+                            <title>Topological domain</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of the subcellular compartment where each non-membrane region of a membrane-spanning protein is found (<a href="/manual/topo%5Fdom">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>general_annotation_TOXIC_DOSE</id>
+                            <title>Toxic dose</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="comments"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Lethal, paralytic, or effect dose, or lethal concentration of a toxin (<a href="/manual/toxic%5Fdose">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_TRANSIT</id>
+                            <title>Transit peptide</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Extent of a transit peptide for organelle targeting (<a href="/manual/transit">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_TRANSMEMBRANE</id>
+                            <title>Transmembrane</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Description of the extent of a membrane-spanning region of the protein (<a href="/manual/transmem">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_TURN</id>
+                            <title>Turn</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Positions of the experimentally determined 'Turn' region(s) (<a href="/manual/turn">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniparcid</id>
+                            <title>UniParc</title>
+                            <author><name>uniprot</name></author>
+                            <published>2016-07-01T12:08:12Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>UniParc identifier</p>
+                                </div>
+                            </content>
+                            used in UniProtKB result view
+                        </entry><entry>
+                            <id>uniparc_count</id>
+                            <title>UniParc sequences</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-03-19T07:49:19Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>UniParc protein sequence for this proteome</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniprotkb</id>
+                            <title>UniProtKB</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>UniProtKB entries describing this protein</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>unirule_id</id>
+                            <title>UniRule ID</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-08-20T06:07:08Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Unique and stable identifier for annotation rules</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>version</id>
+                            <title>Version</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Sequence version provided by the source database</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>version_entry</id>
+                            <title>Version (entry)</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Current version number of the entry, representative of the number of annotation updates since its integration in UniProtKB</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>version_sequence</id>
+                            <title>Version (sequence)</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="blast"/><category term="uniprotkb"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Current version number of the entry's canonical sequence, representative of the number of sequence updates since its integration in UniProt</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>version_uniparc</id>
+                            <title>Version (UniParc)</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniparc"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Sequence version provided by UniParc</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>virus_host</id>
+                            <title>Virus hosts</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="simpleCols"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Species that can be infected by a specific virus (<a href="/manual/virus%5Fhost">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>sequence_annotation_ZINC_FINGER</id>
+                            <title>Zinc finger</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-09-29T05:40:48Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            <summary>
+    </summary>
+                            <category term="features"/><category term="configurable"/><category term="uniprotkb"/><category term="blast"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Position(s) and type(s) of zinc fingers within the protein (<a href="/manual/zn%5Ffing">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry>
+        </feed>
