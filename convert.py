@@ -230,8 +230,9 @@ def main():
         feed = feedparser.parse(rss)
 
     for i, entry in enumerate(feed['entries']):
-        if i < 102:
-            continue
+        # Use this to resume if something crashes at a particular index
+        # if i < 102:
+        #     continue
         print(i, entry.id)
         html = entry['content'][0]['value']
         soup = BeautifulSoup(html, features='html.parser')
