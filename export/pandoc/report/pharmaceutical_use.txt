@@ -1,0 +1,9 @@
+pharmaceutical_use
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P01275#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/P42166#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/P10845#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/P26441#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/O14543#pathology%5Fand%5Fbiotech
+

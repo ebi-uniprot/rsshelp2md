@@ -1,0 +1,21 @@
+carbohyd
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P54939#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P13671#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q15293#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P46976#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q9S8M0#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P08195#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P18892#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P01830#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q94BT2#ptm_processing
+http://www.uniprot.org/uniprot/P02724#ptm_processing
+http://www.uniprot.org/uniprot/P00740#ptm_processing
+http://www.uniprot.org/uniprot/P08592#ptm_processing
+http://www.uniprot.org/uniprot/P02488#ptm_processing
+http://www.uniprot.org/uniprot/P13671#ptm_processing
+http://www.uniprot.org/uniprot/P19827#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P68871#ptm_processing
+http://www.uniprot.org/uniprot/P10636#ptm_processing
+

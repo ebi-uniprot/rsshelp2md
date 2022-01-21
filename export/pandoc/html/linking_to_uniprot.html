@@ -1,0 +1,189 @@
+<div>
+ <h3 id="Standard_format">
+  Standard format
+ </h3>
+ <p>
+  The standard way of linking to UniProt databases, displaying the UniProt HTML view is:
+ </p>
+ <p>
+  <code>
+   https://www.uniprot.org/dataset/identifier
+  </code>
+ </p>
+ <p>
+  where the value of
+  <code>
+   dataset
+  </code>
+  is either uniprot, uniparc or uniref
+ </p>
+ <p>
+  Examples:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/uniprot/P99999">
+    https://www.uniprot.org/uniprot/P99999
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/uniref/UniRef100%5FP99999">
+    https://www.uniprot.org/uniref/UniRef100_P99999
+   </a>
+   (cf remark 2)
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/uniref/UniRef90%5FP99999">
+    https://www.uniprot.org/uniref/UniRef90_P99999
+   </a>
+   (cf remark 2)
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/uniref/UniRef50%5FP99999">
+    https://www.uniprot.org/uniref/UniRef50_P99999
+   </a>
+   (cf remark 2)
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/uniparc/UPI00000002E4">
+    https://www.uniprot.org/uniparc/UPI00000002E4
+   </a>
+  </li>
+ </ul>
+ <p>
+  Remarks:
+ </p>
+ <ol>
+  <li>
+   A UniProtKB accession number (AC) is a stable identifier and therefore allows unambiguous citation of a UniProtKB entry. This is not the case for the 'Entry name'. (see
+   <a href="http://www.uniprot.org/help/difference%5Faccession%5Fentryname">
+    What is the difference between an accession number (AC) and the entry name?
+   </a>
+   . It is recommended to always link to a UniProtKB entry by its primary accession number.
+  </li>
+  <li>
+   The UniRef identifiers (e.g. UniRef50_P99999) are not stable. These identifiers consist of the cluster resolution (UniRef50, 90 or 100) and the accession number of the representative. As clusters are recomputed at every release, the representatives may change.
+   <br/>
+   <br/>
+   How to link to the UniRef50 cluster containing a given UniProtKB entry, e.g. P99999:
+   <a href="https://www.uniprot.org/uniref/?query=member:P99999+AND+identity:0.5">
+    https://www.uniprot.org/uniref/?query=member:P99999+AND+identity:0.5
+   </a>
+   <br/>
+   <br/>
+   How to link to the UniRef90 cluster containing a given UniProtKB entry, e.g. P99999:
+   <a href="https://www.uniprot.org/uniref/?query=member:P99999+AND+identity:0.9">
+    https://www.uniprot.org/uniref/?query=member:P99999+AND+identity:0.9
+   </a>
+   <br/>
+   <br/>
+   How to link to the UniRef100 cluster containing a given UniProtKB entry, e.g. P99999:
+   <a href="https://www.uniprot.org/uniref/?query=member:P99999+AND+identity:1.0">
+    https://www.uniprot.org/uniref/?query=member:P99999+AND+identity:1.0
+   </a>
+  </li>
+ </ol>
+ <h3 id="Other_formats">
+  Other formats
+ </h3>
+ <p>
+  Additional formats for entries and queries can be displayed by adding an extension to the URL:
+ </p>
+ <p>
+  <code>
+   https://www.uniprot.org/dataset/identifier.format
+  </code>
+ </p>
+ <p>
+  The following
+  <code>
+   format
+  </code>
+  values are valid:
+  <pre>txt    = flat file view (*)
+xml    = xml format
+fasta  = fasta format
+rdf    = rdf format
+gff    = gff format (*)
+tab    = tab-separated format (**)
+</pre>
+ </p>
+ <p>
+  <code>
+   (*)
+  </code>
+  = not available for UniRef or UniParc
+ </p>
+ <p>
+  <code>
+   (**)
+  </code>
+  = not available for UniProtKB
+ </p>
+ <p>
+  Examples:
+ </p>
+ <ul>
+  <li>
+   <a href="https://www.uniprot.org/uniprot/P99999.txt">
+    https://www.uniprot.org/uniprot/P99999.txt
+   </a>
+  </li>
+  <li>
+   <a href="https://www.uniprot.org/uniref/UniRef100%5FP99999.xml">
+    https://www.uniprot.org/uniref/UniRef100_P99999.xml
+   </a>
+  </li>
+  <li>
+   <a href="https://www.uniprot.org/uniprot/P99999.fasta">
+    https://www.uniprot.org/uniprot/P99999.fasta
+   </a>
+  </li>
+  <li>
+   <a href="https://www.uniprot.org/uniparc/UPI00000002E4.rdf">
+    https://www.uniprot.org/uniparc/UPI00000002E4.rdf
+   </a>
+  </li>
+  <li>
+   <a href="https://www.uniprot.org/uniprot/P99999.gff">
+    https://www.uniprot.org/uniprot/P99999.gff
+   </a>
+  </li>
+  <li>
+   <a href="https://www.uniprot.org/uniref/UniRef100%5FP99999.tab">
+    https://www.uniprot.org/uniref/UniRef100_P99999.tab
+   </a>
+  </li>
+  <li>
+   <a href="https://www.uniprot.org/uniparc/UPI00000002E4.tab">
+    https://www.uniprot.org/uniparc/UPI00000002E4.tab
+   </a>
+  </li>
+ </ul>
+ <p>
+  Note that all individual records and queries are accessible using simple URLs (REST). All pages (in particular query results) can therefore be bookmarked and linked. Example:
+  <a href="https://www.uniprot.org/uniprot/?query=gene:at2g37710">
+   https://www.uniprot.org/uniprot/?query=gene:at2g37710
+  </a>
+ </p>
+ <p>
+  See also:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/help/api">
+    REST API - Access the UniProt website programmatically
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/manual/accession%5Fnumbers">
+    Accession number
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/help/link%5Fold%5Fversions">
+    How do I link to a specific version of a UniProtKB entry?
+   </a>
+  </li>
+ </ul>
+</div>

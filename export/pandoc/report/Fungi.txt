@@ -1,0 +1,6 @@
+Fungi
+---
+Dead links
+http://www.uniprot.org/biocuration%5Fproject/fungi/statistics/#Saccharomycescerevisiae
+http://www.uniprot.org/biocuration%5Fproject/fungi/statistics/#Schizosaccharomycespombe
+

@@ -1,0 +1,7 @@
+developmental_stage
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q925Q8#expression
+http://www.uniprot.org/uniprot/P33124#expression
+http://www.uniprot.org/uniprot/Q96EP1#expression
+

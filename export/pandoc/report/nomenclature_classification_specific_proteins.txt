@@ -1,0 +1,7 @@
+nomenclature_classification_specific_proteins
+---
+Dead links
+http://www.uniprot.org/docs/pkinfam
+http://www.uniprot.org/docs/cdlist
+http://www.uniprot.org/docs/peptidas
+

@@ -1,0 +1,13 @@
+lipid
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P84077#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q09470#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P21589#ptm_processing
+http://www.uniprot.org/uniprot/P62820#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P34068#ptm_processing
+http://www.uniprot.org/uniprot/P61320#ptm_processing
+http://www.uniprot.org/uniprot/Q9UBU3#ptm_processing
+http://www.uniprot.org/uniprot/P39442#ptm_processing
+http://www.uniprot.org/uniprot/Q02936#ptm_processing
+

@@ -1,0 +1,9 @@
+Prokaryotes
+---
+Dead links
+http://www.uniprot.org/biocuration%5Fproject/Prokaryotes/statistics#Escherichiacoli
+http://www.uniprot.org/biocuration%5Fproject/Prokaryotes/statistics#Bacillussubtilis
+
+Dead anchor tags
+http://www.uniprot.org/biocuration%5Fproject/Prokaryotes/statistics#Mycobacteriumtuberculosis
+

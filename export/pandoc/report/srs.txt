@@ -1,0 +1,5 @@
+srs
+---
+Dead anchor tags
+http://www.uniprot.org/#note-uniparc
+

@@ -1,0 +1,93 @@
+<div>
+ <h3 id="What_is_a_redundant_proteome_">
+  What is a redundant proteome?
+ </h3>
+ <p>
+  A redundant proteome is one in which all or nearly all protein sequences are highly similar or identical to an existing proteome from the same species.
+ </p>
+ <p>
+  To reduce redundancy in proteomes and subsequently UniProtKB/TrEMBL, we have developed a procedure to identify highly redundant proteomes within species groups, using a combination of manual and automatic methods.
+ </p>
+ <ul>
+  <li>
+   Proteomes can only be redundant to other proteomes of the same taxonomy branch at species level or below (sub-species, strains, etc.).
+  </li>
+  <li>
+   We use the CD-Hit 2D program for pairwise comparison of proteomes within each taxonomic group. Based on the results, we calculate the level of similarity between pairs of proteomes within the groups.
+  </li>
+  <li>
+   Proteomes that rank lowest are the most redundant. These are marked as "redundant" on the UniProt
+   <a href="http://www.uniprot.org/proteomes">
+    proteomes portal
+   </a>
+   (example:
+   <a href="http://www.uniprot.org/proteomes/UP000008521">
+    UP000008521
+   </a>
+   , redundant to
+   <a href="http://www.uniprot.org/proteomes/UP000008520">
+    UP000008520
+   </a>
+   ), and are labelled with a specific icon
+   <span class="icon-uniprot deleted-icon" title="Obsolete">
+   </span>
+   . Protein entries belonging to these redundant proteomes are either removed from UniProtKB/TrEMBL, or, for new sequences, no corresponding UniProtKB/TrEMBL entries are created. The sequences from redundant proteomes are available for download from the UniProt sequence archive
+   <a href="http://www.uniprot.org/uniparc">
+    UniParc
+   </a>
+   via the
+   <a href="http://www.uniprot.org/proteomes">
+    proteomes portal
+   </a>
+   .
+  </li>
+ </ul>
+ <p>
+  See also:
+  <br/>
+  <a href="http://www.uniprot.org/help/proteome%5Fredundancy">
+   Reducing proteome redundancy
+  </a>
+  <br/>
+  <a href="https://insideuniprot.blogspot.com/2015/05/">
+   Elimination of redundant proteomes (UniProt blog)
+  </a>
+ </p>
+ <h3 id="Can_a_reference_proteome_be_made_redundant_">
+  Can a reference proteome be made redundant?
+ </h3>
+ <p>
+  No,
+  <a href="http://www.uniprot.org/help/reference%5Fproteome">
+   reference proteomes
+  </a>
+  have a special status that protects them from becoming redundant. Reference proteomes are carefully chosen based on stringent criteria and represent important organisms covering the tree of life with a high level of annotation.
+ </p>
+ <h3 id="Can_reviewed_UniProtKB__Swiss_Prot__entries_be_deleted_when_a_proteome_becomes_redundant_">
+  Can reviewed UniProtKB (Swiss-Prot) entries be deleted when a proteome becomes redundant?
+ </h3>
+ <p>
+  No. While it can happen that a proteome containing reviewed UniProtKB (Swiss-Prot) entries becomes redundant, its reviewed, manually curated members are not deleted as a consequence.
+ </p>
+ <h3 id="Can_entries_that_were_deleted_as_members_of_redundant_proteomes_come_back_at_a_later_stage_">
+  Can entries that were deleted as members of redundant proteomes come back at a later stage?
+ </h3>
+ <p>
+  Yes, this is possible: It may happen that proteomes that were identified as redundant are later reinstated as non-redundant, e.g. a proteome for a strain used as a model by a significant community or with proteins that have been crystallized. In the past, it has also happened on rare occasions that entries were deleted but later reinstated for other reasons. In such cases, the UniProtKB entries are created anew, with
+  <strong>
+   new accession numbers
+  </strong>
+  .
+ </p>
+ <p>
+  To help users to link deleted to subsequently reinstated entries, we provide a
+  <a href="https://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/complete/docs/reinstated%5Fmap.txt.gz">
+   file that maps old to new accession numbers
+  </a>
+  via their
+  <a href="http://www.uniprot.org/help/sequence%5Forigin">
+   protein_ids
+  </a>
+  .
+ </p>
+</div>

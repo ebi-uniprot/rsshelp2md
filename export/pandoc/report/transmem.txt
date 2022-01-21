@@ -1,0 +1,19 @@
+transmem
+---
+Dead anchor tags
+http://www.uniprot.org/help/evidences#ECO:0000255
+http://www.uniprot.org/uniprot/Q96BI3#subcellular_location
+http://www.uniprot.org/help/evidences#ECO:0000269
+http://www.uniprot.org/help/evidences#ECO:0000305
+http://www.uniprot.org/help/evidences#ECO:0000250
+http://www.uniprot.org/uniprot/Q86V24#subcellular_location
+http://www.uniprot.org/uniprot/Q8BQS5#subcellular_location
+http://www.uniprot.org/help/evidences#ECO:0000255
+http://www.uniprot.org/uniprot/P14778#subcellular_location
+http://www.uniprot.org/uniprot/P08195#subcellular_location
+http://www.uniprot.org/uniprot/O70601#subcellular_location
+http://www.uniprot.org/uniprot/Q9HDC5#subcellular_location
+http://www.uniprot.org/uniprot/Q8RKH1#subcellular%5Flocation
+http://www.uniprot.org/uniprot/P30988#subcellular%5Flocation
+http://www.uniprot.org/uniprot/P04840#family_and_domains
+

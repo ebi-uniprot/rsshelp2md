@@ -1,0 +1,6 @@
+homo_sapiens
+---
+Dead links
+http://www.uniprot.org/program/Chordata
+http://www.uniprot.org/docs/humchr20
+

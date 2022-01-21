@@ -1,0 +1,6 @@
+peptide
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q9SE35#ptm%5Fprocessing
+http://www.uniprot.org/help/sequence%5Fannotation#annotation%5Fid
+

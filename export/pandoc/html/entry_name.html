@@ -1,0 +1,368 @@
+<div>
+ <p>
+  This subsection of the 'Entry information' section provides a mnemonic identifier for a UniProtKB entry, but it is not a stable identifier. Each reviewed entry is assigned a unique entry name upon integration into UniProtKB/Swiss-Prot.
+ </p>
+ <h3 id="UniProtKB_Swiss_Prot_entry_name">
+  UniProtKB/Swiss-Prot entry name
+ </h3>
+ <p>
+  The UniProtKB/Swiss-Prot entry name consists of up to 11 uppercase alphanumeric characters with a naming convention that can be symbolized as X_Y, where:
+ </p>
+ <ul>
+  <li>
+   X is a mnemonic protein identification code of at most 5 alphanumeric characters;
+  </li>
+  <li>
+   The '_' sign serves as a separator;
+  </li>
+  <li>
+   Y is a mnemonic species identification code of at most 5 alphanumeric characters.
+  </li>
+ </ul>
+ <p>
+  The mnemonic code 'X' is an abbreviation of the protein/gene name, which does not necessarily correspond to the recommended protein name or to the gene name.
+ </p>
+ <p>
+  Examples:
+ </p>
+ <div class="grid">
+  <table>
+   <tr>
+    <th>
+     Code(X)
+    </th>
+    <th>
+     Recommended protein name
+    </th>
+    <th>
+     Gene name
+    </th>
+   </tr>
+   <tr>
+    <td>
+     B2MG
+    </td>
+    <td>
+     Beta-2-microglobulin
+    </td>
+    <td>
+     B2M
+    </td>
+   </tr>
+   <tr>
+    <td>
+     HBA
+    </td>
+    <td>
+     Hemoglobin subunit alpha
+    </td>
+    <td>
+     HBA1
+    </td>
+   </tr>
+   <tr>
+    <td>
+     INS
+    </td>
+    <td>
+     Insulin
+    </td>
+    <td>
+     INS
+    </td>
+   </tr>
+   <tr>
+    <td>
+     CAD17
+    </td>
+    <td>
+     Cadherin-17
+    </td>
+    <td>
+     CDH17
+    </td>
+   </tr>
+  </table>
+ </div>
+ <p>
+  Whenever possible, we assign the same mnemonic code for orthologous proteins (even if the gene name is not the same).
+ </p>
+ <p>
+  For multigene families, we assign consistent protein name abbreviations and add a numerical discriminator (see for instance
+  <a href="http://www.uniprot.org/uniprot/P01308#entry%5Finformation">
+   INS_HUMAN
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/P01325#entry%5Finformation">
+   INS1_MOUSE
+  </a>
+  and
+  <a href="http://www.uniprot.org/uniprot/P01326#entry%5Finformation">
+   INS2_MOUSE
+  </a>
+  ) or a letter (see for instance
+  <a href="http://www.uniprot.org/uniprot/Q7L1S5#entry%5Finformation">
+   CHST9
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/O43529#entry%5Finformation">
+   CHSTA
+  </a>
+  and
+  <a href="http://www.uniprot.org/uniprot/Q9NPF2#entry%5Finformation">
+   CHSTB
+  </a>
+  ) at the end of the code.
+ </p>
+ <p>
+  The mnemonic code 'Y' identifies the organism which is the biological source of the protein. It is generally composed of the first three letters of its genus name and the first two letters of its species name.
+ </p>
+ <p>
+  Examples: PSEPU is for Pseudomonas putida and NAJNI is for Naja nivea.
+ </p>
+ <p>
+  However, for a number of species commonly encountered in UniProtKB, we use self-explanatory codes.
+ </p>
+ <p>
+  There are 16 of those codes:
+ </p>
+ <ul>
+  <li>
+   BOVIN for Bovine
+  </li>
+  <li>
+   CHICK for Chicken
+  </li>
+  <li>
+   ECOLI for
+   <em>
+    Escherichia coli
+   </em>
+  </li>
+  <li>
+   HORSE for Horse
+  </li>
+  <li>
+   HUMAN for
+   <em>
+    Homo sapiens
+   </em>
+  </li>
+  <li>
+   MAIZE for Maize (
+   <em>
+    Zea mays
+   </em>
+   )
+  </li>
+  <li>
+   MOUSE for Mouse
+  </li>
+  <li>
+   PEA for Garden pea (
+   <em>
+    Pisum sativum
+   </em>
+   )
+  </li>
+  <li>
+   PIG for Pig
+  </li>
+  <li>
+   RABIT for Rabbit
+  </li>
+  <li>
+   RAT for Rat
+  </li>
+  <li>
+   SHEEP for Sheep
+  </li>
+  <li>
+   SOYBN for Soybean (
+   <em>
+    Glycine max
+   </em>
+   )
+  </li>
+  <li>
+   TOBAC for Common tobacco (
+   <em>
+    Nicotina tabacum
+   </em>
+   )
+  </li>
+  <li>
+   WHEAT for Wheat (
+   <em>
+    Triticum aestivum
+   </em>
+   )
+  </li>
+  <li>
+   YEAST for Baker's yeast (
+   <em>
+    Saccharomyces cerevisiae
+   </em>
+   )
+  </li>
+ </ul>
+ <p>
+  Since the above rules cannot apply to viruses, we give them arbitrary, but generally easy-to-remember, identification codes.
+ </p>
+ <p>
+  The names of all the currently defined species identification codes are listed in the document
+  <a href="http://www.uniprot.org/docs/speclist">
+   'Controlled vocabulary of species'
+  </a>
+  .
+ </p>
+ <h3 id="UniProtKB_TrEMBL_entry_names">
+  UniProtKB/TrEMBL entry names
+ </h3>
+ <p>
+  The UniProtKB/TrEMBL entry name consists of up to 16 uppercase alphanumeric characters with a naming convention similar to that of UniProtKB/Swiss-Prot, where:
+ </p>
+ <ul>
+  <li>
+   X is identical to the
+   <a href="http://www.uniprot.org/manual/accession%5Fnumbers">
+    accession number
+   </a>
+   of the entry and consists of 6 or 10 alphanumeric characters;
+  </li>
+  <li>
+   The '_' sign serves as a separator;
+  </li>
+  <li>
+   Y is a mnemonic species identification code of at most 5 alphanumeric characters.
+  </li>
+ </ul>
+ <p>
+  Since it is impossible to manually assign organism codes to all species represented in UniProtKB/TrEMBL, 'virtual' codes have been defined that group organisms at a certain taxonomic level. Such codes are prefixed by the number '9' and generally correspond to a 'pool' of organisms, which can be as wide as a kingdom. Here are some examples of such codes:
+ </p>
+ <div class="grid">
+  <table>
+   <tr>
+    <td>
+     <strong>
+      Mnemomnic code
+     </strong>
+    </td>
+    <td>
+     <strong>
+      Taxonomic identifier
+     </strong>
+    </td>
+    <td>
+     <strong>
+      Scope
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     9BACT
+    </td>
+    <td>
+     2
+    </td>
+    <td>
+     Bacteria
+    </td>
+   </tr>
+   <tr>
+    <td>
+     9CNID
+    </td>
+    <td>
+     6073
+    </td>
+    <td>
+     Cnidaria
+    </td>
+   </tr>
+   <tr>
+    <td>
+     9FUNG
+    </td>
+    <td>
+     4751
+    </td>
+    <td>
+     Fungi
+    </td>
+   </tr>
+   <tr>
+    <td>
+     9REOV
+    </td>
+    <td>
+     10880
+    </td>
+    <td>
+     Reoviridae
+    </td>
+   </tr>
+   <tr>
+    <td>
+     9TETR
+    </td>
+    <td>
+     32523
+    </td>
+    <td>
+     Tetrapoda
+    </td>
+   </tr>
+   <tr>
+    <td>
+     9VIRI
+    </td>
+    <td>
+     33090
+    </td>
+    <td>
+     Viridiplantae
+    </td>
+   </tr>
+  </table>
+  <p>
+   The 'virtual' codes are listed in the document
+   <a href="http://www.uniprot.org/docs/speclist">
+    Controlled vocabulary of species
+   </a>
+  </p>
+ </div>
+ <p>
+  <strong>
+   Important tip
+  </strong>
+ </p>
+ <p>
+  The entry name is a useful mnemonic means of identifying a sequence, but, unlike the
+  <a href="http://www.uniprot.org/manual/accession%5Fnumbers">
+   accession number
+  </a>
+  , it is not a stable identifier. It is sometimes necessary, for reasons of consistency, to change the entry name (for instance to ensure that related entries have similar names or when a UniProtKB/TrEMBL entry is integrated into UniProtKB/Swiss-Prot). We remind users that they should
+  <strong>
+   always use the primary accession number
+  </strong>
+  of an entry in any citation and link since it is the only unique stable identifier for an entry.
+  <br/>
+  An 'entry name tracker' tool is included in the UniProt website search engine. It allows the tracking of UniProtKB entry names that are no longer in use.
+ </p>
+ <h4 id="Related_documents">
+  Related documents
+ </h4>
+ <div class="external_link">
+  <p>
+   <a href="http://www.uniprot.org/docs/speclist">
+    Controlled vocabulary of species
+   </a>
+   <br/>
+   <a href="http://www.uniprot.org/help/difference%5Faccession%5Fentryname">
+    What is the difference between an accession number (AC) and the entry name?
+   </a>
+  </p>
+ </div>
+</div>

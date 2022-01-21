@@ -1,0 +1,13 @@
+binary_interactions
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q8WUM4#interaction
+http://www.uniprot.org/uniprot/P62258#interaction
+http://www.uniprot.org/uniprot/Q64279#interaction
+http://www.uniprot.org/uniprot/P51617#cross-references
+http://www.uniprot.org/uniprot/P62258#interaction
+http://www.uniprot.org/uniprot/Q8T4F7#interaction
+http://www.uniprot.org/uniprot/P02829#interaction
+http://www.uniprot.org/uniprot/O43521#interaction
+http://www.uniprot.org/uniprot/Q07817#interaction
+

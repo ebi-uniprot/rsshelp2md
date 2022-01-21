@@ -1,0 +1,53 @@
+<div>
+ <p>
+  This service allows you to convert data between different formats. Note that at the moment only single entries are supported. Here is a
+  <a href="http://www.uniprot.org/help/api_format_conversion#conversion_java_example">
+   Java example
+  </a>
+  (using the
+  <a href="http://jakarta.apache.org/commons/httpclient/">
+   Jakarta Commons HttpClient
+  </a>
+  library) to convert a UniProtKB entry from
+  <code>
+   txt
+  </code>
+  to
+  <code>
+   rdf
+  </code>
+  format.
+ </p>
+ <div hidden="hidden" id="conversion_java_example">
+  <pre>PostMethod method = new PostMethod("https://www.uniprot.org/convert");
+Part[] parts =
+{
+  new StringPart("type", "uniprot"),
+  new StringPart("from", "txt"),
+  new StringPart("to", "rdf"),
+  new FilePart("data", new File("P05067.txt"))
+};
+method.setRequestEntity(new MultipartRequestEntity(parts, method.getParams()));
+HttpClient client = new HttpClient();
+String contact = ""; // Please set a contact email address here to help us debug in case of problems (see https://www.uniprot.org/help/privacy).
+client.setRequestHeader("User-Agent", "Java " + contact);
+int status = client.executeMethod(method);
+if (status != HttpStatus.SC_OK)
+  println(method.getStatusLine());
+else
+  println(method.getResponseBodyAsString());
+</pre>
+ </div>
+ <p>
+  See also:
+ </p>
+ <p>
+  <a href="http://www.uniprot.org/help/api">
+   REST API - Access the UniProt website programmatically
+  </a>
+  - batch retrieval, ID mapping, queries, downloads, etc
+ </p>
+ <p>
+  Related terms: programmatic access, program, script, wget, curl, web services, API
+ </p>
+</div>

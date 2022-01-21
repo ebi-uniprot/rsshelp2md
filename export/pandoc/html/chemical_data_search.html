@@ -1,0 +1,196 @@
+<div>
+ <p>
+  <a href="https://www.youtube.com/watch?v=5eW-eZJ08wc">
+   Video tutorial
+  </a>
+ </p>
+ <p>
+  Enzyme-catalysed reactions are annotated in UniProtKB in the
+  <a href="http://www.uniprot.org/help/catalytic%5Factivity">
+   Catalytic activity
+  </a>
+  section.
+ </p>
+ <p>
+  The
+  <a href="http://www.uniprot.org/help/advanced%5Fsearch">
+   Advanced search
+  </a>
+  can be used to search in these annotations, by reaction participant (name or
+  <a href="https://www.ebi.ac.uk/chebi/">
+   ChEBI
+  </a>
+  identifier), reaction identifier (from
+  <a href="https://www.rhea-db.org/">
+   Rhea
+  </a>
+  ), or by
+  <a href="https://en.wikipedia.org/wiki/International%5FChemical%5FIdentifier#InChIKey">
+   InChIKey
+  </a>
+  .
+ </p>
+ <h3 id="Search_for_a_reaction_compound_using_autocompletion">
+  Search for a reaction compound using autocompletion
+ </h3>
+ <p>
+  Click on "Advanced" and select "Catalytic activity" under "Function". When starting to type the name of a chemical compound, e.g. "L-lys...." the autocompletion mechanism suggests several compounds from ChEBI, and others from Rhea:
+ </p>
+ <p>
+  <img alt="image" src="data:image/png;base64,"/>
+ </p>
+ <h3 id="Search_for_a_given_reaction_by_Rhea_identifier">
+  Search for a given reaction by Rhea identifier
+ </h3>
+ <p>
+  <a href="https://www.rhea-db.org/reaction?id=20856">
+   RHEA:20856
+  </a>
+  describes the reaction
+  <pre>an N-acylsphing-4-enine + H2O = a fatty acid + sphing-4-enine
+</pre>
+ </p>
+ <p>
+  All proteins annotated to catalyze this reaction in UniProtKB can be retrieved with this query:
+  <br/>
+  <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3A%22catalytic+activity%22+RHEA%3A20856%29&amp;sort=score">
+   annotation:(type:"catalytic activity" rhea:20856)
+  </a>
+ </p>
+ <p>
+  <img alt="image" src="data:image/png;base64,"/>
+ </p>
+ <h3 id="Search_for_reactions_based_on_parent_child_relationships_defined_in_ChEBI">
+  Search for reactions based on parent-child relationships defined in ChEBI
+ </h3>
+ <p>
+  To retrieve entries catalyzing reactions involving sugars, it is possible to use the auto-completion functionality, e.g. with the word "sugar".
+ </p>
+ <p>
+  <img alt="image" src="data:image/png;base64,"/>
+ </p>
+ <p>
+  To retrieve all entries catalyzing reactions involving any monosaccharide, it is also possible to search with the high-level term "monosaccharide":
+ </p>
+ <p>
+  <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3A%22catalytic+activity%22+CHEBI%3A35381%29">
+   annotation:(type:"catalytic activity" chebi:"monosaccharide [35381]")
+  </a>
+ </p>
+ <h3 id="Chemical_structure_search_with_InChIKey">
+  Chemical structure search with InChIKey
+ </h3>
+ <p>
+  You can search UniProtKB for small molecule reaction participants and cofactors using the InChIKey, a standard hashed representation of the IUPAC International Chemical Identifier (
+  <a href="https://www.inchi-trust.org/about-the-inchi-standard/">
+   InChI
+  </a>
+  ) that provides a unique and compact representation of chemical structure data. Flexible chemical structure searches are possible with the complete InChIKey, as well as with the connectivity and stereochemistry layers, or the connectivity layer alone. You can search our "Catalytic activity" or "Cofactor" annotations, or both combined, by using the "Small molecule" advanced search field:
+ </p>
+ <p>
+  <img alt="image" src="data:image/png;base64,"/>
+ </p>
+ <h4 id="Chemical_structure_search_with_a_complete_InChIKey">
+  Chemical structure search with a complete InChIKey
+ </h4>
+ <p>
+  WQZGKKKJIJFFOK-GASJEMHNSA-N is the InChIKey for
+  <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:4167">
+   CHEBI:4167
+  </a>
+  - D-glucopyranose
+ </p>
+ <p>
+  <img alt="image" src="data:image/png;base64,"/>
+ </p>
+ <p>
+  <img alt="image" src="data:image/png;base64,"/>
+ </p>
+ <h4 id="Chemical_structure_search_with_a_partial_InChIKey__connectivity_information_only_">
+  Chemical structure search with a partial InChIKey (connectivity information only)
+ </h4>
+ <h5 id="Partial_InChIKey_without_the__de_protonation_indicator">
+  Partial InChIKey without the [de]protonation indicator
+ </h5>
+ <p>
+  e.g.
+  <a href="https://www.ebi.ac.uk/chebi/advancedSearchFT.do?searchString=WQZGKKKJIJFFOK-GASJEMHNSA">
+   WQZGKKKJIJFFOK-GASJEMHNSA
+  </a>
+ </p>
+ <p>
+  <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3A%22catalytic+activity%22+inchikey%3AWQZGKKKJIJFFOK-GASJEMHNSA%29">
+   annotation:(type:"catalytic activity" inchikey:WQZGKKKJIJFFOK-GASJEMHNSA)
+  </a>
+ </p>
+ <h5 id="Partial_InChIKey_for_the_molecular_skeleton__connectivity_">
+  Partial InChIKey for the molecular skeleton (connectivity)
+ </h5>
+ <p>
+  a 14-character hash encoding the basic (Mobile-H) InChI layer, e.g.
+  <a href="https://www.ebi.ac.uk/chebi/advancedSearchFT.do?searchString=WQZGKKKJIJFFOK">
+   WQZGKKKJIJFFOK
+  </a>
+ </p>
+ <p>
+  <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3A%22catalytic+activity%22+inchikey%3AWQZGKKKJIJFFOK%29">
+   annotation:(type:"catalytic activity" inchikey:WQZGKKKJIJFFOK)
+  </a>
+ </p>
+ <h3 id="Search_for_a_compound_not_present_in_ChEBI__or_with_a_word_from_a_free_text_reaction_description">
+  Search for a compound not present in ChEBI, or with a word from a free text reaction description
+ </h3>
+ <p>
+  Historically, UniProt has followed the recommendations of the Nomenclature Committee of the International Union of Biochemistry and Molecular Biology (NC-IUBMB) for the description of enzymatic activities. The NC-IUBMB use their own names for the reactants, and sometimes the catalytic activity from IUBMB is a free text reaction description.
+ </p>
+ <p>
+  When searching with a compound name that is not in ChEBI but part of a reaction sourced from IUBMB, or with a word from a free text reaction description, a full text search instead of an identifier search is performed in catalytic activity annotation. Since IUBMB does not use ChEBI or any other ontology, there is no autocompletion in this case, and no hierarchical relationships (such as is_a) can be taken into account.
+ </p>
+ <p>
+  Example:
+  <br/>
+  <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3A%22catalytic+activity%22+PretRNA%29">
+   annotation:(type:"catalytic activity" PretRNA)
+  </a>
+ </p>
+ <p>
+  The following query returns all entries that have a catalytic activity annotated that is not sourced from Rhea but from IUBMB:
+  <br/>
+  <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3A%22catalytic+activity%22%29+NOT+annotation%3A%28type%3A%22catalytic+activity%22+rhea%3A%2A%29">
+   annotation:(type:"catalytic activity") NOT annotation:(type:"catalytic activity "rhea:*)
+  </a>
+ </p>
+ <h3 id="Search_for_small_molecules__using_ChEBI__not_restricted_to_catalytical_activity_">
+  Search for small molecules, using ChEBI (not restricted to catalytical activity)
+ </h3>
+ <p>
+  The ChEBI (Chemical Entities of Biological Interest) ontology is used in "Catalytic activity" or "Cofactor" annotations, and the advanced search allows to search in either of these fields separately, or in both combined, by using the "Small molecule" advanced search field:
+ </p>
+ <p>
+  Example biotin (
+  <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57586">
+   ChEBI:57586
+  </a>
+  ) :
+ </p>
+ <p>
+  Biotin in "Small molecule":
+  <br/>
+  <a href="http://www.uniprot.org/uniprot/?query=chebi%3A%22biotin+%5B57586%5D%22+reviewed%3Ayes">
+   reviewed:yes AND chebi:"biotin[57586]"
+  </a>
+  <br/>
+  Biotin in "Catalytic activity":
+  <br/>
+  <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3A%22catalytic+activity%22+CHEBI%3A57586%29+reviewed%3Ayes">
+   reviewed:yes AND annotation:(type:"catalytic activity" chebi:"biotin [57586]")
+  </a>
+ </p>
+ <p>
+  Biotin in "Cofactor":
+  <br/>
+  <a href="http://www.uniprot.org/uniprot/?query=cofactor%3A%28chebi%3A%22biotin+[57586]%22%29+reviewed%3Ayes">
+   reviewed:yes AND cofactor:(chebi:"biotin [57586]")
+  </a>
+ </p>
+</div>

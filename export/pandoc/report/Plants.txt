@@ -1,0 +1,9 @@
+Plants
+---
+Dead links
+http://www.uniprot.org/docs/arath
+http://www.uniprot.org/biocuration%5Fproject/Plants/statistics/#Oryzasativasubspjaponica
+
+Dead anchor tags
+http://www.uniprot.org/biocuration%5Fproject/Plants/statistics/#Arabidopsisthaliana
+

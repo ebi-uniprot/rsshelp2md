@@ -1,0 +1,6 @@
+conflict
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/O94335#sequences
+http://www.uniprot.org/uniprot/Q5NAW2#sequences
+

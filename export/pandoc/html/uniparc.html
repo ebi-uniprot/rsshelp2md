@@ -1,0 +1,217 @@
+<div>
+ <p>
+  The UniProt Archive (UniParc) is a comprehensive and non-redundant database that contains most of the publicly available
+    protein sequences in the world. Proteins may exist in different source
+    databases and in multiple copies in the same database. UniParc avoided
+    such redundancy by storing each unique sequence only once and giving it a
+    stable and unique identifier (UPI) making it possible to identify the same
+    protein from different source databases. A UPI is never removed, changed
+    or reassigned. UniParc contains only protein sequences. All other
+    information about the protein must be retrieved from the source databases
+    using the database cross-references. UniParc tracks sequence changes in
+    the source databases and archives the history of all changes. UniParc has
+    combined many databases into one at the sequence level and searching
+    UniParc is equivalent to searching many databases simultaneously.
+ </p>
+ <h4>
+  Content of an entry
+ </h4>
+ <p>
+  The basic information stored within each UniParc entry is the identifier, the sequence,
+    cyclic redundancy check number, source database(s) with accession and version numbers, and a
+    time stamp. If a UniParc entry does not have a cross-reference to a UniProtKB entry,
+    the reason for the exclusion of that sequence from UniProtKB is provided (eg. pseudogene).
+    In addition, each source database accession number is tagged with its status in that database,
+    indicating if the sequence still exists or has been deleted in the source database and cross-references
+    to NCBI GI and taxonomic identifier (TaxID) if appropriate.
+ </p>
+ <h4>
+  Sequence comparison
+ </h4>
+ <p>
+  Sequences are compared when entering UniParc with all existing sequences. The
+    CRC64 check sum is first calculated and then compared for each sequence. If two
+    sequences have the same CRC64 value, the sequences themselves will then be
+    compared as strings before considering them as identical.
+ </p>
+ <h4>
+  Sequence versions
+ </h4>
+ <p>
+  Sequence changes in the source database can be tracked by sequence versions.
+    Some source database provide their own versions while others don't. UniParc
+    does its own internal versioning. Each time a sequence is changed the internal
+    version is incremented by one, making it possible to track sequence changes in all
+    source databases. Sequence versions are kept as part of cross-reference and the history of all changes are kept.
+ </p>
+ <h4>
+  Database cross-references
+ </h4>
+ <p>
+  A database cross-reference links a protein sequence to its origin database. It contains a source database
+    identifier, a sequence identifier from the source database, a sequence version from source database if any,
+    a UniParc sequence version and whether or not the cross-reference is still active. A new cross-reference is
+    created when a new or updated protein enters UniParc. When a sequence is changed or deleted from a source database,
+    its corresponding cross-reference is marked as deleted. Active cross-reference can be used to directly access
+    the source databases but inactive cross-references can only be used to access sequences archives,
+    such as the
+  <a href="http://www.ebi.ac.uk/cgi-bin/sva/sva.pl">
+   EMBL nucleotide sequence database sequence version archive
+  </a>
+  ,
+    the EMBL nucleotide sequence database stores of its entries in a searchable manner.
+ </p>
+ <h4>
+  Data sources
+ </h4>
+ <p>
+  Currently UniParc contains protein sequences from the following publicly available databases:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.ebi.ac.uk/embl/">
+    EMBL-Bank
+   </a>
+   /
+   <a href="http://www.ddbj.nig.ac.jp/">
+    DDBJ
+   </a>
+   /
+   <a href="http://www.ncbi.nlm.nih.gov/Genbank/">
+    GenBank
+   </a>
+   nucleotide sequence databases
+  </li>
+  <li>
+   <a href="http://www.ensembl.org/">
+    Ensembl
+   </a>
+  </li>
+  <li>
+   <a href="http://www.ensemblgenomes.org/">
+    EnsemblGenomes
+   </a>
+  </li>
+  <li>
+   <a href="http://www.european-patent-office.org/">
+    European Patent Office (EPO)
+   </a>
+  </li>
+  <li>
+   <a href="http://flybase.bio.indiana.edu/">
+    FlyBase
+   </a>
+  </li>
+  <li>
+   <a href="http://www.h-invitational.jp/">
+    H-Invitational Database (H-InvDB)
+   </a>
+  </li>
+  <li>
+   <a href="http://www.ebi.ac.uk/IPI/">
+    International Protein Index (IPI)
+   </a>
+  </li>
+  <li>
+   <a href="http://www.jpo.go.jp/">
+    Japan Patent Office (JPO)
+   </a>
+  </li>
+  <li>
+   <a href="http://www.kipo.go.kr/">
+    Korean Intellectual Property Office (KIPO)
+   </a>
+  </li>
+  <li>
+   <a href="http://patricbrc.org/">
+    Pathosystems Resource Integration Center (PATRIC)
+   </a>
+  </li>
+  <li>
+   <a href="http://www.pdb.org/">
+    Protein Data Bank (PDB)
+   </a>
+  </li>
+  <li>
+   <a href="http://www.prf.or.jp/index-e.html">
+    Protein Research Foundation (PRF)
+   </a>
+  </li>
+  <li>
+   <a href="http://www.ncbi.nlm.nih.gov/RefSeq/">
+    RefSeq
+   </a>
+  </li>
+  <li>
+   <a href="http://www.yeastgenome.org/">
+    Saccharomyces Genome database (SGD)
+   </a>
+  </li>
+  <li>
+   <a href="http://www.arabidopsis.org/">
+    TAIR Arabidopsis thaliana Information Resource
+   </a>
+  </li>
+  <li>
+   <a href="http://theseed.org/">
+    The Seed (SEED)
+   </a>
+  </li>
+  <li>
+   <a href="ftp://ftp.isrec.isb-sib.ch/pub/databases/trome">
+    TROME
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uspto.gov/">
+    USA Patent Office (USPTO)
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/uniprot">
+    UniProtKB/Swiss-Prot, UniProtKB/Swiss-Prot protein isoforms, UniProtKB/TrEMBL
+   </a>
+  </li>
+  <li>
+   <a href="http://vega.sanger.ac.uk/">
+    Vertebrate Genome Annotation database (VEGA)
+   </a>
+  </li>
+  <li>
+   <a href="http://www.wormbase.org/">
+    WormBase
+   </a>
+  </li>
+  <li>
+   <a href="http://parasite.wormbase.org/">
+    WormBase ParaSite (WBParaSite)
+   </a>
+  </li>
+ </ul>
+ <p>
+  UniParc also contains and will continue to keep cross-references to the following discontinued databases:
+ </p>
+ <ul>
+  <li>
+   IPI
+  </li>
+  <li>
+   PIR
+  </li>
+  <li>
+   PIRARC
+  </li>
+  <li>
+   REMTREMBL
+  </li>
+  <li>
+   UniMES
+  </li>
+  <li>
+   TREMBLNEW
+  </li>
+  <li>
+   TrEMBL_varsplic
+  </li>
+ </ul>
+</div>

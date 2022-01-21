@@ -1,0 +1,961 @@
+<div>
+ <h3 id="Introduction">
+  Introduction
+ </h3>
+ <p>
+  Most information in UniProtKB has one or several "evidence tags" which describe the source of the information, e.g. an experiment that has been published in the scientific literature, an orthologous protein, a record from another database, etc.
+ </p>
+ <p>
+  Formally, an evidence is described by a mandatory
+  <strong>
+   evidence type
+  </strong>
+  , represented by a code from the
+  <a href="http://www.evidenceontology.org/">
+   Evidence and Conclusion Ontology
+  </a>
+  (ECO) and, where applicable, the
+  <strong>
+   source of the information
+  </strong>
+  , which is usually a database record (articles from the scientific literature are represented as PubMed records, but in the case of publications that are not in PubMed we indicate instead the corresponding UniProtKB reference number).
+ </p>
+ <p>
+  ECO comprises two high-level classes,
+  <strong>
+   evidence
+  </strong>
+  and
+  <strong>
+   assertion method
+  </strong>
+  . Evidence is defined as a type of information that is used to support an assertion and assertion method is defined as a means by which a statement is made about an entity. Together evidence and assertion method can be used to describe both the support for an assertion and whether that assertion was made by a human being or a computer. UniProtKB is using only codes that combine evidence and assertion method.
+ </p>
+ <p>
+  Here are some examples of how evidence descriptions look in the UniProtKB flat file format:
+ </p>
+ <ul>
+  <li>
+   An evidence type without source:
+   <code>
+    {type}
+   </code>
+   , e.g.
+   <pre>{ECO:0000305}
+{ECO:0000250}
+{ECO:0000255}
+</pre>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   An evidence type with source:
+   <code>
+    {type|source}
+   </code>
+   , e.g.
+   <pre>{ECO:0000269|PubMed:24356955}
+{ECO:0000303|Ref.6}
+{ECO:0000305|PubMed:22388736}
+{ECO:0000250|UniProtKB:P11497}
+{ECO:0000255|HAMAP-Rule:MF_03130}
+{ECO:0000256|HAMAP-Rule:MF_03130}
+{ECO:0000312|EMBL:AAY86039.1}
+{ECO:0000313|EMBL:AAY86039.1}
+{ECO:0007744|PDB:1V90}
+{ECO:0007829|PDB:1V90}
+</pre>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Several evidence attributions:
+   <code>
+    {type|source, type|source, ...}
+   </code>
+   , e.g.
+   <pre>{ECO:0000269|PubMed:10433554, ECO:0000303|Ref.6}
+</pre>
+  </li>
+ </ul>
+ <p>
+  On the website, these descriptions are transformed to make them more user-friendly. The ECO codes are replaced by easy to understand labels and the sources are accessible by clicking on an arrow to list the hyper-linked sources. Evidence that is used in manual assertions is colored gold, e.g.
+ </p>
+ <div>
+  <span class="attribution ECO269">
+   <span class="attributionHeader">
+    1 Publication
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion based on experiment
+    </p>
+   </div>
+  </span>
+  <br/>
+  <span class="attribution ECO250">
+   <span class="attributionHeader">
+    By similarity
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion inferred from sequence similarity
+    </p>
+   </div>
+  </span>
+  <br/>
+  <span class="attribution ECO255">
+   <span class="attributionHeader">
+    UniRule annotation
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion according to rules
+    </p>
+    <ul>
+     <li>
+      <a href="http://hamap.expasy.org/unirule/MF_03130">
+       HAMAP-Rule:MF_03130
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+  <br/>
+  <span class="attribution ECO312">
+   <span class="attributionHeader">
+    Imported
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion inferred from database entries
+    </p>
+    <ul>
+     <li>
+      <a href="https://www.ebi.ac.uk/ena/browser/view/AAY86039">
+       EMBL:AAY86039.1
+      </a>
+     </li>
+     <li>
+      <a href="http://www.informatics.jax.org/marker/MGI:87860">
+       MGI:87860
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+ </div>
+ <p>
+  and those that are used in automatic assertions are colored blue, e.g.
+ </p>
+ <div>
+  <span class="attribution ECO256">
+   <span class="attributionHeader">
+    UniRule annotation
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Automatic assertion according to rules
+    </p>
+    <ul>
+     <li>
+      <a href="http://pir.georgetown.edu/cgi-bin/pirrule?id=PIRNR036489">
+       PIRNR:PIRNR036489
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+  <br/>
+  <span class="attribution ECO313">
+   <span class="attributionHeader">
+    Imported
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Automatic assertion inferred from database entries
+    </p>
+    <ul>
+     <li>
+      <a href="https://www.ebi.ac.uk/ena/browser/view/ABC70327">
+       EMBL:ABC70327.1
+      </a>
+     </li>
+     <li>
+      <a href="http://www.informatics.jax.org/marker/MGI:96952">
+       MGI:96952
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+ </div>
+ <h3 id="Evidence_types_that_are_used_in_UniProtKB">
+  Evidence types that are used in UniProtKB
+ </h3>
+ <h4 id="manual_assertions">
+  Evidence that is used only in manual assertions
+ </h4>
+ <h5 id="ECO:0000269">
+  Experimental evidence
+ </h5>
+ <p>
+  We use the ECO code
+  <a href="http://purl.obolibrary.org/obo/ECO%5F0000269">
+   ECO:0000269
+  </a>
+  for manually curated information for which there is published experimental evidence. The PubMed identifier of the publication(s) which is the original source of the information is provided (for publications that are not in PubMed we indicate instead the corresponding UniProtKB reference number(s)).
+ </p>
+ <p>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/D9N129#function">
+   D9N129
+  </a>
+ </p>
+ <div>
+  <span class="attribution ECO269">
+   <span class="attributionHeader">
+    1 Publication
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion based on experiment
+    </p>
+    <ul>
+     <li>
+      <div class="reference_content">
+       <div>
+        <strong>
+         "The WD40-repeat proteins WDR-20 and WDR-48 bind and activate the deubiquitinating enzyme USP-46 to promote the abundance of the glutamate receptor GLR-1 in the ventral nerve cord of Caenorhabditis elegans."
+        </strong>
+        <br/>
+        <a href="http://www.uniprot.org/uniprot/?query=author:%22Moremen+K.W.%22&amp;sort=score" rel="nofollow">
+         Moremen K.W.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/uniprot/?query=author:%22Touster+O.%22&amp;sort=score" rel="nofollow">
+         Touster O.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/uniprot/?query=author:%22Robbins+P.W.%22&amp;sort=score" rel="nofollow">
+         Robbins P.W.
+        </a>
+        <br/>
+        J. Biol. Chem. 266:16876-16885(1991) [
+        <a href="https://pubmed.ncbi.nlm.nih.gov/1885615">
+         PubMed
+        </a>
+        ] [
+        <a href="https://europepmc.org/abstract/MED/1885615">
+         Europe PMC
+        </a>
+        ] [
+        <a href="http://www.uniprot.org/citations/1885615">
+         Abstract
+        </a>
+        ]
+       </div>
+       <div class="citedFor">
+        <span class="details">
+         <strong>
+          Cited for:
+         </strong>
+        </span>
+        PROTEIN SEQUENCE OF
+        <a class="tooltipped blastSubsequences" href="http://www.uniprot.org/blast/?about=P28494[107-136]" title="View this subsequence or run a BLAST search on it.">
+         107-136
+        </a>
+        AND
+        <a class="tooltipped blastSubsequences" href="http://www.uniprot.org/blast/?about=P28494[478-496]" title="View this subsequence or run a BLAST search on it.">
+         478-496
+        </a>
+        , CATALYTIC ACTIVITY, ACTIVITY REGULATION, SUBUNIT, SUBCELLULAR LOCATION, TISSUE SPECIFICITY, GLYCOSYLATION.
+       </div>
+      </div>
+     </li>
+    </ul>
+   </div>
+  </span>
+ </div>
+ <pre>CC   -!- FUNCTION: Together with wdr-48, binds to and stimulates the
+CC       activity of the deubiquitinating enzyme usp-46, leading to
+CC       deubiquitination and stabilization of the glr-1 glutamate
+CC       receptor. {ECO:0000269|PubMed:24356955}.
+</pre>
+ <h5 id="ECO:0000303">
+  Non-traceable author statement evidence
+ </h5>
+ <p>
+  We use the ECO code
+  <a href="http://purl.obolibrary.org/obo/ECO%5F0000303">
+   ECO:0000303
+  </a>
+  for manually curated information that is based on statements in scientific articles for which there is no experimental support. The PubMed identifier of the paper(s) which is the original source of the information is provided (for publications that are not in PubMed we indicate instead the corresponding UniProtKB reference number(s)).
+ </p>
+ <p>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P28494#function">
+   P28494
+  </a>
+ </p>
+ <div>
+  <span class="attribution ECO303">
+   <span class="attributionHeader">
+    1 Publication
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion based on opinion
+    </p>
+    <ul>
+     <li>
+      <div class="reference_content">
+       <div>
+        <strong>
+         "Novel purification of the catalytic domain of Golgi alpha-mannosidase II. Characterization and comparison with the intact enzyme."
+        </strong>
+        <br/>
+        <a href="http://www.uniprot.org/?query=author:%22Ferrante+A.W.+Jr.%22" rel="nofollow">
+         Ferrante A.W. Jr.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Reinke+R.%22" rel="nofollow">
+         Reinke R.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Stanley+E.R.%22" rel="nofollow">
+         Stanley E.R.
+        </a>
+        <br/>
+        <a href="http://dx.doi.org/10.1073/pnas.92.6.1911">
+         Proc. Natl. Acad. Sci. U.S.A. 92:1911-1915(1995)
+        </a>
+        [
+        <a href="http://www.ncbi.nlm.nih.gov/pubmed/7892198">
+         PubMed
+        </a>
+        ] [
+        <a href="http://europepmc.org/abstract/MED/7892198">
+         Europe PMC
+        </a>
+        ] [
+        <a href="http://www.uniprot.org/citations/7892198">
+         Abstract
+        </a>
+        ]
+       </div>
+       <div class="citedFor">
+        <span class="details">
+         <strong>
+          Cited for
+         </strong>
+        </span>
+        :
+        <span class="details">
+         NUCLEOTIDE SEQUENCE [MRNA], FUNCTION, SUBCELLULAR LOCATION, TISSUE SPECIFICITY, DEVELOPMENTAL STAGE.
+        </span>
+       </div>
+      </div>
+     </li>
+    </ul>
+   </div>
+  </span>
+ </div>
+ <pre>CC   -!- FUNCTION: Catalyzes the first committed step in the biosynthesis of
+CC       complex N-glycans. It controls conversion of high mannose to complex N-
+CC       glycans; the final hydrolytic step in the N-glycan maturation pathway.
+CC       {ECO:0000303|PubMed:1885615}.
+</pre>
+ <h5 id="ECO:0000305">
+  Curator inference evidence
+ </h5>
+ <p>
+  We use the ECO code
+  <a href="http://purl.obolibrary.org/obo/ECO%5F0000305">
+   ECO:0000305
+  </a>
+  for manually curated information which has been inferred by a curator based on his/her scientific knowledge or on the scientific content of an article. If the information is inferred from the scientific content of an article, the PubMed identifier of the supporting paper is provided (for publications that are not in PubMed we indicate instead the corresponding UniProtKB reference number(s)).
+ </p>
+ <p>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q9UKV3#miscellaneous">
+   Q9UKV3
+  </a>
+ </p>
+ <div>
+  <span class="attribution ECO305">
+   <span class="attributionHeader">
+    1 Publication
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion inferred from experiment in
+    </p>
+    <ul>
+     <li>
+      <div class="reference_content">
+       <div>
+        <strong>
+         "The structure of the ASAP core complex reveals the existence of a Pinin-containing PSAP complex."
+        </strong>
+        <br/>
+        <a href="http://www.uniprot.org/?query=author:%22Murachelli+A.G.%22" rel="nofollow">
+         Murachelli A.G.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Ebert+J.%22" rel="nofollow">
+         Ebert J.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Basquin+C.%22" rel="nofollow">
+         Basquin C.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Le+Hir+H.%22" rel="nofollow">
+         Le Hir H.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Conti+E.%22" rel="nofollow">
+         Conti E.
+        </a>
+        <br/>
+        <a href="http://dx.doi.org/10.1038/nsmb.2242">
+         Nat. Struct. Mol. Biol. 19:378-386(2012)
+        </a>
+        [
+        <a href="http://www.ncbi.nlm.nih.gov/pubmed/22388736">
+         PubMed
+        </a>
+        ] [
+        <a href="http://europepmc.org/abstract/MED/22388736">
+         Europe PMC
+        </a>
+        ] [
+        <a href="http://www.uniprot.org/citations/22388736">
+         Abstract
+        </a>
+        ]
+       </div>
+       <div class="citedFor">
+        <span class="details">
+         <strong>
+          Cited for
+         </strong>
+        </span>
+        :
+        <span class="details">
+         INTERACTION WITH RNPS1, COMPOSITION OF THE ASAP COMPLEX, FUNCTION OF THE ASAP COMPLEX.
+        </span>
+       </div>
+      </div>
+     </li>
+    </ul>
+   </div>
+  </span>
+ </div>
+ <pre>CC   -!- CAUTION: Structural and functional studies of the ASAP complex
+CC       have been conducted with a chimeric complex involving a conserved
+CC       fragment of Drosophila melanogaster Acinus/hkl.
+CC       {ECO:0000305|PubMed:22388736}.
+</pre>
+ <p>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P62196#ptm%5Fprocessing">
+   P62196
+  </a>
+ </p>
+ <div>
+  <span class="attribution ECO305">
+   <span class="attributionHeader">
+    1 Publication
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion inferred from experiment in
+    </p>
+    <ul>
+     <li>
+      <div class="reference_content">
+       <div>
+        <strong>
+         "Mapping the murine cardiac 26S proteasome complexes."
+        </strong>
+        <br/>
+        <a href="http://www.uniprot.org/?query=author:%22Gomes+A.V.%22" rel="nofollow">
+         Gomes A.V.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Zong+C.%22" rel="nofollow">
+         Zong C.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Edmondson+R.D.%22" rel="nofollow">
+         Edmondson R.D.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Li+X.%22" rel="nofollow">
+         Li X.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Stefani+E.%22" rel="nofollow">
+         Stefani E.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Zhang+J.%22" rel="nofollow">
+         Zhang J.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Jones+R.C.%22" rel="nofollow">
+         Jones R.C.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Thyparambil+S.%22" rel="nofollow">
+         Thyparambil S.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Wang+G.W.%22" rel="nofollow">
+         Wang G.W.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Qiao+X.%22" rel="nofollow">
+         Qiao X.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Bardag-Gorce+F.%22" rel="nofollow">
+         Bardag-Gorce F.
+        </a>
+        ,
+        <a href="http://www.uniprot.org/?query=author:%22Ping+P.%22" rel="nofollow">
+         Ping P.
+        </a>
+        <br/>
+        <a href="http://dx.doi.org/10.1161/01.RES.0000237386.98506.f7">
+         Circ. Res. 99:362-371(2006)
+        </a>
+        [
+        <a href="http://www.ncbi.nlm.nih.gov/pubmed/16857966">
+         PubMed
+        </a>
+        ] [
+        <a href="http://europepmc.org/abstract/MED/16857966">
+         Europe PMC
+        </a>
+        ] [
+        <a href="http://www.uniprot.org/citations/16857966">
+         Abstract
+        </a>
+        ]
+       </div>
+       <div class="citedFor">
+        <span class="details">
+         <strong>
+          Cited for
+         </strong>
+        </span>
+        :
+        <span class="details">
+         IDENTIFICATION IN THE 19S PROTEASOME REGULATORY COMPLEX, ACETYLATION AT ALA-2.
+        </span>
+       </div>
+      </div>
+     </li>
+    </ul>
+   </div>
+  </span>
+ </div>
+ <pre>FT   INIT_MET      1      1       Removed. {ECO:0000305|PubMed:16857966}.
+</pre>
+ <h5 id="ECO:0000250">
+  Sequence similarity evidence
+ </h5>
+ <p>
+  We use the ECO code
+  <a href="http://purl.obolibrary.org/obo/ECO%5F0000250">
+   ECO:0000250
+  </a>
+  for manually curated information which has been propagated from a related experimentally characterized protein. The accession number of the experimental source is provided (except for some historic UniProtKB/Swiss-Prot annotations, see
+  <a href="http://www.uniprot.org/faq/evidence%5Fin%5Fswissprot">
+   Why don't all UniProtKB/Swiss-Prot annotations have evidence?
+  </a>
+  ).
+ </p>
+ <p>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/D3DJ41#ptm%5Fprocessing">
+   D3DJ41
+  </a>
+ </p>
+ <div>
+  <span class="attribution ECO250">
+   <span class="attributionHeader">
+    By similarity
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion inferred from sequence similarity
+    </p>
+    <ul>
+     <li>
+      <a href="http://www.uniprot.org/uniprot/P11498">
+       UniProtKB:P11498
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+ </div>
+ <pre>FT   MOD_RES     609    609       N6-biotinyllysine.
+FT                                {ECO:0000250|UniProtKB:P11498}.
+</pre>
+ <h4 id="automatic_assertions">
+  Evidence that is used in manual and automatic assertions
+ </h4>
+ <div id="ECO:0000259">
+ </div>
+ <div id="ECO:0000256">
+ </div>
+ <h5 id="ECO:0000255">
+  Sequence model evidence
+ </h5>
+ <p>
+  We use the ECO code
+  <a href="http://purl.obolibrary.org/obo/ECO%5F0000255">
+   ECO:0000255
+  </a>
+  in manual assertions and
+  <a href="http://purl.obolibrary.org/obo/ECO%5F0000256">
+   ECO:0000256
+  </a>
+  (and its descendant code
+  <a href="http://purl.obolibrary.org/obo/ECO%5F0000259">
+   ECO:0000259
+  </a>
+  ) in automatic assertions, respectively, for information which has been generated by the UniProtKB
+  <a href="http://www.uniprot.org/help/automatic%5Fannotation">
+   automatic annotation
+  </a>
+  system. The database name and identifier of the sequence model rule that has been used by the system are provided.
+ </p>
+ <p>
+  The ECO code
+  <a href="http://purl.obolibrary.org/obo/ECO%5F0000255">
+   ECO:0000255
+  </a>
+  is also used for information which has been generated by various sequence analysis programs that are used during the manual curation process and which has been verified by a curator.
+ </p>
+ <p>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P0A940#family%5Fand%5Fdomains">
+   P0A940
+  </a>
+ </p>
+ <div>
+  <span class="attribution ECO255">
+   <span class="attributionHeader">
+    UniRule annotation
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion according to rules
+    </p>
+    <ul>
+     <li>
+      <a href="http://hamap.expasy.org/unirule/MF_00979">
+       HAMAP-Rule:MF_00979
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+  <br/>
+  <span class="attribution ECO255">
+   <span class="attributionHeader">
+    PROSITE-ProRule annotations
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion according to rules
+    </p>
+    <ul>
+     <li>
+      <a href="http://prosite.expasy.org/unirule/PRU00169">
+       PROSITE-ProRule:PRU00169
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+  <br/>
+  <span class="attribution ECO255">
+   <span class="attributionHeader">
+    Sequence Analysis
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion according to rules
+    </p>
+   </div>
+  </span>
+ </div>
+ <pre>CC   -!- SIMILARITY: Belongs to the BamA family. {ECO:0000255|HAMAP-
+CC       Rule:MF_01430}.
+FT   TOPO_DOM    790    803       Extracellular; loop 8. {ECO:0000305}.
+FT   TRANSMEM    804    808       Beta stranded.
+FT                                {ECO:0000269|PubMed:24914988}.
+FT   DOMAIN       24     91       POTRA 1. {ECO:0000255|PROSITE-
+FT                                ProRule:PRU01115,
+FT                                ECO:0000305|PubMed:14559180}.
+</pre>
+ <p>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q86NT5#function">
+   Q86NT5
+  </a>
+ </p>
+ <div>
+  <span class="attribution ECO256">
+   <span class="attributionHeader">
+    UniRule annotation
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Automatic assertion according to rules
+    </p>
+    <ul>
+     <li>
+      <a href="http://www.uniprot.org/unirule/UR000176873">
+       PIRSR000106-3
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+  <br/>
+  <span class="attribution ECO256">
+   <span class="attributionHeader">
+    UniRule annotation
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Automatic assertion according to rules
+    </p>
+    <ul>
+     <li>
+      <a href="http://www.uniprot.org/unirule/UR000000446">
+       RuleBase:RU003426
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+  <br/>
+  <span class="attribution ECO256">
+   <span class="attributionHeader">
+    Sequence analysis
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Automatic assertion according to rules
+    </p>
+    <ul>
+     <li>
+      <a href="http://www.uniprot.org/help/sam">
+       SAM:Phobius
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+ </div>
+ <pre>CC   -!- SIMILARITY: Belongs to the malic enzymes family.
+CC       {ECO:0000256|RuleBase:RU003426}.
+KW   Membrane {ECO:0000256|SAM:Phobius};
+KW   Metal-binding {ECO:0000256|PIRSR:PIRSR000106-3,
+KW   ECO:0000256|RuleBase:RU003426};
+KW   Transmembrane {ECO:0000256|SAM:Phobius};
+KW   Transmembrane helix {ECO:0000256|SAM:Phobius}.
+FT   TRANSMEM    327    345       Helical. {ECO:0000256|SAM:Phobius}.
+FT   METAL       277    277       Divalent metal cation.
+FT                                {ECO:0000256|PIRSR:PIRSR000106-3}.
+</pre>
+ <div id="ECO:0000313">
+ </div>
+ <h5 id="ECO:0000312">
+  Imported information evidence
+ </h5>
+ <p>
+  We use the ECO code
+  <a href="http://purl.obolibrary.org/obo/ECO%5F0000312">
+   ECO:0000312
+  </a>
+  in manual assertions and
+  <a href="http://purl.obolibrary.org/obo/ECO%5F0000313">
+   ECO:0000313
+  </a>
+  in automatic assertions, respectively, for information which has been imported from another database. The database name and identifier of the entry from which the information has been imported are provided.
+ </p>
+ <p>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q4JIM5#names%5Fand%5Ftaxonomy">
+   Q4JIM5
+  </a>
+ </p>
+ <div>
+  <span class="attribution ECO312">
+   <span class="attributionHeader">
+    Imported
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion inferred from database entries
+    </p>
+    <ul>
+     <li>
+      <a href="https://www.ebi.ac.uk/ena/browser/view/AAY86039">
+       EMBL:AAY86039.1
+      </a>
+     </li>
+     <li>
+      <a href="http://www.informatics.jax.org/marker/MGI:87860">
+       MGI:87860
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+ </div>
+ <pre>GN   Name=Abl2 {ECO:0000312|EMBL:AAY86039.1, ECO:0000312|MGI:MGI:87860};
+</pre>
+ <p>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q2L9A9#names%5Fand%5Ftaxonomy">
+   Q2L9A9
+  </a>
+ </p>
+ <div>
+  <span class="attribution ECO313">
+   <span class="attributionHeader">
+    Imported
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Automatic assertion inferred from database entries
+    </p>
+    <ul>
+     <li>
+      <a href="https://www.ebi.ac.uk/ena/browser/view/ABC70327">
+       EMBL:ABC70327.1
+      </a>
+     </li>
+     <li>
+      <a href="http://www.informatics.jax.org/marker/MGI:96952">
+       MGI:96952
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+ </div>
+ <pre>GN   Name=Mdm2 {ECO:0000313|EMBL:ABC70327.1, ECO:0000313|MGI:MGI:96952};
+</pre>
+ <div id="ECO:0007829">
+ </div>
+ <h5 id="ECO:0007744">
+  Combinatorial evidence
+ </h5>
+ <p>
+  We use the ECO code
+  <a href="http://purl.obolibrary.org/obo/ECO%5F0007744">
+   ECO:0007744
+  </a>
+  in manual assertions and
+  <a href="http://purl.obolibrary.org/obo/ECO%5F0007829">
+   ECO:0007829
+  </a>
+  in automatic assertions, respectively, for information inferred from a combination of experimental and computational evidence. It is currently used in UniProtKB for published large-scale proteomics data and a subset of 3D structural data for which UniProt makes use of computational procedures to generate the data. If the experimental evidence is derived from a paper, the PubMed identifier of the paper is provided. For experimental data derived from the Protein Data Bank, the PDB code is provided.
+ </p>
+ <p>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P83256#structure">
+   P83256
+  </a>
+ </p>
+ <div>
+  <span class="attribution ECO7744">
+   <span class="attributionHeader">
+    Combined sources
+    <span class="showHideEvidence caret_grey displayThisInline">
+    </span>
+   </span>
+   <div class="evidenceContainer" style="display: none;">
+    <p class="attributionExplain">
+     Manual assertion inferred from algorithms based on publications or databases entries
+    </p>
+    <ul>
+     <li>
+      <a href="http://www.ebi.ac.uk/pdbe-srv/view/entry/1V90">
+       PDB:1V90
+      </a>
+     </li>
+    </ul>
+   </div>
+  </span>
+ </div>
+ <pre>FT   STRAND        5      7       {ECO:0007744|PDB:1V90}.
+FT   TURN         11     13       {ECO:0007744|PDB:1V90}.
+FT   STRAND       26     29       {ECO:0007744|PDB:1V90}.
+</pre>
+ <h4 id="Related_documents">
+  Related documents
+ </h4>
+ <div class="external_link">
+  <p>
+   <a href="http://www.uniprot.org/help/evidence%5Fin%5Fswissprot">
+    Why don't all UniProtKB/Swiss-Prot annotations have evidence?
+   </a>
+   <br/>
+   <a href="http://www.uniprot.org/help/evidence%5Ftable">
+    How can I query UniProtKB annotations by evidence?
+   </a>
+   - A guide to evidence codes and labels in entry view and advanced search
+  </p>
+ </div>
+</div>

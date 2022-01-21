@@ -1,0 +1,5 @@
+annotation_guidelines
+---
+Dead links
+http://www.uniprot.org/docs/nomlist
+

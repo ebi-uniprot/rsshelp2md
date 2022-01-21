@@ -1,0 +1,14 @@
+evidences
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/D9N129#function
+http://www.uniprot.org/uniprot/P28494#function
+http://www.uniprot.org/uniprot/Q9UKV3#miscellaneous
+http://www.uniprot.org/uniprot/P62196#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/D3DJ41#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P0A940#family%5Fand%5Fdomains
+http://www.uniprot.org/uniprot/Q86NT5#function
+http://www.uniprot.org/uniprot/Q4JIM5#names%5Fand%5Ftaxonomy
+http://www.uniprot.org/uniprot/Q2L9A9#names%5Fand%5Ftaxonomy
+http://www.uniprot.org/uniprot/P83256#structure
+

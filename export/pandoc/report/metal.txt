@@ -1,0 +1,11 @@
+metal
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q9NWT6#function
+http://www.uniprot.org/uniprot/P12851#function
+http://www.uniprot.org/uniprot/P00442#function
+http://www.uniprot.org/uniprot/P57257#function
+http://www.uniprot.org/uniprot/P04746#function
+http://www.uniprot.org/uniprot/P01966#function
+http://www.uniprot.org/uniprot/P00163#function
+

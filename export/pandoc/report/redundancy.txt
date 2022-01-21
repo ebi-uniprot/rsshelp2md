@@ -1,0 +1,9 @@
+redundancy
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=replaces:P08409
+
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q9BXB7#cross-references
+http://www.uniprot.org/uniprot/P68431#names%5Fand%5Ftaxonomy
+

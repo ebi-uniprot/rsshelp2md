@@ -1,0 +1,5 @@
+canonical_and_isoforms
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P42284#sequences
+

@@ -1,0 +1,115 @@
+<div>
+ <p>
+  This subsection of the 'Function' section provides information relevant to cofactors. A cofactor is any non-protein substance required for a protein to be catalytically active. Some cofactors are inorganic, such as the metal atoms zinc, iron, and copper in various oxidation states. Others, such as most vitamins, are organic.
+ </p>
+ <p>
+  Cofactors are generally either bound tightly to active sites, or may bind loosely with the enzyme. They may also be important for structural integrity, i.e. if they are not present, the enzyme does not fold properly or becomes unstable.
+ </p>
+ <p>
+  The 'Cofactor' subsection is used when ions and other small ligands bind to the enzyme. These cofactor molecules are mapped to
+  <a href="http://www.ebi.ac.uk/chebi/">
+   ChEBI
+  </a>
+  identifiers. In the case of multimers, cofactors can be bound either to only one subunit of the enzyme or to the interface. In the former case, the cofactor is only annotated for the subunit to which it binds.
+ </p>
+ <p>
+  Substrates for a reaction (NAD, FAD, ATP) that are listed in the
+  <a href="http://www.uniprot.org/manual/catalytic%5Factivity">
+   Catalytic activity
+  </a>
+  subsection are not listed as cofactors, with the exception of the rare cases in which an enzyme binds the same type of molecule as a substrate at one site and as a cofactor at other sites.
+ </p>
+ <p>
+  The following substances are not considered as cofactors:
+  <br/>
+  - Ubiquitous substances such as water are not considered as cofactors
+  <br/>
+  - Ions that are part of well-described metal binding domains, such as EF-hands.
+ </p>
+ <p>
+  <strong>
+   When alternative molecules can act as cofactors at the same site
+  </strong>
+  , they are listed in one 'Cofactor' annotation block. Only molecules that allow more than 50% of the maximum activity are mentioned, while others can be mentioned in the "Note" field.
+  <br/>
+  Examples:
+  <a href="http://www.uniprot.org/uniprot/P00918#function">
+   P00918
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/G3XD94#function">
+   G3XD94
+  </a>
+ </p>
+ <p>
+  <strong>
+   When the precise stoichiometry of a cofactor is known
+  </strong>
+  , this is indicated in the "Note" field. In such cases, only one 'Cofactor' annotation block is created.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q90240#function">
+   Q90240
+  </a>
+ </p>
+ <p>
+  <strong>
+   When an enzyme binds chemically different cofactors at different sites
+  </strong>
+  , there is one 'Cofactor' annotation block for each site.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P38289#function">
+   P38289
+  </a>
+ </p>
+ <p>
+  <strong>
+   When an enzyme binds a cofactor via a covalent linkage
+  </strong>
+  , the name of the compound is indicated under 'Cofactor', while the name of the modification is described under
+  <a href="http://www.uniprot.org/manual/mod%5Fres">
+   Post-translational modifications (Modified residue)
+  </a>
+  .
+  <br/>
+  Examples:
+  <a href="http://www.uniprot.org/uniprot/P9WP55#function">
+   P9WP55
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/B3QM53#function">
+   B3QM53
+  </a>
+ </p>
+ <p>
+  <strong>
+   If there is isoform-specific or chain-specific cofactor information
+  </strong>
+  , there will be separate 'Cofactor' annotation blocks for each isoform or chain.
+  <br/>
+  Examples:
+  <a href="http://www.uniprot.org/uniprot/O15304#function">
+   O15304
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/P26662#function">
+   P26662
+  </a>
+ </p>
+ <p>
+  <strong>
+   If a cofactor is proven not to be required for activity, or too complex to be described with ChEBI
+  </strong>
+  , it is possible to have 'Cofactor' annotation block consisting only of a "Note".
+  <br/>
+  Examples:
+  <a href="http://www.uniprot.org/uniprot/A9CEQ7#function">
+   A9CEQ7
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/Q9F1R6#function">
+   Q9F1R6
+  </a>
+ </p>
+</div>

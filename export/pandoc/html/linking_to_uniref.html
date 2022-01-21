@@ -1,0 +1,70 @@
+<div>
+ <p>
+  <strong>
+   Are UniRef cluster identifiers permanent?
+  </strong>
+ </p>
+ <p>
+  No. However, the vast majority do not change from release to release even if clusters are recomputed, and the representative entry usually remains the same. For example,
+  <a href="http://www.uniprot.org/uniref/UniRef50%5FP99999">
+   UniRef50_P99999
+  </a>
+  has over 450 members, and
+  <a href="http://www.uniprot.org/uniprot/P99999">
+   Cytochrome C from Human
+  </a>
+  is the representative. This will probably remain so, as it is by far the best annotated and biologically relevant member of the cluster. If a cluster has multiple equally suitable well-annotated members, the historically consistent representative member takes precedence.
+ </p>
+ <p>
+  <strong>
+   How do I link to UniRef clusters, and what if the cluster ID changed?
+  </strong>
+ </p>
+ <p>
+  You can link directly to UniRef using the cluster ID:
+ </p>
+ <code>
+  https://www.uniprot.org/uniref/UniRef90_P99999
+ </code>
+ <p>
+  A more stable way of referring to the UniRef90 cluster containing
+  <a href="http://www.uniprot.org/uniprot/P99999">
+   P99999
+  </a>
+  , however, is to use query URLs as in this example:
+ </p>
+ <p>
+  Link to the UniRef90 cluster containing UniProtKB P99999:
+ </p>
+ <p>
+  <a href="http://www.uniprot.org/uniref/?query=member:P99999+AND+identity:0.9">
+   member:P99999 AND identity:0.9
+  </a>
+ </p>
+ <p>
+  You can replace
+  <code>
+   identity:0.9
+  </code>
+  with
+  <code>
+   identity:0.5
+  </code>
+  for UniRef50 or
+  <code>
+   identity:1.0
+  </code>
+  for UniRef100.
+ </p>
+ <p>
+  These URLs will continue to work, even if the representative member and thus the cluster ID change between releases.
+ </p>
+ <p>
+  See also:
+ </p>
+ <p>
+  <a href="http://www.uniprot.org/help/linking%5Fto%5Funiprot">
+   How to link to UniProt entries (UniProtKB, UniParc and UniRef)
+  </a>
+ </p>
+</div>

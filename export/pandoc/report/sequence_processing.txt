@@ -1,0 +1,9 @@
+sequence_processing
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P01308#sequences
+http://www.uniprot.org/uniprot/P01308#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q99K67#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P68250#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/O60437#sequences
+

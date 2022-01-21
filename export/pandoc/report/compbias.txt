@@ -1,0 +1,7 @@
+compbias
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q9Y2N7#family%5Fand%5Fdomains
+http://www.uniprot.org/uniprot/P62521#family%5Fand%5Fdomains
+http://www.uniprot.org/uniprot/Q9W705#family%5Fand%5Fdomains
+

@@ -1,0 +1,19 @@
+controlled_vocabulary
+---
+Dead links
+http://www.uniprot.org/docs/jourlist
+http://www.uniprot.org/docs/jourlist
+http://www.uniprot.org/docs/keywlist
+http://www.unipathway.org/
+http://www.uniprot.org/docs/pathlist
+http://www.uniprot.org/docs/plasmid
+http://www.uniprot.org/docs/plasmid
+http://www.uniprot.org/docs/speclist
+http://www.uniprot.org/manual/references
+http://www.uniprot.org/docs/strains
+http://www.uniprot.org/manual/references
+http://www.uniprot.org/docs/humdisease
+
+Dead anchor tags
+http://www.uniprot.org/help/taxonomy#strain
+

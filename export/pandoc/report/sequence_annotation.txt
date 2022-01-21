@@ -1,0 +1,19 @@
+sequence_annotation
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P62756#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P78586#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q3ZC31#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q7XAD0#ptm_processing
+http://www.uniprot.org/uniprot/Q9W568#ptm_processing
+http://www.uniprot.org/uniprot/P15515#ptm_processing
+http://www.uniprot.org/uniprot/P02771#ptm_processing
+http://www.uniprot.org/uniprot/P81278#sequences
+http://www.uniprot.org/uniprot/P11171#sequences
+
+Number tables converted to Markdown
+1
+
+Number tables left as HTML
+1
+

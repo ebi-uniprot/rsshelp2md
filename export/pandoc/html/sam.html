@@ -1,0 +1,164 @@
+<div>
+ <p>
+  UniProt's
+  <a href="http://www.uniprot.org/help/automatic%5Fannotation">
+   Automatic Annotation pipeline
+  </a>
+  has been designed to enhance the
+  <strong>
+   unreviewed records (in UniProtKB/TrEMBL
+  </strong>
+  by enriching them with automatic classification and annotation. In this context, we use a suite of Sequence Analysis Methods (SAM) to annotate extra sequence-specific information, some of which are also applied to
+  <strong>
+   reviewed records (in UniProtKB/Swiss-Prot)
+  </strong>
+  .
+ </p>
+ <h3 id="Methods">
+  Methods
+ </h3>
+ <p>
+  Predictions of sequence features such as
+  <a href="http://www.uniprot.org/help/signal">
+   Signal
+  </a>
+  ,
+  <a href="http://www.uniprot.org/help/transmem">
+   Transmembrane
+  </a>
+  ,
+  <a href="http://www.uniprot.org/help/coiled">
+   Coiled coil
+  </a>
+  and
+  <a href="https://en.wikipedia.org/wiki/Intrinsically%5Fdisordered%5Fproteins">
+   intrinsically disordered
+  </a>
+  regions (the latter described in
+  <a href="http://www.uniprot.org/help/region">
+   Region
+  </a>
+  and
+  <a href="http://www.uniprot.org/help/compbias">
+   Compositional bias
+  </a>
+  annotations) are generated using the following software from external providers:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.cbs.dtu.dk/services/TMHMM/">
+    TMHMM
+   </a>
+  </li>
+  <li>
+   <a href="http://www.cbs.dtu.dk/services/SignalP/">
+    SignalP
+   </a>
+  </li>
+  <li>
+   <a href="http://phobius.sbc.su.se/">
+    Phobius
+   </a>
+  </li>
+  <li>
+   <a href="http://embnet.vital-it.ch/software/COILS%5Fform.html">
+    Coils
+   </a>
+  </li>
+  <li>
+   <a href="http://protein.bio.unipd.it/mobidblite/">
+    MobiDB-lite
+   </a>
+  </li>
+ </ul>
+ <p>
+  These methods are applied to UniProtKB sequences by
+  <a href="http://www.ebi.ac.uk/interpro">
+   InterPro
+  </a>
+  to predict sequence features. More annotations (mainly
+  <a href="http://www.uniprot.org/help/keywords">
+   keywords
+  </a>
+  ) are then added automatically to enrich the generated predictions. The new predictions are propagated to all the UniProtKB/TrEMBL records that do not already contain such feature predictions from the
+  <a href="http://www.uniprot.org/help/unirule">
+   UniRule
+  </a>
+  automatic annotation system.
+ </p>
+ <h3 id="Overlaps_and_sanity_checks">
+  Overlaps and sanity checks
+ </h3>
+ <p>
+  We use the overlap of different methods to confirm the presence of a predicted sequence feature.
+ </p>
+ <h4 id="Transmembrane_region">
+  Transmembrane region
+ </h4>
+ <p>
+  TMHMM and Phobius predictors are used to infer transmembrane regions. If there is an overlap of at least 10 amino acids between TMHMM and Phobius results, the transmembrane region is annotated using the sequence ranges predicted by Phobius. Otherwise, if there is no such overlap, no predictions are generated.
+ </p>
+ <p>
+  See also:
+  <br/>
+  <a href="http://www.uniprot.org/help/transmem">
+   Transmembrane regions in reviewed entries
+  </a>
+ </p>
+ <p>
+  <img alt="image" src="data:image/png;base64," style="display: block; margin-left: auto; margin-right: auto;"/>
+ </p>
+ <h4 id="Signal_peptide">
+  Signal peptide
+ </h4>
+ <p>
+  TMHMM, SignalP and Phobius predictors are used to infer signal peptides. If there is a prediction from SignalP and none from TMHMM in the same range, the signal peptide is annotated.
+  <br/>
+  If SignalP and Phobius both predict a signal peptide, then it is annotated.
+  <br/>
+  When predicted N-terminal signal peptides (as predicted by SignalP) and transmembrane regions (as predicted by TMHMM) overlap, then the prediction returned by Phobius is used to discriminate between the two possibilities.
+  <br/>
+  In all the above cases, we annotate the sequence region predicted by SignalP.
+ </p>
+ <p>
+  See also:
+  <br/>
+  <a href="http://www.uniprot.org/help/signal">
+   Signal peptides in reviewed entries
+  </a>
+ </p>
+ <h4 id="Coiled_coil_region">
+  Coiled coil region
+ </h4>
+ <p>
+  Only the Coils method is used to predict coiled coil regions. If a disordered region is predicted in the same range by MobiDB-lite, the coiled coil region is not annotated.
+ </p>
+ <p>
+  See also:
+  <br/>
+  <a href="http://www.uniprot.org/help/coiled">
+   Coiled coil regions in reviewed entries
+  </a>
+ </p>
+ <h4 id="Intrinsically_disordered_region">
+  Intrinsically disordered region
+ </h4>
+ <p>
+  The
+  <a href="https://doi.org/10.1093/bioinformatics/btx015">
+   MobiDB-lite method
+  </a>
+  uses several different predictors to derive a consensus prediction for regions that are intrinsically disordered (or have a compositional bias). These predictions can be found in both reviewed and unreviewed entries.
+ </p>
+ <p>
+  See also:
+  <br/>
+  <a href="http://www.uniprot.org/help/region">
+   Region
+  </a>
+  <br/>
+  <a href="http://www.uniprot.org/help/compbias">
+   Compositional bias
+  </a>
+ </p>
+</div>

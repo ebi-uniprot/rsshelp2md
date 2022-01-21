@@ -1,0 +1,6 @@
+intramem
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q03135#subcellular_location
+http://www.uniprot.org/uniprot/A8MYU2#subcellular_location
+

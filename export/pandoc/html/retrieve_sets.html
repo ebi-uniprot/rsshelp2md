@@ -1,0 +1,137 @@
+<div>
+ <p>
+  UniProtKB entries are available in three file formats - Flat Text, XML and RDF/XML. UniProtKB entries in these formats each contain only one protein sequence, the so-called 'canonical' sequence. UniProtKB canonical sequences are also available in FASTA format, as are additional manually curated isoform sequences that are described in UniProtKB/Swiss-Prot. Below we describe how these sets can be accessed.
+ </p>
+ <p>
+  In addition to the predefined FASTA, XML, RDF/XML and text formats, search results can also be downloaded in tab-separated or Excel format, reflecting your own
+  <a href="http://www.uniprot.org/help/customize">
+   customizable
+  </a>
+  column settings.
+ </p>
+ <p>
+  See also:
+ </p>
+ <p>
+  <a href="http://www.uniprot.org/help/canonical%5Fand%5Fisoforms">
+   What is the canonical sequence? Are all isoforms described in one entry?
+  </a>
+ </p>
+ <p>
+  <a href="http://www.uniprot.org/manual/alternative%5Fproducts">
+   Alternative products
+  </a>
+ </p>
+ <p>
+  <a href="http://www.uniprot.org/manual/var%5Fseq">
+   Alternative sequence
+  </a>
+ </p>
+ <p>
+  <strong>
+   Retrieving sequences from the website
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Perform your favorite query and view the resulting list of entries (e.g. this query retrieves all UniProtKB entries that are part of the human proteome:
+   <a href="http://www.uniprot.org/uniprot/?query=proteome:UP000005640">
+    proteome:UP000005640
+   </a>
+   )
+  </li>
+  <li>
+   Click the
+   <strong>
+    Download
+   </strong>
+   button in the query result page
+  </li>
+  <li>
+   Choose the desired download format (Flat Text, XML, RDF/XML, tab-delimited, Excel or FASTA if additional isoform sequences are desired)
+   <ul>
+    <li>
+     Choosing
+     <code>
+      Flat Text
+     </code>
+     ,
+     <code>
+      XML
+     </code>
+     , or
+     <code>
+      RDF/XML
+     </code>
+     allows retrieval of all entries (and their canonical sequences) from the result list in the desired format.
+    </li>
+    <li>
+     Choosing
+     <code>
+      FASTA (canonical) format
+     </code>
+     allows retrieval of all canonical sequences from the query result list. This can include canonical sequences from both UniProtKB/Swiss-Prot and/or UniProtKB/TrEMBL entries.
+    </li>
+    <li>
+     Choosing the option
+     <code>
+      FASTA (canonical and isoform)
+     </code>
+     allows retrieval of all canonical sequences plus all manually reviewed isoform sequences described within UniProtKB/Swiss-Prot. These manually reviewed isoform sequences are available as distinct sequences in FASTA format only within this expanded downloadable set.
+    </li>
+    <li>
+     Choosing
+     <code>
+      Tab-separated
+     </code>
+     or
+     <code>
+      Excel
+     </code>
+     allows retrieval of your search result table reflecting the columns you have
+     <a href="http://www.uniprot.org/help/customize">
+      chosen to include
+     </a>
+     .
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <p>
+  To automate the above, please read the section
+  <a href="http://www.uniprot.org/help/api%5Fdownloading">
+   Downloading data at every UniProt release
+  </a>
+  of our
+  <a href="http://www.uniprot.org/help/api">
+   Programmatic access
+  </a>
+  documentation.
+ </p>
+ <p>
+  <strong>
+   Retrieving sequences from the FTP site
+  </strong>
+ </p>
+ <p>
+  The UniProt FTP sites (accessible via the
+  <a href="http://www.uniprot.org/downloads">
+   <code>
+    Download latest release
+   </code>
+  </a>
+  link located on the
+  <a href="http://www.uniprot.org/">
+   home page
+  </a>
+  ) provide the most frequently requested data sets in each of the aforementioned file formats (Flat Text, XML, RDF/XML, FASTA). The additional manually curated isoform sequences that are described in UniProtKB/Swiss-Prot are available in a separate FASTA file (
+  <code>
+   uniprot_sprot_varsplic.fasta.gz
+  </code>
+  ). Our FTP directory also includes expanded FASTA sets, containing both the canonical and manually reviewed isoform sequences, for all
+  <a href="https://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/reference%5Fproteomes">
+   reference proteomes
+  </a>
+  .
+ </p>
+</div>

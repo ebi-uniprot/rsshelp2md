@@ -1,0 +1,5 @@
+api_batch_retrieval
+---
+Dead anchor tags
+http://www.uniprot.org/help/api_batch_retrieval#batch_retrieval_perl_example
+

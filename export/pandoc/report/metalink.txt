@@ -1,0 +1,8 @@
+metalink
+---
+Dead links
+https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/RELEASE.metalink
+
+Dead anchor tags
+http://www.uniprot.org/help/programmatic%5Faccess#downloading
+

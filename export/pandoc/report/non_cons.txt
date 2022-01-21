@@ -1,0 +1,5 @@
+non_cons
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P68251#sequences
+

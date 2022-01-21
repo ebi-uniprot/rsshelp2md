@@ -1,0 +1,365 @@
+<div>
+ <p>
+  The taxonomy database that is maintained by the UniProt group is based on the
+  <a href="https://www.ncbi.nlm.nih.gov/taxonomy">
+   NCBI taxonomy database
+  </a>
+  , which is supplemented with data specific to the UniProt Knowledgebase (UniProtKB). While the NCBI taxonomy is updated daily to be in sync with GenBank/EMBL-Bank/DDBJ, the UniProt taxonomy is updated only at UniProt releases to be in sync with UniProtKB. It may therefore happen that for the time period of a UniProt release, you can find new taxa at the NCBI that are not yet in UniProt (and vice versa for deleted taxa).
+ </p>
+ <p>
+  Species with manually annotated and reviewed protein sequences in the Swiss-Prot section of UniProtKB are named according to
+  <a href="http://www.uniprot.org/help/taxonomy#organism-denomination">
+   UniProt nomenclature
+  </a>
+  . In particular, we have adopted a systematic convention for naming viral and bacterial strains and isolates.
+ </p>
+ <p>
+  Links to external sites are chosen by the UniProt taxonomy team and show pictures and various scientific data of interest (taxonomy, biology, physiology, etc.). Due to the sheer volume of data present on the world-wide web, it is unfortunately not possible to contact each site individually. Should you wish to have your site linked from uniprot.org, or would prefer us to remove a link to your site, please do not hesitate to
+  <a href="http://www.uniprot.org/contact">
+   contact us
+  </a>
+  .
+ </p>
+ <h4 id="Search">
+  Search
+ </h4>
+ <p>
+  You can query the UniProt taxonomy by taxon names or NCBI taxonomy identifiers. Searches by names are case-insensitive and you may use asterisks as wildcards anywhere in the query. When you search for taxon names, the results that match a UniProt
+  <a href="http://www.uniprot.org/help/taxonomy#organism-denomination">
+   organism denomination
+  </a>
+  are ranked higher than those which match
+  <a href="http://www.uniprot.org/help/taxonomy#other-names">
+   other organism names
+  </a>
+  .
+ </p>
+ <h4 id="organism-denomination">
+  Organism denomination
+ </h4>
+ <p>
+  The organism denomination used in UniProtKB consists of the Latin scientific name, usually composed of the
+  <span style="color: orange;">
+   genus
+  </span>
+  and
+  <span style="color: brown;">
+   species
+  </span>
+  names (binomial system developed by Linnaeus), followed optionally by the English
+  <span style="color: magenta;">
+   common name
+  </span>
+  and a
+  <span style="color: green;">
+   synonym
+  </span>
+  .
+ </p>
+ <p>
+  Example:
+  <span style="color: orange;">
+   Cardamine
+  </span>
+  <span style="color: brown;">
+   pratensis
+  </span>
+  (
+  <span style="color: magenta;">
+   Cuckoo flower
+  </span>
+  ) (
+  <span style="color: green;">
+   Alpine bitter cress
+  </span>
+  )
+ </p>
+ <p>
+  The synonym can be a common name in English or in Latin in the case of some historical legacy names.
+ </p>
+ <p>
+  Example:
+  <span style="color: orange;">
+   Radianthus
+  </span>
+  <span style="color: brown;">
+   magnifica
+  </span>
+  (
+  <span style="color: magenta;">
+   Magnificent sea anemone
+  </span>
+  ) (
+  <span style="color: green;">
+   Heteractis magnifica
+  </span>
+  )
+ </p>
+ <p>
+  In the case of viruses, the denomination does not follow the binomial system. The English common name is used as the scientific name, sometimes followed by an acronym. Where possible, viruses are named according to the nomenclature of the
+  <a href="https://talk.ictvonline.org/">
+   International Committee on Taxonomy of Viruses (ICTV)
+  </a>
+  .
+ </p>
+ <h4 id="Organism_mnemonic">
+  Organism mnemonic
+ </h4>
+ <p>
+  A mnemonic organism identification code of at most 5 alphanumeric characters is used in the
+  <a href="http://www.uniprot.org/manual/entry%5Fname">
+   entry name
+  </a>
+  of UniProtKB entries, e.g.
+  <a href="http://www.uniprot.org/uniprot/P06534">
+   SP0A_
+   <strong>
+    BACSU
+   </strong>
+  </a>
+  . This code is generally made of the first three letters of the genus name and the first two letters of the species name.
+ </p>
+ <p>
+  Examples:
+  <br/>
+  <strong>
+   PSEPU
+  </strong>
+  is for
+  <strong>
+   Pse
+  </strong>
+  udomonas
+  <strong>
+   pu
+  </strong>
+  tida
+  <br/>
+  <strong>
+   NAJNI
+  </strong>
+  is for
+  <strong>
+   Naj
+  </strong>
+  a
+  <strong>
+   ni
+  </strong>
+  vea.
+ </p>
+ <p>
+  However, for a number of species commonly encountered in UniProtKB, we use self-explanatory codes. There are 16 of those codes:
+ </p>
+ <ul>
+  <li>
+   BOVIN for Bovine
+  </li>
+  <li>
+   CHICK for Chicken
+  </li>
+  <li>
+   ECOLI for
+   <em>
+    Escherichia coli
+   </em>
+  </li>
+  <li>
+   HORSE for Horse
+  </li>
+  <li>
+   HUMAN for
+   <em>
+    Homo sapiens
+   </em>
+  </li>
+  <li>
+   MAIZE for Maize (
+   <em>
+    Zea mays
+   </em>
+   )
+  </li>
+  <li>
+   MOUSE for Mouse
+  </li>
+  <li>
+   PEA for Garden pea (
+   <em>
+    Pisum sativum
+   </em>
+   )
+  </li>
+  <li>
+   PIG for Pig
+  </li>
+  <li>
+   RABIT for Rabbit
+  </li>
+  <li>
+   RAT for Rat
+  </li>
+  <li>
+   SHEEP for Sheep
+  </li>
+  <li>
+   SOYBN for Soybean (
+   <em>
+    Glycine max
+   </em>
+   )
+  </li>
+  <li>
+   TOBAC for Common tobacco (
+   <em>
+    Nicotina tabacum
+   </em>
+   )
+  </li>
+  <li>
+   WHEAT for Wheat (
+   <em>
+    Triticum aestivum
+   </em>
+   )
+  </li>
+  <li>
+   YEAST for Baker's yeast (
+   <em>
+    Saccharomyces cerevisiae
+   </em>
+   )
+  </li>
+ </ul>
+ <p>
+  Since the above rules cannot apply to viruses, we give them arbitrary, but generally easy-to-remember, identification codes.
+ </p>
+ <p>
+  A full list of organism mnemonics is available in our
+  <a href="http://www.uniprot.org/docs/speclist">
+   Controlled vocabulary of species
+  </a>
+  .
+ </p>
+ <p>
+  Codes starting with the digit 9 are used for higher nodes that group together organisms at a given taxonomic level.
+ </p>
+ <p>
+  Examples:
+  <br/>
+  9AMPH is for Amphibia
+  <br/>
+  9COLE is for Coleoptera.
+ </p>
+ <h4 id="other-names">
+  Other organism names
+ </h4>
+ <p>
+  Organism nomenclature has always been an area where the creativity of biologists has consistently reached unsuspected heights. Practically, this means that one organism is frequently described by many different names. In addition to the
+  <a href="http://www.uniprot.org/help/taxonomy#organism-denomination">
+   organism denomination
+  </a>
+  that is displayed in UniProtKB entries, the UniProt taxonomy entries also show all other names that are archived in the NCBI taxonomy database. This includes names classified as misspelling and misnomers that have been collected from various external sources and can be considered legacy data.
+ </p>
+ <h4 id="Lineage_and_taxonomy_node_rank">
+  Lineage and taxonomy node rank
+ </h4>
+ <p>
+  Taxonomy is organized in a tree structure that represents the taxonomic lineage. The position of each node on the tree is determined by its rank in the taxonomy hierarchy, so that the last ranks (usually
+  <code>
+   species
+  </code>
+  or
+  <code>
+   subspecies
+  </code>
+  ) represent the leaves on the tree's branches and higher ranks (e.g.
+  <code>
+   phylum
+  </code>
+  ,
+  <code>
+   order
+  </code>
+  and
+  <code>
+   family
+  </code>
+  ) are placed higher on the tree. The ordered list of the nodes forms the lineage.
+ </p>
+ <p>
+  The UniProt taxonomy database stores the taxonomy tree structure, thus making it possible to navigate from one node to another and to access the lineage for each node.
+ </p>
+ <p>
+  For convenience reasons, both GenBank/EMBL-Bank/DDBJ and UniProtKB entries store an abbreviated lineage, which contains only the familiar taxon names. But when you look at a UniProtKB entry on this website, you can configure its 'Taxonomic lineage' field to display the full lineage, including the so-called "hidden nodes", which do not appear in the abbreviated lineage. Also, when you search for a taxon in UniProtKB on this website, the taxon is searched in the full lineage of the entries.
+ </p>
+ <h4 id="Organism_strains">
+  Organism strains
+ </h4>
+ <p>
+  A list of strains may be provided for organisms with at least one entry in UniProtKB/Swiss-Prot. Where available, synonyms for particular strain names are listed in grey after the main name (see example
+  <a href="http://www.uniprot.org/taxonomy/562">
+   ECOLX
+  </a>
+  ). In UniProtKB entries, strain names are displayed in the Strain lines under 'Publications' (see example
+  <a href="http://www.uniprot.org/uniprot/P42652#publications">
+   P42652
+  </a>
+  ).
+ </p>
+ <p>
+  Note: Some of the strains present in the
+  <a href="http://www.uniprot.org/docs/strains">
+   strain list
+  </a>
+  might have their own taxon in the NCBI taxonomy database. The policy for the description of the source organism for a sequence has changed over the years from species to strain and back to species and you will therefore find a mixture of species and strain assignments in the nucleotide and protein databases.
+ </p>
+ <h4 id="Viral_hosts">
+  Viral hosts
+ </h4>
+ <p>
+  A list of natural hosts is given for all viruses with at least one entry in UniProtKB/Swiss-Prot. Viral hosts data appears in the 'Virus host' field of UniProtKB entries (see example
+  <a href="http://www.uniprot.org/uniprot/Q8JP02">
+   Q8JP02
+  </a>
+  ).
+ </p>
+ <p>
+  A virus is an inert particle outside its hosts. The virion (so called because it is not visible under the microscope), on its own, has neither metabolism, nor any replication capability, nor autonomous evolution. A virus cannot be considered a living organism outside its host. The viral taxonomy is arbitrarily based on the nature of viral genomes, and viruses in a same family can infect a wide range of hosts, from mammals to insects. The nature of the host does not always appear in the virus name, e.g. the hosts of the
+  <a href="http://www.uniprot.org/taxonomy/96029">
+   Yellow head virus
+  </a>
+  are shrimps.
+  <br/>
+  There are numerous virus-host interactions:
+ </p>
+ <ul>
+  <li>
+   shut-off of traduction
+  </li>
+  <li>
+   immunoevasion
+  </li>
+  <li>
+   latency
+  </li>
+  <li>
+   oncogenesis on the virus side and antiviral state
+  </li>
+  <li>
+   antigen presentation
+  </li>
+  <li>
+   immune system on the host side
+  </li>
+ </ul>
+ <p>
+  These interactions appear in the annotation of viral UniProtKB entries under various annotation types such as function, subunit, subcellular location and PTM.
+ </p>
+ <p>
+  Related document:
+  <a href="http://www.uniprot.org/docs/speclist">
+   Controlled vocabulary of species
+  </a>
+ </p>
+</div>

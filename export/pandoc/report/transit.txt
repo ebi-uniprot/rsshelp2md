@@ -1,0 +1,15 @@
+transit
+---
+Dead links
+http://urgi.versailles.inra.fr/predotar/predotar.html
+
+Dead anchor tags
+http://www.uniprot.org/uniprot/P15690#ptm_processing
+http://www.uniprot.org/help/evidences#ECO:00007744
+http://www.uniprot.org/uniprot/P28331#ptm_processing
+http://www.uniprot.org/help/evidences#ECO:0000250
+http://www.uniprot.org/uniprot/Q0MQG1#ptm_processing
+http://www.uniprot.org/uniprot/Q6GQ48#ptm%5Fprocessing
+http://www.uniprot.org/help/evidences#ECO:0000255
+http://www.uniprot.org/uniprot/P91929#ptm_processing
+

@@ -1,0 +1,11 @@
+toxic_dose
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q86LR2#pathology_and_biotech
+http://www.uniprot.org/uniprot/P13208#pathology_and_biotech
+http://www.uniprot.org/uniprot/P17727#pathology_and_biotech
+http://www.uniprot.org/uniprot/P60276#pathology_and_biotech
+http://www.uniprot.org/uniprot/P49126#pathology_and_biotech
+http://www.uniprot.org/uniprot/P69835#pathology_and_biotech
+http://www.uniprot.org/uniprot/P55902#pathology%5Fand%5Fbiotech
+

@@ -1,0 +1,8 @@
+where_to_buy
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3Apharmaceutical%29
+
+Dead anchor tags
+http://www.uniprot.org/uniprot/P01275#pathology_and_biotech
+

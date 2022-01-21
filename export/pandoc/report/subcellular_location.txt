@@ -1,0 +1,8 @@
+subcellular_location
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q9ULX6#subcellular%5Flocation
+http://www.uniprot.org/uniprot/Q02630#subcellular%5Flocation
+http://www.uniprot.org/uniprot/P38182#subcellular%5Flocation
+http://www.uniprot.org/uniprot/O43687#subcellular_location
+

@@ -1,0 +1,285 @@
+<div>
+ <p>
+  In order to assess quality and completeness of
+  <a href="http://www.uniprot.org/proteomes">
+   proteomes
+  </a>
+  , we provide two values:
+ </p>
+ <ul>
+  <li>
+   Statistical evaluation and classification of the proteome by the
+   <strong>
+    Complete Proteome Detector (CPD)
+   </strong>
+   algorithm (developed by UniProt)
+  </li>
+  <li>
+   The
+   <a href="https://www.sib.swiss/about-sib/news/10131-gauging-the-completeness-of-genomics-data-with-busco">
+    BUSCO score
+   </a>
+   of the proteome, which was developed to quantify genomic data completeness in terms of expected gene content.
+  </li>
+ </ul>
+ <h3 id="Complete_Proteome_Detector__CPD_">
+  Complete Proteome Detector (CPD)
+ </h3>
+ <p>
+  CPD statistically analyses each proteome against a group of closely related proteomes in order to determine completeness. For each proteome, CPD uses
+  <a href="http://www.uniprot.org/help/taxonomic%5Flineage">
+   taxonomic lineage
+  </a>
+  information to identify the group of proteomes taxonomically closest to it. A valid group is required to contain a minimum of thirty proteomes and all proteomes in the group must be in the same taxonomic class or more closely related. For the proteome being analyzed, the algorithm considers the quartiles of the protein count of all other proteomes in its group.
+ </p>
+ <p>
+  This evaluation classifies each proteome into one of six possible categories (in terms of the proteome's protein count vs the protein counts of the other proteomes in its group):
+  <strong>
+   Standard
+  </strong>
+  ;
+  <strong>
+   Close to standard (high value)
+  </strong>
+  ;
+  <strong>
+   Close to standard (low value)
+  </strong>
+  ;
+  <strong>
+   Outlier (high value)
+  </strong>
+  ;
+  <strong>
+   Outlier (low value)
+  </strong>
+  or
+  <strong>
+   Unknown
+  </strong>
+  . The categories are defined by closeness of the protein count to the group median. The closest category to the median is
+  <strong>
+   Standard
+  </strong>
+  , followed by
+  <strong>
+   Close to standard
+  </strong>
+  and then
+  <strong>
+   Outlier
+  </strong>
+  . The subcategories of
+  <strong>
+   high
+  </strong>
+  and
+  <strong>
+   low
+  </strong>
+  reflect whether a proteome has above or below average protein count respectively. Proteomes are marked
+  <strong>
+   unknown
+  </strong>
+  if a score could not be calculated for example if we don't have enough closely related proteomes in the database.
+ </p>
+ <p>
+  <strong>
+   Score definitions
+  </strong>
+ </p>
+ <p>
+  Let Q1, Q3 be the first and third quartiles of protein counts of related proteomes and C be the protein count of the proteome being scored.
+ </p>
+ <p>
+  We define the fences for outliers as:
+ </p>
+ <p>
+  F
+  <sub>
+   1
+  </sub>
+  = max(0, Q
+  <sub>
+   1
+  </sub>
+  - 1.5 x (Q
+  <sub>
+   3
+  </sub>
+  - Q
+  <sub>
+   1
+  </sub>
+  ))
+  <br/>
+  F
+  <sub>
+   2
+  </sub>
+  = min(Q
+  <sub>
+   3
+  </sub>
+  + Q
+  <sub>
+   1
+  </sub>
+  , Q
+  <sub>
+   3
+  </sub>
+  + 1.5 x (Q
+  <sub>
+   3
+  </sub>
+  - Q
+  <sub>
+   1
+  </sub>
+  ))
+ </p>
+ <p>
+  CPD score is defined as:
+ </p>
+ <table>
+  <tr>
+   <th>
+    status
+   </th>
+   <th>
+    condition
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Outlier (low value)
+   </td>
+   <td>
+    if C &lt;= F
+    <sub>
+     1
+    </sub>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Close to standard (low value)
+   </td>
+   <td>
+    if F
+    <sub>
+     1
+    </sub>
+    &lt; C &lt; Q
+    <sub>
+     1
+    </sub>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Standard
+   </td>
+   <td>
+    if Q
+    <sub>
+     1
+    </sub>
+    &lt;= C &lt; Q
+    <sub>
+     3
+    </sub>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Close to standard (high value)
+   </td>
+   <td>
+    if Q
+    <sub>
+     3
+    </sub>
+    &lt;= C &lt; F
+    <sub>
+     2
+    </sub>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Outlier (high value)
+   </td>
+   <td>
+    if F
+    <sub>
+     2
+    </sub>
+    &lt;= C
+   </td>
+  </tr>
+ </table>
+ <p>
+  <img alt="image" src="data:image/png;base64,"/>
+ </p>
+ <p>
+  Figure 1 caption:
+  <em>
+   CPD status descriptions are defined by how the protein count of a proteome compares to the distribution of protein counts in a group of at least 30 closely related proteomes. The proteomes chosen for comparison are as closely related as possible in order to find at least 30 proteomes. If not enough proteomes can be found within the same taxonomic class then the proteome is scored "Unknown".
+  </em>
+ </p>
+ <p>
+  <strong>
+   Examples
+  </strong>
+ </p>
+ <p>
+  Example 1 :
+  <a href="https://www.uniprot.org/proteomes/UP000005640/">
+   Human reference proteome
+  </a>
+  - Score = "Outlier (high)"
+ </p>
+ <p>
+  The proteome
+  <a href="https://www.uniprot.org/proteomes/UP000005640/">
+   UP000005640
+  </a>
+  has a protein count of 77027 (as of release 2021_02). When we compare this to the protein counts of closely related proteomes (primates) we can see that this protein count is high. This proteome is scored "Outlier (high)". This is not necessarily a bad sign! The human proteome is very well studied compared to some of the other primate proteomes - so we might expect to see a higher protein count due to all of the identified isoforms due to alternative splicing.
+ </p>
+ <p>
+  Example 2 :
+  <a href="https://www.uniprot.org/proteomes/UP000307385/">
+   Human proteome (mitochondrion only)
+  </a>
+  - Score = "Outlier (low)"
+ </p>
+ <p>
+  This human "proteome" has a very low protein count of 13 (as of release 2021_02). This "proteome" only consists of the proteins encoded in the mitochondrial genome. Therefore a score of "Outlier (low)" makes sense; all other mitochondrial proteins are imported into the organelle but are not reflected in this number.
+ </p>
+ <h3 id="Benchmarking_Universal_Single_Copy_Orthologs__BUSCO_">
+  Benchmarking Universal Single-Copy Orthologs (BUSCO)
+ </h3>
+ <p>
+  For eukaryotic and bacterial proteomes, we also provide the
+  <a href="https://www.sib.swiss/about-sib/news/10131-gauging-the-completeness-of-genomics-data-with-busco">
+   BUSCO score
+  </a>
+  , which was developed to quantify genomic data completeness in terms of expected gene content based on single-copy orthologs. We're currently using BUSCO version 4.0.2.
+ </p>
+ <p>
+  This score includes percentages of complete (C) single-copy (S) genes, complete (C) duplicated (D) genes, fragmented (F) and missing (M) genes, as well as the total number of orthologous clusters (n) used in the BUSCO assessment.
+ </p>
+ <p>
+  We also report, as is recommended in
+  <a href="https://busco.ezlab.org/busco%5Fuserguide.html#running-busco-2">
+   BUSCO's user guide
+  </a>
+  , the most specific lineage dataset available to analyse each proteome. For example, to assess fish data we would select the actinopterygii lineage (dataset: actinopterygii_odb10) rather than the metazoa or eukaryota lineage. A full list of available lineage datasets can be found on
+  <a href="https://busco.ezlab.org/list%5Fof%5Flineages.html">
+   BUSCO website
+  </a>
+  .
+ </p>
+</div>

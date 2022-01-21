@@ -1,0 +1,25 @@
+involvement_in_disease
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q01718#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/Q15198#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/P51800#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/P51801#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/Q6W5P4#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/P52895#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/P17516#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/P15289#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/Q8NBK3#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/Q15465#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/Q8WVP7#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/Q9NR56#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/Q09013#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/Q01718#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/P84996#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/P11308#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/Q15532#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/Q16385#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/Q8IZP0#pathology%5Fand%5Fbiotech%5Fsection
+http://www.uniprot.org/uniprot/P00395#pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/Q02388#pathology%5Fand%5Fbiotech
+

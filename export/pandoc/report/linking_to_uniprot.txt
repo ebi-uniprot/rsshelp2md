@@ -1,0 +1,7 @@
+linking_to_uniprot
+---
+Dead links
+https://www.uniprot.org/uniref/UniRef100%5FP99999.xml
+https://www.uniprot.org/uniprot/P99999.gff
+https://www.uniprot.org/uniref/UniRef100%5FP99999.tab
+

@@ -1,0 +1,120 @@
+<div>
+ <p>
+  This subsection of the 'PTM / Processing' section denotes the presence of an N-terminal signal peptide.
+ </p>
+ <p>
+  Signal peptides are found in proteins that are targeted to the endoplasmic reticulum and eventually destined to be either secreted/extracellular/periplasmic/etc., retained in the lumen of the endoplasmic reticulum, of the lysosome or of any other organelle along the secretory pathway or to be I single-pass membrane proteins.
+ </p>
+ <p>
+  The signal sequence is usually removed in the mature protein; in these cases, the comment 'The displayed sequence is further processed into a mature form' is added in the '
+  <a href="http://www.uniprot.org/manual/sequences_section">
+   Sequence
+  </a>
+  ' section.
+ </p>
+ <h3 id="1__Annotation_of_experimentally_proven_signal_peptides">
+  1. Annotation of experimentally proven signal peptides
+ </h3>
+ <p>
+  We annotate experimentally proven signal peptides when the cleavage site has been determined by direct protein sequencing.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P01165#ptm_processing">
+   P01165
+  </a>
+ </p>
+ <p>
+  This information can then be propagated
+  <a href="http://www.uniprot.org/help/evidences#ECO:0000250">
+   'By similarity'
+  </a>
+  to closely related species providing the signal sequence is conserved.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q8CW46#ptm_processing">
+   Q8CW46
+  </a>
+ </p>
+ <p>
+  When it is clear that a protein is cleaved (according to experimental data or its similarity with a family of proteins), but direct protein sequencing has not been used to determined the precise cleavage position, we use a question mark instead of a position.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q9VGW1#ptm_processing">
+   Q9VGW1
+  </a>
+ </p>
+ <p>
+  In some rare cases, signal sequences are not cleaved. This is indicated by the note 'Not cleaved' in the feature description.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/O95445#ptm_processing">
+   O95445
+  </a>
+ </p>
+ <h3 id="2__Annotation_of_predicted_signal_peptides">
+  2. Annotation of predicted signal peptides
+ </h3>
+ <p>
+  We annotate signal peptides which are predicted by the application of the predictive tools Phobius, Predotar, SignalP and TargetP. At least two methods must return a positive signal peptide prediction in order for the prediction to be annotated in UniProtKB. When predicted N-terminal signal peptides and transmembrane regions overlap, then the prediction returned by Phobius is used to discriminate between the two possibilities.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q6Q788#ptm_processing">
+   Q6Q788
+  </a>
+ </p>
+ <h3 id="3__Annotation_of_Tat_signal_sequences_in_bacteria_and_archaea">
+  3. Annotation of Tat signal sequences in bacteria and archaea
+ </h3>
+ <p>
+  This subsection is also used for the annotation of proteins with a Tat (Twin-arginine translocation) signal sequence, which serves to translocate folded proteins in bacteria and archaea. Substrate proteins are directed to the Tat apparatus by distinctive N-terminal signal peptides containing a consensus SRRxFLK 'twin-arginine' motif. The related comment "Predicted to be exported by the Tat system" can be found in the 'Post-translational modification' subsection.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P36649#ptm%5Fprocessing">
+   P36649
+  </a>
+  <br/>
+  Predicted TAT signal sequences are identified using the PROSITE profile
+  <a href="https://prosite.expasy.org/PS51318">
+   PS51318
+  </a>
+  .
+  <br/>
+  Predicted cleavage sites are tagged with evidence
+  <a href="http://www.uniprot.org/help/evidences#ECO:0000255">
+   'Sequence analysis'
+  </a>
+  or with the
+  <a href="http://www.uniprot.org/help/automatic%5Fannotation">
+   automatic annotation
+  </a>
+  rule from which the predicted result was propagated.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P36649#ptm_processing">
+   P36649
+  </a>
+ </p>
+ <p>
+  In
+  <strong>
+   UniProtKB/TrEMBL
+  </strong>
+  , signal peptides are annotated automatically by our
+  <a href="http://www.uniprot.org/help/sam">
+   sequence annotation module using SignalP.
+  </a>
+ </p>
+ <p>
+  Related keyword:
+  <br/>
+  <a href="http://www.uniprot.org/keywords/732">
+   Signal
+  </a>
+ </p>
+ <p>
+  See also:
+  <a href="http://www.uniprot.org/manual/evidences">
+   Evidence
+  </a>
+ </p>
+</div>

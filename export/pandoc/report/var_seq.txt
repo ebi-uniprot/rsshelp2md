@@ -1,0 +1,6 @@
+var_seq
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P04150#sequences
+http://www.uniprot.org/help/sequence%5Fannotation#annotation%5Fid
+

@@ -1,0 +1,13 @@
+region
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q8CJF7#family_and_domains
+http://www.uniprot.org/uniprot/P26948#family_and_domains
+http://www.uniprot.org/uniprot/Q8BUZ1#family_and_domains
+http://www.uniprot.org/uniprot/P25490#family_and_domains
+http://www.uniprot.org/uniprot/P13475#family_and_domains
+http://www.uniprot.org/uniprot/O76041#family_and_domains
+http://www.uniprot.org/uniprot/P08796#family_and_domains
+http://www.uniprot.org/uniprot/P54602#family_and_domains
+http://www.uniprot.org/uniprot/P03879#family_and_domains
+

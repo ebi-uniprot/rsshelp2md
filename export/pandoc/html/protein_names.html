@@ -1,0 +1,264 @@
+<div>
+ <p>
+  This subsection of the
+  <a href="http://www.uniprot.org/help/names%5Fand%5Ftaxonomy%5Fsection">
+   Names and taxonomy
+  </a>
+  section provides an exhaustive list of all names of the protein, from commonly used to obsolete, to allow unambiguous identification of a protein.
+ </p>
+ <p>
+  This subsection also includes information on the activity of the protein, such as a precise description of the catalytic mechanism of enzymes, or information about individual protein chains or functional domains contained within it, if pertinent.
+ </p>
+ <h4 id="UniProtKB_Swiss_Prot__Protein_names__subsection">
+  UniProtKB/Swiss-Prot 'Protein names' subsection
+ </h4>
+ <p>
+  The subsection consists of 2 categories and several subcategories of protein names and abbreviations. It always begins with the 'Recommended name' ('RecName' in the flat text file). Alternative names are listed under the heading 'Alternative name(s)' ('AltName' in the flat text file).
+ </p>
+ <div>
+  <table class="grid">
+   <tr>
+    <th>
+     Category Field
+    </th>
+    <th>
+     Subcategory Field
+    </th>
+    <th>
+     Cardinality
+    </th>
+    <th>
+     Description
+    </th>
+   </tr>
+   <tr>
+    <td>
+     <b>
+      Recommended name
+     </b>
+    </td>
+    <td>
+    </td>
+    <td>
+     1
+    </td>
+    <td>
+     Full name recommended by the UniProt consortium.
+    </td>
+   </tr>
+   <tr>
+    <td>
+    </td>
+    <td>
+     <b>
+      Short name(s)
+     </b>
+    </td>
+    <td>
+     0-n
+    </td>
+    <td>
+     Abbreviation of the full name or acronym.
+    </td>
+   </tr>
+   <tr>
+    <td>
+    </td>
+    <td>
+     <b>
+      EC
+     </b>
+    </td>
+    <td>
+     0-n
+    </td>
+    <td>
+     Enzyme Commission number.
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <b>
+      Alternative name(s)
+     </b>
+    </td>
+    <td>
+    </td>
+    <td>
+     0-n
+    </td>
+    <td>
+     Synonym of the recommended name (full name).
+    </td>
+   </tr>
+   <tr>
+    <td>
+    </td>
+    <td>
+     <b>
+      Short name(s)
+     </b>
+    </td>
+    <td>
+     0-n
+    </td>
+    <td>
+     Abbreviation of the full name or an acronym.
+    </td>
+   </tr>
+   <tr>
+    <td>
+    </td>
+    <td>
+     <b>
+      EC
+     </b>
+    </td>
+    <td>
+     0-n
+    </td>
+    <td>
+     Enzyme Commission number.
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <b>
+      Alternative name(s)
+     </b>
+    </td>
+    <td>
+     <b>
+      Allergen
+     </b>
+    </td>
+    <td>
+     0-1
+    </td>
+    <td>
+     See
+     <a href="http://www.uniprot.org/docs/allergen">
+      Allergen nomenclature and list of entries
+     </a>
+     .
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <b>
+      Alternative name(s)
+     </b>
+    </td>
+    <td>
+     <b>
+      Biotech
+     </b>
+    </td>
+    <td>
+     0-1
+    </td>
+    <td>
+     Name used in a biotechnological context.
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <b>
+      Alternative name(s)
+     </b>
+    </td>
+    <td>
+     <b>
+      CD_antigen
+     </b>
+    </td>
+    <td>
+     0-n
+    </td>
+    <td>
+     See
+     <a href="http://www.uniprot.org/docs/cdlist">
+      Human cell differentiation molecules nomenclature and list of entries
+     </a>
+     .
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <b>
+      Alternative name(s)
+     </b>
+    </td>
+    <td>
+     <b>
+      INN
+     </b>
+    </td>
+    <td>
+     0-n
+    </td>
+    <td>
+     International nonproprietary name: a generic name for a pharmaceutical substance or active pharmaceutical ingredient that is a globally recognized public property.
+    </td>
+   </tr>
+  </table>
+ </div>
+ <p>
+  If a protein is known to be cleaved into multiple functional components, the description starts with the name of the precursor protein, followed by '
+  <strong>
+   Cleaved into ...
+  </strong>
+  ' section(s). Each component is described in a separate section. 'Alternative name(s)' are allowed for each individual component.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P01189#names_and_taxonomy">
+   P01189
+  </a>
+  ('Cleaved into the following 11 chains:')
+ </p>
+ <p>
+  If a protein is known to include multiple functional domains, each of which described by a different name, the description starts with the name of the whole protein, followed by '
+  <strong>
+   Including
+  </strong>
+  ' section(s). Each domain is described in a separate section. 'Alternative name(s)' are allowed for each individual domain.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P27708#names_and_taxonomy">
+   P27708
+  </a>
+  ('Including the following 3 domains:')
+ </p>
+ <h4 id="UniProtKB_TrEMBL__Protein_names__subsection">
+  UniProtKB/TrEMBL 'Protein names' subsection
+ </h4>
+ <p>
+  The format of the 'Protein names' section in UniProtKB/TrEMBL closely follows the format used in UniProtKB/Swiss-Prot. However, as UniProtKB/TrEMBL is not manually annotated, the description is imported directly from the underlying nucleotide entry and its accuracy relies on the information provided by the submitter of the nucleotide entry. This is why UniProtKB/TrEMBL entries usually have '
+  <strong>
+   Submitted name
+  </strong>
+  ' ('SubName' in the flat text file) instead of 'Recommended name'. There can be more than one 'Submitted name'. 'Submitted names' may later be improved by
+  <a href="http://www.uniprot.org/help/automatic%5Fannotation">
+   automatic annotation
+  </a>
+  procedures (the label will then change from 'SubName' to 'RecName'), but if not, it remains as provided by the submitter until the entry is manually annotated and integrated to UniProtKB/Swiss-Prot.
+ </p>
+ <h4 id="Related_documents">
+  Related documents
+ </h4>
+ <div class="external_link">
+  <p>
+   <a href="http://www.uniprot.org/docs/International%5FProtein%5FNomenclature%5FGuidelines.pdf">
+    International protein nomenclature guidelines
+   </a>
+   <br/>
+   <a href="http://www.uniprot.org/docs/nomlist">
+    Protein nomenclature information
+   </a>
+   <br/>
+   <a href="http://www.uniprot.org/help/different%5Fprotein%5Fgene%5Fnames">
+    Why does the UniProtKB use so many different names for the same protein?
+   </a>
+  </p>
+ </div>
+</div>

@@ -1,0 +1,7 @@
+immunoglobulins
+---
+Dead links
+http://www.uniprot.org/news/2017/08/30/release
+http://www.uniprot.org/uniprot/?query=database%3A%28type%3Aantibodypedia%29
+http://www.uniprot.org/uniprot/?query=database%3A%28type%3Acptc%29
+

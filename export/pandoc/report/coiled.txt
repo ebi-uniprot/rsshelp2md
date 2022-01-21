@@ -1,0 +1,9 @@
+coiled
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/O15697#family_and_domains
+http://www.uniprot.org/uniprot/Q9Y2D8#family_and_domains
+http://www.uniprot.org/uniprot/O97593#family_and_domains
+http://www.uniprot.org/uniprot/P18289#family_and_domains
+http://www.uniprot.org/uniprot/P15407#family_and_domains
+

@@ -1,0 +1,5 @@
+catalytic_activity
+---
+Dead links
+http://www.uniprot.org/news/2018/12/05/release
+

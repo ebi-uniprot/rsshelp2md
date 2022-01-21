@@ -1,0 +1,5 @@
+entry_history
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P55209#entry%5Finformation
+

@@ -1,0 +1,13 @@
+alternative_products
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P04150#sequences
+http://www.uniprot.org/uniprot/P04150#sequences
+http://www.uniprot.org/uniprot/P42166#sequences
+http://www.uniprot.org/uniprot/P42167#sequences
+http://www.uniprot.org/uniprot/P21836#sequences
+http://www.uniprot.org/uniprot/P19021#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q9NZU7#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q13510##pathology%5Fand%5Fbiotech
+http://www.uniprot.org/uniprot/P04150#sequences
+

@@ -1,0 +1,14 @@
+query-fields
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=citation%3A%28%22intracellular+structural+proteins%22%29
+http://www.uniprot.org/manual/references
+http://www.uniprot.org/uniprot/?query=annotation:(type:variant)
+
+Dead anchor tags
+http://www.uniprot.org/help/taxonomy#strain
+http://www.uniprot.org/help/taxonomy#lineage
+
+Number tables left as HTML
+1
+

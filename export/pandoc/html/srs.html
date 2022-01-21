@@ -1,0 +1,261 @@
+<div>
+ <div>
+  <p>
+   The UniProt search tool allows users to perform Google and SRS-like queries, on
+    UniProtKB, UniRef and UniParc
+   <a href="http://www.uniprot.org/#note-uniparc">
+    *
+   </a>
+   .
+                Note that it is also possible to upload a list of
+    accession numbers and then perform a search in that subset.
+  </p>
+  <p>
+   Example:
+   <b>
+    Search for Saccharomyces cerevisiae membrane glycoproteins in UniProtKB
+   </b>
+  </p>
+  <p>
+   <b>
+    Google-like queries
+   </b>
+  </p>
+  <ul>
+   <li>
+    Click the
+    <b>
+     Search
+    </b>
+    tab of the toolbar
+   </li>
+   <li>
+    Select
+    <code>
+     UniProtKB
+    </code>
+    from the main search menu
+   </li>
+   <li>
+    Type
+    <code>
+     Saccharomyces cerevisiae membrane glycoprotein
+    </code>
+    in the Query box
+   </li>
+   <li>
+    Click on the search button
+   </li>
+   <li>
+    Follow the suggestions proposed by the search tool, and use the
+    <a href="http://www.uniprot.org/help/filters">
+     filter options
+    </a>
+    :
+    <ul>
+     <li>
+      Quote terms
+      <code>
+       "saccharomyces cerevisiae"
+      </code>
+     </li>
+     <li>
+      Use the
+      <b>
+       S.cerevisiae
+      </b>
+      filter under "Popular organisms"
+     </li>
+     <li>
+      Filter
+      <code>
+       "membrane"
+      </code>
+      as
+      <code>
+       keyword
+      </code>
+     </li>
+     <li>
+      Filter
+      <code>
+       "glycoprotein"
+      </code>
+      as
+      <code>
+       keyword
+      </code>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="http://www.uniprot.org/uniprot/?query=organism%3A%22saccharomyces+cerevisiae%22+AND+keyword%3Amembrane+AND+keyword%3Aglycoprotein">
+     Results
+    </a>
+   </li>
+   <li>
+    Click
+    <b>
+     Columns
+    </b>
+    to choose the columns to show in the result table
+   </li>
+   <li>
+    This URL can be bookmarked.
+   </li>
+  </ul>
+  <p>
+   <b>
+    SRS-like queries (
+    <a href="http://www.uniprot.org/help/advanced_search">
+     Advanced search
+    </a>
+    )
+   </b>
+  </p>
+  <ul>
+   <li>
+    Select
+    <code>
+     UniProtKB
+    </code>
+    from the search menu
+   </li>
+   <li>
+    Click
+    <b>
+     Advanced
+    </b>
+    to open the query builder
+    <ul>
+     <li>
+      Select
+      <code>
+       Taxonomy -&gt; Organism [OS]
+      </code>
+      and type
+      <code>
+       saccharomyces cerevisiae
+      </code>
+      (use autocompletion)
+     </li>
+     <li>
+      Select
+      <code>
+       Ontology -&gt; Keyword [KW]
+      </code>
+      and type
+      <code>
+       Membrane
+      </code>
+      (use autocompletion)
+     </li>
+     <li>
+      Select
+      <code>
+       Ontology -&gt; Keyword [KW]
+      </code>
+      and type
+      <code>
+       Glycoprotein
+      </code>
+      (use autocompletion)
+     </li>
+     <li>
+      Click on the search button
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="http://www.uniprot.org/uniprot/?query=organism%3A%22saccharomyces+cerevisiae%22+AND+keyword%3A%22Membrane+%5B472%5D%22+AND+keyword%3A%22Glycoprotein+%5B325%5D%22">
+     Results
+    </a>
+   </li>
+   <li>
+    Click
+    <b>
+     Columns
+    </b>
+    to choose the columns to show in the result table
+   </li>
+   <li>
+    This URL can be bookmarked.
+   </li>
+  </ul>
+  <p>
+   <b>
+    Queries on your personal UniProt dataset
+   </b>
+  </p>
+  <ul>
+   <li>
+    Click on
+    <a href="http://www.uniprot.org/uploadlists">
+     Retrieve/ID mapping
+    </a>
+    in the toolbar
+   </li>
+   <li>
+    Copy/paste your list of accession numbers  (i.e. P38903 P47096 P40433 P31787 P28240 P32465 P28319)
+   </li>
+   <li>
+    Click
+    <b>
+     Retrieve
+    </b>
+   </li>
+   <li>
+    Click the
+    <code>
+     UniProtKB
+    </code>
+    link
+   </li>
+   <li>
+    Click
+    <b>
+     Advanced
+    </b>
+    to open the query builder
+    <p>
+     You can now add search criteria to get a specific subset of entries
+      (i.e. Glycoprotein, Membrane, 3D-structure...).
+    </p>
+   </li>
+   <li>
+    Click
+    <b>
+     Columns
+    </b>
+    to choose the columns to show in the result table
+   </li>
+  </ul>
+  <div id="note-uniparc">
+   <p>
+    * Note that UniParc can be searched only with database names,
+     taxonomy, checksum (CRC64) and accession numbers (ACs) or
+     UniProtKB, UniRef and UniParc IDs.
+   </p>
+   <p>
+    Examples:
+   </p>
+   <ul>
+    <li>
+     <a href="http://www.uniprot.org/uniparc/?query=P12345">
+      Search UniParc with P12345
+     </a>
+    </li>
+    <li>
+     <a href="http://www.uniprot.org/uniparc/?query=taxonomy:2759">
+      Search UniParc with TaxID for Eukaryota
+     </a>
+    </li>
+    <li>
+     <a href="http://www.uniprot.org/uniparc/?query=taxonomy:Eukaryota">
+      Search UniParc with taxonomy term Eukaryota
+     </a>
+    </li>
+   </ul>
+  </div>
+ </div>
+</div>

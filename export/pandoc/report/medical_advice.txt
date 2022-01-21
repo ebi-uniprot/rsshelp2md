@@ -1,0 +1,6 @@
+medical_advice
+---
+Dead links
+http://www.medsitenavigator.com/
+http://medlineplus.nlm.nih.gov/medlineplus/
+

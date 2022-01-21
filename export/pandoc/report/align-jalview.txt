@@ -1,0 +1,6 @@
+align-jalview
+---
+Dead links
+http://www.java.com/
+http://www.java.com/en/download/faq/java%5Fwebstart.xml
+

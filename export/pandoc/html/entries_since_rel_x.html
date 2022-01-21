@@ -1,0 +1,127 @@
+<div>
+ <ol>
+  <li>
+   Go to the
+   <a href="http://www.uniprot.org/news">
+    news archive
+   </a>
+   and find the date of the UniProt release under consideration, e.g. Release 12.0 was published on July 24, 2007
+  </li>
+  <li>
+   Use the query builder as described below.
+  </li>
+ </ol>
+ <p>
+  Retrieve all green plant entries:
+ </p>
+ <ul>
+  <li>
+   Select
+   <strong>
+    Search in
+   </strong>
+   :
+   <code>
+    Protein Knowledgebase (UniProtKB)
+   </code>
+  </li>
+  <li>
+   Click
+   <strong>
+    Advanced
+   </strong>
+   to open the query builder
+  </li>
+  <li>
+   Select
+   <strong>
+    Field
+   </strong>
+   :
+   <code>
+    Taxonomy [OC]
+   </code>
+  </li>
+  <li>
+   Type
+   <code>
+    Viridiplantae
+   </code>
+   (use autocompletion)
+  </li>
+ </ul>
+ <p>
+  Restrict results to data integrated since release 12.0:
+ </p>
+ <ul>
+  <li>
+   Select
+   <strong>
+    Field
+   </strong>
+   :
+   <code>
+    Date of
+   </code>
+   -
+   <code>
+    Date of creation
+   </code>
+  </li>
+  <li>
+   Type
+   <strong>
+    From
+   </strong>
+   :
+   <code>
+    20070724
+   </code>
+  </li>
+  <li>
+   Click
+   <strong>
+    Search
+   </strong>
+  </li>
+ </ul>
+ <p>
+  You can choose to view only
+  <a href="http://www.uniprot.org/uniprot?query=taxonomy:viridiplantae+created:[20070724+TO+%2A]+reviewed:yes">
+   reviewed
+  </a>
+  (UniProtKB/Swiss-Prot) or
+  <a href="http://www.uniprot.org/uniprot?query=taxonomy:viridiplantae+created:[20070724+TO+%2A]+reviewed:no">
+   unreviewed
+  </a>
+  (UniProtKB/TrEMBL) entries.
+ </p>
+ <p>
+  Note that the date can be modified in the query box 'taxonomy:Viridiplantae AND created:[20070724 TO *]' and that you can bookmark the result page.
+ </p>
+ <p>
+  See also:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/help/update%5Fnotification">
+    How do I get automatically notified of updates to UniProtKB?
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/help/link%5Fold%5Fversions">
+    How do I link to a specific version of a UniProtKB entry?
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/help/date%5Fformats/">
+    What are the date formats accepted in the relevant fields of the query builder (e.g. UniProtKB date integrated/date modified)?
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/help/advanced%5Fsearch">
+    UniProtKB advanced search options
+   </a>
+  </li>
+ </ul>
+</div>

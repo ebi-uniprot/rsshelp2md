@@ -1,0 +1,7 @@
+human_proteome
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=reviewed%3Ayes+AND+proteome%3Aup000005640
+http://www.uniprot.org/uniprot/?query=reviewed%3Ayes+AND+proteome%3Aup000005640
+http://www.uniprot.org/uniprot/?query=proteome:up000005640+AND+reviewed:yes&format=fasta&include=yes
+

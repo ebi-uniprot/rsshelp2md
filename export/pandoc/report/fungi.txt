@@ -1,0 +1,11 @@
+fungi
+---
+Dead links
+http://www.uniprot.org/program/Fungi
+http://www.uniprot.org/docs/pombe
+http://www.uniprot.org/docs/yeast1
+http://www.uniprot.org/docs/yeast5
+http://www.uniprot.org/docs/yeast8
+http://www.uniprot.org/docs/yeast11
+http://www.uniprot.org/docs/yeast13
+

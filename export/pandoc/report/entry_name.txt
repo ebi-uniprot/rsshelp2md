@@ -1,0 +1,13 @@
+entry_name
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P01308#entry%5Finformation
+http://www.uniprot.org/uniprot/P01325#entry%5Finformation
+http://www.uniprot.org/uniprot/P01326#entry%5Finformation
+http://www.uniprot.org/uniprot/Q7L1S5#entry%5Finformation
+http://www.uniprot.org/uniprot/O43529#entry%5Finformation
+http://www.uniprot.org/uniprot/Q9NPF2#entry%5Finformation
+
+Number tables converted to Markdown
+2
+
