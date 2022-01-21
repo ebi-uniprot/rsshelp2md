@@ -30,6 +30,6 @@ The number of tables that were converted by pandoc from HTML into Markdown
 
 If a table is too complex pandoc will leave as HTML
 
-### All extra HTML tags left (ie <span style="color: grey;">)?
+### All extra HTML tags left (ie `<span style="color: grey;">`)?
 
 If a color style has been detected then these HTML tags are not stripped
