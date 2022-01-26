@@ -4,6 +4,7 @@ from pathlib import Path
 from urllib.parse import urlparse, unquote
 import re
 import base64
+import sys
 from ftplib import FTP
 import pypandoc
 import feedparser
@@ -12,6 +13,8 @@ import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from fake_useragent import UserAgent
+import argparse
+import pandas as pd
 
 # Use this to fake a valid user agent for requests
 ua = UserAgent()
@@ -20,7 +23,16 @@ headers = {'User-Agent': ua.Chrome}
 options = Options()
 options.headless = True
 
-export_path = './export/pandoc'
+parser = argparse.ArgumentParser()
+parser.add_argument('--input_rss_path', type=str,
+                    help='The path to the RSS file to be parsed', required=True)
+parser.add_argument('--out_directory', type=str,
+                    help='The path to the directory for the resulting converted files to be saved', required=True)
+parser.add_argument(
+    '--mode', choices=['help', 'columns'], help='Determines how the file is processed', required=True)
+args = parser.parse_args()
+
+export_path = args.out_directory
 images_path = os.path.join(export_path, 'images')
 html_path = os.path.join(export_path, 'html')
 markdown_path = os.path.join(export_path, 'markdown')
@@ -40,6 +52,14 @@ re_base64 = re.compile(
 table_string = '<table'
 
 image_count = 0
+
+manual_column_mapping = {
+    'virus_host': {'uniprotkb': 'virus_hosts'},
+    'busco_score': {'proteomes': 'busco'},
+    'sequence_status': {'uniprotkb': 'fragment'},
+
+    # 'general_annotation_ALLERGEN': 'cc_allergen'
+}
 
 
 def get_github_image_path(
@@ -224,12 +244,93 @@ def check_and_standardize_all_links(soup):
     return dead_links, dead_anchors
 
 
-def main():
-    with open('input/help.combined.rss') as f:
-        rss = ''.join(f.readlines())
-        feed = feedparser.parse(rss)
+re_sequence_annotation = re.compile(r'sequence_annotation_(.*)')
+re_general_annotation = re.compile(r'general_annotation_(.*)')
 
-    for i, entry in enumerate(feed['entries']):
+
+def get_dict(x): return dict(zip(x.Old, x.New))
+
+
+df = pd.read_excel(
+    '/Users/dlrice/Downloads/return-fields-old-to-new.xlsx', sheet_name=None)
+
+for sheet in df.values():
+    sheet['Old'] = sheet['Old'].str.lower()
+
+fields_uniprotkb = get_dict(df['uniprotkb'])
+fields_uniref = get_dict(df['uniref'])
+fields_uniparc = get_dict(df['uniparc'])
+fields_proteomes = get_dict(df['proteomes'])
+
+fields = [
+    {
+        'namespace': 'uniprotkb',
+        'fields': fields_uniprotkb
+    },
+    {
+        'namespace': 'uniref',
+        'fields': fields_uniref
+    },
+    {
+        'namespace': 'uniparc',
+        'fields': fields_uniparc
+    },
+    {
+        'namespace': 'proteomes',
+        'fields': fields_proteomes
+    },
+]
+
+
+def check_fields(x):
+    found = {}
+    for d in fields:
+        if x in d['fields']:
+            found[d['namespace']] = d['fields'][x]
+    return found
+
+
+def convert_return_field(old):
+    lower = old.lower()
+
+    found = check_fields(lower)
+    if found:
+        return found
+
+    lower_spaces = lower.replace('_', ' ')
+    found = check_fields(lower_spaces)
+    if found:
+        return found
+
+    m = re_sequence_annotation.match(lower)
+    if m:
+        g = m.groups()[0].replace('_', ' ')
+        feature = f'feature({g})'
+        found = check_fields(feature)
+        if found:
+            return found
+
+    feature = f'feature({lower_spaces})'
+    found = check_fields(feature)
+    if found:
+        return found
+
+    m = re_general_annotation.match(lower)
+    if m:
+        g = m.groups()[0].replace('_', ' ')
+        comment = f'comment({g})'
+        found = check_fields(comment)
+        if found:
+            return found
+
+    comment = f'comment({lower_spaces})'
+    found = check_fields(comment)
+    if found:
+        return found
+
+
+def convert(entries):
+    for i, entry in enumerate(entries):
         # Use this to resume if something crashes at a particular index
         # if i < 102:
         #     continue
@@ -297,6 +398,76 @@ def main():
             print(f'categories: {get_joined_categories(entry)}', file=f)
             print('---', end='\n\n', file=f)
             f.write(md)
+
+
+def get_help_link(accession):
+    return '<Link to={generatePath(LocationToPath[Location.HelpEntry], {accession: "' + accession + '"})}>'
+
+
+def get_help_accession(url):
+    re_help_link = re.compile(r'"https?:\/\/www\.uniprot\.org\/manual\/(.*)"')
+    m = re_help_link.match(url)
+    return unquote(m.groups()[0])
+
+
+def replace_anchor_with_link(html):
+    re_anchor = re.compile(r'<a href=(.*)>')
+    m = re_anchor.search(html)
+    if not m:
+        return html
+    url = m.groups()[0]
+    accession = get_help_accession(url)
+    link = get_help_link(accession)
+    html = re_anchor.sub(link, html)
+    html = html.replace('</a>', '</Link>')
+    return html
+
+
+def get_feed():
+    with open(args.input_rss_path) as f:
+        rss = ''.join(f.readlines())
+        return feedparser.parse(rss)
+
+
+def help():
+    feed = get_feed()
+    convert(feed['entries'])
+
+
+def columns():
+    feed = get_feed()
+    for i, entry in enumerate(feed['entries']):
+        parsed = urlparse(entry['id'])
+        old = parsed.path[1:]
+        converted = convert_return_field(old)
+        if not converted:
+            if old in manual_column_mapping:
+                converted = manual_column_mapping[old]
+            else:
+                print('no new column found for', old)
+                continue
+        elif len(converted) > 1:
+            print('more than one new column found for', old, converted)
+            continue
+        assert len(converted) == 1, converted
+        namespace = list(converted)[0]
+        column = converted[namespace]
+        html = entry['content'][0]['value']
+        soup = BeautifulSoup(html, features='html.parser')
+        html = soup.prettify()
+        html = replace_anchor_with_link(html)
+        html = html.replace('<p>', '<>')
+        html = html.replace('</p>', '</>')
+        with open(os.path.join(html_path, f'{namespace}.{column}.html'), 'w') as f:
+            f.write(html)
+
+
+def main():
+    if args.mode == 'help':
+        help()
+
+    if args.mode == 'columns':
+        columns()
 
 
 if __name__ == '__main__':
