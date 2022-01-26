@@ -251,8 +251,7 @@ re_general_annotation = re.compile(r'general_annotation_(.*)')
 def get_dict(x): return dict(zip(x.Old, x.New))
 
 
-df = pd.read_excel(
-    '/Users/dlrice/Downloads/return-fields-old-to-new.xlsx', sheet_name=None)
+df = pd.read_excel('./return-fields-old-to-new.xlsx', sheet_name=None)
 
 for sheet in df.values():
     sheet['Old'] = sheet['Old'].str.lower()
