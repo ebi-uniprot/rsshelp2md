@@ -1,5 +1,21 @@
+## To run
+
+Help:
+
 ```
-./export/pandoc/
+./convert.py --input_rss_path=input/help.combined.rss --out_directory=export/help --mode=help
+```
+
+Columns:
+
+```
+./convert.py --input_rss_path=input/colheaders.rss --out_directory=export/columns --mode=columns
+```
+
+## Directory structure
+
+```
+./export/{help, columns}/
 	html      # The individual HTML files removed from the composite RSS file
 	images    # Any images encountered in the HTML
 	markdown  # Converted using pandoc
