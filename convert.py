@@ -436,7 +436,9 @@ def help():
 
 def columns():
     feed = get_feed()
-    for i, entry in enumerate(feed['entries']):
+    no_column_found = []
+    more_than_one_column_found = []
+    for entry in feed['entries']:
         parsed = urlparse(entry['id'])
         old = parsed.path[1:]
         converted = convert_return_field(old)
@@ -444,10 +446,10 @@ def columns():
             if old in manual_column_mapping:
                 converted = manual_column_mapping[old]
             else:
-                print('no new column found for', old)
+                no_column_found.append(old)
                 continue
         elif len(converted) > 1:
-            print('more than one new column found for', old, converted)
+            more_than_one_column_found.append((old, converted))
             continue
         assert len(converted) == 1, converted
         namespace = list(converted)[0]
@@ -460,6 +462,14 @@ def columns():
         html = html.replace('</p>', '</>')
         with open(os.path.join(html_path, f'{namespace}.{column}.html'), 'w') as f:
             f.write(html)
+
+    print('No new column found for:')
+    for el in no_column_found:
+        print(f'{el},')
+
+    print('More than one column found for:')
+    for el in more_than_one_column_found:
+        print(el)
 
 
 def main():
