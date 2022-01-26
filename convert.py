@@ -411,6 +411,8 @@ def get_help_accession(url):
 
 def replace_anchor_with_link(html):
     re_anchor = re.compile(r'<a href=(.*)>')
+    re_open_parenthesis = re.compile(r'\(\n')
+    re_close_parenthesis = re.compile(r'\s+\)\n')
     m = re_anchor.search(html)
     if not m:
         return html
@@ -419,6 +421,8 @@ def replace_anchor_with_link(html):
     link = get_help_link(accession)
     html = re_anchor.sub(link, html)
     html = html.replace('</a>', '</Link>')
+    html = re_open_parenthesis.sub('{\' \'}\n', html)
+    html = re_close_parenthesis.sub('\n', html)
     return html
 
 
