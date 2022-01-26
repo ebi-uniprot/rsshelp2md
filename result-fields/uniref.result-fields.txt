@@ -1,0 +1,13 @@
+id
+name
+common_taxon
+common_taxonid
+organism_id
+organism
+identity
+length
+sequence
+types
+members
+count
+created

@@ -1,0 +1,5 @@
+rule_id
+reviewed_protein_count
+unreviewed_protein_count
+taxonomic_scope
+annotation_covered

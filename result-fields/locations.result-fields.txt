@@ -1,0 +1,14 @@
+id
+name
+definition
+category
+keyword
+synonyms
+content
+gene_ontologies
+note
+references
+links
+is_a
+part_of
+statistics

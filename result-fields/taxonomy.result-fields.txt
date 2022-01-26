@@ -1,0 +1,14 @@
+id
+mnemonic
+scientific_name
+common_name
+synonyms
+other_names
+rank
+reviewed
+lineage
+strains
+parent
+hosts
+links
+statistics
