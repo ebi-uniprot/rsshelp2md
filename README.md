@@ -18,6 +18,12 @@ Columns:
 ./convert.py --input_rss_path=input/colheaders.rss --out_directory=export/columns --mode=columns
 ```
 
+Context:
+
+```
+./convert.py --input_rss_path=input/context.rss --out_directory=export/context --mode=context
+```
+
 ## Directory structure
 
 ```
