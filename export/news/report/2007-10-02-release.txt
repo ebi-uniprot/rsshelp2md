@@ -1,0 +1,5 @@
+2007-10-02-release
+---
+Number tables left as HTML
+2
+

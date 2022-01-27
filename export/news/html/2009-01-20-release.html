@@ -1,0 +1,299 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  UniPathway, a metabolic door to UniProtKB/Swiss-Prot
+ </h3>
+ <p>
+  Due to the importance of using standardized nomenclature, annotations in
+      UniProtKB/Swiss-Prot are progressively moving towards structured controlled
+      vocabularies. In this context, the
+  <a href="http://www.grenoble.prabi.fr/obiwarehouse/unipathway">
+   UniPathway
+  </a>
+  project (a collaborative project involving the
+  <a href="http://www.isb-sib.ch/">
+   SIB
+  </a>
+  and
+  <a href="http://www.inrialpes.fr/">
+   INRIA
+  </a>
+  ) aims at
+      providing an extra resource dedicated to the exploration of metabolism using
+      a structured controlled vocabulary for concisely describing the role of a protein
+      in metabolism.
+ </p>
+ <p>
+  The metabolism of living organisms can be understood as a network of
+      biochemical reactions, generally catalyzed by enzymes. Dealing with
+      this network as a whole is a complex task and a classical approach is to divide it
+      into more manageable segments, called pathways. This approach is always somewhat
+      arbitrary and depends upon the final usage. Usually, a first level of
+      segmentation is achieved on the basis of biological criteria. For instance,
+      one could divide by considering the sub-network of all reactions involved in the amino-acid biosynthesis
+      or, more specifically, in L-lysine biosynthesis only, or even more
+      specifically, in L-lysine biosynthesis via the AAA pathway. It results in
+      a series of coarse- to fine-grained divisions (the coarsest is called a
+      'super-pathway').
+ </p>
+ <p>
+  Whenever possible, we further refine this first-level segmentation to
+      a second-level one, in order to split the pathways into linear
+      segments (i.e. sub-networks without branches) called 'sub-pathways'.
+      Such a fine-grained segmentation allows representation of pathway
+      variants. Indeed, depending on an organism (or a set of organisms),
+      the chemical route from one compound to another can be performed in
+      different ways. It is important to represent these variations within
+      the same pathway since UniProtKB covers a large number of species. In
+      addition, it offers a convenient way to label the enzymatic reactions
+      that constitute a metabolic pathway by their relative position
+      ('step') in the sub-pathway.
+ </p>
+ <p>
+  The role of a protein in metabolism is described in the 'Pathway' subsection of the
+      'General annotation (Comments)' section. The syntax is 'super-pathway; pathway; sub-pathway: step n/m'.
+      For examples of metabolic pathway annotations, see:
+  <a href="http://www.uniprot.org/uniprot/P49367#section_comments">
+   P49367
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/P38998#section_comments">
+   P38998
+  </a>
+  and
+  <a href="http://www.uniprot.org/uniprot/P11454#section_comments">
+   P11454
+  </a>
+  . In this last example, the biochemical
+      reactions of the pathway are not yet known.
+  <a href="http://www.uniprot.org/uniprot/P11454#section_comments">
+   P11454
+  </a>
+  was therefore only annotated at the level of the pathway.
+ </p>
+ <p>
+  In the current version of UniProtKB/Swiss-Prot, close to
+  <a href="http://www.uniprot.org/uniprot/?query=annotation:(type:pathway)+AND+reviewed:yes">
+   82'000 entries
+  </a>
+  are
+      annotated with the UniPathway controlled vocabulary. The UniProt web site
+      supplies direct links to the
+  <a href="http://www.grenoble.prabi.fr/obiwarehouse/unipathway">
+   UniPathway
+  </a>
+  web server that provides more detailed information on pathways, sub-pathways and biochemical reactions.
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  New document on pathway controlled vocabulary
+ </h3>
+ <p>
+  The document
+  <strong>
+   pathlist.txt
+  </strong>
+  is available by
+  <a href="ftp://ftp.expasy.org/databases/uniprot/current_release/knowledgebase/complete/docs/pathlist.txt">
+   ftp
+  </a>
+  and on the
+  <a href="http://www.uniprot.org/docs/pathlist">
+   Web site
+  </a>
+  . It describes the
+      controlled vocabulary used in the 'Pathway' subsection of the 'General annotation (Comments)' section in the
+      following format:
+ </p>
+ <pre>
+---------  -------------------------------   ----------------------------
+Line code  Content                           Occurrence in an entry
+---------  -------------------------------   ----------------------------
+ID         Identifier                        Once; starts an entry
+AC         Accession number                  Once
+CL         UniPathway class                  Once
+DE         Definition                        Once or more
+SY         Synonym(s)                        Optional; once or more
+HI         Relationship is-a                 Optional; once or more
+HP         Relationship part-of              Optional; once or more
+DR         Cross-reference(s)                Optional; once or more
+//         Terminator                        Once; ends an entry
+</pre>
+ <p>
+  Example:
+ </p>
+ <pre>
+ID   D-alanine biosynthesis.
+AC   UPA00042
+CL   Pathway.
+DE   Biosynthesis of D-alanine. D-alanine is used either as an energy
+DE   source or as a component of bacterial cell wall, where it is directly
+DE   involved in the cross-linking of adjacent peptidoglycan chains. In
+DE   Gram-positive bacteria, D-alanine can also be found to variable
+DE   extents in cell wall teichoic acid and lipoteichoic acid residues.
+SY   D-2-aminopropionic acid biosynthesis.
+HI   UPA00402; amino-acid biosynthesis.
+DR   GO; GO:0030632; P:D-alanine biosynthetic process.
+DR   KEGG; map00252; Alanine and aspartate metabolism.
+DR   KEGG; map00473; D-Alanine metabolism.
+DR   MetaCyc; ALADEG-PWY.
+//
+</pre>
+ <h2>
+  Syntax modification of the 'Pathway' subsection
+ </h2>
+ <p>
+  We have structured the 'Pathway' subsection of the 'General annotation (Comments)' section
+      (comment line (CC) topic PATHWAY in the flat file), using the controlled vocabulary provided by the
+  <a href="http://www.grenoble.prabi.fr/obiwarehouse/unipathway">
+   UniPathway
+  </a>
+  resource, in order to improve the consistency of annotation and to allow to
+      parse its content.
+ </p>
+ <p>
+  The new format of PATHWAY topic in the flat file is:
+ </p>
+ <pre>
+CC   -!- PATHWAY: <em>Super-pathway</em>; <em>Pathway</em>(; <em>Sub-pathway</em>: <em>Enzymatic_reaction</em>)?([regulation])?.
+     </pre>
+ Where:
+ <ul>
+  <li>
+   <em>
+    Super-pathway
+   </em>
+   : Describes a class of metabolic pathways, e.g.
+   <code>
+    Amino-acid biosynthesis
+   </code>
+  </li>
+  <li>
+   <em>
+    Pathway
+   </em>
+   : Describes a metabolic pathway, e.g.
+   <code>
+    L-lysine biosynthesis via AAA pathway
+   </code>
+  </li>
+  <li>
+   <em>
+    Sub-pathway
+   </em>
+   : Describes a linear sequence of enzymatic reactions in the format:
+   <br/>
+   <em>
+    final_product
+   </em>
+   from
+   <em>
+    initial_substrate
+   </em>
+   <br/>
+   where
+   <em>
+    final_product
+   </em>
+   and
+   <em>
+    initial_substrate
+   </em>
+   are the labels of the corresponding chemical compounds, e.g.
+   <code>
+    L-alpha-aminoadipate from 2-oxoglutarate
+   </code>
+  </li>
+  <li>
+   <em>
+    Enzymatic_reaction
+   </em>
+   : Describes the enzymatic reaction catalyzed by the protein in the format:
+   <br/>
+   step
+   <em>
+    n
+   </em>
+   /
+   <em>
+    m
+   </em>
+   <br/>
+   where
+   <em>
+    n
+   </em>
+   is the relative position of the enzymatic reaction in the sub-pathway and
+   <em>
+    m
+   </em>
+   is the total number of enzymatic reactions in the sub-pathway.
+  </li>
+  <li>
+   <code>
+    [regulation]
+   </code>
+   : Indicates that a protein acts as transcriptional regulator of the genes coding for enzymes of the pathway.
+  </li>
+ </ul>
+ <p>
+  Note: Perl-style multipliers indicate whether a pattern (as delimited by
+      parentheses) is optional.
+ </p>
+ <p>
+  Examples:
+ </p>
+ <a href="http://www.uniprot.org/uniprot/P49367#section_comments">
+  P49367
+ </a>
+ :
+ <pre>
+      CC   -!- PATHWAY: Amino-acid biosynthesis; L-lysine biosynthesis via AAA
+      CC       pathway; L-alpha-aminoadipate from 2-oxoglutarate: step 2/4.
+     </pre>
+ <a href="http://www.uniprot.org/uniprot/P0A877#section_comments">
+  P0A877
+ </a>
+ :
+ <pre>
+      CC   -!- PATHWAY: Amino-acid biosynthesis; L-tryptophan biosynthesis; L-
+      CC       tryptophan from chorismate: step 5/5.
+     </pre>
+ <a href="http://www.uniprot.org/uniprot/P95477#section_comments">
+  P95477
+ </a>
+ :
+ <pre>
+      CC   -!- PATHWAY: Siderophore biosynthesis; pseudomonine biosynthesis.
+     </pre>
+ <a href="http://www.uniprot.org/uniprot/P52957#section_comments">
+  P52957
+ </a>
+ :
+ <pre>
+      CC   -!- PATHWAY: Mycotoxin biosynthesis; sterigmatocystin biosynthesis
+      CC       [regulation].
+     </pre>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1014">
+    Congenital stationary night blindness
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1013">
+    Microphthalmia
+   </a>
+  </li>
+ </ul>
+</div>

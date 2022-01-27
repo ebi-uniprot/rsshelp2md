@@ -1,0 +1,124 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  Massive number of changes to entry names
+ </h3>
+ <p>
+  We recently allowed entry names
+     to consist of up to 11 characters instead of 10. An entry name
+     consists of two parts, a prefix which is a mnemonic code representing
+     the protein name and a suffix which is a mnemonic species
+     identification code. Example: RECA_BACSU is the entry name for the
+     recA protein of
+  <em>
+   Bacillus subtilis
+  </em>
+  . The increase from 10 to 11
+     characters allows the protein name mnemonic to increase from 4 to 5
+     characters.
+ </p>
+ <p>
+  Thanks to this change, we are now able to assign more meaningful
+      entry names to a significant number of entries. In the past month we
+      have gone through almost all of the Swiss-Prot entries and have
+      checked to see if they could benefit from an entry name update. As a
+      consequence of this process we updated more than 35'000 entry names
+      (about 20% of all the entries in Swiss-Prot). In about 33'000 cases
+      we created ID prefixes consisting of 5 characters and in the rest of
+      the cases we changed existing prefixes of 3 to 4 characters to more
+      meaningful and consistent prefixes of the same length.
+ </p>
+ <p>
+  Due to this massive changes in entry names it is probable that the
+       names of some protein entries that you are using have changed. It
+       is therefore useful to remind our users that we provide a tool,
+       the
+  <a href="http://www.expasy.org/cgi-bin/idtracker">
+   IDtracker
+  </a>
+  which allows to
+       trace the identifiers (ID) of protein entries. You can
+       use this tool to enquire on the whereabouts of one or more entry
+       names and to obtain the newly assigned names and primary accession
+      numbers.
+ </p>
+ <p>
+  It can seem paradoxical that we insist in warning users that they
+        should
+  <strong>
+   always use accession numbers when citing an entry
+  </strong>
+  , yet we
+        strive to provide meaningful entry names. The reason for this
+        dichotomy is simple: if you want to refer to specific entries in a
+        publication or in any document , you need to ensure that your
+        reference is stable, unique and unambiguous. Such a mechanism is
+        provided by the accession numbers. Accession numbers are stable
+        identifiers and you can be sure that you will be always able to track
+        down a specific entry if you use an accession number. But when you
+        want to access an entry from a web server or a sequence analysis
+        program, then it is much easier to remember an entry name than an
+        accession number. The human mind is structured in such a way that is
+        generally easier for most of us to remember something like
+      "APOA5_HUMAN" rather than something like "Q6Q788".
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Cross-references to GeneDB_Spombe
+ </h3>
+ <p>
+  We changed the Data bank identifier for the Schizosaccharomyces pombe GeneDB Prototype from
+GeneDB_SPombe to GeneDB_Spombe.
+ </p>
+ <h3>
+  Cross-references to LegioList
+ </h3>
+ <p>
+  Cross-references have been added to
+  <a href="http://genolist.pasteur.fr/LegioList/">
+   LegioList
+  </a>
+  , a
+database which provides a complete dataset of DNA and protein sequences derived from L. pneumophila
+strain Paris and strain Lens, linked to the relevant annotations and functional assignments.
+LegioList is available at
+  <a href="http://genolist.pasteur.fr/LegioList/">
+   http://genolist.pasteur.fr/LegioList/
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    LegioList
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    Ordered locus name.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/Q5X2T6#section_x-ref">Q5X2T6</a>:
+DR   LegioList; lpp2301; -.</pre>
+   </td>
+  </tr>
+ </table>
+</div>

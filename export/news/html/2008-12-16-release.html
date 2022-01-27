@@ -1,0 +1,196 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  GeneCards: yet another means to get human gene chromosomal location
+ </h3>
+ <p>
+  UniProtKB aims to be a central hub for biological information on proteins.
+      While the protein sequence is described in depth at the residue level in the
+      'Sequence annotation (Features)' section of UniProtKB/Swiss-Prot entries, the
+      general context in which the protein exists and functions (mostly provided in the 'General
+      annotation (Comments)' section) is kept at a general interest level. Users
+      interested in more detailed information are invited to deepen their knowledge
+      by looking into the original publications (in the 'References' section) and
+      making use of the
+  <a href="http://www.uniprot.org/docs/dbxref">
+   numerous cross-references
+  </a>
+  , mostly found in the 'Cross-
+      references' section that is becoming larger and larger with each release.
+ </p>
+ <p>
+  In the current release, we have added cross-references to
+  <a href="http://www.genecards.org/">
+   GeneCards
+  </a>
+  . This database
+      focuses on human genes. The information provided by GeneCards is
+      automatically extracted from more than 50
+  <a href="http://www.genecards.org/sources.shtml">
+   databases
+  </a>
+  , some of which are manually annotated, such as OMIM and
+      UniProtKB/Swiss-Prot. While much of the information provided by GeneCards
+      overlaps with that found in UniProtKB/Swiss-Prot, it also contains additional
+      data which complement our annotations.
+ </p>
+ <p>
+  GeneCards indicates very precisely the chromosomal location of each gene, not
+      only at the chromosome (sub)bands, but also at the level of base pairs, clearly
+      indicating from which end of the chromosome the position is calculated (see for
+      instance
+  <a href="http://www.genecards.org/cgi-bin/carddisp.pl?gc_id=GC15M023473">
+   ATP10A
+  </a>
+  ).
+      This type of information is not currently provided directly in UniProtKB/Swiss-Prot entries,
+      but can be accessed through links to other databases, such as Ensembl and now GeneCards. Note, however,
+      that we provide a complete list of all human proteins, chromosome by chromosome, on the
+  <a href="http://www.expasy.org/sprot/hpi/">
+   'human-centric' page
+  </a>
+  on the ExPASy server.
+      For each chromosome, the list can be downloaded from the UniProt ftp site (see for instance all proteins
+      encoded on
+  <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/docs/humchr01.txt">
+   chromosome 1
+  </a>
+  ).
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Cross-references to GeneCards
+ </h3>
+ <p>
+  Cross-references have been added to
+  <a href="http://www.genecards.org/">
+   GeneCards
+  </a>
+  . GeneCards is a searchable, integrated database of human genes
+      that provides concise genomic, proteomic, transcriptomic, genetic and functional
+      information on all known and predicted human genes.
+ </p>
+ <p>
+  GeneCards is available at
+  <a href="http://www.genecards.org/">
+   http://www.genecards.org/
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    GeneCards
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    GeneCards unique identifier.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/Q6PCB8#section_x-ref">Q6PCB8</a>:
+DR   GeneCards; GC05M049731; -.
+
+<a href="http://www.uniprot.org/uniprot/P69905#section_x-ref">P69905</a>:
+DR   GeneCards; GC16P000162; -.
+DR   GeneCards; GC16P000166; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-references to PRIDE
+ </h3>
+ <p>
+  Cross-references have been added to
+  <a href="http://www.ebi.ac.uk/pride//">
+   PRIDE PRoteomics IDEntifications database
+  </a>
+  . The PRIDE PRoteomics IDEntifications
+      database is a centralized, standards compliant, public data repository for
+      proteomics data.
+ </p>
+ <p>
+  PRIDE is available at
+  <a href="http://www.ebi.ac.uk/pride/">
+   http://www.ebi.ac.uk/pride/
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    PRIDE
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    UniProtKB accession number.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/Q9Y5P4#section_x-ref">Q9Y5P4</a>:
+DR   PRIDE; Q9Y5P4; -.
+
+<a href="http://www.uniprot.org/uniprot/P25296#section_x-ref">P25296</a>:
+DR   PRIDE; P25296; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Changes concerning cross-references to IntAct
+ </h3>
+ <p>
+  We have changed the format of the cross-reference lines to IntAct to
+     add the number of interactions.
+ </p>
+ <table>
+  <tr>
+   <th>
+    Optional information 1
+   </th>
+   <td>
+    Number of interactions.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/O01802#section_x-ref">O01802</a>:
+DR   IntAct; O01802; 12.</pre>
+   </td>
+  </tr>
+ </table>
+</div>

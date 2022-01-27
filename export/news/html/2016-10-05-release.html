@@ -1,0 +1,416 @@
+<h2 id="Headline">
+ Headline
+</h2>
+<h3 id="Ki_67__the_great_leap_from_simple_marker_to_functional_actor">
+ Ki-67: the great leap from simple marker to functional actor
+</h3>
+<p>
+ A marker is
+ <a href="http://www.merriam-webster.com/dictionary/marker">
+  'something (such as a sign or an object) that shows the location, the presence or the existence of something'
+ </a>
+ . Used daily in laboratories worldwide, from basic research to clinics, markers are a scientist/practitioner's best friend and the community continuously seeks new markers, notably for improving diagnosis and prognosis in medicine. Take for instance Ki-67. This protein, encoded by the MKI67 gene, is present during all active phases of the cell cycle, G1, S, G2, and mitosis, but is absent from resting G0 cells. During interphase, it is predominantly present in the cortex and dense fibrillar components of the
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/8799815,10727979">
+  nucleolus
+ </a>
+ . During mitosis, it relocates to the
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/2689459,2262344">
+  periphery of the condensed chromosomes
+ </a>
+ . It is a widely used marker for cell proliferation, very valuable in cancer diagnosis and prognosis. In this case, the term "widely" seems an understatement. A search in the NCBI PubMed database retrieves over
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=ki-67">
+  22'200 publications
+ </a>
+ , but hardly any deal with its actual function. Indeed, while Ki-67 association with cellular proliferation is well established, its precise role in this process was unknown until recently. It was quite tempting to suggest that it is 'required for maintaining cell proliferation', as it was cautiously stated in the human UniProtKB/Swiss-Prot entry. However, a marker is just a marker and drawing any functional conclusion from expression levels may be hazardous.
+</p>
+<p>
+ At the very beginning of mitosis, chromosomes are compacted into thick fibers. After nuclear envelope breakdown (NEBD), chromosomes separate from one another in the cytoplasm, attach to the mitotic spindle and align along the center of the cell during metaphase. The spindle pulls a set of chromosomes to each pole of the dividing cell. How do chromosomes maintain their structural individuality during this process? As
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/27362225">
+  the molecules responsible for chromosome compaction are by themselves unable to distinguish different chromosomes
+ </a>
+ , what are the factors that prevent chromosome coalescence?
+</p>
+<p>
+ Earlier this year,
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/27362226">
+  Cuylen et al.
+ </a>
+ tackled this issue. Using automated live-cell imaging, the authors analyzed the effect of removing different proteins from cells. Out of almost 1,300 candidate genes, the knockdown of only one caused the sought-after chromosome clustering phenotype: MKI67. The internal structure of mitotic chromosomes appeared unaffected by Ki-67 depletion, but soon after NEBD, chromosomes merged into a single mass of chromatin, whose access to spindle microtubules was impaired.
+</p>
+<p>
+ Ki-67 is a large, about 3'000 amino acid long, protein that localizes at the chromosome surface from prophase until telophase, as mentioned above. Cuylen et al. show that the protein's adsorption at the chromosome surface is mediated by its C-terminal region. The elongated N-terminal portion orients perpendicular to the chromosomes, a little like bristles on a brush. Ki-67 size and overall electric charge may form a repulsive shield, preventing coalescence. The range of Ki-67-mediated chromosome repulsion seems to depend on molecular density. When Ki-67 was overexpressed, mitotic chromosomes were spaced further apart.
+</p>
+<p>
+ Hence natural proteins seem to be able to act as surfactants in intracellular compartmentalization. It would be interesting to investigate whether it is also the case for membrane-less organelles, such as nucleoli, with which Ki-67 was also shown to be associated.
+</p>
+<p>
+ As of this release, the
+ <a href="http://www.uniprot.org/uniprot/?query=gene:mki67+AND+reviewed:yes+and+organism:9606">
+  human Ki-67 entry
+ </a>
+ has been updated in UniProtKB/Swiss-Prot and is publicly available.
+</p>
+<h2 id="UniProtKB_news">
+ UniProtKB news
+</h2>
+<h3 id="Change_of_RDF_representation_of_the_cross_references_to_family_and_domain_databases">
+ Change of RDF representation of the cross-references to family and domain databases
+</h3>
+<p>
+ We have modified the representation of our cross-references to
+ <a href="http://www.uniprot.org/database/?query=%2A&amp;fil=category%3A%22Family+and+domain+databases%22">
+  family and domain databases
+ </a>
+ . These cross-references indicate the number of matches of the family or domain signature to the UniProt
+ <a href="http://www.uniprot.org/help/canonical%5Fand%5Fisoforms">
+  canonical sequence
+ </a>
+ , and this piece of information was provided via a reification of the cross-reference statement. We have introduced a new
+ <code>
+  Signature_Resource
+ </code>
+ class with a
+ <code>
+  signatureSequenceMatch
+ </code>
+ property to describe each match as a resource and thereby simplify this description.
+</p>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/A0AVT1.ttl">
+  A0AVT1
+ </a>
+</p>
+<p>
+ Previous format:
+</p>
+<pre>uniprot:A0AVT1
+  rdfs:seeAlso &lt;http://purl.uniprot.org/pfam/PF00899&gt; .
+
+&lt;http://purl.uniprot.org/pfam/PF00899&gt;
+  rdf:type up:Resource ;
+  up:database &lt;http://purl.uniprot.org/database/Pfam&gt; ;
+  rdfs:comment "ThiF" .
+
+&lt;#_4130415654310021&gt;
+  rdf:type rdf:Statement ;
+  rdf:type up:Domain_Assignment_Statement ;
+  rdf:subject uniprot:A0AVT1 ;
+  rdf:predicate rdfs:seeAlso ;
+  rdf:object &lt;http://purl.uniprot.org/pfam/PF00899&gt; ;
+  up:hits 2 .
+</pre>
+<p>
+ New format:
+</p>
+<pre>uniprot:A0AVT1
+  rdfs:seeAlso &lt;http://purl.uniprot.org/pfam/PF00899&gt; .
+
+&lt;http://purl.uniprot.org/pfam/PF00899&gt;
+  rdf:type up:Signature_Resource ;
+  up:database &lt;http://purl.uniprot.org/database/Pfam&gt; ;
+  rdfs:comment "ThiF" .
+  up:signatureSequenceMatch isoforms:A0AVT1-1#Pfam_PF00899_match_1 ,
+                            isoforms:A0AVT1-1#Pfam_PF00899_match_2 .
+</pre>
+<h3 id="Change_of_RDF_representation_of_the_cross_references_to_EMBL">
+ Change of RDF representation of the cross-references to EMBL
+</h3>
+<p>
+ We have modified the representation of our cross-references to nucleotide CoDing Sequences (CDS) from the
+ <a href="http://www.insdc.org/">
+  INSDC
+ </a>
+ . When a CDS differs substantially from a reviewed UniProtKB/Swiss-Prot sequence, the UniProt curators indicate the
+ <a href="http://www.uniprot.org/help/cross%5Freferences%5Fsection">
+  nature of the difference
+ </a>
+ in the corresponding cross-reference. This piece of information was provided via a reification of the cross-reference statement. We have introduced a new
+ <code>
+  sequenceDiscrepancy
+ </code>
+ property to simplify this description.
+</p>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P30154.ttl">
+  P30154
+ </a>
+</p>
+<p>
+ Previous format:
+</p>
+<pre>uniprot:P30154
+  rdfs:seeAlso &lt;http://purl.uniprot.org/embl-cds/BAG59103.1&gt; .
+
+&lt;http://purl.uniprot.org/embl-cds/BAG59103.1&gt;
+  rdf:type up:Nucleotide_Resource ;
+  up:database &lt;http://purl.uniprot.org/database/EMBL&gt; ;
+  up:locatedOn &lt;http://purl.uniprot.org/embl/AK296455&gt; .
+
+&lt;#_503330313534001A&gt;
+  rdf:type rdf:Statement ;
+  rdf:type up:Nucleotide_Mapping_Statement ;
+  rdf:subject uniprot:P30154 ;
+  rdf:predicate rdfs:seeAlso ;
+  rdf:object &lt;http://purl.uniprot.org/embl-cds/BAG59103.1&gt; ;
+  rdfs:comment "Frameshift." .
+</pre>
+<p>
+ New format:
+</p>
+<pre>uniprot:P30154
+  rdfs:seeAlso &lt;http://purl.uniprot.org/embl-cds/BAG59103.1&gt; .
+
+&lt;http://purl.uniprot.org/embl-cds/BAG59103.1&gt;
+  rdf:type up:Nucleotide_Resource ;
+  up:database &lt;http://purl.uniprot.org/database/EMBL&gt; ;
+  up:locatedOn &lt;http://purl.uniprot.org/embl/AK296455&gt; ;
+  up:sequenceDiscrepancy uniprot:P30154#EMBL_BAG59103.1 .
+
+uniprot:P30154#EMBL_BAG59103.1
+  rdfs:comment "Frameshift." .
+</pre>
+<h3 id="Changes_to_the__a_href___docs_humdisease__controlled_vocabulary_of_human_diseases__a_">
+ Changes to the
+ <a href="http://www.uniprot.org/docs/humdisease">
+  controlled vocabulary of human diseases
+ </a>
+</h3>
+<p>
+ New diseases:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04742">
+   Arrhythmogenic right ventricular dysplasia 11, familial, and mild palmoplantar keratoderma and woolly hair
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04749">
+   Autoimmune disease, multisystem, infantile-onset, 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04740">
+   Brachydactyly-syndactyly-oligodactyly syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04739">
+   Cataract 46, juvenile-onset
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04750">
+   Cerebral palsy, spastic quadriplegic 3
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04745">
+   Combined oxidative phosphorylation deficiency 30
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04735">
+   Deafness, congenital, with onychodystrophy, autosomal dominant
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04748">
+   Epileptic encephalopathy, early infantile, 37
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04737">
+   Gillessen-Kaesbach-Nishimura syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04734">
+   Heart and brain malformation syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04743">
+   Immunodeficiency 47
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04738">
+   Lymphoma, mucosa-associated lymphoid type
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04747">
+   Mental retardation, autosomal dominant 43
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04741">
+   Micropenis
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04746">
+   Neurodevelopmental disorder with or without anomalies of the brain, eye, or heart
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04736">
+   Pierpont syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04732">
+   Spastic paraplegia 62, autosomal recessive
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04733">
+   Spastic paraplegia 76, autosomal recessive
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04744">
+   You-Hoover-Fong syndrome
+  </a>
+ </li>
+</ul>
+<p>
+ Modified diseases:
+</p>
+<ul>
+ <li>
+  Anemia, sideroblastic, pyridoxine-refractory, autosomal recessive -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-00119">
+   Anemia, sideroblastic, 2, pyridoxine-refractory
+  </a>
+ </li>
+ <li>
+  Anemia, sideroblastic, X-linked -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-00120">
+   Anemia, sideroblastic, 1
+  </a>
+ </li>
+ <li>
+  Aniridia, cerebellar ataxia and mental deficiency -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01661">
+   Gillespie syndrome
+  </a>
+ </li>
+ <li>
+  Autoimmune disease, multisystem, infantile-onset -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-04194">
+   Autoimmune disease, multisystem, infantile-onset, 1
+  </a>
+ </li>
+ <li>
+  Bartter syndrome 1 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-00173">
+   Bartter syndrome 1, antenatal
+  </a>
+ </li>
+ <li>
+  Bartter syndrome 2 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-00174">
+   Bartter syndrome 2, antenatal
+  </a>
+ </li>
+ <li>
+  Bartter syndrome 4A -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-00176">
+   Bartter syndrome 4A, neonatal, with sensorineural deafness
+  </a>
+ </li>
+ <li>
+  Bartter syndrome 4B -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02554">
+   Bartter syndrome 4B, neonatal, with sensorineural deafness
+  </a>
+ </li>
+ <li>
+  Bartter syndrome, type 5, antenatal, transient -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-04715">
+   Bartter syndrome 5, antenatal, transient
+  </a>
+ </li>
+ <li>
+  Camptodactyly tall stature and hearing loss syndrome -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01312">
+   Camptodactyly, tall stature, and hearing loss syndrome
+  </a>
+ </li>
+ <li>
+  Cerebral palsy, spastic quadriplegic 3 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02560">
+   Spastic paraplegia 50, autosomal recessive
+  </a>
+ </li>
+ <li>
+  Congenital disorder of glycosylation 1S -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03606">
+   Epileptic encephalopathy, early infantile, 36
+  </a>
+ </li>
+ <li>
+  Corneal dystrophy, endothelial 2, autosomal recessive -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01430">
+   Corneal endothelial dystrophy
+  </a>
+ </li>
+ <li>
+  Ehlers-Danlos syndrome, progeroid type, 1 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-00435">
+   Ehlers-Danlos syndrome with short stature and limb anomalies
+  </a>
+ </li>
+ <li>
+  Hypercalcemia infantile -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03214">
+   Hypercalcemia, infantile, 1
+  </a>
+ </li>
+ <li>
+  Multiple joint dislocations short stature craniofacial dysmorphism and congenital heart defects -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03269">
+   Multiple joint dislocations, short stature, and craniofacial dysmorphism with or without congenital heart defects
+  </a>
+ </li>
+ <li>
+  Multiple mitochondrial dysfunctions syndrome 2 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03294">
+   Multiple mitochondrial dysfunctions syndrome 2 with hyperglycinemia
+  </a>
+ </li>
+ <li>
+  Polymicrogyria, symmetric or asymmetric -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02622">
+   Cortical dysplasia, complex, with other brain malformations 7
+  </a>
+ </li>
+ <li>
+  Polymicrogyria, with optic nerve hypoplasia -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02826">
+   Cortical dysplasia, complex, with other brain malformations 8
+  </a>
+ </li>
+ <li>
+  Polymicrogyria with seizures -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03556">
+   Microcephaly, short stature, and polymicrogyria with or without seizures
+  </a>
+ </li>
+ <li>
+  Pyruvate dehydrogenase lipoic acid synthetase deficiency -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03379">
+   Hyperglycinemia, lactic acidosis, and seizures
+  </a>
+ </li>
+ <li>
+  Selective T-cell defect -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02295">
+   Immunodeficiency 48
+  </a>
+ </li>
+</ul>

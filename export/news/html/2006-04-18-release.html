@@ -1,0 +1,155 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  The ComX pheromone
+ </h3>
+ <p>
+  ComX, a pheromone involved in a major quorum sensing system in
+    bacilli, is post-translationally modified by strain-specific prenylation.
+ </p>
+ <p>
+  In order to acquire genetic competence once the cell density
+    has reached a critical threshold, bacteria have developed a
+    sophisticated quorum-sensing system. This system proceeds through
+    the release of a pheromone,
+  <a href="http://www.uniprot.org/uniprot/Q8VL79">
+   comX
+  </a>
+  ,
+    that activates a two-component system, which eventually propagates
+    the signal into the cell. Both components of this system have
+    been identified: they are the sensor histidine kinase,
+  <a href="http://www.uniprot.org/uniprot/Q99027">
+   comP
+  </a>
+  , and the response regulator,
+    the transcription factor
+  <a href="http://www.uniprot.org/uniprot/P14204">
+   comA
+  </a>
+  .
+ </p>
+ <p>
+  The crucial pheromone ComX is produced as an inactive precursor
+    which is activated by 2 post-translational modifications (PTM):
+    the prenylation of a conserved tryptophan residue and a proteolytic
+    cleavage. The protein
+  <a href="http://www.uniprot.org/uniprot/P33690">
+   comQ
+  </a>
+  is
+    thought to catalyze the maturation
+    of comX. ComX and comQ sequences show striking variability among
+    different strains, as do the prenyl derivatives. The mass of the
+    prenyl groups linked to comX has been determined by mass spectrometry.
+    Surprisingly, three different masses were observed: 120Da, 136Da
+    and 205Da, depending on the strain studied. The 136 and 205Da
+    forms are thought to consist of farnesyl and geranyl groups,
+    respectively. The
+  <a href="http://view.ncbi.nlm.nih.gov/pubmed/16407988">
+   structure
+    of the 205Da prenyl group
+  </a>
+  in strain W23/RO-E-2 was recently
+    obtained (
+  <a href="http://www.uniprot.org/uniprot/Q8VL79">
+   Q8VL79
+  </a>
+  ). It consists of a
+    geranyl group bound to a cyclic tryptophan. Interestingly enough,
+    the nature of the prenyl group was shown to depend on the comX
+    sequence itself rather than on the origin of the modifying enzyme
+    comQ.
+ </p>
+ <p>
+  To our knowledge, this is the first report of a post-translational
+    prenylation catalyzed by a bacterial enzyme, despite the universal
+    availability of the necessary isoprenoid substrates and the existence
+    of various other lipid-modified proteins in this kingdom. The exact
+    function of comX prenylation is not known, but, by analogy with
+    the situation in eukaryotes, it may provide anchoring to membrane
+    structures.
+ </p>
+ <p>
+  Of note, this PTM, like all other PTMs in UniProtKB/Swiss-Prot,
+    is annotated using
+  <a href="http://www.uniprot.org/docs/ptmlist">
+   controlled vocabulary
+  </a>
+  .
+ </p>
+ <br/>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Changes in the tisslist.txt file
+ </h3>
+ <p>
+  The
+  <a href="http://www.uniprot.org/docs/tisslist">
+   tisslist.txt
+  </a>
+  file lists the tissues that are used in the "TISSUE" topic of the
+  <a href="http://www.uniprot.org/manual/references">
+   references
+  </a>
+  of UniProtKB/Swiss-Prot entries.
+    It has been changed in the following way:
+ </p>
+ <p>
+  Each term in the list has an accession number and optionally further
+    relevant information such as synonyms and mappings to
+  <a href="http://www.evocontology.org/">
+   eVOC
+  </a>
+  terms.
+    eVOC contains four ontologies - Anatomical system, Cell type, Developmental
+    stage, Pathology - which provide appropriate sets of detailed terms that
+    describe the sample source of human experimental material such as cDNA and SAGE
+    libraries.
+ </p>
+ <p>
+  The file contains the following line types:
+ </p>
+ <pre>
+---------  ---------------------------     ----------------------
+Line code  Content                         Occurrence in an entry
+---------  ---------------------------     ----------------------
+ID         Identifier (tissue)             Once; starts an entry
+AC         Accession (TS-xxxx)             Once
+SY         Synonyms                        Optional; Once or more
+DR         eVOC ontologies (eVOC) mapping  Optional; Once or more
+//         Terminator                      Once; ends an entry
+</pre>
+ <p>
+  Examples:
+ </p>
+ <pre>
+ID   Embryonic lung fibroblast.
+AC   TS-0254
+DR   eVoc; 0100042; anatomical-system: lung.
+DR   eVoc; 0200032; cell-type: fibroblast.
+DR   eVoc; 0300001; development-stage: embryo.
+//
+ID   Mammary tumor.
+AC   TS-0597
+SY   Breast tumor; Mammary gland tumor; Mammary tumour.
+DR   eVoc; 0100124; anatomical-system: breast.
+DR   eVoc; 0400051; pathology: tumour.
+//
+</pre>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <ul>
+  <li>
+   Golgi stack renamed to
+   <a href="http://www.uniprot.org/keywords/KW-0333">
+    Golgi apparatus
+   </a>
+  </li>
+ </ul>
+</div>

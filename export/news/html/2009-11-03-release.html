@@ -1,0 +1,415 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  What are UniProt 'Complete proteomes'? How to retrieve them?
+ </h3>
+ <p>
+  The need for users to access and download complete proteomes is unquestionable and
+      the role of a database like UniProtKB is to meet this demand. The issue looks quite
+      simple: there are more and more fully sequenced genomes. These genomes should contain at
+      least minimal annotation, such as gene predictions, and translation of the predicted
+      coding regions (CDSs) should provide a global perspective of the likely proteome of a
+      given organism. The situation is actually more complex. The development of new sequencing
+      techniques is generating a flood of data, which are often left as they have been produced.
+      Databases have to deal with this ever-growing amount of data. The aim of this headline is
+      to provide you with some tips on how we currently approach the problem, keeping in mind
+      that the situation is rapidly evolving.
+ </p>
+ <p>
+  In order to give our users access to the proteomes of organisms whose genome has been fully sequenced,
+      we have created the
+  <a href="http://www.uniprot.org/taxonomy/complete-proteomes">
+   'Complete proteomes'
+  </a>
+  pages. Currently the proteomes of
+  <a href="http://www.uniprot.org/taxonomy/?query=complete:yes">
+   1'428 organisms
+  </a>
+  are available from these
+      pages, 60% are
+  <a href="http://www.uniprot.org/taxonomy/?query=ancestor:2+AND+complete:yes">
+   bacteria
+  </a>
+  ,
+      30%
+  <a href="http://www.uniprot.org/taxonomy/?query=ancestor:10239+AND+complete:yes">
+   viruses
+  </a>
+  ,
+      5.5%
+  <a href="http://www.uniprot.org/taxonomy/?query=ancestor:2759+AND+complete:yes">
+   eukaryota
+  </a>
+  and
+      4.5%
+  <a href="http://www.uniprot.org/taxonomy/?query=ancestor:2157+AND+complete:yes">
+   archaea
+  </a>
+  .
+      Note that the term 'organism' is used in a broad sense and also includes strains or subspecies.
+      Indeed, each completely sequenced strain is assigned a separate taxonomic identifier and is processed
+      like an independent organism. A striking example of this approach is provided by
+  <em>
+   Escherichia coli
+  </em>
+  for which no less than
+  <a href="http://www.uniprot.org/taxonomy/?query=complete:yes%20content:Escherichia%20coli">
+   24
+  </a>
+  strain-specific proteomes
+      can be downloaded separately.
+ </p>
+ <p>
+  A minority of the UniProt proteomes have been entirely manually reviewed and are found in UniProtKB/Swiss-Prot.
+      These include 8 microbial
+      (
+  <a href="http://www.uniprot.org/uniprot/?query=taxonomy:2190+AND+keyword:%22Complete+proteome+[KW-0181]%22">
+   <em>
+    Methanocaldococcus jannaschii
+   </em>
+  </a>
+  ,
+      3 subspecies of
+  <a href="http://www.uniprot.org/uniprot/?query=taxonomy:9+AND+keyword:%22Complete+proteome+[KW-0181]%22">
+   <em>
+    Buchnera aphidicola
+   </em>
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/?query=organism:83333+keyword:181">
+   <em>
+    Escherichia coli
+   </em>
+  </a>
+  (strain K12),
+  <a href="http://www.uniprot.org/uniprot/?query=organism:727+keyword:181">
+   <em>
+    Haemophilus influenzae
+   </em>
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/?query=organism:2097+keyword:181">
+   <em>
+    Mycoplasma genitalium
+   </em>
+  </a>
+  and
+  <a href="http://www.uniprot.org/uniprot/?query=organism:2104+keyword:181">
+   <em>
+    Mycoplasma pneumoniae
+   </em>
+  </a>
+  ) and
+      3 eukaryotic species
+      (
+  <a href="http://www.uniprot.org/uniprot/?query=organism:4932+keyword:181">
+   <em>
+    Saccharomyces cerevisiae
+   </em>
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/?query=organism:4896+keyword:181">
+   <em>
+    Schizosaccharomyces pombe
+   </em>
+  </a>
+  , and
+      last, but not least
+  <a href="http://www.uniprot.org/uniprot/?query=organism:9606+keyword:181">
+   <em>
+    Homo sapiens
+   </em>
+  </a>
+  ).
+      The current proteomes are as stable as new discoveries allow. New proteins may be identified and will have to be
+      annotated.
+ </p>
+ <p>
+  However, most proteomes comprise 2 components, i.e. a manually reviewed protein set (Swiss-Prot)
+      and an automatically annotated one (TrEMBL), and both are
+      automatically combined to generate a non-redundant proteome.
+      The proportion of Swiss-Prot versus TrEMBL entries is variable and depends upon the organism. For instance,
+      93% of the
+  <a href="http://www.uniprot.org/uniprot/?query=Organism:1423+AND+keyword:181">
+   <em>
+    Bacillus subtilis
+   </em>
+   proteome
+  </a>
+  has been manually reviewed, while the reverse is true for
+  <a href="http://www.uniprot.org/uniprot/?query=Organism:405532+AND+keyword:181">
+   <em>
+    Bacillus cereus
+   </em>
+  </a>
+  for which
+      93% of the proteome is only automatically annotated and found in the TrEMBL section of UniProtKB.
+      Note that the
+  <em>
+   B.subtilis
+  </em>
+  proteome will be fully in the Swiss-Prot section by the end of the year.
+ </p>
+ <p>
+  A third category of proteomes exists for organisms whose genomes have submission/annotation problems that
+      prevent the production of a non-redundant protein set or have problems regarding the gene model predictions.
+      These proteomes can be downloaded from
+  <a href="http://www.ebi.ac.uk/integr8/">
+   Integr8
+  </a>
+  using the
+      direct link provided on the
+  <a href="http://www.uniprot.org/taxonomy/complete-proteomes">
+   'Complete proteomes'
+  </a>
+  pages.
+      This concerns
+  <a href="http://www.uniprot.org/taxonomy/?query=complete:yes+NOT+uniprot:(keyword%3A181)">
+   38 organisms
+  </a>
+  ,
+      including some important model organisms, such as
+  <a href="http://www.uniprot.org/taxonomy/7955">
+   <em>
+    Danio rerio
+   </em>
+  </a>
+  (Zebrafish) and
+  <a href="http://www.uniprot.org/taxonomy/3055">
+   <em>
+    Chlamydomonas reinhardtii
+   </em>
+  </a>
+  .
+ </p>
+ <p>
+  To be included in the
+  <a href="http://www.uniprot.org/taxonomy/complete-proteomes">
+   'Complete proteomes'
+  </a>
+  pages,
+      an organism must have a completely sequenced genome, i.e. fully closed and exhibiting either good gene
+      prediction models or good quality transcriptome/proteome data. That is why
+      for bacterial and archaeal genomes,
+      whole-genome shotguns (WGS) and draft sequences are not included. However, we have to adapt to
+      data availability, thus for fungi, WGS sequences are taken into consideration, as they
+      often are the only available ones.
+ </p>
+ <p>
+  Another requirement is that all proteins in the set are mapped to the genome. The notorious
+      exception is that of the
+  <a href="http://www.uniprot.org/uniprot/?query=taxonomy:9606+AND+keyword:%22Complete+proteome+[KW-0181]%22">
+   human proteome
+  </a>
+  ,
+      which is yet only partially mapped.
+      It should be noted, however, that all human protein entries
+      have been manually reviewed, thus ensuring they meet the UniProtKB/Swiss-Prot quality standards, and are continuously updated,
+      allowing us to progressively increase the mapping to the genome (and to add many other interesting annotations).
+ </p>
+ <p>
+  All complete proteomes are available from the UniProt
+  <a href="http://www.uniprot.org/taxonomy/">
+   taxonomy
+  </a>
+  resource.
+      A direct link is provided from the UniProt homepage.
+      In addition to providing the taxonomic information about a given species, these pages offer several options, such
+      as the retrieval of all UniProtKB entries for a taxon (a set that may contain redundant entries) or
+      the retrieval of the non-redundant complete proteome (see for example the
+  <a href="http://www.uniprot.org/taxonomy/44689">
+   <em>
+    Dictyostelium discoideum
+   </em>
+  </a>
+  (Slime mold) page), including the
+      proteomes provided by the
+  <a href="http://www.ebi.ac.uk/integr8/">
+   Integr8
+  </a>
+  resource.
+      For the 1'390 complete proteomes entirely stored in UniProtKB, all entries have been tagged with the keyword
+      'Complete proteome' allowing their easy retrieval directly from the database, bypassing the
+  <a href="http://www.uniprot.org/taxonomy/">
+   taxonomy
+  </a>
+  pages.
+ </p>
+ <p>
+  For complementary information, see
+  <a href="http://www.uniprot.org/help/proteome">
+   FAQ
+  </a>
+  .
+ </p>
+ <p>
+  If you have questions on that subject - or any other - do not hesitate to contact
+  <a href="http://www.uniprot.org/contact">
+   us
+  </a>
+  .
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Format change in the cross-references to OMA
+ </h3>
+ <p>
+  The format of the cross-references to the
+  <a href="http://www.omabrowser.org/">
+   OMA
+  </a>
+  project has changed: The resource
+     identifier, which was a UniProtKB accession number, has been replaced by an
+     OMA group fingerprint. The optional information field 1 is now a dash
+     '-'.
+ </p>
+ <p>
+  Example:
+ </p>
+ <p>
+  Previous format:
+ </p>
+ <pre>
+DR   OMA; P39899; YANTHIA.
+</pre>
+ <p>
+  New format:
+ </p>
+ <pre>
+DR   OMA; YANTHIA; -.
+</pre>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1030">
+    Host cell inner membrane
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1031">
+    Host cell junction
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1032">
+    Host cell membrane
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1033">
+    Host cell outer membrane
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1034">
+    Host cell projection
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1035">
+    Host cytoplasm
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1036">
+    Host cytoplasmic vesicle
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1037">
+    Host cytoskeleton
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1038">
+    Host endoplasmic reticulum
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1039">
+    Host endosome
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1040">
+    Host Golgi apparatus
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1041">
+    Host lipid droplet
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1042">
+    Host lysosome
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1043">
+    Host membrane
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1044">
+    Host microsome
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1045">
+    Host mitochondrion
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1046">
+    Host mitochondrion inner membrane
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1047">
+    Host mitochondrion outer membrane
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1048">
+    Host nucleus
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1049">
+    Host periplasm
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1050">
+    Host thylakoid
+   </a>
+  </li>
+ </ul>
+ <h3>
+  Changes in
+  <a href="http://www.uniprot.org/docs/subcell">
+   subcellular location controlled vocabulary
+  </a>
+ </h3>
+ <p>
+  New subcellular location:
+ </p>
+ <ul>
+  <li>
+   Host thylakoid
+  </li>
+  <li>
+   Thylakoid
+  </li>
+ </ul>
+</div>

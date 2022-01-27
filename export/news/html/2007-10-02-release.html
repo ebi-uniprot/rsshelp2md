@@ -1,0 +1,320 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  Oryza sativa (rice) species separated into japonica and indica subspecies in UniProtKB/Swiss-Prot entries
+ </h3>
+ <p>
+  Although it has been a rule in UniProtKB/Swiss-Prot to merge all protein
+      sequences encoded by the same gene in one species into a single record to avoid
+      redundancy, this rule sometimes has to be adapted to specific cases. For
+      example, this rule applied to rice entries, causing sequences from various rice
+      cultivars to be merged and entries tagged with the unique taxonomic identifier
+      (ID) for
+  <em>
+   Oryza sativa
+  </em>
+  species:
+  <a href="http://www.uniprot.org/taxonomy/4530">
+   4530
+  </a>
+  .
+ </p>
+ <p>
+  However,
+  <em>
+   O.sativa
+  </em>
+  comprises 2 subspecies:
+  <a href="http://www.uniprot.org/taxonomy/39947">
+   japonica
+  </a>
+  and
+  <a href="http://www.uniprot.org/taxonomy/39946">
+   indica
+  </a>
+  . A classification at subspecies level
+      is already effective in several databases, including UniProtKB/TrEMBL, and most
+      scientists use it when submitting new sequences. In EMBL/DDBJ/GenBank, there are over
+      1.2 million japonica and almost 360,000 indica sequences, coming mainly from
+      large scale genome, cDNA or EST sequencing projects. The completion of both the
+      japonica and the indica genomes and the analysis of multiple sets of subspecies-specific
+      transcripts revealed a significant number of sequence variations and a
+      divergence of expression pattern between japonica and indica subspecies. In
+      order to provide clearer information to its users, UniProtKB/Swiss-Prot had to
+      adopt this classification and separate indica and japonica subpecies in rice
+      entries.
+ </p>
+ <p>
+  Most rice entries contained exclusively japonica sequences and were quickly
+      updated with the appropriate taxonomic ID. But over 220 rice entries contained
+      merged sequences of japonica and indica subspecies and had to be "de-merged".
+      This task was undertaken by the
+  <a href="http://www.expasy.org/sprot/ppap/">
+   PPAP
+  </a>
+  (Plant Proteome Annotation Program) team. Common information was
+      kept in both japonica and indica entries, while expression patterns or other
+      subspecies-specific experimental evidence was transferred where it belongs.
+      Today all rice entries are classified into either japonica or indica
+      subspecies, with the exception of very few entries where subspecies was not
+      specified. When available, cultivars are indicated in the reference section.
+      Each entry also provides cross-references to either japonica
+      (cultivar nipponbare) or indica (cultivar 93-11) genomic sequences.
+ </p>
+ <p>
+  The gene nomenclature system ('OS' code) defined by
+  <a href="http://rapdb.dna.affrc.go.jp/">
+   RAP-DB
+  </a>
+  and/or
+  <a href="http://rice.tigr.org/">
+   TIGR
+  </a>
+  for the japonica cultivar nipponbare can be found in japonica entries in the gene
+      names subsection (Ordered Locus Names). RAP-DB locus identifiers are listed
+      in the
+  <a href="http://www.uniprot.org/docs/rice">
+   rice.txt
+  </a>
+  file.
+ </p>
+ <p>
+  To get all reviewed UniProtKB Japonica entries, click
+  <a href="http://www.uniprot.org/uniprot/?query=taxonomy:39947+AND+reviewed:yes">
+   here
+  </a>
+  .
+ </p>
+ <p>
+  To get all reviewed UniProtKB Indica entries, click
+  <a href="http://www.uniprot.org/uniprot/?query=taxonomy:39946+AND+reviewed:yes">
+   here
+  </a>
+  .
+ </p>
+ <p>
+  To get all reviewed UniProtKB rice entries, click
+  <a href="http://www.uniprot.org/uniprot/?query=taxonomy:39946+OR+taxonomy:39947+OR+taxonomy:4530%29+AND+reviewed:yes">
+   here
+  </a>
+  .
+ </p>
+ <p>
+  The mnemonic species identification code in the entry name allows to quickly
+      identify to which subspecies the protein belongs: ORYSJ is the code for
+      japonica, ORYSI for indica and the old ORYSA code indicates that the subspecies
+      is not specified.
+      The list of rice cultivars can be found in the
+  <a href="http://www.uniprot.org/docs/strains">
+   strains.txt
+  </a>
+  file.
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Changes concerning the comment line (CC) topic MASS SPECTROMETRY
+ </h3>
+ <p>
+  To be consistent with other comment line topics in the flat file, we have changed the field tags of the topic
+     MASS SPECTROMETRY. At the same time, we have extracted literature references into a new field,
+  <strong>
+   Source=
+  </strong>
+  , and replaced all molecule descriptions by isoform identifiers.
+ </p>
+ <p>
+  Previous format:
+ </p>
+ <pre>
+     CC   -!- MASS SPECTROMETRY: MW=<em>mass</em>(; MW_ERR=<em>error</em>)?; METHOD=<em>method</em>;
+     CC       RANGE=<em>ranges</em>( (<em>molecule</em>))?; NOTE=(<em>references</em>|<em>free_text</em> (<em>references</em>)).
+    </pre>
+ <p>
+  New format:
+ </p>
+ <pre>
+     CC   -!- MASS SPECTROMETRY: Mass=<em>mass</em>(; Mass_error=<em>error</em>)?; Method=<em>method</em>;
+     CC       Range=<em>ranges</em>( (<em>IsoformID</em>))?(; Note=<em>free_text</em>)?; Source=<em>references</em>;
+    </pre>
+ <p>
+  Examples:
+ </p>
+ <a href="http://www.uniprot.org/uniprot/P61409">
+  P61409
+ </a>
+ :
+ <p>
+  Previous format:
+ </p>
+ <pre>
+     CC   -!- MASS SPECTROMETRY: MW=3979.9; METHOD=Electrospray; RANGE=1-31;
+     CC       NOTE=Ref.1, Ref.2.
+    </pre>
+ <p>
+  New format:
+ </p>
+ <pre>
+     CC   -!- MASS SPECTROMETRY: Mass=3979.9; Method=Electrospray; Range=1-31;
+     CC       Source=Ref.1, Ref.2;
+    </pre>
+ <a href="http://www.uniprot.org/uniprot/P04653">
+  P04653
+ </a>
+ :
+ <p>
+  Previous format:
+ </p>
+ <pre>
+     CC   -!- MASS SPECTROMETRY: MW=23638.14; MW_ERR=3.0; METHOD=Electrospray;
+     CC       RANGE=16-214 (P04653-2; Allele A); NOTE=With eleven phosphate
+     CC       groups (Ref.2).
+    </pre>
+ <p>
+  New format:
+ </p>
+ <pre>
+     CC   -!- MASS SPECTROMETRY: Mass=23638.14; Mass_error=3.0; Method=Electrospray;
+     CC       Range=16-214 (P04653-2); Note=Allele A, with 11 phosphate groups;
+     CC       Source=PubMed:7601973;
+    </pre>
+ <p>
+  Note that literature references of the form
+  <em>
+   Ref.n
+  </em>
+  are replaced by PubMed identifiers where this is possible.
+ </p>
+ <h3>
+  Cross-references to RefSeq
+ </h3>
+ <p>
+  Cross-references have been added to the
+  <a href="http://www.ncbi.nlm.nih.gov/RefSeq/">
+   NCBI
+    Reference Sequences database
+  </a>
+  . The Reference Sequence (RefSeq) collection aims to
+    provide a comprehensive, integrated, non-redundant set of sequences, including genomic
+    DNA, transcript (RNA), and protein products for taxonomically diverse organisms
+    including eukaryotes, bacteria, and viruses. RefSeq is a baseline for medical,
+    functional, and diversity studies; they provide a stable reference for genome annotation,
+    gene identification and characterization, mutation and polymorphism analysis, expression
+    studies, and comparative analyses.
+ </p>
+ <p>
+  The RefSeq database is available at
+  <a href="http://www.ncbi.nlm.nih.gov/RefSeq/">
+   http://www.ncbi.nlm.nih.gov/RefSeq/
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    RefSeq
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    RefSeq protein accession ID.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/O34697#section_x-ref">O34697</a>:
+DR   RefSeq; NP_390916.1; -.
+
+<a href="http://www.uniprot.org/uniprot/Q8IN81#section_x-ref">Q8IN81</a>:
+DR   RefSeq; NP_524397.2; -.
+DR   RefSeq; NP_732344.1; -.
+DR   RefSeq; NP_732345.1; -.
+DR   RefSeq; NP_732346.1; -.
+DR   RefSeq; NP_732347.1; -.
+DR   RefSeq; NP_732348.1; -.
+DR   RefSeq; NP_732349.1; -.
+DR   RefSeq; NP_732350.1; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-references to GeneID
+ </h3>
+ <p>
+  Cross-references have been added to the
+  <a href="http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene">
+   Database
+    of genes from NCBI RefSeq genomes
+  </a>
+  .
+    Entrez Gene is the NCBI's database for gene-specific information. It does not include all
+    known or predicted genes; instead Entrez Gene focuses on the genomes that have been
+    completely sequenced, that have an active research community to contribute gene-specific
+    information, or that are scheduled for intense sequence analysis. The content of Entrez
+    Gene represents the result of curation and automated integration of data from NCBI's
+    Reference Sequence project (RefSeq), from collaborating model organism databases, and
+    from many other databases available from NCBI. Records are assigned unique, stable and
+    tracked integers as identifiers. The content (nomenclature, map location, gene products
+    and their attributes, markers, phenotypes, and links to citations, sequences, variation
+    details, maps, expression, homologs, protein domains and external databases) is updated
+    as new information becomes available. Entrez Gene is a step forward from NCBI's LocusLink,
+    with both a major increase in taxonomic scope and improved access through the many tools
+    associated with NCBI Entrez.
+ </p>
+ <p>
+  The GeneID database is available at
+  <a href="http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene">
+   http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    GeneID
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    GeneID accession ID.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/P63272#section_x-ref">P63272</a>:
+DR   GeneID; 6827; -.
+
+<a href="http://www.uniprot.org/uniprot/P74750#section_x-ref">P74750</a>:
+DR   GeneID; 951978; -.
+DR   GeneID; 953863; -.</pre>
+   </td>
+  </tr>
+ </table>
+</div>

@@ -1,0 +1,311 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  More controlled vocabulary in the 'Subcellular location' subsection
+ </h3>
+ <p>
+  Over
+  <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3A%22subcellular+location%22%29+AND+reviewed%3Ayes">
+   160'000 UniProtKB/Swiss-Prot entries
+  </a>
+  (56%) contain a subcellular
+      location description in the General Annotation section (CC lines in the flat file).
+      We have standardized the content of these comments with the
+      concomitant creation of a controlled vocabulary and a new, parsable flat-file
+      format.
+ </p>
+ <p>
+  The subcellular location controlled vocabularies are stored in a new document
+      (
+  <a href="http://www.uniprot.org/docs/subcell">
+   subcell.txt
+  </a>
+  ) which provides,
+      for each individual UniProtKB location, topology
+      or orientation term, the corresponding definition, as well as other relevant
+      information, such as synonyms, hierarchies or mapped GO terms.
+ </p>
+ <p>
+  The format of the 'Subcellular location' subtopic has changed from free text to
+      a more structured format. When required for the accurate description of a
+      complex biological situation, free text is still used in the 'Note' (see for
+      example
+  <a href="http://www.uniprot.org/uniprot/O43918#section_comments">
+   O43918
+  </a>
+  ).
+      In addition, since release 11.0, this subsection can occur more than once
+      per entry, allowing specific annotation for each isoform, chain or peptide in separate subsections.
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  New document listing the controlled vocabularies used in the 'Subcellular location' subsection
+ </h3>
+ <p>
+  The document
+  <strong>
+   subcell.txt
+  </strong>
+  , available by
+  <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/subcell.txt">
+   ftp
+  </a>
+  and on the
+  <a href="http://www.uniprot.org/docs/subcell">
+   Web site
+  </a>
+  , lists
+     the controlled vocabularies used in the in the 'Subcellular location' subsection (CC SUBCELLULAR LOCATION lines in the flat file),
+     their definitions and further information such as synonyms or relevant GO terms in the
+     following format:
+ </p>
+ <pre>
+     ---------  -------------------------------   ----------------------------------------------
+     Line code  Content                           Occurrence in an entry
+     ---------  -------------------------------   ----------------------------------------------
+     ID         Identifier (location)             Once; starts an entry
+     IT         Identifier (topology)             Once; starts a 'topology' entry
+     IO         Identifier (orientation)          Once; starts an 'orientation' entry
+     AC         Accession (SL-xxxx)               Once
+     DE         Definition                        Once or more
+     SY         Synonyms                          Optional; Once or more
+     SL         Content of subc. loc. lines       Once
+     HI         Hierarchy ('is-a')                Optional; Once or more
+     HP         Hierarchy ('part-of')             Optional; Once or more
+     KW         Associated keyword (accession)    Optional; Once or more
+     GO         Gene ontology (GO) mapping        Optional; Once or more
+     WW         Interesting links or references   Optional; Once or more
+     //         Terminator                        Once; ends an entry
+    </pre>
+ <p>
+  Example:
+ </p>
+ <pre>
+     ID   Cyanelle.
+     AC   SL-0082
+     DE   A cyanelle is a photosynthetic organelle of glaucocystophyte algae.
+     DE   Cyanelles are surrounded by a double membrane and, in between, a
+     DE   peptidoglycan wall. Thylakoid membrane architecture and the presence
+     DE   of carboxysomes are cyanobacteria-like. Historically, the term
+     DE   cyanelle is derived from a classification as endosymbiotic
+     DE   cyanobacteria, and thus is not fully correct.
+     SY   Muroplast; Cyanoplast.
+     SL   Plastid, cyanelle.
+     HI   Plastid.
+     KW   KW-0194
+     GO   GO:0009842; cyanelle
+     //
+    </pre>
+ <h3>
+  Syntax modification of the 'Subcellular location' subtopic
+ </h3>
+ <p>
+  We have structured the 'Subcellular location' subtopic (CC SUBCELLULAR LOCATION lines in the flat file) in order to
+     improve the consistency of annotation and to allow to parse its content.
+ </p>
+ <p>
+  The new format of SUBCELLULAR LOCATION in the flat file is:
+ </p>
+ <pre>
+     CC   -!- SUBCELLULAR LOCATION:(( <em>Molecule</em>:)?( <em>Location</em>\\\\.)+)?( Note=<em>Free_text</em>( <em>Flag</em>)?\\\\.)?
+    </pre>
+ Where:
+ <ul>
+  <li>
+   <em>
+    Molecule
+   </em>
+   : Isoform, chain or peptide name
+  </li>
+  <li>
+   <em>
+    Location
+   </em>
+   =
+   <code>
+    <em>
+     Subcellular_location
+    </em>
+    (
+    <em>
+     Flag
+    </em>
+    )?(;
+    <em>
+     Topology
+    </em>
+    (
+    <em>
+     Flag
+    </em>
+    )?)?(;
+    <em>
+     Orientation(
+     <em>
+      Flag
+     </em>
+     )?
+    </em>
+    )?
+   </code>
+   <ul>
+    <li>
+     <em>
+      Subcellular_location
+     </em>
+     : SL-line of subcell.txt ID-record
+    </li>
+    <li>
+     <em>
+      Topology
+     </em>
+     : SL-line of subcell.txt IT-record
+    </li>
+    <li>
+     <em>
+      Orientation
+     </em>
+     : SL-line of subcell.txt IO-record
+    </li>
+    <li>
+     <em>
+      Flag
+     </em>
+     =
+     <code>
+      \\\\(By similarity|Probable|Potential\\\\)
+     </code>
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <p>
+  Note: Perl-style multipliers indicate whether a pattern (as delimited by
+     parentheses) is optional (?) or may occur 1 or more times (+).
+     Alternative values are separated by a pipe symbol (|).
+ </p>
+ <p>
+  Examples:
+ </p>
+ <a href="http://www.uniprot.org/uniprot/P32755#section_comments">
+  P32755
+ </a>
+ :
+ <pre>
+     CC   -!- SUBCELLULAR LOCATION: Cytoplasm. Endoplasmic reticulum membrane;
+     CC       Peripheral membrane protein. Golgi apparatus membrane; Peripheral
+     CC       membrane protein.
+    </pre>
+ <a href="http://www.uniprot.org/uniprot/Q96QV1#section_comments">
+  Q96QV1
+ </a>
+ :
+ <pre>
+     CC   -!- SUBCELLULAR LOCATION: Cell membrane; Peripheral membrane protein
+     CC       (By similarity). Secreted (By similarity). Note=The last 22 C-
+     CC       terminal amino acids may participate in cell membrane attachment.
+     CC   -!- SUBCELLULAR LOCATION: Isoform 2: Cytoplasm (Probable).
+    </pre>
+ <a href="http://www.uniprot.org/uniprot/P35670#section_comments">
+  P35670
+ </a>
+ :
+ <pre>
+     CC   -!- SUBCELLULAR LOCATION: Golgi apparatus, trans-Golgi network
+     CC       membrane; Multi-pass membrane protein (By similarity).
+     CC       Note=Predominantly found in the trans-Golgi network (TGN). Not
+     CC       redistributed to the plasma membrane in response to elevated
+     CC       copper levels.
+     CC   -!- SUBCELLULAR LOCATION: Isoform 2: Cytoplasm.
+     CC   -!- SUBCELLULAR LOCATION: WND/140 kDa: Mitochondrion.
+    </pre>
+ <h3>
+  Modification of the EC (Enzyme Commission) number format
+ </h3>
+ <p>
+  EC numbers are used to describe enzyme reactions and are based on the
+     recommendations of the Nomenclature Committee of the International Union of
+     Biochemistry and Molecular Biology
+     (
+  <a href="http://www.chem.qmul.ac.uk/iubmb/enzyme/">
+   IUBMB
+  </a>
+  ).
+     The EC numbers and the reactions they describe are stored in the
+  <a href="http://www.expasy.org/enzyme/">
+   ENZYME
+  </a>
+  and
+  <a href="http://www.ebi.ac.uk/intenz/">
+   IntEnz
+  </a>
+  databases.
+ </p>
+ <p>
+  In the UniProt Knowledgebase some enzymes are assigned so-called partial EC
+     numbers where part of the numbers are replaced by dashes (e.g. EC 3.4.24.-).
+     This happens in the following situations:
+ </p>
+ <ol>
+  <li>
+   The catalytic activity of the protein is not known exactly.
+  </li>
+  <li>
+   The protein catalyzes a reaction that is known, but not yet included in the IUBMB EC list.
+  </li>
+ </ol>
+ <p>
+  To distinguish these two meanings, we have started to use the
+  <strong>
+   letter 'n'
+      with a preliminary number
+  </strong>
+  instead of a dash
+  <strong>
+   '-'
+  </strong>
+  for the latter
+     case. The retrofit of those existing EC numbers of proteins in UniProtKB that
+     catalyze a reaction that is known, but not yet included in the IUBMB EC
+     list will be an ongoing process.
+ </p>
+ <p>
+  Examples:
+ </p>
+ <p>
+  <em>
+   The catalytic activity of the protein is not known exactly:
+  </em>
+ </p>
+ <a href="http://www.uniprot.org/uniprot/Q9VAC5#section_name">
+  Q9VAC5
+ </a>
+ :
+ <pre>
+     DE   ADAM 17-like protease precursor (EC 3.4.24.-).
+    </pre>
+ <p>
+  <em>
+   The protein catalyzes a reaction that is known, but not yet included in the IUBMB's EC list:
+  </em>
+ </p>
+ <a href="http://www.uniprot.org/uniprot/Q01468#section_name">
+  Q01468
+ </a>
+ :
+ <pre>
+     DE   4-oxalocrotonate tautomerase (EC 5.3.2.n1) (4-OT).
+    </pre>
+ <a href="http://www.uniprot.org/uniprot/Q8IV42#section_name">
+  Q8IV42
+ </a>
+ :
+ <pre>
+     DE   L-seryl-tRNA(Sec) kinase (EC 2.7.1.n3) (O-phosphoseryl-tRNA(Sec)
+     DE   kinase) (PSTK).
+    </pre>
+</div>

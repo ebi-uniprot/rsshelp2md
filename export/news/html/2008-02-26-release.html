@@ -1,0 +1,437 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  UniProtKB major release (13.0)
+ </h3>
+ <p>
+  UniProt Knowledgebase release 13.0 includes Swiss-Prot release 55.0 and TrEMBL release 38.0.
+ </p>
+ <p>
+  Release 55.0 of 26-Feb-08 of UniProtKB/Swiss-Prot contains 356'194 sequence
+      entries, comprising 127'836'513 amino acids abstracted from 165776 references.
+      80'183 sequences have been added since release 54.0, the sequence data of 1'411
+      existing entries has been updated and the annotations of 262'009 entries have
+      been revised.
+ </p>
+ <p>
+  The following improvements were carried out in the last 7 months:
+ </p>
+ <ul>
+  <li>
+   We have changed the representation of non-standard amino acids (selenocysteine and pyrrolysine). They are now annotated under a new feature key 'Non-
+       standard residue' ('NON_STD' in the flat file), and are represented in the sequence using the IUPAC/IUBMB recommended one-letter codes 'U' for selenocysteine and 'O' for pyrrolysine.
+  </li>
+  <li>
+   We have structured the 'Subcellular location' subsection in the 'General annotation' section (CC line, topic SUBCELLULAR LOCATION in the flat file) in order to improve the consistency of annotation and to allow to parse its content.
+  </li>
+  <li>
+   To be consistent with other comment line topics, we have applied small changes to the topics WEB RESOURCE and MASS SPECTROMETRY.
+  </li>
+  <li>
+   We have enriched the controlled vocabulary for post-translational modification description with 14 new terms for the feature key 'MOD_RES'.
+  </li>
+  <li>
+   We have added cross-references to 8 new databases:
+   <a href="http://2dbase.techfak.uni-bielefeld.de" shape="rect">
+    2DBase-Ecoli
+   </a>
+   ,
+   <a href="http://www.cleanex.isb-sib.ch/" shape="rect">
+    CleanEx
+   </a>
+   ,
+   <a href="http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene" shape="rect">
+    GeneID
+   </a>
+   ,
+   <a href="http://www.ebi.ac.uk/pdbsum" shape="rect">
+    PDBsum
+   </a>
+   ,
+   <a href="http://phosphosite.cellsignal.com" shape="rect">
+    PhosphoSite
+   </a>
+   ,
+   <a href="http://www.ncbi.nlm.nih.gov/RefSeq/" shape="rect">
+    RefSeq
+   </a>
+   ,
+   <a href="http://www.vectorbase.org/" shape="rect">
+    VectorBase
+   </a>
+   ,
+       and
+   <a href="http://world-2dpage.expasy.org/" shape="rect">
+    World-2DPAGE
+   </a>
+   .
+  </li>
+  We have removed cross-references to RZPD-ProtExp, and added resolution information to our PDB cross-references.
+  <li>
+   We have added 9 new keywords, 3 have been modified and 1 deleted.
+  </li>
+  <li>
+   We have added 11 new documents:
+   <ul>
+    <li>
+     <a href="http://www.uniprot.org/docs/pkinfam">
+      Human and mouse protein kinases: classification and index
+     </a>
+    </li>
+    <li>
+     <a href="http://www.uniprot.org/docs/subcell">
+      Controlled vocabulary of subcellular locations and membrane topologies and orientations
+     </a>
+    </li>
+    <li>
+     <a href="http://www.uniprot.org/docs/brua2">
+      Brucella abortus strain 2308: entries and gene names
+     </a>
+    </li>
+    <li>
+     <a href="http://www.uniprot.org/docs/bruab">
+      bruab.txtBrucella abortus: entries and gene names
+     </a>
+    </li>
+    <li>
+     <a href="http://www.uniprot.org/docs/brume">
+      Brucella melitensis: entries and gene names
+     </a>
+    </li>
+    <li>
+     <a href="http://www.uniprot.org/docs/brusu">
+      Brucella suis: entries and gene names
+     </a>
+    </li>
+    <li>
+     <a href="http://www.uniprot.org/docs/coxbu">
+      Coxiella burnetii: entries and gene names
+     </a>
+    </li>
+    <li>
+     <a href="http://www.uniprot.org/docs/ricbr">
+      Rickettsia bellii strain RML369-C: entries and gene names
+     </a>
+    </li>
+    <li>
+     <a href="http://www.uniprot.org/docs/riccn">
+      Rickettsia conorii: entries and gene names
+     </a>
+    </li>
+    <li>
+     <a href="http://www.uniprot.org/docs/ricfe">
+      Rickettsia felis (Rickettsia azadi): entries and gene names
+     </a>
+    </li>
+    <li>
+     <a href="http://www.uniprot.org/docs/ricty">
+      Rickettsia typhi: entries and gene names
+     </a>
+    </li>
+   </ul>
+  </li>
+  <li>
+   We have created a non-redundant set of Arabidopsis proteins, including nuclear, mitochondrial and chloroplastic proteins, and the selected entries have been labelled with the keyword 'Complete proteome' to allow easy retrieval.
+  </li>
+  <li>
+   We have begun the procedure to integrate automatically entries annotated by the
+       HAMAP automated pipeline. In this pipeline, proteins from complete bacterial and archaeal proteomes,
+       together with the related plastid proteins, are automatically annotated based on manually
+       created family rules for complete protein annotation, with template-based feature propagation. We
+       have established many checks and conditional propagation in order to ensure that automatic
+       annotation will produce data of a quality up to that of manual curation.
+  </li>
+ </ul>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  New representation of non-standard amino acids (selenocysteine and pyrrolysine)
+ </h3>
+ <p>
+  The non-standard amino acids selenocysteine and pyrrolysine used to be
+     annotated in the 'Sequence annotation' section, 'Amino acid
+     modifications' subsection, under the feature keys 'Selenocysteine' and 'Modified
+     residue', respectively. In the sequence, selenocysteine was represented by the
+     one-letter code 'C' and pyrrolysine by 'K'. In order to annotate these and
+     future non-standard amino acids more adequately, we created a new key 'Non-
+     standard residue'. The type of non-standard residue involved is indicated
+     in the 'description' of the feature key. Sequences will accomodate the
+     IUPAC/IUBMB recommended one-letter codes 'U' for selenocysteine and 'O' for
+     pyrrolysine.
+ </p>
+ <p>
+  In the flat file, selenocysteine used to be described with the feature key SE_CYS
+     and pyrrolysine with the more generic feature key MOD_RES. We have replaced these keys
+     with the new feature key NON_STD (non-standard). The type of non-standard residue involved is indicated
+     in the 'description' of the NON_STD key.
+ </p>
+ <p>
+  Former annotation in the flat file:
+ </p>
+ <pre>
+     ID   BTHD_DROME              Reviewed;         249 AA.
+     ..
+     FT   SE_CYS       37     37
+     ..
+     MPPKRNKKAE APIAERDAGE ELDPNAPVLY VEHCRSCRVF RRRAEELHSA LRERGLQQLQ
+     *
+    </pre>
+ <pre>
+     ID   MTBB1_METAC             Reviewed;         467 AA.
+     ..
+     FT   MOD_RES     356    356       Pyrrolysine (Probable).
+     ..
+     RAVNFMKAAV QASPIPCHVD MGMGVGGIPM LETPPVDAVT RASKAMVEVA GVDGIKIGVG
+     *
+    </pre>
+ <p>
+  Current annotation:
+ </p>
+ <pre>
+     ID   BTHD_DROME              Reviewed;         249 AA.
+     ..
+     FT   NON_STD      37     37       Selenocysteine.
+     ..
+     MPPKRNKKAE APIAERDAGE ELDPNAPVLY VEHCRSURVF RRRAEELHSA LRERGLQQLQ
+     *
+    </pre>
+ <pre>
+     ID   MTBB1_METAC             Reviewed;         467 AA.
+     ..
+     FT   NON_STD     356    356       Pyrrolysine (Probable).
+     ..
+     RAVNFMKAAV QASPIPCHVD MGMGVGGIPM LETPPVDAVT RASKAMVEVA GVDGIOIGVG
+     *
+    </pre>
+ <p>
+  UniProtKB/Swiss-Prot entries describing a
+  <a href="http://www.uniprot.org/uniprot/?query=keyword:712+AND+reviewed:yes">
+   selenocysteine
+  </a>
+  -
+     and
+  <a href="http://www.uniprot.org/uniprot/?query=keyword:669+AND+reviewed:yes">
+   pyrrolysine
+  </a>
+  -
+     containing sequences can be retrieved with the 'Selenocysteine' and
+     'Pyrrolysine' keywords, respectively.
+ </p>
+ <h3>
+  Cross-references to PhosphoSite
+ </h3>
+ <p>
+  Cross-references have been added to
+  <a href="http://phosphosite.cellsignal.com/">
+   PhosphoSite
+  </a>
+  ,
+     an expert-curated knowledgebase of information
+     focused on protein phosphorylation mainly in vertebrates. In addition to phosphorylation sites
+     curated from the literature, large numbers of new unpublished sites discovered by MS/MS analyses
+     are being added regularly.
+ </p>
+ <p>
+  The Phosphorylation site database is available at
+  <a href="http://phosphosite.cellsignal.com/">
+   http://phosphosite.cellsignal.com/
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    PhosphoSite
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    UniProtKB accession number.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/P01266#section_x-ref">P01266</a>:
+DR   PhosphoSite; P01266; -.
+
+<a href="http://www.uniprot.org/uniprot/Q9JMH6#section_x-ref">Q9JMH6</a>:
+DR   PhosphoSite; Q9JMH6; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-references to 2DBase-Ecoli
+ </h3>
+ <p>
+  Cross-references have been added to
+  <a href="http://2dbase.techfak.uni-bielefeld.de/">
+   2DBase-Ecoli
+  </a>
+  , the 2D-PAGE database of Escherichia coli. The 2DBase-Ecoli database currently contains 12 gels
+     consisting of 1185 protein spots information in which 723 proteins where identified and annotated.
+     Individual protein spots in the existing gels can be displayed, queried, analysed and compared
+     in a tabular format based on various functional categories enabling quick and subsequent analysis.
+ </p>
+ <p>
+  The 2D-PAGE Database of Escherichia coli is available at
+  <a href="http://2dbase.techfak.uni-bielefeld.de/">
+   http://2dbase.techfak.uni-bielefeld.de/
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    2DBase-Ecoli
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    UniProtKB accession number.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/P02930#section_x-ref">P02930</a>:
+DR   2DBase-Ecoli; P02930; -.
+
+<a href="http://www.uniprot.org/uniprot/P04816#section_x-ref">P04816</a>:
+DR   2DBase-Ecoli; P04816; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0977">
+    Ichthyosis
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0978">
+    Insecticide resistance
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0979">
+    Joubert syndrome
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0981">
+    Meckel syndrome
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0980">
+    Senior-Loken syndrome
+   </a>
+  </li>
+ </ul>
+ <h3>
+  Changes in subcellular location controlled vocabulary
+ </h3>
+ <p>
+  New subcellular locations:
+ </p>
+ <ul>
+  <li>
+   Extravirionic side
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Intravirionic side
+  </li>
+ </ul>
+ <h3>
+  Changes in PTM controlled vocabulary
+ </h3>
+ <p>
+  New terms in the 'Amino acid modifications' subsection (feature key 'MOD_RES' in the flat file):
+ </p>
+ <ul>
+  <li>
+   2'-methylsulfonyltryptophan
+  </li>
+  <li>
+   4,5-dihydroxyleucine
+  </li>
+  <li>
+   (3R,4S)-3,4-dihydroxyproline
+  </li>
+  <li>
+   Cyclopeptide (Ala-Pro)
+  </li>
+  <li>
+   D-serine (Cys)
+  </li>
+  <li>
+   D-serine (Ser)
+  </li>
+  <li>
+   D-threonine
+  </li>
+  <li>
+   N,N-dimethylalanine
+  </li>
+  <li>
+   N-acetylisoleucine
+  </li>
+  <li>
+   O-(5'-phospho-DNA)-serine
+  </li>
+  <li>
+   O-(5'-phospho-DNA)-tyrosine
+  </li>
+  <li>
+   O-(5'-phospho-RNA)-serine
+  </li>
+  <li>
+   O-(5'-phospho-RNA)-tyrosine
+  </li>
+  <li>
+   S-glutathionyl cysteine
+  </li>
+ </ul>
+</div>

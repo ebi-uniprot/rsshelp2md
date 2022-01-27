@@ -1,0 +1,95 @@
+<div>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  New RL line structure for electronic publications
+ </h3>
+ <p>
+  Electronic publications have been indicated in the RL line with the '(er)' prefix that
+stands for electronic resource:
+ </p>
+ <pre>RL   <strong>(er)</strong> Free text.</pre>
+ <p>
+  Example:
+ </p>
+ <pre>RL   (er) Plant Gene Register PGR98-023.</pre>
+ <h3>
+  Removal of the submission references to HIV data bank
+ </h3>
+ <p>
+  We replaced all submission references to the HIV data bank by publications, thus RL lines
+of the type:
+ </p>
+ <pre>RL   Submitted (XXX-YYYY) to the HIV data bank.</pre>
+ <p>
+  <strong>
+   do no longer exist
+  </strong>
+  in Swiss-Prot.
+ </p>
+ <h3>
+  Change in cross-references to PDB
+ </h3>
+ <p>
+  The structure determination method (X-ray, NMR, etc) as well as
+the mapping of the extent of the cross-reference on the sequence have been
+introduced as tertiary identifier to the PDB cross-reference line.
+ </p>
+ <p>
+  Former format:
+ </p>
+ <pre>DR   PDB; ENTRY_NAME; REVISION_DATE.</pre>
+ <p>
+  <strong>
+   New format:
+  </strong>
+ </p>
+ <pre><strong>DR   PDB; ENTRY_NAME; Method; CHAIN[S]=RANGE.</strong></pre>
+ <p>
+  The methods are controlled vocabulary and currently include:
+ </p>
+ <ul>
+  <li>
+   X-ray (for X-ray crystallography)
+  </li>
+  <li>
+   NMR (for NMR spectroscopy)
+  </li>
+  <li>
+   EM (for electron microscopy and cryo-electron diffraction)
+  </li>
+  <li>
+   Fiber (for fiber diffraction)
+  </li>
+  <li>
+   IR (for infrared spectroscopy)
+  </li>
+  <li>
+   Model (for predicted models)
+  </li>
+  <li>
+   Neutron (for neutron diffraction)
+  </li>
+ </ul>
+ <p>
+  Example:
+ </p>
+ <pre>DR   PDB; 1NB3; X-ray; A/B/C/D=116-335, P/R/S/T=98-105.</pre>
+ <p>
+  The tertiary identifier indicates the chain(s) and the corresponding range, of which the structure
+has been determined. If the range is unknown, a dash is given rather than the range positions. Example:
+ </p>
+ <pre>DR   PDB; 1IYJ; X-ray; <strong>B/D=-.</strong></pre>
+ <p>
+  If the chains and the range is unknown, a dash is used. Example:
+ </p>
+ <pre>DR   PDB; 1N12; X-ray; <strong>-</strong>.</pre>
+ <p>
+  With the introduction of the new format, DR PDB lines can become
+  <strong>
+   longer than 75 characters
+  </strong>
+  .
+ </p>
+</div>

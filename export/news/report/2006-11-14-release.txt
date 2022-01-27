@@ -1,0 +1,8 @@
+2006-11-14-release
+---
+Number tables converted to Markdown
+2
+
+Number tables left as HTML
+2
+

@@ -1,0 +1,634 @@
+<h2 id="Headline">
+ Headline
+</h2>
+<h3 id="K_for_Koagulation">
+ K for Koagulation
+</h3>
+<p>
+ After several weeks of a cholesterol-free diet, chickens start bleeding. The phenotype cannot be reversed by the addition of purified cholesterol to their chow, suggesting that another compound could have been extracted along with cholesterol during food preparation. This observation made by Henrik Dam in 1929 led to the identification of a fat-soluble vitamin involved in coagulation, also known as vitamin K (K standing for
+ <em>
+  Koagulationsvitamin
+ </em>
+ , the original German name for this compound, since the initial observations were reported in a German journal). This discovery was awarded the
+ <a href="http://www.nobelprize.org/nobel%5Fprizes/medicine/laureates/1943/">
+  Nobel prize in 1943
+ </a>
+ , but vitamin K function and metabolism are still extensively studied.
+</p>
+<p>
+ In plants, vitamin K plays an essential role in photosynthesis, which is why it is particularly enriched in photosynthetic tissues, such as green leaves. In animals, vitamin K is essential for blood clotting and bone mineralization. It also prevents the calcification of arteries and other soft tissues. More recently, vitamin K has been shown to function as a
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/22582012">
+  mitochondrial electron carrier
+ </a>
+ and to serve as a
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/18095058">
+  ligand for the nuclear receptor SXR
+ </a>
+ , which controls the expression of genes involved in transport and metabolism of endo- and xenobiotics.
+</p>
+<p>
+ The most extensively studied vitamin K function is its role as a cosubstrate for
+ <a href="http://www.uniprot.org/uniprot/?query=gene:GGCX+AND+reviewed:yes">
+  vitamin K-dependent gamma-carboxylase
+ </a>
+ (GGCX). This enzyme catalyzes
+ <a href="http://www.uniprot.org/uniprot/?query=keyword:%22Gamma-carboxyglutamic+acid+[KW-0301]%22+AND+taxonomy:mammalia">
+  gamma-carboxylation of glutamate residues
+ </a>
+ in target proteins. The modification activates several blood factor proteins and leads to initiation of the blood coagulation cascade. Widely used anticoagulant drugs, called coumarins, take advantage of this property and act as vitamin K antagonists. For example, warfarin is thought to inhibit
+ <a href="http://www.uniprot.org/uniprot/?query=gene:vkorc1+AND+reviewed:yes">
+  vitamin K epoxide reductase complex subunit 1
+ </a>
+ (VKORC1), blocking vitamin K recycling, hence depleting active vitamin K stores. Although life-saving, the use of warfarin is quite tricky, as inadequate dosage may have dramatic consequences, either embolism or thrombosis (underdosage), or potentially fatal hemorrhage (overdosage). Interindividual genetic variations greatly affect warfarin efficiency. Polymorphisms within
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/15930419,16815312">
+  VKORC1 and CYP2C9
+ </a>
+ , a cytochrome P450 family member involved in coumarin inactivation, together account for approximately 30% of population dose variance. A genetic variant
+ <a href="http://www.uniprot.org/uniprot/P78329#pathology%5Fand%5Fbiotech">
+  p.Val433Met
+ </a>
+ in another P450 family member,
+ <a href="http://www.uniprot.org/uniprot/P78329">
+  CYP4F2
+ </a>
+ , has also been
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/18250228">
+  reported to increase warfarin requirements
+ </a>
+ . CYP4F2 has recently been shown to
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/24138531">
+  catalyze vitamin K omega-hydroxylation
+ </a>
+ , a key step in vitamin K degradation. The p.Val433Met polymorphism produces a
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/19297519">
+  decrease of CYP4F2 protein in the liver
+ </a>
+ . Lower CYP4F2 levels likely lead to an increase in hepatic vitamin K levels, hence more molecules that warfarin must antagonize, resulting in
+ <a href="http://www.uniprot.org/diseases/DI-01438">
+  coumarin resistance
+ </a>
+ in individuals bearing this polymorphism.
+</p>
+<p>
+ As of this release, an updated version of the
+ <a href="http://www.uniprot.org/uniprot/P78329">
+  UniProtKB/Swiss-Prot CYP4F2 entry
+ </a>
+ is available. Proteins undergoing gamma-carboxylation can be retrieved using the keyword
+ <a href="http://www.uniprot.org/keywords/KW-0301">
+  Gamma-carboxyglutamic acid
+ </a>
+ .
+</p>
+<h2 id="UniProtKB_news">
+ UniProtKB news
+</h2>
+<h3 id="Change_of_the_cross_reference_ArrayExpress_to_ExpressionAtlas">
+ Change of the cross-reference ArrayExpress to ExpressionAtlas
+</h3>
+<p>
+ The
+ <a href="http://www.ebi.ac.uk/gxa/about.html">
+  Expression Atlas
+ </a>
+ database provides information on baseline and differential gene expression patterns under different biological conditions. Experiments in Expression Atlas are selected from the
+ <a href="http://www.ebi.ac.uk/arrayexpress/about.html">
+  ArrayExpress
+ </a>
+ database of functional genomics experiments. Because UniProtKB entries cross-reference only this subset of experiments, we have changed the resource abbreviation for these cross-references from
+ <code>
+  ArrayExpress
+ </code>
+ to
+ <code>
+  ExpressionAtlas
+ </code>
+ . We have at the same time added a field to indicate the type of expression patterns for which information can be found in the
+ <code>
+  ExpressionAtlas
+ </code>
+ (see examples below).
+</p>
+<h4 id="Text_format">
+ Text format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P15822.txt">
+  P15822
+ </a>
+</p>
+<pre>DR   ExpressionAtlas; P15822; baseline and differential.
+</pre>
+<h4 id="XML_format">
+ XML format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P15822.xml">
+  P15822
+ </a>
+</p>
+<pre>&lt;dbReference type="ExpressionAtlas" id="P15822"/&gt;
+  &lt;property type="expression patterns" value="baseline and differential"/&gt;
+&lt;/dbReference&gt;
+</pre>
+<h4 id="RDF_format">
+ RDF format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P15822.ttl">
+  P15822
+ </a>
+</p>
+<pre>uniprot:P15822
+  rdfs:seeAlso &lt;http://purl.uniprot.org/expressionatlas/P15822&gt; .
+&lt;http://purl.uniprot.org/expressionatlas/P15822&gt;
+  rdf:type Resource ;
+  up:database &lt;http://purl.uniprot.org/database/ExpressionAtlas&gt; ;
+  rdfs:comment "baseline and differential" .
+</pre>
+<h3 id="Changes_to_the__a_href___docs_humdisease__controlled_vocabulary_of_human_diseases__a_">
+ Changes to the
+ <a href="http://www.uniprot.org/docs/humdisease">
+  controlled vocabulary of human diseases
+ </a>
+</h3>
+<p>
+ New diseases:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04219">
+   Abdominal obesity-metabolic syndrome 4
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04198">
+   Acid-labile subunit deficiency
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04203">
+   Acromelic frontonasal dysostosis
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04195">
+   ACTH-independent macronodular adrenal hyperplasia 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04204">
+   Alpha-fetoprotein deficiency
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04205">
+   Alpha-fetoprotein, hereditary persistence
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04208">
+   Amelogenesis imperfecta 1G
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04202">
+   Aplasia cutis congenita, non-syndromic
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04216">
+   Aplasia or hypoplasia of the breasts and/or nipples 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04180">
+   Ataxia-telangiectasia-like disorder 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04164">
+   Atrial fibrillation, familial, 17
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04165">
+   Atrial fibrillation, familial, 16
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04194">
+   Autoimmune disease, multisystem, infantile-onset
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04162">
+   Bardet-Biedl syndrome 19
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04172">
+   Cardiomyopathy, dilated 1NN
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04171">
+   Cataract 42
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04214">
+   Coloboma, ocular, autosomal recessive
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04181">
+   Combined oxidative phosphorylation deficiency 20
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04173">
+   Combined oxidative phosphorylation deficiency 21
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04189">
+   Cone-rod dystrophy 20
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04168">
+   Corneal opacification with other ocular anomalies
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04170">
+   Deafness, autosomal recessive, 44
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04190">
+   Deafness, autosomal recessive, 102
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04161">
+   Diamond-Blackfan anemia 13
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04218">
+   Dysfibrinogenemia, congenital
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04166">
+   Ectodermal dysplasia 7, hair/nail type
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04174">
+   Encephalopathy, progressive, with or without lipodystrophy
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04176">
+   Epileptic encephalopathy, early infantile, 25
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04178">
+   Epiphyseal chondrodysplasia, Miura type
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04217">
+   Focal segmental glomerulosclerosis 7
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04163">
+   Frontotemporal dementia and/or amyotrophic lateral sclerosis 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04193">
+   Hyperlipoproteinemia 1D
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04212">
+   Hypermanganesemia with dystonia, polycythemia, and cirrhosis
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04158">
+   Hypotrichosis 13
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04159">
+   Immunodeficiency 24
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04200">
+   Immunodeficiency 26 with or without neurologic abnormalities
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04215">
+   Immunodeficiency 36
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04191">
+   Leukoencephalopathy, progressive, with ovarian failure
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04211">
+   Limb-girdle muscular dystrophy 1G
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04160">
+   Lymphedema, hereditary, 1D
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04183">
+   Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04184">
+   Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 3
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04192">
+   Mental retardation, autosomal recessive 44
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04220">
+   Mental retardation, autosomal recessive 45
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04156">
+   Mental retardation, X-linked 100
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04186">
+   Mental retardation, X-linked 101
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04207">
+   Mental retardation, X-linked, syndromic 5
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04169">
+   Microphthalmia, syndromic, 13
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04210">
+   Myopathy, centronuclear, 5
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04185">
+   Myopia 24, autosomal dominant
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04209">
+   Nanophthalmos 4
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04201">
+   Orofaciodigital syndrome 14
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04182">
+   Pancreatic agenesis 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04157">
+   Polyglucosan body myopathy, early-onset, with or without immunodeficiency
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04197">
+   Poretti-Boltshauser syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04154">
+   Primrose syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04177">
+   Retinitis pigmentosa 70
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04206">
+   Sneddon syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04188">
+   Spinocerebellar ataxia 34
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04196">
+   Spinocerebellar ataxia 38
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04167">
+   Spondylometaphyseal dysplasia, Sedaghatian type
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04187">
+   Steel syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04179">
+   STING-associated vasculopathy, infantile-onset
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04155">
+   Stormorken syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04213">
+   Trichomegaly
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04199">
+   Vesicoureteral reflux 8
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04175">
+   Webb-Dattani syndrome
+  </a>
+ </li>
+</ul>
+<p>
+ Modified diseases:
+</p>
+<ul>
+ <li>
+  ACTH-independent macronodular adrenal hyperplasia -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01167">
+   ACTH-independent macronodular adrenal hyperplasia 1
+  </a>
+ </li>
+ <li>
+  Ataxia-telangiectasia-like disorder -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-00140">
+   Ataxia-telangiectasia-like disorder 1
+  </a>
+ </li>
+ <li>
+  Bosch-Boonstra optic atrophy syndrome -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-04111">
+   Bosch-Boonstra-Schaaf optic atrophy syndrome
+  </a>
+ </li>
+ <li>
+  Cataract 22 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01233">
+   Cataract 22, multiple types
+  </a>
+ </li>
+ <li>
+  Coloboma of iris choroid and retina -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02083">
+   Coloboma, ocular, autosomal dominant
+  </a>
+ </li>
+ <li>
+  Compton-North congenital myopathy -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01385">
+   Myopathy, congenital, Compton-North
+  </a>
+ </li>
+ <li>
+  Epileptic encephalopathy, early infantile, 10 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02855">
+   Microcephaly, seizures, and developmental delay
+  </a>
+ </li>
+ <li>
+  Faciocutaneoskeletal syndrome -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01437">
+   Costello syndrome
+  </a>
+ </li>
+ <li>
+  Frontotemporal dementia and/or amyotrophic lateral sclerosis -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03247">
+   Frontotemporal dementia and/or amyotrophic lateral sclerosis 1
+  </a>
+ </li>
+ <li>
+  Goldberg-Shprintzen megacolon syndrome -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01681">
+   Goldberg-Shprintzen syndrome
+  </a>
+ </li>
+ <li>
+  Immunodeficiency due to defect in CD3-zeta -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02209">
+   Immunodeficiency 25
+  </a>
+ </li>
+ <li>
+  Megalencephaly, autosomal recessive -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03993">
+   Macrocephaly/megalencephaly syndrome, autosomal recessive
+  </a>
+ </li>
+ <li>
+  Myopathy, tubular aggregate -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03765">
+   Myopathy, tubular aggregate, 1
+  </a>
+ </li>
+ <li>
+  Pancreatic agenesis, congenital -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02123">
+   Pancreatic agenesis 1
+  </a>
+ </li>
+ <li>
+  Retinal non-attachment, congenital, non-syndromic -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03277">
+   Persistent hyperplastic primary vitreous, autosomal recessive
+  </a>
+ </li>
+ <li>
+  Syndromic multisystem autoimmune disease -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02639">
+   Autoimmune disease, multisystem, with facial dysmorphism
+  </a>
+ </li>
+</ul>
+<p>
+ Deleted diseases:
+</p>
+<ul>
+ <li>
+  Amelogenesis imperfecta and gingival fibromatosis syndrome
+ </li>
+ <li>
+  Mental retardation, X-linked 59
+ </li>
+</ul>
+<h3 id="Changes_to_the__a_href___docs_ptmlist__controlled_vocabulary_for_PTMs__a_">
+ Changes to the
+ <a href="http://www.uniprot.org/docs/ptmlist">
+  controlled vocabulary for PTMs
+ </a>
+</h3>
+<p>
+ New terms for the feature key 'Modified residue' ('MOD_RES' in the flat file):
+</p>
+<ul>
+ <li>
+  (4R)-5-hydroxyleucine
+ </li>
+ <li>
+  (4R)-5-oxoleucine
+ </li>
+</ul>
+<p>
+ Deleted term:
+</p>
+<ul>
+ <li>
+  5-methoxythiazole-4-carboxylic acid (Val-Cys)
+ </li>
+</ul>

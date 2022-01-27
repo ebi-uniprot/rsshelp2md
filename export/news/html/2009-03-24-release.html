@@ -1,0 +1,222 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  A UniProtKB major release (15.0)
+ </h3>
+ <p>
+  UniProt Knowledgebase release 15.0 includes Swiss-Prot release 57.0 and TrEMBL release 40.0.
+ </p>
+ <p>
+  Release 57.0 of 24-Mar-09 of UniProtKB/Swiss-Prot contains 428'650 sequence entries,
+      comprising 154'416'236 amino acids abstracted from 177'584 references. 36'053 sequences
+      have been added since release 56.0, the sequence data of 2'010 existing entries have been
+      manually updated and the annotations of 368'500 entries have been revised.
+ </p>
+ <p>
+  Release 40.0 of 24-Mar-2009 of UniProtKB/TrEMBL contains 7'537'442 sequence entries,
+      comprising 2'459'135'421 amino acids. 1'700'878 sequences have been added since release 39.0,
+      the sequence data of 24'829 existing entries has been updated and the annotations of
+      4'218'268 entries have been revised. This represents an increase of 31%.
+ </p>
+ <p>
+  The following improvements were carried out in the last 8 months:
+ </p>
+ <ul>
+  <li>
+   We have structured the 'Pathway' subsection of the 'General annotation (Comments)' section
+       (comment line (CC) topic PATHWAY in the flat file), using the controlled vocabulary provided by the
+   <a href="http://www.grenoble.prabi.fr/obiwarehouse/unipathway">
+    UniPathway
+   </a>
+   resource, in order to improve the consistency of annotation and to allow to
+       parse its content. To accompany this change, we have created a new document:
+   <a href="http://www.uniprot.org/docs/pathlist">
+    pathlist.txt
+   </a>
+   which describes the controlled vocabulary used in the 'Pathway' subsection of the 'General annotation
+      (Comments)' section.
+  </li>
+  <li>
+   We have enriched the controlled vocabulary for subcellular location description
+       with 14 new terms. 6 have been deleted.
+  </li>
+  <li>
+   We have enriched the controlled vocabulary for post-translational modification description
+       with 30 new terms: 9 for the subsection 'Modified residue' of the 'Sequence annotation (Features)'
+       section (FT 'MOD_RES' in the flat file) and 21 for the subsection 'Cross-link' (FT 'CROSSLNK' in the
+       flat file).
+  </li>
+  <li>
+   We have added cross-references to 9 new databases, bringing the total number of explicit
+       cross-references to 111:
+   <a href="http://bgee.unil.ch/bgee/bgee">
+    Bgee
+   </a>
+   ,
+   <a href="http://www.genecards.org/">
+    GeneCards
+   </a>
+   ,
+   <a href="http://www.ebi.ac.uk/IPI/IPIhelp.html">
+    IPI
+   </a>
+   ,
+   <a href="http://www.nextbio.com/">
+    NextBio
+   </a>
+   ,
+   <a href="http://pid.nci.nih.gov/">
+    Pathway_Interaction_DB
+   </a>
+   ,
+   <a href="http://www.ebi.ac.uk/pride//">
+    PRIDE
+   </a>
+   ,
+   <a href="http://www.tcdb.org/">
+    TCDB
+   </a>
+   ,
+   <a href="http://www.xenbase.org/">
+    Xenbase
+   </a>
+   and to
+   <a href="http://www.plantontology.org/">
+    Plant Ontology (PO)
+   </a>
+   in the
+   <a href="http://www.uniprot.org/docs/tisslist">
+    tisslist.txt
+   </a>
+   file. Cross-references to StyGene have been removed.
+  </li>
+  <li>
+   We have added 17 new keywords and 1 has been deleted. 10 of the newly created keywords are medical ones.
+  </li>
+ </ul>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Change  in the 'Encoded on' subsection (OG line in the flat file): from 'Chromatophore' to 'Organellar chromatophore'
+ </h3>
+ <p>
+  After discussion with experts in the field and consultation with the Gene
+      Ontology experts we have changed the OG line describing proteins encoded by the
+      chromatophore of
+  <em>
+   Paulinella chromatophora
+  </em>
+  from:
+ </p>
+ <pre>
+      OG   Plastid; Chromatophore.
+     </pre>
+ to:
+ <pre>
+      OG   Plastid; Organellar chromatophore.
+     </pre>
+ <h3>
+  Changes concerning cross-references to StyGene
+ </h3>
+ <p>
+  Cross-references to StyGene have been removed.
+ </p>
+ <h3>
+  Removal of the 'salty.txt' document
+ </h3>
+ <p>
+  The document
+  <strong>
+   salty.txt
+  </strong>
+  , listing
+  <em>
+   Salmonella typhimurium
+  </em>
+  strain LT2 entries,
+      gene names and cross-references to StyGene, has been removed.
+ </p>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1015">
+    Atrial fibrillation
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1016">
+    Complement activation lectin pathway
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1017">
+    Virus reference strain
+   </a>
+  </li>
+ </ul>
+ <p>
+  Modified keyword:
+ </p>
+ <ul>
+  <li>
+   Chromatophore -&gt;
+   <a href="http://www.uniprot.org/keywords/KW-0622">
+    Organellar chromatophore
+   </a>
+  </li>
+ </ul>
+ <h3>
+  Changes in
+  <a href="http://www.uniprot.org/docs/subcell">
+   subcellular location controlled vocabulary
+  </a>
+ </h3>
+ <p>
+  New subcellular location:
+ </p>
+ <ul>
+  <li>
+   Pollen coat
+  </li>
+ </ul>
+ <p>
+  Modified subcellular locations:
+ </p>
+ <ul>
+  <li>
+   Chromatophore -&gt; Organellar chromatophore
+  </li>
+  <li>
+   Chromatophore inner membrane -&gt; Organellar chromatophore inner membrane
+  </li>
+  <li>
+   Chromatophore intermembrane space -&gt; Organellar chromatophore intermembrane space
+  </li>
+  <li>
+   Chromatophore membrane -&gt; Organellar chromatophore membrane
+  </li>
+  <li>
+   Chromatophore outer membrane -&gt; Organellar chromatophore outer membrane
+  </li>
+  <li>
+   Chromatophore stroma -&gt; Organellar chromatophore stroma
+  </li>
+  <li>
+   Chromatophore thylakoid -&gt; Organellar chromatophore thylakoid
+  </li>
+  <li>
+   Chromatophore thylakoid lumen -&gt; Organellar chromatophore thylakoid lumen
+  </li>
+  <li>
+   Chromatophore thylakoid membrane -&gt; Organellar chromatophore thylakoid membrane
+  </li>
+ </ul>
+</div>

@@ -1,0 +1,9 @@
+2020-04-22-release
+---
+Number tables left as HTML
+3
+
+All extra HTML tags left (ie <span style="color: grey;">)?
+True
+Whole file left as HTML
+True

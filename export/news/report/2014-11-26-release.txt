@@ -1,0 +1,6 @@
+2014-11-26-release
+---
+All extra HTML tags left (ie <span style="color: grey;">)?
+True
+Whole file left as HTML
+True

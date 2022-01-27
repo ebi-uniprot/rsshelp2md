@@ -1,0 +1,449 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  UniProtKB wonder web
+ </h3>
+ <p>
+  UniProtKB/Swiss-Prot was the first biomolecular database to include cross-references in its entries, long before the advent of the internet, and a high level of integration with other databases is a hallmark of the resource. UniProtKB is indeed a general interest database, and the
+  <a href="http://www.uniprot.org/manual/cross_references">
+   cross-references
+  </a>
+  it includes provide users with easy access to relevant additional information from more specialized resources.
+ </p>
+ <p>
+  The number of cross-references keeps growing. Over the past year, 21 new databases have been added and 6 out of the 8 phylogenomic databases cross-referenced in UniProtKB have been added during the last 10 months. Today
+  <a href="http://www.uniprot.org/docs/dbxref">
+   126 databases
+  </a>
+  are explicitly cross-referenced in the knowledgebase. Most links are stored in the ‘Cross-references’ section.
+ </p>
+ As of this release, the total number of cross-references in UniProtKB/Swiss-Prot passed 13 million and the average number per entry is over 25. In TrEMBL, the unreviewed section of UniProtKB, the average number of cross-references per entry is approximately half lower (over 11). For both sections, the most represented databases reflect our information sources and annotation strategies. They are:
+ <ol>
+  <li>
+   <a href="http://www.ebi.ac.uk/embl/">
+    <span class="caps">
+     EMBL
+    </span>
+    -Bank
+   </a>
+   (on average 1.7 cross-references per entry): the vast majority of UniProtKB sequences come from translated
+   <span class="caps">
+    CDS
+   </span>
+   submitted to the
+   <span class="caps">
+    EMBL
+   </span>
+   -Bank/GenBank/DDBJ, it is therefore not surprising that more than 98% UniProtKB/Swiss-Prot entries contain a cross-reference to the original nucleotide submission(s). For extensively studied organisms, such as human, the average number of
+   <span class="caps">
+    EMBL
+   </span>
+   -Bank cross-references may exceed 7.
+  </li>
+  <li>
+   <a href="http://www.ebi.ac.uk/interpro/">
+    InterPro
+   </a>
+   (on average 3.1 cross-references per entry): this integrated database classifies proteins at superfamily, family and subfamily levels, predicting the occurrence of functional domains, repeats and important sites. In UniProtKB, we have always paid special attention to domain and family annotation. InterPro predictions are automatically integrated into TrEMBL entries and domain/family annotation is later manually reviewed and completed before integration into Swiss-Prot.
+  </li>
+  <li>
+   <a href="http://www.geneontology.org/">
+    Gene Ontology
+   </a>
+   (GO): UniProtKB annotators manually assign GO terms to all entries they curate and high-quality manually assigned GO terms from other GO Consortium groups are imported to ensure that a comprehensive collection of GO annotations is available through UniProtKB. In addition, UniProtKB incorporates GO terms generated from a range of electronic mapping methods. As a result, the number of GO cross-references per entry is expected to further grow significantly in the near future.
+  </li>
+ </ol>
+ <p>
+  In addition to the “regular” ‘Cross-references’ section, the ‘Web resources’ section offers links to specific web pages or databases whose scope is too specialized to warrant the creation of specific cross-references. For instance, the
+  <a href="http://www-p53.iarc.fr/">
+   <span class="caps">
+    IARC TP53
+   </span>
+   mutation database
+  </a>
+  , a repository of somatic and germline
+  <span class="caps">
+   TP53
+  </span>
+  mutations in human cancers is only available from the
+  <a href="http://www.uniprot.org/uniprot/P04637#section_web">
+   human p53 entry
+  </a>
+  . Currently more than 6’500 entries contain ‘Web resources’ sections, which represent some 8’500 additional links. Note that links to relevant databases pepper all sections of Swiss-Prot entries. Cross-references to
+  <a href="http://enzyme.expasy.org/">
+   <span class="caps">
+    ENZYME
+   </span>
+  </a>
+  are available from the EC numbers provided in the ‘Protein names’ subsection, links to
+  <a href="http://www.ncbi.nlm.nih.gov/pubmed/">
+   PubMed
+  </a>
+  from the ‘References’ section, etc.
+ </p>
+ <p>
+  In conclusion, for a complete overview on a given protein, users should use different resources, each of them shedding complementary light on the field. The coexistence of various databases does not imply competition between them, but rather collaboration, to better serve the life science community. UniProtKB may be used to get a manually reviewed summary of the current knowledge and to direct users to more specialized databases, such as organism-oriented, phylogenomic or genome annotation databases, for more detailed information.
+ </p>
+ <p>
+  For detailed statistics on cross-references, see our
+  <a href="http://web.expasy.org/docs/relnotes/relstat.html">
+   release notes
+  </a>
+  , section 5 (‘Statistics for some line types’).
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Change of release numbers
+ </h3>
+ <p>
+  In the past, we have distinguished major and minor releases of the UniProt knowledgebase and this was reflected in the release number format: major releases were numbered
+  <em>
+   x.0
+  </em>
+  , minor releases were
+  <em>
+   x.1
+  </em>
+  ,
+  <em>
+   x.2
+  </em>
+  , etc. We have abandoned this distinction and changed the format to
+  <em>
+   <span class="caps">
+    YYYY
+   </span>
+   _XX
+  </em>
+  where
+  <em>
+   <span class="caps">
+    YYYY
+   </span>
+  </em>
+  is the calendar year and
+  <em>
+   XX
+  </em>
+  a 2-digit number that is incremented for each release of a given year, e.g. 2010_01, 2010_02, etc. We will archive previous releases on our ftp site for at least 2 years.
+ </p>
+ <h3>
+  Change of release cycle
+ </h3>
+ <p>
+  UniProt releases are now published every 4 weeks.
+ </p>
+ <h3>
+  Cross-references to GenoList
+ </h3>
+ <p>
+  Cross-references have been added to the GenoList Integrated Environment for the Analysis of Microbial Genomes.
+  <a href="http://genodb.pasteur.fr/cgi-bin/WebObjects/GenoList.woa/">
+   GenoList
+  </a>
+  hosts numerous model organism databases for complete microbial genomes, including BuruList, ListiList, MypuList, PhotoList, SagaList and SubtiList which used to be cross-referenced from UniProtKB individually.
+  <br/>
+  Relevant UniProtKB entries from the following organisms are therefore now linked to GenoList:
+ </p>
+ <ul>
+  <li>
+   Mycobacterium ulcerans (strain Agy99) (formerly linked to BuruList)
+  </li>
+  <li>
+   Listeria monocytogenes and innocua (formerly linked to ListiList)
+  </li>
+  <li>
+   Mycoplasma pulmonis (formerly linked to MypuList)
+  </li>
+  <li>
+   Photorhabdus luminescens subsp. laumondii (formerly linked to PhotoList)
+  </li>
+  <li>
+   Streptococcus agalactiae serotype
+   <span class="caps">
+    III
+   </span>
+   (formerly linked to SagaList)
+  </li>
+  <li>
+   Bacillus subtilis (formerly linked to SubtiList)
+  </li>
+ </ul>
+ <p>
+  GenoList is available at
+  <a href="http://genodb.pasteur.fr/cgi-bin/WebObjects/GenoList.woa/">
+   http://genodb.pasteur.fr/cgi-bin/WebObjects/GenoList.woa/
+  </a>
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    GenoList
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    Ordered locus name
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <a href="http://www.uniprot.org/uniprot/Q925X3#section_x-ref">
+     <span class="caps">
+      Q925X3
+     </span>
+    </a>
+    :
+    <pre>DR   GenoList; LIN0124; -.
+DR   GenoList; LIN2378; -.
+DR   GenoList; LIN2564; -.</pre>
+    <a href="http://www.uniprot.org/uniprot/P37551#section_x-ref">
+     <span class="caps">
+      P37551
+     </span>
+    </a>
+    :
+    <pre>DR   GenoList; BSU00470; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <p>
+  <a href="http://www.uniprot.org/uniprot/?query=database:GenoList">
+   Show all the entries having a cross-reference to GenoList
+  </a>
+  .
+ </p>
+ <h3>
+  Changes concerning cross-references to BuruList, ListiList, MypuList, PhotoList, SagaList and SubtiList.
+ </h3>
+ <p>
+  Cross-references to BuruList, ListiList, MypuList, PhotoList, SagaList and SubtiList have been removed.
+ </p>
+ <h3>
+  Cross-references to ConoServer
+ </h3>
+ <p>
+  Cross-references have been added to the Cone snail toxin database
+  <a href="http://www.conoserver.org/">
+   ConoServer
+  </a>
+  . The ConoServer database is a manually curated database dedicated to conopeptides. ConoServer uses standardized names and a genetic and structural classification scheme to present data retrieved from UniProtKB, GenBank, the Protein Data Bank and the literature.
+ </p>
+ <p>
+  The ConoServer web site incorporates specialized features like the graphic display of post-translational modifications that are extensively present in conopeptides. ConoServer manages nucleic sequences, proteic sequences, and 3D structures. The aim of this resource is to give a comprehensive overview over the diversity of conopeptides and their uses as drugs, drug leads and diagnostic tools.
+ </p>
+ <p>
+  ConoServer is available at
+  <a href="http://www.conoserver.org/">
+   http://www.conoserver.org/
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    ConoServer
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    ConoServer identifier
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 1
+   </th>
+   <td>
+    Toxin name
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <a href="http://www.uniprot.org/uniprot/P0C8R2#section_x-ref">
+     <span class="caps">
+      P0C8R2
+     </span>
+    </a>
+    :
+    <pre>DR   ConoServer; 2838; ArIA precursor.
+DR   ConoServer; 3450; Sequence 299 from Patent EP1852440.</pre>
+    <a href="http://www.uniprot.org/uniprot/P0C1W3#section_x-ref">
+     <span class="caps">
+      P0C1W3
+     </span>
+    </a>
+    :
+    <pre>DR   ConoServer; 1574; RVIIIA.</pre>
+   </td>
+  </tr>
+ </table>
+ <p>
+  <a href="http://www.uniprot.org/uniprot/?query=database:ConoServer">
+   Show all the entries having a cross-reference to ConoServer.
+  </a>
+ </p>
+ <h3>
+  Cross-references to
+  <span class="caps">
+   MINT
+  </span>
+ </h3>
+ <p>
+  Cross-references have been added to the Molecular INTeraction database
+  <a href="http://mint.bio.uniroma2.it/mint/">
+   <span class="caps">
+    MINT
+   </span>
+  </a>
+  , which focuses on experimentally verified protein-protein interactions mined from the scientific literature by expert curators.
+ </p>
+ <p>
+  <span class="caps">
+   MINT
+  </span>
+  is available at
+  <a href="http://mint.bio.uniroma2.it/mint/">
+   http://mint.bio.uniroma2.it/mint/
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    <span class="caps">
+     MINT
+    </span>
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    <span class="caps">
+     MINT
+    </span>
+    interactor ID
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <a href="http://www.uniprot.org/uniprot/P00925#section_x-ref">
+     <span class="caps">
+      P00925
+     </span>
+    </a>
+    :
+    <pre>DR   MINT; MINT-517950; -.</pre>
+    <a href="http://www.uniprot.org/uniprot/P0A887#section_x-ref">
+     <span class="caps">
+      P0A887
+     </span>
+    </a>
+    :
+    <pre>DR   MINT; MINT-1243319; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <p>
+  <a href="http://www.uniprot.org/uniprot/?query=database:MINT">
+   Show all the entries having a cross-reference to
+   <span class="caps">
+    MINT
+   </span>
+  </a>
+  .
+ </p>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ New keywords:
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1064">
+    Adaptive immunity
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1067">
+    Emery-Dreifuss muscular dystrophy
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1066">
+    Premature ovarian failure
+   </a>
+  </li>
+ </ul>
+ Modified keyword:
+ <ul>
+  <li>
+   Immune response -&gt;
+   <a href="http://www.uniprot.org/keywords/KW-0391">
+    Immunity
+   </a>
+  </li>
+ </ul>
+ <h3>
+  Changes in
+  <a href="http://www.uniprot.org/docs/?subcell">
+   subcellular location controlled vocabulary
+  </a>
+ </h3>
+ New subcellular location:
+ <ul>
+  <li>
+   Host basolateral cell membrane
+  </li>
+ </ul>
+ <h3>
+  Changes concerning the
+  <a href="http://www.uniprot.org/docs/ptmlist">
+   controlled vocabulary for PTMs
+  </a>
+ </h3>
+ New term for the feature key ‘Modified residue’ (‘MOD_RES’ in the flat file):
+ <ul>
+  <li>
+   S-(dipyrrolylmethanemethyl)cysteine
+  </li>
+ </ul>
+</div>

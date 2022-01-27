@@ -1,0 +1,277 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  UniProtKB/Swiss-Prot major release (47.0)
+ </h3>
+ Release 47.0 of UniProtKB/Swiss-Prot contains 181'571 sequence entries,
+     comprising 65'742'349 amino acids abstracted from 128'438 references.
+
+     11'531 sequences have been added since release 46, the sequence data of
+     841 existing entries has been updated and the annotations of
+     166'572 entries have been revised. This represents an increase of 6%.
+ <p>
+  Many improvements were carried out in the last 3 months.
+      In particular, we have introduced 5 new feature keys in order to better
+      describe different types of regions in a protein sequence, and we added an
+      additional qualifier to our cross-references to nucleotide sequence databases,
+      the molecule type.
+ </p>
+ <p>
+  All the recent changes to the Swiss-Prot format are
+      described in detail in the continuously updated document:
+ </p>
+ <p>
+  UniProt Knowledgebase release 5.0 includes Swiss-Prot release 47.0 and TrEMBL release 30.0.
+ </p>
+ <p>
+  <a href="http://www.expasy.org/txt/old-rel/relnotes.47.htm">
+   Full statistics and release notes
+  </a>
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Format change in the DR line
+ </h3>
+ <p>
+  The DR (Database cross-Reference) lines are used as pointers to information
+in external data resources that is related to UniProtKB entries. Until now, the
+format of a DR line was:
+ </p>
+ <pre>
+DR   DATABASE_IDENTIFIER; PRIMARY_IDENTIFIER; SECONDARY_IDENTIFIER[; TERTIARY_IDENTIFIER].
+</pre>
+ <p>
+  We have introduced a forth identifier, changing the DR line format to:
+ </p>
+ <pre>
+DR   DATABASE_IDENTIFIER; PRIMARY_IDENTIFIER; SECONDARY_IDENTIFIER[; TERTIARY_IDENTIFIER]<strong>[; QUATERNARY_IDENTIFIER]</strong>.
+</pre>
+ <p>
+  The database cross-references to
+  <strong>
+   EMBL
+  </strong>
+  is affected by this modification (see below).
+ </p>
+ <h2>
+  Changes in the cross-references to EMBL
+ </h2>
+ <p>
+  The biological source of the molecule has been added as quaternary identifier to the cross-reference
+(DR line) of the EMBL database.
+ </p>
+ <p>
+  Former format:
+ </p>
+ <pre>
+DR   EMBL; ACCESSION_NUMBER; PROTEIN_ID; STATUS_IDENTIFIER.
+</pre>
+ <p>
+  New format:
+ </p>
+ <pre>
+DR   EMBL; ACCESSION_NUMBER; PROTEIN_ID; STATUS_IDENTIFIER; <strong>MOLECULE_TYPE</strong>.
+</pre>
+ <p>
+  The molecule type is controlled vocabulary and currently includes:
+ </p>
+ <ul>
+  <li>
+   Genomic_DNA
+  </li>
+  <li>
+   Genomic_RNA
+  </li>
+  <li>
+   mRNA
+  </li>
+  <li>
+   Unassigned_DNA
+  </li>
+  <li>
+   Unassigned_RNA
+  </li>
+  <li>
+   Other_DNA
+  </li>
+  <li>
+   Other_RNA
+  </li>
+  <li>
+   -
+  </li>
+ </ul>
+ <p>
+  Examples:
+ </p>
+ <pre>DR   EMBL; M68939; AAA26107.1; -; Genomic_DNA.</pre>
+ <pre>DR   EMBL; U56386; AAB72034.1; -; mRNA.</pre>
+ <h3>
+  Cross-references to PANTHER
+ </h3>
+ <p>
+  Cross-references have been added to
+  <a href="https://panther.appliedbiosystems.com/">
+   PANTHER
+  </a>
+  ,
+which stands for Protein ANalysis THrough Evolutionary Relationships, a classification system that
+was designed to classify proteins (and their genes) in order to facilitate high-throughput analysis.
+Proteins have been classified according to families and subfamilies, molecular functions, biological
+processes and pathways. PANTHER is available at
+  <a href="https://panther.appliedbiosystems.com/">
+   https://panther.appliedbiosystems.com/
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    PANTHER
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    PANTHER's unique identifier for a protein family or sub-family.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 1
+   </th>
+   <td>
+    PANTHER's entry name for a protein family or sub-family.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 2
+   </th>
+   <td>
+    Number of domains found, which is generally 1, rarely 2 for the fusion of identical domains/proteins.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/O59826#section_x-ref">O59826</a>:
+DR   PANTHER; PTHR11732:SF69; KCNAB_channel; 1.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  New feature (FT) keys and redefinition of existing FT keys
+ </h3>
+ <p>
+  The feature keys
+  <a href="http://www.uniprot.org/manual/domain_ft">
+   DOMAIN
+  </a>
+  and
+  <a href="http://www.uniprot.org/manual/site">
+   SITE
+  </a>
+  were used to describe distinct types of regions in a protein
+sequence and we found this situation unsatisfactory. We therefore
+redefined these two feature keys and introduced 5 new ones.
+ </p>
+ <p>
+  Redefinition of the feature keys DOMAIN and SITE:
+ </p>
+ <ul>
+  <li>
+   DOMAIN - Extent of a domain, which is defined as a specific combination of secondary structures
+ organized into a characteristic three-dimensional structure or fold. Example:
+   <pre>FT   DOMAIN       37     94       Ig-like.</pre>
+  </li>
+  <li>
+   SITE - Any interesting single amino-acid site on the sequence,
+ that is not defined by another feature key. It can also apply to an
+ amino acid bond which is represented by the positions of the two
+ flanking amino acids. Example:
+   <pre>FT   SITE        176    177       Cleavage (by trypsin) (Probable).</pre>
+  </li>
+ </ul>
+ <p>
+  Description of the 5 new feature keys:
+ </p>
+ <ul>
+  <li>
+   COILED - Extent of a coiled-coil region. Example:
+   <pre>FT   COILED      100    165       Potential.</pre>
+  </li>
+  <li>
+   COMPBIAS - Extent of a compositionally biased region. Example:
+   <pre>FT   COMPBIAS     43     57       Pro/Thr-rich.</pre>
+  </li>
+  <li>
+   MOTIF - Short (&lt;=20 amino acids) sequence motif of biological interest. Example:
+   <pre>FT   MOTIF       153    154       Di-leucine motif.</pre>
+  </li>
+  <li>
+   REGION - Extent of a region of interest in the sequence. Example:
+   <pre>FT   REGION       23     54       Binds to CD4.</pre>
+  </li>
+  <li>
+   TOPO_DOM - Topological domain. Example:
+   <pre>FT   TOPO_DOM    139    182       Cytoplasmic (Potential).</pre>
+  </li>
+ </ul>
+ <p>
+  The introduction of these new feature keys allows to establish a clear
+sorting order for feature tables. The following order is used:
+ </p>
+ <pre>
+1. Molecule processing
+     * INIT_MET, SIGNAL, PROPEP, TRANSIT, CHAIN, PEPTIDE
+2. Regions
+     * TOPO_DOM, TRANSMEM
+     * DOMAIN, REPEAT
+     * CA_BIND, ZN_FING, DNA_BIND, NP_BIND
+     * REGION
+     * COILED
+     * MOTIF
+     * COMPBIAS
+3. Sites
+     * ACT_SITE
+     * METAL
+     * BINDING
+     * SITE
+4. Amino acid modifications (pre and PTM)
+     * SE_CYS
+     * MOD_RES
+     * LIPID
+     * CARBOHYD
+     * DISULFID
+     * CROSSLNK
+5. Natural variations
+     * VARSPLIC
+     * VARIANT
+6. Experimental info
+     * MUTAGEN
+     * UNSURE
+     * CONFLICT
+     * NON_CONS
+     * NON_TER
+7. Secondary structure
+      * HELIX, TURN, STRAND
+</pre>
+ <p>
+  Keys of equal priority (listed on one line above) are ordered according to sequence positions.
+ </p>
+</div>

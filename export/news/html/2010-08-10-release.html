@@ -1,0 +1,432 @@
+<div>
+ <h2>
+  Headline
+ </h2>
+ <h3>
+  ‘De-merge’ of multi-gene entries derived from a single species in UniProtKB/Swiss-Prot
+ </h3>
+ <p>
+  UniProtKB/Swiss-Prot has historically “merged” 100% identical protein sequences from different genes in the same species into one single record. The aim of this approach was to reduce sequence redundancy within the proteome of individual species, facilitating protein identification and the functional annotation of protein sequences. These merged entries provide extensive annotation of the protein sequence itself, as well as information on each of the individual source genes, including cross-references to external gene-centric resources that provide gene models and genomic information.
+  <br/>
+  As the availability and usage of genomic information has greatly increased in recent years, UniProtKB is modifying its merging policy. We have already begun to “de-merge” entries containing multiple individual genes coding for 100% identical protein sequences into individual UniProtKB/Swiss-Prot entries containing a single gene. This will give a gene-centric view of protein space, where the same protein sequence can be represented multiple times by distinct UniProtKB/Swiss-Prot entries, each of which is based on the translation of a single distinct gene. It will allow a cleaner and more logical mapping of gene and genomic resources to UniProtKB, which provide the major point of entry to the resulting proteome for many users. It will also facilitate the annotation of protein features that are uniquely associated with specific copies of duplicated genes, such as alternative splice forms that are found in genes encoded by multiple exons but not in single exon copies derived from retro-transposed cDNAs. This type of information can be most effectively captured in a gene-centric view of protein space, providing a precise description of how genome evolution and structure impact the protein complement of a cell. One consequence of this change in annotation policy is that the level of protein sequence redundancy in UniProtKB will slightly increase, as multiple identical instances of a given protein sequence may now exist within the proteome of a particular species or strain. The process of de-merging has already begun with a number of proteins from Escherichia coli and Homo sapiens and other vertebrates, and will be an ongoing process in UniProtKB. For pragmatic reasons, there are several multi-gene families which will not be targeted for de-merge in the near future, as the difficulties associated with maintaining these individual annotated sequences are significant. These include the human histone genes and the calmodulins, which will continue to be grouped into one entry for the current time. However for simpler cases, especially those in which the genomic context of the gene affects the properties of the encoded protein, de-merging will be preferred.
+ </p>
+ <p>
+  The de-merge procedure
+ </p>
+ <p>
+  In simple cases, the demerge procedure simply involves the creation of one new UniProtKB entry for each gene in the current merged UniProtKB entry. A new primary accession number is attributed to each de-merged entry, and the primary accession number of the formerly merged entry is retained as a secondary accession number in each of the resulting de-merged entries. To illustrate how the demerge procedure affects the representation of protein sequences in UniProtKB, consider the example of the human ubiquitin protein. Ubiquitin in humans is encoded by four distinct genes,
+  <a href="http://www.genenames.org/data/hgnc_data.php?hgnc_id=10417">
+   <span class="caps">
+    RPS27A
+   </span>
+  </a>
+  ,
+  <a href="http://www.genenames.org/data/hgnc_data.php?hgnc_id=12458">
+   <span class="caps">
+    UBA52
+   </span>
+  </a>
+  ,
+  <a href="http://www.genenames.org/data/hgnc_data.php?hgnc_id=12463">
+   <span class="caps">
+    UBB
+   </span>
+  </a>
+  and
+  <a href="http://www.genenames.org/data/hgnc_data.php?hgnc_id=12468">
+   <span class="caps">
+    UBC
+   </span>
+  </a>
+  .
+  <span class="caps">
+   RPS27A
+  </span>
+  and
+  <span class="caps">
+   UBA52
+  </span>
+  include a single ubiquitin moiety as an N-terminal fusion to a ribosomal protein, while
+  <span class="caps">
+   UBB
+  </span>
+  and
+  <span class="caps">
+   UBC
+  </span>
+  encode distinct poly-ubiquitin chains. In UniProtKB release 2010_08, the human ubiquitin protein sequence was represented by one single UniProtKB entry (UBIQ_HUMAN,
+  <span class="caps">
+   P62988
+  </span>
+  ), that included the ubiquitin protein sequences derived from all four of the aforementioned genes. For UniProt release 2010_09, these four genes were de-merged into 4 distinct UniProtKB entries corresponding to each of the four ubiquitin genes. Following the de-merge, ubiquitin chains from
+  <span class="caps">
+   RPS27A
+  </span>
+  and
+  <span class="caps">
+   UBA52
+  </span>
+  were then re-merged to the entries describing their cognate ribosomal proteins, and are now represented as peptides derived from the translated ubiquitin-ribosomal protein fusion. The final result of this process is four distinct UniProtKB entries that include ubiquitin protein sequences derived from four loci:
+  <a href="http://www.uniprot.org/uniprot/P62979">
+   <span class="caps">
+    RPS27A
+   </span>
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/P62987">
+   <span class="caps">
+    UBA52
+   </span>
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/P0CG47">
+   <span class="caps">
+    UBB
+   </span>
+  </a>
+  , and
+  <a href="http://www.uniprot.org/uniprot/P0CG48">
+   <span class="caps">
+    UBC
+   </span>
+  </a>
+  . Each of these entries retains the primary accession number of the old merged entry
+  <span class="caps">
+   UBIQ
+  </span>
+  _HUMAN (P62988) as a secondary accession number.
+ </p>
+ <h2>
+  UniProtKB news
+ </h2>
+ <h3>
+  Cross-references to Protein Model Portal
+ </h3>
+ <p>
+  Cross-references have been added to
+  <a href="http://www.proteinmodelportal.org">
+   Protein Model Portal
+  </a>
+  , developed as a module of the
+  <span class="caps">
+   PSI
+  </span>
+  -Nature Structural Biology Knowledgebase (
+  <a href="http://sbkb.org/">
+   http://sbkb.org/
+  </a>
+  ). The Protein Model Portal provides a single interface to query simultaneously the existing precomputed models
+  <br/>
+  at various sites, gives access to interactive services for template selection, target-template alignment, model building, and quality assessment. Models are provided by the
+  <span class="caps">
+   PSI
+  </span>
+  centers (CSMP,
+  <span class="caps">
+   JCSG
+  </span>
+  , MCSG,
+  <span class="caps">
+   NESG
+  </span>
+  , NYSGXRC,
+  <span class="caps">
+   JCMM
+  </span>
+  ), and by independent modeling groups. The task of the portal is to unify the model data from the different sites.
+ </p>
+ <p>
+  Protein Model Portal is available at
+  <a href="http://www.proteinmodelportal.org/">
+   http://www.proteinmodelportal.org/
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    ProteinModelPortal
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    UniProtKB accession number
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <a href="http://www.uniprot.org/uniprot/P84155#section_x-ref">
+     <span class="caps">
+      P84155
+     </span>
+    </a>
+    :
+    <pre>DR   ProteinModelPortal; P84155; -.</pre>
+    <a href="http://www.uniprot.org/uniprot/P27362#section_x-ref">
+     <span class="caps">
+      P27362
+     </span>
+    </a>
+    :
+    <pre>DR   ProteinModelPortal; P27362; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <p>
+  <a href="http://www.uniprot.org/uniprot/?query=database:proteinmodelportal">
+   Show all the entries having a cross-reference to Protein Model Portal
+  </a>
+  .
+ </p>
+ <h3>
+  Changes to
+  <a href="http://www.uniprot.org/docs/?keywlist">
+   keywords
+  </a>
+ </h3>
+ New keywords:
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1133">
+    Transmembrane helix
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1134">
+    Transmembrane beta strand
+   </a>
+  </li>
+ </ul>
+ <h3>
+  Changes in
+  <a href="http://www.uniprot.org/docs/?subcell">
+   subcellular location controlled vocabulary
+  </a>
+ </h3>
+ New subcellular locations:
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/locations/SL-0468">
+    Chromosome
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/locations/SL-0467">
+    Cleavage furrow
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/locations/SL-0466">
+    Exosome
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/locations/SL-0461">
+    Host early endosome
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/locations/SL-0462">
+    Host early endosome membrane
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/locations/SL-0463">
+    Host trans-Golgi network
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/locations/SL-0464">
+    Host trans-Golgi network membrane
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/locations/SL-0469">
+    Midbody
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/locations/SL-0465">
+    <span class="caps">
+     PML
+    </span>
+    body
+   </a>
+  </li>
+ </ul>
+ <h3>
+  Changes to the
+  <a href="http://www.uniprot.org/docs/ptmlist">
+   controlled vocabulary for PTMs
+  </a>
+ </h3>
+ New term for the feature key ‘Cross-link’ (‘CROSSLNK’ in the flat file):
+ <ul>
+  <li>
+   Glycyl cysteine thioester (Cys-Gly) (interchain with G-...)
+  </li>
+ </ul>
+ <h2>
+  Website news
+ </h2>
+ <h3>
+  New
+  <span class="caps">
+   BLAST
+  </span>
+  features
+ </h3>
+ <p>
+  We have updated the
+  <span class="caps">
+   BLAST
+  </span>
+  results view of uniprot.org:
+ </p>
+ <ul>
+  <li>
+   All information that is visible or configurable in the results page of a
+   <a href="http://www.uniprot.org/help/text-search">
+    text search
+   </a>
+   in one of the UniProt core datasets is now also available in the results page of a
+   <a href="http://www.uniprot.org/help/sequence-searches">
+    <span class="caps">
+     BLAST
+    </span>
+    search
+   </a>
+   . Click the
+   <a href="http://www.uniprot.org/help/customize">
+    Customize display
+   </a>
+   link on the
+   <span class="caps">
+    BLAST
+   </span>
+   results page to see which additional columns you can add to the
+   <ins>
+    Detailed
+    <span class="caps">
+     BLAST
+    </span>
+    results
+   </ins>
+   table. For instance, select
+   <em>
+    Comment
+   </em>
+   , press
+   <em>
+    Show
+   </em>
+   , tick
+   <em>
+    Function
+   </em>
+   , press
+   <em>
+    Show
+   </em>
+   to add the column
+   <em>
+    comment(FUNCTION)
+   </em>
+   to see the available functional annotation of your
+   <span class="caps">
+    BLAST
+   </span>
+   hits.
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <span class="caps">
+    BLAST
+   </span>
+   results can now be filtered by dataset and taxonomy. The
+   <ins>
+    Filter
+   </ins>
+   section will show you in brackets the number of hits for each dataset or taxonomy branch. For instance, after running
+   <span class="caps">
+    BLAST
+   </span>
+   against the full UniProtKB dataset, you can filter your results to show only hits that are from
+   <em>
+    Bacteria
+   </em>
+   .
+  </li>
+ </ul>
+ <ul>
+  <li>
+   When running a
+   <span class="caps">
+    BLAST
+   </span>
+   search against UniProtKB, it is possible to project the
+   <a href="http://www.uniprot.org/manual/sequence_annotation">
+    sequence annotations
+   </a>
+   of the matched UniProtKB entries onto the alignments generated by
+   <span class="caps">
+    BLAST
+   </span>
+   . To see an alignment, click on it in the
+   <strong>
+    Alignments
+   </strong>
+   column of the
+   <ins>
+    Detailed
+    <span class="caps">
+     BLAST
+    </span>
+    results
+   </ins>
+   table, then tick the
+   <strong>
+    Annotations
+   </strong>
+   that you would like to highlite in the alignment. This allows you to see at a glance if important positions are conserved.
+  </li>
+ </ul>
+ <p>
+  Another new feature is the option to run
+  <span class="caps">
+   BLAST
+  </span>
+  searches against
+  <a href="http://www.uniprot.org/help/uniparc">
+   UniParc
+  </a>
+  . Please use this with caution, as UniParc is an archive that also contains pseudogenes and incorrect
+  <span class="caps">
+   CDS
+  </span>
+  predictions.
+ </p>
+ <h3>
+  Updated look and feel
+ </h3>
+ <p>
+  The website received a small face lift to improve the navigation. The UniProt entry views, as well as the various tools’ results views, now have blue navigation bars at the top and bottom with links that allow you to quickly access different sections of big views. Where applicable, the top bar features a
+  <a href="http://www.uniprot.org/help/customize">
+   Customize display
+  </a>
+  link that lets you customize the view.
+ </p>
+</div>

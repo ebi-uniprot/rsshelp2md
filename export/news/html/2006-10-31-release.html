@@ -1,0 +1,305 @@
+<div>
+ <p>
+  <a href="http://www.expasy.org/txt/old-rel/relnotes.51.htm">
+   Full statistics and release notes
+  </a>
+ </p>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  UniProtKB/Swiss-Prot major release (51.0)
+ </h3>
+ <p>
+  UniProt Knowledgebase release 9.0 includes Swiss-Prot release 51.0 and TrEMBL release 34.0.
+ </p>
+ <p>
+  Release 51.0 of 31-Oct-06 of UniProtKB/Swiss-Prot contains 241'242 sequence entries,
+     comprising 88'541'632 amino acids abstracted from 148'048 references.
+ </p>
+ <p>
+  19'061 sequences have been added since release 50.0, the sequence data of
+     1'336 existing entries has been updated and the annotations of
+     222'181 entries have been revised.
+ </p>
+ <p>
+  Many improvements were carried out in the last 5 months:
+ </p>
+ <ul>
+  <li>
+   We have changed the format of the ID line, replacing the terms
+   <em>
+    STANDARD/PRELIMINARY
+   </em>
+   by
+   <em>
+    Reviewed/Unreviewed
+   </em>
+   , and removing the
+        legacy field
+   <em>
+    MoleculeType
+   </em>
+   .
+  </li>
+  <li>
+   We have also standardized the FASTA header lines of UniProtKB and UniRef entries.
+  </li>
+  <li>
+   Cross-references to five new databases have been added, and the
+        cross-references to Gene Ontology (GO) have been modified to
+        include the source database for the mapping.
+  </li>
+  <li>
+   There are two new
+   <a href="http://www.uniprot.org/docs">
+    documents
+   </a>
+   :
+   <a href="http://www.uniprot.org/docs/rice">
+    Index of Oryza sativa entries and their corresponding gene designations
+   </a>
+   ,          and
+   <a href="http://www.uniprot.org/docs/nameprot">
+    Protein naming guidelines
+   </a>
+   .
+  </li>
+ </ul>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  ID (IDentification) line
+ </h3>
+ <p>
+  The format of the ID line was:
+ </p>
+ <pre>
+ID   EntryName DataClass; MoleculeType; SequenceLength.
+</pre>
+ <p>
+  We have changed the values of the
+  <code>
+   DataClass
+  </code>
+  field
+    as described in this table:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Old
+    <code>
+     DataClass
+    </code>
+   </th>
+   <th>
+    New
+    <code>
+     DataClass
+    </code>
+   </th>
+   <th>
+    Description
+   </th>
+  </tr>
+  <tr>
+   <td>
+    <code>
+     STANDARD
+    </code>
+   </td>
+   <td>
+    <code>
+     Reviewed
+    </code>
+   </td>
+   <td>
+    Entries that have been manually reviewed and annotated by
+      UniProtKB curators (Swiss-Prot section of the UniProt Knowledgebase).
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <code>
+     PRELIMINARY
+    </code>
+   </td>
+   <td>
+    <code>
+     Unreviewed
+    </code>
+   </td>
+   <td>
+    Computer-annotated entries that have not been reviewed
+      by UniProtKB curators (TrEMBL section of the UniProt Knowledgebase).
+   </td>
+  </tr>
+ </table>
+ <p>
+  We have also dropped the field
+  <code>
+   MoleculeType
+  </code>
+  ,
+    which was a legacy of compatibility with the EMBL flat file
+    format. The new format of the ID line is:
+ </p>
+ <pre>
+ID   EntryName DataClass; SequenceLength.
+</pre>
+ <p>
+  Examples:
+ </p>
+ <pre>
+ID   CYC_PIG                 Reviewed;         104 AA.
+</pre>
+ <pre>
+ID   Q3ASY8_CHLCH            Unreviewed;     36805 AA.
+</pre>
+ <h3>
+  FASTA header line
+ </h3>
+ <p>
+  We have standardized the FASTA header line of UniProtKB and
+    UniRef entries in the following way:
+ </p>
+ <p>
+  Format for UniProtKB
+ </p>
+ <pre>
+&gt;UniqueIdentifier|EntryName ProteinName - OrganismName
+</pre>
+ <ul>
+  <li>
+   <code>
+    UniqueIdentifier
+   </code>
+   is the primary accession
+     number of the UniProtKB entry, or, in the case of entries that
+     describe several protein isoforms, an isoform identifier.
+  </li>
+  <li>
+   <code>
+    EntryName
+   </code>
+   is the entry name of the UniProtKB
+     entry.
+  </li>
+  <li>
+   <code>
+    ProteinName
+   </code>
+   is the recommended or submitted
+     protein name of the UniProtKB entry. (This is the name before
+     the first bracket, excluding 'precursor' but including 'Fragment'
+     if appropriate - see the
+   <a href="http://www.uniprot.org/manual/protein_names">
+    Protein
+     name documentation
+   </a>
+   .)
+  </li>
+  <li>
+   <code>
+    OrganismName
+   </code>
+   is the scientific name of the
+     organism of the UniProtKB entry.
+  </li>
+ </ul>
+ <p>
+  Examples:
+ </p>
+ <pre>
+&gt;P24856|ANP_NOTCO Ice-structuring glycoprotein (Fragment) - Notothenia coriiceps neglecta
+</pre>
+ <pre>
+&gt;P51650-1|SSDH_RAT Succinate semialdehyde dehydrogenase - Rattus norvegicus
+</pre>
+ <h3>
+  Cross-references to Human Protein Atlas
+ </h3>
+ <p>
+  Cross-references have been added to the
+  <a href="http://www.proteinatlas.org/">
+   Human Protein Atlas
+  </a>
+  . The
+  Human Protein Atlas shows the expression and localization of proteins
+  in a large variety of normal human tissues and cancer cells. The data
+  is presented as high resolution images representing immunohistochemically
+  stained tissue sections. Each antibody in the database has been used
+  for immunohistochemical staining of both normal and cancer tissue.
+  The immunohistochemical protocols used result in a brown-black staining,
+  localized where an antibody has bound to its corresponding antigen.
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    HPA
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    Antibody identifier.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/O75843#section_x-ref">O75843</a>:
+DR   HPA; HPA004106; -.
+
+<a href="http://www.uniprot.org/uniprot/P08183#section_x-ref">P08183</a>:
+DR   HPA; CAB001716; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-references to Gene Ontology (GO)
+ </h3>
+ <p>
+  The last field of the cross-references to the
+  <a href="http://www.geneontology.org/">
+   Gene Ontology (GO)
+  </a>
+  database has been modified. This field displays the
+  <a href="http://www.geneontology.org/GO.evidence.shtml">
+   GO evidence code
+  </a>
+  and we have appended to this the source database from which the
+  cross-reference was obtained, separated by a colon.
+ </p>
+ <p>
+  Examples:
+ </p>
+ <pre><a href="http://www.uniprot.org/uniprot/Q15738#section_x-ref">Q15738</a>:
+DR   GO; GO:0005783; C:endoplasmic reticulum; IDA:LIFEdb.
+
+<a href="http://www.uniprot.org/uniprot/P13569#section_x-ref">P13569</a>:
+DR   GO; GO:0005524; F:ATP binding; TAS:ProtInc.</pre>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0949">
+    S-adenosyl-L-methionine
+   </a>
+   (new)
+  </li>
+ </ul>
+</div>

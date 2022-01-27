@@ -1,0 +1,5 @@
+2004-04-13-release
+---
+Number tables left as HTML
+2
+

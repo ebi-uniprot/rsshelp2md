@@ -1,0 +1,98 @@
+<div>
+ <p>
+  <a href="http://www.expasy.org/txt/old-rel/relnotes.52.htm">
+   Full statistics and release notes
+  </a>
+ </p>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  UniProtKB/Swiss-Prot major release (52.0)
+ </h3>
+ <p>
+  UniProt Knowledgebase release 10.0 includes Swiss-Prot release 52.0 and TrEMBL release 35.0.
+ </p>
+ <p>
+  UniProtKB/Swiss-Prot release 52.0 of March 6, 2007 contains 260'175 sequence entries,
+      comprising 95'002'661 amino acids abstracted from 152'564 references. 18'986 sequences
+      have been added since release 51.0: this represents an increase of 7.3%. In addition,
+      the annotations of 190'910 entries have been revised.
+ </p>
+ <p>
+  Many improvements were carried out in the last 4 months:
+ </p>
+ <ul>
+  <li>
+   We have reintroduced the initiator methionine: the UniProtKB sequence data
+     now always corresponds to the precursor form of a protein, i.e. before
+     post-translational modifications such as cleavage of the signal peptide or
+     other events (except of course when the sequence data are derived from direct
+     protein sequencing).
+  </li>
+  <li>
+   We have extended the UniProtKB accession number format: we have extended
+     the existing accession number format by allowing the first character to be
+        any of the 26 letters (instead of only O, P and Q).
+  </li>
+  <li>
+   We have added cross-references to 7 new databases and introduced a new molecule type for the EMBL
+       cross-references (Viral_cRNA)
+  </li>
+ </ul>
+ <p>
+  UniProtKB/Swiss-Prot (flat file version) turned 1
+  <a href="http://en.wikipedia.org/wiki/Gigabyte">
+   Gigabyte (GB)
+  </a>
+  long on
+     this major release ! For comparison, the human genome contains 0.791175 GB
+     of data (the 3.1647 x 10^9 base pairs represented as 2-bits)
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Format change in the dbxref.txt document file
+ </h3>
+ <p>
+  The
+  <a href="http://www.uniprot.org/docs/dbxref">
+   dbxref.txt
+  </a>
+  file lists the names and
+     abbreviations and URLs of all databases cross-referenced in the UniProt Knowledgebase.
+     We have added a new optional field, "
+  <strong>
+   Ref
+  </strong>
+  ". This field contains the database
+     reference in the following format:
+ </p>
+ <pre>Ref   : Journal_abbrev Volume:First_page-Last_page(YYYY); [PubMed=Pubmed_identifier; ][DOI=Digital_object_identifier;]</pre>
+ <p>
+  Example:
+ </p>
+ <pre>
+     Abbrev: PROSITE
+     Name  : PROSITE; a protein domain and family database
+     <strong>Ref   : Nucleic Acids Res. 34:D227-D230(2006); PubMed=16381852; DOI=10.1093/nar/gkj063;</strong>
+     LinkTp: Explicit
+     Server: http://www.expasy.org/prosite/
+     Db_URL: www.expasy.org/cgi-bin/get-prosite-raw.pl?%s
+     Cat   : Family and domain databases
+    </pre>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keyword:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0956">
+    Kallmann syndrome
+   </a>
+  </li>
+ </ul>
+</div>

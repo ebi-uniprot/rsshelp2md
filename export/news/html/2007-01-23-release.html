@@ -1,0 +1,65 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  Reintroduction of the initiator methionine
+ </h3>
+ <p>
+  In UniProtKB/Swiss-Prot, the sequence data corresponds to the precursor form
+     of a protein, i.e. before post-translational modifications such as cleavage of the signal peptide or other processing. However, for historical reasons, a notable exception was made: when the initiator methionine was post-translationally removed, the sequence stored in UniProtKB/Swiss-Prot did not include the methionine and instead started with the second residue.
+ </p>
+ <p>
+  As a consequence, our sequence data differed from that shown in other sequence databases where the initiator methionine is usually not removed. This discrepancy was confusing for users and was the subject of one of the most frequently asked questions to UniProtKB/Swiss-Prot.
+ </p>
+ <p>
+  This is no longer the case. With this release, all initiator methionines have been reintroduced to the UniProtKB/Swiss-Prot entries (over 10'000) from which it is cleaved. This caused a major change, since all amino acid positions described in these entries have now been updated to reflect the new sequence numbering.
+ </p>
+ <p>
+  The cleavage of the initiator methionine is still indicated by the
+  <code>
+   INIT_MET
+  </code>
+  line in the feature table but the sequence position is 1 instead of 0. We also added the comment
+  <code>
+   Removed
+  </code>
+  in the description field of
+  <code>
+   INIT_MET
+  </code>
+  line to indicate that the initiator methionine is indeed removed post-translationally.
+ </p>
+ <p>
+  Example
+  <a href="http://www.uniprot.org/uniprot/P51487">
+   P51487
+  </a>
+  :
+ </p>
+ <p>
+  Previous format:
+ </p>
+ <pre>
+FT   INIT_MET      0      0
+FT   CHAIN         1    400       Phosrestin-1.
+...
+SQ   SEQUENCE   400 AA;  44781 MW;  DA786D7E9FFB4A29 CRC64;
+      VVSVKVFKK ATPNGKVTFY LGRRHFIDHF DYIDPVDGVI VVDPDYLKNR KVFAQLATIY
+</pre>
+ <p>
+  <strong>
+   New format:
+  </strong>
+ </p>
+ <pre>
+FT   INIT_MET      1      1       Removed.
+FT   CHAIN         2    401       Phosrestin-1.
+...
+SQ   SEQUENCE   401 AA;  44912 MW;  1212C2422CD35A94 CRC64;
+     MVVSVKVFKK ATPNGKVTFY LGRRHFIDHF DYIDPVDGVI VVDPDYLKNR KVFAQLATIY
+</pre>
+ <br/>
+ <h2>
+ </h2>
+</div>

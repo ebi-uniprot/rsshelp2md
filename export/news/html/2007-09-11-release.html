@@ -1,0 +1,140 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  Yeast PDR5: the first adopted protein in UniProtKB/Swiss-Prot
+ </h3>
+ <p>
+  While progress in laboratory techniques allows the production of an
+      ever-increasing flood of data, these data are still insufficiently exploited. One
+      reason for this bottleneck is the lack of efficient integration into databases,
+      making data more difficult, sometimes almost impossible, to access. The current
+      information flow consists in two steps. First, scientists providing knowledge
+      encode it in the format of a given journal. Then database curators have to
+      decode and standardize it to make it computer-parsable and usable for the
+      further research.
+ </p>
+ <p>
+  In order to reduce this time-consuming and error-prone process and to make the
+      most of expert scientists, UniProtKB/Swiss-Prot proposes a new strategy called
+      'Adopt a Protein', where researchers can adopt one or more specific proteins.
+      'Foster parents' make sure that the information concerning their favourite
+      protein(s) is up-to-date. UniProtKB/Swiss-Prot provides them with a draft with
+      the correct sequence, up-to-date sequence analysis predictions and a
+      description of the main topics that require annotation, such as protein names,
+      bibliographic references, comments and protein features. The input of 'foster
+      parents' is acknowledged in the entry.
+ </p>
+ <p>
+  The yeast
+  <a href="http://www.uniprot.org/taxonomy/4932">
+   <em>
+    Saccharomyces cerevisiae
+   </em>
+  </a>
+  is a popular model organism used in hundreds of laboratories around the world
+      and its genome has been fully sequenced and extensively studied over past a
+      decade. Moreover, the yeast community has a long tradition of sharing information.
+      Therefore, the yeast proteome has been chosen as a test platform to initiate the
+      'Adopt a Protein' scheme.
+ </p>
+ <p>
+  This release contains the first fully annotated adopted protein:
+  <a href="http://www.uniprot.org/uniprot/P33302">
+   PDR5
+  </a>
+  . PDR5 is a 160-kDa yeast pleiotropic ABC efflux
+      transporter of multiple drugs localized in the plasma membrane. It belongs to
+      the ABC (ATP-binding cassette) transporter family, PDR subfamily. The PDR
+      subfamily is specific to fungi and plants and exhibits distinctive structural
+      features, such as extended extracellular loops and a degenerate ATP binding
+      domain. Yeast strains lacking PDR5 are used for toxicity tests, whereas those
+      overexpressing PDR5 are used for screening antifungal sensitizers.
+ </p>
+ <p>
+  PDR5 has been adopted by Professor André Goffeau from the Catholic University
+      of Louvain (Belgium). We are grateful to him for committing precious time to
+      help producing an annotation useful to the whole community. We hope that PDR5
+      is only the first member of a big adopted family! If you want to become a 'foster parent',
+      please
+  <a href="http://www.uniprot.org/contact?subject=Fungal+Proteome+Annotation+Program">
+   contact
+       the UniProtKB/Swiss-Prot Fungal Proteome Annotation Program
+  </a>
+  .
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Changes concerning the section 'Web resources'
+ </h3>
+ <p>
+  In the flat file, the 'Web resources' section is located in comment lines (CC). To be
+     consistent with other comment lines, we have changed this topic from
+ </p>
+ <pre>
+     CC   -!- WEB RESOURCE: NAME=<em>resource_name</em>(; NOTE=<em>free_text</em>)?; URL="<em>url</em>".
+    </pre>
+ to
+ <pre>
+     CC   -!- WEB RESOURCE: Name=<em>resource_name</em>(; Note=<em>free_text</em>)?; URL="<em>url</em>";
+    </pre>
+ <h3>
+  Format change in the dbxref.txt and jourlist.txt document files
+ </h3>
+ <p>
+  The
+  <a href="http://www.uniprot.org/docs/dbxref">
+   dbxref.txt
+  </a>
+  file lists the names and
+     abbreviations and URLs of all databases cross-referenced in UniProtKB.
+     The
+  <a href="http://www.uniprot.org/docs/jourlist">
+   jourlist.txt
+  </a>
+  file lists the titles and abbreviations
+     of all journals cited in the UniProtKB/Swiss-Prot.
+     We have added a new field,
+  <strong>
+   AC
+  </strong>
+  , to assign a stable identifier to each record in these files.
+ </p>
+ <p>
+  Examples:
+ </p>
+ <p>
+  <em>
+   dbxref.txt
+  </em>
+ </p>
+ <pre>
+     <strong>AC    : DB-0022</strong>
+     Abbrev: EMBL
+     Name  : EMBL nucleotide sequence database
+     Ref   : Nucleic Acids Res. 35:D16-D20(2007); PubMed=17148479; DOI=10.1093/nar/gkl913;
+     LinkTp: Explicit
+     Server: http://www.ebi.ac.uk/embl/
+     Db_URL: www.ebi.ac.uk/htbin/expasyfetch?%s
+     Cat   : Sequence databases
+    </pre>
+ <p>
+  <em>
+   jourlist.txt
+  </em>
+ </p>
+ <pre>
+     <strong>AC    : JN-1120</strong>
+     Abbrev: J. Mol. Biol.
+     Title : Journal of Molecular Biology
+     ISSN  : 0022-2836
+     e-ISSN: 1089-8638
+     CODEN : JMOBAK
+     Short : JMB
+     Publis: Elsevier Science
+     Server: http://www.elsevier.com/locate/issn/00222836
+    </pre>
+</div>

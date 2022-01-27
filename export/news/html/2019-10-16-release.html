@@ -1,0 +1,615 @@
+<h2 id="Headline">
+ Headline
+</h2>
+<h3 id="Biological_weapons_in_the_struggle_for_life">
+ Biological weapons in the struggle for life
+</h3>
+<p>
+ The apoplast, the extracellular space between plant cells, is a battleground between plants and attacking microorganisms. The battle often starts with the secretion of carbohydrate-degrading enzymes by the invader and a counter-attack by the plant with dedicated enzyme inhibitors. This happens for instance when
+ <a href="http://www.uniprot.org/taxonomy/1094619">
+  <em>
+   Phytophthora sojae
+  </em>
+ </a>
+ invades soybean. During very early infection stages (20 minutes to 2 hours), the oomycete expresses and secretes high levels of a xyloglucanase enzyme, called
+ <a href="http://www.uniprot.org/uniprot/G4ZHR2">
+  XEG1
+ </a>
+ . XEG1 degrades the plant cell wall polymers and not only permits pathogen invasion, but also provides it with nutrients. XEG1 expression declines rapidly from 3 hours onwards.
+</p>
+<p>
+ Like other plants, soybean monitors the apoplastic environment through pattern recognition receptors and
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/26163574">
+  recognizes XEG1 as a PAMP
+ </a>
+ (pathogen-associated molecular pattern). This recognition triggers defense responses, which include the secretion of
+ <a href="http://www.uniprot.org/uniprot/I1JNS6">
+  GIP1
+ </a>
+ , a xyloglucanase inhibitor. Efficient XEG1 inhibition by GIP1 increases soybean resistance towards
+ <em>
+  P. sojae
+ </em>
+ . This could be the end of the story, but
+ <em>
+  P. sojae
+ </em>
+ has another trick up its sleeve.
+</p>
+<p>
+ When
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/28082413">
+  Ma et al.
+ </a>
+ studied GIP1 binding to XEG1 paralogs, they retrieved only one protein, called
+ <a href="http://www.uniprot.org/uniprot/G4ZHR3">
+  XLP1
+ </a>
+ , in addition to XEG1. Like XEG1, XLP1 is targeted to the apoplast. It also shows a similar expression time course to XEG1, i.e. high levels during very early infection stages, followed by a rapid decline, suggesting a role in virulence. Unlike XEG1, however, XLP1 does not show any xyloglucanase activity. It is 52 residues shorter and is missing one of the residues critical for xyloglucanase activity. XLP1 contributes to
+ <em>
+  P. sojae
+ </em>
+ infectivity, but only in the presence of active XEG1. Thus XLP1 acts as a decoy to disrupt plant defenses. It interacts with GIP1 with a five-fold higher affinity than that of XEG1 and hence neutralizes the GIP1 inhibitor. In this setting, XEG1 can pursue plant cell wall digestion without any hindrance.
+</p>
+<p>
+ The
+ <a href="http://www.uniprot.org/uniprot/?query=accession:G4ZHR2+OR+accession:I1JNS6+OR+accession:G4ZHR3">
+  3 belligerent proteins
+ </a>
+ have been annotated in UniProtKB/Swiss-Prot and are publicly available.
+</p>
+<h2 id="UniProtKB_news">
+ UniProtKB news
+</h2>
+<h3 id="Change_of_annotation_topic__Sequence_caution_">
+ Change of annotation topic 'Sequence caution'
+</h3>
+<p>
+ The annotation topic
+ <a href="http://www.uniprot.org/help/sequence%5Fcaution">
+  Sequence caution
+ </a>
+ reports differences between the protein sequence shown in a UniProtKB entry and other available protein sequences derived from the same gene. It indicates the likely cause for the differences, and when that cause is a frameshift or erroneous termination, the amino acid sequence position(s) of these errors were listed when possible. Since it is nowadays easy to align two protein sequences for comparison, we no longer curate error positions and removed the field where this information was stored.
+</p>
+<h4 id="Text_format">
+ Text format
+</h4>
+<p>
+ We removed the optional
+ <code>
+  Positions
+ </code>
+ field.
+</p>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P14332.txt">
+  P14332
+ </a>
+</p>
+<p>
+ Previous format:
+</p>
+<pre>CC   -!- SEQUENCE CAUTION: Sequence=CAA34633.1; Type=Frameshift; Positions=226, 249; Evidence={ECO:0000305};
+</pre>
+<p>
+ New format:
+</p>
+<pre>CC   -!- SEQUENCE CAUTION: Sequence=CAA34633.1; Type=Frameshift; Evidence={ECO:0000305};
+</pre>
+<h4 id="XML_format">
+ XML format
+</h4>
+<p>
+ This change did not affect the
+ <a href="http://www.uniprot.org/docs/uniprot.xsd">
+  UniProtKB XSD
+ </a>
+ .
+</p>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P14332.xml">
+  P14332
+ </a>
+</p>
+<p>
+ Previous format:
+</p>
+<pre>&lt;comment type="sequence caution" evidence="3"&gt;
+  &lt;conflict type="frameshift"&gt;
+    &lt;sequence resource="EMBL-CDS" id="CAA34633" version="1"/&gt;
+  &lt;/conflict&gt;
+  &lt;location&gt;
+    &lt;position position="226"/&gt;
+  &lt;/location&gt;
+  &lt;location&gt;
+    &lt;position position="249"/&gt;
+  &lt;/location&gt;
+&lt;/comment&gt;
+</pre>
+<p>
+ New format:
+</p>
+<pre>&lt;comment type="sequence caution" evidence="3"&gt;
+  &lt;conflict type="frameshift"&gt;
+    &lt;sequence resource="EMBL-CDS" id="CAA34633" version="1"/&gt;
+  &lt;/conflict&gt;
+&lt;/comment&gt;
+</pre>
+<h4 id="RDF_format">
+ RDF format
+</h4>
+<p>
+ This change required an adaptation of the hierarchy of
+ <a href="http://purl.uniprot.org/core/Annotation">
+  <code>
+   Annotation
+  </code>
+ </a>
+ classes in the
+ <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/rdf/core.owl">
+  UniProt RDF schema ontology
+ </a>
+ : The
+ <a href="http://purl.uniprot.org/core/Sequence%5FCaution%5FAnnotation">
+  <code>
+   Sequence_Caution_Annotation
+  </code>
+ </a>
+ class is no longer an
+ <code>
+  rdfs:subClassOf
+ </code>
+ of the
+ <a href="http://purl.uniprot.org/core/Sequence%5FAnnotation">
+  <code>
+   Sequence_Annotation
+  </code>
+ </a>
+ class, but a direct
+ <code>
+  rdfs:subClassOf
+ </code>
+ of the
+ <a href="http://purl.uniprot.org/core/Annotation">
+  <code>
+   Annotation
+  </code>
+ </a>
+ class.
+</p>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P14332.ttl">
+  P14332
+ </a>
+</p>
+<p>
+ Previous format:
+</p>
+<pre>uniprot:P14332
+  up:annotation &lt;P14332#SIP7159608509D280BB&gt; .
+
+&lt;P14332#SIPBBAF3CC29FCD3715&gt;
+  rdf:type up:Frameshift_Annotation ;
+  up:conflictingSequence &lt;P14332#SIPD8B2EDFEB46FA203&gt; ;
+  up:range range:22572098403906094tt226tt226 ,
+           range:22572098403906094tt249tt249 .
+range:22572098403906094tt226tt226
+  rdf:type faldo:Region ;
+  faldo:begin position:22572098403906094tt226 ;
+  faldo:end position:22572098403906094tt226 .
+position:22572098403906094tt226
+  rdf:type faldo:Position , faldo:ExactPosition ;
+  faldo:position 226 ;
+  faldo:reference isoform:P14332-1 .
+range:22572098403906094tt249tt249
+  rdf:type faldo:Region ;
+  faldo:begin position:22572098403906094tt249 ;
+  faldo:end position:22572098403906094tt249 .
+position:22572098403906094tt249
+  rdf:type faldo:Position , faldo:ExactPosition ;
+  faldo:position 249 ;
+  faldo:reference isoform:P14332-1 .
+</pre>
+<p>
+ New format:
+</p>
+<pre>uniprot:P14332
+  up:annotation &lt;P14332#SIP7159608509D280BB&gt; .
+
+&lt;P14332#SIPBBAF3CC29FCD3715&gt;
+  rdf:type up:Frameshift_Annotation ;
+  up:conflictingSequence &lt;P14332#SIPD8B2EDFEB46FA203&gt; .
+</pre>
+<h3 id="Cross_references_to_PlantReactome">
+ Cross-references to PlantReactome
+</h3>
+<p>
+ Cross-references have been added to PlantReactome, a curated resource of core pathways and reactions in plant biology.
+</p>
+<p>
+ PlantReactome is available at
+ <a href="https://plantreactome.gramene.org">
+  https://plantreactome.gramene.org
+ </a>
+</p>
+<p>
+ The format of the explicit links is:
+</p>
+<table>
+ <tr>
+  <th>
+   Resource abbreviation
+  </th>
+  <td>
+   PlantReactome
+  </td>
+ </tr>
+ <tr>
+  <th>
+   Resource identifier
+  </th>
+  <td>
+   Resource identifier
+  </td>
+ </tr>
+ <tr>
+  <th>
+   Optional information
+  </th>
+  <td>
+   Pathway name
+  </td>
+ </tr>
+</table>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P0C128">
+  P0C128
+ </a>
+</p>
+<p>
+ <a href="http://www.uniprot.org/uniprot/?query=database:(type:plantreactome)&amp;sort=score">
+  Show all entries having a cross-reference to PlantReactome.
+ </a>
+</p>
+<h4 id="Text_format">
+ Text format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P0C128.txt">
+  P0C128
+ </a>
+</p>
+<pre>DR   PlantReactome; R-OSA-5608118; Auxin signalling.
+</pre>
+<h4 id="XML_format">
+ XML format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P0C128.xml">
+  P0C128
+ </a>
+</p>
+<pre>&lt;dbReference type="PlantReactome" id="R-OSA-5608118"&gt;
+  &lt;property type="pathway name" value="Auxin signalling"/&gt;
+&lt;/dbReference&gt;
+</pre>
+<h4 id="RDF_format">
+ RDF format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P0C128.ttl">
+  P0C128
+ </a>
+</p>
+<pre>uniprot:P0C128
+  rdfs:seeAlso &lt;http://purl.uniprot.org/plantreactome/R-OSA-5608118&gt; .
+&lt;http://purl.uniprot.org/plantreactome/R-OSA-5608118&gt;
+  rdf:type up:Resource ;
+  up:database &lt;http://purl.uniprot.org/database/PlantReactome&gt; ;
+  rdfs:comment "Auxin signalling" .
+</pre>
+<h3 id="Change_of_the_cross_references_to_Reactome">
+ Change of the cross-references to Reactome
+</h3>
+<p>
+ Cross-references to Reactome may now be isoform-specific. The general format of isoform-specific cross-references was described in release
+ <a href="http://www.uniprot.org/news/2014/03/19/release">
+  2014_03
+ </a>
+ .
+</p>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P00167">
+  P00167
+ </a>
+</p>
+<h3 id="Changes_to_the__a_href___docs_humdisease__controlled_vocabulary_of_human_diseases__a_">
+ Changes to the
+ <a href="http://www.uniprot.org/docs/humdisease">
+  controlled vocabulary of human diseases
+ </a>
+</h3>
+<p>
+ New diseases:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05612">
+   Aortic valve disease 3
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05605">
+   Arthrogryposis multiplex congenita, myogenic type
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05616">
+   Cerebellar atrophy with seizures and variable developmental delay
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05618">
+   Coffin-Siris syndrome 10
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05610">
+   Congenital hypotonia, epilepsy, developmental delay, and digital anomalies
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05625">
+   Contractures, pterygia, and variable skeletal fusions syndrome 1A
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05623">
+   GIST-plus syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05615">
+   Holoprosencephaly 12 with or without pancreatic agenesis
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05609">
+   Hypotonia, hyperventilation, impaired intellectual development, dysautonomia, epilepsy, and eye abnormalities
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05611">
+   Immunodeficiency 63 with lymphoproliferation and autoimmunity
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05617">
+   Intellectual developmental disorder, autosomal recessive 71
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05622">
+   Intellectual developmental disorder 59
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05621">
+   Leber congenital amaurosis 19
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05603">
+   Nephrotic syndrome 20
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05608">
+   Neurodevelopmental disorder with coarse facies and mild distal skeletal abnormalities
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05606">
+   Neurodevelopmental disorder with microcephaly and structural brain anomalies
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05607">
+   Neurodevelopmental disorder with seizures and non-epileptic hyperkinetic movements
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05619">
+   Neuropathy, hereditary motor and sensory, 6C, with optic atrophy
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05614">
+   Noonan syndrome 11
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05620">
+   O'Donnell-Luria-Rodan syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05613">
+   Polydactyly, postaxial, A10
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05604">
+   Shukla-Vernon syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05624">
+   Spondyloepimetaphyseal dysplasia, sponastrime type
+  </a>
+ </li>
+</ul>
+<p>
+ Modified diseases:
+</p>
+<ul>
+ <li>
+  Arthrogryposis, distal, 2B -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01493">
+   Arthrogryposis, distal, 2B1
+  </a>
+ </li>
+ <li>
+  Arthrogryposis, distal, 9 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01397">
+   Contractural arachnodactyly, congenital
+  </a>
+ </li>
+ <li>
+  Hyperlipidemia, familial combined -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05232">
+   Hyperlipidemia, familial combined, 3
+  </a>
+ </li>
+ <li>
+  Hyperlipidemia combined 1 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02816">
+   Hyperlipidemia, familial combined, 1
+  </a>
+ </li>
+ <li>
+  Kahn-Kahn-Katsanis syndrome -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05588">
+   Khan-Khan-Katsanis syndrome
+  </a>
+ </li>
+ <li>
+  Lipoprotein lipase deficiency -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01911">
+   Hyperlipoproteinemia 1
+  </a>
+ </li>
+ <li>
+  Mental retardation, X-linked, syndromic, with hypotonic facies 1 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-00723">
+   Mental retardation-hypotonic facies syndrome, X-linked, 1
+  </a>
+ </li>
+ <li>
+  Mental retardation, X-linked, ARX-related -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-00724">
+   Mental retardation, X-linked, with or without seizures, ARX-related
+  </a>
+ </li>
+ <li>
+  Polydactyly preaxial 4 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02401">
+   Polydactyly, preaxial 4
+  </a>
+ </li>
+ <li>
+  Spastic paraplegia 23 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-04976">
+   Spastic paraplegia 23, autosomal recessive
+  </a>
+ </li>
+</ul>
+<p>
+ Deleted diseases
+</p>
+<ul>
+ <li>
+  Mental retardation, X-linked 17
+ </li>
+</ul>
+<h3 id="Changes_to_the__a_href___docs_ptmlist__controlled_vocabulary_for_PTMs__a_">
+ Changes to the
+ <a href="http://www.uniprot.org/docs/ptmlist">
+  controlled vocabulary for PTMs
+ </a>
+</h3>
+<p>
+ New terms for the feature key 'Cross-link' ('CROSSLNK' in the flat file):
+</p>
+<ul>
+ <li>
+  N5-[4-(S-L-cysteinyl)-5-methyl-1H-imidazol-2-yl]-L-ornithine (Arg-Cys) (interchain with C-...)
+ </li>
+ <li>
+  N5-[4-(S-L-cysteinyl)-5-methyl-1H-imidazol-2-yl]-L-ornithine (Cys-Arg) (interchain with R-...)
+ </li>
+</ul>
+<p>
+ New term for the feature key 'Glycosylation' ('CARBOHYD' in the flat file):
+</p>
+<ul>
+ <li>
+  N-linked (Glc) (glycation) arginine
+ </li>
+</ul>
+<p>
+ New terms for the feature key 'Modified residue' ('MOD_RES' in the flat file):
+</p>
+<ul>
+ <li>
+  S-(2-succinyl)cysteine
+ </li>
+ <li>
+  N6-carbamoyllysine
+ </li>
+ <li>
+  S-(2,3-dicarboxypropyl)cysteine
+ </li>
+ <li>
+  S-cGMP-cysteine
+ </li>
+</ul>
+<h3 id="Changes_in__a_href___docs_subcell__subcellular_location_controlled_vocabulary__a_">
+ Changes in
+ <a href="http://www.uniprot.org/docs/subcell">
+  subcellular location controlled vocabulary
+ </a>
+</h3>
+<p>
+ New subcellular locations:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0518">
+   Neuron projection
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0515">
+   Postsynapse
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0520">
+   Postsynaptic density membrane
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0516">
+   Presynapse
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0519">
+   Presynaptic active zone
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0517">
+   Synaptic cleft
+  </a>
+ </li>
+</ul>

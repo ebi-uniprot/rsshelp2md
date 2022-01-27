@@ -1,0 +1,465 @@
+<h2 id="Headline">
+ Headline
+</h2>
+<h3 id="Regulation_of_translation_initiation_through_folding">
+ Regulation of translation initiation through folding
+</h3>
+<p>
+ Many physiopathological events, such as stress or nutrient deprivation, induce rapid changes in cellular protein levels. In these cases, cells preferentially use translational control of existing mRNAs over transcriptional control, since the latter generates a slower response. Translation can be divided into 4 steps, initiation, elongation, termination, and ribosome recycling, but most regulation occurs at the initiation level.
+ <br/>
+ In eukaryotes, translation initiation involves recruitment of the 40S ribosome to mRNA by the eukaryotic initiation factor 4F (eIF4F) complex. This complex is composed of
+ <a href="http://www.uniprot.org/uniprot/?query=gene:eIF4E+and+reviewed:yes">
+  eIF4E
+ </a>
+ , which binds to the mRNA
+ <a href="http://en.wikipedia.org/wiki/Five-prime%5Fcap">
+  5' cap structure
+ </a>
+ , eIF4A, an RNA helicase and
+ <a href="http://www.uniprot.org/uniprot/?query=gene:eIF4G+and+reviewed:yes">
+  eIF4G
+ </a>
+ , a scaffolding protein. Availability of eIF4E is rate-limiting in this process and it is an important target for control. Under stress or starvation conditions, when translation has to be rapidly repressed, eIF4E binding proteins (4E-BPs) interact with eIF4E outcompeting eIF4G, hence preventing eIF4F assembly and cap-dependent translation initiation. 3
+ <a href="http://www.uniprot.org/uniprot/?query=gene:eif4ebp%2A+AND+taxonomy:40674+and+reviewed:yes">
+  4E-BPs
+ </a>
+ have been identified in mammals. 4E-BP2 (
+ <a href="http://www.uniprot.org/uniprot/?query=gene:eif4ebp2+and+reviewed:yes">
+  EIF4EBP2
+ </a>
+ ) is one of them. It is an intrinsically disordered protein (IDP) that contains several phosphorylation sites. In its unphosphorylated state, 4E-BP2 interacts with eIF4E via 2 domains: a YXXXXLΦ motif (
+ <a href="http://www.uniprot.org/blast/?about=Q13542[54-60]&amp;key=Motif">
+  residues 54 through 60
+ </a>
+ ) and a
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/24207126">
+  secondary dynamic motif
+ </a>
+ (
+ <a href="http://www.uniprot.org/blast/?about=Q13542[78-82]&amp;key=Motif">
+  residues 78 through 82
+ </a>
+ ). The unphosphorylated (or minimally phosphorylated), eIF4E-binding form of EIF4EBP2 is unstable and targeted for degradation via the ubiquitin-proteasome pathway. By contrast, highly phosphorylated 4E-BP2 is very stable, but only weakly binds to eIF4E and hence can be outcompeted by eIF4G, allowing translation to occur.
+</p>
+<p>
+ How does phosphorylation regulate 4E-BP2 interaction with eIF4E and its stability? It has been
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/25533957">
+  recently shown
+ </a>
+ that phosphorylation induces a widespread disorder-to-order transition occurring in 2 steps. First, phosphorylation at Thr-37 and Thr-46 by
+ <a href="http://www.uniprot.org/uniprot/?query=gene:mtor+AND+taxonomy:40674+and+reviewed:yes">
+  MTOR
+ </a>
+ induces folding of residues Pro-18 to Arg-62 into a four-stranded β-domain that sequesters the helical YXXXXLΦ motif into a partially buried β-strand, blocking accessibility to eIF4E. The folding also protects Lys-57 from ubiquitination, preventing proteasomal degradation. This ordered structure is further stabilized by phosphorylation at Ser-65, Thr-70 and Ser-83. The fully phosphorylated protein has an affinity for eIF4E 4,000 fold lower than the unphosphorylated form. This observation implies that binding must be coupled to unfolding in order to free the YXXXXLΦ motif, and it is indeed what is experimentally observed. When the phosphorylated form binds eIF4E, it undergoes an order-to-disorder transition, as suggested by NMR spectra that are similar to those of the unphosphorylated form.
+</p>
+<p>
+ Although it has long been suspected that the function of IDPs may be controlled by post-translational modifications (PTMs), this is the first report experimentally showing how a PTM can fold an entire domain. This new data have been annotated into UniProtKB/Swiss-Prot and as of this release, the updated
+ <a href="http://www.uniprot.org/uniprot/?query=gene:eif4ebp2+and+reviewed:yes">
+  EIF4EBP2 entry
+ </a>
+ is publicly available.
+</p>
+<h2 id="UniProtKB_news">
+ UniProtKB news
+</h2>
+<h3 id="New_proteomics_mapping_files">
+ New proteomics mapping files
+</h3>
+<p>
+ Mappings of UniProt Knowledgebase (UniProtKB) human sequences to identified human peptides from public mass spectrometry (MS) proteomics repositories can now be found in the new dedicated 'proteomics_mapping' directory on the
+ <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/proteomics%5Fmapping/">
+  UniProt FTP site
+ </a>
+ together with a
+ <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/proteomics%5Fmapping/README">
+  description of how the mappings were generated
+ </a>
+ . The mappings are based on our analysis of the content of those MS proteomics repositories that openly share with us their data and quality metrics concerning peptide identifications.
+</p>
+<p>
+ Mass spectrometry provides direct experimental evidence for the existence of proteins and these new peptide mappings greatly increase the proportion of human sequences in UniProtKB whose existence is supported by experimental proteomics data. The human reference proteome currently contains 89383 sequences and our analysis provides mass spectrometry evidence for 68229 of those sequences.
+</p>
+<p>
+ In future UniProt releases, we expect to add data from more MS proteomics repositories and additional species. We very much welcome the feedback of the community on our efforts.
+</p>
+<h3 id="New_FTP_repository_for_reference_proteomes">
+ New FTP repository for reference proteomes
+</h3>
+<p>
+ Based on a gene-centric perspective, UniProt Knowledgebase (UniProtKB) starts to provide
+ <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/reference%5Fproteomes/README">
+  data sets for reference proteomes
+ </a>
+ , whose repository can be found at the new
+ <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/reference%5Fproteomes/">
+  reference_proteomes
+ </a>
+ directory.
+</p>
+<p>
+ As of release 2015_03, it encompasses 1933 species distributed in Eukaryota, Archaea and Bacteria. Viruses will be added in the next release.
+</p>
+<h3 id="Removal_of_the_cross_references_to_PhosSite">
+ Removal of the cross-references to PhosSite
+</h3>
+<p>
+ Cross-references to PhosSite have been removed.
+</p>
+<h3 id="Removal_of_the_cross_references_to_PptaseDB">
+ Removal of the cross-references to PptaseDB
+</h3>
+<p>
+ Cross-references to PptaseDB have been removed.
+</p>
+<h3 id="Changes_to_the__a_href___docs_humdisease__controlled_vocabulary_of_human_diseases__a_">
+ Changes to the
+ <a href="http://www.uniprot.org/docs/humdisease">
+  controlled vocabulary of human diseases
+ </a>
+</h3>
+<p>
+ New diseases:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04293">
+   Aortic aneurysm, familial thoracic 9
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04302">
+   Autoimmune lymphoproliferative syndrome 5
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04294">
+   Bleeding disorder, platelet-type 19
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04282">
+   Cardiac conduction disease with or without dilated cardiomyopathy
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04301">
+   Catel-Manzke syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04289">
+   Epileptic encephalopathy, early infantile, 27
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04279">
+   Familial cold autoinflammatory syndrome 4
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04300">
+   Generalized epilepsy with febrile seizures plus 9
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04280">
+   Immunodeficiency 38
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04288">
+   Leukodystrophy, hypomyelinating, 9
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04283">
+   Mental retardation, autosomal recessive 46
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04299">
+   Microcephaly and chorioretinopathy, autosomal recessive, 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04284">
+   Mitochondrial complex III deficiency, nuclear 9
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04285">
+   Macular degeneration, early-onset
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04286">
+   Macular dystrophy, vitelliform, 4
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04287">
+   Macular dystrophy, vitelliform, 5
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04295">
+   Macular dystrophy with central cone involvement
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04292">
+   Nemaline myopathy 10
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04296">
+   Ovarian dysgenesis 4
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04281">
+   Perrault syndrome 5
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04291">
+   Polyendocrine-polyneuropathy syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04298">
+   Retinal dystrophy and obesity
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04303">
+   Retinal dystrophy, juvenile cataracts, and short stature syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04290">
+   Spinocerebellar ataxia, autosomal recessive, 17
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04297">
+   Temple-Baraitser syndrome
+  </a>
+ </li>
+</ul>
+<p>
+ Modified disease:
+</p>
+<ul>
+ <li>
+  Vitelliform macular dystrophy 2 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01124">
+   Macular dystrophy, vitelliform, 2
+  </a>
+ </li>
+</ul>
+<p>
+ Deleted diseases:
+</p>
+<ul>
+ <li>
+  Amelogenesis imperfecta and gingival fibromatosis syndrome
+ </li>
+ <li>
+  Glycogen storage disease 14
+ </li>
+ <li>
+  Ichthyosis, autosomal recessive, with hypotrichosis
+ </li>
+ <li>
+  Loeys-Dietz syndrome 2A
+ </li>
+ <li>
+  Loeys-Dietz syndrome 2B
+ </li>
+ <li>
+  Leigh syndrome, X-linked
+ </li>
+ <li>
+  Mental retardation, X-linked 59
+ </li>
+</ul>
+<h3 id="Changes_to__a_href___docs_keywlist__keywords__a_">
+ Changes to
+ <a href="http://www.uniprot.org/docs/keywlist">
+  keywords
+ </a>
+</h3>
+<p>
+ New keyword:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/keywords/KW-1267">
+   Proteomics identification
+  </a>
+ </li>
+</ul>
+<h2 id="UniParc_news">
+ UniParc news
+</h2>
+<h3 id="UniParc_cross_references_with_proteome_identifier_and_component">
+ UniParc cross-references with proteome identifier and component
+</h3>
+<p>
+ The UniParc XML format uses
+ <code>
+  dbReference
+ </code>
+ elements to represent cross-references to external database records that contain the same sequence as the UniParc record. Additional information about an external database record is provided with different types of
+ <code>
+  property
+ </code>
+ child elements. We have introduced two new types for cross-references to external database records from which
+ <a href="http://www.uniprot.org/faq/proteome">
+  UniProt proteomes
+ </a>
+ are derived: The type
+ <code>
+  "proteome_id"
+ </code>
+ shows the identifier of the corresponding
+ <a href="http://www.uniprot.org/proteomes">
+  UniProt proteome
+ </a>
+ and the type
+ <code>
+  "component"
+ </code>
+ the genomic component which encodes the protein. As a first step, we have added this information to bacterial
+ <a href="http://www.ebi.ac.uk/ena/">
+  ENA
+ </a>
+ records.
+</p>
+<p>
+ Example:
+</p>
+<pre>&lt;entry dataset="uniparc"&gt;
+    &lt;accession&gt;UPI0000131B78&lt;/accession&gt;
+    &lt;dbReference type="EMBL" id="AAK44239" version_i="1" active="Y" version="1" created="2003-03-12" last="2014-11-23"&gt;
+        &lt;property type="NCBI_GI" value="13879058"/&gt;
+        &lt;property type="NCBI_taxonomy_id" value="83331"/&gt;
+        &lt;property type="protein_name" value="serine/threonine protein kinase"/&gt;
+        &lt;property type="gene_name" value="MT0017"/&gt;
+        &lt;property type="proteome_id" value="UP000001020"/&gt;
+        &lt;property type="component" value="Chromosome"/&gt;
+    &lt;/dbReference&gt;
+    &lt;dbReference type="EMBL" id="ABQ71734" version_i="1" active="Y" version="1" created="2007-07-09" last="2014-11-23"&gt;
+        &lt;property type="NCBI_GI" value="148503925"/&gt;
+        &lt;property type="NCBI_taxonomy_id" value="419947"/&gt;
+        &lt;property type="protein_name" value="serine/threonine protein kinase"/&gt;
+        &lt;property type="gene_name" value="pknB"/&gt;
+        &lt;property type="proteome_id" value="UP000001988"/&gt;
+        &lt;property type="component" value="Chromosome"/&gt;
+    &lt;/dbReference&gt;
+    ...
+    &lt;dbReference type="EMBL_CON" id="EFD75652" version_i="1" active="Y" version="2" created="2011-12-05" last="2014-11-23"&gt;
+        &lt;property type="NCBI_taxonomy_id" value="537209"/&gt;
+        &lt;property type="protein_name" value="transmembrane serine/threonine-protein kinase B pknB"/&gt;
+        &lt;property type="gene_name" value="TBIG_00439"/&gt;
+        &lt;property type="proteome_id" value="UP000004676"/&gt;
+        &lt;property type="component" value="Unassembled WGS sequence"/&gt;
+    &lt;/dbReference&gt;
+    ...
+&lt;/entry&gt;
+</pre>
+<p>
+ This change did not affect the
+ <a href="http://www.uniprot.org/docs/uniparc.xsd">
+  UniParc XSD
+ </a>
+ , but may nevertheless require code changes.
+</p>
+<h2 id="UniProt_RDF_news">
+ UniProt RDF news
+</h2>
+<h3 id="UniProt_RDF_files_compressed_with_XZ_instead_of_gzip">
+ UniProt RDF files compressed with XZ instead of gzip
+</h3>
+<p>
+ The UniProt RDF distribution has been available on the
+ <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/rdf/">
+  UniProt FTP site
+ </a>
+ as gzip compressed RDF/XML files since 2008. We have now changed the compression algorithm from gzip to
+ <a href="http://tukaani.org/xz/">
+  XZ
+ </a>
+ , which has a number of features that make it a better choice for the UniProt RDF data:
+</p>
+<ul>
+ <li>
+  It reduces the file size by approximately 23%, which improves FTP download time.
+ </li>
+ <li>
+  It can be decompressed in parallel, which can give faster decompression rates on current hardware with a minimum of 6-8 CPU cores.
+ </li>
+ <li>
+  It allows
+  <a href="http://tukaani.org/xz/xz-javadoc/index.html?org/tukaani/xz/SeekableXZInputStream.html">
+   random access
+  </a>
+  .
+ </li>
+</ul>
+<h3 id="Replacement_of_UniProt_RDF_file_go_rdf_with_go_owl">
+ Replacement of UniProt RDF file go.rdf with go.owl
+</h3>
+<p>
+ The UniProt RDF distribution that is available on the
+ <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/rdf/">
+  UniProt FTP site
+ </a>
+ contained a
+ <code>
+  go.rdf
+ </code>
+ file that has been replaced with a
+ <code>
+  go.owl
+ </code>
+ file that contains a subset of the official
+ <code>
+  go.owl
+ </code>
+ distribution of the Gene Ontology consortium, which is taken as a snapshot that is in sync with the GO annotations in the UniProt Knowledgebase.
+</p>
+<p>
+ In practical terms this means:
+</p>
+<ul>
+ <li>
+  Scripts downloading
+  <code>
+   go.rdf
+  </code>
+  must be changed to download
+  <code>
+   go.owl
+  </code>
+  instead.
+ </li>
+ <li>
+  The URL pattern
+  <code>
+   http://purl.uniprot.org/go/
+  </code>
+  has been replaced by
+  <code>
+   http://purl.obolibrary.org/obo/GO_
+  </code>
+ </li>
+ <li>
+  Querying for a GO term linked to a UniProt record using SPARQL can be done with:
+  <br/>
+  <a href="http://beta.sparql.uniprot.org/sparql/?format=html&amp;query=PREFIX+owl%3A%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E+%0D%0APREFIX+up%3A%3Chttp%3A%2F%2Fpurl.uniprot.org%2Fcore%2F%3E+%0D%0Aselect+%3Fprotein+%3Fgo+where+%7B%3Fprotein+up%3AclassifiedWith+%3Fgo+.%3Fgo+a+owl%3AClass%7D">
+   select ?protein ?go where {?protein up:classifiedWith ?go . ?go a owl:Class}
+  </a>
+ </li>
+</ul>

@@ -1,0 +1,676 @@
+<h2 id="Headline">
+ Headline
+</h2>
+<h3 id="Mitochondrial_call_for_help">
+ Mitochondrial call for help
+</h3>
+<p>
+ Life is a continuous chain of issues that have to be addressed for survival and our cells know all about that. Hypoxia, amino acid deprivation, glucose deprivation, viral infection, endoplasmic reticulum stress are but a few examples. That's why eukaryotic cells have developed an elaborate signaling pathway, called the integrated stress response (ISR), which is activated in the cytosol in response to a range of physiological changes and pathological conditions. Stress stimuli that activate ISR all converge on the phosphorylation of the alpha subunit of eukaryotic translation initiation factor 2 (EIF2A). Depending upon the stress stimulus, the reaction is catalyzed by one of the four following kinases: GCN2/EIF2AK4, PERK/EIF2AK3, PKR/EIF2AK2 and HRI/EIF2AK1. EIF2A phosphorylation leads to attenuation in 5' cap-dependent protein synthesis, while promoting the translation of selected mRNAs that harbor a short upstream open reading frame in their 5'-untranslated region, including those for transcription factors ATF4, ATF5 or DDIT3 (also known as CHOP). ISR is primarily a survival program, but exposure to severe stress can also lead to apoptosis.
+</p>
+<p>
+ Mitochondrial stress also strongly induces the expression of ATF4 and DDIT3, and hence triggers ISR, but the pathway signaling mitochondrial stress to the cytosol was elusive until the publication of
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/32132706,32132707">
+  two articles in March of this year
+ </a>
+ . DDIT3 induction requires at least two mitochondrial proteins:
+ <a href="http://www.uniprot.org/uniprot/?query=name%3A%22metalloendopeptidase+OMA1%22+AND+reviewed:yes">
+  OMA1
+ </a>
+ and
+ <a href="http://www.uniprot.org/uniprot/?query=gene:DELE1+AND+reviewed:yes">
+  DELE1
+ </a>
+ , and the cytosolic kinase
+ <a href="http://www.uniprot.org/uniprot/?query=gene%3AEIF2AK1+AND+reviewed:yes">
+  HRI
+ </a>
+ . OMA1 is a metalloprotease located in the mitochondrial inner membrane. It is activated by mitochondrial dysfunction, possibly via membrane depolarization. OMA1 cleaves DELE1 in the intermembrane space and the N-terminally truncated DELE1 fragment enters the cytosol where it interacts with and activates HRI and hence stress response. The consequences of ISR during mitochondrial dysfunction are not yet fully understood and DELE1 may not be the only mitochondrial ISR activator, but one missing link between mitochondrial stress and ISR has been clearly established.
+</p>
+<p>
+ As of this release, the
+ <a href="http://www.uniprot.org/uniprot/?query=name%3A%22metalloendopeptidase+OMA1%22+AND+reviewed:yes">
+  OMA1 protease
+ </a>
+ and
+ <a href="http://www.uniprot.org/uniprot/?query=gene:DELE1+AND+reviewed:yes">
+  DELE1
+ </a>
+ have been updated and are available in UniProtKB/Swiss-Prot. To annotate DELE1, we took advantage of the
+ <a href="http://www.uniprot.org/news/2019/12/18/release">
+  new format announced last December
+ </a>
+ , which allows us to describe product-specific features, be it that of an alternative splicing isoform, for example, or of a peptide resulting from proteolytic cleavage. EIF2AK1 activation is a function restricted to the DELE1 cleavage product, and this uniqueness is clearly reported in the 'FUNCTION' subsection dedicated to DELE1 short form.
+</p>
+<h2 id="UniProtKB_news">
+ UniProtKB news
+</h2>
+<h3 id="Cross_references_to_IDEAL">
+ Cross-references to IDEAL
+</h3>
+<p>
+ Cross-references have been added to the IDEAL database, a database of Intrinsically Disordered proteins.
+</p>
+<p>
+ IDEAL is available at
+ <a href="http://idp1.force.cs.is.nagoya-u.ac.jp/IDEAL/">
+  http://idp1.force.cs.is.nagoya-u.ac.jp/IDEAL/
+ </a>
+ .
+</p>
+<p>
+ The format of the explicit links is:
+</p>
+<table>
+ <tr>
+  <th>
+   Resource abbreviation
+  </th>
+  <td>
+   IDEAL
+  </td>
+ </tr>
+ <tr>
+  <th>
+   Resource identifier
+  </th>
+  <td>
+   Resource identifier
+  </td>
+ </tr>
+</table>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/O15162">
+  O15162
+ </a>
+</p>
+<p>
+ <a href="http://www.uniprot.org/uniprot/?query=database:ideal&amp;sort=score">
+  Show all entries having a cross-reference to IDEAL.
+ </a>
+</p>
+<h4 id="Text_format">
+ Text format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/O15162.txt">
+  O15162
+ </a>
+</p>
+<pre>DR   IDEAL; IID00006; -.
+</pre>
+<h4 id="XML_format">
+ XML format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/O15162.xml">
+  O15162
+ </a>
+</p>
+<pre>&lt;dbReference type="IDEAL" id="IID00006"/&gt;
+</pre>
+<h4 id="RDF_format">
+ RDF format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/O15162.ttl">
+  O15162
+ </a>
+</p>
+<pre>uniprot:O15162
+  rdfs:seeAlso &lt;http://identifiers.org/ideal/IID00006&gt; .
+&lt;http://identifiers.org/ideal/IID00006&gt;
+  rdf:type up:Resource ;
+  up:database &lt;http://purl.uniprot.org/database/IDEAL&gt; .
+</pre>
+<h3 id="Cross_references_to_BioGRID_ORCS">
+ Cross-references to BioGRID-ORCS
+</h3>
+<p>
+ Cross-references have been added to the BioGRID-ORCS database, a database of CRISPR phenotype screens.
+</p>
+<p>
+ BioGRID-ORCS is available at
+ <a href="https://orcs.thebiogrid.org">
+  https://orcs.thebiogrid.org
+ </a>
+ .
+</p>
+<p>
+ The format of the explicit links is:
+</p>
+<table>
+ <tr>
+  <th>
+   Resource abbreviation
+  </th>
+  <td>
+   BioGRID-ORCS
+  </td>
+ </tr>
+ <tr>
+  <th>
+   Resource identifier
+  </th>
+  <td>
+   Resource identifier
+  </td>
+ </tr>
+ <tr>
+  <th>
+   Optional information 1
+  </th>
+  <td>
+   Number of hits
+  </td>
+ </tr>
+</table>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/Q96A29">
+  Q96A29
+ </a>
+</p>
+<p>
+ <a href="http://www.uniprot.org/uniprot/?query=database:biogrid-orcs&amp;sort=score">
+  Show all entries having a cross-reference to BioGRID-ORCS.
+ </a>
+</p>
+<h4 id="Text_format">
+ Text format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/Q96A29.txt">
+  Q96A29
+ </a>
+</p>
+<pre>DR   BioGRID-ORCS; 55343; 19 Hits in 787 CRISPR Screens.
+</pre>
+<h4 id="XML_format">
+ XML format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/Q96A29.xml">
+  Q96A29
+ </a>
+</p>
+<pre>&lt;dbReference type="BioGRID-ORCS" id="55343"&gt;
+  &lt;property type="hits" value="19 Hits in 787 CRISPR Screens"/&gt;
+&lt;/dbReference&gt;
+</pre>
+<h4 id="RDF_format">
+ RDF format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/Q96A29.ttl">
+  Q96A29
+ </a>
+</p>
+<pre>uniprot:Q96A29
+  rdfs:seeAlso &lt;http://purl.uniprot.org/biogrid-orcs/55343&gt; .
+&lt;http://purl.uniprot.org/biogrid-orcs/55343&gt;
+  rdf:type up:Resource ;
+  up:database &lt;http://purl.uniprot.org/database/BioGRID-ORCS&gt; ;
+  rdfs:comment "19 Hits in 787 CRISPR Screens" .
+</pre>
+<h3 id="Change_to_the_cross_references_to_ABCD">
+ Change to the cross-references to ABCD
+</h3>
+<p>
+ We have introduced an additional field in the cross-references to the
+ <a href="https://web.expasy.org/abcd">
+  ABCD (AntiBodies Chemically Defined)
+ </a>
+ database, a manually curated depository of sequenced antibodies. This allows us to specify the number of sequenced antibodies available for a given protein in UniProtKB.
+</p>
+<h4 id="Text_format">
+ Text format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/O75084.txt">
+  O75084
+ </a>
+</p>
+<p>
+ Previous format:
+</p>
+<pre>DR   ABCD; O75084; -.
+</pre>
+<p>
+ New format:
+</p>
+<pre>DR   ABCD; O75084; 10 sequenced antibodies.
+</pre>
+<h4 id="XML_format">
+ XML format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/O75084.xml">
+  O75084
+ </a>
+</p>
+<p>
+ Previous format:
+</p>
+<pre>&lt;dbReference type="ABCD" id="O75084"/&gt;
+</pre>
+<p>
+ New format:
+</p>
+<pre>&lt;dbReference type="ABCD" id="O75084"/&gt;
+  &lt;property type="antibodies" value="10 sequenced antibodies"/&gt;
+&lt;/dbReference&gt;
+</pre>
+<p>
+ This change does not affect the XSD, but may nevertheless require code changes.
+</p>
+<h4 id="RDF_format">
+ RDF format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/O75084.ttl">
+  O75084
+ </a>
+</p>
+<p>
+ Previous format:
+</p>
+<pre>uniprot:O75084
+  rdfs:seeAlso &lt;http://purl.uniprot.org/abcd/O75084&gt; .
+&lt;http://purl.uniprot.org/abcd/O75084&gt;
+  rdf:type up:Resource ;
+  up:database &lt;http://purl.uniprot.org/database/ABCD&gt; .
+</pre>
+<p>
+ New format:
+</p>
+<pre>uniprot:O75084
+  rdfs:seeAlso &lt;http://purl.uniprot.org/abcd/O75084&gt; .
+&lt;http://purl.uniprot.org/abcd/O75084&gt;
+  rdf:type up:Resource ;
+  up:database &lt;http://purl.uniprot.org/database/ABCD&gt; ;
+  rdfs:comment "10 sequenced antibodies" .
+</pre>
+<h3 id="Change_of_the_cross_references_to_MycoCLAP">
+ Change of the cross-references to MycoCLAP
+</h3>
+<p>
+ The MycoCLAP resource has changed its name to CLAE and we have updated our cross-references to reflect this name change.
+</p>
+<h3 id="Cross_references_to_BioGRID">
+ Cross-references to BioGRID
+</h3>
+<p>
+ The BioGrid database was renamed BioGRID. We changed the database name in the relevant cross-references (DR lines in the flat file) accordingly.
+</p>
+<p>
+ Example:
+ <pre>DR   BioGRID; 198188; 12.
+</pre>
+</p>
+<h3 id="Cross_references_to_Unimod_in_the_ptmlist_txt_document_file">
+ Cross-references to Unimod in the ptmlist.txt document file
+</h3>
+<p>
+ The ptmlist.txt document, which is available by
+ <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/ptmlist.txt">
+  FTP
+ </a>
+ and on the
+ <a href="http://www.uniprot.org/docs/ptmlist">
+  website
+ </a>
+ , describes post-translational modifications (PTMs) annotated in the UniProt knowledgebase. This release sees the addition of optional cross-references from ptmlist.txt to
+ <a href="http://www.unimod.org/">
+  Unimod
+ </a>
+ , an open access database of protein modifications for use in mass spectrometry applications which provides molecular-level details of PTMs (both natural and non-natural) including molecular formula, target residues, monoisotopic and average mass shifts and literature references with a community-driven curation.
+</p>
+<p>
+ Example:
+</p>
+<pre>ID   (3R)-3-hydroxyasparagine
+AC   PTM-0369
+FT   MOD_RES
+..
+KW   Hydroxylation.
+..
+DR   Unimod; 35.
+</pre>
+<p>
+ This new mapping to Unimod will facilitate the integration of data on PTMs identified by mass spectrometry based proteomics.
+</p>
+<p>
+ We have currently mapped 236 of the most common PTMs in UniProtKB to Unimod and will continue to add new cross-references to Unimod in forthcoming releases. This mapping of PTMs to Unimod is part of our ongoing work on the standardization of knowledge of PTMs in UniProtKB by providing cross-references to a resource which is widely used in proteomics bioinformatics. We welcome your feedback on these current and future developments.
+</p>
+<h3 id="Changes_to_the__a_href___docs_humdisease__controlled_vocabulary_of_human_diseases__a_">
+ Changes to the
+ <a href="http://www.uniprot.org/docs/humdisease">
+  controlled vocabulary of human diseases
+ </a>
+</h3>
+<p>
+ New diseases:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05747">
+   Amelia, posterior, with pelvic and pulmonary hypoplasia syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05735">
+   Aneurysm, intracranial berry, 12
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05753">
+   Arthrogryposis multiplex congenita, neurogenic, with agenesis of the corpus callosum
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05778">
+   Basal ganglia calcification, idiopathic, 8, autosomal recessive
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05782">
+   Beck-Fahrner syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05743">
+   Bladder dysfunction, autonomic, with impaired pupillary reflex and secondary CAKUT
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05742">
+   CATIFA syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05758">
+   CEBALID syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05744">
+   Cerebellar hypoplasia/atrophy, epilepsy, and global developmental delay
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05765">
+   Ciliary dyskinesia, primary, 44
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05780">
+   Ciliary dyskinesia, primary, 45
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05763">
+   Coffin-Siris syndrome 11
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05764">
+   Congenital heart defects, multiple types, 7
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05754">
+   Corneal dystrophy, Meesmann 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05774">
+   Deafness, autosomal dominant, 7
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05761">
+   Deafness, autosomal dominant, 75
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05762">
+   Deafness, autosomal dominant, 76
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05728">
+   Ectodermal dysplasia with facial dysmorphism and acral, ocular, and brain anomalies
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05738">
+   Epileptic encephalopathy, early infantile, 83
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05769">
+   Epileptic encephalopathy, early infantile, 84
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05727">
+   Heyn-Sproul-Jackson syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05745">
+   Hydrocephalus, normal pressure, 1
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05779">
+   Hypotrichosis 5
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05768">
+   Imagawa-Matsumoto syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05777">
+   Intellectual developmental disorder, autosomal dominant 63, with macrocephaly
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05781">
+   Intellectual developmental disorder, X-linked, syndromic, Hackman-Di Donato type
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05748">
+   Intellectual developmental disorder 61
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05770">
+   Intellectual developmental disorder 62
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05741">
+   Intellectual developmental disorder with hypotonia and behavioral abnormalities
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05752">
+   Joubert syndrome 36
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05771">
+   Juvenile arthritis
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05746">
+   Keratitis-ichthyosis-deafness syndrome, autosomal recessive
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05730">
+   Liang-Wang syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05766">
+   Long QT syndrome 16
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05757">
+   Lymphatic malformation 8
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05760">
+   Mitochondrial complex I deficiency, nuclear type 34
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05759">
+   Mitochondrial complex III deficiency, nuclear 10
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05775">
+   Myopia 27
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05732">
+   Neurodevelopmental disorder with brain anomalies and with or without vertebral or cardiac anomalies
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05749">
+   Neurodevelopmental disorder with epilepsy, spasticity, and brain atrophy
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05772">
+   Neurodevelopmental disorder with hypotonia, neonatal respiratory insufficiency, and thermodysregulation
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05751">
+   Neurodevelopmental disorder with hypotonia and autistic features with or without hyperkinetic movements
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05731">
+   Neurodevelopmental disorder with microcephaly, cortical malformations, and spasticity
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05734">
+   Neuromuscular disease and ocular or auditory anomalies with or without seizures
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05750">
+   Neutropenia, severe congenital 8, autosomal dominant
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05737">
+   Pachygyria, microcephaly, developmental delay, and dysmorphic facies, with or without seizures
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05733">
+   Poirier-Bienvenu neurodevelopmental syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05776">
+   Retinitis pigmentosa 88
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05755">
+   Spastic paraplegia 81, autosomal recessive
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05756">
+   Spastic paraplegia 82, autosomal recessive
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05773">
+   Spermatogenic failure 1
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05739">
+   Spermatogenic failure 42
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05740">
+   Spermatogenic failure 43
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05729">
+   Spondyloepimetaphyseal dysplasia, Isidor-Toutain type
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05736">
+   Structural brain anomalies with impaired intellectual development and craniosynostosis
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05767">
+   Ventricular tachycardia, catecholaminergic polymorphic, 6
+  </a>
+ </li>
+</ul>
+<p>
+ Modified diseases:
+</p>
+<ul>
+ <li>
+  Corneal dystrophy, Meesmann -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01959">
+   Corneal dystrophy, Meesmann 1
+  </a>
+ </li>
+ <li>
+  Sitosterolemia -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02308">
+   Sitosterolemia 1
+  </a>
+ </li>
+</ul>
+<h3 id="Changes_to_the__a_href___docs_ptmlist__controlled_vocabulary_for_PTMs__a_">
+ Changes to the
+ <a href="http://www.uniprot.org/docs/ptmlist">
+  controlled vocabulary for PTMs
+ </a>
+</h3>
+<p>
+ New term for the feature key 'Lipidation' ('LIPID' in the flat file):
+</p>
+<ul>
+ <li>
+  3'-prenyl-2',N2-cyclotryptophan
+ </li>
+</ul>

@@ -1,0 +1,407 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  Addition of more than 40’000 microbial entries derived from automated annotation in UniProtKB
+ </h3>
+ <p>
+  Thanks to genome sequencing efforts, there has been a tremendous rise in the number of submitted protein sequences. And this is only the beginning, as faster and cheaper sequencing methods will greatly increase the rate at which new genomes are sequenced.
+ </p>
+ <p>
+  Semi-automated annotation methods are necessary in order to provide the users with a maximum number of annotated protein sequences. The approach used by UniProtKB/Swiss-Prot differs from most other automated methods as the bulk of the annotation procedure is still performed manually, since we want to make sure that we produce high quality annotation with a minimal amount of incorrect inferences.
+ </p>
+ <p>
+  Our first  automatic annotation project is called
+  <a href="http://hamap.expasy.org">
+   <span class="caps">
+    HAMAP
+   </span>
+  </a>
+  , which stands for High-quality Automated and Manual Annotation of microbial Proteomes. In the context of this project, proteins  from complete bacterial and archaeal proteomes, together with the related  plastid proteins, are automatically annotated based on manually created family  rules for complete protein annotation, with template-based feature propagation.  We are very aware of the danger posed by automatic annotation procedures and  have been extremely careful in the implementation of the pipeline, establishing  many checks and conditional propagation in order to ensure that automatic  annotation will produce data of a quality up to that of manual curation.
+ </p>
+ <p>
+  At this release, we have begun the procedure to integrate automatically into UniProtKB/Swiss-Prot the entries annotated by the
+  <span class="caps">
+   HAMAP
+  </span>
+  automated pipeline; over 40’000 bacterial and archaeal entries were integrated. This is the largest number of entries ever integrated at one release.
+ </p>
+ <p>
+  It must be noted that the planned introduction of ‘evidence tags’ should allow us to unambiguously flag whether an information item has been derived manually or automatically. For the time being,
+  <a href="http://www.uniprot.org/uniprot/?query=database:hamap">
+   all entries
+  </a>
+  annotated by the
+  <span class="caps">
+   HAMAP
+  </span>
+  pipeline have a cross-reference to
+  <span class="caps">
+   HAMAP
+  </span>
+  (for an example see entry
+  <a href="http://www.uniprot.org/uniprot/Q02JM4#section_x-ref">
+   <span class="caps">
+    Q02JM4
+   </span>
+  </a>
+  ).
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Cross-references to dictyBase
+ </h3>
+ <p>
+  The DictyBase database was renamed
+  <a href="http://dictybase.org/">
+   dictyBase
+  </a>
+  . We changed the database name in the relevant cross-references (DR lines in the flat file) accordingly.
+ </p>
+ <p>
+  Example:
+ </p>
+ <pre>
+DR   dictyBase; DDB0201569; manA.
+</pre>
+ <h3>
+  Cross-references to PDBsum
+ </h3>
+ <p>
+  Cross-references have been added to the
+  <a href="http://www.ebi.ac.uk/pdbsum">
+   PDBsum
+  </a>
+  database. PDBsum provides an overview of every macromolecular structure deposited in the Protein Data Bank (PDB), giving schematic diagrams of the molecules in each structure and of the interactions between them.
+ </p>
+ <p>
+  The PDBsum database is available at
+  <a href="http://www.ebi.ac.uk/pdbsum">
+   http://www.ebi.ac.uk/pdbsum
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    PDBsum
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    <span class="caps">
+     PDB
+    </span>
+    entry name.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <pre>&lt;a href="/uniprot/Q07540#section_x-ref"&gt;Q07540&lt;/a&gt;:
+DR   PDBsum; 2FQL; -.
+DR   PDBsum; 2GA5; -.
+
+&lt;a href="/uniprot/P78536#section_x-ref"&gt;P78536&lt;/a&gt;:
+DR   PDBsum; 1BKC; -.
+DR   PDBsum; 1ZXC; -.
+DR   PDBsum; 2A8H; -.
+DR   PDBsum; 2DDF; -.
+DR   PDBsum; 2FV5; -.
+DR   PDBsum; 2FV9; -.
+DR   PDBsum; 2I47; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-references to VectorBase
+ </h3>
+ <p>
+  Cross-references have been added to the
+  <a href="http://www.vectorbase.org/index.php">
+   Invertebrate Vectors of Human Pathogens database
+  </a>
+  . VectorBase is a
+  <span class="caps">
+   NIAID
+  </span>
+  Bioinformatics  Resource Center for Invertebrate Vectors of Human Pathogens. VectorBase annotates and  maintains vector genomes providing an integrated resource for the research community.
+ </p>
+ <p>
+  The VectorBase database is available at
+  <a href="http://www.vectorbase.org/index.php">
+   http://www.vectorbase.org/index.php
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    VectorBase
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    VectorBase Gene ID.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 1
+   </th>
+   <td>
+    Species name.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <pre>&lt;a href="/uniprot/Q17KX3#section_x-ref"&gt;Q17KX3&lt;/a&gt;:
+DR   VectorBase; AAEL001551; Aedes aegypti.
+
+&lt;a href="/uniprot/Q7PD39#section_x-ref"&gt;Q7PD39&lt;/a&gt;:
+DR   VectorBase; AGAP005024; Anopheles gambiae.
+DR   VectorBase; AGAP005025; Anopheles gambiae.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Release of new species-specific documents
+ </h3>
+ <p>
+  There are 9 new documents for several Brucella, Rickettsia and Coxiella complete proteomes, listing all the UniProtKB/Swiss-Prot entries from these proteomes and their corresponding gene designations.
+ </p>
+ <p>
+  The documents contain, for each relevant UniProtKB/Swiss-Prot entry, the corresponding ordered locus name, entry name, accession number, sequence length and gene name(s).
+ </p>
+ <ul>
+  <li>
+   Brucella abortus strain 2308:
+   <a href="http://www.uniprot.org/docs/brua2">
+    brua2.txt
+   </a>
+   (
+   <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/brua2.txt">
+    ftp
+   </a>
+   )
+  </li>
+  <li>
+   Brucella abortus:
+   <a href="http://www.uniprot.org/docs/bruab">
+    bruab.txt
+   </a>
+   (
+   <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/bruab.txt">
+    ftp
+   </a>
+   )
+  </li>
+  <li>
+   Brucella melitensis:
+   <a href="http://www.uniprot.org/docs/brume">
+    brume.txt
+   </a>
+   (
+   <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/brume.txt">
+    ftp
+   </a>
+   )
+  </li>
+  <li>
+   Brucella suis:
+   <a href="http://www.uniprot.org/docs/brusu">
+    brusu.txt
+   </a>
+   (
+   <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/brusu.txt">
+    ftp
+   </a>
+   )
+  </li>
+  <li>
+   Coxiella burnetii:
+   <a href="http://www.uniprot.org/docs/coxbu">
+    coxbu.txt
+   </a>
+   (
+   <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/coxbu.txt">
+    ftp
+   </a>
+   )
+  </li>
+  <li>
+   Rickettsia bellii strain
+   <span class="caps">
+    RML369
+   </span>
+   -C:
+   <a href="http://www.uniprot.org/docs/ricbr">
+    ricbr.txt
+   </a>
+   (
+   <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/ricbr.txt">
+    ftp
+   </a>
+   )
+  </li>
+  <li>
+   Rickettsia conorii:
+   <a href="http://www.uniprot.org/docs/riccn">
+    riccn.txt
+   </a>
+   (
+   <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/riccn.txt">
+    ftp
+   </a>
+   )
+  </li>
+  <li>
+   Rickettsia felis (Rickettsia azadi):
+   <a href="http://www.uniprot.org/docs/ricfe">
+    ricfe.txt
+   </a>
+   (
+   <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/ricfe.txt">
+    ftp
+   </a>
+   )
+  </li>
+  <li>
+   Rickettsia typhi:
+   <a href="http://www.uniprot.org/docs/ricty">
+    ricty.txt
+   </a>
+   (
+   <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/ricty.txt">
+    ftp
+   </a>
+   )
+  </li>
+ </ul>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0974">
+    Archaeal flagellum
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0975">
+    Bacterial flagellum
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0973">
+    c-di-GMP
+   </a>
+  </li>
+ </ul>
+ <p>
+  Modified keywords:
+ </p>
+ <ul>
+  <li>
+   <span class="caps">
+    GM2
+   </span>
+   -gangliosidosis -&gt;
+   <a href="http://www.uniprot.org/keywords/KW-0331">
+    Gangliosidosis
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Ribosomal frameshift -&gt;
+   <a href="http://www.uniprot.org/keywords/KW-0688">
+    Ribosomal frameshifting
+   </a>
+  </li>
+ </ul>
+ <h3>
+  Changes in subcellular location controlled vocabulary
+ </h3>
+ <p>
+  New subcellular location:
+ </p>
+ <ul>
+  <li>
+   Cyanelle stroma
+  </li>
+ </ul>
+ <h2>
+  UniMES News
+ </h2>
+ <h3>
+  New clustered sequence sets
+ </h3>
+ <p>
+  The UniProt Metagenomic and Environmental Sequences (UniMES) database is a repository  specifically developed for metagenomic and environmental data.
+ </p>
+ <p>
+  We now provide
+  <strong>
+   UniMES clusters
+  </strong>
+  , i.e. clustered sets (unimes_cluster100.fasta and unimes_cluster90.fasta) of sequences at two resolutions (100% and &gt;90%). In unimes_cluster100.fasta, identical sequences and subfragments from unimes.fasta are placed into  a single cluster.
+ </p>
+ <p>
+  The unimes_cluster90.fasta is built by clustering unimes_cluster100.fasta representative sequences (the longest sequence in a cluster) using the CD-HIT algorithm
+  <a href="http://bioinformatics.oxfordjournals.org/cgi/reprint/17/3/282">
+   (Li W., Jaroszewski L., and Godzik A., Bioinformatics, 17: 282-283, 2001)
+  </a>
+  such that each cluster is composed of sequences that have at least 90% sequence identity, to the representative sequence. Only the representative sequences of the clusters are present  in these files.
+ </p>
+ <p>
+  UniMES is available in the subdirectory current_release/unimes of the UniProt ftp servers  (
+  <a href="http://www.uniprot.org/ftp.uniprot.org/pub/databases/uniprot">
+   Uniprot
+  </a>
+  ,
+  <a href="http://www.uniprot.org/ftp.ebi.ac.uk/pub/databases/uniprot">
+   <span class="caps">
+    EBI
+   </span>
+  </a>
+  and
+  <a href="http://www.uniprot.org/ftp.expasy.org/databases/uniprot">
+   ExPASy
+  </a>
+  ).
+ </p>
+</div>
