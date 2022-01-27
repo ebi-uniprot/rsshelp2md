@@ -105,5 +105,5 @@ If you would like to record the UniProt release number and/or date of the data w
 See also:
 
 -   [REST API - Access the UniProt website programmatically](http://www.uniprot.org/help/api)
--   batch retrieval, ID mapping, queries, downloads, etc
+-   Batch retrieval, ID mapping, queries, downloads, etc
 -   [How can I (programmatically) obtain the number of results returned by my query?](http://www.uniprot.org/help/entry%5Fcount)
