@@ -29,7 +29,7 @@ parser.add_argument('--input_rss_path', type=str,
 parser.add_argument('--out_directory', type=str,
                     help='The path to the directory for the resulting converted files to be saved', required=True)
 parser.add_argument(
-    '--mode', choices=['help', 'news', 'columns'], help='Determines how the file is processed', required=True)
+    '--mode', choices=['help', 'news', 'columns', 'context'], help='Determines how the file is processed', required=True)
 args = parser.parse_args()
 
 export_path = args.out_directory
@@ -335,8 +335,8 @@ def convert_return_field(old):
 def convert(entries, check_links=True, leave_files_with_color_as_html=False):
     for i, entry in enumerate(entries):
         # Use this to resume if something crashes at a particular index
-        if i < 218:
-            continue
+        # if i < 218:
+        #     continue
         print(i, entry.id)
         html = entry['content'][0]['value']
         soup = BeautifulSoup(html, features='html.parser')
@@ -500,6 +500,48 @@ def columns():
         print(el)
 
 
+def get_markdown_for_context_entry(entry):
+    parsed = urlparse(entry['id'])
+    entry_id = parsed.path[1:] if parsed.path.startswith(
+        '/') else parsed.path[1:]
+    entry_title = entry['title']
+    html = entry['content'][0]['value']
+    soup = BeautifulSoup(html, features='html.parser')
+
+    # Check all links before conversion and if broken, report
+    dead_links, dead_anchors = check_and_standardize_all_links(
+        soup)
+
+    html = soup.prettify()
+    md = convert_html_to_gfm(html)
+    return f'<h3 id={entry_id}>{entry_title}</h3>\n{md}', dead_links, dead_anchors
+
+
+def context():
+    feed = get_feed()
+    dead_anchors = []
+    dead_links = []
+    with open(os.path.join(markdown_path, 'all.md'), 'w') as f:
+        for entry in feed['entries']:
+            md, dl, da = get_markdown_for_context_entry(entry)
+            if da:
+                dead_anchors += da
+            if dl:
+                dead_links += dl
+            print(md, file=f)
+
+    with open(os.path.join(report_path, 'all.txt'), 'w') as f:
+        if dead_links:
+            print('Dead links:', file=f)
+            print('\n'.join(dead_links), file=f)
+        if dead_anchors:
+            print('Dead anchors:', file=f)
+            print('\n'.join(dead_anchors), file=f)
+
+    os.rmdir(images_path)
+    os.rmdir(html_path)
+
+
 def main():
     if args.mode == 'help':
         help()
@@ -509,6 +551,9 @@ def main():
 
     if args.mode == 'columns':
         columns()
+
+    if args.mode == 'context':
+        context()
 
 
 if __name__ == '__main__':
