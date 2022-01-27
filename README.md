@@ -6,6 +6,12 @@ Help:
 ./convert.py --input_rss_path=input/help.combined.rss --out_directory=export/help --mode=help
 ```
 
+News:
+
+```
+./convert.py --input_rss_path=input/news.rss --out_directory=export/news --mode=news
+```
+
 Columns:
 
 ```
@@ -49,3 +55,7 @@ If a table is too complex pandoc will leave as HTML
 ### All extra HTML tags left (ie `<span style="color: grey;">`)?
 
 If a color style has been detected then these HTML tags are not stripped
+
+### Whole file left as HTML
+
+If there is too much complex stuff happening the file is left as HTML
