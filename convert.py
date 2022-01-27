@@ -29,7 +29,7 @@ parser.add_argument('--input_rss_path', type=str,
 parser.add_argument('--out_directory', type=str,
                     help='The path to the directory for the resulting converted files to be saved', required=True)
 parser.add_argument(
-    '--mode', choices=['help', 'columns'], help='Determines how the file is processed', required=True)
+    '--mode', choices=['help', 'news', 'columns'], help='Determines how the file is processed', required=True)
 args = parser.parse_args()
 
 export_path = args.out_directory
@@ -67,7 +67,8 @@ def get_github_image_path(
 
 
 def get_joined_categories(entry):
-    return ','.join([tag['term'] for tag in entry['tags']])
+    if 'tags' in entry:
+        return ','.join([tag['term'] for tag in entry['tags']])
 
 
 def strip_outer_divs(html):
@@ -115,7 +116,7 @@ def save_image_from_url(src):
             image_file_path = os.path.join(images_path, image_file_name)
             with open(image_file_path, 'wb') as f:
                 f.write(response.content)
-        return image_file_path
+            return image_file_path
     except requests.Timeout:
         return None
 
@@ -150,8 +151,11 @@ def find_and_save_images(soup, entry_id):
         except Exception as e:
             print(el.attrs['src'])
             raise e
-        el.attrs['src'] = get_github_image_path(
-            os.path.basename(image_file_path))
+        if image_file_path:
+            el.attrs['src'] = get_github_image_path(
+                os.path.basename(image_file_path))
+        else:
+            print('Error: No image_file_path', src)
 
 
 def does_page_exist(url):
@@ -328,11 +332,11 @@ def convert_return_field(old):
         return found
 
 
-def convert(entries):
+def convert(entries, check_links=True, leave_files_with_color_as_html=False):
     for i, entry in enumerate(entries):
         # Use this to resume if something crashes at a particular index
-        # if i < 102:
-        #     continue
+        if i < 218:
+            continue
         print(i, entry.id)
         html = entry['content'][0]['value']
         soup = BeautifulSoup(html, features='html.parser')
@@ -348,7 +352,8 @@ def convert(entries):
         find_and_save_images(soup, entry.id)
 
         # Check all links before conversion and if broken, report
-        dead_links, dead_anchors = check_and_standardize_all_links(soup)
+        dead_links, dead_anchors = check_and_standardize_all_links(
+            soup) if check_links else (None, None)
 
         html = soup.prettify()
 
@@ -356,7 +361,12 @@ def convert(entries):
         # conversion which removes html tags
         strict = not has_color_style(soup)
 
-        md = convert_html_to_gfm(html, strict=strict)
+        if not strict and leave_files_with_color_as_html:
+            left_as_html = True
+            md = html
+        else:
+            left_as_html = False
+            md = convert_html_to_gfm(html, strict=strict)
 
         # Check if there any tables in the markdown
         n_tables_in_html = html.count(table_string)
@@ -369,7 +379,8 @@ def convert(entries):
            dead_anchors or \
            n_md_tables_in_md or \
            n_html_tables_in_md or \
-           other_html_tags_left:
+           other_html_tags_left or \
+           left_as_html:
             with open(os.path.join(report_path, f'{entry.id}.txt'), 'w') as f:
                 print(entry.id, file=f)
                 print('---', file=f)
@@ -389,12 +400,17 @@ def convert(entries):
                     print(
                         'All extra HTML tags left (ie <span style="color: grey;">)?', file=f)
                     print(other_html_tags_left, file=f)
+                if left_as_html:
+                    print('Whole file left as HTML', file=f)
+                    print(left_as_html, file=f)
 
+        categories = get_joined_categories(entry)
         # Write Markdown to file
         with open(os.path.join(markdown_path, f'{entry.id}.md'), 'w') as f:
             print('---', file=f)
             print(f'title: {entry["title"]}', file=f)
-            print(f'categories: {get_joined_categories(entry)}', file=f)
+            if categories:
+                print(f'categories: {categories}', file=f)
             print('---', end='\n\n', file=f)
             f.write(md)
 
@@ -435,6 +451,15 @@ def get_feed():
 def help():
     feed = get_feed()
     convert(feed['entries'])
+
+
+def news():
+    feed = get_feed()
+    entries = feed['entries']
+    for entry in entries:
+        parsed = urlparse(entry['id'])
+        entry['id'] = parsed.path[1:].replace('/', '-')
+    convert(entries, check_links=False, leave_files_with_color_as_html=True)
 
 
 def columns():
@@ -478,6 +503,9 @@ def columns():
 def main():
     if args.mode == 'help':
         help()
+
+    if args.mode == 'news':
+        news()
 
     if args.mode == 'columns':
         columns()
