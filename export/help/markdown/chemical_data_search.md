@@ -68,7 +68,7 @@ a 14-character hash encoding the basic (Mobile-H) InChI layer, e.g. [WQZGKKKJIJ
 
 Historically, UniProt has followed the recommendations of the Nomenclature Committee of the International Union of Biochemistry and Molecular Biology (NC-IUBMB) for the description of enzymatic activities. The NC-IUBMB use their own names for the reactants, and sometimes the catalytic activity from IUBMB is a free text reaction description.
 
-When searching with a compound name that is not in ChEBI but part of a reaction sourced from IUBMB, or with a word from a free text reaction description, a full text search instead of an identifier search is performed in catalytic activity annotation. Since IUBMB does not use ChEBI or any other ontology, there is no autocompletion in this case, and no hierarchical relationships (such as is_a) can be taken into account.
+When searching with a compound name that is not in ChEBI but part of a reaction sourced from IUBMB, or with a word from a free text reaction description, a full text search instead of an identifier search is performed in catalytic activity annotation. Since IUBMB does not use ChEBI or any other ontology, there is no autocompletion in this case, and no hierarchical relationships (such as is\_a) can be taken into account.
 
 Example:  
 [annotation:(type:"catalytic activity" PretRNA)](http://www.uniprot.org/uniprotkb/?query=annotation%3A%28type%3A%22catalytic+activity%22+PretRNA%29)

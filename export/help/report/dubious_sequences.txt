@@ -1,8 +1,5 @@
 dubious_sequences
 ---
-Dead links
-http://www.uniprot.org/news/2009/11/24/release
-
 Dead anchor tags
 http://www.uniprot.org/uniprot/Q9UBS5#sequences
 

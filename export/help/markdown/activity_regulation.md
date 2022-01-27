@@ -14,4 +14,4 @@ This subsection describes the regulation at the protein level. We do not describ
 
 Note that the absence of a regulation can also be reported (usually if other members of the family are regulated by a given component).
 
-This annotation topic used to be called "Enzyme regulation" prior to release 2018_08.
+This annotation topic used to be called "Enzyme regulation" prior to release 2018\_08.

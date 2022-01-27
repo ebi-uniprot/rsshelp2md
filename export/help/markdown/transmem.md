@@ -14,7 +14,7 @@ For multi-pass membrane proteins, we do not number transmembrane regions except 
 
 In **UniProtKB/TrEMBL** , transmembrane domains are annotated automatically by our [sequence annotation module using TMHMM.](http://www.uniprot.org/help/sam)
 
-### 1. Annotation of experimentally proven transmembrane regions {#1\_\_Annotation_of_experimentally_proven_transmembrane_regions}
+### 1. Annotation of experimentally proven transmembrane regions {\#1\_\_Annotation\_of\_experimentally\_proven\_transmembrane\_regions}
 
 Even when there is proof for the **existence** of transmembrane domains, it is difficult to determine their **boundaries** . Transmembrane regions are therefore generally annotated using the qualifier ['Sequence analysis'](http://www.uniprot.org/help/evidences#ECO:0000255) .  
 Example: [Q96BI3](http://www.uniprot.org/uniprotkb/Q96BI3#subcellular_location)
@@ -25,7 +25,7 @@ Examples: [Q86V24](http://www.uniprot.org/uniprotkb/Q86V24#subcellular_location)
 
 Having said this, unfortunately [not all UniProtKB/Swiss-Prot annotations have evidence](http://www.uniprot.org/help/evidence%5Fin%5Fswissprot) . The annotations which are missing evidence were created before we started to manually curate information with evidence in UniProtKB/Swiss-Prot, and manual attribution of evidence to these existing annotations was not possible due to the huge amount of existing data. In such cases, the absence of any evidence for topological domains may in many cases be interpreted as 'Experimental' or 'Curated'.
 
-### 2. Annotation of predicted transmembrane regions {#2\_\_Annotation_of_predicted_transmembrane_regions}
+### 2. Annotation of predicted transmembrane regions {\#2\_\_Annotation\_of\_predicted\_transmembrane\_regions}
 
 We also annotate transmembrane regions which are predicted by the application of the predictive tools TMHMM, Memsat, Phobius and the hydrophobic moment plot method of Eisenberg and coworkers. Note that these tools predict only alpha-helical membrane spanning regions: the positions of membrane spanning beta-sheet regions are annotated strictly according to experimental information.
 
@@ -33,7 +33,7 @@ For predicted alpha-helical transmembrane regions at least two methods must retu
 
 See also: [Evidence](http://www.uniprot.org/manual/evidences)
 
-### 3. Membrane protein topologies in UniProtKB/Swiss-Prot {#3\_\_Membrane_protein_topologies_in_UniProtKB_Swiss_Prot}
+### 3. Membrane protein topologies in UniProtKB/Swiss-Prot {\#3\_\_Membrane\_protein\_topologies\_in\_UniProtKB\_Swiss\_Prot}
 
 #### a) Single-pass transmembrane proteins
 

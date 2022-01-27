@@ -2,6 +2,7 @@ metal
 ---
 Dead anchor tags
 http://www.uniprot.org/uniprot/Q9NWT6#function
+http://www.uniprot.org/uniprot/P24146#function
 http://www.uniprot.org/uniprot/P12851#function
 http://www.uniprot.org/uniprot/P00442#function
 http://www.uniprot.org/uniprot/P57257#function

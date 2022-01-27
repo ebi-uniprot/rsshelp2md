@@ -60,7 +60,7 @@ The current entry view displays annotation by subject (Function, PTM & processin
 | [Turn](http://www.uniprot.org/manual/turn)                      | Turns within the experimentally determined protein structure                                            |
 | [Beta strand](http://www.uniprot.org/manual/strand)             | Beta strand regions within the experimentally determined protein structure                              |
 
-The exact boundaries of the described sequence feature, as well as its length, are provided. When a feature is known to extend beyond the position that is given in this section, the endpoint specification will be preceded by '\<' (less than) for features which continue to the N-terminal direction or by '\>' (greater than) for features which continue to the C-terminal direction.
+The exact boundaries of the described sequence feature, as well as its length, are provided. When a feature is known to extend beyond the position that is given in this section, the endpoint specification will be preceded by '&lt;' (less than) for features which continue to the N-terminal direction or by '&gt;' (greater than) for features which continue to the C-terminal direction.
 
 Example: [P62756](http://www.uniprot.org/uniprotkb/P62756#ptm%5Fprocessing)
 
@@ -78,69 +78,24 @@ The format of the identifiers is a 3-letter prefix, specific for an annotation t
 
 Feature identifiers currently exist for the following annotation topics: Propeptide, Chain, Peptide, Glycosylation, Alternative sequence and Natural variant.
 
-<table style="width:99%;">
-<colgroup>
-<col style="width: 26%" />
-<col style="width: 10%" />
-<col style="width: 55%" />
-<col style="width: 7%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Subsection</strong></td>
-<td style="text-align: left;"><strong>Identifier prefix</strong></td>
-<td style="text-align: left;"><strong>Availability</strong></td>
-<td style="text-align: left;"><strong>Example</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Molecule processing</strong></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="http://www.uniprot.org/manual/propep">Propeptide</a></td>
-<td style="text-align: left;">PRO</td>
-<td style="text-align: left;">Any processed propeptide</td>
-<td style="text-align: left;">Q7XAD0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="http://www.uniprot.org/manual/chain">Chain</a><br />
-<a href="http://www.uniprot.org/manual/peptide">Peptide</a></td>
-<td style="text-align: left;">PRO</td>
-<td style="text-align: left;">Any mature polypeptide</td>
-<td style="text-align: left;">Q9W568<br />
-</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Amino acid modifications</strong></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="http://www.uniprot.org/manual/carbohyd">Glycosylation</a></td>
-<td style="text-align: left;">CAR</td>
-<td style="text-align: left;">Only for residues attached to an oligosaccharide structure annotated in the <a href="https://glyconnect.expasy.org/">GlyConnect</a> database</td>
-<td style="text-align: left;">P02771</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Natural variations</strong></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="http://www.uniprot.org/manual/var_seq">Alternative sequence</a></td>
-<td style="text-align: left;">VSP</td>
-<td style="text-align: left;">Any sequence with an ‘Alternative sequence’ feature</td>
-<td style="text-align: left;">P81278</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="http://www.uniprot.org/manual/variant">Natural variant</a></td>
-<td style="text-align: left;">VAR</td>
-<td style="text-align: left;">Only for protein sequence variants of Hominidae (great apes and humans)</td>
-<td style="text-align: left;">P11171</td>
-</tr>
-</tbody>
-</table>
+------------------------------------------------------------------------
+
+**Subsection** **Identifier prefix** **Availability** **Example**
+
+**Molecule processing**
+
+[Propeptide](http://www.uniprot.org/manual/propep) PRO Any processed propeptide Q7XAD0
+
+[Chain](http://www.uniprot.org/manual/chain)  PRO Any mature polypeptide Q9W568  
+[Peptide](http://www.uniprot.org/manual/peptide)  
+P15515
+
+**Amino acid modifications**
+
+[Glycosylation](http://www.uniprot.org/manual/carbohyd) CAR Only for residues attached to an oligosaccharide structure annotated in the [GlyConnect](https://glyconnect.expasy.org/) database P02771
+
+**Natural variations**
+
+[Alternative sequence](http://www.uniprot.org/manual/var_seq) VSP Any sequence with an ‘Alternative sequence’ feature P81278
+
+[Natural variant](http://www.uniprot.org/manual/variant) VAR Only for protein sequence variants of Hominidae (great apes and humans) P11171 ————————————————————— ———————– ———————————————————————————————————————————– —————–

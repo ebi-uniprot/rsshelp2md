@@ -2,7 +2,6 @@ protein_names
 ---
 Dead links
 http://www.uniprot.org/docs/allergen
-http://www.uniprot.org/docs/cdlist
 http://www.uniprot.org/docs/International%5FProtein%5FNomenclature%5FGuidelines.pdf
 
 Dead anchor tags

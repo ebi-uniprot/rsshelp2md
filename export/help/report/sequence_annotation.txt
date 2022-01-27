@@ -12,8 +12,5 @@ http://www.uniprot.org/uniprot/P81278#sequences
 http://www.uniprot.org/uniprot/P11171#sequences
 
 Number tables converted to Markdown
-1
-
-Number tables left as HTML
-1
+2
 

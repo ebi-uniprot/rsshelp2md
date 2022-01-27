@@ -13,10 +13,7 @@ Our major effort is currently focused on manual annotation of the proteomes of b
 
 ## About Arabidopsis
 
-<figure>
-<img src="https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/arabidopsis.jpg" title="Arabidopsis thaliana picture kindly provided by Volker Knoop" style="float: right;" width="150" alt="Arabidopsis thaliana (Mouse-ear cress)" />
-<figcaption aria-hidden="true">Arabidopsis thaliana (Mouse-ear cress)</figcaption>
-</figure>
+<figure><img src="https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/arabidopsis.jpg" title="Arabidopsis thaliana picture kindly provided by Volker Knoop" width="150" alt="Arabidopsis thaliana (Mouse-ear cress)" /><figcaption aria-hidden="true">Arabidopsis thaliana (Mouse-ear cress)</figcaption></figure>
 
 [*Arabidopsis thaliana*](http://www.uniprot.org/taxonomy/3702) is a 20-25 cm tall flowering plant native to Europe, Asia, and northwestern Africa with a rapid life cycle (six weeks). It is used extensively as a model organism in plant biology and genetics. With about 157 million base pairs and five chromosomes, Arabidopsis has one of the smallest genomes among plants and it was the first one to be sequenced in 2000.
 
@@ -26,10 +23,7 @@ We are working on the establishment and annotation of a comprehensive, non-redun
 
 ## About rice
 
-<figure>
-<img src="https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/rice.jpg" title="Rice picture kindly provided by Sharon Stern" style="float: left;" alt="Oryza sativa (Rice)" />
-<figcaption aria-hidden="true">Oryza sativa (Rice)</figcaption>
-</figure>
+![Oryza sativa (Rice)](https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/rice.jpg "Rice picture kindly provided by Sharon Stern")
 
 [*Oryza sativa*](http://www.uniprot.org/taxonomy/4530) has the smallest [cereal](http://www.uniprot.org/taxonomy/4479) genome consisting of only 430 million base pairs and 12 chromosomes. It is a model organism for cereal biology and genetics.
 

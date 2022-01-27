@@ -1,8 +1,5 @@
 submissions
 ---
-Dead links
-http://www.uniprot.org/update
-
 Number tables left as HTML
 2
 

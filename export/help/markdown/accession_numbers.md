@@ -29,7 +29,7 @@ Entries can have more than one accession number. This can be due to two distinct
 
 Example: [P29358](http://www.uniprot.org/uniprotkb/P29358) which has been 'demerged' into [P68250](http://www.uniprot.org/uniprotkb/P68250#entry_information) and [P68251](http://www.uniprot.org/uniprotkb/P68251#entry_information) .
 
-An accession number is only deleted when the entry to which it was assigned has been removed from UniProtKB. The list of deleted accession numbers is stored in the document files [delac_sp.txt](https://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/complete/docs/delac%5Fsp.txt) (for the Swiss-Prot section) and [delac_tr.txt.gz](https://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/complete/docs/delac%5Ftr.txt.gz) (for the TrEMBL section)
+An accession number is only deleted when the entry to which it was assigned has been removed from UniProtKB. The list of deleted accession numbers is stored in the document files [delac\_sp.txt](https://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/complete/docs/delac%5Fsp.txt) (for the Swiss-Prot section) and [delac\_tr.txt.gz](https://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/complete/docs/delac%5Ftr.txt.gz) (for the TrEMBL section)
 
 We remind users that they should always use the primary accession number of an entry in any citation and link since it is the only unique stable identifier for an entry.
 

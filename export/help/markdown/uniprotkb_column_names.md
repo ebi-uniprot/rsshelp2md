@@ -272,7 +272,7 @@ See also:
 
 | Column names as displayed on website | Column names as displayed in URL |
 |:-------------------------------------|:---------------------------------|
-| db_abbrev                            | database(db_abbrev)              |
+| db\_abbrev                           | database(db\_abbrev)             |
 | e.g. EMBL                            | database(EMBL)                   |
 
 where `db_abbrev` can be found in the "Abbrev:" field of the document [Databases cross-referenced in UniProtKB](http://www.uniprot.org/docs/dbxref) .

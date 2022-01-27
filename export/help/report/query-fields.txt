@@ -1,9 +1,9 @@
 query-fields
 ---
 Dead links
-http://www.uniprot.org/uniprot/?query=citation%3A%28%22intracellular+structural+proteins%22%29
-http://www.uniprot.org/manual/references
-http://www.uniprot.org/uniprot/?query=annotation:(type:variant)
+http://www.uniprot.org/uniprot/?query=host:40674
+http://www.uniprot.org/uniprot/?query=annotation:(type:mutagen%20phosphorylation)
+http://www.uniprot.org/uniprot/?query=proteomecomponent:%22chromosome%201%22+organism%3A%22Homo+sapiens+%28Human%29+[9606]%22
 
 Dead anchor tags
 http://www.uniprot.org/help/taxonomy#strain

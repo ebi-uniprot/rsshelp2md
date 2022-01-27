@@ -17,8 +17,8 @@ The history of a deleted entry can be tracked (example: [O00597](http://www.unip
 
 Two documents list the deleted accession numbers:
 
--   [delac_sp.txt](https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/delac%5Fsp.txt) for deleted ACs in UniProtKB/Swiss-Prot
--   [delac_tr.txt.gz](https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/delac%5Ftr.txt.gz) for deleted ACs in UniProtKB/TrEMBL
+-   [delac\_sp.txt](https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/delac%5Fsp.txt) for deleted ACs in UniProtKB/Swiss-Prot
+-   [delac\_tr.txt.gz](https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/delac%5Ftr.txt.gz) for deleted ACs in UniProtKB/TrEMBL
 
 See also:
 

@@ -44,7 +44,7 @@ You can also access [advanced search options](http://www.uniprot.org/help/advanc
 
 The advanced search interface allows to browse the different search fields and options within the dropdown menus. There is a search box right at the top when you open the blue dropdown menu that allows you to type a concept name (e.g. 'structure') and receive some autocompleted suggestions from which you can then select the most suitable one:
 
-![image](https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/text-search-2.png)
+![image](https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/text-search-15.png)
 
 See also:
 

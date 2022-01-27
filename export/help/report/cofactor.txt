@@ -2,8 +2,11 @@ cofactor
 ---
 Dead anchor tags
 http://www.uniprot.org/uniprot/P00918#function
+http://www.uniprot.org/uniprot/G3XD94#function
+http://www.uniprot.org/uniprot/Q90240#function
 http://www.uniprot.org/uniprot/P38289#function
-http://www.uniprot.org/uniprot/B3QM53#function
+http://www.uniprot.org/uniprot/P9WP55#function
 http://www.uniprot.org/uniprot/P26662#function
+http://www.uniprot.org/uniprot/A9CEQ7#function
 http://www.uniprot.org/uniprot/Q9F1R6#function
 

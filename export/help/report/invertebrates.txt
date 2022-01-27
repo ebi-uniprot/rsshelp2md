@@ -1,8 +1,5 @@
 invertebrates
 ---
 Dead links
-http://www.uniprot.org/docs/celegans
-http://www.uniprot.org/program/Caenorhabditis
-http://www.uniprot.org/docs/fly
 http://www.uniprot.org/program/Drosophila
 

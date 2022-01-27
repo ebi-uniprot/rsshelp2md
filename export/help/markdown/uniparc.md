@@ -56,4 +56,4 @@ UniParc also contains and will continue to keep cross-references to the followin
 -   REMTREMBL
 -   UniMES
 -   TREMBLNEW
--   TrEMBL_varsplic
+-   TrEMBL\_varsplic

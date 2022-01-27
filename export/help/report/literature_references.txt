@@ -1,5 +1,5 @@
 literature_references
 ---
 Dead links
-http://www.uniprot.org/manual/references
+http://www.uniprot.org/uniprot/?query=citation%3A(%22Kuopio+ischaemic+heart+disease+risk+factor+study%22
 

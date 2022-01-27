@@ -5,10 +5,7 @@ categories: About_UniProt,Staff,UniProtKB,UniRef,UniParc,help
 
 The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data. The UniProt databases are the [UniProt Knowledgebase (UniProtKB)](http://www.uniprot.org/help/uniprotkb) , the [UniProt Reference Clusters (UniRef)](http://www.uniprot.org/help/uniref) , and the [UniProt Archive (UniParc)](http://www.uniprot.org/help/uniparc) . The UniProt consortium and host institutions EMBL-EBI, SIB and PIR are committed to the long-term preservation of the UniProt databases.
 
-<figure>
-<img src="https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/overview.png" style="width: 699px; height: 528px;" alt="image" />
-<figcaption aria-hidden="true">image</figcaption>
-</figure>
+![image](https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/overview.png)
 
 UniProt is a collaboration between the [European Bioinformatics Institute (EMBL-EBI)](https://www.ebi.ac.uk/) , the [SIB Swiss Institute of Bioinformatics](https://www.sib.swiss/) and the [Protein Information Resource (PIR)](http://pir.georgetown.edu/) . Across the three institutes more than [100 people](http://www.uniprot.org/help/uniprot%5Fstaff) are involved through different tasks such as database curation, software development and support.
 
@@ -42,7 +39,7 @@ UniProt activities at PIR have benefited from NIH grants HHSN266200400061C (2004
 
 #### Contact the UniProt consortium members
 
-<img src="https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/embl-logo.png" style="width: auto; height: 45px;" alt="image" />  
+![image](https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/embl-logo.png)  
 [European Bioinformatics Institute (EMBL-EBI)](https://www.ebi.ac.uk/)  
 Wellcome Trust Genome Campus  
 Hinxton Cambridge CB10 1SD  
@@ -50,10 +47,7 @@ United Kingdom
 Phone: (+44 1223) 494 444  
 Fax: (+44 1223) 494 468
 
-<figure>
-<img src="https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/logo_sib.png" style="width: auto; height: 45px;" alt="image" />
-<figcaption aria-hidden="true">image</figcaption>
-</figure>
+![image](https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/logo_sib.png)
 
 [SIB Swiss Institute of Bioinformatics](https://www.sib.swiss/)  
 Centre Medical Universitaire  
@@ -63,10 +57,7 @@ Switzerland
 Phone: (+41 22) 379 50 50  
 Fax: (+41 22) 379 58 58
 
-<figure>
-<img src="https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/logo_pir.png" style="width: auto; height: 45px;" alt="image" />
-<figcaption aria-hidden="true">image</figcaption>
-</figure>
+![image](https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/logo_pir.png)
 
 [Protein Information Resource (PIR)](http://pir.georgetown.edu/)  
 Georgetown University Medical Center  

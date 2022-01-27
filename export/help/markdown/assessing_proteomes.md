@@ -25,13 +25,13 @@ F <sub>2</sub> = min(Q <sub>3</sub> + Q <sub>1</sub> , Q <sub>3</sub> + 1.5 x (Q
 
 CPD score is defined as:
 
-| status                         | condition                                 |
-|:-------------------------------|:------------------------------------------|
-| Outlier (low value)            | if C \<= F <sub>1</sub>                   |
-| Close to standard (low value)  | if F <sub>1</sub> \< C \< Q <sub>1</sub>  |
-| Standard                       | if Q <sub>1</sub> \<= C \< Q <sub>3</sub> |
-| Close to standard (high value) | if Q <sub>3</sub> \<= C \< F <sub>2</sub> |
-| Outlier (high value)           | if F <sub>2</sub> \<= C                   |
+| status                         | condition                                     |
+|:-------------------------------|:----------------------------------------------|
+| Outlier (low value)            | if C &lt;= F <sub>1</sub>                     |
+| Close to standard (low value)  | if F <sub>1</sub> &lt; C &lt; Q <sub>1</sub>  |
+| Standard                       | if Q <sub>1</sub> &lt;= C &lt; Q <sub>3</sub> |
+| Close to standard (high value) | if Q <sub>3</sub> &lt;= C &lt; F <sub>2</sub> |
+| Outlier (high value)           | if F <sub>2</sub> &lt;= C                     |
 
 ![image](https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/assessing_proteomes-12.png)
 
@@ -41,16 +41,16 @@ Figure 1 caption: *CPD status descriptions are defined by how the protein count 
 
 Example 1 : [Human reference proteome](https://www.uniprot.org/proteomes/UP000005640/) - Score = "Outlier (high)"
 
-The proteome [UP000005640](https://www.uniprot.org/proteomes/UP000005640/) has a protein count of 77027 (as of release 2021_02). When we compare this to the protein counts of closely related proteomes (primates) we can see that this protein count is high. This proteome is scored "Outlier (high)". This is not necessarily a bad sign! The human proteome is very well studied compared to some of the other primate proteomes - so we might expect to see a higher protein count due to all of the identified isoforms due to alternative splicing.
+The proteome [UP000005640](https://www.uniprot.org/proteomes/UP000005640/) has a protein count of 77027 (as of release 2021\_02). When we compare this to the protein counts of closely related proteomes (primates) we can see that this protein count is high. This proteome is scored "Outlier (high)". This is not necessarily a bad sign! The human proteome is very well studied compared to some of the other primate proteomes - so we might expect to see a higher protein count due to all of the identified isoforms due to alternative splicing.
 
 Example 2 : [Human proteome (mitochondrion only)](https://www.uniprot.org/proteomes/UP000307385/) - Score = "Outlier (low)"
 
-This human "proteome" has a very low protein count of 13 (as of release 2021_02). This "proteome" only consists of the proteins encoded in the mitochondrial genome. Therefore a score of "Outlier (low)" makes sense; all other mitochondrial proteins are imported into the organelle but are not reflected in this number.
+This human "proteome" has a very low protein count of 13 (as of release 2021\_02). This "proteome" only consists of the proteins encoded in the mitochondrial genome. Therefore a score of "Outlier (low)" makes sense; all other mitochondrial proteins are imported into the organelle but are not reflected in this number.
 
 ### Benchmarking Universal Single-Copy Orthologs (BUSCO)
 
-For eukaryotic and bacterial proteomes, we also provide the [BUSCO score](https://www.sib.swiss/about-sib/news/10131-gauging-the-completeness-of-genomics-data-with-busco) , which was developed to quantify genomic data completeness in terms of expected gene content based on single-copy orthologs. We're currently using BUSCO version 4.0.2.
+For eukaryotic and bacterial proteomes, we also provide the [BUSCO score](https://www.sib.swiss/about-sib/news/10131-gauging-the-completeness-of-genomics-data-with-busco) , as a quantitative measure of UniProt proteome data completeness. BUSCO was developed to quantify genomic data completeness in terms of expected gene content based on single-copy orthologs. We are currently using BUSCO version 4.0.2.
 
 This score includes percentages of complete (C) single-copy (S) genes, complete (C) duplicated (D) genes, fragmented (F) and missing (M) genes, as well as the total number of orthologous clusters (n) used in the BUSCO assessment.
 
-We also report, as is recommended in [BUSCO's user guide](https://busco.ezlab.org/busco%5Fuserguide.html#running-busco-2) , the most specific lineage dataset available to analyse each proteome. For example, to assess fish data we would select the actinopterygii lineage (dataset: actinopterygii_odb10) rather than the metazoa or eukaryota lineage. A full list of available lineage datasets can be found on [BUSCO website](https://busco.ezlab.org/list%5Fof%5Flineages.html) .
+We also report, as is recommended in [BUSCO's user guide](https://busco.ezlab.org/busco%5Fuserguide.html#running-busco-2) , the most specific lineage dataset available to analyse each proteome. For example, to assess fish data we would select the actinopterygii lineage (dataset: actinopterygii\_odb10) rather than the metazoa or eukaryota lineage. A full list of available lineage datasets can be found on the [BUSCO website](https://busco.ezlab.org/list%5Fof%5Flineages.html) .

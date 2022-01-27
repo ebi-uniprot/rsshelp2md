@@ -7,7 +7,7 @@ This subsection of the 'Entry information' section provides a mnemonic identifie
 
 ### UniProtKB/Swiss-Prot entry name
 
-The UniProtKB/Swiss-Prot entry name consists of up to 11 uppercase alphanumeric characters with a naming convention that can be symbolized as X_Y, where:
+The UniProtKB/Swiss-Prot entry name consists of up to 11 uppercase alphanumeric characters with a naming convention that can be symbolized as X\_Y, where:
 
 -   X is a mnemonic protein identification code of at most 5 alphanumeric characters;
 -   The '\_' sign serves as a separator;
@@ -26,7 +26,7 @@ Examples:
 
 Whenever possible, we assign the same mnemonic code for orthologous proteins (even if the gene name is not the same).
 
-For multigene families, we assign consistent protein name abbreviations and add a numerical discriminator (see for instance [INS_HUMAN](http://www.uniprot.org/uniprotkb/P01308#entry%5Finformation) , [INS1_MOUSE](http://www.uniprot.org/uniprotkb/P01325#entry%5Finformation) and [INS2_MOUSE](http://www.uniprot.org/uniprotkb/P01326#entry%5Finformation) ) or a letter (see for instance [CHST9](http://www.uniprot.org/uniprotkb/Q7L1S5#entry%5Finformation) , [CHSTA](http://www.uniprot.org/uniprotkb/O43529#entry%5Finformation) and [CHSTB](http://www.uniprot.org/uniprotkb/Q9NPF2#entry%5Finformation) ) at the end of the code.
+For multigene families, we assign consistent protein name abbreviations and add a numerical discriminator (see for instance [INS\_HUMAN](http://www.uniprot.org/uniprotkb/P01308#entry%5Finformation) , [INS1\_MOUSE](http://www.uniprot.org/uniprotkb/P01325#entry%5Finformation) and [INS2\_MOUSE](http://www.uniprot.org/uniprotkb/P01326#entry%5Finformation) ) or a letter (see for instance [CHST9](http://www.uniprot.org/uniprotkb/Q7L1S5#entry%5Finformation) , [CHSTA](http://www.uniprot.org/uniprotkb/O43529#entry%5Finformation) and [CHSTB](http://www.uniprot.org/uniprotkb/Q9NPF2#entry%5Finformation) ) at the end of the code.
 
 The mnemonic code 'Y' identifies the organism which is the biological source of the protein. It is generally composed of the first three letters of its genus name and the first two letters of its species name.
 

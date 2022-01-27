@@ -5,7 +5,7 @@ categories: PTM_processing,manual
 
 This subsection of the 'PTM / Processing' section describes the position and length of an active peptide in the mature protein.
 
-An active peptide is defined as a small polypeptide (\<= 40 to 50 amino acid long) that is processed (e.g. by proteolytic cleavage) from a larger precursor protein and has a well defined biological activity on its own.
+An active peptide is defined as a small polypeptide (&lt;= 40 to 50 amino acid long) that is processed (e.g. by proteolytic cleavage) from a larger precursor protein and has a well defined biological activity on its own.
 
 The processing events that may contribute to the formation of a mature peptide are described in the ['Initiator methionine'](http://www.uniprot.org/manual/init_met) , ['Propeptide'](http://www.uniprot.org/manual/propep) , ['Signal'](http://www.uniprot.org/manual/signal) and ['Transit peptide'](http://www.uniprot.org/manual/transit) subsections.
 

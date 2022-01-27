@@ -30,4 +30,4 @@ No. While it can happen that a proteome containing reviewed UniProtKB (Swiss-Pr
 
 Yes, this is possible: It may happen that proteomes that were identified as redundant are later reinstated as non-redundant, e.g. a proteome for a strain used as a model by a significant community or with proteins that have been crystallized. In the past, it has also happened on rare occasions that entries were deleted but later reinstated for other reasons. In such cases, the UniProtKB entries are created anew, with **new accession numbers** .
 
-To help users to link deleted to subsequently reinstated entries, we provide a [file that maps old to new accession numbers](https://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/complete/docs/reinstated%5Fmap.txt.gz) via their [protein_ids](http://www.uniprot.org/help/sequence%5Forigin) .
+To help users to link deleted to subsequently reinstated entries, we provide a [file that maps old to new accession numbers](https://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/complete/docs/reinstated%5Fmap.txt.gz) via their [protein\_ids](http://www.uniprot.org/help/sequence%5Forigin) .

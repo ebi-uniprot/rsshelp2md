@@ -8,7 +8,7 @@ The two sections of UniProtKB - UniProtKB/Swiss-Prot and UniProtKB/TrEMBL - give
 1.  Most non-germline [immunoglobulins](http://www.uniprot.org/help/immunoglobulins) and T-cell receptors
 2.  Synthetic sequences
 3.  Most patent application sequences
-4.  Small fragments encoded from nucleotide sequence (\<8 amino acids)
+4.  Small fragments encoded from nucleotide sequence (&lt;8 amino acids)
 5.  Pseudogenes
 6.  Sequences from [redundant proteomes](http://www.uniprot.org/help/proteome%5Fredundancy)
 7.  Sequences from proteomes that NCBI genomes/RefSeq considers to be [low quality assemblies](https://www.ncbi.nlm.nih.gov/assembly/help/anomnotrefseq/) , i.e. [excluded proteomes](http://www.uniprot.org/help/proteome%5Fexclusion%5Freasons)

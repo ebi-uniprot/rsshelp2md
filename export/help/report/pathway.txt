@@ -3,5 +3,6 @@ pathway
 Dead anchor tags
 http://www.uniprot.org/uniprot/P77731#function
 http://www.uniprot.org/uniprot/P20580#function
+http://www.uniprot.org/uniprot/Q47316#function
 http://www.uniprot.org/uniprot/P00562#function
 

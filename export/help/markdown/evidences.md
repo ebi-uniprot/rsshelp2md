@@ -58,7 +58,7 @@ UniRule annotation
 
 Manual assertion according to rules
 
--   [HAMAP-Rule:MF_03130](http://hamap.expasy.org/unirule/MF_03130)
+-   [HAMAP-Rule:MF\_03130](http://hamap.expasy.org/unirule/MF_03130)
 
   
 
@@ -101,7 +101,7 @@ Example: [D9N129](http://www.uniprot.org/uniprotkb/D9N129#function)
 Manual assertion based on experiment
 
 -   **"The WD40-repeat proteins WDR-20 and WDR-48 bind and activate the deubiquitinating enzyme USP-46 to promote the abundance of the glutamate receptor GLR-1 in the ventral nerve cord of Caenorhabditis elegans."**  
-    <a href="http://www.uniprot.org/uniprotkb/?query=author:%22Moremen+K.W.%22&amp;sort=score" rel="nofollow">Moremen K.W.</a> , <a href="http://www.uniprot.org/uniprotkb/?query=author:%22Touster+O.%22&amp;sort=score" rel="nofollow">Touster O.</a> , <a href="http://www.uniprot.org/uniprotkb/?query=author:%22Robbins+P.W.%22&amp;sort=score" rel="nofollow">Robbins P.W.</a>  
+    [Moremen K.W.](http://www.uniprot.org/uniprotkb/?query=author:%22Moremen+K.W.%22&sort=score) , [Touster O.](http://www.uniprot.org/uniprotkb/?query=author:%22Touster+O.%22&sort=score) , [Robbins P.W.](http://www.uniprot.org/uniprotkb/?query=author:%22Robbins+P.W.%22&sort=score)  
     J. Biol. Chem. 266:16876-16885(1991) \[ [PubMed](https://pubmed.ncbi.nlm.nih.gov/1885615) \] \[ [Europe PMC](https://europepmc.org/abstract/MED/1885615) \] \[ [Abstract](http://www.uniprot.org/citations/1885615) \] **Cited for:** PROTEIN SEQUENCE OF <a href="http://www.uniprot.org/blast/?about=P28494%5B107-136%5D" class="tooltipped blastSubsequences" title="View this subsequence or run a BLAST search on it.">107-136</a> AND <a href="http://www.uniprot.org/blast/?about=P28494%5B478-496%5D" class="tooltipped blastSubsequences" title="View this subsequence or run a BLAST search on it.">478-496</a> , CATALYTIC ACTIVITY, ACTIVITY REGULATION, SUBUNIT, SUBCELLULAR LOCATION, TISSUE SPECIFICITY, GLYCOSYLATION.
 
 <!-- -->
@@ -122,7 +122,7 @@ Example: [P28494](http://www.uniprot.org/uniprotkb/P28494#function)
 Manual assertion based on opinion
 
 -   **"Novel purification of the catalytic domain of Golgi alpha-mannosidase II. Characterization and comparison with the intact enzyme."**  
-    <a href="http://www.uniprot.org/?query=author:%22Ferrante+A.W.+Jr.%22" rel="nofollow">Ferrante A.W. Jr.</a> , <a href="http://www.uniprot.org/?query=author:%22Reinke+R.%22" rel="nofollow">Reinke R.</a> , <a href="http://www.uniprot.org/?query=author:%22Stanley+E.R.%22" rel="nofollow">Stanley E.R.</a>  
+    [Ferrante A.W. Jr.](http://www.uniprot.org/?query=author:%22Ferrante+A.W.+Jr.%22) , [Reinke R.](http://www.uniprot.org/?query=author:%22Reinke+R.%22) , [Stanley E.R.](http://www.uniprot.org/?query=author:%22Stanley+E.R.%22)  
     [Proc. Natl. Acad. Sci. U.S.A. 92:1911-1915(1995)](http://dx.doi.org/10.1073/pnas.92.6.1911) \[ [PubMed](http://www.ncbi.nlm.nih.gov/pubmed/7892198) \] \[ [Europe PMC](http://europepmc.org/abstract/MED/7892198) \] \[ [Abstract](http://www.uniprot.org/citations/7892198) \] **Cited for** : NUCLEOTIDE SEQUENCE \[MRNA\], FUNCTION, SUBCELLULAR LOCATION, TISSUE SPECIFICITY, DEVELOPMENTAL STAGE.
 
 <!-- -->
@@ -143,7 +143,7 @@ Example: [Q9UKV3](http://www.uniprot.org/uniprotkb/Q9UKV3#miscellaneous)
 Manual assertion inferred from experiment in
 
 -   **"The structure of the ASAP core complex reveals the existence of a Pinin-containing PSAP complex."**  
-    <a href="http://www.uniprot.org/?query=author:%22Murachelli+A.G.%22" rel="nofollow">Murachelli A.G.</a> , <a href="http://www.uniprot.org/?query=author:%22Ebert+J.%22" rel="nofollow">Ebert J.</a> , <a href="http://www.uniprot.org/?query=author:%22Basquin+C.%22" rel="nofollow">Basquin C.</a> , <a href="http://www.uniprot.org/?query=author:%22Le+Hir+H.%22" rel="nofollow">Le Hir H.</a> , <a href="http://www.uniprot.org/?query=author:%22Conti+E.%22" rel="nofollow">Conti E.</a>  
+    [Murachelli A.G.](http://www.uniprot.org/?query=author:%22Murachelli+A.G.%22) , [Ebert J.](http://www.uniprot.org/?query=author:%22Ebert+J.%22) , [Basquin C.](http://www.uniprot.org/?query=author:%22Basquin+C.%22) , [Le Hir H.](http://www.uniprot.org/?query=author:%22Le+Hir+H.%22) , [Conti E.](http://www.uniprot.org/?query=author:%22Conti+E.%22)  
     [Nat. Struct. Mol. Biol. 19:378-386(2012)](http://dx.doi.org/10.1038/nsmb.2242) \[ [PubMed](http://www.ncbi.nlm.nih.gov/pubmed/22388736) \] \[ [Europe PMC](http://europepmc.org/abstract/MED/22388736) \] \[ [Abstract](http://www.uniprot.org/citations/22388736) \] **Cited for** : INTERACTION WITH RNPS1, COMPOSITION OF THE ASAP COMPLEX, FUNCTION OF THE ASAP COMPLEX.
 
 <!-- -->
@@ -160,7 +160,7 @@ Example: [P62196](http://www.uniprot.org/uniprotkb/P62196#ptm%5Fprocessing)
 Manual assertion inferred from experiment in
 
 -   **"Mapping the murine cardiac 26S proteasome complexes."**  
-    <a href="http://www.uniprot.org/?query=author:%22Gomes+A.V.%22" rel="nofollow">Gomes A.V.</a> , <a href="http://www.uniprot.org/?query=author:%22Zong+C.%22" rel="nofollow">Zong C.</a> , <a href="http://www.uniprot.org/?query=author:%22Edmondson+R.D.%22" rel="nofollow">Edmondson R.D.</a> , <a href="http://www.uniprot.org/?query=author:%22Li+X.%22" rel="nofollow">Li X.</a> , <a href="http://www.uniprot.org/?query=author:%22Stefani+E.%22" rel="nofollow">Stefani E.</a> , <a href="http://www.uniprot.org/?query=author:%22Zhang+J.%22" rel="nofollow">Zhang J.</a> , <a href="http://www.uniprot.org/?query=author:%22Jones+R.C.%22" rel="nofollow">Jones R.C.</a> , <a href="http://www.uniprot.org/?query=author:%22Thyparambil+S.%22" rel="nofollow">Thyparambil S.</a> , <a href="http://www.uniprot.org/?query=author:%22Wang+G.W.%22" rel="nofollow">Wang G.W.</a> , <a href="http://www.uniprot.org/?query=author:%22Qiao+X.%22" rel="nofollow">Qiao X.</a> , <a href="http://www.uniprot.org/?query=author:%22Bardag-Gorce+F.%22" rel="nofollow">Bardag-Gorce F.</a> , <a href="http://www.uniprot.org/?query=author:%22Ping+P.%22" rel="nofollow">Ping P.</a>  
+    [Gomes A.V.](http://www.uniprot.org/?query=author:%22Gomes+A.V.%22) , [Zong C.](http://www.uniprot.org/?query=author:%22Zong+C.%22) , [Edmondson R.D.](http://www.uniprot.org/?query=author:%22Edmondson+R.D.%22) , [Li X.](http://www.uniprot.org/?query=author:%22Li+X.%22) , [Stefani E.](http://www.uniprot.org/?query=author:%22Stefani+E.%22) , [Zhang J.](http://www.uniprot.org/?query=author:%22Zhang+J.%22) , [Jones R.C.](http://www.uniprot.org/?query=author:%22Jones+R.C.%22) , [Thyparambil S.](http://www.uniprot.org/?query=author:%22Thyparambil+S.%22) , [Wang G.W.](http://www.uniprot.org/?query=author:%22Wang+G.W.%22) , [Qiao X.](http://www.uniprot.org/?query=author:%22Qiao+X.%22) , [Bardag-Gorce F.](http://www.uniprot.org/?query=author:%22Bardag-Gorce+F.%22) , [Ping P.](http://www.uniprot.org/?query=author:%22Ping+P.%22)  
     [Circ. Res. 99:362-371(2006)](http://dx.doi.org/10.1161/01.RES.0000237386.98506.f7) \[ [PubMed](http://www.ncbi.nlm.nih.gov/pubmed/16857966) \] \[ [Europe PMC](http://europepmc.org/abstract/MED/16857966) \] \[ [Abstract](http://www.uniprot.org/citations/16857966) \] **Cited for** : IDENTIFICATION IN THE 19S PROTEASOME REGULATORY COMPLEX, ACETYLATION AT ALA-2.
 
 <!-- -->
@@ -198,7 +198,7 @@ UniRule annotation
 
 Manual assertion according to rules
 
--   [HAMAP-Rule:MF_00979](http://hamap.expasy.org/unirule/MF_00979)
+-   [HAMAP-Rule:MF\_00979](http://hamap.expasy.org/unirule/MF_00979)
 
   
 

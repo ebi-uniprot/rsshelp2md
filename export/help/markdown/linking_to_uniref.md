@@ -5,7 +5,7 @@ categories: UniRef,faq
 
 **Are UniRef cluster identifiers permanent?**
 
-No. However, the vast majority do not change from release to release even if clusters are recomputed, and the representative entry usually remains the same. For example, [UniRef50_P99999](http://www.uniprot.org/uniref/UniRef50%5FP99999) has over 450 members, and [Cytochrome C from Human](http://www.uniprot.org/uniprotkb/P99999) is the representative. This will probably remain so, as it is by far the best annotated and biologically relevant member of the cluster. If a cluster has multiple equally suitable well-annotated members, the historically consistent representative member takes precedence.
+No. However, the vast majority do not change from release to release even if clusters are recomputed, and the representative entry usually remains the same. For example, [UniRef50\_P99999](http://www.uniprot.org/uniref/UniRef50%5FP99999) has over 450 members, and [Cytochrome C from Human](http://www.uniprot.org/uniprotkb/P99999) is the representative. This will probably remain so, as it is by far the best annotated and biologically relevant member of the cluster. If a cluster has multiple equally suitable well-annotated members, the historically consistent representative member takes precedence.
 
 **How do I link to UniRef clusters, and what if the cluster ID changed?**
 

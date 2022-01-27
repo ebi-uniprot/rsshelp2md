@@ -1,12 +1,8 @@
 publications_section
 ---
 Dead links
-http://www.uniprot.org/docs/strains
-http://www.uniprot.org/docs/plasmid
 Anchor tag: additional_bibliography
 Anchor tag: community_bibliography
-http://www.uniprot.org/docs/tisslist
-http://www.uniprot.org/docs/strains
 
 Dead anchor tags
 http://www.uniprot.org/help/publications%5Fsection#additional%5Fbibliography

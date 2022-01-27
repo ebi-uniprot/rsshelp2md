@@ -29,10 +29,7 @@ See also:
 
 -   [Transmembrane regions in reviewed entries](http://www.uniprot.org/help/transmem)
 
-<figure>
-<img src="https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/sam-13.png" style="display: block; margin-left: auto; margin-right: auto;" alt="image" />
-<figcaption aria-hidden="true">image</figcaption>
-</figure>
+![image](https://github.com/ebi-uniprot/uniprot-manual/raw/main/images/sam-13.png)
 
 #### Signal peptide
 

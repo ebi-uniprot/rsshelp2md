@@ -1,8 +1,5 @@
 init_met
 ---
-Dead links
-http://www.uniprot.org/manual/sequence
-
 Dead anchor tags
 http://www.uniprot.org/uniprot/Q9H425#ptm_processing
 http://www.uniprot.org/uniprot/P31946#ptm%5Fprocessing

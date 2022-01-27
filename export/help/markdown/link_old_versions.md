@@ -3,7 +3,7 @@ title: How do I link to a specific version of a UniProtKB entry?
 categories: UniProtKB,Technical,Release,faq
 ---
 
-In order to keep up-to-date with scientific knowledge, we update entries thus producing a new version of the entry each time. For example, there have been over 250 updates to [P00750](http://www.uniprot.org/uniprotkb/P00750) (TPA_HUMAN).
+In order to keep up-to-date with scientific knowledge, we update entries thus producing a new version of the entry each time. For example, there have been over 250 updates to [P00750](http://www.uniprot.org/uniprotkb/P00750) (TPA\_HUMAN).
 
 The version number appears below the accession number right at the top of a UniProtKB entry view. The **History** link allows you to browse and compare various versions of the entry.
 

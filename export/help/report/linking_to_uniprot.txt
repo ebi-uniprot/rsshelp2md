@@ -1,7 +1,7 @@
 linking_to_uniprot
 ---
 Dead links
-https://www.uniprot.org/uniref/UniRef100%5FP99999.xml
-https://www.uniprot.org/uniprot/P99999.gff
-https://www.uniprot.org/uniref/UniRef100%5FP99999.tab
+https://www.uniprot.org/uniref/?query=member:P99999+AND+identity:0.9
+https://www.uniprot.org/uniref/?query=member:P99999+AND+identity:1.0
+https://www.uniprot.org/uniprot/P99999.txt
 

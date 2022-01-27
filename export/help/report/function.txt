@@ -2,8 +2,8 @@ function
 ---
 Dead anchor tags
 http://www.uniprot.org/uniprot/Q8MMJ7#function
+http://www.uniprot.org/uniprot/Q9UBU3#function
 http://www.uniprot.org/uniprot/P16157#function
 http://www.uniprot.org/uniprot/P0A9Q8#function
 http://www.uniprot.org/uniprot/Q8WVD3#function
-http://www.uniprot.org/uniprot/P29317#function
 

@@ -29,78 +29,18 @@ There are several ways of obtaining the URL corresponding to your query for prog
 
 The URL for a query result consists of a data set name (e.g. `uniprot` , `uniref` , `uniparc` , `taxonomy` , ...) and the actual query. The following query parameters are supported:
 
-<table>
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 33%" />
-<col style="width: 55%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Values</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>query</code></td>
-<td><em>string</em></td>
-<td>See <a href="http://www.uniprot.org/help/text-search">query syntax</a><br />
+<table><colgroup><col style="width: 10%" /><col style="width: 33%" /><col style="width: 55%" /></colgroup><thead><tr class="header"><th>Parameter</th><th>Values</th><th>Description</th></tr></thead><tbody><tr class="odd"><td><code>query</code></td><td><em>string</em></td><td>See <a href="http://www.uniprot.org/help/text-search">query syntax</a><br />
 and <a href="http://www.uniprot.org/help/query-fields">query fields for UniProtKB</a> .<br />
 An empty query string will retrieve all entries in a data set. <strong>Tip:</strong> Click <strong>Advanced</strong><br />
-in the search bar.</td>
-</tr>
-<tr class="even">
-<td><code>format</code></td>
-<td><code>html | tab | xls | fasta | gff | txt | xml | rdf | list | rss</code></td>
-<td><p>Format in which to return results:</p>
-<ul>
-<li><code>tab</code> returns data for the selected <code>columns</code> in tab-separated format.</li>
-<li><code>xls</code> returns data for the selected <code>columns</code> for import into Excel.</li>
-<li><code>fasta</code> returns sequence data only, where applicable.</li>
-<li><code>gff</code> returns sequence annotation, where applicable.</li>
-<li><code>txt</code> , <code>xml</code> and <code>rdf</code> return full entries.</li>
-<li><code>list</code> returns a list of identifiers.</li>
-<li><code>rss</code> returns an <a href="http://opensearch.a9.com/">OpenSearch</a> RSS feed.</li>
-</ul>
-<p><strong>Tip:</strong> Click <code>Download</code> above the list of results.</p></td>
-</tr>
-<tr class="odd">
-<td><code>columns</code></td>
-<td>comma-separated list of column names</td>
-<td>Columns to select for retrieving results in <code>tab</code> or <code>xls</code> format.<br />
+in the search bar.</td></tr><tr class="even"><td><code>format</code></td><td><code>html | tab | xls | fasta | gff | txt | xml | rdf | list | rss</code></td><td><p>Format in which to return results:</p><ul><li><code>tab</code> returns data for the selected <code>columns</code> in tab-separated format.</li><li><code>xls</code> returns data for the selected <code>columns</code> for import into Excel.</li><li><code>fasta</code> returns sequence data only, where applicable.</li><li><code>gff</code> returns sequence annotation, where applicable.</li><li><code>txt</code> , <code>xml</code> and <code>rdf</code> return full entries.</li><li><code>list</code> returns a list of identifiers.</li><li><code>rss</code> returns an <a href="http://opensearch.a9.com/">OpenSearch</a> RSS feed.</li></ul><p><strong>Tip:</strong> Click <code>Download</code> above the list of results.</p></td></tr><tr class="odd"><td><code>columns</code></td><td>comma-separated list of column names</td><td>Columns to select for retrieving results in <code>tab</code> or <code>xls</code> format.<br />
 Click <strong>Columns</strong> on the search results page to see the available columns<br />
 (for UniProtKB you can also read the <a href="http://www.uniprot.org/help/uniprotkb_column_names">full list of UniProtKB column names</a> ).<br />
-<strong>Tip:</strong> Some columns can be parameterized, e.g. <code>database(PDB)</code> (see the example at the end of this section).</td>
-</tr>
-<tr class="even">
-<td><code>include</code></td>
-<td><code>yes | no</code></td>
-<td>Include isoform sequences when the <code>format</code> parameter is set to <code>fasta</code> .<br />
+<strong>Tip:</strong> Some columns can be parameterized, e.g. <code>database(PDB)</code> (see the example at the end of this section).</td></tr><tr class="even"><td><code>include</code></td><td><code>yes | no</code></td><td>Include isoform sequences when the <code>format</code> parameter is set to <code>fasta</code> .<br />
 Include description of referenced data when the <code>format</code> parameter is set to <code>rdf</code> .<br />
-This parameter is ignored for all other values of the <code>format</code> parameter.</td>
-</tr>
-<tr class="odd">
-<td><code>compress</code></td>
-<td><code>yes | no</code></td>
-<td>Return results gzipped. Note that if the client supports HTTP compression,<br />
+This parameter is ignored for all other values of the <code>format</code> parameter.</td></tr><tr class="odd"><td><code>compress</code></td><td><code>yes | no</code></td><td>Return results gzipped. Note that if the client supports HTTP compression,<br />
 results may be compressed transparently even if this parameter is<br />
-not set to <code>yes</code> .</td>
-</tr>
-<tr class="even">
-<td><code>limit</code></td>
-<td><em>integer</em></td>
-<td>Maximum number of results to retrieve.</td>
-</tr>
-<tr class="odd">
-<td><code>offset</code></td>
-<td><em>integer</em></td>
-<td>Offset of the first result, typically used together with<br />
-the <code>limit</code> parameter.</td>
-</tr>
-</tbody>
-</table>
+not set to <code>yes</code> .</td></tr><tr class="even"><td><code>limit</code></td><td><em>integer</em></td><td>Maximum number of results to retrieve.</td></tr><tr class="odd"><td><code>offset</code></td><td><em>integer</em></td><td>Offset of the first result, typically used together with<br />
+the <code>limit</code> parameter.</td></tr></tbody></table>
 
 The following example retrieves all human entries matching the term ' `antigen` ' in RDF/XML and tab-separated format, respectively.
 

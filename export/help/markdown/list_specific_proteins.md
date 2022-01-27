@@ -3,7 +3,7 @@ title: Lists of specific protein families
 categories: Biocuration,Family_and_domains,help
 ---
 
-### 7-transmembrane G-linked receptors {#7_transmembrane_G\_linked_receptors}
+### 7-transmembrane G-linked receptors {\#7\_transmembrane\_G\_linked\_receptors}
 
 7-transmembrane G-linked receptors (also known as G protein coupled receptors (GPCRs), seven-transmembrane domain receptors, 7TM receptors, heptahelical receptors, serpentine receptor and G protein-linked receptors (GPLR)) constitute a large protein family of receptors that sense molecules outside the cell and activate inside signal transduction pathways and cellular responses.
 
@@ -36,4 +36,4 @@ Related keyword: [Initiation factor](http://www.uniprot.org/keywords/KW-0396)
 Uncharacterized proteins which share regions of similarities are classified as 'Uncharacterized protein families (UPF)' according to the Prosite database.
 
 UniProtKB/Swiss-Prot document: [List of uncharacterized protein family (UPF) entries](http://www.uniprot.org/docs/upflist)  
-Release 2011_04 headline: [The art of defining the unknown](http://www.uniprot.org/news/2011/04/05/release)
+Release 2011\_04 headline: [The art of defining the unknown](http://www.uniprot.org/news/2011/04/05/release)

@@ -1,5 +1,8 @@
 mod_res
 ---
+Dead links
+http://www.uniprot.org/docs/ptmlist
+
 Dead anchor tags
 http://www.uniprot.org/uniprot/P41500#ptm%5Fprocessing
 http://www.uniprot.org/uniprot/P84715#ptm%5Fprocessing

@@ -1,5 +1,0 @@
-plants
----
-Dead links
-http://www.uniprot.org/program/Plants
-

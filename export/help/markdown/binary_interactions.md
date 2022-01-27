@@ -14,7 +14,7 @@ Interactions with the displayed protein, or with one of its isoforms or proteoly
 
 <!-- -->
 
--   The '#Exp' column indicates the number of experiments in the IntAct database which support the interaction.
+-   The '\#Exp' column indicates the number of experiments in the IntAct database which support the interaction.
 
 <!-- -->
 

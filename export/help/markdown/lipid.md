@@ -21,23 +21,23 @@ The following types of lipidation are described in UniProtKB:
 -   Lipidation of bacterial proteins (S-diacylglycerol)
 -   Other types of lipidation
 
-### 1. N-Myristoylation {#1\_\_N_Myristoylation}
+### 1. N-Myristoylation {\#1\_\_N\_Myristoylation}
 
 N-myristoylation refers to the covalent attachment of myristate to an N-terminal glycine. This irreversible protein modification occurs co- translationally following the removal of the initiator methionine residue, which is also annotated. This modification promotes weak protein-membrane and protein-protein interactions.
 
-We annotate experimentally determined N-myristoylation sites and sites predicted by NMT and NMT_NN predictors provided that the prediction is consistent with other known properties of the protein or that the protein belongs to a family in which this modification is known to occur.  
+We annotate experimentally determined N-myristoylation sites and sites predicted by NMT and NMT\_NN predictors provided that the prediction is consistent with other known properties of the protein or that the protein belongs to a family in which this modification is known to occur.  
 Example: [P84077](http://www.uniprot.org/uniprotkb/P84077#ptm%5Fprocessing)
 
 Related keyword: [Myristate](http://www.uniprot.org/keywords/519)
 
-### 2. Palmitoylation {#2\_\_Palmitoylation}
+### 2. Palmitoylation {\#2\_\_Palmitoylation}
 
 S-palmitoylation is the thioester linkage of long-chain fatty acids to cytoplasmic cysteine residues. S-palmitoylation can modulate interactions with other proteins and membranes and regulate protein trafficking and enzyme activity.  
 Example: [Q09470](http://www.uniprot.org/uniprotkb/Q09470#ptm%5Fprocessing)
 
 Related keyword: [Palmitate](http://www.uniprot.org/keywords/564)
 
-### 3. GPI-anchor addition {#3\_\_GPI_anchor_addition}
+### 3. GPI-anchor addition {\#3\_\_GPI\_anchor\_addition}
 
 GPI-anchor addition refers to the linkage of glycosyl-phosphatidylinositol (GPI) to the C-terminus of extracellular proteins, which mediates their attachment to the plasma membrane. GPI-anchor addition takes place in the lumen of the endoplasmic reticulum.
 
@@ -46,7 +46,7 @@ Example: [P21589](http://www.uniprot.org/uniprotkb/P21589#ptm_processing)
 
 Related keyword: [GPI-anchor](http://www.uniprot.org/keywords/336)
 
-### 4. Prenylation {#4\_\_Prenylation}
+### 4. Prenylation {\#4\_\_Prenylation}
 
 Prenylation is the thioether linkage of an isoprenoid lipid (farnesyl (C-15) or geranylgeranyl (C-20)) to a cytoplasmic cysteine at or near the C-terminus. These lipid groups mediate protein attachment to membranes and their addition is specified by the amino acid sequence motifs CAAX, CC or CAC at the C-terminus. Prenylated proteins are estimated to represent 0.5% of all intracellular proteins.  
 Example: [P62820](http://www.uniprot.org/uniprotkb/P62820#ptm%5Fprocessing)
@@ -57,12 +57,12 @@ Example: [P34068](http://www.uniprot.org/uniprotkb/P34068#ptm_processing)
 Related keyword: [Prenylation](http://www.uniprot.org/keywords/636)  
 In entries where prenylation is followed by cleavage and methylation of the new C-terminal cysteine residue: [Methylation](http://www.uniprot.org/keywords/488)
 
-### 5. Lipidation of bacterial proteins (S-diacylglycerol) {#5\_\_Lipidation_of_bacterial_proteins\_\_S_diacylglycerol\_}
+### 5. Lipidation of bacterial proteins (S-diacylglycerol) {\#5\_\_Lipidation\_of\_bacterial\_proteins\_\_S\_diacylglycerol\_}
 
 Most bacterial lipoproteins are anchored to the outer plasma membrane by diacylglycerol linked to the side chain of an N-terminal cysteine via the sulfur atom. This modification is required for the cleavage of the signal peptide. The mature N-terminal chain is further palmitoylated.  
 Example: [P61320](http://www.uniprot.org/uniprotkb/P61320#ptm_processing)
 
-### 6. Other examples of lipidation {#6\_\_Other_examples_of_lipidation}
+### 6. Other examples of lipidation {\#6\_\_Other\_examples\_of\_lipidation}
 
 O-octanoyl: attached to serine or threonine of secreted proteins.  
 Example: [Q9UBU3](http://www.uniprot.org/uniprotkb/Q9UBU3#ptm_processing)

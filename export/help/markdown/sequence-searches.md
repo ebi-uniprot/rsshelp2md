@@ -12,14 +12,14 @@ Select the *Blast* tab of the toolbar to run a sequence similarity search with t
 
 The following kinds of UniProt identifiers are supported:
 
-|                      |                                                                                       |
-|:---------------------|:--------------------------------------------------------------------------------------|
-| **P00750**           | UniProtKB entry                                                                       |
-| **P00750-2**         | UniProtKB entry isoform sequence                                                      |
-| **P00750\[1-20\]**   | Part of UniProtKB entry sequence, from its 1st to 20th amino acid residue (inclusive) |
-| **A4_HUMAN**         | UniProtKB entry name                                                                  |
-| **UPI0000000001**    | UniParc entry                                                                         |
-| **UniRef100_P00750** | UniRef entry                                                                          |
+|                       |                                                                                       |
+|:----------------------|:--------------------------------------------------------------------------------------|
+| **P00750**            | UniProtKB entry                                                                       |
+| **P00750-2**          | UniProtKB entry isoform sequence                                                      |
+| **P00750\[1-20\]**    | Part of UniProtKB entry sequence, from its 1st to 20th amino acid residue (inclusive) |
+| **A4\_HUMAN**         | UniProtKB entry name                                                                  |
+| **UPI0000000001**     | UniParc entry                                                                         |
+| **UniRef100\_P00750** | UniRef entry                                                                          |
 
 If you select the *Blast* tab of the toolbar from a UniProtKB, UniRef or UniParc entry page, the current sequence is prefilled in the form.
 

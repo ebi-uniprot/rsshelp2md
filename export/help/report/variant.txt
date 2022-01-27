@@ -1,5 +1,8 @@
 variant
 ---
+Dead links
+http://www.uniprot.org/docs/strains
+
 Dead anchor tags
 http://www.uniprot.org/uniprot/Q96CV9#sequences
 http://www.uniprot.org/uniprot/P15516#sequences

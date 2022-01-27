@@ -5,9 +5,9 @@ categories: UniProtKB,UniRef,UniParc,Cross-references,Download,Release,faq
 
 #### How frequently is UniProt released?
 
-UniProt releases are published every 8 weeks (4 weeks until the last 2019 release, 2019_11), with possible exceptions in January and summer due to reduced staff during holidays.
+UniProt releases are published every 8 weeks (4 weeks until the last 2019 release, 2019\_11), with possible exceptions in January and summer due to reduced staff during holidays.
 
-The current release number format is YYYY_XX where YYYY is the calendar year and XX a 2-digit number that is incremented for each release of a given year, e.g. 2010_01, 2010_02, etc.
+The current release number format is YYYY\_XX where YYYY is the calendar year and XX a 2-digit number that is incremented for each release of a given year, e.g. 2010\_01, 2010\_02, etc.
 
 #### What is the synchronization delay with other databases?
 
@@ -17,7 +17,7 @@ However, UniProtKB data is "frozen" significantly earlier than the public releas
 
 #### Can I gain access to previous releases?
 
-We archive previous releases on our [ftp site](https://ftp.uniprot.org/pub/databases/uniprot/previous%5Freleases) for at least 2 years. Beyond that time, we archive the first release of a year, YYYY_01. We therefore recommend that you **use the first release of a year if you develop a tool** trained on a given release or subset, in order to allow the readers of your publication to reproduce your work at a later point in time.
+We archive previous releases on our [ftp site](https://ftp.uniprot.org/pub/databases/uniprot/previous%5Freleases) for at least 2 years. Beyond that time, we archive the first release of a year, YYYY\_01. We therefore recommend that you **use the first release of a year if you develop a tool** trained on a given release or subset, in order to allow the readers of your publication to reproduce your work at a later point in time.
 
 See also:
 

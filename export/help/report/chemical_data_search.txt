@@ -1,0 +1,5 @@
+chemical_data_search
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3A%22catalytic+activity%22+CHEBI%3A35381%29
+
