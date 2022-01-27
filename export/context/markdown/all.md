@@ -1,8 +1,12 @@
 <h3 id=protein_count>Protein count</h3>
-Number of protein entries associated with this proteome: UniProtKB entries for regular proteomes or UniParc entries for redundant proteomes ( [more...](http://www.uniprot.org/help/proteome%5Fredundancy) )
+Number of protein entries associated with this proteome: UniProtKB entries for regular proteomes or UniParc entries for redundant proteomes 
+
+[More...](http://www.uniprot.org/help/proteome%5Fredundancy)
 
 <h3 id=genome_assembly>Genome assembly ID</h3>
-Identifier for the genome assembly ( [more...](https://www.ensembl.org/Help/Faq?id=216) )
+Identifier for the genome assembly
+
+[More...](https://www.ensembl.org/Help/Faq?id=216)
 
 <h3 id=proteome_components>Proteome components</h3>
 Genomic components encoding the proteome
