@@ -213,13 +213,31 @@ def check_and_standardize_link(url, el):
     if parsed.scheme == 'ftp':
         return is_ftp_url_ok(parsed), None
     paths = os.path.split(parsed.path)
+
+    # If nothing as hostname assume this to be uniprot
+    if parsed.hostname is None:
+        parsed = parsed._replace(netloc=uniprot_org_url)
+
     # Check if this is uniprot.org
     if parsed.hostname == uniprot_org_url:
+        # Make all paths lowercase
+        paths = [path.lower() for path in paths]
+
+        # Always use HTTPS
+        parsed = parsed._replace(scheme='https')
+
         # Check if this uniprot(kb) and if so replace path
         if paths[0] == uniprot_org_kb_path:
             paths = [uniprot_beta_kb_path, *paths[1:]]
             parsed = parsed._replace(path=os.path.join(*paths))
             el.attrs['href'] = parsed.geturl()
+
+        # /manual redirects to /help now
+        elif paths[0] == '/manual':
+            paths = ['/help/', *paths[1:]]
+            parsed = parsed._replace(path=os.path.join(*paths))
+            el.attrs['href'] = parsed.geturl()
+
         # Check that the corresponding beta page exists
         beta_parsed = parsed._replace(netloc=uniprot_beta_url)
         ok, anchor_found = is_uniprot_beta_link_ok(beta_parsed)
