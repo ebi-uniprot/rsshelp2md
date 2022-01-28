@@ -1,0 +1,14 @@
+query-fields
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=host:40674
+http://www.uniprot.org/uniprot/?query=annotation:(type:mutagen%20phosphorylation)
+http://www.uniprot.org/uniprot/?query=proteomecomponent:%22chromosome%201%22+organism%3A%22Homo+sapiens+%28Human%29+[9606]%22
+
+Dead anchor tags
+http://www.uniprot.org/help/taxonomy#strain
+http://www.uniprot.org/help/taxonomy#lineage
+
+Number tables left as HTML
+1
+

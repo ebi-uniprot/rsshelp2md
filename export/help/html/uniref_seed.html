@@ -1,0 +1,64 @@
+<div>
+ <p>
+  A
+  <a href="http://www.uniprot.org/help/uniref">
+   UniRef
+  </a>
+  <strong>
+   seed
+  </strong>
+  is the sequence that has been used as the template to recruit other sequences by the clustering algorithm. The seed sequence is the longest member of a cluster.
+ </p>
+ <p>
+  However, the longest sequence is not always the most informative one. There is often more biologically relevant information (name, function, cross-references) available on other cluster members. All the proteins in a cluster are therefore ranked as follows to select the most biologically relevant
+  <strong>
+   representative sequence
+  </strong>
+  for the cluster:
+ </p>
+ <ol>
+  <li>
+   Quality of the entry:
+   <a href="http://www.uniprot.org/help/manual%5Fcuration">
+    manually reviewed entries
+   </a>
+   (i.e. from UniProtKB/Swiss-Prot) are preferred;
+  </li>
+  <li>
+   Annotation score: entries that have higher UniProtKB
+   <a href="http://www.uniprot.org/help/annotation%5Fscore">
+    annotation scores
+   </a>
+   are preferred. This also means that UniProtKB entries will always take precedence over entries that are in
+   <a href="http://www.uniprot.org/help/uniparc">
+    UniParc
+   </a>
+   but not in UniProtKB;
+  </li>
+  <li>
+   Organism: entries from
+   <a href="http://www.uniprot.org/help/reference%5Fproteome">
+    reference proteomes
+   </a>
+   and model organisms are preferred; and,
+  </li>
+  <li>
+   Length of the sequence: longest sequence is preferred.
+  </li>
+ </ol>
+ <p>
+  Notes:
+ </p>
+ <ul>
+  <li>
+   The cluster is defined by the identity relationship of its members to the seed,
+   <strong>
+    not
+   </strong>
+   to the representative sequence. This does not imply that all sequences within a cluster have the same identity percentage among themselves.
+  </li>
+  <li>
+   In some rare cases, a member is more similar to the representative of another cluster than to the representative of its own cluster, but never more similar to any other cluster’s seed.
+  </li>
+ </ul>
+</div>

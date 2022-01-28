@@ -1,0 +1,336 @@
+<div>
+ <p>
+  UniProt provides
+  <a href="http://www.uniprot.org/proteomes">
+   proteome
+  </a>
+  sets of proteins whose genomes have been completely sequenced.
+ </p>
+ <p>
+  <strong>
+   What is a proteome?
+  </strong>
+ </p>
+ <p>
+  A proteome is the set of proteins thought to be expressed by an organism. The majority of the UniProt proteomes are based on the translation of a completely sequenced genome, and will normally include sequences that derive from extra-chromosomal elements such as plasmids or organellar genomes in organisms where these occur. Some proteomes may also include protein sequences based on high quality cDNAs that cannot be mapped to the current genome assembly due to sequencing errors or gaps. These are only included in the proteome following manual review of the supporting evidence, including careful analysis of homologous sequences from closely related organisms.
+ </p>
+ <p>
+  As more and more genomes of the same organism are being sequenced, we introduced
+  <a href="http://www.uniprot.org/help/proteome%5Fid">
+   unique proteome identifiers
+  </a>
+  to distinguish individual proteomes from the same
+  <a href="http://www.uniprot.org/manual/taxonomic%5Fidentifier">
+   taxonomy identifier
+  </a>
+  .
+ </p>
+ <p>
+  <strong>
+   What is the curation status of UniProt proteomes?
+  </strong>
+ </p>
+ <p>
+  UniProt proteomes may include both manually reviewed (UniProtKB/Swiss-Prot) and unreviewed (UniProtKB/TrEMBL) entries. The proportion of reviewed entries varies between proteomes, and is obviously greater for the proteomes of intensively curated model organisms: some proteomes, such as those of
+  <a href="http://www.uniprot.org/uniprot/?query=proteome:UP000002311">
+   <em>
+    Saccharomyces cerevisiae
+   </em>
+   288C
+  </a>
+  and
+  <a href="http://www.uniprot.org/uniprot/?query=proteome:UP000000625">
+   <em>
+    Escherichia coli
+   </em>
+   strain K12
+  </a>
+  consist entirely of reviewed entries. Curation is a continuing process, and proteomes are updated in a regular manner as new information becomes available: pseudogenes and other dubious uncharacterized ORFs may be removed, other newly identified and characterized sequences may be added.
+ </p>
+ <p>
+  <strong>
+   What is the source of the sequences for proteomes?
+  </strong>
+ </p>
+ <p>
+  The majority of UniProt proteomes are based on translations of genome sequence submissions to the International Nucleotide Sequence Database Consortium (
+  <a href="http://www.insdc.org/">
+   INSDC
+  </a>
+  ).
+ </p>
+ <p>
+  Complementary pipelines for import of protein sequences have been developed in collaboration with
+  <a href="http://www.ensembl.org/">
+   Ensembl
+  </a>
+  for vertebrate species,
+  <a href="http://ensemblgenomes.org/">
+   Ensembl Genomes
+  </a>
+  for non-vertebrate species,
+  <a href="http://parasite.wormbase.org/">
+   WormBase ParaSite
+  </a>
+  for parasitic nematodes and
+  <a href="https://www.vectorbase.org/">
+   VectorBase
+  </a>
+  for pathogen vector genomes. In addition, a new pipeline imports selected non-redundant genomes annotated by NCBI
+  <a href="https://www.ncbi.nlm.nih.gov/refseq/">
+   RefSeq
+  </a>
+  . These sources provide proteome sequences for a number of key genomes of special interest where the INSDC submission is lacking gene model annotation. Both INSDC and non-INSDC derived proteomes link back to the source via the assembly and annotation sections respectively.
+ </p>
+ <p>
+  As the above-mentioned pipelines cover organisms for which we already have some sequences in UniProtKB, these existing sequences have to be reconciled with those imported. The procedure works in the following way:
+ </p>
+ <ul>
+  <li>
+   Sequences from non-INSDC genomes are first mapped to their UniProtKB counterparts under stringent conditions, requiring 100% identity over 100% of the length of the two sequences. These entries are flagged as part of the proteome (i.e. linked to "Proteomes" via the proteome identifier) and updated with an Ensembl/EnsemblGenomes/WormBase/VectorBase/RefSeq cross-reference.
+  </li>
+ </ul>
+ <ul>
+  <li>
+   Non-INSDC genomic sequences that are absent from UniProtKB are imported into UniProtKB/TrEMBL. These entries are flagged as part of the proteome and have a cross-reference to the appropriate resource.
+  </li>
+ </ul>
+ <ul>
+  <li>
+   All other UniProtKB/Swiss-Prot entries within the proteome that do not map to these non-INSDC genomes are flagged as part of the proteome.
+  </li>
+ </ul>
+ <p>
+  Therefore, a proteome is formed from all UniProtKB/Swiss-Prot entries (irrespective of whether they map to non-INSDC annotated genomes) plus those UniProtKB/TrEMBL entries mapping to the non-INSDC resource for that proteome.
+ </p>
+ <p>
+  To date these pipelines have been used to populate UniProtKB with additional sequences for the human proteome, major model organisms and other species of special interest (see headline
+  <a href="http://www.uniprot.org/news/2011/05/03/release">
+   Complete proteomes for
+   <em>
+    Homo sapiens
+   </em>
+   and
+   <em>
+    Mus musculus
+   </em>
+  </a>
+  ).
+ </p>
+ <p>
+  See also:
+  <a href="http://www.uniprot.org/help/sequence%5Forigin">
+   Where do the UniProtKB protein sequences come from?
+  </a>
+ </p>
+ <p>
+  <strong>
+   Which sequenced genomes are available as proteomes at UniProt?
+  </strong>
+ </p>
+ <p>
+  The
+  <a href="http://www.uniprot.org/proteomes/">
+   Proteomes portal
+  </a>
+  offers protein sequence sets obtained from the translation of completely sequenced genomes. Published genomes from
+  <a href="https://www.ncbi.nlm.nih.gov/genome">
+   NCBI Genome
+  </a>
+  are brought into UniProt if they satisfy the following criteria:
+ </p>
+ <ul>
+  <li>
+   The genome is annotated and a set of coding sequences is available.
+  </li>
+  <li>
+   The number of predicted coding sequences falls within a statistically significant range of published proteomes from neighbouring species.
+  </li>
+ </ul>
+ <p>
+  All proteomes generated in this manner go through our
+  <a href="http://www.uniprot.org/help/proteome%5Fredundancy">
+   Proteomes redundancy reduction pipeline
+  </a>
+  .
+ </p>
+ <p>
+  See also:
+  <br/>
+  <a href="http://www.uniprot.org/help/synchronization">
+   How frequently is UniProt released? What is the synchronization delay with other databases?
+  </a>
+ </p>
+ <p>
+  <strong>
+   How to retrieve proteomes?
+  </strong>
+ </p>
+ <p>
+  Proteomes can be retrieved via the
+  <a href="http://www.uniprot.org/proteomes">
+   Proteomes
+  </a>
+  section of the UniProt website, which provides download links for various formats.
+ </p>
+ <p>
+  Alternatively, all entries that form a proteome, can be retrieved from UniProtKB by searching for the
+  <a href="http://www.uniprot.org/help/proteome%5Fid">
+   proteome identifier
+  </a>
+  in the
+  <code>
+   proteome
+  </code>
+  field. A proteome identifier uniquely identifies the set of proteins corresponding to a single assembly of a completely sequenced genome.
+ </p>
+ <p>
+  For example, to retrieve the proteome for
+  <em>
+   Escherichia coli
+  </em>
+  (strain K12), the required query would be:
+ </p>
+ <ul>
+  <li>
+   Query:
+   <a href="http://www.uniprot.org/uniprot/?query=proteome:UP000000625">
+    proteome:UP000000625
+   </a>
+  </li>
+ </ul>
+ <p>
+  Please note that there may be several proteomes per
+  <a href="http://www.uniprot.org/help/taxonomy%5Fidentifier">
+   taxonomic identifier
+  </a>
+  . The taxonomic identifier can be used to query the
+  <code>
+   taxonomy
+  </code>
+  field or the
+  <code>
+   organism
+  </code>
+  field, together with the cross-reference to "Proteomes". This will result in the retrieval of all proteome sequences at or below the taxonomic rank specified by the identifier. For example, to retrieve the proteome for
+  <em>
+   Escherichia coli
+  </em>
+  (strain K12) and all proteomes at lower taxonomic nodes (substrains such as
+  <em>
+   Escherichia coli
+  </em>
+  (strain K12 / DH10B)), then the required query would be:
+ </p>
+ <ul>
+  <li>
+   Query:
+   <a href="http://www.uniprot.org/uniprot/?query=taxonomy:83333+AND+proteomes:%2A">
+    taxonomy:83333 AND proteomes:*
+   </a>
+  </li>
+ </ul>
+ <p>
+  <strong>
+   How can I download proteomes?
+  </strong>
+ </p>
+ <p>
+  Our
+  <a href="http://www.uniprot.org/downloads">
+   FTP server
+  </a>
+  allows to download precomputed
+  <a href="https://ftp.uniprot.org/pub/databases/uniprot/current%5Frelease/knowledgebase/reference%5Fproteomes/README">
+   data sets for reference proteomes
+  </a>
+  , based on a gene-centric perspective. For each reference proteome, protein FASTA files (composed of canonical and additional sequences), gene mapping files, Coding DNA Sequence (CDS) FASTA files and database mapping files are available. It may be advisable to prefer an FTP download of these precomputed sets over the HTTP download of query results on the website, because HTTP streams for large datasets tend to fail after a while due to packet loss.
+ </p>
+ <p>
+  To download the results of a text search in UniProtKB:
+ </p>
+ <ul>
+  <li>
+   Click the
+   <b>
+    Download
+   </b>
+   button
+  </li>
+  <li>
+   Choose the download format
+  </li>
+ </ul>
+ <p>
+  To download your favorite proteomes programmatically, please go to the help page
+  <a href="http://www.uniprot.org/help/api%5Fdownloading">
+   Downloading data at every UniProt release
+  </a>
+  , where you will find a code example that illustrates how to download the proteomes for all organisms below a given taxonomic node in FASTA format.
+ </p>
+ <p>
+  Note that the download formats which describe complete UniProtKB entries (flat text, XML, RDF/XML) include only the
+  <a href="http://www.uniprot.org/help/canonical%5Fand%5Fisoforms">
+   'canonical'
+  </a>
+  or displayed protein sequences of UniProtKB entries. These canonical sequences can also be downloaded in FASTA format (option
+  <code>
+   Canonical sequence data in FASTA format
+  </code>
+  ), as can a set of protein sequences including both canonical and manually reviewed 'isoform sequences' from UniProtKB/Swiss-Prot (where available) using the option
+  <code>
+   Canonical and isoform sequence data in FASTA format
+  </code>
+  .
+ </p>
+ <p>
+  See also:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/help/canonical%5Fand%5Fisoforms">
+    What is the canonical sequence? Are all isoforms described in one entry?
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/help/reference%5Fproteome">
+    What are reference proteomes?
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/help/human%5Fproteome">
+    What is UniProt's human proteome?
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/help/retrieve%5Fsets">
+    How to retrieve sets of UniProtKB protein sequences?
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/help/proteome%5Fredundancy">
+    Reducing proteome redundancy
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/help/api">
+    REST API - Access the UniProt website programmatically
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/manual/sequences">
+    Sequences
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/manual/alternative%5Fproducts">
+    Alternative products
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/manual/var%5Fseq">
+    Alternative sequence
+   </a>
+  </li>
+ </ul>
+</div>

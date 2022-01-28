@@ -1,0 +1,671 @@
+<div>
+ <p>
+  Sequence annotations describe regions or sites of interest in the protein sequence, such as post-translational modifications, binding sites, enzyme active sites, local secondary structure or other characteristics reported in the cited references. Sequence conflicts between references are also described in this manner.
+ </p>
+ <p>
+  Sequence annotations (position-specific annotations) used to be found in the 'Sequence annotation (Features)' section in the previous version of the UniProtKB entry view. The flat file and XML formats still group all position-specific annotation together in a "feature table" (FT, ). Each sequence annotation consists of a "feature key", "from" and "to" positions as well as a short description.
+ </p>
+ <p>
+  The current entry view displays annotation by subject (Function, PTM &amp; processing, etc), and the various position-specific annotations are now distributed to the relevant new sections.
+ </p>
+ <div class="grid">
+  <table>
+   <tr>
+    <td>
+     <strong>
+      Subsection
+     </strong>
+    </td>
+    <td>
+     <strong>
+      Content
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      Molecule processing
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/init_met">
+      Initiator methionine
+     </a>
+    </td>
+    <td>
+     Cleavage of the initiator methionine
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/signal">
+      Signal
+     </a>
+    </td>
+    <td>
+     Sequence targeting proteins to the secretory pathway or periplasmic space
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/transit">
+      Transit peptide
+     </a>
+    </td>
+    <td>
+     Extent of a transit peptide for organelle targeting
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/propep">
+      Propeptide
+     </a>
+    </td>
+    <td>
+     Part of a protein that is cleaved during maturation or activation
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/chain">
+      Chain
+     </a>
+    </td>
+    <td>
+     Extent of a polypeptide chain in the mature protein
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/peptide">
+      Peptide
+     </a>
+    </td>
+    <td>
+     Extent of an active peptide in the mature protein
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      Regions
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/topo_dom">
+      Topological domain
+     </a>
+    </td>
+    <td>
+     Location of non-membrane regions of membrane-spanning proteins
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/transmem">
+      Transmembrane
+     </a>
+    </td>
+    <td>
+     Extent of a membrane-spanning region
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/intramem">
+      Intramembrane
+     </a>
+    </td>
+    <td>
+     Extent of a region located in a membrane without crossing it
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/domain">
+      Domain
+     </a>
+    </td>
+    <td>
+     Position and type of each modular protein domain
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/repeat">
+      Repeat
+     </a>
+    </td>
+    <td>
+     Positions of repeated sequence motifs or repeated domains
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/ca_bind">
+      Calcium binding
+     </a>
+    </td>
+    <td>
+     Position(s) of calcium binding region(s) within the protein
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/zn_fing">
+      Zinc finger
+     </a>
+    </td>
+    <td>
+     Position(s) and type(s) of zinc fingers within the protein
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/dna_bind">
+      <span class="caps">
+       DNA
+      </span>
+      binding
+     </a>
+    </td>
+    <td>
+     Position and type of a
+     <span class="caps">
+      DNA
+     </span>
+     -binding domain
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/np_bind">
+      Nucleotide binding
+     </a>
+    </td>
+    <td>
+     Nucleotide phosphate binding region
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/region">
+      Region
+     </a>
+    </td>
+    <td>
+     Region of interest in the sequence
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/coiled">
+      Coiled coil
+     </a>
+    </td>
+    <td>
+     Positions of regions of coiled coil within the protein
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/motif">
+      Motif
+     </a>
+    </td>
+    <td>
+     Short (up to 20 amino acids) sequence motif of biological interest
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/compbias">
+      Compositional bias
+     </a>
+    </td>
+    <td>
+     Region of compositional bias in the protein
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      Sites
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/act_site">
+      Active site
+     </a>
+    </td>
+    <td>
+     Amino acid(s) directly involved in the activity of an enzyme
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/metal">
+      Metal binding
+     </a>
+    </td>
+    <td>
+     Binding site for a metal ion
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/binding">
+      Binding site
+     </a>
+    </td>
+    <td>
+     Binding site for any chemical group (co-enzyme, prosthetic group, etc.)
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/site">
+      Site
+     </a>
+    </td>
+    <td>
+     Any interesting single amino acid site on the sequence
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      Amino acid modifications
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/non_std">
+      Non-standard residue
+     </a>
+    </td>
+    <td>
+     Occurence of non-standard amino acids (selenocysteine and pyrrolysine) in the protein sequence
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/mod_res">
+      Modified residue
+     </a>
+    </td>
+    <td>
+     Modified residues excluding lipids, glycans and protein cross-links
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/lipid">
+      Lipidation
+     </a>
+    </td>
+    <td>
+     Covalently attached lipid group(s)
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/carbohyd">
+      Glycosylation
+     </a>
+    </td>
+    <td>
+     Covalently attached glycan group(s)
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/disulfid">
+      Disulfide bond
+     </a>
+    </td>
+    <td>
+     Cysteine residues participating in disulfide bonds
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/crosslnk">
+      Cross-link
+     </a>
+    </td>
+    <td>
+     Residues participating in covalent linkage(s) between proteins
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      Natural variations
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/var_seq">
+      Alternative sequence
+     </a>
+    </td>
+    <td>
+     Amino acid change(s) producing alternate protein isoforms
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/variant">
+      Natural variant
+     </a>
+    </td>
+    <td>
+     Description of a natural variant of the protein
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      Experimental info
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/mutagen">
+      Mutagenesis
+     </a>
+    </td>
+    <td>
+     Site which has been experimentally altered by mutagenesis
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/unsure">
+      Sequence uncertainty
+     </a>
+    </td>
+    <td>
+     Regions of uncertainty in the sequence
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/conflict">
+      Sequence conflict
+     </a>
+    </td>
+    <td>
+     Description of sequence discrepancies of unknown origin
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/non_cons">
+      Non-adjacent residues
+     </a>
+    </td>
+    <td>
+     Indicates that two residues in a sequence are not consecutive
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/non_ter">
+      Non-terminal residue
+     </a>
+    </td>
+    <td>
+     The sequence is incomplete. Indicate that a residue is not the terminal residue of the complete protein
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      Secondary structure
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/helix">
+      Helix
+     </a>
+    </td>
+    <td>
+     Helical regions within the experimentally determined protein structure
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/turn">
+      Turn
+     </a>
+    </td>
+    <td>
+     Turns within the experimentally determined protein structure
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/strand">
+      Beta strand
+     </a>
+    </td>
+    <td>
+     Beta strand regions within the experimentally determined protein structure
+    </td>
+   </tr>
+  </table>
+ </div>
+ <p>
+  The exact boundaries of the described sequence feature, as well as its length, are provided. When a feature is known to extend beyond the position that is given in this section, the endpoint specification will be preceded by '&lt;' (less than) for features which continue to the N-terminal direction or by '&gt;' (greater than) for features which continue to the C-terminal direction.
+ </p>
+ <p>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P62756#ptm%5Fprocessing">
+   P62756
+  </a>
+ </p>
+ <p>
+  Unknown endpoints are denoted by a question mark '?'.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P78586#ptm%5Fprocessing">
+   P78586
+  </a>
+ </p>
+ <p>
+  Uncertain endpoints are denoted by a question mark '?' before the position, e.g. '?42'.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q3ZC31#ptm%5Fprocessing">
+   Q3ZC31
+  </a>
+ </p>
+ <h3 id="annotation_id">
+  Feature identifiers
+ </h3>
+ <p>
+  Some features are associated with a unique and stable identifier that allows to construct links between these position-specific annotations and specialized protein-related databases.
+ </p>
+ <p>
+  The format of the identifiers is a 3-letter prefix, specific for an annotation type, separated by an underscore from a 6 to 10-digit number.
+ </p>
+ <p>
+  Feature identifiers currently exist for the following annotation topics: Propeptide, Chain, Peptide, Glycosylation, Alternative sequence and Natural variant.
+ </p>
+ <div class="grid">
+  <table>
+   <tr>
+    <td>
+     <strong>
+      Subsection
+     </strong>
+    </td>
+    <td>
+     <strong>
+      Identifier prefix
+     </strong>
+    </td>
+    <td>
+     <strong>
+      Availability
+     </strong>
+    </td>
+    <td>
+     <strong>
+      Example
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      Molecule processing
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/propep">
+      Propeptide
+     </a>
+    </td>
+    <td>
+     PRO
+    </td>
+    <td>
+     Any processed propeptide
+    </td>
+    <td>
+     <a href="http://www.uniprot.org/uniprot/Q7XAD0#ptm_processing">
+      <span class="caps">
+       Q7XAD0
+      </span>
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/chain">
+      Chain
+     </a>
+     <br/>
+     <a href="http://www.uniprot.org/manual/peptide">
+      Peptide
+     </a>
+    </td>
+    <td>
+     PRO
+    </td>
+    <td>
+     Any mature polypeptide
+    </td>
+    <td>
+     <a href="http://www.uniprot.org/uniprot/Q9W568#ptm_processing">
+      <span class="caps">
+       Q9W568
+      </span>
+     </a>
+     <br/>
+     <a href="http://www.uniprot.org/uniprot/P15515#ptm_processing">
+      <span class="caps">
+       P15515
+      </span>
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      Amino acid modifications
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/carbohyd">
+      Glycosylation
+     </a>
+    </td>
+    <td>
+     CAR
+    </td>
+    <td>
+     Only for residues attached to an oligosaccharide structure annotated in the
+     <a href="https://glyconnect.expasy.org/">
+      GlyConnect
+     </a>
+     database
+    </td>
+    <td>
+     <a href="http://www.uniprot.org/uniprot/P02771#ptm_processing">
+      <span class="caps">
+       P02771
+      </span>
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      Natural variations
+     </strong>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/var_seq">
+      Alternative sequence
+     </a>
+    </td>
+    <td>
+     VSP
+    </td>
+    <td>
+     Any sequence with an ‘Alternative sequence’ feature
+    </td>
+    <td>
+     <a href="http://www.uniprot.org/uniprot/P81278#sequences">
+      <span class="caps">
+       P81278
+      </span>
+     </a>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a href="http://www.uniprot.org/manual/variant">
+      Natural variant
+     </a>
+    </td>
+    <td>
+     VAR
+    </td>
+    <td>
+     Only for protein sequence variants of Hominidae (great apes and humans)
+    </td>
+    <td>
+     <a href="http://www.uniprot.org/uniprot/P11171#sequences">
+      <span class="caps">
+       P11171
+      </span>
+     </a>
+    </td>
+   </tr>
+  </table>
+ </div>
+</div>

@@ -1,0 +1,1203 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  A UniProtKB major release (14.0) on our brand-new UniProt website
+ </h3>
+ <p>
+  After almost one year of beta testing, the UniProt consortium is proud to announce the release
+      of its new official unified website: a new interface, a new search engine and many new options
+      to serve you better. The content of the various databases we provide is unchanged, except
+      for all the improvements we keep carrying with each new release, as we used to from the very
+      beginning of our existence, some 20 years ago in the case of our older database:
+      UniProtKB/Swiss-Prot. Many documents are available on the
+  <a href="http://www.uniprot.org/help/">
+   Documentation/help
+  </a>
+  page, including FAQs. However, don't
+      hesitate to
+  <a href="http://www.uniprot.org/contact">
+   contact us
+  </a>
+  for any further questions, remarks or
+      update requests.
+ </p>
+ <p>
+  UniProt Knowledgebase release 14.0 includes Swiss-Prot release 56.0 and TrEMBL release 39.0.
+ </p>
+ <p>
+  Release 56.0 of 22-Jul-08 of UniProtKB/Swiss-Prot contains 392'667 sequence
+entries, comprising 141'217'034 amino acids abstracted from 172'036 references.
+36'631 sequences have been added since release 55.0, the sequence data of 605
+existing entries has been updated and the annotations of 356'036 entries have
+been revised.
+ </p>
+ <p>
+  The following improvements were carried out in the last 5 months:
+ </p>
+ <ul>
+  <li>
+   We have structured the UniProtKB DE lines. The new format includes 3 categories:
+   <ul>
+    <li>
+     'RecName' is the protein name recommended by the UniProt Consortium,
+    </li>
+    <li>
+     'AltName' represents synonyms found in the literature or in other databases,
+    </li>
+    <li>
+     'SubName' is the name provided by the submitters of the underlying nucleotide sequence.
+      It is found in UniProtKB/TrEMBL only.
+    </li>
+   </ul>
+   Three subcategories allow the fine tuning of the nomenclature:
+   <ul>
+    <li>
+     Abbreviations and acronyms are available in the 'Short' subcategory,
+    </li>
+    <li>
+     WHO INN (International Nonproprietary Names) are found in the 'INN' subcategory,
+    </li>
+    <li>
+     EC (Enzyme nomenclature) numbers are located in the 'EC' subcategory.
+    </li>
+   </ul>
+   Each block of DE lines may also contain the sections: 'Includes' or 'Contains' and the field
+       'Flags' which indicates, for instance, whether the sequence shown is a fragment and/or a precursor.
+  </li>
+  <li>
+   We have changed the FASTA headers in order to make them compatible with the -o option of the
+      NCBI's program formatdb.
+  </li>
+  <li>
+   We have added a new term to the list of valid plastid values in the OG line: Chromatophore.
+  </li>
+  <li>
+   We have enriched the controlled vocabulary for post-translational modification descriptions
+      with 20 new terms: 12 for the feature key 'CROSSLNK' and 8 for the feature key 'MOD_RES'.
+  </li>
+  <li>
+   We have added cross-references to 7 new databases, bringing the total number of explicit
+      cross-references to 102:
+   <a href="http://agricola.nal.usda.gov">
+    AGRICOLA
+   </a>
+   ,
+   <a href="http://www.candidagenome.org/">
+    Candida Genome Database
+   </a>
+   (CGD),
+   <a href="http://pbil.univ-lyon1.fr/databases/hogenom.php">
+    HOGENOM
+   </a>
+   ,
+   <a href="http://pbil.univ-lyon1.fr/databases/hovergen.php">
+    HOVERGEN
+   </a>
+   ,
+   <a href="http://www.nmpdr.org/">
+    NMPDR
+   </a>
+   ,
+   <a href="http://promex.mpimp-golm.mpg.de/">
+    ProMEX
+   </a>
+   ,
+       and
+   <a href="http://www.bindingdb.org/">
+    BindingDB
+   </a>
+   .
+  </li>
+  We have removed cross-references to HIV and TRANSFAC.
+  <li>
+   We have added 22 new keywords and 2 have been deleted. 12 of the newly created keywords are medical ones.
+  </li>
+  <li>
+   We have added 1 new document:
+   <ul>
+    <li>
+     <a href="http://www.uniprot.org/docs/sec_ac">
+      Secondary accession numbers: index
+     </a>
+    </li>
+   </ul>
+  </li>
+ </ul>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Change of the protein names section (DE line in the flat file)
+ </h3>
+ <p>
+  Up to now, the UniProtKB protein names section (DE lines in the flat file) were listing protein names in a
+computer parsable format, but with a minimal amount of structure. In UniProtKB/Swiss-Prot,
+the description starts with the recommended name of the protein and additional
+alternative names are indicated between parentheses. In UniProtKB/TrEMBL, the description
+is derived directly from the underlying nucleotide entry and its accuracy relies on the
+information provided by the submitter of the nucleotide entry, unless it has been
+improved by automatic annotation procedures.
+ </p>
+ <p>
+  Consistent nomenclature is indispensable for communication, literature searching and
+entry retrieval. The protein names provided in the description lines of UniProtKB/Swiss-
+Prot are widely used by life scientists and often propagated during the annotation of new
+genomic sequences. For these reasons we have structured the UniProtKB DE lines more
+explicitly: We introduced 3 categories, as well as several subcategories, of protein
+names:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Category Field
+   </th>
+   <th>
+    Subcategory Field
+   </th>
+   <th>
+    Cardinality
+   </th>
+   <th>
+    Description
+   </th>
+  </tr>
+  <tr>
+   <td>
+    <strong>
+     RecName:
+    </strong>
+   </td>
+   <td>
+   </td>
+   <td>
+    1 in UniProtKB/Swiss-Prot
+    <br/>
+    0-1 in UniProtKB/TrEMBL
+   </td>
+   <td>
+    The name recommended by the UniProt consortium.
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>
+    <strong>
+     Full=
+    </strong>
+   </td>
+   <td>
+    1
+   </td>
+   <td>
+    The full name.
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>
+    <strong>
+     Short=
+    </strong>
+   </td>
+   <td>
+    0-n
+   </td>
+   <td>
+    An abbreviation of the full name or an acronym.
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>
+    <strong>
+     EC=
+    </strong>
+   </td>
+   <td>
+    0-n
+   </td>
+   <td>
+    An Enzyme Commission number.
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <strong>
+     AltName:
+    </strong>
+   </td>
+   <td>
+   </td>
+   <td>
+    0-n
+   </td>
+   <td>
+    A synonym of the recommended name.
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>
+    <strong>
+     Full=
+    </strong>
+   </td>
+   <td>
+    0-1
+   </td>
+   <td>
+    The full name.
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>
+    <strong>
+     Short=
+    </strong>
+   </td>
+   <td>
+    0-n
+   </td>
+   <td>
+    An abbreviation of the full name or an acronym.
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>
+    <strong>
+     EC=
+    </strong>
+   </td>
+   <td>
+    0-n
+   </td>
+   <td>
+    An Enzyme Commission number.
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <strong>
+     AltName:
+    </strong>
+   </td>
+   <td>
+    <strong>
+     Allergen=
+    </strong>
+   </td>
+   <td>
+    0-1
+   </td>
+   <td>
+    See
+    <a href="http://www.uniprot.org/docs/allergen">
+     allergen.txt
+    </a>
+    .
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <strong>
+     AltName:
+    </strong>
+   </td>
+   <td>
+    <strong>
+     Biotech=
+    </strong>
+   </td>
+   <td>
+    0-1
+   </td>
+   <td>
+    A name used in a biotechnological context.
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <strong>
+     AltName:
+    </strong>
+   </td>
+   <td>
+    <strong>
+     CD_antigen=
+    </strong>
+   </td>
+   <td>
+    0-n
+   </td>
+   <td>
+    See
+    <a href="http://www.uniprot.org/docs/cdlist">
+     cdlist.txt
+    </a>
+    .
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <strong>
+     AltName:
+    </strong>
+   </td>
+   <td>
+    <strong>
+     INN=
+    </strong>
+   </td>
+   <td>
+    0-n
+   </td>
+   <td>
+    The international nonproprietary name: A generic name for a pharmaceutical substance or active pharmaceutical ingredient that is globally recognized and is a public property.
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <strong>
+     SubName:
+    </strong>
+   </td>
+   <td>
+   </td>
+   <td>
+    0 in UniProtKB/Swiss-Prot
+    <br/>
+    0-n in UniProtKB/TrEMBL
+   </td>
+   <td>
+    A name provided by the submitter of the underlying nucleotide sequence.
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>
+    <strong>
+     Full=
+    </strong>
+   </td>
+   <td>
+    1
+   </td>
+   <td>
+    The full name.
+   </td>
+  </tr>
+  <tr>
+   <td>
+   </td>
+   <td>
+    <strong>
+     EC=
+    </strong>
+   </td>
+   <td>
+    0-n
+   </td>
+   <td>
+    An Enzyme Commission number.
+   </td>
+  </tr>
+ </table>
+ <p>
+  Each name is shown on a separate line; lines may therefore exceed 75 characters.
+ </p>
+ <p>
+  A block of DE lines may further contain multiple
+  <strong>
+   Includes:
+  </strong>
+  and/or
+  <strong>
+   Contains:
+  </strong>
+  sections and a separate field
+  <strong>
+   Flags:
+  </strong>
+  to indicate whether the protein sequence is a precursor or a fragment:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Field
+   </th>
+   <th>
+    Cardinality
+   </th>
+   <th>
+    Value
+   </th>
+  </tr>
+  <tr>
+   <td>
+    <strong>
+     Includes:
+    </strong>
+   </td>
+   <td>
+    0-n
+   </td>
+   <td>
+    A block of protein names as described in the table above.
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <strong>
+     Contains:
+    </strong>
+   </td>
+   <td>
+    0-n
+   </td>
+   <td>
+    A block of protein names as described in the table above.
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <strong>
+     Flags:
+    </strong>
+   </td>
+   <td>
+    0-1
+   </td>
+   <td>
+    Precursor and/or Fragment or Fragments
+   </td>
+  </tr>
+ </table>
+ <p>
+  Examples:
+ </p>
+ <a href="http://www.uniprot.org/uniprot/P09919">
+  P09919
+ </a>
+ :
+ <p>
+  Previous format:
+ </p>
+ <pre>
+DE   Granulocyte colony-stimulating factor precursor (G-CSF) (Pluripoietin)
+DE   (Filgrastim) (Lenograstim).
+</pre>
+ <p>
+  New format:
+ </p>
+ <pre>
+DE   RecName: Full=Granulocyte colony-stimulating factor;
+DE            Short=G-CSF;
+DE   AltName: Full=Pluripoietin;
+DE   AltName: INN=Filgrastim;
+DE   AltName: INN=Lenograstim;
+DE   Flags: Precursor;
+</pre>
+ <a href="http://www.uniprot.org/uniprot/Q10743">
+  Q10743
+ </a>
+ :
+ <p>
+  Previous format:
+ </p>
+ <pre>
+DE   ADAM 10 precursor (EC 3.4.24.81) (A disintegrin and metalloproteinase
+DE   domain 10) (Mammalian disintegrin-metalloprotease) (Kuzbanian protein
+DE   homolog) (CD156c antigen) (Fragment).
+</pre>
+ <p>
+  New format:
+ </p>
+ <pre>
+DE   RecName: Full=ADAM 10;
+DE            EC=3.4.24.81;
+DE   AltName: Full=A disintegrin and metalloproteinase domain 10;
+DE   AltName: Full=Mammalian disintegrin-metalloprotease;
+DE   AltName: Full=Kuzbanian protein homolog;
+DE   AltName: CD_antigen=CD156c;
+DE   Flags: Precursor; Fragment;
+</pre>
+ <a href="http://www.uniprot.org/uniprot/Q07908">
+  Q07908
+ </a>
+ :
+ <p>
+  Previous format:
+ </p>
+ <pre>
+DE   Arginine biosynthesis bifunctional protein argJ [Includes: Glutamate
+DE   N-acetyltransferase (EC 2.3.1.35) (Ornithine acetyltransferase)
+DE   (Ornithine transacetylase) (OATase); Amino-acid acetyltransferase
+DE   (EC 2.3.1.1) (N-acetylglutamate synthase) (AGS)] [Contains: Arginine
+DE   biosynthesis bifunctional protein argJ alpha chain; Arginine
+DE   biosynthesis bifunctional protein argJ beta chain].
+</pre>
+ <p>
+  New format:
+ </p>
+ <pre>
+DE   RecName: Full=Arginine biosynthesis bifunctional protein argJ;
+DE   Includes:
+DE     RecName: Full=Glutamate N-acetyltransferase;
+DE              EC=2.3.1.35;
+DE     AltName: Full=Ornithine acetyltransferase;
+DE              Short=OATase;
+DE     AltName: Full=Ornithine transacetylase;
+DE   Includes:
+DE     RecName: Full=Amino-acid acetyltransferase;
+DE              EC=2.3.1.1;
+DE     AltName: Full=N-acetylglutamate synthase;
+DE              Short=AGS;
+DE   Contains:
+DE     RecName: Full=Arginine biosynthesis bifunctional protein argJ alpha chain;
+DE   Contains:
+DE     RecName: Full=Arginine biosynthesis bifunctional protein argJ beta chain;
+</pre>
+ <h3>
+  Changes in the FASTA header line
+ </h3>
+ <p>
+  The UniProtKB FASTA headers were unfortunately incompatible with the -o
+option of the NCBI's program formatdb. We have been working with the NCBI to
+remedy this and changes were required on both sides. The new version of formatdb
+now accepts a database code for UniProtKB/TrEMBL, and we have modified our
+UniProtKB FASTA headers accordingly. For consistency reasons, we also changed
+the FASTA headers of the other UniProt databases.
+ </p>
+ <h2>
+  UniProtKB
+ </h2>
+ <pre>
+&gt;<em>db</em>|<em>UniqueIdentifier</em>|<em>EntryName</em> <em>ProteinName</em> OS=<em>OrganismName</em>[ GN=<em>GeneName</em>] PE=<em>ProteinExistence</em> SV=<em>SequenceVersion</em>
+</pre>
+ Where:
+ <ul>
+  <li>
+   <em>
+    db
+   </em>
+   is 'sp' for UniProtKB/Swiss-Prot and 'tr' for UniProtKB/TrEMBL.
+  </li>
+  <li>
+   <em>
+    UniqueIdentifier
+   </em>
+   is the primary accession number of the UniProtKB entry.
+  </li>
+  <li>
+   <em>
+    EntryName
+   </em>
+   is the entry name of the UniProtKB entry.
+  </li>
+  <li>
+   <em>
+    ProteinName
+   </em>
+   is the recommended name of the UniProtKB entry as
+annotated in the
+   <code>
+    RecName
+   </code>
+   field from release 14.0 on. For UniProtKB/TrEMBL
+entries without a
+   <code>
+    RecName
+   </code>
+   field, the
+   <code>
+    SubName
+   </code>
+   field is used. The 'precursor'
+attribute is excluded, 'Fragment' is included with the name if applicable.
+  </li>
+  <li>
+   <em>
+    OrganismName
+   </em>
+   is the scientific name of the organism of the UniProtKB entry.
+  </li>
+  <li>
+   <em>
+    GeneName
+   </em>
+   is the first gene name of the UniProtKB entry.
+If there is no gene name,
+   <code>
+    OrderedLocusName
+   </code>
+   or
+   <code>
+    ORFname
+   </code>
+   ,
+the
+   <code>
+    GN
+   </code>
+   field is not listed.
+  </li>
+  <li>
+   <em>
+    ProteinExistence
+   </em>
+   is the numerical value describing the evidence
+for the existence of the protein.
+  </li>
+  <li>
+   <em>
+    SequenceVersion
+   </em>
+   is the version number of the sequence.
+  </li>
+ </ul>
+ <p>
+  Examples:
+ </p>
+ <pre>
+&gt;sp|Q8I6R7|ACN2_ACAGO Acanthoscurrin-2 (Fragment) OS=Acanthoscurria gomesiana GN=acantho2 PE=1 SV=1
+&gt;sp|P27748|ACOX_RALEH Acetoin catabolism protein X OS=Ralstonia eutropha (strain ATCC 17699 / H16 / DSM 428 / Stanier 337) GN=acoX PE=4 SV=2
+&gt;sp|P04224|HA22_MOUSE H-2 class II histocompatibility antigen, E-K alpha chain OS=Mus musculus PE=1 SV=1
+
+&gt;tr|A3SA23|A3SA23_9RHOB TonB dependent, hydroxamate-type ferrisiderophore, outer membrane receptor OS=Sulfitobacter sp. EE-36 GN=EE36_08023 PE=3 SV=1
+&gt;tr|Q8N2H2|Q8N2H2_HUMAN CDNA FLJ90785 fis, clone THYRO1001457, moderately similar to H.sapiens protein kinase C mu OS=Homo sapiens PE=2 SV=1
+</pre>
+ <strong>
+  Alternative isoforms (this only applies to UniProtKB/Swiss-Prot):
+ </strong>
+ <pre>
+&gt;sp|<em>IsoID</em>|<em>EntryName</em> Isoform <em>IsoformName</em> of <em>ProteinName</em> OS=<em>OrganismName</em>[ GN=<em>GeneName</em>]
+</pre>
+ Where:
+ <ul>
+  <li>
+   <em>
+    IsoID
+   </em>
+   is the isoform identifier as assigned in the ALTERNATIVE PRODUCTS section of the UniProtKB entry.
+  </li>
+  <li>
+   <em>
+    IsoformName
+   </em>
+   is the isoform name as annotated in the ALTERNATIVE PRODUCTS
+   <code>
+    Name
+   </code>
+   field of the UniProtKB entry.
+  </li>
+ </ul>
+ <em>
+  ProteinExistence
+ </em>
+ and
+ <em>
+  SequenceVersion
+ </em>
+ do not apply to alternative isoforms
+(
+ <em>
+  ProteinExistence
+ </em>
+ is dependent on the number of cDNA sequences, which is
+not known for individual isoforms).
+ <p>
+  Example:
+ </p>
+ <pre>
+sp|Q4R572-2|1433B_MACFA Isoform Short of 14-3-3 protein beta/alpha OS=Macaca fascicularis GN=YWHAB
+</pre>
+ <h2>
+  UniRef
+ </h2>
+ <pre>
+&gt;<em>UniqueIdentifier</em> <em>ClusterName</em> n=<em>Members</em> Tax=<em>Taxon</em> RepID=<em>RepresentativeMember</em>
+</pre>
+ Where:
+ <ul>
+  <li>
+   <em>
+    UniqueIdentifier
+   </em>
+   is the primary accession number of the UniRef cluster.
+  </li>
+  <li>
+   <em>
+    ClusterName
+   </em>
+   is the name of the UniRef cluster.
+  </li>
+  <li>
+   <em>
+    Members
+   </em>
+   is the number of UniRef cluster members.
+  </li>
+  <li>
+   <em>
+    Taxon
+   </em>
+   is the scientific name of the lowest common taxon shared by all UniRef cluster members.
+  </li>
+  <li>
+   <em>
+    RepresentativeMember
+   </em>
+   is the entry name of the representative member of the UniRef cluster.
+  </li>
+ </ul>
+ <p>
+  Example:
+ </p>
+ <pre>
+&gt;UniRef100_A5DI11 Elongation factor 2 n=1 Tax=Pichia guilliermondii RepID=EF2_PICGU
+</pre>
+ <h2>
+  UniParc
+ </h2>
+ <pre>
+&gt;<em>UniqueIdentifier</em> status=<em>Status</em>
+</pre>
+ Where:
+ <ul>
+  <li>
+   <em>
+    UniqueIdentifier
+   </em>
+   is the primary accession number of the UniParc entry.
+  </li>
+  <li>
+   <em>
+    Status
+   </em>
+   is 'active' if the UniParc entry has at least one active
+cross-reference, and 'inactive' if it does not have any active cross-references.
+  </li>
+ </ul>
+ <p>
+  Example:
+ </p>
+ <pre>
+&gt;UPI0000000005 status=active
+</pre>
+ <h2>
+  UniMES
+ </h2>
+ <pre>
+&gt;<em>UniqueIDentifier</em> <em>ProteinName</em> OS=<em>OrganismName</em>[ Pep=<em>SourcePeptideIdentifier</em>] SV=<em>SequenceVersion</em>
+</pre>
+ Where:
+ <ul>
+  <li>
+   <em>
+    UniqueIdentifier
+   </em>
+   is the primary accession number of the UniMES entry.
+  </li>
+  <li>
+   <em>
+    ProteinName
+   </em>
+   is the protein name of the UniMES entry.
+  </li>
+  <li>
+   <em>
+    OrganismName
+   </em>
+   is the scientific name of the organism (group) of the UniMES entry.
+  </li>
+  <li>
+   <em>
+    SourcePeptideIdentifier
+   </em>
+   is the (optional) peptide identifier provided by the submitter.
+  </li>
+  <li>
+   <em>
+    SequenceVersion
+   </em>
+   is the version number of the sequence.
+  </li>
+ </ul>
+ <p>
+  Example:
+ </p>
+ <pre>
+&gt;MES00000000005 Putative uncharacterized protein GOS_3018412 (Fragment) OS=marine metagenome Pep=JCVI_PEP_1096688850003 SV=1
+</pre>
+ <h2>
+  Archived UniProtKB sequence versions
+ </h2>
+ <pre>
+&gt;<em>db</em>|<em>UniqueIdentifier</em> archived from Release <em>ReleaseNumber</em> <em>ReleaseDate</em> SV=<em>SequenceVersion</em>
+</pre>
+ Where:
+ <ul>
+  <li>
+   <em>
+    db
+   </em>
+   is 'sp' for UniProtKB/Swiss-Prot and 'tr' for UniProtKB/TrEMBL.
+  </li>
+  <li>
+   <em>
+    UniqueIdentifier
+   </em>
+   is the primary accession number of the UniProtKB entry.
+  </li>
+  <li>
+   <em>
+    ReleaseNumber
+   </em>
+   refers to the release from which the sequence was archived
+(Swiss-Prot or TrEMBL release numbers for releases prior to the first
+UniProt release, and both UniProt and Swiss-Prot or TrEMBL release numbers
+for releases after the first UniProt release).
+  </li>
+  <li>
+   <em>
+    ReleaseDate
+   </em>
+   is the date of the release form which the sequence was archived.
+  </li>
+  <li>
+   <em>
+    SequenceVersion
+   </em>
+   is the version number of the sequence.
+  </li>
+ </ul>
+ <p>
+  Examples:
+ </p>
+ "pre-UniProt":
+ <pre>
+&gt;sp|P05067 archived from Release 18.0 01-MAY-1991 SV=3
+&gt;tr|Q55167 archived from Release 17.0 01-JUN-2001 SV=1
+</pre>
+ "post-UniProt":
+ <pre>
+&gt;sp|P05067 archived from Release 9.2/51.2 28-NOV-2006 SV=3
+&gt;tr|A0RTJ8 archived from Release 11.0/36.0 29-MAY-2007 SV=1
+</pre>
+ <h3>
+  Chromatophore: a new organelle value in the 'Encoded on' subsection (OG line in the flat file).
+ </h3>
+ <p>
+  We have added
+  <strong>
+   Chromatophore
+  </strong>
+  to the list of valid
+plastid values in the OG (OrGanelle) line in the flat file. The chromatophore is the photosynthetic inclusion
+found in
+  <em>
+   Paulinella chromatophora
+  </em>
+  , a photosynthetic thecate amoeba. It
+encodes and houses the machinery necessary for photosynthesis and CO2 fixation;
+it also has the genetic capacity to synthesize some amino acids, some fatty
+acids and a few cofactors. It is not yet clear whether the chromatophore derives
+from the same endosymbiotic event that is thought to have led to all other
+plastids. The chromatophore genome of
+  <em>
+   P. chromatophora
+  </em>
+  has been sequenced
+(PubMed:18356055) and been found to be just over 1 Mb, approximately 9 times
+larger than the average photosynthetic plastid and approximately 1/3 smaller
+than the smallest cyanobacterial genome.
+ </p>
+ <p>
+  Example:
+ </p>
+ <pre>
+OG   Plastid; Chromatophore.
+</pre>
+ <p>
+  On the website, the information is found in the 'Names and origin' section,
+'Encoded on' subsection (see for instance
+  <a href="http://www.uniprot.org/uniprot/B1X5D6#section_name">
+   B1X5D6
+  </a>
+  ).
+ </p>
+ <h3>
+  Cross-references to BindingDB
+ </h3>
+ <p>
+  Cross-references have been added to
+  <a href="http://www.bindingdb.org/">
+   The
+Binding Database
+  </a>
+  . BindingDB is a public, web-accessible database of measured
+binding affinities, focusing chiefly on the interactions of proteins considered
+to be drug-targets with small, drug-like molecules.
+ </p>
+ <p>
+  The Binding Database is available at
+  <a href="http://www.bindingdb.org/">
+   http://www.bindingdb.org/
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    BindingDB
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    UniProtKB accession number.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/P50613#section_x-ref">P50613</a>:
+DR   BindingDB; P50613; -.
+
+<a href="http://www.uniprot.org/uniprot/P68850#section_x-ref">P68850</a>:
+DR   BindingDB; P68850; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  UniProt decoy databases
+ </h3>
+ <p>
+  The target-decoy search strategy, which has become widespread and is recommended
+ in journal guidelines, consists of attaching a decoy database to a forward database
+ and  searching MS/MS spectra against this composite database. It is more stringent
+ than a simple search, and allows to compute an estimation of the false discovery rate.
+  <br/>
+  For this strategy to be efficient, the decoy database has to preserve the general composition of the target database while minimizing the peptide sequence overlap between the target and the decoy.
+  <br/>
+  We developed a new algorithm that shuffles proteins and  keeps re-shuffling each tryptic peptide until it no longer matches with any peptide from the original database. This method ensures that no tryptic peptide is shared between the target and decoy databases.
+ </p>
+ <p>
+  Decoy versions of UniProtKB/Swiss-Prot,  UniProtKB/TrEMBL and UniRef100 can now
+  be retrieved in FASTA format from our :
+  <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/decoy">
+   public FTP site
+  </a>
+  .
+ </p>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0997">
+    Cell inner membrane
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1003">
+    Cell membrane
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0998">
+    Cell outer membrane
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0994">
+    Chromatophore
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0995">
+    Kinetochore
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0999">
+    Mitochondrion inner membrane
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1000">
+    Mitochondrion outer membrane
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0996">
+    Nickel insertion
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1001">
+    Plastid inner membrane
+   </a>
+  </li>
+ </ul>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1002">
+    Plastid outer membrane
+   </a>
+  </li>
+ </ul>
+ <p>
+  Deleted keywords:
+ </p>
+ <ul>
+  <li>
+   Inner membrane
+  </li>
+  <li>
+   Outer membrane
+  </li>
+ </ul>
+ <h3>
+  Changes in subcellular location controlled vocabulary
+ </h3>
+ <p>
+  New subcellular locations:
+ </p>
+ <ul>
+  <li>
+   Chromatophore
+  </li>
+  <li>
+   Chromatophore membrane
+  </li>
+  <li>
+   Chromatophore stroma
+  </li>
+  <li>
+   Chromatophore thylakoid
+  </li>
+  <li>
+   Chromatophore thylakoid lumen
+  </li>
+  <li>
+   Chromatophore thylakoid membrane
+  </li>
+ </ul>
+ <h3>
+  Changes in
+  <a href="http://www.uniprot.org/docs/ptmlist">
+   PTM controlled vocabulary
+  </a>
+ </h3>
+ <p>
+  New terms in the 'Amino acid modifications' subsection (feature key 'CROSSLNK' in the flat file):
+ </p>
+ <ul>
+  <li>
+   (2-aminosuccinimidyl)acetic acid (Asp-Gly)
+  </li>
+  <li>
+   5'-tyrosyl-5'-aminotyrosine (Tyr-Tyr) (interchain)
+  </li>
+  <li>
+   Cyclopeptide (Ala-Ile)
+  </li>
+  <li>
+   Cyclopeptide (Leu-Trp)
+  </li>
+  <li>
+   Cyclopeptide (Pro-Met)
+  </li>
+  <li>
+   Cyclopeptide (Pro-Tyr)
+  </li>
+  <li>
+   Cyclopeptide (Ser-Gly)
+  </li>
+  <li>
+   Isoaspartyl lysine isopeptide (Lys-Asn)
+  </li>
+  <li>
+   Lysine tyrosylquinone (Tyr-Lys)
+  </li>
+  <li>
+   S-cysteinyl 3-(oxidosulfanyl)alanine (Cys-Cys)
+  </li>
+  <li>
+   Threonyl lysine isopeptide (Lys-Thr) (interchain with T-...)
+  </li>
+  <li>
+   Threonyl lysine isopeptide (Thr-Lys) (interchain with K-...)
+  </li>
+ </ul>
+ <p>
+  New terms in the 'Amino acid modifications' subsection (feature key 'MOD_RES' in the flat file):
+ </p>
+ <ul>
+  <li>
+   Aminomalonic acid (Ser)
+  </li>
+  <li>
+   Aspartate 1-(chondroitin 4-sulfate)-ester
+  </li>
+  <li>
+   Aspartic acid 1-[(3-aminopropyl)(5'-adenosyl)phosphono]amide
+  </li>
+  <li>
+   Aspartyl isopeptide (Asp)
+  </li>
+  <li>
+   Beta-decarboxylated aspartate
+  </li>
+  <li>
+   N-D-glucuronoyl glycine
+  </li>
+  <li>
+   O-AMP-tyrosine
+  </li>
+  <li>
+   O-UMP-tyrosine
+  </li>
+ </ul>
+</div>

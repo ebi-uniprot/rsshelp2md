@@ -1,0 +1,64 @@
+<div>
+ <p>
+  <strong>
+   How does UniProt do GeneID and RefSeq mappings?
+  </strong>
+ </p>
+ <p>
+  As per a protocol we have formalized with the NCBI, we create a RefSeq protein-centric mapping. If a UniProtKB protein (canonical or isoform sequence)
+ </p>
+ <ul>
+  <li>
+   is 100% identical (over the entire sequence length) to a RefSeq protein and is from the same organism
+   <strong>
+    or
+   </strong>
+  </li>
+  <li>
+   has common EMBL/DDBJ/GenBank
+   <strong>
+    protein
+   </strong>
+   accession numbers (CDS, protein_id)
+  </li>
+ </ul>
+ <p>
+  then that RefSeq accession is mapped to the UniProtKB protein and consequently the entry will also get the corresponding GeneID cross-reference.
+ </p>
+ <p>
+  <strong>
+   Why are GeneID cross-references absent from some human entries?
+  </strong>
+ </p>
+ <p>
+  If a UniProtKB protein does not map to a RefSeq Protein, this entry will not have a GeneID cross-reference.
+ </p>
+ <p>
+  <strong>
+   Why do some GeneID entries link to UniProtKB entries, but those UniProtKB entries do not have the GeneID cross-reference?
+  </strong>
+ </p>
+ <p>
+  Apart from the UniProtKB-RefSeq mappings that the UniProt Consortium provides to NCBI, and that are reported in 'NCBI Reference Sequences (RefSeq)' section of RefSeq entry reports, NCBI also computes additional 'Related sequences', which can include UniProtKB proteins and are displayed in a separate section.
+ </p>
+ <p>
+  See also:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/uploadlists">
+    Identifier mapping service ('Retrieve/ID mapping')
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/help/cross-references%5Fin%5Funiprotkb">
+    Cross-references in UniProtKB
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/help/isoform%5Fcrossreferences">
+    Cross-references for isoform sequences
+   </a>
+  </li>
+ </ul>
+</div>

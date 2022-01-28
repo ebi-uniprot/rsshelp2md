@@ -1,0 +1,6 @@
+changes
+---
+Dead links
+http://www.uniprot.org/news
+http://www.uniprot.org/changes
+

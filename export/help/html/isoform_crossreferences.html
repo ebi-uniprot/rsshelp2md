@@ -1,0 +1,29 @@
+<div>
+ <p>
+  Some of the resources to which we link contain information that is specific to an
+  <a href="http://www.uniprot.org/manual/alternative%5Fproducts">
+   isoform sequence
+  </a>
+  . Where this is known, we indicate the corresponding UniProtKB isoform sequence identifier in cross-references as described below.
+ </p>
+ <h4 id="Text_format">
+  Text format
+ </h4>
+ <p>
+  The UniProtKB isoform sequence identifier is shown in square brackets at the end of the DR line as an optional field:
+ </p>
+ <pre>DR   ResourceAbbreviation; ResourceIdentifier(; AdditionalField)+. [IsoId]
+</pre>
+ <p>
+  Examples:
+ </p>
+ <pre>DR   Ensembl; ENST00000281772; ENSP00000281772; ENSG00000144445. [A0AUZ9-1]
+DR   Ensembl; ENST00000418791; ENSP00000405724; ENSG00000144445. [A0AUZ9-2]
+DR   Ensembl; ENST00000452086; ENSP00000401408; ENSG00000144445. [A0AUZ9-3]
+DR   Ensembl; ENST00000457374; ENSP00000393432; ENSG00000144445. [A0AUZ9-3]
+</pre>
+ <pre>DR   UCSC; uc008jdz.3; mouse. [P00520-1]
+DR   UCSC; uc033hmk.1; mouse. [P00520-2]
+DR   UCSC; uc033hml.1; mouse. [P00520-3]
+</pre>
+</div>

@@ -1,0 +1,11 @@
+caution
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/A6NMY6#sequences
+http://www.uniprot.org/uniprot/Q8N9I1#sequences
+http://www.uniprot.org/uniprot/P08874#sequences
+http://www.uniprot.org/uniprot/P20285#sequences
+http://www.uniprot.org/uniprot/P03974#sequences
+http://www.uniprot.org/uniprot/Q06429#sequences
+http://www.uniprot.org/uniprot/P26298#sequences
+

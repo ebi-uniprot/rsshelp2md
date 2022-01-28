@@ -1,0 +1,261 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  UniProtKB/Swiss-Prot major release (48.0)
+ </h3>
+ Release 48.0 of 13-Sep-2005 of UniProtKB/Swiss-Prot contains 194'317 sequence entries,
+comprising 70'391'852 amino acids abstracted from 133'723 references.
+
+11'963 sequences have been added since release 47, the sequence data of
+1'095 existing entries has been updated and the annotations of
+93'692 entries have been revised. This represents an increase of 7%.
+ <p>
+  Many improvements were carried out in the last 4 months.
+In particular, we have expanded our system of feature identifiers (FTIds): Feature keys
+concerning protein processing (CHAIN, PEPTIDE, PROPEP) have been tagged
+by a new feature identifier with the prefix PRO.
+We also changed the format of the OG Chloroplast and Cyanelle
+lines, to be able to indicate more precisely the kind of plastid organelle.
+ </p>
+ <p>
+  UniProt Knowledgebase release 6.0 includes Swiss-Prot release 48.0 and TrEMBL release 31.0.
+For more information you can also read the
+  <a href="http://www.expasy.org/txt/old-rel/relnotes.48.htm">
+   Full statistics and release notes
+  </a>
+  for the UniProt Knowledgebase, i.e. Swiss-Prot
+and TrEMBL.
+ </p>
+ <br/>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Changes in the OG (OrGanelle) line
+ </h3>
+ <p>
+  We changed the format of the OG Chloroplast and Cyanelle
+    lines, to be able to indicate more precisely the kind of plastid organelle.
+    So far we defined the following lines:
+ </p>
+ <pre>
+OG   Plastid.
+OG   Plastid; Apicoplast.
+OG   Plastid; Chloroplast.
+OG   Plastid; Cyanelle.
+OG   Plastid; Non-photosynthetic plastid.
+</pre>
+ <p>
+  The line "OG Plastid" is used when the type of plastid - from which the gene
+    coding for a protein originates - is unknown. This will be the case for most TrEMBL
+    entries.
+ </p>
+ <p>
+  The line "OG Plastid; Apicoplast" is used for plastid-type organelles
+    from the apicocomplexan parasites. These plastids are not photosynthetic,
+    and encode a different suite of proteins than do photosynthetic organisms.
+ </p>
+ <p>
+  The line "OG Plastid; Chloroplast" is used for plastids from all
+    organisms able to perform photosynthesis except the glaucophyte algae
+    (see next).
+ </p>
+ <p>
+  The line "OG Plastid; Cyanelle" is used for plastids from the
+    glaucophyte algae.
+ </p>
+ <p>
+  The line "OG Plastid; Non-photosynthetic plastid" is used for
+    plastids derived from non-photosynthetic, but not apicocomplexan organisms.
+    Examples of such organisms are the land plant Epifagus virginiana, the
+    chlorophyte algae Prototheca wickerhamii and the euglenoid Astasia longa,
+    none of which encode the genes necessary for photosynthesis on their
+    plastid genome.
+ </p>
+ <h3>
+  Cross-references to TAIR
+ </h3>
+ <p>
+  Cross-references have been added to
+  <a href="http://arabidopsis.org/">
+   TAIR
+  </a>
+  ,
+    The Arabidopsis Information Resource, which is a model organism database providing a centralized,
+    curated gateway to Arabidopsis biology. TAIR is available at
+  <a href="http://arabidopsis.org/">
+   http://arabidopsis.org
+  </a>
+  .
+    Implicit links to this database have already been provided before in the NiceProt view of relevant
+    Swiss-Prot entries on ExPASy.
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    TAIR
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    TAIR unique locus identifier.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/P33487#section_x-ref">P33487</a>:
+DR   TAIR; At4g02980; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Introduction of a new feature identifier
+ </h3>
+ <p>
+  The system of
+  <a href="http://www.uniprot.org/docs/userman.htm#FTID">
+   feature identifiers
+  </a>
+  has been expanded.
+    All feature keys concerning protein processing (CHAIN, PEPTIDE, PROPEP) have been tagged
+    with the new feature identifier with the prefix PRO. We now have 4 types of feature
+    identifiers:
+ </p>
+ <ul>
+  <li>
+   prefix CAR relevant to the feature key CARBOHYD (e.g. /FTId=CAR_123456.)
+  </li>
+  <li>
+   prefix VAR relevant to the feature key VARIANT (e.g. /FTId=VAR_123456.)
+  </li>
+  <li>
+   prefix VSP relevant to the feature key VARSPLIC (e.g. /FTId=VSP_123456.)
+  </li>
+  <li>
+   <strong>
+    new prefix PRO relevant to  CHAIN, PEPTIDE, PROPEP (e.g. /FTId=PRO_1234567890.)
+   </strong>
+  </li>
+ </ul>
+ <p>
+  Examples:
+ </p>
+ <pre><a href="http://www.uniprot.org/uniprot/Q9W568#section_features">Q9W568</a>:
+FT   CHAIN        23    611       Halfway protein.
+FT                                /FTId=PRO_0000021413.
+</pre>
+ <pre><a href="http://www.uniprot.org/uniprot/P15515#section_features">P15515</a>:
+FT   PEPTIDE      20     57       Histatin 1.
+FT                                /FTId=PRO_0000021416.
+</pre>
+ <pre><a href="http://www.uniprot.org/uniprot/Q7XAD0#section_features">Q7XAD0</a>:
+FT   PROPEP       25     48
+FT                                /FTId=PRO_0000021449.
+</pre>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0933">
+    Apicoplast
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0934">
+    Plastid
+   </a>
+  </li>
+ </ul>
+ <p>
+  Deleted keywords:
+ </p>
+ <ul>
+  <li>
+   Bombesin family
+  </li>
+  <li>
+   Bradykinin
+  </li>
+  <li>
+   Embryo
+  </li>
+  <li>
+   Erythrocyte
+  </li>
+  <li>
+   Galectin
+  </li>
+  <li>
+   Glucagon family
+  </li>
+  <li>
+   Insulin family
+  </li>
+  <li>
+   Lipocalin
+  </li>
+  <li>
+   Macrophage
+  </li>
+  <li>
+   Pancreas
+  </li>
+  <li>
+   Pentaxin
+  </li>
+  <li>
+   Phytochrome
+  </li>
+  <li>
+   Pituitary
+  </li>
+  <li>
+   Placenta
+  </li>
+  <li>
+   Platelet
+  </li>
+  <li>
+   Pyrokinin
+  </li>
+  <li>
+   Rubredoxin
+  </li>
+  <li>
+   Selectin
+  </li>
+  <li>
+   Serpin
+  </li>
+  <li>
+   Tachykinin
+  </li>
+  <li>
+   Thionin
+  </li>
+  <li>
+   Thymus
+  </li>
+  <li>
+   Whey
+  </li>
+ </ul>
+</div>

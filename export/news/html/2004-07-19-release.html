@@ -1,0 +1,200 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  Annotation of HERV protein sequences
+ </h3>
+ <p>
+  The human genome contains a number of human endogenous retroviruses (HERVs).
+     These proviruses (the integrated form of retroviral DNA) are retroviral
+     sequences that are transmitted vertically as part of the host germ line. A
+     number of HERV 'families' have been identified, each derived from an
+     independent colonisation event.
+ </p>
+ <p>
+  Some proviruses display open reading frames with coding capacity for a variety
+      of viral-like proteins (Env, Gag, Pol, Pro, etc.). We have already annotated in
+      Swiss-Prot a significant number of HERV proteins. We only include such
+      potential proteins if they are meeting one of these three criteria: i) if there
+      is evidence of their expression by the host, ii) if the derived sequence
+      encodes a full-length protein, iii) if the protein has a potential cellular
+      function.
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Change in the keyword line (KW)
+ </h3>
+ <p>
+  Keywords are now stored by alphabetical order on the KW lines of both
+Swiss-Prot and TrEMBL entries.
+ </p>
+ <h3>
+  Format change in the comment line (CC) topic: MASS SPECTROMETRY
+ </h3>
+ <p>
+  We have slightly changed the format for the comment line topic
+MASS SPECTROMETRY, which reports the exact molecular weight of a protein or
+part of a protein as determined by mass spectrometric methods.
+The modifications concern the topic RANGE, which has become mandatory,
+and the introduction of the new mandatory topic NOTE, which is used
+to indicate the relevant reference number.
+ </p>
+ <p>
+  <strong>
+   New format:
+  </strong>
+ </p>
+ <pre>
+CC   -!- MASS SPECTROMETRY: MW=XXX[; MW_ERR=XX][; METHOD=XX]; RANGE=XX-XX[ (Name)]; NOTE={Free text (Ref.n)|Ref.n}.
+</pre>
+ <p>
+  Where:
+ </p>
+ <ul>
+  <li>
+   'MW=XXX' is the determined molecular weight (MW);
+  </li>
+  <li>
+   'MW_ERR=XX' (optional) is the accuracy or error range of the MW measurement;
+  </li>
+  <li>
+   'METHOD=XX' (optional) is the ionization method;
+  </li>
+  <li>
+   'RANGE=XX-XX[ (Name)]' (mandatory)
+  is used to indicate what part of the protein sequence entry corresponds to the molecular weight.
+  In case of multiple products, the name of the relevant isoform is enclosed.
+  </li>
+  <li>
+   'NOTE={Free text (Ref.n)|Ref.n}' (mandatory) indicates the relevant reference, which optionally
+ can be preceded by a comment in free text format.
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Example:
+  </strong>
+ </p>
+ <pre>
+CC   -!- MASS SPECTROMETRY: MW=32875.93; METHOD=MALDI;
+CC       RANGE=1-284 (Isoform 3); NOTE=Ref.6.
+</pre>
+ <h3>
+  Cross-references to AGD
+ </h3>
+ <p>
+  We have added cross-references to
+  <a href="http://agd.unibas.ch/">
+   Ashbya genome database
+  </a>
+  ,
+available at
+  <a href="http://agd.unibas.ch/">
+   http://agd.unibas.ch/
+  </a>
+  .
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    AGD
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    AGD's unique identifier for a gene. This is generally the OLN (Ordered Locus Name) for
+that gene (eg: AAR059C), except for mitochondrial genes where AGD uses an identifier based on
+the gene name (eg: AgCOB1).
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 1
+   </th>
+   <td>
+    None; a dash '-' is stored in that field.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/Q00063#section_x-ref">Q00063</a>:
+DR   AGD; AAR059C; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Changes concerning the
+  <a href="http://www.uniprot.org/docs/ptmlist">
+   controlled vocabulary for PTMs
+  </a>
+ </h3>
+ <p>
+  We are continuously overhauling the annotation of post-translational modifications (PTMs).
+For the feature key
+  <a href="http://www.uniprot.org/manual/mod_res">
+   MOD_RES
+  </a>
+  , the new introduced
+controlled vocabularies for PTMs
+are:
+ </p>
+ <ul>
+  <li>
+   <p>
+    Hydroxylation: All entries with annotated hydroxylation sites have the keyword
+    <a href="http://www.uniprot.org/keywords/KW-0379">
+     Hydroxylation
+    </a>
+    .
+   </p>
+   <dl>
+    <dd>
+     <pre>
+ 4-hydroxyproline
+</pre>
+    </dd>
+   </dl>
+  </li>
+  <li>
+   <p>
+    Unidentified N-terminal blocking modifications:
+   </p>
+   <dl>
+    <dd>
+     <pre>
+ Blocked amino end (Asx)
+ Blocked amino end (Xaa)
+</pre>
+    </dd>
+   </dl>
+  </li>
+  <li>
+   <p>
+    Other new controlled vocabularies for PTMs that are annotated with the feature key MOD_RES:
+   </p>
+   <dl>
+    <dd>
+     <pre>
+ Pros-8alpha-FAD-histidine (Keyword: <a href="http://www.uniprot.org/keywords/KW-0274">FAD</a>)
+ N6-murein peptidoglycan lysine
+</pre>
+    </dd>
+   </dl>
+  </li>
+ </ul>
+</div>

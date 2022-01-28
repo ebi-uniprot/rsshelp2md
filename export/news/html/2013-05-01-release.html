@@ -1,0 +1,177 @@
+<div>
+ <h2>
+  Headline
+ </h2>
+ <h3>
+  Human genetic diseases in UniProtKB/Swiss-Prot
+ </h3>
+ <p>
+  During the past decade, next-generation sequencing (NGS) technologies have accelerated the detection of genetic variants resulting in the rapid discovery of new disease-associated genes. More than 100 causative genes in various Mendelian disorders have been identified by means of
+  <a href="http://www.ncbi.nlm.nih.gov/pubmed/22832387">
+   whole exome sequencing
+  </a>
+  . However, the wealth of variation data made available by
+  <span class="caps">
+   NGS
+  </span>
+  is not sufficient, alone, to understand the mechanisms underlying disease pathogenesis and manifestation. Diseases are the consequences of series of events that include not only primary mutations in disease-causing genes, but also variations in disease-modifying genes, as well as the combined effects of gene-gene and gene-environment interactions. That is why new approaches to unravel disease mechanisms are based on
+  <a href="http://www.ncbi.nlm.nih.gov/pubmed/21164525,23219555">
+   biological network analysis
+  </a>
+  .
+ </p>
+ <p>
+  In addition to providing a large amount of information on protein functions, interactions and biological pathways, UniProt pays particular attention to the annotation of human genetic diseases and disease-linked variants. Information on genetic diseases is shown in the ‘Involvement in disease’ subsection of the ‘General Annotation (Comments)’ section. In the current release, over 4,600 phenotypes are described in close to
+  <a href="http://www.uniprot.org/uniprot/?query=organism:9606+AND+annotation:(type:disease)&amp;sort=score">
+   3,000 human entries
+  </a>
+  . The great majority of UniProtKB disease descriptions have links to the Online Mendelian Inheritance in Man knowledgebase (
+  <a href="http://www.omim.org/">
+   <span class="caps">
+    OMIM
+   </span>
+  </a>
+  ), allowing users to retrieve more detailed information.
+ </p>
+ <p>
+  In order to improve the clarity of medical annotation and to facilitate the retrieval of disease information from UniProtKB, we have modified the format of the subsection ‘Involvement in disease’. The newly modified subsection is organized in 2 parts. Firstly, the disease name, acronym and features are defined using a controlled vocabulary. Secondly, the role of the gene/protein in the disease is described in a ‘Note:’, that allows discrimination between
+  <a href="http://www.uniprot.org/uniprot/P52895#section_comments">
+   disease-causing
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/P17516#section_comments">
+   disease-modifying
+  </a>
+  and
+  <a href="http://www.uniprot.org/uniprot/O15455#section_comments">
+   susceptibility
+  </a>
+  genes. This note, partly written in free text, provides information on the biological context or other interesting information that may not be directly related to the phenotype description, such as the involvement of different proteins in the pathological mechanism. For example, multiple sulfatase deficiency (
+  <a href="http://www.omim.org/entry/272200">
+   <span class="caps">
+    MSD
+   </span>
+  </a>
+  ) is due to the
+  <a href="http://www.ncbi.nlm.nih.gov/pubmed/7628016">
+   simultaneous decrease
+  </a>
+  of activity of all
+  <a href="http://www.uniprot.org/uniprot/?query=accession:P15289+OR+accession:P15848">
+   sulfatases
+  </a>
+  . However, the
+  <a href="http://www.ncbi.nlm.nih.gov/pubmed/15146462">
+   primary cause
+  </a>
+  is a mutation in
+  <a href="http://www.uniprot.org/uniprot/Q8NBK3">
+   <span class="caps">
+    SUMF1
+   </span>
+  </a>
+  , an enzyme required for post-translational modification and catalytic activation of these enzymes. This additional information is stored in the ‘Involvement in disease’ note.
+ </p>
+ <p>
+  Genetic diseases annotated in UniProtKB/Swiss-Prot are indexed in the
+  <a href="http://www.uniprot.org/docs/humdisease">
+   humdisease.txt
+  </a>
+  file, available for our users as of this release. Each record in this file consists of a disease identifier, acronym, and description, as well as known disease synonyms, links to
+  <span class="caps">
+   OMIM
+  </span>
+  , Medical Subject Headings (
+  <a href="http://www.nlm.nih.gov/mesh/">
+   MeSH
+  </a>
+  ) and associated UniProtKB keywords.
+ </p>
+ <h2>
+  UniProtKB news
+ </h2>
+ <h3>
+  Complete proteomes for Ensembl species
+ </h3>
+ <p>
+  For UniProt release 2013_05, one new species from Ensembl vertebrates and 3 new Ensembl Genomes have been made available. These are:
+ </p>
+ <p>
+  <a href="http://www.ensembl.org/Felis_catus/Info/Annotation/#assembly">
+   <em>
+    Felis catus
+   </em>
+   (Cat)
+  </a>
+  <br/>
+  <a href="http://plants.ensembl.org/Brassica_rapa/Info/Annotation/#about">
+   <em>
+    Brassica rapa
+   </em>
+   subsp. pekinensis (Chinese cabbage)
+  </a>
+  <br/>
+  <a href="http://protists.ensembl.org/Hyaloperonospora_arabidopsidis/Info/Annotation/#assembly">
+   <em>
+    Hyaloperonospora arabidopsidis
+   </em>
+   (Downy mildew agent)
+  </a>
+  <br/>
+  <a href="http://fungi.ensembl.org/Magnaporthe_poae/Info/Annotation/#about">
+   <em>
+    Magnaporthe poae
+   </em>
+   (Kentucky bluegrass fungus)
+  </a>
+ </p>
+ <p>
+  In addition to the new imports, existing proteomes derived from Ensembl species have been updated with data from
+  <a href="http://www.ensembl.org/info/website/news.html#change_893">
+   Ensembl release 70
+  </a>
+  .
+  <br/>
+  All predicted protein sequences from an Ensembl Genome are mapped to their UniProtKB counterparts under stringent conditions: 100% identity over 100% of the length of the two sequences is required. Any sequence found to be absent from UniProtKB is imported into the unreviewed component of UniProtKB, UniProtKB/TrEMBL. All UniProtKB entries that map to an Ensembl Genome are used to build the proteome; they are tagged with the keyword
+  <a href="http://www.uniprot.org/keywords/KW-0181">
+   Complete proteome
+  </a>
+  and an Ensembl Genome cross-reference is added.
+  <br/>
+  We very much welcome the feedback of the community on our efforts. In future UniProt releases, we expect to make proteomes for the remaining Ensembl and Ensembl Genomes species currently absent from UniProtKB.
+ </p>
+ <h3>
+  Removal of the cross-reference to GenomeReviews
+ </h3>
+ <p>
+  Cross-references to GenomeReviews have been removed.
+ </p>
+ <h3>
+  Changes to
+  <a href="http://www.uniprot.org/docs/keywlist">
+   keywords
+  </a>
+ </h3>
+ New keywords:
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1213">
+    G-protein coupled receptor impairing toxin
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1214">
+    G-protein coupled acetylcholine receptor impairing toxin
+   </a>
+  </li>
+ </ul>
+ Modified keyword:
+ <ul>
+  <li>
+   Acetylcholine receptor inhibitor -&gt;
+   <a href="http://www.uniprot.org/keywords/KW-0008">
+    Acetylcholine receptor inhibiting toxin
+   </a>
+  </li>
+ </ul>
+</div>

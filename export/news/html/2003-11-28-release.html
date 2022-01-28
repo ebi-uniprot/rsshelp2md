@@ -1,0 +1,1845 @@
+<div>
+ <h2>
+  Swiss-Prot release 42.6 of 28-Nov-2003
+ </h2>
+ <h3>
+  New comment line (CC) topic RNA EDITING
+ </h3>
+ <p>
+  We have introduced a new comment (CC) line topic: 'RNA EDITING'. This topic
+is used to convey information relevant to all types of RNA editing that
+lead to one or more amino acid changes.
+ </p>
+ <p>
+  The format of this comment block is:
+ </p>
+ <pre>
+CC   -!- RNA EDITING: Modified_positions={x[, y, z, ...] | Not_applicable | Undetermined}[; Note=Text].
+</pre>
+ <p>
+  Examples:
+ </p>
+ <pre>
+CC   -!- RNA EDITING: Modified_positions=393, 431, 452, 495.
+</pre>
+ <pre>
+CC   -!- RNA EDITING: Modified_positions=59, 78, 94, 98, 102, 121; Note=The
+CC       stop codon at position 121 is created by RNA editing. The nonsense
+CC       codon at position 59 is modified to a sense codon.
+</pre>
+ <pre>
+CC   -!- RNA EDITING: Modified_positions=Not_applicable; Note=Some
+CC       positions are modified by RNA editing via nucleotide insertion or
+CC       deletion. The initiator methionine is created by RNA editing.
+</pre>
+ <p>
+  The free text in the 'Note' is standardized.
+ </p>
+ <p>
+  All entries with such a topic have the keyword
+  <a href="http://www.uniprot.org/keywords/KW-0691">
+   RNA editing
+  </a>
+  .
+ </p>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keyword:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0894">
+    Sodium channel
+   </a>
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 42.5 of 21-Nov-2003
+ </h2>
+ <h3>
+  Headlines: Monkey business!
+ </h3>
+ <p>
+  The comparison of the genome of human with that of higher apes such as
+     chimpanzees, gibbons, gorillas and the orangutans, was for a long time
+     a wish of many life scientists.
+ </p>
+ <p>
+  It is becoming a reality due to various sequencing initiatives
+     targeted toward the elucidation of primate genomic sequences. However
+     it will take some time before a significant amount of high quality
+     complete protein sequences are available. In the meanwhile we are
+     trying to ensure that whenever an existing higher ape sequence is
+     available that correspond to a cognate human protein, that sequence
+     gets annotated very quickly.
+ </p>
+ <p>
+  For example, in the last two weeks, the number of annotated
+      chimpanzees protein sequences in Swiss-Prot has doubled.
+ </p>
+ <h2>
+  Swiss-Prot release 42.4 of 14-Nov-2003
+ </h2>
+ <h3>
+  Content changes in the speclist.txt document file
+ </h3>
+ <p>
+  The
+  <a href="http://www.uniprot.org/docs/speclist">
+   speclist.txt
+  </a>
+  file lists the
+organism identification codes which are used to build the "organism" part of an
+entry name (Examples: ARATH, BACSU, DROME, HUMAN, etc). This file contains for each
+organism code, the corresponding NCBI taxonomic database node identifier (TaxID) as
+well as the specific official (scientific) name and optionally common name and synonym.
+ </p>
+ <p>
+  Up to now organisms identification codes where only used in Swiss-Prot where all
+species represented in the database are associated with such a code. The TrEMBL section
+of the combined UniProt knowledgebase will soon also make use of entry names that are
+based on the species of origin. As it is not possible in a reasonable time frame
+to manually assign organism codes to all species represented in TrEMBL, it
+was decided to define "virtual" codes that regroup organisms at a certain taxonomic
+level. Such codes are prefixed by the number "9" and generally correspond to a "pool"
+of organisms which can be 'wide' as a kingdom. Here are some examples of such codes:
+ </p>
+ <pre>
+9BACT B      2: N=Bacteria
+9CNID E   6073: N=Cnidaria
+9FUNG E   4751: N=Fungi
+9REOV V  10880: N=Reoviridae
+9TETR E  32523: N=Tetrapoda
+9VIRI E  33090: N=Viridiplantae
+</pre>
+ <p>
+  The list of all the "9" codes that have been defined are now been integrated as a subsection
+of the speclist.txt file.
+ </p>
+ <h3>
+  Changes concerning the
+  <a href="http://www.uniprot.org/docs/ptmlist">
+   controlled vocabulary for PTMs
+  </a>
+ </h3>
+ <p>
+  New terms for the Feature key 'LIPID':
+ </p>
+ <ul>
+  <li>
+   GPI-anchor amidated residue
+  </li>
+  <li>
+   Omega-hydroxyceramide glutamate ester
+  </li>
+  <li>
+   Phosphatidylethanolamine amidated glycine
+  </li>
+ </ul>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keyword:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0893">
+    Thyroid hormones biosynthesis
+   </a>
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 42.3 of 07-Nov-2003
+ </h2>
+ <h3>
+  Headlines: More than 10'000 human proteins have been annotated
+ </h3>
+ <p>
+  In the framework of the
+  <a href="http://www.expasy.org/sprot/hpi/">
+   HPI
+  </a>
+  project, we have
+    annotated more than 10'000 proteins (almost 10'300). The exact number of
+    genes represented is not exactly equal to the number of proteins for at
+     least four reasons:
+ </p>
+ <ul>
+  <li>
+   We have entries that describe proteins encoded by more than one gene
+       but whose amino acid sequences are 100% identical;
+  </li>
+  <li>
+   We sometimes are unable to describe highly divergent splice isoforms
+        in one entry and these genes are therefore represented by two or more
+       Swiss-Prot entries;
+  </li>
+  <li>
+   For MHC histocompatibility antigens, immunoglobulin and T cell receptors,
+       we often have several entries representing groups of alleles;
+  </li>
+  <li>
+   A very small number of human entries probably represent "bogus" proteins
+       originating from either pseudogenes or from contaminants.
+  </li>
+ </ul>
+ <p>
+  But even taking the above factors into account, we do have more than 10'000
+     protein-encoding genes represented in Swiss-Prot.
+ </p>
+ <h3>
+  Cross-references to DictyBase
+ </h3>
+ <p>
+  We have added cross-references to the DictyBase database (available at
+  <a href="http://dictybase.org/">
+   http://dictybase.org/
+  </a>
+  ), an
+online informatics resource for Dictyostelium discoideum.
+DictyBase goals are to provide a single portal for access to Dictyostelium genome
+information, curated Dictyostelium literature, to facilitate access to experimental
+resources such as the Dictyostelium stock center, and to provide an on-line presence
+for the Dictyostelium community.
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    DictyBase
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    DictyBase's unique identifier for a gene.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 1
+   </th>
+   <td>
+    DictyBase's gene symbol.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/P34092#section_x-ref">P34092</a>:
+DR   DictyBase; DDB0002013; myoB.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-refereces to DictyDb
+ </h3>
+ <p>
+  Due to the availability of DictyBase (see above) and in agreement with the maintainers
+of both databases, we have removed all cross-references to the DictyDb database.
+ </p>
+ <h3>
+  Cross-refereces to PhotoList
+ </h3>
+ <p>
+  We have added cross-references to the PhotoList database (available at
+  <a href="http://genolist.pasteur.fr/PhotoList/">
+   http://genolist.pasteur.fr/PhotoList/
+  </a>
+  ),
+a database dedicated to the analysis of the genome of Photorhabdus luminescens
+strain TT01.
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    PhotoList
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    PhotoList's unique identifier for an ORF.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/Q8KM01#section_x-ref">Q8KM01</a>:
+DR   PhotoList; plu1253; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keyword:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0892">
+    Osteogenesis
+   </a>
+  </li>
+ </ul>
+ <p>
+  Deleted keywords:
+ </p>
+ <ul>
+  <li>
+   B-cell
+  </li>
+  <li>
+   Bone
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 42.1 of 24-Oct-2003
+ </h2>
+ <h3>
+  Format change in the jourlist.txt document file
+ </h3>
+ <p>
+  The
+  <a href="http://www.uniprot.org/docs/jourlist">
+   jourlist.txt
+  </a>
+  file lists the titles and abbreviations of all journals cited
+in Swiss-Prot. This file also includes other type of information such as ISSN
+and CODEN identifiers, publishers, web sites, etc. As of this release, we have
+added a field for the ISSN of the electronic (on-line) version of journals.
+This field which is termed "e-ISSN" is optional.
+ </p>
+ <p>
+  Example:
+ </p>
+ <pre>
+Abbrev: Acta Haematol.
+Title : Acta Haematologica
+ISSN  : 0001-5792
+<strong>e-ISSN: 1421-9662</strong>
+CODEN : ACHAAH
+Publis: Karger AG
+Server: http://www.karger.com/journals/aha/
+</pre>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keyword:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0891">
+    Chondrogenesis
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0890">
+    Hereditary spastic paraplegia
+   </a>
+  </li>
+ </ul>
+ <p>
+  Deleted keywords:
+ </p>
+ <ul>
+  <li>
+   Alkylation
+  </li>
+  <li>
+   Brain
+  </li>
+  <li>
+   Cartilage
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 42.0 of 10-Oct-2003
+ </h2>
+ <h3>
+  Headlines: New major release is available (42.0)
+ </h3>
+ <p>
+  Release 42.0 of Swiss-Prot contains 135'850 sequence entries,
+     comprising 50'046'799 amino acids abstracted from 109'694 references.
+     13'374 sequences have been added since release 41, the sequence data
+     of 1'298 existing entries has been updated and the annotations of
+     45'617 entries have been revised. This represents an increase of 11%.
+ </p>
+ <p>
+  Many improvements were carried out in the last 6 months at the level of the
+     CC and FT lines. All the recent changes to Swiss-Prot format are described
+     in detail in the continuously updated document:
+ </p>
+ <h2>
+  Swiss-Prot release 41.26 of 04-Oct-2003
+ </h2>
+ <h3>
+  Controlled vocabulary in the feature (FT) key LIPID
+ </h3>
+ <p>
+  We have revised the annotation of post-translational modified amino acids in lipoproteins, and
+made a major overhaul of the controlled vocabulary. Lipid annotation that was covered
+by other feature (FT) keys than LIPID has been moved accordingly, e.g. cholesterol-binding.
+ </p>
+ <p>
+  The currently defined controlled vocabulary for the feature descriptions of 'LIPID' FT lines is listed below:
+ </p>
+ <pre>
+Cholesterol glycine ester
+Cis-14-hydroxy-10,13-dioxo-7-heptadecenoic acid aspartate ester
+GPI-anchor amidated alanine
+GPI-anchor amidated asparagine
+GPI-anchor amidated aspartate
+GPI-anchor amidated cysteine
+GPI-anchor amidated glycine
+GPI-anchor amidated serine
+GPI-anchor amidated threonine
+GPI-like-anchor amidated glycine
+GPI-like-anchor amidated serine
+N-myristoyl glycine
+N-palmitoyl cysteine
+N(6)-myristoyl lysine
+N(6)-palmitoyl lysine
+O-octanoyl serine
+O-palmitoyl serine
+O-palmitoyl threonine
+Phosphotidylethanolamine amidated glycine
+S-12-hydroxyfarnesyl cysteine
+S-archaeol cysteine
+S-diacylglycerol cysteine
+S-farnesyl cysteine
+S-geranylgeranyl cysteine
+S-myristoyl cysteine
+S-palmitoleyl cysteine
+S-palmitoyl cysteine
+</pre>
+ <h2>
+  Swiss-Prot release 41.24 of 19-Sep-2003
+ </h2>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  Deleted keyword:
+ </p>
+ <ul>
+  <li>
+   T-DNA
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 41.22 of 29-Aug-2003
+ </h2>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  Modified keywords:
+ </p>
+ <ul>
+  <li>
+   <strong>
+    Flagella
+   </strong>
+   was renamed to
+   <a href="http://www.uniprot.org/keywords/KW-0282">
+    Flagellum
+   </a>
+  </li>
+  <li>
+   <strong>
+    Microtubules
+   </strong>
+   was renamed to
+   <a href="http://www.uniprot.org/keywords/KW-0493">
+    Microtubule
+   </a>
+  </li>
+ </ul>
+ <p>
+  New keyword:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0889">
+    Transcription antitermination
+   </a>
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 41.21 of 22-Aug-2003
+ </h2>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  Modified keyword:
+ </p>
+ <ul>
+  <li>
+   <strong>
+    Capping protein
+   </strong>
+   was renamed to
+   <a href="http://www.uniprot.org/keywords/KW-0117">
+    Actin capping
+   </a>
+  </li>
+ </ul>
+ <p>
+  New keyword:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0888">
+    Threonine protease
+   </a>
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 41.20 of 16-Aug-2003
+ </h2>
+ <h3>
+  Case and wording change for submissions to Swiss-Prot in reference location (RL) lines
+ </h3>
+ <p>
+  While proceeding with the conversion to mixed case of the different line
+types of a Swiss-Prot entry, we have decided to do the same for the name of
+our database, e.g. we are now using "Swiss-Prot" (instead of previously "SWISS-PROT")
+as the prevalent way of referring to it. This change affects the Swiss-Prot RL
+(reference location) lines of entries which were submitted directly to Swiss-Prot,
+and which the authors have not (yet) published. At the same time, we have changed
+the wording of those lines.
+ </p>
+ <p>
+  Former format:
+ </p>
+ <pre>
+RL   Submitted (MAY-2002) to the SWISS-PROT data bank.
+</pre>
+ <p>
+  New format:
+ </p>
+ <pre>
+RL   Submitted (MAY-2002) to Swiss-Prot.
+</pre>
+ <p>
+  Note: RL lines concerning submissions to EMBL/GenBank/DDBJ, PDB and other databases
+are not affected by this modification.
+ </p>
+ <h3>
+  New comment line (CC) topic ALLERGEN
+ </h3>
+ <p>
+  We have introduced a new comment (CC) line topic type: ALLERGEN. This topic
+is used to convey information relevant to allergenic proteins.
+ </p>
+ <p>
+  The format of this comment block is:
+ </p>
+ <pre>
+CC   -!- ALLERGEN: Text.
+</pre>
+ <p>
+  Examples:
+ </p>
+ <pre>
+ <a href="http://www.uniprot.org/uniprot/P19121#section_comments">P19121</a>:
+CC   -!- ALLERGEN: Causes an allergic reaction in human. Binds IgE. It is a
+CC       partially heat-labile allergen that may cause both respiratory and
+CC       food-allergy symptoms in patients with the bird-egg syndrome.
+</pre>
+ <pre>
+ <a href="http://www.uniprot.org/uniprot/Q28050#section_comments">Q28050</a>:
+CC   -!- ALLERGEN: Causes an allergic reaction in human. Minor allergen of
+CC       bovine dander.
+</pre>
+ <h2>
+  Swiss-Prot release 41.18 of 25-Jul-2003
+ </h2>
+ <h3>
+  Headlines: Annotation of microbial H(+)-translocating pyrophosphatases
+ </h3>
+ <p>
+  We have annotated the microbial H(+)-translocating pyrophosphatases
+     present in the acidocalcisome, the first eukaryotic organelle to be found in bacteria.
+ </p>
+ <p>
+  Acidocalcisomes are organelles that have an acidic nature, high eletronic density and contain
+     high concentrations of calcium, magnesium, pyrophosphate and polyP. They were originally found
+     in unicellular eukaryotes, such as Toxoplasma gondii and trypanosomatids. It has been postulated
+     that acidocalcisomes may have an important role as an energy source and in the regulation of
+     intracellualr pH, calcium concentration and osmotic conditions.
+ </p>
+ <p>
+  Now the group of Roberto Docampo has found them in the bacterium Agrobacterium tumefaciens. This
+      is the first organelle to be found in bacteria that have a direct counterpart in eukaryotes. The
+      typical characteristic of the acidocalcisome is the presence of a number of pumps and exchangers:
+      one of them is the H(+)-translocating pyrophosphatase (H+-PPase). This pump generates a proton motive
+      force and may be responsible for the synthesis of pyrophosphate. They are found in several bacteria
+      and archaea and at present it is unkown whether any of these is also localized in acidocalcisomes.
+      As these pumps are present only in some pathogenic bacteria but not in humans, drugs that target them
+     might be effective against these infections.
+ </p>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  Modified keyword:
+ </p>
+ <ul>
+  <li>
+   <strong>
+    Metachromatic leucodystrophy
+   </strong>
+   was renamed to
+   <a href="http://www.uniprot.org/keywords/KW-0478">
+    Metachromatic leukodystrophy
+   </a>
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 41.17 of 19-Jul-2003
+ </h2>
+ <h3>
+  Cross-references to GermOnline
+ </h3>
+ <p>
+  We have added cross-references to the GermOnline database (available at
+  <a href="http://germonline.unibas.ch/">
+   http://germonline.unibas.org/
+  </a>
+  ), which is maintained by
+the
+  <a href="http://www.isb-sib.ch/groups/genombio.htm">
+   Genome Bioinformatics group
+  </a>
+  of
+the SIB Swiss Institute of Bioinformatics.
+GermOnline is a gateway for gametogenesis.  Its goals are to provide a rapid access to a comprehensive compilation of genes, expression data and functions implicated in germline development, meiosis, gamete formation, and gamete function in 11 key model systems and H. sapiens. At this time, the
+majority of cross-references in Swiss-Prot concern Saccharomyces cerevisiae gene expression data.
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    GermOnline
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    GermOnline's identifier for a gene.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/P58012#section_x-ref">P58012</a>:
+DR   GermOnline; 305011; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h2>
+  Swiss-Prot release 41.16 of 11-Jul-2003
+ </h2>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0887">
+    Epilepsy
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0886">
+    LTQ
+   </a>
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 41.14 of 27-Jun-2003
+ </h2>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0885">
+    CTQ
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0884">
+    PQQ biosynthesis
+   </a>
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 41.12 of 16-Jun-2003
+ </h2>
+ <h3>
+  New feature key CROSSLNK, and removal of the feature keys THIOETH and THIOLEST
+ </h3>
+ <p>
+  The feature key CROSSLNK has been introduced to describe bonds between amino
+acids, which are formed posttranslationally within a peptide or between
+peptides, such as isopeptidic bonds, carbon-carbon linkages, carbon-nitrogen
+linkages, thioether bonds, thiolester bonds, and backbone condensations.
+ </p>
+ <p>
+  Format:
+ </p>
+ <pre>
+FT   CROSSLNK    from     to      Description.
+</pre>
+ <p>
+  The initially defined controlled vocabulary is listed below:
+ </p>
+ <pre>
+1'-histidyl-3'-tyrosine (His-Tyr)
+2-cysteinyl-L-phenylalanine (Cys-Phe)
+2-cysteinyl-D-phenylalanine (Cys-Phe)
+2-cysteinyl-D-allo-threonine (Cys-Thr)
+2-iminomethyl-5-imidazolinone (Gln-Gly)
+2-oxazoline (Cys-Ser)
+2'-(S-cysteinyl)histidine (Cys-His)
+3-cysteinyl-aspartic acid (Cys-Asp)
+3'-histidyl-3-tyrosine (His-Tyr)
+3'-(S-cysteinyl)-tyrosine (Cys-Tyr)
+4-cysteinyl-glutamic acid (Cys-Glu)
+4'-cysteinyl-tryptophylquinone (Cys-Trp)
+5-imidazolinone (Ser-Gly)
+5-imidazolinone (Ala-Gly)
+5-imidazolinone (Cys-Gly)
+Beta-methyllanthionine (Cys-Thr)
+Beta-methyllanthionine (Thr-Cys)
+Beta-methyllanthionine sulfoxide (Cys-Thr)
+Isoaspartyl glycine isopeptide (Asn-Gly)
+Isoaspartyl lysine isopeptide (Lys-Asn) (interchain with N-...)
+Isoaspartyl lysine isopeptide (Asn-Lys) (interchain with K-...)
+Isodityrosine (Tyr-Tyr)
+Isoglutamyl cysteine thioester (Gln-Cys)
+Isoglutamyl lysine isopeptide (Lys-Gln)
+Isoglutamyl lysine isopeptide (Gln-Lys)
+Isoglutamyl lysine isopeptide (Gln-Lys) (interchain with K-...)
+Isoglutamyl lysine isopeptide (Lys-Gln) (interchain with Q-...)
+Lanthionine (Ser-Cys)
+Lanthionine (Cys-Ser)
+Lysinoalanine (Lys-Ser)
+Lysine tyrosylquinone (Lys-Tyr)
+Lysinoalanine (Ser-Lys)
+Lysyl topaquinone (Lys-Tyr)
+N-isoaspartyl cysteine isopeptide (Asn-Cys)
+Oxazole (Cys-Ser)
+Oxazole (Gly-Ser)
+Pyrroloquinoline quinone (Glu-Tyr)
+S-(2-aminovinyl)-D-cysteine (Ser-Cys)
+S-(2-aminovinyl)-3-methyl-D-cysteine (Thr-Cys)
+Thiazole (Gly-Cys)
+Thiazole (Ser-Cys)
+Thiazole (Phe-Cys)
+Thiazole (Cys-Cys)
+Thiazole (Lys-Cys)
+Tryptophan tryptophylquinone (Trp-Trp)
+Glycyl lysine isopeptide (Gly-Lys) (interchain with K-...)
+Glycyl lysine isopeptide (Lys-Gly) (interchain with G-...)
+Ubiquitinyl cysteine thioester (Cys)
+</pre>
+ <p>
+  Examples:
+ </p>
+ <pre>
+ <a href="http://www.uniprot.org/uniprot/P01024#section_features">P01024</a>:
+FT   CROSSLNK   1010   1013       Isoglutamyl cysteine thioester (Cys-Gln).
+</pre>
+ <pre>
+ <a href="http://www.uniprot.org/uniprot/P29827#section_features">P29827</a>:
+FT   CROSSLNK     60     77       Beta-methyllanthionine (Cys-Thr).
+FT   CROSSLNK     63     73       Lanthionine (Ser-Cys).
+FT   CROSSLNK     64     70       Beta-methyllanthionine (Cys-Thr).
+FT   CROSSLNK     65     78       Lysinoalanine (Ser-Lys).
+</pre>
+ <p>
+  <strong>
+   Note:
+  </strong>
+  The feature keys THIOETH and THIOLEST have been removed.
+Various bonds between amino-acids that used to be described by the feature keys
+BINDING, MOD_RES or SITE will progressively, in
+groups according the type of PTM, be modified and indicated by CROSSLNK.
+Disulfide bonds occur so often in proteins, that we decided to keep the special
+feature key DISULFID to annotate this kind of linkage.
+ </p>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0883">
+    Thioether bond
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0882">
+    Thioester bond
+   </a>
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 41.10 of 30-May-2003
+ </h2>
+ <h3>
+  Reference Comment (RC) line topics may span lines
+ </h3>
+ <p>
+  The RC (Reference Comment) line store comments relevant to the reference
+cited, in currently 5 distinct topics: PLASMID, SPECIES, STRAIN, TISSUE and
+TRANSPOSON. It is not always possible to list all information within one line.
+Therefore we allow multiple RC lines, in which one topic might span over
+a line. Example:
+ </p>
+ <pre>
+ <a href="http://www.uniprot.org/uniprot/Q9EVG8#section_ref">Q9EVG8</a>:
+RC   STRAIN=AZ.026, DC.005, GA.039, GA2181, IL.014, IN.018, KY.172, KY2.37,
+RC   LA.013, MN.001, MNb027, MS.040, NY.016, OH.036, TN.173, TN2.38,
+RC   UT.002, AL.012, AZ.180, MI.035, VA.015, and IL2.17;
+</pre>
+ <h3>
+  Cross-references to Genome Knowledgebase (GK)
+ </h3>
+ <p>
+  We have added cross-references to the Genome Knowledgebase (GK) (available at
+  <a href="http://www.genomeknowledge.org/">
+   http://www.genomeknowledge.org/
+  </a>
+  ), which
+is a collaboration among Cold Spring Harbor Laboratory, The European Bioinformatics Institute,
+and The Gene Ontology Consortium to develop a curated resource of core pathways and reactions
+in human biology.
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    GK
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    GK's unique identifier for a protein, which is identical to the
+      Swiss-Prot primary AC number of that protein.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/Q9BZJ0#section_x-ref">Q9BZJ0</a>:
+DR   GK; Q9BZJ0; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-references to PIR SuperFamilies of iProClass
+ </h3>
+ <p>
+  We have added cross-references to the PIR SuperFamilies of iProClass (available at
+  <a href="http://pir.georgetown.edu/iproclass/">
+   http://pir.georgetown.edu/iproclass/
+  </a>
+  ),
+which is an integrated protein classification database.
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    PIRSF
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    iProClass superfamily number.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 1
+   </th>
+   <td>
+    Name for a superfamily.
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Optional information 2:
+   </td>
+   <td>
+    Number of hits found in the sequence, which is generally '1'.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/O28076#section_x-ref">O28076</a>:
+DR   PIRSF; PIRSF006414; FTR; 1.</pre>
+   </td>
+  </tr>
+ </table>
+ <h2>
+  Swiss-Prot release 41.9 of 24-May-2003
+ </h2>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keyword:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0881">
+    Chlorophyll catabolism
+   </a>
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 41.5 of 23-Apr-2003
+ </h2>
+ <h3>
+  Headlines: SARS coronavirus protein sequences are available
+ </h3>
+ <p>
+  We have made a first annotation run of the proteins potentially encoded by the
+    SARS (Severe Acute Respiratory Syndrome) coronavirus. The following entries
+     are available:
+ </p>
+ Nucleocapsid protein (
+ <a href="http://www.uniprot.org/uniprot/P59595">
+  P59595
+ </a>
+ )
+      E1 glycoprotein (
+ <a href="http://www.uniprot.org/uniprot/P59596">
+  P59596
+ </a>
+ )
+       E2 glycoprotein (
+ <a href="http://www.uniprot.org/uniprot/P59594">
+  P59594
+ </a>
+ Envelope protein (
+ <a href="http://www.uniprot.org/uniprot/P59637">
+  P59637
+ </a>
+ )
+         Replicase polyprotein 1ab (
+ <a href="http://www.uniprot.org/uniprot/P59641">
+  P59641
+ </a>
+ )
+          Hypothetical protein X1 (
+ <a href="http://www.uniprot.org/uniprot/P59632">
+  P59632
+ </a>
+ )
+           Hypothetical protein X2 (
+ <a href="http://www.uniprot.org/uniprot/P59633">
+  P59633
+ </a>
+ )
+            Hypothetical protein X3 (
+ <a href="http://www.uniprot.org/uniprot/P59634">
+  P59634
+ </a>
+ )
+             Hypothetical protein X4 (
+ <a href="http://www.uniprot.org/uniprot/P59635">
+  P59635
+ </a>
+ )
+              Hypothetical protein 5 (
+ <a href="http://www.uniprot.org/uniprot/P59636">
+  P59636
+ </a>
+ )
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0880">
+    Kelch repeat
+   </a>
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 41.8 of 16-May-2003
+ </h2>
+ <h3>
+  Headlines: Complete update of PDB cross-references
+ </h3>
+ <p>
+  We have completely updated our cross-references to PDB. Thanks to work done by
+     the EBI and Geneva Swiss-Prot groups in collaboration with the EBI MSD
+     (Macromolecular Structure Database) group we have mapped at the atom level PDB
+     structural data to the relevant Swiss-Prot and TrEMBL entries. This
+     work has led to the introduction of cross-references to PDB in TrEMBL and a
+     very significant increase in the number of these cross-references in Swiss-Prot.
+     More than 6'000 cross-references were added and the number of Swiss-Prot entries
+     that are linked to PDB is now above 5'300 (versus about 3'600 before this work
+     was carried out).
+ </p>
+ <h2>
+  Swiss-Prot release 41.3 of 04-Apr-2003
+ </h2>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0879">
+    Wnt signaling pathway
+   </a>
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 41.1 of 25-Mar-2003
+ </h2>
+ <h3>
+  New syntax of the CC line topic ALTERNATIVE PRODUCTS
+ </h3>
+ <p>
+  In Swiss-Prot release 41.1 (and in the accompanying TrEMBL release), a new
+format was introduced for "CC ALTERNATIVE PRODUCTS" lines.  The new format is
+more structured than the previous format.  Associated with these changes are the
+introduction of stable identifiers for each named splice isoform in all entries
+that describe more than one splice isoform; the extension of feature
+identifiers, previously only used for human VARIANT  and certain CARBOHYD features, to VARSPLIC
+features in entries from all species.
+ </p>
+ <p>
+  The new format of the CC line topic ALTERNATIVE PRODUCTS is:
+ </p>
+ <pre>
+CC   -!- ALTERNATIVE PRODUCTS:
+CC       Event=Alternative promoter;
+CC         Comment=Free text;
+CC       Event=Alternative splicing; Named isoforms=n;
+CC         Comment=Optional free text;
+CC       Name=Isoform_1; Synonyms=Synonym_1[, Synonym_n];
+CC         IsoId=Isoform_identifier_1[, Isoform_identifer_n];
+CC         Sequence=Displayed;
+CC         Note=Free text;
+CC       Name=Isoform_n; Synonyms=Synonym_1[, Synonym_n];
+CC         IsoId=Isoform_identifier_1[, Isoform_identifer_n];
+CC         Sequence=VSP_identifier_1 [, VSP_identifier_n];
+CC         Note=Free text;
+CC       Event=Alternative initiation;
+CC         Comment=Free text;
+</pre>
+ <p>
+  The qualifiers are described in the table below:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Topic
+   </th>
+   <th>
+    Description
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Event
+   </td>
+   <td>
+    Biological process that results in the production of the alternative
+      forms (Alternative promoter, Alternative splicing, Alternative initiation).
+    <br/>
+    Format: Event=controlled vocabulary;
+    <br/>
+    Example: Event=Alternative splicing;
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Named isoforms
+   </td>
+   <td>
+    Number of isoforms listed in the topics 'Name' currently only for 'Event=Alternative splicing'.
+    <br/>
+    Format: Named isoforms=number;
+    <br/>
+    Example: Named isoforms=6;
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Comment
+   </td>
+   <td>
+    Any comments concerning one or more isoforms;
+      optional for 'Alternative splicing';
+      in case of 'Alternative promoter' and 'Alternative initiation' there is always a
+      'Comment' of free text, which includes relevant information on the isoforms.
+    <br/>
+    Format: Comment=free text;
+    <br/>
+    Example: Comment=Experimental confirmation may be lacking for some isoforms;
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Name
+   </td>
+   <td>
+    A common name for an isoform used in the literature or assigned by Swiss-Prot; currenty only available for spliced isoforms.
+    <br/>
+    Format: Name=common name;
+    <br/>
+    Example: Name=Alpha;
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Synonyms
+   </td>
+   <td>
+    Synonyms for an isoform as used in the literature; optional; currently only available for spliced isoforms.
+    <br/>
+    Format: Synonyms=Synonym_1[,&amp;nbsp;Synonym_n];
+    <br/>
+    Example:  Synonyms=B, KL5;
+   </td>
+  </tr>
+  <tr>
+   <td>
+    IsoId
+   </td>
+   <td>
+    Unique identifier for an isoform, consisting of the Swiss-Prot accession
+      number, followed by a dash and a number.
+    <br/>
+    Format: IsoId=acc#-isoform_number[, acc#-isoform_number];
+    <br/>
+    Example: IsoId=P05067-1;
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Sequence
+   </td>
+   <td>
+    Information on the isoform sequence; the term
+    <strong>
+     Displayed
+    </strong>
+    indicates, that the sequence
+      is shown in the entry; a list of
+    <a href="http://www.uniprot.org/docs/userman.htm#FTID">
+     feature identifiers
+    </a>
+    (VSP_#) indicates that the isoform is annotated in the feature table; the FTIds enable programs to create
+      the sequence of a splice variant; if the accession number of the IsoId does not correspond to the accession
+      number of the current entry, this topic contains the term
+    <strong>
+     External
+    </strong>
+    ;
+    <strong>
+     Not described
+    </strong>
+    points out that the sequence of the isoform is unknown.
+    <br/>
+    Format: Sequence=VSP_#[, VSP_#]|Displayed|External|Not described;
+    <br/>
+    Example: Sequence=Displayed;
+    <br/>
+    Example: Sequence=VSP_000013, VSP_000014;
+      Example: Sequence=External;
+    <br/>
+    Example: Sequence=Not described;
+    <br/>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Note
+   </td>
+   <td>
+    Lists isoform-specific information; optional.
+    <br/>
+    Format: Note=Free text;
+    <br/>
+    Example: Note=No experimental confirmation available;
+   </td>
+  </tr>
+ </table>
+ <p>
+  Example of the CC lines and the corresponding FT lines for an entry
+with alternative splicing
+  <a href="http://www.uniprot.org/uniprot/Q15746">
+   Q15746
+  </a>
+  :
+ </p>
+ <pre>
+...
+CC  -!- ALTERNATIVE PRODUCTS:
+CC      Event=Alternative splicing; Named isoforms=6;
+CC      Name=1;
+CC        IsoId=Q15746-4; Sequence=Displayed;
+CC      Name=2;
+CC        IsoId=Q15746-5; Sequence=VSP_000040;
+CC      Name=3A;
+CC        IsoId=Q15746-6; Sequence=VSP_000041, VSP_000043;
+CC      Name=3B;
+CC        IsoId=Q15746-7; Sequence=VSP_000040, VSP_000041, VSP_000042;
+CC      Name=4;
+CC        IsoId=Q15746-8; Sequence=VSP_000041, VSP_000042;
+CC      Name=del-1790;
+CC        IsoId=Q15746-9; Sequence=VSP_000044;
+...
+FT   VARSPLIC    437    506       VSGIPKPEVAWFLEGTPVRRQEGSIEVYEDAGSHYLCLLKA
+FT                                RTRDSGTYSCTASNAQGQVSCSWTLQVER -&gt; G (in
+FT                                isoform 2 and isoform 3B).
+FT                                /FTId=VSP_004791.
+FT   VARSPLIC   1433   1439       DEVEVSD -&gt; MKWRCQT (in isoform 3A,
+FT                                isoform 3B and isoform 4).
+FT                                /FTId=VSP_004792.
+FT   VARSPLIC   1473   1545       Missing (in isoform 4).
+FT                                /FTId=VSP_004793.
+FT   VARSPLIC   1655   1705       Missing (in isoform 3A and isoform 3B).
+FT                                /FTId=VSP_004794.
+FT   VARSPLIC   1790   1790       Missing (in isoform Del-1790).
+FT                                /FTId=VSP_004795.
+
+...
+</pre>
+ <p>
+  The corresponding modules of the Swiss-Prot parser
+  <a href="http://swissknife.sourceforge.net/">
+   Swissknife
+  </a>
+  have been modified, and Release 1.31 of Swissknife can be
+  <a href="ftp://ftp.ebi.ac.uk/pub/software/swissprot/Swissknife/">
+   downloaded
+  </a>
+  .
+ </p>
+ <h3>
+  Cross-references to Gene Ontology (GO)
+ </h3>
+ <p>
+  We have added cross-references to the Gene Ontology (GO) database (available at
+  <a href="http://www.geneontology.org/">
+   http://www.geneontology.org/
+  </a>
+  ), which
+provides controlled vocabularies for the description of the molecular function,
+biological process and cellular component of gene products.
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    GO
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    GO's unique identifier for a GO term.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 1
+   </th>
+   <td>
+    A 1-letter abbreviation for one of the 3 ontology aspects, separated from the GO term by a column. If the
+  term is longer than 46 characters, the first 43 characters are indicated followed by 3 dots ('...').
+  The abbreviations for the 3 distinct aspects of the ontology are
+    <strong>
+     P
+    </strong>
+    (biological Process),
+    <strong>
+     F
+    </strong>
+    (molecular Function),
+  and
+    <strong>
+     C
+    </strong>
+    (cellular Component).
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 2
+   </th>
+   <td>
+    3-character GO evidence code. The meaning of the evidence codes is:
+    <strong>
+     IDA
+    </strong>
+    =inferred from direct assay,
+    <strong>
+     IMP
+    </strong>
+    =inferred from mutant phenotype,
+    <strong>
+     IGI
+    </strong>
+    =inferred from genetic interaction,
+    <strong>
+     IPI
+    </strong>
+    =inferred from physical interaction,
+    <strong>
+     IEP
+    </strong>
+    =inferred from expression pattern,
+    <strong>
+     TAS
+    </strong>
+    =traceable author statement,
+    <strong>
+     NAS
+    </strong>
+    =non-traceable author statement,
+    <strong>
+     IC
+    </strong>
+    =inferred by curator,
+    <strong>
+     ISS
+    </strong>
+    =inferred from sequence or structural similarity.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/Q9XTD2#section_x-ref">Q9XTD2</a>
+DR   GO; GO:0008601; F:protein phosphatase type 2A, regulator acti...; IPI.
+DR   GO; GO:0000080; P:G1 phase of mitotic cell cycle; IDA.
+DR   GO; GO:0008285; P:negative regulation of cell proliferation; IDA.
+DR   GO; GO:0006470; P:protein amino acid dephosphorylation; IDA.
+
+<a href="http://www.uniprot.org/uniprot/P04406#section_x-ref">P04406</a>:
+DR   GO; GO:0005737; C:cytoplasm; NAS.
+DR   GO; GO:0004365; F:glyceraldehyde 3-phosphate dehydrogenase (p...; NAS.
+DR   GO; GO:0006096; P:glycolysis; NAS.
+</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0877">
+    Alternative promoter usage
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0878">
+    Amphibian defense peptide
+   </a>
+  </li>
+ </ul>
+ <p>
+  Deleted keyword:
+ </p>
+ <ul>
+  <li>
+   Amphibian skin
+  </li>
+ </ul>
+ <h2>
+  Swiss-Prot release 41.0, 28-Feb-2003
+ </h2>
+ <h3>
+  Progress in the conversion of Swiss-Prot to mixed-case characters
+ </h3>
+ <p>
+  We are gradually converting Swiss-Prot entries from all UPPER CASE
+to MiXeD CaSe. With this release the RC (Reference Comment) line
+topic STRAIN and the CC line topic CATALYTIC ACTIVITY have been converted.
+ </p>
+ <h3>
+  "Nucleomorph" added to the OrGanelle (OG) line
+ </h3>
+ <p>
+  The OG (OrGanelle) line indicates from which genome a gene for a protein
+originates. Until now, defined terms in the OG line where "Chloroplast",
+"Cyanelle", "Mitochondrion" and "Plasmid".
+The term "Nucleomorph" has been added, which is the
+residual nucleus of an algal endosymbiont that resides inside its host cell.
+ </p>
+ <h3>
+  Multiple RP lines
+ </h3>
+ <p>
+  Starting with release 41, there can be more than one RP (Reference
+Position) line per reference in a Swiss-Prot entry. The RP line describes
+the extent of the work carried out by the authors of the reference, e.g.
+the type of molecule that has been sequenced, protein characterization,
+PTM characterization, protein structure analysis, variation detection, etc.
+ </p>
+ <p>
+  As the number of experimental results per publication has increased over
+the years, the limitation of using a single RP line per reference no longer
+allowed to add all the information while maintaining a consistent format.
+Therefore we decided to permit multiple RP lines.
+ </p>
+ <p>
+  Example:
+ </p>
+ <pre>
+RP   SEQUENCE FROM N.A., SEQUENCE OF 23-42 AND 351-365, AND
+RP   CHARACTERIZATION.
+</pre>
+ <h3>
+  Cross-references to Schizosaccharomyces pombe GeneDB Prototype
+ </h3>
+ <p>
+  We have added cross-references to the Schizosaccharomyces pombe GeneDB Prototype (available at
+  <a href="http://www.genedb.org/genedb/pombe/index.jsp">
+   http://www.genedb.org/genedb/pombe/index.jsp
+  </a>
+  ),
+which contains all S. pombe known and predicted protein coding genes, pseudogenes and tRNAs.
+It is hosted by the Sanger Institute.
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    GeneDB_SPombe
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    GeneDB's unique identifier for a S. pombe gene.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre>DR   GeneDB_SPombe; SPAC9E9.12c; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-referecences to Genew
+ </h3>
+ <p>
+  We have added cross-references to the Human Gene Nomenclature Database Genew (available at
+  <a href="http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl">
+   http://www.gene.ucl.ac.uk/cgi-bin/nomenclature/searchgenes.pl
+  </a>
+  ),
+which provides data for all human genes which have approved symbols. It is managed
+by the HUGO Gene Nomenclature Committee (HGNC).
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    Genew
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    HGNC's unique identifier for a human gene
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 1
+   </th>
+   <td>
+    HGNC's approved gene symbol.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre>DR   Genew; HGNC:5217; HSD3B1.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-references to Gramene
+ </h3>
+ <p>
+  We have added cross-references to the Gramene database, a comparative mapping resource for grains
+(available at
+  <a href="http://www.gramene.org/">
+   http://www.gramene.org/
+  </a>
+  ).
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    Gramene
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    Unique identifier for a protein, which is identical to the
+      Swiss-Prot primary AC number of that protein.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre>DR   Gramene; Q06967; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-references to HAMAP
+ </h3>
+ <p>
+  We have added cross-references to the collection of orthologous microbial protein families, generated manually
+by expert curators of the HAMAP (High-quality Automated and Manual Annotation of microbial Proteomes) project
+in the framework of the Swiss-Prot protein knowledgebase. The data is accessible at
+  <a href="http://www.expasy.org/sprot/hamap/families.html">
+   /sprot/hamap/families.html
+  </a>
+  .
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    HAMAP
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    HAMAP unique identifier for a microbe protein family
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 1
+   </th>
+   <td>
+    The values are either '-', 'fused', 'atypical' or 'atypical/fused'. The value '-' is a placeholder for an
+  empty field; the 'fused' value indicates that the family rule does not cover the entire protein; the value
+  'atypical' points out that the protein is divergent in sequence or has mutated functional sites, and should not be included in family
+  datasets. The value 'atypical/fused' indicates both latter findings.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 2
+   </th>
+   <td>
+    Number of domains found in the protein, generally '1', rarely '2' for the fusion of 2 identical domains.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre>DR   HAMAP; MF_00012; -; 1.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-references to Phosphorylation Site Database
+ </h3>
+ <p>
+  We have added cross-references to the Phosphorylation Site Database, PhosSite (available at
+  <a href="http://vigen.biochem.vt.edu/xpd/xpd.htm">
+   http://vigen.biochem.vt.edu/xpd/xpd.htm
+  </a>
+  ),
+which provides access to information from scientific literature concerning
+prokaryotic proteins that undergo covalent phosphorylation on the hydroxyl side
+chains of serine, threonine or tyrosine residues.
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    PhosSite
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    Unique identifier for a phosphoprotein, which is identical to the
+  Swiss-Prot primary AC number of that protein.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre>DR   PhosSite; P00955; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-references to TIGRFAMs
+ </h3>
+ <p>
+  We have added cross-references to TIGRFAMs, a protein family database available at
+  <a href="http://www.tigr.org/TIGRFAMs/">
+   http://www.tigr.org/TIGRFAMs/
+  </a>
+  .
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    TIGRFAMs
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    TIGRFAMs' unique identifier for a protein family.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 1
+   </th>
+   <td>
+    TIGRFAMs' entry name for a protein family.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 2
+   </th>
+   <td>
+    Number of hits found in the sequence.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre>DR   TIGRFAMs; TIGR00630; uvra; 1.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cross-references to CarbBank
+ </h3>
+ <p>
+  We have removed the Swiss-Prot cross-references to CarbBank.
+ </p>
+ <h3>
+  Cross-references to GCRDb
+ </h3>
+ <p>
+  We have removed the Swiss-Prot cross-references to GCRDb.
+ </p>
+ <h3>
+  Cross-references to Mendel
+ </h3>
+ <p>
+  We have removed the Swiss-Prot cross-references to Mendel.
+ </p>
+ <h3>
+  Cross-references to YEPD
+ </h3>
+ <p>
+  We have removed the Swiss-Prot cross-references to the yeast electrophoresis protein
+database (YEPD).
+ </p>
+ <h3>
+  Explicit links to dbSNP in FT VARIANT lines of human sequence entries
+ </h3>
+ <p>
+  In human protein sequence entries we have introduced explicit links to the Single
+Nucleotide Polymorphism database (
+  <a href="http://www.ncbi.nlm.nih.gov/SNP/">
+   dbSNP
+  </a>
+  )
+from the feature description of FT VARIANT keys.
+ </p>
+ <p>
+  The format of such links is:
+ </p>
+ <pre>
+FT   VARIANT    from     to   description (IN dbSNP:accession_number).
+FT                                /FTId=VAR_number.
+</pre>
+ Example:
+ <pre>
+FT   VARIANT      65     65       T -&gt; I (IN dbSNP:1065419).
+FT                                /FTId=VAR_012009.
+</pre>
+ <h3>
+  Feature key SIMILAR became obsolete
+ </h3>
+ <p>
+  The feature key SIMILAR was used to describe the extent of a similarity with another
+protein sequence. Nowadays, most domains with similarity to other proteins are known
+regions described in domain and family databases, which are annotated in Swiss-Prot with
+the feature key DOMAIN or REPEAT and the comment (CC) line topic SIMILARITY; thus the
+feature key SIMILAR became obsolete and will not be used again.
+ </p>
+ <h3>
+  Version of SP in XML format
+ </h3>
+ <p>
+  A distribution version of Swiss-Prot and TrEMBL in XML format is being
+developed. The first draft of the XML specification was released for public
+review on February 21, 2002.
+ </p>
+</div>

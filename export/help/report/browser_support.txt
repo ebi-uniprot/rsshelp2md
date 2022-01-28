@@ -1,0 +1,5 @@
+browser_support
+---
+Dead links
+https://whatismybrowser.org/
+

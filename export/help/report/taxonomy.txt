@@ -1,0 +1,14 @@
+taxonomy
+---
+Dead links
+http://www.uniprot.org/docs/speclist
+
+Dead anchor tags
+http://www.uniprot.org/help/taxonomy#organism-denomination
+http://www.uniprot.org/help/taxonomy#organism-denomination
+http://www.uniprot.org/help/taxonomy#other-names
+http://www.uniprot.org/help/taxonomy#organism-denomination
+http://www.uniprot.org/uniprot/P42652#publications
+
+All extra HTML tags left (ie <span style="color: grey;">)?
+True

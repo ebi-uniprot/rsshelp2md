@@ -1,0 +1,10 @@
+binding
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P83790#function
+http://www.uniprot.org/uniprot/P24146#function
+http://www.uniprot.org/uniprot/Q57I19#function
+http://www.uniprot.org/uniprot/P73925#function
+http://www.uniprot.org/uniprot/Q8CFV9#function
+http://www.uniprot.org/uniprot/P08019#function
+

@@ -1,0 +1,203 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  Over 20,000 fungal proteins manually annotated in UniProtKB/Swiss-Prot
+ </h3>
+ <p>
+  Almost exactly one year after the integration of the complete proteome of
+  <a href="http://www.ebi.ac.uk/newt/display?search=4932">
+   <em>
+    Saccharomyces
+       cerevisiae
+   </em>
+  </a>
+  into UniProtKB/Swiss-Prot (see
+  <a href="http://www.uniprot.org/news/2007/01/09/release">
+   news
+  </a>
+  ),
+      we have increased the number of manually annotated fungal entries to more than
+  <a href="http://www.uniprot.org/uniprot/?query=taxonomy:fungi+AND+reviewed:yes">
+   20 000
+  </a>
+  .
+ </p>
+ <p>
+  The fungal kingdom includes very diverse organisms, from unicellular to
+      multicellular, from microscopic to macroscopic. Fungi have essential roles in
+      many ecological processes. They are required for nutrient cycling within
+      ecosystems, since they recycle dead organic matter into useful nutrients. Many
+      plants would not survive without symbiotic fungi called mycorrhizae, which live
+      in their roots and supply essential nutrients. They are also economically
+      important as they provide numerous drugs (such as penicillin), food (such as
+      mushrooms) and are used for their ability to ferment different sugars to
+      produce bread, wine, beer and even soy sauce.
+ </p>
+ <p>
+  Fungi are also responsible for a great number of severe plant and animal
+      diseases. Fungal infections, also called mycotic infections, may affect the
+      skin or the internal organs of the body. Severe mycotic infections, such as
+      histoplasmosis and candidiasis, are potentially life-threatening. Fungal
+      diseases are very difficult to treat since fungi are eukaryotic organisms that
+      share many properties with animal or human cells. Plant diseases caused by
+      fungi include rusts and smuts, as well as leaf, root, and stem rot. They can
+      cause severe damage to crop production.
+ </p>
+ <p>
+  Moreover, many fungi are important model organisms for studying the genetics and
+      molecular biology of eukaryotes.
+ </p>
+ <p>
+  It is therefore not surprising that many fungi were targeted for the
+      complete genome sequencing. No less that 32 complete fungal genomes
+      have been submitted to public sequence databases to date. Using the
+  <em>
+   S.
+       cerevisiae
+  </em>
+  and
+  <em>
+   Schizosaccharomyces pombe
+  </em>
+  fully annotated proteomes
+      as templates, we are progressively annotating orthologous proteins in these
+      newcomers, in order to provide our users with a high-quality fungal protein
+      dataset that will better reflect the diversity of this kingdom.
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Cross-references to World-2DPAGE
+ </h3>
+ <p>
+  Cross-references have been added to the public repository of 2D-gel data
+  <a href="http://world-2dpage.expasy.org/">
+   World-2DPAGE
+  </a>
+  . All 2D gel data to be
+     published in the journal Proteomics needs to be available on the web. The
+     World-2DPAGE repository hosts the data for resources who cannot build and
+     maintain a web interface. There are currently two data sources submitted to
+     World-2DPAGE, which are numbered consecutively:
+ </p>
+ <ul>
+  <li>
+   0001: CGL14067-2DPAGE, Corynebacterium glutamicum entries
+  </li>
+  <li>
+   0002: NIBR 2D-PAGE, Staphylococcus aureus Mu50 entries
+  </li>
+ </ul>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    World-2DPAGE
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    Database name and database accession number (usually from UniProtKB), separated by a colon.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/P61108#section_x-ref">P61108</a>:
+DR   World-2DPAGE; 0002:P61108; -.
+
+<a href="http://www.uniprot.org/uniprot/P77845#section_x-ref">P77845</a>:
+DR   World-2DPAGE; 0001:P77845; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Cornea-2DPAGE, DOSAC-COBS-2DPAGE, HSC-2DPAGE, REPRODUCTION-2DPAGE, SWISS-2DPAGE
+ </h3>
+ <p>
+  In cross-references to Cornea-2DPAGE, DOSAC-COBS-2DPAGE, HSC-2DPAGE,
+REPRODUCTION-2DPAGE and SWISS-2DPAGE, the optional information field 1 used to be the
+species origin.
+The species information has become obsolete/redundant since UniProtKB/Swiss-Prot no
+longer contains entries describing the same protein from different species (see
+  <a href="http://www.uniprot.org/news/2005/12/20/release">
+   Release 6.7
+  </a>
+  ).
+We have therefore replaced the species information by "-".
+ </p>
+ <p>
+  Examples:
+ </p>
+ <p>
+  Previous format:
+ </p>
+ <pre>
+DR   SWISS-2DPAGE; P04217; HUMAN.
+DR   Cornea-2DPAGE; P04217; HUMAN.
+DR   DOSAC-COBS-2DPAGE; P04217; HUMAN.
+DR   REPRODUCTION-2DPAGE; P04217; HUMAN.
+</pre>
+ <p>
+  New format:
+ </p>
+ <pre>
+DR   SWISS-2DPAGE; P04217; -.
+DR   Cornea-2DPAGE; P04217; -.
+DR   DOSAC-COBS-2DPAGE; P04217; -.
+DR   REPRODUCTION-2DPAGE; P04217; -.
+</pre>
+ <h3>
+  New document on human and mouse protein kinases.
+ </h3>
+ <p>
+  The document
+  <strong>
+   pkinfam.txt
+  </strong>
+  , available by
+  <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/pkinfam.txt">
+   ftp
+  </a>
+  and on the
+  <a href="http://www.uniprot.org/docs/pkinfam">
+   Web site
+  </a>
+  , provides the
+     classification of human and mouse protein kinases into subfamilies or subgroups,
+     as developed by Gerard Manning. The classification from Diego Miranda-Saavedra
+     has also been taken into account.
+ </p>
+ <p>
+  This document contains all UniProtKB/Swiss-Prot human and mouse protein kinase
+     entries, subdivided into 10 subfamilies or subgroups. Each
+     gene name is followed by the corresponding human and/or mouse
+     UniProtKB/Swiss-Prot entry name (and accession number).
+ </p>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keyword:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0976">
+    Atrial septal defect
+   </a>
+  </li>
+ </ul>
+</div>

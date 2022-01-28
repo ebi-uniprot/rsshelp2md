@@ -1,0 +1,10 @@
+Chordata
+---
+Dead links
+http://www.sanger.ac.uk/HGP/havana/
+
+Dead anchor tags
+http://www.uniprot.org/biocuration%5Fproject/Chordata/statistics/#Homosapiens
+http://www.uniprot.org/biocuration%5Fproject/Chordata/statistics/#Musmusculus
+http://www.uniprot.org/biocuration%5Fproject/Chordata/statistics/#Rattusnorvegicus
+

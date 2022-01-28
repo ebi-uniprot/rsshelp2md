@@ -1,0 +1,7 @@
+rule_id
+template_entries
+reviewed_protein_count
+unreviewed_protein_count
+taxonomic_scope
+annotation_covered
+predicted_protein_name

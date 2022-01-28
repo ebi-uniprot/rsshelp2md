@@ -1,0 +1,52 @@
+<feed xml:lang="en-US" xml:base="http://www.uniprot.org" xmlns="http://www.w3.org/2005/Atom">
+            <link rel="self" type="application/atom+xml" href="/memiki/pages/1163.atom"/>
+            <id>urn:uniprot:project:Changes</id>
+            <title>Forthcoming changes</title>
+            <published>2013-07-22T15:06:26Z</published>
+            <updated>2021-11-23T13:06:10Z</updated>
+            <category term="changes"/>
+            <entry>
+                            <id>refseq_rdf_change</id>
+                            <title>Change of the RDF representation of our cross-references to RefSeq</title>
+                            <author><name>uniprot</name></author>
+                            <published>2022-02-23T00:00:00Z</published>
+                            <updated>2022-02-23T00:00:00Z</updated>
+                            
+                            <category term="RDF"/><category term="UniProtKB"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>We will modify the RDF description of our cross-references to protein resources in the RefSeq database to provide explicit links to their corresponding RefSeq nucleotide sequences.</p>
+
+<p>Currently, our cross-references show the identifier of a RefSeq nucleotide sequence through an <code>rdfs:comment</code> property with a string literal value. We will replace this by a <code>translatedFrom</code> property that will link the RefSeq protein to a resource that corresponds to its coding sequence (CDS) and, similarly to the description of EMBL-CDS resources, this CDS will be linked through a <code>locatedOn</code> property to the transcript or genomic sequence that contains it.</p>
+
+<p>Note that the <code>translatedFrom</code> property is not the inverse of the <code>translatedTo</code> property that is used, for instance, in the description of Ensembl cross-references. The latter is used to link mature transcripts (whose sequence includes untranslated regions in addition to the CDS) to proteins.</p>
+
+<p>Example: <a href="/uniprot/Q00266.ttl">Q00266</a></p>
+
+<p>Current format:
+<pre>uniprot:Q00266
+  rdfs:seeAlso &lt;http://purl.uniprot.org/refseq/NP_000420.1&gt; .
+
+&lt;http://purl.uniprot.org/refseq/NP_000420.1&gt;
+  rdf:type up:Resource ;
+  up:database &lt;http://purl.uniprot.org/database/RefSeq&gt; ;
+  rdfs:comment "NM_000429.2" .
+</pre></p>
+
+<p>Future format:
+<pre>uniprot:Q00266
+  rdfs:seeAlso &lt;http://purl.uniprot.org/refseq/NP_000420.1&gt; .
+
+&lt;http://purl.uniprot.org/refseq/NP_000420.1&gt;
+  rdf:type up:Resource ;
+  up:database &lt;http://purl.uniprot.org/database/RefSeq&gt; ;
+  up:translatedFrom &lt;http://purl.uniprot.org/refseq/NM_000429.2#NP_000420.1_CDS&gt; .
+
+&lt;http://purl.uniprot.org/refseq/NM_000429.2#NP_000420.1_CDS&gt;
+  up:locatedOn &lt;http://purl.uniprot.org/refseq/NM_000429.2&gt; .
+</pre></p>
+                                </div>
+                            </content>
+                            
+                        </entry>
+        </feed>

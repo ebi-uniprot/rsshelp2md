@@ -1,0 +1,10 @@
+ca_bind
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P05937#function
+http://www.uniprot.org/uniprot/P02639#function
+http://www.uniprot.org/uniprot/Q96P71#function
+http://www.uniprot.org/uniprot/P15381#function
+http://www.uniprot.org/uniprot/P22002#function
+http://www.uniprot.org/uniprot/P23925#function
+

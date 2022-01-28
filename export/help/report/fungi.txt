@@ -1,0 +1,5 @@
+fungi
+---
+Dead links
+http://www.uniprot.org/program/Fungi
+

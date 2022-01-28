@@ -1,0 +1,14 @@
+Dead links:
+http://www.nrbook.com/b/bookcpdf.php
+Dead anchors:
+http://www.uniprot.org/manual/evidences#ECO:0000303
+http://www.uniprot.org/manual/evidences#ECO:0000305
+http://www.uniprot.org/manual/evidences#ECO:0000250
+http://www.uniprot.org/manual/evidences#ECO:0000255
+http://www.uniprot.org/manual/evidences#ECO:0000256
+http://www.uniprot.org/manual/evidences#ECO:0000259
+http://www.uniprot.org/manual/evidences#ECO:0000269
+http://www.uniprot.org/manual/evidences#ECO:0000312
+http://www.uniprot.org/manual/evidences#ECO:0000313
+http://www.uniprot.org/manual/evidences#ECO:0007744
+http://www.uniprot.org/manual/evidences#ECO:0000213

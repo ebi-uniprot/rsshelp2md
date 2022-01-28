@@ -1,0 +1,5 @@
+entry_count
+---
+Dead anchor tags
+http://www.uniprot.org/help/programmatic%5Faccess#downloading
+

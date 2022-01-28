@@ -1,0 +1,11 @@
+id
+name
+abbrev
+pubmed_id
+doi_id
+link_type
+server
+dbUrl
+category
+reviewed_protein_count
+unreviewed_protein_count

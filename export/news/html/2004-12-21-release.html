@@ -1,0 +1,356 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  Annotation of TRPA1 and TRPM8 transient receptors involved in sensing cold
+ </h3>
+ <p>
+  Mammals detect temperature with specialized neurons in the peripheral
+     nervous system. Two transient receptor-class channels, TRPA1 and TRPM8,
+      have been implicated in sensing cold.
+ </p>
+ <p>
+  The first of these channels, TRPA1, is activated by temperatures
+      below 17 degrees Celsius, which corresponds to the noxious cold
+      threshold. The second channel, TRPM8, plays a role in sensing less
+      extreme cool temperatures, being activated below 25 degrees Celsius.
+ </p>
+ <p>
+  Interestingly, the TRPM8 channel is also activated by products such
+       as eucalyptol or menthol, which may provide a ready explanation for
+      the sensation of coolness triggered by these flavors.
+ </p>
+ See:
+ <p>
+  <ul>
+   <li>
+    Human TRPA1 : AC=
+    <a href="http://www.uniprot.org/uniprot/O75762">
+     O75762
+    </a>
+   </li>
+   <li>
+    Mouse TRPA1 : AC=
+    <a href="http://www.uniprot.org/uniprot/Q8BLA8">
+     Q8BLA8
+    </a>
+   </li>
+   <li>
+    Rat   TRPA1 : AC=
+    <a href="http://www.uniprot.org/uniprot/Q6RI86">
+     Q6RI86
+    </a>
+   </li>
+   <li>
+    Human TRPM8: AC=
+    <a href="http://www.uniprot.org/uniprot/Q7Z2W7">
+     Q7Z2W7
+    </a>
+   </li>
+   <li>
+    Mouse TRPM8: AC=
+    <a href="http://www.uniprot.org/uniprot/Q8R4D5">
+     Q8R4D5
+    </a>
+   </li>
+   <li>
+    Rat   TRPM8: AC=
+    <a href="http://www.uniprot.org/uniprot/Q8R455">
+     Q8R455
+    </a>
+   </li>
+  </ul>
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Changes in the RP (Reference Position) line
+ </h3>
+ <p>
+  We changed the following items of the RP line:
+ </p>
+ <ul>
+  <li>
+   'SEQUENCE FROM N.A.' became '
+   <strong>
+    NUCLEOTIDE SEQUENCE
+   </strong>
+   '
+  </li>
+  '
+  This topic can be tagged with an optional qualifier indicating the
+  origin of the sequence: '
+  <strong>
+   NUCLEOTIDE SEQUENCE
+  </strong>
+  [ORIGIN OF SEQUENCE DATA]',
+  where
+  valid names are:
+  <ul>
+   <li>
+    GENOMIC DNA: the individual gene has been sequenced
+   </li>
+   <li>
+    GENOMIC RNA: the individual gene has been sequenced
+   </li>
+   <li>
+    MRNA: the individual cDNA has been sequenced
+   </li>
+  </ul>
+  If the data originates from a genome project or cDNA large-scale project, the
+  qualifier is preceded by the term "LARGE SCALE"; this generally indicates that the relevant
+  publication describes the project rather than giving further details on the protein of
+  interest.
+  <ul>
+   <li>
+    LARGE SCALE GENOMIC DNA: the gene has been sequenced as part of a genome project
+   </li>
+   <li>
+    LARGE SCALE MRNA: the gene has been sequenced as part of a large-scale cDNA project
+   </li>
+  </ul>
+  <li>
+   'SEQUENCE' became '
+   <strong>
+    PROTEIN SEQUENCE
+   </strong>
+   '
+  </li>
+  <li>
+   'REVISION(S)' became '
+   <strong>
+    SEQUENCE REVISION
+   </strong>
+   '
+  </li>
+ </ul>
+ <p>
+  Example:
+ </p>
+ <pre>
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 1), PROTEIN SEQUENCE
+RP   OF 108-131; 220-231 AND 349-393, CHARACTERIZATION, AND MUTAGENESIS OF
+RP   ARG-336.
+</pre>
+ <p>
+  If 2 qualifiers apply, both are indicated, separated by a '/'.
+ </p>
+ <p>
+  Example:
+ </p>
+ <pre>
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA / MRNA].
+</pre>
+ <h3>
+  New comment line (CC) topic: BIOPHYSICOCHEMICAL PROPERTIES
+ </h3>
+ <p>
+  A new comment line (CC) topic has been introduced: BIOPHYSICOCHEMICAL PROPERTIES.
+This topic is used to convey information relevant to biophysical and physicochemical
+data and information on pH dependence, temperature dependence, kinetic parameters,
+redox potentials, and maximal absorption.
+ </p>
+ <p>
+  The format of this comment block is:
+ </p>
+ <pre>
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Absorption:
+CC         Abs(max)=xx nm;
+CC         Note=free_text;
+CC       Kinetic parameters:
+CC         KM=xx unit for substrate [(free_text)];
+CC         Vmax=xx unit enzyme [free_text];
+CC         Note=free_text;
+CC       pH dependence:
+CC         free_text;
+CC       Redox potential:
+CC         free_text;
+CC       Temperature dependence:
+CC         free_text;
+</pre>
+ <p>
+  A BIOPHYSICOCHEMICAL PROPERTIES block must contain at least one of the properties Absorption,
+Kinetic parameters, pH dependence, Redox potential, Temperature dependence and may have any
+combination of these properties (ordered as indicated above). The meaning of these subtopics
+is as follows:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Property
+   </th>
+   <th>
+    Description
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Absorption
+   </td>
+   <td>
+    indicates the wavelength at which
+  photoreactive proteins such as opsins and DNA photolyases show maximal
+  absorption
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Kinetic parameters
+   </td>
+   <td>
+    mentions the Michaelis-Menten constant (KM) and maximal velocity (Vmax) of enzymes
+   </td>
+  </tr>
+  <tr>
+   <td>
+    pH dependence
+   </td>
+   <td>
+    describes the optimum pH for enzyme
+   activity and/or the variation of enzyme activity with pH variation
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Redox potential
+   </td>
+   <td>
+    reports the value of the standard (midpoint) oxido-reduction potential(s) for
+   electron transport proteins
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Temperature dependence
+   </td>
+   <td>
+    indicates the optimum temperature for enzyme activity and/or the variation
+   of enzyme activity with temperature variation; the thermostability/thermolability
+   of the enzyme is also mentioned when it is known
+   </td>
+  </tr>
+ </table>
+ <p>
+  Examples:
+ </p>
+ <pre>
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Absorption:
+CC         Abs(max)=395 nm;
+CC         Note=Exhibits a smaller absorbance peak at 470 nm. The
+CC         fluorescence emission spectrum peaks at 509 nm with a shoulder
+CC         at 540 nm;
+
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Kinetic parameters:
+CC         KM=62 mM for glucose;
+CC         KM=90 mM for maltose;
+CC         Vmax=0.20 mmol/min/mg enzyme with glucose as substrate;
+CC         Vmax=0.11 mmol/min/mg enzyme with maltose as substrate;
+CC         Note=Acetylates glucose, maltose, mannose, galactose, and
+CC         fructose with a decreasing relative rate of 1, 0.55, 0.20, 0.07,
+CC         0.04;
+
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Kinetic parameters:
+CC         KM=1.76 uM for chlorophyll;
+CC       pH dependence:
+CC         Optimum pH is 7.5. Active from pH 5.0 to 9.0;
+CC       Temperature dependence:
+CC         Optimum temperature is 45 degrees Celsius. Active from 30 to 60
+CC         degrees Celsius;
+</pre>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0916">
+    Viral movement protein
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0917">
+    Capsid maturation
+   </a>
+  </li>
+ </ul>
+ <p>
+  Modified keyword:
+ </p>
+ <ul>
+  <li>
+   <strong>
+    Antiviral
+   </strong>
+   -&gt;
+   <a href="http://www.uniprot.org/keywords/KW-0951">
+    Antiviral defense
+   </a>
+  </li>
+  <li>
+   <strong>
+    Coat protein
+   </strong>
+   -&gt;
+   <a href="http://www.uniprot.org/keywords/KW-0167">
+    Capsid protein
+   </a>
+  </li>
+  <li>
+   <strong>
+    Nucleoprotein
+   </strong>
+   -&gt;
+   <a href="http://www.uniprot.org/keywords/KW-0543">
+    Viral nucleoprotein
+   </a>
+  </li>
+ </ul>
+ <p>
+  Deleted keywords:
+ </p>
+ <ul>
+  <li>
+   DNA priming
+  </li>
+  <li>
+   Noncapsid protein
+  </li>
+  <li>
+   Nonstructural protein
+  </li>
+  <li>
+   Nucleocapsid
+  </li>
+ </ul>
+ <h3>
+  Changes concerning the
+  <a href="http://www.uniprot.org/docs/ptmlist">
+   controlled vocabulary for PTMs
+  </a>
+ </h3>
+ <p>
+  New terms for the feature key 'CROSSLNK':
+ </p>
+ <ul>
+  <li>
+   2-iminomethyl-5-imidazolinone (Glu-Gly)
+  </li>
+  <li>
+   2-iminomethyl-5-imidazolinone (Met-Gly)
+  </li>
+  <li>
+   5-imidazolinone (Asn-Gly)
+  </li>
+  <li>
+   5-imidazolinone (Lys-Gly)
+  </li>
+ </ul>
+</div>

@@ -1,0 +1,172 @@
+<div>
+ <p>
+  The
+  <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html">
+   HTTP header
+  </a>
+  <code>
+   Last-Modified:
+  </code>
+  will avoid that you download data more than once per release, if you use a download tool that makes use of this information, e.g. the unix commands
+  <code>
+   lwp-mirror
+  </code>
+  or
+  <code>
+   curl
+  </code>
+  with the
+  <code>
+   -z
+  </code>
+  option. Here are examples of how to do this in Perl:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/help/api_downloading#download_perl_example1">
+    Download all UniProt sequences for a given organism in FASTA format
+   </a>
+   <br/>
+   <div hidden="hidden" id="download_perl_example1">
+    <pre>use strict;
+use warnings;
+use LWP::UserAgent;
+use HTTP::Date;
+
+my $taxon = $ARGV[0]; # Taxonomy identifier of organism.
+
+my $query = "https://www.uniprot.org/uniprot/?query=organism:$taxon&amp;format=fasta";
+my $file = $taxon . '.fasta';
+
+my $contact = ''; # Please set a contact email address here to help us debug in case of problems (see https://www.uniprot.org/help/privacy).
+my $agent = LWP::UserAgent-&gt;new(agent =&gt; "libwww-perl $contact");
+my $response = $agent-&gt;mirror($query, $file);
+
+if ($response-&gt;is_success) {
+  my $results = $response-&gt;header('X-Total-Results');
+  my $release = $response-&gt;header('X-UniProt-Release');
+  my $date = sprintf("%4d-%02d-%02d", HTTP::Date::parse_date($response-&gt;header('Last-Modified')));
+  print "Downloaded $results entries of UniProt release $release ($date) to file $file\n";
+}
+elsif ($response-&gt;code == HTTP::Status::RC_NOT_MODIFIED) {
+  print "Data for taxon $taxon is up-to-date.\n";
+}
+else {
+  die 'Failed, got ' . $response-&gt;status_line .
+    ' for ' . $response-&gt;request-&gt;uri . "\n";
+}
+</pre>
+   </div>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/help/api_downloading#download_perl_example2">
+    Download the UniProt reference proteomes for all organisms below a given taxonomy node in compressed FASTA format
+   </a>
+   <br/>
+   <div hidden="hidden" id="download_perl_example2">
+    <pre>use strict;
+use warnings;
+use LWP::UserAgent;
+use HTTP::Date;
+
+# Taxonomy identifier of top node for query, e.g. 2 for Bacteria, 2157 for Archea, etc.
+# (see https://www.uniprot.org/taxonomy)
+my $top_node = $ARGV[0];
+
+my $agent = LWP::UserAgent-&gt;new;
+
+# Get a list of all reference proteomes of organisms below the given taxonomy node.
+my $query_list = "https://www.uniprot.org/proteomes/?query=reference:yes+taxonomy:$top_node&amp;format=list";
+my $response_list = $agent-&gt;get($query_list);
+die 'Failed, got ' . $response_list-&gt;status_line .
+  ' for ' . $response_list-&gt;request-&gt;uri . "\n"
+  unless $response_list-&gt;is_success;
+
+# For each proteome, mirror its set of UniProt entries in compressed FASTA format.
+for my $proteome (split(/\n/, $response_list-&gt;content)) {
+  my $file = $proteome . '.fasta.gz';
+  my $query_proteome = "https://www.uniprot.org/uniprot/?query=proteome:$proteome&amp;format=fasta&amp;compress=yes";
+  my $response_proteome = $agent-&gt;mirror($query_proteome, $file);
+
+  if ($response_proteome-&gt;is_success) {
+    my $results = $response_proteome-&gt;header('X-Total-Results');
+    my $release = $response_proteome-&gt;header('X-UniProt-Release');
+    my $date = sprintf("%4d-%02d-%02d", HTTP::Date::parse_date($response_proteome-&gt;header('Last-Modified')));
+    print "File $file: downloaded $results entries of UniProt release $release ($date)\n";
+  }
+  elsif ($response_proteome-&gt;code == HTTP::Status::RC_NOT_MODIFIED) {
+    print "File $file: up-to-date\n";
+  }
+  else {
+    die 'Failed, got ' . $response_proteome-&gt;status_line .
+      ' for ' . $response_proteome-&gt;request-&gt;uri . "\n";
+  }
+}
+</pre>
+   </div>
+  </li>
+ </ul>
+ <h4 id="Release_number_and_date">
+  Release number and date
+ </h4>
+ <p>
+  If you would like to record the UniProt release number and/or date of the data which you retrieve, you can extract this information from the
+  <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html">
+   HTTP header
+  </a>
+  of the response (see this Perl example):
+ </p>
+ <div id="metadata_perl_example1">
+  <pre>use strict;
+use warnings;
+use LWP::UserAgent;
+
+my $query = $ARGV[0]; # Query URL.
+
+my $contact = ''; # Please set a contact email address here to help us debug in case of problems (see https://www.uniprot.org/help/privacy).
+my $agent = LWP::UserAgent-&gt;new(agent =&gt; "libwww-perl $contact");
+my $response = $agent-&gt;get($query);
+
+if ($response-&gt;is_success) {
+  print 'UniProt release ' . $response-&gt;header('X-UniProt-Release') .
+  ' of ' . $response-&gt;header('Last-Modified') . "\n";
+}
+else {
+  die 'Failed, got ' . $response-&gt;status_line .
+    ' for ' . $response-&gt;request-&gt;uri . "\n";
+}
+</pre>
+ </div>
+ <ul>
+  <li>
+   <code>
+    X-UniProt-Release:
+   </code>
+   contains the UniProt release number, e.g.
+   <code>
+    2010_08
+   </code>
+  </li>
+  <li>
+   <code>
+    Last-Modified:
+   </code>
+   contains the UniProt release date, e.g.
+   <code>
+    Tue, 13 Jul 2010 00:00:00 GMT
+   </code>
+  </li>
+ </ul>
+ <p>
+  See also:
+  <br/>
+  <a href="http://www.uniprot.org/help/api">
+   REST API - Access the UniProt website programmatically
+  </a>
+  - batch retrieval, ID mapping, queries, downloads, etc
+  <br/>
+  <a href="http://www.uniprot.org/help/entry%5Fcount">
+   How can I (programmatically) obtain the number of results returned by my query?
+  </a>
+ </p>
+</div>

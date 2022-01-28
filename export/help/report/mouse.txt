@@ -1,0 +1,5 @@
+mouse
+---
+Dead anchor tags
+http://www.uniprot.org/program/chordata/statistics/#Musmusculus
+

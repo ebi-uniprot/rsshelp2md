@@ -1,0 +1,5 @@
+keywords
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P80643#function
+

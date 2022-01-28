@@ -1,0 +1,6 @@
+non_ter
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P29309#sequences
+http://www.uniprot.org/uniprot/P21215#sequences
+

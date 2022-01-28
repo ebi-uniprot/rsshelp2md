@@ -1,0 +1,116 @@
+<div>
+ <h2>
+  Headline
+ </h2>
+ <h3>
+  Hereditary sensory and autonomic neuropathy type IA: New dietary hope?
+ </h3>
+ <p>
+  Hereditary neuropathies are common neurological conditions characterized by progressive loss of motor and/or sensory function. There are no effective treatments.
+  <a href="http://www.omim.org/entry/162400">
+   <span class="caps">
+    HSAN1A
+   </span>
+  </a>
+  is one of many hereditary peripheral neuropathies, characterized by axonal degeneration and disappearance of myelin sheaths. The prominent feature of this pathology is sensory abnormalities with a variable degree of motor and autonomic dysfunction.
+  <span class="caps">
+   HSAN1A
+  </span>
+  patients most frequently present with decreased sensation in the feet, as well as painless blisters and ulcers, often preceded by hyperpathia and spontaneous shooting or lancinating pain. The loss of sensation, especially pain, leads to the horrible complications of unheeded infections and painless ulcers that can result in amputations of the affected extremities.
+ </p>
+ <p>
+  The culprits are mutations in the
+  <a href="http://www.uniprot.org/uniprot/O15269">
+   <span class="caps">
+    SPTLC1
+   </span>
+  </a>
+  gene.
+  <span class="caps">
+   SPTLC1
+  </span>
+  is a subunit of serine palmitoyltransferase. It catalyzes the condensation of serine and palmitoyl-CoA, the initial step in the de novo synthesis of sphingolipids.
+ </p>
+ <p>
+  The most frequent
+  <span class="caps">
+   HSAN1A
+  </span>
+  mutation is found at position 133 where a cysteine residue is substituted by a tryptophan (
+  <a href="http://www.uniprot.org/uniprot/O15269#section_features">
+   <span class="caps">
+    C133W
+   </span>
+  </a>
+  ). This mutation induces a
+  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=20097765,20504773">
+   shift in the substrate specificity
+  </a>
+  , allowing the condensation of alanine or glycine, instead of serine, and subsequent formation of 2 atypical deoxysphingolipids: 1-deoxy-sphinganine and 1-deoxymethylsphinganine, respectively. These metabolites lack the C1 hydroxyl group of sphinganine and can therefore neither be converted to complex sphingolipids, nor degraded by the
+  <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=20097765,20504773">
+   classical catabolic pathway
+  </a>
+  . Accumulation of these metabolites is
+  <a href="http://www.ncbi.nlm.nih.gov/pubmed/22045570">
+   toxic for sensory neurons
+  </a>
+  .
+ </p>
+ <p>
+  In cultured cells, as well as in transgenic mice, a serine-enriched medium/diet can force the defective enzyme to use serine, hence restoring the original reaction.
+  <a href="http://www.ncbi.nlm.nih.gov/pubmed/22045570">
+   A pilot study
+  </a>
+  in 14 human patients showed a marked decrease in plasma deoxysphingolipid levels. Unfortunately, only the biochemical effects of the diet were evaluated, while the neurological outcome was not assessed. In addition, the number of patients is too small to draw any conclusion, but it opens a door for a new
+  <a href="http://www.ncbi.nlm.nih.gov/pubmed/22045569">
+   potentially efficient and simple treatment
+  </a>
+  for a specific type of hereditary neuropathy.
+ </p>
+ <p>
+  Missense neutral polymorphisms and disease-causing mutations are annotated in
+  <a href="http://www.uniprot.org/manual/variant">
+   UniProtKB/Swiss-Prot
+  </a>
+  in ‘Sequence annotation (Features)’. The
+  <span class="caps">
+   SPTLC1
+  </span>
+  variant
+  <span class="caps">
+   C133W
+  </span>
+  has now joined some
+  <a href="http://www.uniprot.org/docs/humsavar">
+   68,000 polymorphisms reported in the knowledgebase
+  </a>
+  .
+ </p>
+ <h2>
+  UniRef news
+ </h2>
+ <h3>
+  Modification of the UniRef clustering algorithm
+ </h3>
+ <p>
+  <a href="http://www.uniprot.org/help/uniref">
+   UniRef clusters
+  </a>
+  are formed in a hierarchical fashion by the serial application of the CD-HIT algorithm to sequences from UniProtKB and selected UniParc entries. Identical sequences (and sub-fragments) are first clustered to form UniRef100. Then the longest sequence is selected from each UniRef100 cluster as input for clustering in UniRef90. Each UniRef90 cluster in turn provides its longest sequence as input for clustering in UniRef50.
+ </p>
+ <p>
+  Until now, UniRef90 and UniRef50 clusters are computed only with identity thresholds of 90% and 50%, respectively. Starting with the first release of 2013, an 80% overlap threshold will be used for the computation of UniRef90 and UniRef50 clusters. This means that the longest (seed) sequence of each UniRef90 and UniRef50 cluster will have a minimum length overlap of 80% with each of the other member sequences.
+ </p>
+ Our motivations for introducing this overlap threshold were:
+ <ul>
+  <li>
+   to create tighter clusters to support use cases such as sequence similarity searches
+  </li>
+  <li>
+   to improve cluster computation performance by avoiding false positive sequence alignments arise during clustering
+  </li>
+ </ul>
+ <p>
+  Based on our analyses this change will have a minimal impact on existing cluster topologies (less than 5% increase in the number of clusters and less than 2% changes of the representative sequence) and will at the same time provide a more than five-fold gain in computation time for UniRef50.
+ </p>
+</div>

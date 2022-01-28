@@ -1,0 +1,11 @@
+upid
+organism
+organism_id
+components
+mnemonic
+lineage
+busco
+cpd
+genome_assembly
+genome_representation
+protein_count

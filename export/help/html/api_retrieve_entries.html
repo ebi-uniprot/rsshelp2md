@@ -1,0 +1,146 @@
+<div>
+ <p>
+  The web address for an entry consists of a data set name (e.g.
+  <code>
+   uniprot
+  </code>
+  ,
+  <code>
+   uniref
+  </code>
+  ,
+  <code>
+   uniparc
+  </code>
+  ,
+  <code>
+   taxonomy
+  </code>
+  , ...) and the entry's unique identifier, e.g.:
+ </p>
+ <pre>https://www.uniprot.org/uniprot/P12345</pre>
+ <p>
+  By default, a web page is returned. Depending on the data set, other formats may also be available (click on "Formats" on the entry's web page). Here are some examples:
+ </p>
+ <pre>https://www.uniprot.org/uniprot/P12345.txt
+https://www.uniprot.org/uniprot/P12345.xml
+https://www.uniprot.org/uniprot/P12345.rdf
+https://www.uniprot.org/uniprot/P12345.fasta
+https://www.uniprot.org/uniprot/P12345.gff
+
+https://www.uniprot.org/uniref/UniRef90_P99999.xml
+https://www.uniprot.org/uniref/UniRef90_P99999.rdf
+https://www.uniprot.org/uniref/UniRef90_P99999.fasta
+https://www.uniprot.org/uniref/UniRef90_P99999.tab
+
+https://www.uniprot.org/uniparc/UPI000000001F.xml
+https://www.uniprot.org/uniparc/UPI000000001F.rdf
+https://www.uniprot.org/uniparc/UPI000000001F.fasta
+https://www.uniprot.org/uniparc/UPI000000001F.tab
+</pre>
+ <p>
+  Note that UniRef identifiers cannot be guaranteed to be stable, since the sequence clusters are recomputed at every release, and the representative protein may change. See also:
+  <a href="http://www.uniprot.org/help/linking%5Fto%5Funiprot">
+   How to link to UniProt entries
+  </a>
+  .
+ </p>
+ <p>
+  For the RDF/XML format there is an option to include data from referenced data sets directly in the returned data:
+ </p>
+ <pre>https://www.uniprot.org/uniprot/P12345.rdf?include=yes </pre>
+ <p>
+  The following
+  <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">
+   status codes
+  </a>
+  may be returned:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Code
+   </th>
+   <th>
+    Description
+   </th>
+  </tr>
+  <tr>
+   <td>
+    200
+   </td>
+   <td>
+    The request was processed successfully.
+   </td>
+  </tr>
+  <tr>
+   <td>
+    400
+   </td>
+   <td>
+    Bad request. There is a problem with your input.
+   </td>
+  </tr>
+  <tr>
+   <td>
+    404
+   </td>
+   <td>
+    Not found. The resource you requested doesn't exist.
+   </td>
+  </tr>
+  <tr>
+   <td>
+    410
+   </td>
+   <td>
+    Gone. The resource you requested was removed.
+   </td>
+  </tr>
+  <tr>
+   <td>
+    500
+   </td>
+   <td>
+    Internal server error. Most likely a temporary problem, but if the problem persists please contact us.
+   </td>
+  </tr>
+  <tr>
+   <td>
+    503
+   </td>
+   <td>
+    Service not available. The server is being updated, try again later.
+   </td>
+  </tr>
+ </table>
+ <h4 id="Resolving_RDF_identifiers">
+  Resolving RDF identifiers
+ </h4>
+ <p>
+  A request for an address such as
+ </p>
+ <pre>http://purl.uniprot.org/uniprot/P12345</pre>
+ <p>
+  will be resolved, where possible, by redirection to the corresponding resource (see previous section). For UniProt resources, entries are returned in RDF/XML format if the HTTP
+  <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html">
+   <code>
+    'Accept'
+   </code>
+   request header
+  </a>
+  is set to
+  <code>
+   'application/rdf+xml'
+  </code>
+  .
+ </p>
+ <p>
+  See also:
+  <br/>
+  <a href="http://www.uniprot.org/help/api">
+   REST API - Access the UniProt website programmatically
+  </a>
+  - batch retrieval, ID mapping, queries, downloads, etc
+ </p>
+</div>

@@ -1,0 +1,62 @@
+<div>
+ <p>
+  We will modify the RDF description of our cross-references to protein resources in the RefSeq database to provide explicit links to their corresponding RefSeq nucleotide sequences.
+ </p>
+ <p>
+  Currently, our cross-references show the identifier of a RefSeq nucleotide sequence through an
+  <code>
+   rdfs:comment
+  </code>
+  property with a string literal value. We will replace this by a
+  <code>
+   translatedFrom
+  </code>
+  property that will link the RefSeq protein to a resource that corresponds to its coding sequence (CDS) and, similarly to the description of EMBL-CDS resources, this CDS will be linked through a
+  <code>
+   locatedOn
+  </code>
+  property to the transcript or genomic sequence that contains it.
+ </p>
+ <p>
+  Note that the
+  <code>
+   translatedFrom
+  </code>
+  property is not the inverse of the
+  <code>
+   translatedTo
+  </code>
+  property that is used, for instance, in the description of Ensembl cross-references. The latter is used to link mature transcripts (whose sequence includes untranslated regions in addition to the CDS) to proteins.
+ </p>
+ <p>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q00266.ttl">
+   Q00266
+  </a>
+ </p>
+ <p>
+  Current format:
+  <pre>uniprot:Q00266
+  rdfs:seeAlso  .
+
+
+  rdf:type up:Resource ;
+  up:database  ;
+  rdfs:comment "NM_000429.2" .
+</pre>
+ </p>
+ <p>
+  Future format:
+  <pre>uniprot:Q00266
+  rdfs:seeAlso  .
+
+
+  rdf:type up:Resource ;
+  up:database  ;
+  up:translatedFrom  .
+
+
+  up:locatedOn  .
+</pre>
+ </p>
+</div>

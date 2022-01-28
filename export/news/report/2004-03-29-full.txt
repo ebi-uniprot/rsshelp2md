@@ -1,0 +1,8 @@
+2004-03-29-full
+---
+Number tables converted to Markdown
+7
+
+Number tables left as HTML
+1
+

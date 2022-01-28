@@ -1,0 +1,211 @@
+<div>
+ <p>
+  <a class="icon icon-generic namespaceIcons" href="https://www.youtube.com/watch?v=IAYFLfPQ0Gs" target="_blank">
+   Tutorial/Video
+  </a>
+ </p>
+ <p>
+  Select the
+  <em>
+   Align
+  </em>
+  tab of the toolbar to align two or more protein
+sequences with the
+  <a href="http://www.clustal.org/">
+   Clustal Omega program
+  </a>
+  (cf also this
+  <a href="http://www.ebi.ac.uk/Tools/msa/clustalo/help/faq.html">
+   ClustalO FAQ
+  </a>
+  ):
+ </p>
+ <ol>
+  <li>
+   Enter either protein sequences in FASTA format or UniProt identifiers into the form field.
+  </li>
+  <li>
+   Click the
+   <em>
+    Run Align
+   </em>
+   button.
+  </li>
+ </ol>
+ <p>
+  <img alt="" src="http://www.uniprot.org/images/screenshots/align_form.png"/>
+ </p>
+ <div id="sequence-alignments-identifiers">
+  <p>
+   The following kinds of UniProt identifiers are supported:
+  </p>
+  <table class="grid">
+   <tr>
+    <td>
+     <strong>
+      P00750
+     </strong>
+    </td>
+    <td>
+     UniProtKB entry
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      P00750-2
+     </strong>
+    </td>
+    <td>
+     UniProtKB entry isoform sequence
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      A4_HUMAN
+     </strong>
+    </td>
+    <td>
+     UniProtKB entry name
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      UPI0000000001
+     </strong>
+    </td>
+    <td>
+     UniParc entry
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <strong>
+      UniRef100_P00750
+     </strong>
+    </td>
+    <td>
+     UniRef entry
+    </td>
+   </tr>
+  </table>
+ </div>
+ <p>
+  To limit the range within a sequence, append the range in square brackets to
+the identifier. For example, P00750[1-10] represents the first ten amino acids
+of P00750.
+ </p>
+ <p>
+  Instead of entering identifiers into the form, you can collect sequences by clicking into the checkboxes next to them. Once two or more sequences have been marked, the
+  <em>
+   Run Align
+  </em>
+  button becomes available:
+ </p>
+ <p>
+  <img alt="" src="http://www.uniprot.org/images/screenshots/align_select.png"/>
+ </p>
+ <p>
+  Similarly, you can align the sequences that you have collected into your
+  <a href="http://www.uniprot.org/help/basket">
+   basket
+  </a>
+  .
+ </p>
+ <p>
+  After you have submitted your data, a status page is shown. This page is
+reloaded in regular intervals until the alignment is complete. The final result
+page shows a colored version of the alignment and allows to download in Clustal format.
+ </p>
+ <p>
+  An alignment will display the following symbols denoting the
+degree of conservation observed in each column:
+  <ul>
+   <li>
+    An * (asterisk) indicates positions which have a single, fully conserved residue.
+   </li>
+   <li>
+    A : (colon) indicates conservation between groups of strongly similar properties - scoring &gt; 0.5 in the Gonnet PAM 250 matrix.
+   </li>
+   <li>
+    A . (period) indicates conservation between groups of weakly similar properties - scoring =&lt; 0.5 in the Gonnet PAM 250 matrix.
+   </li>
+  </ul>
+ </p>
+ <p>
+  Jobs have unique identifiers, which (depending on the job type) can be used in queries (e.g. to get the intersection of two sequence similarity searches). Job identifiers and the related data are kept for 7 days, and are then deleted.
+ </p>
+ <p>
+  To add sequences to your alignment, a text box just after the alignment results allows you to do so, in FASTA format:
+ </p>
+ <p>
+  <img alt="" src="http://www.uniprot.org/images/screenshots/align_results2.png"/>
+ </p>
+ <p>
+  To rerun the alignment with fewer sequences, check the box for "Result info" under "Display", and scroll down to the bottom of the page. Use the checkboxes to select the sequences you want to realign:
+ </p>
+ <p>
+  <img alt="" src="http://www.uniprot.org/images/screenshots/align_results.png"/>
+ </p>
+ <p>
+  If you want to use another sequence alignment service, click on the
+  <em>
+   Download
+  </em>
+  instead of the
+  <em>
+   Align
+  </em>
+  button to download the
+sequences, or copy the sequences from the form in the result page.
+ </p>
+ <p>
+  'Annotation' and 'Amino acid properties' highlighting options are available on the left column. This allows to highlight key regions in the sequence alignment.
+ </p>
+ <h4>
+  Related services
+ </h4>
+ <table class="grid">
+  <tr>
+   <td>
+    <strong>
+     <a href="http://pir.georgetown.edu/pirwww/search/multaln.html">
+      ClustalW
+     </a>
+     (PIR)
+    </strong>
+    <p class="details">
+     Multiple sequence alignment
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <strong>
+     <a href="http://www.ebi.ac.uk/clustalw/index.html">
+      ClustalW
+     </a>
+     (EBI)
+    </strong>
+    <p class="details">
+     Multiple sequence alignment
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <strong>
+     <a href="http://pir.georgetown.edu/pirwww/search/pairwise.html">
+      SSEARCH
+     </a>
+     (PIR)
+    </strong>
+    <p class="details">
+     Align two sequences using the Smith-Waterman algorithm
+    </p>
+   </td>
+  </tr>
+ </table>
+</div>

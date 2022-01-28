@@ -1,0 +1,5 @@
+proteomics
+---
+Dead anchor tags
+http://www.uniprot.org/help/evidences#ECO:0007744
+

@@ -1,0 +1,5 @@
+sequence_origin
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P13744#sequences
+

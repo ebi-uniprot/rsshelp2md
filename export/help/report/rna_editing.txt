@@ -1,0 +1,9 @@
+rna_editing
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q31796#sequences
+http://www.uniprot.org/uniprot/Q85FL3#sequences
+http://www.uniprot.org/uniprot/P04114#sequences
+http://www.uniprot.org/uniprot/P28335#sequences
+http://www.uniprot.org/uniprot/Q07434#sequences
+

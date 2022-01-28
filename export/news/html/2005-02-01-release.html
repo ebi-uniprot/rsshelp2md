@@ -1,0 +1,373 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  UniProtKB/Swiss-Prot major release (51.0)
+ </h3>
+ <p>
+  Release 46.0 of Swiss-Prot contains 168'297 sequence entries,
+      comprising 61'443'278 amino acids abstracted from 124'910 references.
+ </p>
+ <p>
+  4'537 sequences have been added since release 45, the sequence data of
+      866 existing entries has been updated and the annotations of
+      77'494 entries have been revised. This represents an increase of 3%.
+ </p>
+ <p>
+  Many improvements were carried out in the last 3 months.
+       In particular, we have extended the format for ID lines in both
+      Swiss-Prot and TrEMBL.
+ </p>
+ <p>
+  UniProt Knowledgebase release 4.0 includes Swiss-Prot release 46.0 and TrEMBL release 29.0.
+ </p>
+ <p>
+  <a href="http://www.expasy.org/txt/old-rel/relnotes.46.htm">
+   Full statistics and release notes
+  </a>
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Modification to the ftp server directory structure
+ </h3>
+ <p>
+  In order to provide access to the last
+  <strong>
+   major
+  </strong>
+  Swiss-Prot and TrEMBL releases
+ (as opposed to the biweekly releases)
+via the UniProt ftp servers,
+  <a href="ftp://ftp.uniprot.org/pub/databases/uniprot">
+   ftp.uniprot.org/databases/uniprot
+  </a>
+  ,
+  <a href="ftp://ftp.expasy.org/databases/uniprot/current_release/knowledgebase/">
+   ftp.expasy.org/databases/uniprot
+  </a>
+  and
+  <a href="ftp://ftp.ebi.ac.uk/pub/databases/uniprot/current_release/knowledgebase/">
+   ftp.ebi.ac.uk/databases/uniprot
+  </a>
+  , we changed the directory structure of our ftp sites.
+ </p>
+ <p>
+  In addition to the possibility of downloading the complete databases, we provide the data in
+the form of taxonomic divisions for archaea, bacteria, fungi, human, invertebrates, mammals, plants, rodents, vertebrates, viruses and unclassified.
+ </p>
+ <p>
+  The new structure will be:
+ </p>
+ <pre>
+/databases/uniprot
+     /current_release
+          /knowledgebase
+              /complete
+                 uniprot_sprot.dat.gz
+                 uniprot_sprot.fasta.gz
+                 uniprot_sprot.xml.gz
+                 uniprot_trembl.dat.gz
+                 uniprot_trembl.fasta.gz
+                 uniprot_trembl.xml.gz
+                 etc
+              /taxonomic_divisions
+                 uniprot_sprot_archaea.dat.gz
+                 uniprot_trembl_archaea.dat.gz
+                 uniprot_sprot_bacteria.dat.gz
+                 uniprot_trembl_bacteria.dat.gz
+                 etc
+          /uniref
+     /previous_releases
+          /release1.0
+              /knowledgebase
+              /uniref
+          /release2.0
+              /knowledgebase
+              /uniref
+          etc
+</pre>
+ Symbolic links will be established for the following existing directories:
+ <pre>
+/databases/uniprot/knowledgebase to
+               /databases/uniprot/current_release/knowledgebase
+/databases/uniprot/uniref        to
+                /databases/uniprot/current_release/uniref
+
+On ftp.expasy.org and ftp.ebi.ac.uk:
+/databases/swiss-prot/release_compressed to
+                /databases/uniprot/previous_releases/releaseX.0/knowledgebase
+/databases/trembl/release_compressed     to
+                /databases/uniprot/previous_releases/releaseX.0/knowledgebase
+</pre>
+ <p>
+  The directory on ExPASy that used to contain uncompressed Swiss-Prot releases,
+  <tt>
+   /databases/swiss-prot/release/
+  </tt>
+  ,
+will be removed.
+ </p>
+ <p>
+  Please note that if you are interested in
+  <strong>
+   complete proteomes
+  </strong>
+  , you can download:
+ </p>
+ <ul>
+  <li>
+   HAMAP complete microbial proteomes:
+   <br/>
+   <a href="ftp://ftp.expasy.org/databases/hamap/complete_proteomes/">
+    ftp://ftp.expasy.org/databases/hamap/complete_proteomes/
+   </a>
+  </li>
+  <li>
+   Integr8 complete proteomes from various organisms:
+   <br/>
+   <a href="ftp://ftp.ebi.ac.uk/pub/databases/integr8/">
+    ftp://ftp.ebi.ac.uk/pub/databases/integr8/
+   </a>
+   .
+  </li>
+ </ul>
+ <h3>
+  Extension of the TrEMBL entry name format
+ </h3>
+ <p>
+  Previously, TrEMBL used the accession number as the entry name.
+With this release, TrEMBL entry names are composed of the accession number and
+organism identification codes (O95417_HUMAN, Q9VVG0_DROME, P71025_BACSU,
+Q9SR52_ARATH, etc.). The
+  <a href="http://www.uniprot.org/docs/speclist">
+   speclist.txt
+  </a>
+  file
+lists the organism identification codes which are used to build the
+"organism" part of an entry name in Swiss-Prot. This file has been
+extended to include codes to be used in TrEMBL. As it is not possible in a
+reasonable timeframe to manually assign organism codes to all species
+represented in TrEMBL, it was decided to define "virtual" codes that
+regroup organisms at a certain taxonomic level. Such codes are prefixed by
+the number "9" and generally correspond to a "pool" of organisms which can
+be 'wide' as a kingdom. Here are some examples of such codes:
+ </p>
+ <pre>
+9BACT B      2: N=Bacteria
+9CNID E   6073: N=Cnidaria
+9FUNG E   4751: N=Fungi
+9REOV V  10880: N=Reoviridae
+9TETR E  32523: N=Tetrapoda
+9VIRI E  33090: N=Viridiplantae
+</pre>
+ <p>
+  TrEMBL entries are widely used for sequence analysis such as similarity
+search, multiple sequence alignments or phylogenetic analysis. The
+extension of the entry name will simplify the species identification in
+the analysis results.
+ </p>
+ <h3>
+  Change of the entry name in many Swiss-Prot entries
+ </h3>
+ <p>
+  In the last release we introduced to Swiss-Prot the first entry with the new
+format of the entry name. With this release, many entry names have changed to the new format.
+ </p>
+ <h3>
+  New comment line (CC) topic: INTERACTION
+ </h3>
+ <p>
+  The CC line topic INTERACTION is used to convey information relevant to
+binary protein-protein interactions. It is automatically derived from the
+  <a href="http://www.ebi.ac.uk/intact/">
+   IntAct
+  </a>
+  database and is updated
+on a monthly basis. The occurrence is one INTERACTION topic per entry, with
+each binary interaction being presented in a separate line.
+Each data line can be longer than 75 characters.
+ </p>
+ <p>
+  Interactions can be derived by any appropriate experimental method, but
+must be confirmed by a second experiment, if resulting from a single yeast-
+two-hybrid experiment. For large-scale experiments interactions are
+referred, if a high confidence is assigned from the authors.
+ </p>
+ <p>
+  The format of the CC line topic INTERACTION is:
+ </p>
+ <pre><strong>
+CC   -!- INTERACTION:
+CC       {{SP_Ac:identifier[ (xeno)]}|Self}; NbExp=n; IntAct=IntAct_Protein_Ac, IntAct_Protein_Ac;
+</strong></pre>
+ <p>
+  where
+ </p>
+ <table>
+  <tr>
+   <th>
+    SP_Ac
+   </th>
+   <td>
+    is the Swiss-Prot or TrEMBL accession number of the interacting
+        protein. If appropriate, the
+    <a href="http://www.uniprot.org/manual/alternative_products">
+     IsoId
+    </a>
+    is used instead to specify the relevant
+        interacting protein isoform.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    identifier
+   </th>
+   <td>
+    serves to describe the interacting protein. It is derived from
+        the Swiss-Prot or TrEMBL GN line and thus presents either a "gene
+        name", a "ordered locus name" or a "ORF name". When no GN line is
+        available a dash is indicated instead.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    (xeno)
+   </th>
+   <td>
+    is an optional qualifier indicating that the interacting proteins are
+        derived from different species. This may be due to the experimental
+        set-up or may reflect a pathogen-host interaction.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Self
+   </th>
+   <td>
+    reflects a self-association; the corresponding current entry's SP_Ac
+        and 'identifier' are not given/repeated.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    NbExp=n
+   </th>
+   <td>
+    refers to the number of experiments in IntAct supporting the
+        interaction.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    IntAct_Protein_Ac
+   </th>
+   <td>
+    is the IntAct accession number of a interacting protein.
+   The first IntAct_Protein_Ac refers to the protein or an isoform of the
+   current entry, the second refers to the interacting protein or isoform.
+   </td>
+  </tr>
+ </table>
+ <p>
+  Within the CC INTERACTION topic, homomeric interactions are listed
+before the heteromeric interactions; latter are sorted alphanumerical
+according the 'identifier'.
+ </p>
+ <p>
+  "IntAct=IntAct_Protein_Ac, IntAct_Protein_Ac" identifies the interaction
+in IntAct by using the two IntAct protein identifiers.
+ </p>
+ <p>
+  Examples of interaction lines are given below. The CC INTERACTION topics
+are not complete; only explained interaction lines are indicated.
+ </p>
+ <pre>
+CC   -!- INTERACTION:
+CC       P11450:fcp3c; NbExp=1; IntAct=EBI-126914, EBI-159556;
+</pre>
+ <p>
+  In the typical example the current protein is interacting with P11450 which
+is further characterized by "fcp3c" derived from its GN line and presents
+its gene name "Fcp3C". The interaction is supported by one experiment
+stored in IntAct. Experimental details for this interaction can be found by
+quering IntAct with "EBI-126914, EBI-159556".
+ </p>
+ <pre>
+CC   -!- INTERACTION:
+CC       Q9W1K5-1:cg11299; NbExp=1; IntAct=EBI-133844, EBI-212772;
+CC       ...
+</pre>
+ <p>
+  The current protein interacts with an isoform of Q9W1K5
+defined by the IsoID Q9W1K5-1.
+ </p>
+ <pre>
+CC   -!- INTERACTION:
+CC       Q8NI08:-; NbExp=1; IntAct=EBI-80809, EBI-80799;
+</pre>
+ <p>
+  No gene name information for the interacting protein is available.
+ </p>
+ <pre>
+CC   -!- INTERACTION:
+CC       Self; NbExp=1; IntAct=EBI-123485, EBI-123485;
+</pre>
+ <p>
+  The protein self-associates.
+ </p>
+ <pre>
+CC   -!- INTERACTION:
+CC       Q8C1S0:2410018m14rik (xeno); NbExp=1; IntAct=EBI-394562, EBI-398761;
+</pre>
+ <p>
+  The source organisms of the interacting proteins are different.
+ </p>
+ <pre>
+CC   -!- INTERACTION:
+CC       P51617:irak1; NbExp=1; IntAct=EBI-448466, EBI-358664;
+CC       P51617:irak1; NbExp=1; IntAct=EBI-448472, EBI-358664;
+</pre>
+ <p>
+  Different isoforms of the current protein are shown to interact with
+the same protein (P51617). This is reflected by different
+IntAct_Protein_Acs for the current protein.
+ </p>
+ <p>
+  Example entry with many interaction lines:
+  <a href="http://www.uniprot.org/uniprot/Q02821#section_comments">
+   Q02821
+  </a>
+  .
+ </p>
+ <h3>
+  New Swiss-Prot document: similar.txt
+ </h3>
+ <p>
+  There is a new Swiss-Prot document:
+  <a href="http://www.uniprot.org/docs/similar">
+   similar.txt
+  </a>
+  : Index of CC SIMILARITY lines.
+This index lists all names of families and domains occurring in
+  <a href="http://www.uniprot.org/manual/sequence_similarities">
+   CC SIMILARITY lines
+  </a>
+  of Swiss-Prot entries.
+ </p>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keywords:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0920">
+    Tegument protein
+   </a>
+  </li>
+ </ul>
+</div>

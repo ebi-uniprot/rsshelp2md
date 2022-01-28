@@ -1,0 +1,230 @@
+<h2 id="Headline">
+ Headline
+</h2>
+<h3 id="The_sense_of_a_motion">
+ The sense of a motion
+</h3>
+<p>
+ No need to be a great scientist to understand that when a hawk is circling in the sky looking for food, small rodents should run and hide. This does not imply the mere recognition of a static image, or of a global movement, but most importantly to sense an asynchrony between a moving object (the hawk) and its background (the slow-moving clouds above it).
+</p>
+<p>
+ In vertebrates,
+ <a href="https://en.wikipedia.org/wiki/Motion%5Fsensing%5Fin%5Fvision">
+  visual motion sensing takes place in the retina
+ </a>
+ and more specifically in a subset of retinal ganglion cells (RGCs). RGCs are located near the inner surface of the retina, where they receive visual information from photoreceptors via intermediate neurons, bipolar cells and amacrine cells. They extract salient features and send them deeper into the brain for further processing. The final picture is produced by the integration of many signals, each carried by a distinct population of RGCs. It is currently estimated that approximately 70 types of interneurons form specific synapses on roughly 30 types of RGCs. The discovery of the function of each RGC type and of their connections with specific interneurons is like trying to find the proverbial needle in a haystack.
+</p>
+<p>
+ Three years ago,
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/22891316">
+  Zhang et al.
+ </a>
+ tackled this issue using a transgenic mouse line, called TYW3. In these mice, strong regulatory elements from the
+ <a href="http://www.uniprot.org/uniprot/P01831">
+  Thy1
+ </a>
+ gene drive the expression of yellow fluorescent protein (YFP). In the retina, YFP fluorescence could be detected in only a small subset of RGCs. The brightest cell population (W3-RGCs) was chosen for further characterization. Interestingly, these cells remained silent under most common visual inputs, including locomotion in a natural environment obtained with videos from a camera mounted on the head of a freely moving rat. The only condition that elicited reliable responses from W3-RGCs was the movement of small spots differing from that of the background, but not when these movements coincided.
+</p>
+<p>
+ The canonical pathway for delivering visual input to RGCs involves direct connections between bipolar cells and RGCs. In other words, RCGs typically are two synapses away from a photoreceptor, which ensures the fastest transmission of the signal. Surprisingly, W3-RGCs receive
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/26287463">
+  strong and selective input from unusual excitatory amacrine cell type interneurons
+ </a>
+ , called VG3-ACs. With the introduction of the VG3-AC partner to the circuit, W3-RGCs appear to be three synapses away from a photoreceptor, slowing visual information delivery to the cells. A possible explanation is that
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/26287463">
+  W3-RGCs compare motion in the center and surround of the receptive field, firing only when the two are asynchronous. For the comparison to be temporally precise, input from the surround must arrive at the cell rapidly and/or input from the center must be delayed
+ </a>
+ .
+</p>
+<p>
+ The crucial connection between W3-RGCs and VG3-ACs is ensured by homophilic interactions between
+ <a href="http://www.uniprot.org/uniprot/?query=gene:sdk2+AND+reviewed:yes">
+  Sdk2
+ </a>
+ proteins expressed at the cell surface of both cell types. Sdk2 is a cell adhesion protein whose expression is detected in the embryonic retina soon before birth and persists into adulthood, spanning the periods of lamina formation and synaptogenesis. Sdk2 knockout caused no alterations in retinal structure, but the strength of synaptic connections between VG3-ACs and W3-RGCs drops about 20-fold.
+</p>
+<p>
+ For your eyes only, the
+ <a href="http://www.uniprot.org/uniprot/?query=gene:sdk2+AND+reviewed:yes">
+  Sdk2
+ </a>
+ entries have been updated and are publicly available as of this release.
+</p>
+<h2 id="UniProtKB_news">
+ UniProtKB news
+</h2>
+<h3 id="Change_of_the_cross_references_to_eggNOG">
+ Change of the cross-references to eggNOG
+</h3>
+<p>
+ We have introduced an additional field in the cross-references to the
+ <a href="http://eggnog.embl.de/">
+  eggNOG
+ </a>
+ database to indicate the taxonomic scope of an orthologous group.
+</p>
+<h4 id="Text_format">
+ Text format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/U3JAG9.txt">
+  U3JAG9
+ </a>
+</p>
+<pre>DR   eggNOG; ENOG410IEUN; Eukaryota.
+DR   eggNOG; ENOG410YVPU; LUCA.
+</pre>
+<h4 id="XML_format">
+ XML format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/U3JAG9.xml">
+  U3JAG9
+ </a>
+</p>
+<pre>&lt;dbReference type="eggNOG" id="ENOG410IEUN"&gt;
+  &lt;property type="taxonomic scope" value="Eukaryota"/&gt;
+&lt;/dbReference&gt;
+&lt;dbReference type="eggNOG" id="ENOG410YVPU"&gt;
+  &lt;property type="taxonomic scope" value="LUCA"/&gt;
+&lt;/dbReference&gt;
+</pre>
+<p>
+ This change did not affect the XSD, but may nevertheless require code changes.
+</p>
+<h4 id="RDF_format">
+ RDF format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/U3JAG9.ttl">
+  U3JAG9
+ </a>
+</p>
+<pre>uniprot:U3JAG9
+  rdfs:seeAlso &lt;http://purl.uniprot.org/eggnog/ENOG410IEUN&gt; ,
+               &lt;http://purl.uniprot.org/eggnog/ENOG410YVPU&gt; .
+&lt;http://purl.uniprot.org/eggnog/ENOG410IEUN&gt;
+  rdf:type up:Resource ;
+  up:database &lt;http://purl.uniprot.org/database/eggNOG&gt; ;
+  rdfs:comment "Eukaryota" .
+&lt;http://purl.uniprot.org/eggnog/ENOG410YVPU&gt;
+  rdf:type up:Resource ;
+  up:database &lt;http://purl.uniprot.org/database/eggNOG&gt; ;
+  rdfs:comment "LUCA" .
+</pre>
+<h3 id="Changes_to_the__a_href___docs_humdisease__controlled_vocabulary_of_human_diseases__a_">
+ Changes to the
+ <a href="http://www.uniprot.org/docs/humdisease">
+  controlled vocabulary of human diseases
+ </a>
+</h3>
+<p>
+ New diseases:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04499">
+   Achromatopsia 7
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04506">
+   Cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 3
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04507">
+   Cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 4
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04502">
+   Cataract 44
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04505">
+   Cone-rod dystrophy 21
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04500">
+   Deafness, autosomal recessive, 104
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04510">
+   Epilepsy, progressive myoclonic 9
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04509">
+   Fibrosis of extraocular muscles, congenital, 3B
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04504">
+   Lethal congenital contracture syndrome 9
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04501">
+   Maturity-onset diabetes of the young 14
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04498">
+   Mental retardation, autosomal dominant 39
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04503">
+   Osteogenesis imperfecta 17
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-04508">
+   Short stature with non-specific skeletal abnormalities
+  </a>
+ </li>
+</ul>
+<h3 id="Changes_to__a_href___docs_keywlist__keywords__a_">
+ Changes to
+ <a href="http://www.uniprot.org/docs/keywlist">
+  keywords
+ </a>
+</h3>
+<p>
+ New keyword:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/keywords/KW-1271">
+   Inflammasome
+  </a>
+ </li>
+</ul>
+<h3 id="Changes_in__a_href___docs_subcell__subcellular_location_controlled_vocabulary__a_">
+ Changes in
+ <a href="http://www.uniprot.org/docs/subcell">
+  subcellular location controlled vocabulary
+ </a>
+</h3>
+<p>
+ New subcellular locations:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0489">
+   Bacterial extracellular vesicle
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0488">
+   Inflammasome
+  </a>
+ </li>
+</ul>

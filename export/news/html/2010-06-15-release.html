@@ -1,0 +1,269 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  UniProt and the International Nucleotide Sequence Database Collaboration
+ </h3>
+ <p>
+  UniProt has had a very beneficial and long-standing collaboration with the three members of the International Nucleotide Sequence Database Collaboration (
+  <a href="http://www.insdc.org/">
+   <span class="caps">
+    INSDC
+   </span>
+  </a>
+  ) – the
+  <a href="http://www.ebi.ac.uk/ena/">
+   <span class="caps">
+    EMBL
+   </span>
+   -Bank
+  </a>
+  ,
+  <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html">
+   GenBank
+  </a>
+  and the
+  <span class="caps">
+   DNA
+  </span>
+  Data Bank of Japan (
+  <a href="http://www.ddbj.nig.ac.jp/">
+   <span class="caps">
+    DDBJ
+   </span>
+  </a>
+  ). It began at the most basic level with an exchange of nucleotide and protein sequences, evolved through co-development of the nucleotide entry feature table definition to ensure efficient automatic integration of appropriate protein information into UniProt followed by reciprocal cross-references, and from there has recently progressed to a joint endorsement of
+  <a href="http://www.uniprot.org/docs/#guidelines">
+   protein naming guidelines
+  </a>
+  section. This was one outcome of the third
+  <span class="caps">
+   NCBI
+  </span>
+  Genome Annotation Workshop in Washington,
+  <span class="caps">
+   USA
+  </span>
+  in April 2010 where researchers from life science organizations world-wide collaborated to establish minimal standards for prokaryotic and viral annotation. Extremely productive discussions concerning annotation and underlying problems led to a number of resolutions that were adopted by the international microbial sequencing community. The highlight was the development and acceptance by the community of
+  <a href="http://www.uniprot.org/docs/proknameprot">
+   prokaryotic protein naming guidelines
+  </a>
+  (see file
+  <a href="http://www.uniprot.org/docs/proknameprot">
+   proknameprot.txt
+  </a>
+  ) based on an initial proposal from the
+  <span class="caps">
+   INSDC
+  </span>
+  and UniProt. Following this agreement,
+  <span class="caps">
+   INSDC
+  </span>
+  and UniProt also created a more
+  <a href="http://www.uniprot.org/docs/gennameprot">
+   generalised protein guideline
+  </a>
+  (see file
+  <a href="http://www.uniprot.org/docs/gennameprot">
+   gennameprot.txt
+  </a>
+  ) to make this useful for taxa outside cellular prokaryotes. The decision by the
+  <span class="caps">
+   INSDC
+  </span>
+  to provide these guidelines for adoption by all submitters to their databases will greatly enhance the annotation of complete genomes and proteomes and ensure that the user community can exploit this data to its full potential. This is a particularly timely and exciting development given the data avalanche. Future plans for the
+  <span class="caps">
+   INSDC
+  </span>
+  and UniProt involve collaboration with the
+  <span class="caps">
+   NCBI
+  </span>
+  ’s Genome project and the Reference Sequence (RefSeq) collection groups to provide synchronized well-annotated genomes and proteomes.
+ </p>
+ <p>
+  The new files gennameprot.txt and proknameprot.txt are available in UniProt
+  <a href="http://www.uniprot.org/docs/">
+   Documents
+  </a>
+  ,
+  <a href="http://www.uniprot.org/docs/#guidelines">
+   Nomenclature and guidelines
+  </a>
+  section, and can be accessed from the
+  <a href="http://www.uniprot.org/help/">
+   Documentation/Help
+  </a>
+  pages.
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  New feature key
+  <span class="caps">
+   INTRAMEM
+  </span>
+  in the flat file
+ </h3>
+ <p>
+  In addition to the feature keys
+  <span class="caps">
+   TOPO
+  </span>
+  _DOM (which describes the topology of regions for transmembrane proteins that span membrane compartments) and
+  <span class="caps">
+   TRANSMEM
+  </span>
+  (which describes the extent of the region spanning a membrane), we have introduced a new feature key
+  <span class="caps">
+   INTRAMEM
+  </span>
+  in the flat file to describe the extent of a region located in a membrane without crossing it.
+ </p>
+ <h3>
+  Cross-references to EnsemblBacteria, EnsemblFungi, EnsemblMetazoa, EnsemblPlants and EnsemblProtists
+ </h3>
+ <p>
+  Cross-references have been added to
+  <a href="http://bacteria.ensembl.org/">
+   Bacteria
+  </a>
+  ,
+  <a href="http://fungi.ensembl.org/">
+   EnsemblFungi
+  </a>
+  ,
+  <a href="http://metazoa.ensembl.org/">
+   EnsemblMetazoa
+  </a>
+  ,
+  <a href="http://plants.ensembl.org/">
+   EnsemblPlants
+  </a>
+  and
+  <a href="http://protists.ensembl.org/">
+   EnsemblProtists
+  </a>
+  . These databases are part of
+  <a href="http://www.ensemblgenomes.org">
+   Ensembl Genomes
+  </a>
+  . Ensembl Genomes has been created to complement the existing Ensembl site, which focuses on vertebrate genomes.
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    EnsemblBacteria or EnsemblFungi or EnsemblMetazoa or
+    <br/>
+    EnsemblPlants or EnsemblProtists
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    Transcript ID
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 1
+   </th>
+   <td>
+    Protein ID
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Optional information 2
+   </th>
+   <td>
+    Gene ID
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Examples
+   </th>
+   <td>
+    <a href="http://www.uniprot.org/uniprot/Q53653#section_x-ref">
+     <span class="caps">
+      Q53653
+     </span>
+    </a>
+    :
+    <pre>DR   EnsemblBacteria; EBSTAT00000032812; EBSTAP00000031682; EBSTAG00000032810.</pre>
+    <a href="http://www.uniprot.org/uniprot/Q07163#section_x-ref">
+     <span class="caps">
+      Q07163
+     </span>
+    </a>
+    :
+    <pre>DR   EnsemblFungi; YDR365W-B; YDR365W-B; YDR365W-B.</pre>
+    <a href="http://www.uniprot.org/uniprot/Q9NDJ2#section_x-ref">
+     <span class="caps">
+      Q9NDJ2
+     </span>
+    </a>
+    :
+    <pre>DR   EnsemblMetazoa; FBtr0071602; FBpp0071528; FBgn0020306.
+DR   EnsemblMetazoa; FBtr0071603; FBpp0071529; FBgn0020306.
+DR   EnsemblMetazoa; FBtr0071604; FBpp0071530; FBgn0020306.</pre>
+    <a href="http://www.uniprot.org/uniprot/P49333#section_x-ref">
+     <span class="caps">
+      P49333
+     </span>
+    </a>
+    :
+    <pre>DR   EnsemblPlants; AT1G66340.1-TAIR; AT1G66340.1-P; AT1G66340-TAIR-G.</pre>
+    <a href="http://www.uniprot.org/uniprot/Q54L85#section_x-ref">
+     <span class="caps">
+      Q54L85
+     </span>
+    </a>
+    :
+    <pre>DR   EnsemblProtists; DDB0305146; DDB0305146; DDB_G0286833.</pre>
+   </td>
+  </tr>
+ </table>
+ <p>
+  <a href="http://www.uniprot.org/uniprot/?query=database:ensemblbacteria+or+database:ensemblfungi+or+database:ensemblmetazoa+or+database:ensemblplants+or+database:ensemblprotists">
+   Show all the entries having a cross-reference to EnsemblBacteria, EnsemblFungi, EnsemblMetazoa, EnsemblPlants or EnsemblProtists
+  </a>
+  .
+ </p>
+ <h3>
+  Changes concerning
+  <a href="http://www.uniprot.org/docs/?keywlist">
+   keywords
+  </a>
+ </h3>
+ New keywords:
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1068">
+    Hemolytic uremic syndrome
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1069">
+    Brassinosteroid biosynthesis
+   </a>
+  </li>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1070">
+    Brassinosteroid signaling pathway
+   </a>
+  </li>
+ </ul>
+</div>

@@ -1,0 +1,21 @@
+disulfid
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P10846#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q43495#ptm_processing
+http://www.uniprot.org/uniprot/P18844#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q9U8R2#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P19880#ptm_processing
+http://www.uniprot.org/uniprot/P09478#ptm_processing
+http://www.uniprot.org/uniprot/P25703#ptm_processing
+http://www.uniprot.org/uniprot/P83658#ptm_processing
+http://www.uniprot.org/uniprot/P11140#ptm_processing
+http://www.uniprot.org/uniprot/P68432#ptm_processing
+http://www.uniprot.org/uniprot/P22030#ptm_processing
+http://www.uniprot.org/uniprot/P22029#ptm_processing
+http://www.uniprot.org/uniprot/O35348#ptm_processing
+http://www.uniprot.org/uniprot/P09930#ptm_processing
+http://www.uniprot.org/uniprot/Q96HE7#ptm_processing
+http://www.uniprot.org/uniprot/Q06530#ptm_processing
+http://www.uniprot.org/uniprot/Q865R3#ptm_processing
+

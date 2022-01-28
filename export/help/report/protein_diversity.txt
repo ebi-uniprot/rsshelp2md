@@ -1,0 +1,7 @@
+protein_diversity
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=annotation%3A(type%3Amod_res+phosphoserine)
+http://www.uniprot.org/uniprot/?query=annotation%3A(type%3Amod_res+phosphoserine+evidence%3Aexperimental)
+http://www.uniprot.org/news/
+

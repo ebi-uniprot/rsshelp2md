@@ -1,0 +1,7 @@
+activity_regulation
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P17289#function
+http://www.uniprot.org/uniprot/P0A9C5#function
+http://www.uniprot.org/uniprot/Q96EB6#function
+

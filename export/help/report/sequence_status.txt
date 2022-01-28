@@ -1,0 +1,9 @@
+sequence_status
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q04826#sequences
+http://www.uniprot.org/uniprot/P29306#sequences
+http://www.uniprot.org/uniprot/P0C2W2#sequences
+http://www.uniprot.org/uniprot/P0C2W2#sequences
+http://www.uniprot.org/uniprot/P68251#sequences
+

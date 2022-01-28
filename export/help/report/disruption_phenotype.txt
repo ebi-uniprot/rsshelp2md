@@ -1,0 +1,5 @@
+disruption_phenotype
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q8K1M6#pathology%5Fand%5Fbiotech
+

@@ -1,0 +1,209 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  'De-merge' of multi-species in UniProtKB/Swiss-Prot
+ </h3>
+ <p>
+  UniProtKB/Swiss-Prot as a non-redundant protein database used to
+    "merge" entries originating from different species, if there were
+    100% conserved. In merged entries, information about the source of
+    each organism was noted in the
+  <a href="http://www.uniprot.org/manual/organism-name">
+   OS (Organism Species) lines
+  </a>
+  ,
+     e.g. actin, P03996 (ACTA_HUMAN):
+ </p>
+ <pre>
+OS   Homo sapiens (Human), Mus musculus (Mouse), Rattus norvegicus (Rat),
+OS   Bos taurus (Bovine), and Oryctolagus cuniculus (Rabbit).
+</pre>
+ <p>
+  However, the OC (Organism Classification) lines only contained the
+    taxonomy of the first listed species, and the "species part" of the
+    entry name was built on the first organism in the list ("_HUMAN").
+ </p>
+ <p>
+  As the type of information on proteins has greatly evolved, and
+    more and more data have been documented that are species specific,
+    Swiss-Prot had to adapt and change its merging policy. While it may
+    seem to contradict the principle of non-redundancy on the sequence
+    level to create two or more entries for an identical sequence, this
+    does make sense from the annotation point of view. The new policy
+    allows to clarify which information item has been proven for which
+    organism. Even if a protein has the same sequence in two or more
+    different organisms, there may be evidence for different
+    post-translational modifications, sequence variants, alternative
+    splicing, protein-protein interactions, tissue specificity, and
+    implication in diseases. Moreover, since some organism-specific
+    scientific communities use different gene name nomenclatures, it
+    is important to reflect such species-specific nomenclature usage.
+ </p>
+ <p>
+  With this release, we have completed the de-merging of all the
+    UniProtKB/Swiss-Prot entries (almost 6'000) that contained information
+    relative to two or more distinct species.
+ </p>
+ <p>
+  The primary accession number of a formerly merged entry has been
+    retained as a secondary accession number in all of the resulting
+    de-merged entries. A new primary accession number has been attributed
+    to all de-merged entries.
+ </p>
+ <p>
+  In the example above: ACTA_HUMAN (old primary AC: P03996,
+    old secondary AC: P04108) has been de-merged into:
+ </p>
+ <table>
+  <tr>
+   <th>
+    entry name
+   </th>
+   <th>
+    new primary AC
+   </th>
+   <th>
+    secondary ACs
+   </th>
+  </tr>
+  <tr>
+   <td>
+    ACTA_BOVIN
+   </td>
+   <td align="center">
+    <a href="http://www.uniprot.org/uniprot/P62739">
+     P62739
+    </a>
+   </td>
+   <td>
+    <strong>
+     P03996 P04108
+    </strong>
+    Q862W5
+   </td>
+  </tr>
+  <tr>
+   <td>
+    ACTA_HUMAN
+   </td>
+   <td align="center">
+    <a href="http://www.uniprot.org/uniprot/P62736">
+     P62736
+    </a>
+   </td>
+   <td>
+    <strong>
+     P03996 P04108
+    </strong>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    ACTA_MOUSE
+   </td>
+   <td align="center">
+    <a href="http://www.uniprot.org/uniprot/P62737">
+     P62737
+    </a>
+   </td>
+   <td>
+    <strong>
+     P03996 P04108
+    </strong>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    ACTA_RABIT
+   </td>
+   <td align="center">
+    <a href="http://www.uniprot.org/uniprot/P62740">
+     P62740
+    </a>
+   </td>
+   <td>
+    <strong>
+     P03996 P04108
+    </strong>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    ACTA_RAT
+   </td>
+   <td align="center">
+    <a href="http://www.uniprot.org/uniprot/P62738">
+     P62738
+    </a>
+   </td>
+   <td>
+    <strong>
+     P03996 P04108
+    </strong>
+    P70476
+   </td>
+  </tr>
+ </table>
+ <br/>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  Modified keywords:
+ </p>
+ <ul>
+  <li>
+   Matrix protein -&gt;
+   <a href="http://www.uniprot.org/keywords/KW-0468">
+    Viral matrix protein
+   </a>
+  </li>
+ </ul>
+ <p>
+  Deleted keywords:
+ </p>
+ <ul>
+  <li>
+   Seed
+  </li>
+  <li>
+   Seed embryo
+  </li>
+ </ul>
+ <h3>
+  Changes concerning the
+  <a href="http://www.uniprot.org/docs/ptmlist">
+   controlled vocabulary for PTMs
+  </a>
+ </h3>
+ <p>
+  New terms for the feature key 'CROSSLNK':
+ </p>
+ <ul>
+  <li>
+   Cyclopeptide (Arg-Cys)
+  </li>
+  <li>
+   Cyclopeptide (Cys-Arg)
+  </li>
+ </ul>
+ <p>
+  New terms for the feature key 'MOD_RES':
+ </p>
+ <ul>
+  <li>
+   ADP-ribosylasparagine
+  </li>
+  <li>
+   ADP-ribosylserine
+  </li>
+  <li>
+   Cysteine methyl disulfide
+  </li>
+ </ul>
+</div>

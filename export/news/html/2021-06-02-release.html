@@ -1,0 +1,693 @@
+<h2 id="Headline">
+ Headline
+</h2>
+<h3 id="The_importance_of_being_disordered">
+ The importance of being disordered
+</h3>
+<p>
+ Intrinsically disordered regions are protein regions that lack a fixed or ordered three-dimensional structure, typically in the absence of interaction partners. They are thought to often drive liquid-liquid phase separation within cells. This process leads to the formation of biomolecular condensates devoid of a surrounding lipid membrane, which are responsible for extensively compartmentalizing eukaryotic cells. Liquid-liquid phase separation plays crucial roles in fundamental cellular processes, such as the stress response, among others. Indeed eukaryotic cells react to a wide range of stresses by assembling proteins and mRNAs into massive ribonucleoprotein stress granules (SGs) that regulate mRNA translation and degradation. Interestingly mRNAs modified through the methylation of adenosine (m
+ <sup>
+  6
+ </sup>
+ A) are
+ <a href="https://pubmed.ncbi.nlm.nih.gov/?term=32451507">
+  enriched in SGs
+ </a>
+ . The m
+ <sup>
+  6
+ </sup>
+ A modification is very common, with around 25% of mRNAs containing at least one m
+ <sup>
+  6
+ </sup>
+ A. It is recognized by a protein domain, called
+ <a href="https://prosite.expasy.org/doc/PS50882">
+  YTH
+ </a>
+ , which is conserved from yeast to humans. In humans and mice, there are
+ <a href="http://www.uniprot.org/uniprot/?query=(gene:ythdf1+OR+gene:ythdf2+OR+gene:ythdf3)+AND+(organism:9606+OR+organism:10090)+AND+reviewed:yes">
+  3 such proteins
+ </a>
+ , YTHDF1, YTHDF2 and YTHDF3. All 3 paralogs contain a C-terminal YTH domain and disordered regions are predicted in their N-terminal moieties. These proteins colocalize with stress granules.
+</p>
+<p>
+ Could YTHDF proteins and their modified RNA partners be active players in the process of stress granule formation? In vitro, RNAs containing at least 4 copies of m
+ <sup>
+  6
+ </sup>
+ A motifs, but not those with a single motif,
+ <a href="https://pubmed.ncbi.nlm.nih.gov/?term=31388144">
+  dramatically enhance phase separation of YTHDF proteins
+ </a>
+ . When transfected into cells, multivalent m
+ <sup>
+  6
+ </sup>
+ A RNA oligos promote localization of YTHDF proteins to stress granules. Moreover,
+ <a href="https://pubmed.ncbi.nlm.nih.gov/?term=32451507">
+  depletion of YTHDF proteins inhibits SG formation and recruitment of mRNAs to SGs
+ </a>
+ . Both the N-terminal intrinsically disordered region and the C-terminal m
+ <sup>
+  6
+ </sup>
+ A-binding YTH domain of YTHDF proteins are required for SG formation. It has been proposed that polymethylated mRNAs may act as a
+ <a href="https://pubmed.ncbi.nlm.nih.gov/?term=31292544">
+  multivalent scaffold for the binding of YTHDF proteins, juxtaposing their low-complexity domains and thereby leading to phase separation
+ </a>
+ .
+</p>
+<p>
+ As of this release, we have introduced predictions of long, intrinsically disordered regions into the UniProtKB annotation pipeline, using the
+ <a href="https://doi.org/10.1093/bioinformatics/btx015">
+  MobiDB-lite
+ </a>
+ method.
+ <a href="http://www.uniprot.org/uniprot/?query=(gene:ythdf1+OR+gene:ythdf2+OR+gene:ythdf3)+AND+reviewed:yes">
+  YTHDF entries
+ </a>
+ have been updated and are now publicly available.
+</p>
+<h2 id="UniProt_knowledge_graph_news">
+ UniProt knowledge graph news
+</h2>
+<p>
+ Using UniProt in a public cloud is now easier than ever, as UniProt is now available as part of the
+ <a href="https://registry.opendata.aws/uniprot/">
+  AWS open data program
+ </a>
+ . AWS has published a
+ <a href="https://aws.amazon.com/blogs/industries/exploring-the-uniprot-protein-knowledgebase-with-aws-open-data-and-amazon-neptune/">
+  tutorial on how you can use the public UniProt data in
+your own private graph database
+ </a>
+ using
+ <a href="https://aws.amazon.com/neptune/">
+  AWS Neptune
+ </a>
+ . This shows how the
+ <strong>
+  I
+ </strong>
+ (for
+ <strong>
+  I
+ </strong>
+ nteroperability) in
+ <a href="https://www.nature.com/articles/s41597-019-0180-9">
+  FAIR UniProt
+ </a>
+ works with commercial cloud-based tools. Of course the UniProt Knowledge Graph remains freely available at
+ <a href="https://sparql.uniprot.org">
+  sparql.uniprot.org
+ </a>
+ .
+</p>
+<h2 id="UniProtKB_news">
+ UniProtKB news
+</h2>
+<h3 id="Introduction_of_MobiDB_lite_predictions_for_intrinsically_disordered_regions">
+ Introduction of MobiDB-lite predictions for intrinsically disordered regions
+</h3>
+<p>
+ Starting with this release of UniProt, we import predictions of
+ <a href="https://en.wikipedia.org/wiki/Intrinsically%5Fdisordered%5Fproteins">
+  intrinsically disordered regions
+ </a>
+ and regions of compositional bias, generated with the
+ <a href="https://doi.org/10.1093/bioinformatics/btx015">
+  MobiDB-lite method
+ </a>
+ , in UniProtKB/Swiss-Prot. These computationally generated annotations are represented as
+ <a href="http://www.uniprot.org/help/region">
+  Region
+ </a>
+ and
+ <a href="http://www.uniprot.org/help/compbias">
+  Compositional bias
+ </a>
+ annotations tagged with the evidence code
+ <code>
+  ECO:0000256
+ </code>
+ (sequence model evidence used in automatic assertion) and source
+ <code>
+  SAM:MobiDB-lite
+ </code>
+ . Entries with disordered regions can be retrieved using these queries:
+</p>
+<p>
+ <a href="http://www.uniprot.org/uniprot/?query=annotation%3A(type%3Aregion+disordered)+reviewed%3Ayes">
+  annotation:(type:region disordered) AND reviewed:yes
+ </a>
+ <br/>
+ <a href="http://www.uniprot.org/uniprot/?query=annotation%3A(type%3Acompbias)+reviewed%3Ayes">
+  annotation:(type:compbias) AND reviewed:yes
+ </a>
+</p>
+<p>
+ In cases where there is experimental evidence for intrinsically disordered regions, curators can modify the predicted results, or add new expert-curated regions, using the appropriate experimental
+ <a href="http://www.uniprot.org/help/evidences">
+  evidence attribution
+ </a>
+ .
+</p>
+<p>
+ Predictions from the MobiDB-lite method are also available for protein sequences in UniProtKB/TrEMBL - tagged with the same evidence code and source as in reviewed entries. They can be obtained by using these queries:
+</p>
+<p>
+ <a href="http://www.uniprot.org/uniprot/?query=annotation%3A(type%3Aregion+disordered)+reviewed%3Ano">
+  annotation:(type:region disordered) AND reviewed:no
+ </a>
+ <br/>
+ <a href="http://www.uniprot.org/uniprot/?query=annotation%3A(type%3Acompbias)+reviewed%3Ano">
+  annotation:(type:compbias) AND reviewed:no
+ </a>
+</p>
+<p>
+ See also:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/help/sam">
+   SAM - Sequence Analysis Methods for automatic annotation
+  </a>
+ </li>
+</ul>
+<h3 id="Changes_to_the__a_href___docs_humdisease__controlled_vocabulary_of_human_diseases__a_">
+ Changes to the
+ <a href="http://www.uniprot.org/docs/humdisease">
+  controlled vocabulary of human diseases
+ </a>
+</h3>
+<p>
+ New diseases:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06011">
+   Albinism, oculocutaneous, 8
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06008">
+   AMED syndrome, digenic
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06002">
+   Amyotrophic lateral sclerosis 26, with or without frontotemporal dementia
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06040">
+   Blistering, acantholytic, of oral and laryngeal mucosa
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06003">
+   Carpal tunnel syndrome 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06013">
+   Chorioretinal atrophy, progressive bifocal
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06028">
+   Deafness, autosomal recessive, 117
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06032">
+   Deafness, congenital, and adult-onset progressive leukoencephalopathy
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06025">
+   Developmental and epileptic encephalopathy 90
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06005">
+   Developmental delay, impaired growth, dysmorphic facies, and axonal neuropathy
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06037">
+   ENDOVE syndrome, limb-brain type
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06036">
+   ENDOVE syndrome, limb-only type
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06052">
+   Epilepsy, progressive myoclonic 12
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06018">
+   Erythrokeratodermia variabilis et progressiva 7
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06001">
+   Frontotemporal dementia and/or amyotrophic lateral sclerosis 5
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06000">
+   Frontotemporal dementia and/or amyotrophic lateral sclerosis 8
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06046">
+   Gastric adenocarcinoma and proximal polyposis of the stomach
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06004">
+   Hermansky-Pudlak syndrome 11
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06026">
+   Immunodeficiency 76
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06050">
+   Intellectual developmental disorder, autosomal dominant 64
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06007">
+   Intellectual developmental disorder with paroxysmal dyskinesia or seizures
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06049">
+   Joubert syndrome 37
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06012">
+   Leber hereditary optic neuropathy modifier
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06006">
+   Lessel-Kreienkamp syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06031">
+   Leukoencephalopathy, progressive, infantile-onset, with or without deafness
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06051">
+   Li-Campeau syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06042">
+   Macroglobulinemia, Waldenstrom, 1
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06017">
+   Mental retardation, X-linked 50
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06044">
+   Microcephaly 26, primary, autosomal dominant
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06045">
+   Microcephaly 27, primary, autosomal dominant
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06016">
+   Mitochondrial complex I deficiency, nuclear type 36
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06014">
+   Mitochondrial complex II deficiency, nuclear type 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06015">
+   Mitochondrial complex II deficiency, nuclear type 3
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06039">
+   Mitochondrial complex II deficiency, nuclear type 4
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06024">
+   Multiple congenital anomalies-neurodevelopmental syndrome, X-linked
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06043">
+   Myopathy, myofibrillar, 11
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06009">
+   Nephrotic syndrome 22
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06033">
+   Nephrotic syndrome 23
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06027">
+   Neurodegeneration, childhood-onset, with hypotonia, respiratory insufficiency, and brain imaging abnormalities
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06010">
+   Neurodevelopmental disorder with or without early-onset generalized epilepsy
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06053">
+   Neurofacioskeletal syndrome with or without renal agenesis
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06035">
+   Neuropathy, hereditary motor, with myopathic features
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06034">
+   Oculomotor-abducens synkinesis
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06019">
+   Olmsted syndrome 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06030">
+   Oocyte maturation defect 10
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06020">
+   Premature ovarian failure 18
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06047">
+   Proteasome-associated autoinflammatory syndrome 4
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06029">
+   Proteasome-associated autoinflammatory syndrome 5
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06048">
+   Short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies 2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06023">
+   Spermatogenic failure, X-linked, 3
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06022">
+   Spermatogenic failure 51
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06021">
+   Spermatogenic failure 52
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06038">
+   Sulfide:quinone oxidoreductase deficiency
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-06041">
+   Vertebral, cardiac, tracheoesophageal, renal, and limb defects
+  </a>
+ </li>
+</ul>
+<p>
+ Modified diseases:
+</p>
+<ul>
+ <li>
+  Amyotrophic lateral sclerosis 12 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02705">
+   Amyotrophic lateral sclerosis 12 with or without frontotemporal dementia
+  </a>
+ </li>
+ <li>
+  Amyotrophic lateral sclerosis 14, with or without frontotemporal dementia -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03119">
+   Frontotemporal dementia and/or amyotrophic lateral sclerosis 6
+  </a>
+ </li>
+ <li>
+  Birk-Barel mental retardation dysmorphism syndrome -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02513">
+   Birk-Barel syndrome
+  </a>
+ </li>
+ <li>
+  COACH syndrome -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02835">
+   COACH syndrome 1
+  </a>
+ </li>
+ <li>
+  Diabetes mellitus, permanent neonatal 1 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02152">
+   Diabetes mellitus, permanent neonatal, 1
+  </a>
+ </li>
+ <li>
+  Diabetes mellitus, permanent neonatal 2 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05823">
+   Diabetes mellitus, permanent neonatal, 2
+  </a>
+ </li>
+ <li>
+  Diabetes mellitus, permanent neonatal 3 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05824">
+   Diabetes mellitus, permanent neonatal, 3
+  </a>
+ </li>
+ <li>
+  Diabetes mellitus, permanent neonatal 4 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05825">
+   Diabetes mellitus, permanent neonatal, 4
+  </a>
+ </li>
+ <li>
+  Epileptic encephalopathy, early infantile, 57 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05145">
+   Developmental and epileptic encephalopathy 57
+  </a>
+ </li>
+ <li>
+  Epileptic encephalopathy, early infantile, 85, with or without midline brain defects -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05802">
+   Developmental and epileptic encephalopathy 85 with or without midline brain defects
+  </a>
+ </li>
+ <li>
+  Frontotemporal dementia, chromosome 3-linked -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01633">
+   Frontotemporal dementia and/or amyotrophic lateral sclerosis 7
+  </a>
+ </li>
+ <li>
+  Generalized thyroid hormone resistance -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01654">
+   Thyroid hormone resistance, generalized, autosomal dominant
+  </a>
+ </li>
+ <li>
+  Generalized thyroid hormone resistance autosomal recessive -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03097">
+   Thyroid hormone resistance, generalized, autosomal recessive
+  </a>
+ </li>
+ <li>
+  Hemophagocytic lymphohistiocytosis, familial, 6 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05904">
+   Immune dysregulation and systemic hyperinflammation syndrome
+  </a>
+ </li>
+ <li>
+  Intellectual developmental disorder 59 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05622">
+   Intellectual developmental disorder, autosomal dominant 59
+  </a>
+ </li>
+ <li>
+  Intellectual developmental disorder 60 with seizures -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05662">
+   Intellectual developmental disorder, autosomal dominant 60, with seizures
+  </a>
+ </li>
+ <li>
+  Intellectual developmental disorder 61 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05748">
+   Intellectual developmental disorder, autosomal dominant 61
+  </a>
+ </li>
+ <li>
+  Intellectual developmental disorder 62 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05770">
+   Intellectual developmental disorder, autosomal dominant 62
+  </a>
+ </li>
+ <li>
+  Mental retardation, autosomal recessive 15 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03241">
+   Rafiq syndrome
+  </a>
+ </li>
+ <li>
+  Methylmalonic aciduria type mut -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-00749">
+   Methylmalonic aciduria due to methylmalonyl-CoA mutase deficiency
+  </a>
+ </li>
+ <li>
+  Mitochondrial complex II deficiency -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01380">
+   Mitochondrial complex II deficiency, nuclear type 1
+  </a>
+ </li>
+ <li>
+  Neurodevelopmental disorder with alopecia and brain abnormalities -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05945">
+   Bachmann-Bupp syndrome
+  </a>
+ </li>
+ <li>
+  Vasculopathy, retinal, with cerebral leukodystrophy -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-00261">
+   Vasculopathy, retinal, with cerebral leukoencephalopathy and systemic manifestations
+  </a>
+ </li>
+</ul>
+<p>
+ Deleted disease
+</p>
+<ul>
+ <li>
+  Amyotrophic lateral sclerosis 17
+ </li>
+</ul>
+<h3 id="Changes_to_the__a_href___docs_ptmlist__controlled_vocabulary_for_PTMs__a_">
+ Changes to the
+ <a href="http://www.uniprot.org/docs/ptmlist">
+  controlled vocabulary for PTMs
+ </a>
+</h3>
+<p>
+ New term for the feature key 'Glycosylation' ('CARBOHYD' in the flat file):
+</p>
+<ul>
+ <li>
+  N-alpha-linked (Rha) arginine
+ </li>
+</ul>
+<p>
+ Modified term for the feature key 'Glycosylation' ('CARBOHYD' in the flat file):
+</p>
+<ul>
+ <li>
+  N-linked (GlcNAc) arginine -&gt; N-beta-linked (GlcNAc) arginine
+ </li>
+</ul>
+<h3 id="Changes_in__a_href___docs_subcell__subcellular_location_controlled_vocabulary__a_">
+ Changes in
+ <a href="http://www.uniprot.org/docs/subcell">
+  subcellular location controlled vocabulary
+ </a>
+</h3>
+<p>
+ New subcellular locations:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0544">
+   Bacterial microcompartment
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0543">
+   Cytolytic granule
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0546">
+   Cytolytic granule lumen
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0547">
+   Cytolytic granule membrane
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0545">
+   Zymogen granule
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0548">
+   Zymogen granule lumen
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/locations/SL-0549">
+   Zymogen granule membrane
+  </a>
+ </li>
+</ul>
+<h3 id="Changes_to__a_href___docs_keywlist__keywords__a_">
+ Changes to
+ <a href="http://www.uniprot.org/docs/keywlist">
+  keywords
+ </a>
+</h3>
+<p>
+ New keyword:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/keywords/KW-1283">
+   Bacterial microcompartment
+  </a>
+ </li>
+</ul>

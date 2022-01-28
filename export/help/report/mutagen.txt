@@ -1,0 +1,9 @@
+mutagen
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q1LCS4#pathology_and_biotech
+http://www.uniprot.org/uniprot/P04395#pathology_and_biotech
+http://www.uniprot.org/uniprot/Q38914#pathology_and_biotech
+http://www.uniprot.org/uniprot/P62166#pathology_and_biotech
+http://www.uniprot.org/uniprot/O14776#pathology_and_biotech
+

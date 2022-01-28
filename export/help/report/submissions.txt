@@ -1,0 +1,7 @@
+submissions
+---
+Number tables left as HTML
+2
+
+All extra HTML tags left (ie <span style="color: grey;">)?
+True

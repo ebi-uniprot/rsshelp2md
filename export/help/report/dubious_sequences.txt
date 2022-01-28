@@ -1,0 +1,5 @@
+dubious_sequences
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q9UBS5#sequences
+

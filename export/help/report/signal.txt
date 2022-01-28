@@ -1,0 +1,13 @@
+signal
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P01165#ptm_processing
+http://www.uniprot.org/help/evidences#ECO:0000250
+http://www.uniprot.org/uniprot/Q8CW46#ptm_processing
+http://www.uniprot.org/uniprot/Q9VGW1#ptm_processing
+http://www.uniprot.org/uniprot/O95445#ptm_processing
+http://www.uniprot.org/uniprot/Q6Q788#ptm_processing
+http://www.uniprot.org/uniprot/P36649#ptm%5Fprocessing
+http://www.uniprot.org/help/evidences#ECO:0000255
+http://www.uniprot.org/uniprot/P36649#ptm_processing
+

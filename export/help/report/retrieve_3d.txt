@@ -1,0 +1,5 @@
+retrieve_3d
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=myoglobin+AND+method%3AX-ray
+

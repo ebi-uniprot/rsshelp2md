@@ -1,0 +1,11 @@
+motif
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q9FFX4#family_and_domains
+http://www.uniprot.org/uniprot/Q8K3W3#family_and_domains
+http://www.uniprot.org/uniprot/P54254#family_and_domains
+http://www.uniprot.org/uniprot/Q8HYL8#family_and_domains
+http://www.uniprot.org/uniprot/O45293#family_and_domains
+http://www.uniprot.org/uniprot/Q60452#family_and_domains
+http://www.uniprot.org/uniprot/Q9Y6Q9#family_and_domains
+

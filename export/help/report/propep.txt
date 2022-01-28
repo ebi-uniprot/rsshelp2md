@@ -1,0 +1,9 @@
+propep
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P29958#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P21588#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q8WXQ8#ptm%5Fprocessing
+http://www.uniprot.org/help/sequence%5Fannotation#annotation%5Fid
+http://www.uniprot.org/uniprot/P19802#ptm%5Fprocessing
+

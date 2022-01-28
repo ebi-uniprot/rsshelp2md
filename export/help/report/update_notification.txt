@@ -1,0 +1,5 @@
+update_notification
+---
+Dead links
+http://www.uniprot.org/news/
+

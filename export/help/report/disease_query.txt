@@ -1,0 +1,5 @@
+disease_query
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=disease:DI-00044
+

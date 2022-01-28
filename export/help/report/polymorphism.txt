@@ -1,0 +1,11 @@
+polymorphism
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P15516#sequences
+http://www.uniprot.org/uniprot/P59533#sequences
+http://www.uniprot.org/uniprot/Q92482#sequences
+http://www.uniprot.org/uniprot/P10275#sequences
+http://www.uniprot.org/uniprot/P54259#sequences
+http://www.uniprot.org/uniprot/P42858#sequences
+http://www.uniprot.org/uniprot/Q03519#sequences
+

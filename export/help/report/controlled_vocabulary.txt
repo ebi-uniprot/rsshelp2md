@@ -1,0 +1,9 @@
+controlled_vocabulary
+---
+Dead links
+http://www.unipathway.org/
+http://www.uniprot.org/docs/plasmid
+
+Dead anchor tags
+http://www.uniprot.org/help/taxonomy#strain
+

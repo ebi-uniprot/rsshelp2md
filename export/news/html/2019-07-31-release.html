@@ -1,0 +1,562 @@
+<h2 id="Headline">
+ Headline
+</h2>
+<h3 id="The_enemy_of_my_enemy_is_my_friend">
+ The enemy of my enemy is my friend
+</h3>
+<p>
+ When prey encounters predator, escape is often the best form of defense. Unfortunately this is not an option for plants, who instead have evolved a range of chemical defenses to deter herbivores, such as insects and other arthropods. These chemical defenses include compounds that are toxic to herbivores (direct defense) as well as
+ <a href="http://www.plantphysiol.org/content/149/1/96.short">
+  compounds that attract herbivore predators
+ </a>
+ (indirect defense).
+</p>
+<p>
+ Indirect defense has been extensively studied in maize. Upon foliar damage by lepidopteran larvae, maize releases a complex volatile terpenoid mixture, which
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/18296628">
+  attracts parasitic wasps
+ </a>
+ , like
+ <a href="http://www.uniprot.org/taxonomy/93006">
+  <em>
+   Cotesia marginiventris
+  </em>
+ </a>
+ or
+ <a href="http://www.uniprot.org/taxonomy/89807">
+  <em>
+   Cotesia sesamiae
+  </em>
+ </a>
+ . These wasps deposit eggs in the lepidopteran larvae, which leads to an understandable loss of appetite by the lepidopterans, and eventually their death, when the wasp finally emerges from its host. These volatile terpenoids can also 'prime' neighboring plants, causing them to increase the transcription of defense-related genes and
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/16469918">
+  respond faster and more vigorously to subsequent herbivore attacks
+ </a>
+ .
+</p>
+<p>
+ The volatile terpenoid mixture produced by maize under lepidopteran attack includes one sesquiterpene of special interest, which is (E)"-beta-caryophyllene":https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:10357. This same sesquiterpene is also
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/15815622">
+  produced by roots upon damage by root-feeding pests, such as western corn rootworm (
+  <em>
+   Diabrotica virgifera virgifera
+  </em>
+  )
+ </a>
+ . Here it
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/18296628">
+  attracts entomopathogenic nematodes, which also live parasitically inside the infected lepidopterans
+ </a>
+ . (E)-beta-caryophyllene is produced by the (E)-beta-caryophyllene synthase encoded by TPS23, which catalyzes the
+ <a href="https://www.rhea-db.org/reaction?id=28294">
+  cyclization of farnesyl diphosphate to (E)-beta-caryophyllene
+ </a>
+ . As expected for a gene involved in plant defense,
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/18296628">
+  TPS23 gene expression is tightly regulated
+ </a>
+ . Herbivore-induced leaf damage causes increased expression in leaves, but not in roots, while attack by root-feeding pests increases expression in roots, but not in the shoots. TPS23 transcript levels correlate with the production of (E)-beta-caryophyllene and
+ <a href="https://www.ncbi.nlm.nih.gov/pubmed/29151152">
+  high-level expressing maize lines are more resistant to herbivores than low-level expressing ones
+ </a>
+ .
+</p>
+<p>
+ (E)-beta-caryophyllene is just one of a host of chemical deterrents that plants deploy against herbivores and other pests: the UniProt
+ <a href="http://www.uniprot.org/biocuration%5Fproject/Plants">
+  plant annotation program
+ </a>
+ aims to capture knowledge of the relevant biochemical pathways using Rhea and ChEBI, as well as many other aspects of plant biology too. Find out more about
+ <a href="http://www.uniprot.org/uniprot/?query=accession:B2C4D0">
+  maize TPS23
+ </a>
+ in the latest updated version of UniProtKB/Swiss-Prot.
+</p>
+<h2 id="UniProtKB_news">
+ UniProtKB news
+</h2>
+<h3 id="Cross_references_to_ChEBI_in_the_ptmlist_txt_document_file">
+ Cross-references to ChEBI in the ptmlist.txt document file
+</h3>
+<p>
+ The ptmlist.txt document, which is available by
+ <a href="ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/ptmlist.txt">
+  FTP
+ </a>
+ and on the
+ <a href="http://www.uniprot.org/docs/ptmlist">
+  website
+ </a>
+ , describes post-translational modifications (PTMs) annotated in the UniProt knowledgebase. This release sees the addition of optional cross-references from ptmlist.txt to
+ <a href="https://www.ebi.ac.uk/chebi/">
+  ChEBI
+ </a>
+ (Chemical Entities of Biological Interest), a freely available dictionary of molecular entities focused on small chemical compounds and derivatives, including modified residues.
+</p>
+<p>
+ Example:
+</p>
+<pre>ID   (3R)-3-hydroxyarginine
+AC   PTM-0476
+FT   MOD_RES
+..
+KW   Hydroxylation.
+DR   ChEBI; CHEBI:78294.
+</pre>
+<p>
+ This new mapping to ChEBI will facilitate the integration of data on PTMs with knowledge of enzymatic reactions described in UniProt using the
+ <a href="https://www.rhea-db.org/">
+  Rhea
+ </a>
+ knowledgebase of biochemical reactions (itself built on ChEBI). The following query allows users to find enzymes in UniProtKB that are capable of creating the modified (3R)-3-hydroxyarginine residue (PTM-0476, CHEBI:78294):
+</p>
+<p>
+ <a href="http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3A%22catalytic+activity%22+chebi%3A%22%283R%29-3-hydroxy-L-arginine+residue+%5B78294%5D%22%29&amp;sort=score">
+  annotation:(type:"catalytic activity" chebi:"(3R)-3-hydroxy-L-arginine residue [78294]")
+ </a>
+</p>
+<p>
+ We have currently mapped over 120 of the most common PTMs in UniProtKB to ChEBI and will continue to add new cross-references to ChEBI in forthcoming releases. This mapping of PTMs to ChEBI is part of our ongoing work on the standardization of knowledge of small molecule chemistry in UniProtKB that now covers enzyme cofactors and reactions as well as PTMs, and that will eventually extend to all small molecule protein interactions. We welcome your feedback on these current and future developments.
+</p>
+<h3 id="Retirement_of_UniProt_decoy_databases">
+ Retirement of UniProt decoy databases
+</h3>
+<p>
+ Based on usage statistics, we decided to retire the UniProt decoy databases from our FTP site. If you wish to generate decoy databases from UniProt FASTA databases, you can
+ <a href="https://metacpan.org/release/InSilicoSpectro-Databanks">
+  use this software
+ </a>
+ .
+</p>
+<p>
+ Please
+ <a href="http://www.uniprot.org/contact">
+  contact us
+ </a>
+ if you have questions about this change.
+</p>
+<h3 id="Cross_references_to_NIAGADS">
+ Cross-references to NIAGADS
+</h3>
+<p>
+ Cross-references have been added to the NIAGADS Alzheimer's GenomicsDB. NIAGADS is a searchable annotation resource that provides access to publicly available NIAGADS summary statistics datasets for Alzheimer's Disease (AD) and related neuropathologies.
+</p>
+<p>
+ NIAGADS is available at
+ <a href="https://www.niagads.org/genomics/">
+  https://www.niagads.org/genomics/
+ </a>
+ .
+</p>
+<p>
+ The format of the explicit links is:
+</p>
+<table>
+ <tr>
+  <th>
+   Resource abbreviation
+  </th>
+  <td>
+   NIAGADS
+  </td>
+ </tr>
+ <tr>
+  <th>
+   Resource identifier
+  </th>
+  <td>
+   Resource identifier
+  </td>
+ </tr>
+</table>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/E9PDY4">
+  E9PDY4
+ </a>
+</p>
+<p>
+ <a href="http://www.uniprot.org/uniprot/?query=database:niagads&amp;sort=score">
+  Show all entries having a cross-reference to NIAGADS.
+ </a>
+</p>
+<h4 id="Text_format">
+ Text format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/E9PDY4.txt">
+  E9PDY4
+ </a>
+</p>
+<pre>DR   NIAGADS; ENSG00000203710; -.
+</pre>
+<h4 id="XML_format">
+ XML format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/E9PDY4.xml">
+  E9PDY4
+ </a>
+</p>
+<pre>&lt;dbReference type="NIAGADS" id="ENSG00000203710"/&gt;
+</pre>
+<h4 id="RDF_format">
+ RDF format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/E9PDY4.ttl">
+  E9PDY4
+ </a>
+</p>
+<pre>uniprot:E9PDY4
+  rdfs:seeAlso &lt;http://purl.uniprot.org/niagads/ENSG00000203710&gt; .
+&lt;http://purl.uniprot.org/niagads/ENSG00000203710&gt;
+  rdf:type up:Resource ;
+  up:database &lt;http://purl.uniprot.org/database/NIAGADS&gt; .
+</pre>
+<h3 id="Cross_references_to_CPTAC">
+ Cross-references to CPTAC
+</h3>
+<p>
+ Cross-references have been added to the CPTAC Assay Portal. CPTAC serves as a centralized public repository of "fit-for-purpose" multiplexed quantitative mass spectrometry-based proteomic targeted assays.
+ <br/>
+ CPTAC is available at
+ <a href="https://assays.cancer.gov/">
+  https://assays.cancer.gov/
+ </a>
+ .
+</p>
+<p>
+ The format of the explicit links is:
+</p>
+<table>
+ <tr>
+  <th>
+   Resource abbreviation
+  </th>
+  <td>
+   CPTAC
+  </td>
+ </tr>
+ <tr>
+  <th>
+   Resource identifier
+  </th>
+  <td>
+   Resource identifier
+  </td>
+ </tr>
+</table>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P04083">
+  P04083
+ </a>
+</p>
+<p>
+ <a href="http://www.uniprot.org/uniprot/?query=database:cptac&amp;sort=score">
+  Show all entries having a cross-reference to CPTAC.
+ </a>
+</p>
+<h4 id="Text_format">
+ Text format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P04083.txt">
+  P04083
+ </a>
+</p>
+<pre>DR  CPTAC; CPTAC-311; -.
+</pre>
+<h4 id="XML_format">
+ XML format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P04083.xml">
+  P04083
+ </a>
+</p>
+<pre>&lt;dbReference type="CPTAC" id="CPTAC-311"/&gt;
+</pre>
+<h4 id="RDF_format">
+ RDF format
+</h4>
+<p>
+ Example:
+ <a href="http://www.uniprot.org/uniprot/P04083.ttl">
+  P04083
+ </a>
+</p>
+<pre>uniprot:P04083
+  rdfs:seeAlso &lt;http://purl.uniprot.org/cptac/CPTAC-311&gt; .
+&lt;http://purl.uniprot.org/cptac/CPTAC-311&gt;
+  rdf:type up:Resource ;
+  up:database &lt;http://purl.uniprot.org/database/CPTAC&gt; .
+</pre>
+<h3 id="Removal_of_the_cross_references_to_H_InvDB">
+ Removal of the cross-references to H-InvDB
+</h3>
+<p>
+ Cross-references to H-InvDB have been removed.
+</p>
+<h3 id="Changes_to_the__a_href___docs_humdisease__controlled_vocabulary_of_human_diseases__a_">
+ Changes to the
+ <a href="http://www.uniprot.org/docs/humdisease">
+  controlled vocabulary of human diseases
+ </a>
+</h3>
+<p>
+ New diseases:
+</p>
+<ul>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05569">
+   Arthrogryposis, distal, 2B2
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05570">
+   Arthrogryposis, distal, 2B3
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05559">
+   Arthrogryposis, distal, 2B4
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05553">
+   Cataract 48
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05575">
+   Ciliary dyskinesia, primary, 41
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05551">
+   Deafness, autosomal recessive, 100
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05550">
+   Deafness, autosomal recessive, 113
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05552">
+   Deafness, autosomal recessive, 94
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05566">
+   Developmental delay with variable intellectual impairment and behavioral abnormalities
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05571">
+   Epileptic encephalopathy, early infantile, 75
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05561">
+   Global developmental delay, progressive ataxia, and elevated glutamine
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05558">
+   Gonadal dysgenesis, dysmorphic facies, retinal dystrophy, and myopathy
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05567">
+   Hydatidiform mole, recurrent, 3
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05568">
+   Hydatidiform mole, recurrent, 4
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05577">
+   Intellectual developmental disorder with short stature and variable skeletal anomalies
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05560">
+   Koolen-De Vries syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05549">
+   Leukodystrophy, hypomyelinating, 18
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05563">
+   Metabolic crises, recurrent, with variable encephalomyopathic features and neurologic regression
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05562">
+   Myopathy, congenital, with fast-twitch type II fiber atrophy
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05576">
+   Neurodegeneration, early-onset, with choreoathetoid movements and microcytic anemia
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05564">
+   Neurodevelopmental disorder with impaired speech and hyperkinetic movements
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05574">
+   Neurodevelopmental disorder with or without variable brain abnormalities
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05573">
+   Oculoskeletodental syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05578">
+   Polydactyly, preaxial 1
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05565">
+   Popov-Chang syndrome
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05572">
+   Spastic ataxia 9, autosomal recessive
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05554">
+   Spastic paraplegia 80, autosomal dominant
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05555">
+   Spermatogenic failure 36
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05556">
+   Spermatogenic failure 37
+  </a>
+ </li>
+ <li>
+  <a href="http://www.uniprot.org/diseases/DI-05557">
+   Spermatogenic failure 38
+  </a>
+ </li>
+</ul>
+<p>
+ Modified diseases:
+</p>
+<ul>
+ <li>
+  Bisphosphoglycerate mutase deficiency -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03027">
+   Erythrocytosis, familial, 8
+  </a>
+ </li>
+ <li>
+  Cardiac arrhythmia with increased serum creatine kinase -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-04650">
+   Muscular dystrophy, limb-girdle, autosomal recessive 25
+  </a>
+ </li>
+ <li>
+  Deafness, autosomal dominant 34, with or without inflammation -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05146">
+   Deafness, autosomal dominant, 34, with or without inflammation
+  </a>
+ </li>
+ <li>
+  Deafness, autosomal recessive 32, with or without immotile sperm -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05341">
+   Deafness, autosomal recessive, 32, with or without immotile sperm
+  </a>
+ </li>
+ <li>
+  Epileptic encephalopathy, early infantile, 25 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-04176">
+   Epileptic encephalopathy, early infantile, 25, with amelogenesis imperfecta
+  </a>
+ </li>
+ <li>
+  Fetal akinesia deformation sequence -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01615">
+   Fetal akinesia deformation sequence 1
+  </a>
+ </li>
+ <li>
+  Gaze palsy, familial horizontal, with progressive scoliosis, 2 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-05031">
+   Gaze palsy, familial horizontal, with progressive scoliosis, 2, with impaired intellectual development
+  </a>
+ </li>
+ <li>
+  Growth retardation, intellectual developmental disorder, hypotonia, and hepatopathy -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-04841">
+   Growth retardation, impaired intellectual development, hypotonia, and hepatopathy
+  </a>
+ </li>
+ <li>
+  Hereditary myopathy with early respiratory failure -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01727">
+   Myopathy, myofibrillar, 9, with early respiratory failure
+  </a>
+ </li>
+ <li>
+  Lymphedema-distichiasis -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-00690">
+   Lymphedema-distichiasis syndrome
+  </a>
+ </li>
+ <li>
+  Polyarteritis nodosa -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-04055">
+   Vasculitis, autoinflammation, immunodeficiency, and hematologic defects syndrome
+  </a>
+ </li>
+ <li>
+  Spinal muscular atrophy, lower extremity-predominant 2, autosomal dominant -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-03814">
+   Spinal muscular atrophy, lower extremity-predominant 2A, childhood onset, autosomal dominant
+  </a>
+ </li>
+ <li>
+  Spinocerebellar ataxia, autosomal recessive, 1 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01061">
+   Spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 2
+  </a>
+ </li>
+ <li>
+  Spinocerebellar ataxia, autosomal recessive, with axonal neuropathy -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-01064">
+   Spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 1
+  </a>
+ </li>
+ <li>
+  Transient neonatal diabetes mellitus 1 -&gt;
+  <a href="http://www.uniprot.org/diseases/DI-02380">
+   Diabetes mellitus, transient neonatal, 1
+  </a>
+ </li>
+</ul>

@@ -1,0 +1,189 @@
+<div>
+ <h2>
+  Headline
+ </h2>
+ <h3>
+  Who wants to be a millionaire? The first million
+  <span class="caps">
+   HAMAP
+  </span>
+  -annotated entries in UniProtKB/TrEMBL
+ </h3>
+ <p>
+  As humanity explores more environmental and ecological niches, we are discovering a treasure-trove of organisms of which very little, if anything, is known. Sequencing genomes is becoming cheaper, and so to understand this diversity we sequence; but to begin to appreciate a genome’s possibilities quality annotation is required.
+  <a href="http://www.uniprot.org/program/Prokaryotes">
+   <span class="caps">
+    HAMAP
+   </span>
+  </a>
+  is an annotation project started over 10 years ago to provide annotation to the massive influx of completely sequenced bacterial and archaeal genomes and is now an integral part of the UniProt
+  <a href="http://www.uniprot.org/help/automatic_annotation">
+   Automatic Annotation program
+  </a>
+  .
+ </p>
+ <p>
+  The
+  <span class="caps">
+   HAMAP
+  </span>
+  rules automatically annotate bacterial and archaeal proteins, as well as related plastid-encoded proteins, based on manually-annotated, characterized template entries. These latter entries are used to generate the
+  <span class="caps">
+   HAMAP
+  </span>
+  profiles. UniProtKB/TrEMBL entries that belong to a family, i.e. that match a
+  <span class="caps">
+   HAMAP
+  </span>
+  profile, acquire annotation based on the manually annotated templates as well as template-based feature propagation. The propagated annotation also includes protein and gene names, general annotation (comments), keywords and GO terms. The annotation templates (http://hamap.expasy.org/families.html), seed alignments used to generate the
+  <span class="caps">
+   HAMAP
+  </span>
+  profiles and much more are available on the
+  <a href="http://hamap.expasy.org/">
+   <span class="caps">
+    HAMAP
+   </span>
+   website
+  </a>
+  and will be integrated into the www.uniprot.org automatic annotation portal in the future.
+ </p>
+ <p>
+  Two years ago we wrote a
+  <a href="http://www.uniprot.org/news/2009/09/22/release">
+   headline
+  </a>
+  highlighting the incorporation of
+  <a href="http://www.uniprot.org/uniprot/?query=source:HAMAP+reviewed:yes">
+   300,000
+   <span class="caps">
+    HAMAP
+   </span>
+   annotated entries into UniProtKB/Swiss-Prot
+  </a>
+  . Since that time we have discontinued incorporation of these semi-automatically annotated entries into UniProtKB/Swiss-Prot; this annotation is now added to UniProtKB/TrEMBL entries instead, while manually annotated ‘template’ entries (see above) are still integrated into UniProtKB/Swiss-Prot. With this release there are
+  <a href="http://www.uniprot.org/uniprot/?query=source:HAMAP+reviewed:no">
+   over 1 million bacterial, archaeal and plastid-encoded proteins in UniProtKB/TrEMBL
+  </a>
+  that have been annotated by the
+  <span class="caps">
+   HAMAP
+  </span>
+  rules. With each UniProt release, and as families and new template entries are created or updated based on new experiments, entries from all genomes are (re)annotated, enriching them beyond what was known when the genomes were originally submitted to the
+  <span class="caps">
+   DNA
+  </span>
+  databases. All these entries are thus improved by this high quality semi-automated annotation, rendering them more useful to the community.
+ </p>
+ <h2>
+  UniProtKB news
+ </h2>
+ <h3>
+  Cross-references to KO (KEGG Orthology)
+ </h3>
+ <p>
+  Cross-references have been added to
+  <a href="http://www.genome.jp/kegg/ko.html">
+   KO
+  </a>
+  consisting of manually defined ortholog groups that correspond to
+  <span class="caps">
+   KEGG
+  </span>
+  pathway nodes,
+  <span class="caps">
+   BRITE
+  </span>
+  hierarchy nodes, and
+  <span class="caps">
+   KEGG
+  </span>
+  module nodes.
+ </p>
+ <p>
+  KO is available at
+  <a href="http://www.genome.jp/kegg/ko.html">
+   http://www.genome.jp/kegg/ko.html
+  </a>
+  .
+ </p>
+ <p>
+  The format of the explicit links in the flat file is:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    KO
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    KO identifier
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <a href="http://www.uniprot.org/uniprot/P41932#section_x-ref">
+     <span class="caps">
+      P41932
+     </span>
+    </a>
+    :
+    <pre>DR   KO; K06630; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <p>
+  <a href="http://www.uniprot.org/uniprot/?query=database:ko">
+   Show all the entries having a cross-reference to KO
+  </a>
+  .
+ </p>
+ <h3>
+  Changes to
+  <a href="http://www.uniprot.org/docs/keywlist">
+   keywords
+  </a>
+ </h3>
+ New keyword:
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-1186">
+    Ciliopathy
+   </a>
+  </li>
+ </ul>
+ <h3>
+  Changes in the
+  <a href="http://www.uniprot.org/docs/ptmlist">
+   controlled vocabulary for PTMs
+  </a>
+ </h3>
+ New term for the feature key ‘Modified residue’ (‘MOD_RES’ in the flat file):
+ <ul>
+  <li>
+   4-hydroxyglutamate
+  </li>
+ </ul>
+ New terms for the feature key ‘Cross-link’ (‘CROSSLNK’ in the flat file):
+ <ul>
+  <li>
+   3-hydroxypyridine-2,5-dicarboxylic acid (Ser-Cys) (with S-...)
+  </li>
+  <li>
+   3-hydroxypyridine-2,5-dicarboxylic acid (Ser-Ser) (with C-...)
+  </li>
+  <li>
+   Thiazole-4-carboxylic acid (Glu-Cys)
+  </li>
+ </ul>
+</div>

@@ -1,0 +1,5 @@
+negative_datasets
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=organism%3A%22homo+sapiens%22+AND+annotation%3A%28type%3Asignal+evidence%3Aexperimental%29+reviewed%3Ayes&sort=score
+

@@ -1,4 +1,3 @@
-
 ---
 title: Domain
 categories: Family_and_domains,manual
@@ -15,8 +14,7 @@ The majority of domains annotated in UniProtKB/Swiss-Prot are defined by the Int
 Additional information may also be found in the non-positional ['Domain'](http://www.uniprot.org/manual/domain_cc) subsection.
 
 Examples of modular protein domains:  
-  
-[Q52107](http://www.uniprot.org/uniprot/Q52107#family_and_domains), [Q8TDF5](http://www.uniprot.org/uniprot/Q8TDF5#family_and_domains), [Q05193](http://www.uniprot.org/uniprot/Q05193#family_and_domains), [Q8BY02](http://www.uniprot.org/uniprot/Q8BY02#family_and_domains), [Q14978](http://www.uniprot.org/uniprot/Q14978#family_and_domains), [O08919](http://www.uniprot.org/uniprot/O08919#family_and_domains), [Q96L73](http://www.uniprot.org/uniprot/Q96L73#family_and_domains)
+[Q52107](http://www.uniprot.org/uniprotkb/Q52107#family_and_domains) , [Q8TDF5](http://www.uniprot.org/uniprotkb/Q8TDF5#family_and_domains) , [Q05193](http://www.uniprot.org/uniprotkb/Q05193#family_and_domains) , [Q8BY02](http://www.uniprot.org/uniprotkb/Q8BY02#family_and_domains) , [Q14978](http://www.uniprot.org/uniprotkb/Q14978#family_and_domains) , [O08919](http://www.uniprot.org/uniprotkb/O08919#family_and_domains) , [Q96L73](http://www.uniprot.org/uniprotkb/Q96L73#family_and_domains)
 
 ### Automatic domain annotation in UniProtKB/TrEMBL
 
@@ -27,14 +25,8 @@ In UniProtKB/TrEMBL entries, domains from the InterPro member databases PROSITE,
 See also:
 
 [DNA binding](http://www.uniprot.org/help/dna%5Fbind)  
-  
 [Domain](http://www.uniprot.org/help/domain)  
-  
 [Motif](http://www.uniprot.org/help/motif)  
-  
 [Region](http://www.uniprot.org/help/region)  
-  
 [Repeat](http://www.uniprot.org/help/repeat)  
-  
 [Zinc finger](http://www.uniprot.org/help/zn%5Ffing)
-        

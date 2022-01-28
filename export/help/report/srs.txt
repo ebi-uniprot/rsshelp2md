@@ -1,0 +1,9 @@
+srs
+---
+Dead links
+http://www.uniprot.org/help/filters
+http://www.uniprot.org/uniprot/?query=organism%3A%22saccharomyces+cerevisiae%22+AND+keyword%3A%22Membrane+%5B472%5D%22+AND+keyword%3A%22Glycoprotein+%5B325%5D%22
+
+Dead anchor tags
+http://www.uniprot.org/#note-uniparc
+

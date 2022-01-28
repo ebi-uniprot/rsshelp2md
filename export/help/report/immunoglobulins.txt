@@ -1,0 +1,5 @@
+immunoglobulins
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=keyword:KW-1280+AND+keyword:KW-1185+AND+name:immunoglobulin+AND+name:constant+AND+organism:9606+AND+reviewed:yes
+

@@ -1,0 +1,8 @@
+tissue_specificity
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P92958#expression
+http://www.uniprot.org/uniprot/Q8TDN4#expression
+http://www.uniprot.org/uniprot/O14734#expression
+http://www.uniprot.org/uniprot/Q8TAA9#expression
+

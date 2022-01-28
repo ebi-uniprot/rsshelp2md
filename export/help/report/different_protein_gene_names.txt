@@ -1,0 +1,8 @@
+different_protein_gene_names
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P08758#names_and_taxonomy
+http://www.uniprot.org/uniprot/Q15406#sequences
+http://www.uniprot.org/uniprot/P04150#sequences
+http://www.uniprot.org/uniprot/P08235#sequences
+

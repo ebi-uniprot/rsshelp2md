@@ -1,0 +1,10 @@
+cross_references_section
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/O14467#cross-references
+http://www.uniprot.org/uniprot/Q9LEH8#cross-references
+http://www.uniprot.org/uniprot/P35545#cross-references
+http://www.uniprot.org/uniprot/Q7XR80#cross-references
+http://www.uniprot.org/uniprot/Q8TBF5#cross-references
+http://www.uniprot.org/uniprot/B2RU33#cross-references
+

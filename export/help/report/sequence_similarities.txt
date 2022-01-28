@@ -1,0 +1,11 @@
+sequence_similarities
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q9C9W3#family_and_domains
+http://www.uniprot.org/uniprot/Q03395#family_and_domains
+http://www.uniprot.org/uniprot/Q15022#family_and_domains
+http://www.uniprot.org/uniprot/P0A6X0#family_and_domains
+http://www.uniprot.org/uniprot/O31792#family_and_domains
+http://www.uniprot.org/uniprot/P40939#family_and_domains
+http://www.uniprot.org/uniprot/O75521#family_and_domains
+

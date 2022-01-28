@@ -1,0 +1,20 @@
+variant
+---
+Dead links
+http://www.uniprot.org/docs/strains
+
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q96CV9#sequences
+http://www.uniprot.org/uniprot/P15516#sequences
+http://www.uniprot.org/uniprot/O43593#sequences
+http://www.uniprot.org/uniprot/P30154#sequences
+http://www.uniprot.org/uniprot/O14896#sequences
+http://www.uniprot.org/uniprot/Q8NET6#sequences
+http://www.uniprot.org/uniprot/P15516#sequences
+http://www.uniprot.org/uniprot/O43593#pathology_and_biotech
+http://www.uniprot.org/uniprot/P26439#pathology_and_biotech
+http://www.uniprot.org/uniprot/P28335#sequences
+http://www.uniprot.org/uniprot/Q8MMF9#sequences
+http://www.uniprot.org/uniprot/Q9QNF7#sequences
+http://www.uniprot.org/uniprot/Q8W4J9#sequences
+

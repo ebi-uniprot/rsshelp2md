@@ -1,0 +1,9 @@
+redundancy
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=(cluster%3A(member%3AP62975+identity%3A1.0)+length%3A76)+AND+reviewed%3Ayes
+
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q9BXB7#cross-references
+http://www.uniprot.org/uniprot/P68431#names%5Fand%5Ftaxonomy
+

@@ -1,0 +1,18 @@
+uniprot_staff
+---
+Dead anchor tags
+http://www.uniprot.org/help/key%5Fstaff#arighi
+http://www.uniprot.org/help/key%5Fstaff#breuza
+http://www.uniprot.org/help/key%5Fstaff#coudert
+http://www.uniprot.org/help/key%5Fstaff#huang
+http://www.uniprot.org/help/key%5Fstaff#lieberherr
+http://www.uniprot.org/help/key%5Fstaff#magrane
+http://www.uniprot.org/help/key%5Fstaff#martin
+http://www.uniprot.org/help/key%5Fstaff#mcgarvey
+http://www.uniprot.org/help/key%5Fstaff#natale
+http://www.uniprot.org/help/key%5Fstaff#orchard
+http://www.uniprot.org/help/key%5Fstaff#pedruzzi
+http://www.uniprot.org/help/key%5Fstaff#poux
+http://www.uniprot.org/help/key%5Fstaff#raj
+http://www.uniprot.org/help/key%5Fstaff#redaschi
+

@@ -1,0 +1,8 @@
+act_site
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q9F6D4#function
+http://www.uniprot.org/uniprot/Q9ZTP5#function
+http://www.uniprot.org/uniprot/P12276#function
+http://www.uniprot.org/uniprot/P27796#function
+

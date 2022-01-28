@@ -1,0 +1,18 @@
+biophysicochemical_properties
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q8W1X2#function
+http://www.uniprot.org/uniprot/O61303#function
+http://www.uniprot.org/uniprot/P16102#function
+http://www.uniprot.org/uniprot/Q9XZT6#function
+http://www.uniprot.org/uniprot/Q9YHY9#function
+http://www.uniprot.org/uniprot/Q8W1X2#function
+http://www.uniprot.org/uniprot/Q9V2Z6#function
+http://www.uniprot.org/uniprot/Q9V2Z6#function
+http://www.uniprot.org/uniprot/P37744#function
+http://www.uniprot.org/uniprot/P76316#function
+http://www.uniprot.org/uniprot/Q58576#function
+http://www.uniprot.org/uniprot/Q38857#function
+http://www.uniprot.org/uniprot/P05062#function
+http://www.uniprot.org/uniprot/Q9S4K9#function
+

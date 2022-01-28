@@ -1,0 +1,969 @@
+<feed xml:lang="en-US" xml:base="http://www.uniprot.org" xmlns="http://www.w3.org/2005/Atom">
+            <link rel="self" type="application/atom+xml" href="/memiki/pages/1113.atom"/>
+            <id>urn:uniprot:project:context-sensitive-help</id>
+            <title>Context-Sensitive Help</title>
+            <published>2010-02-17T15:25:28Z</published>
+            <updated>2021-04-06T12:39:11Z</updated>
+            <category term="context"/>
+            <entry>
+                            <id>protein_count</id>
+                            <title>Protein count</title>
+                            <author><name>uniprot</name></author>
+                            <published>2019-11-14T11:08:39Z</published>
+                            <updated>2019-11-14T11:09:07Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Number of protein entries associated with this proteome: UniProtKB entries for regular proteomes or UniParc entries for redundant proteomes (<a href="/help/proteome%5Fredundancy">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>genome_assembly</id>
+                            <title>Genome assembly ID</title>
+                            <author><name>uniprot</name></author>
+                            <published>2019-07-02T15:50:39Z</published>
+                            <updated>2019-07-02T15:51:35Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Identifier for the genome assembly (<a href="https://www.ensembl.org/Help/Faq?id=216">more...</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>proteome_components</id>
+                            <title>Proteome components</title>
+                            <author><name>uniprot</name></author>
+                            <published>2018-08-30T14:04:02Z</published>
+                            <updated>2018-08-30T14:05:18Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Genomic components encoding the proteome</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>proteome_gene_count</id>
+                            <title>Gene count</title>
+                            <author><name>uniprot</name></author>
+                            <published>2018-04-16T13:24:05Z</published>
+                            <updated>2018-05-22T14:25:27Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>This is the total number of unique genes found in the proteome set, algorithmically computed. For each gene, a single representative protein sequence is chosen from the proteome. Where possible, reviewed (Swiss-Prot) protein sequences are chosen as the representatives.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>pan_proteome</id>
+                            <title>Pan proteome</title>
+                            <author><name>uniprot</name></author>
+                            <published>2016-02-12T17:03:04Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>A pan proteome is the full set of proteins thought to be expressed by a group of highly related organisms (e.g. multiple strains of the same bacterial species).</p>
+
+<p><a href="http://pir.georgetown.edu/rps/pp.shtml">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>share_button</id>
+                            <title>Share button</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-04-14T15:05:41Z</published>
+                            <updated>2018-11-08T14:02:26Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The 'Share' button allows you to share a custom URL including the columns in your result view.</p>
+
+<p><a href="/help/api%5Fqueries">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>evidenceToolTip</id>
+                            <title>Evidence Tooltip</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-09-29T16:14:46Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>An evidence describes the source of an annotation, e.g. an experiment that has been published in the scientific literature, an orthologous protein, a record from another database, etc.</p>
+
+<p><a href="/manual/evidences">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniprot ECO303</id>
+                            <title>uniprot ECO303</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-09-29T10:35:58Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Manually curated information that is based on statements in scientific articles for which there is no experimental support.</p>
+
+<p><a href="/manual/evidences#ECO:0000303">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniprot ECO305</id>
+                            <title>uniprot ECO305</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-09-29T10:40:25Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Manually curated information which has been inferred by a curator based on his/her scientific knowledge or on the scientific content of an article.</p>
+
+<p><a href="/manual/evidences#ECO:0000305">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniprot ECO250</id>
+                            <title>uniprot ECO250</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-09-29T11:41:39Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Manually curated information which has been propagated from a related experimentally characterized protein.</p>
+
+<p><a href="/manual/evidences#ECO:0000250">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniprot ECO255</id>
+                            <title>uniprot ECO255</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-09-29T12:02:18Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Manual validated information which has been generated by the UniProtKB automatic annotation system.</p>
+
+<p><a href="/manual/evidences#ECO:0000255">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniprot ECO256</id>
+                            <title>uniprot ECO256</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-09-29T12:03:34Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Information which has been generated by the UniProtKB automatic annotation system, without manual validation.</p>
+
+<p><a href="/manual/evidences#ECO:0000256">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniprot ECO259</id>
+                            <title>uniprot ECO259</title>
+                            <author><name>uniprot</name></author>
+                            <published>2015-12-07T11:18:09Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Information which has been generated by the UniProtKB automatic annotation system, without manual validation.</p>
+
+<p><a href="/manual/evidences#ECO:0000259">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniprot ECO269</id>
+                            <title>uniprot ECO269</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-09-29T10:33:41Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Manually curated information for which there is published experimental evidence.</p>
+
+<p><a href="/manual/evidences#ECO:0000269">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniprot ECO312</id>
+                            <title>uniprot ECO312</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-09-29T11:56:47Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Manually validated information which has been imported from another database.</p>
+
+<p><a href="/manual/evidences#ECO:0000312">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniprot ECO313</id>
+                            <title>uniprot ECO313</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-09-29T12:00:28Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Information which has been imported from another database using automatic procedures.</p>
+
+<p><a href="/manual/evidences#ECO:0000313">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniprot ECO7744</id>
+                            <title>uniprot ECO7744</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-09-29T12:05:06Z</published>
+                            <updated>2021-04-06T12:39:11Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Manually validated information inferred from a combination of experimental and computational evidence.</p>
+
+<p><a href="/manual/evidences#ECO:0007744">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>uniprot ECO7829</id>
+                            <title>uniprot ECO7829</title>
+                            <author><name>uniprot</name></author>
+                            <published>2014-09-29T12:06:09Z</published>
+                            <updated>2021-04-06T10:37:32Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Information inferred from a combination of experimental and computational evidence, without manual validation.</p>
+
+<p><a href="/manual/evidences#ECO:0000213">More...</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_annotation</id>
+                            <title>blast_annotation</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-05T14:09:59Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Control which <a href="/manual/sequence%5Fannotation">Sequence annotation</a> is colored on the local alignment. This helps you see if essential amino acids are conserved. This is only available if there is known sequence annotation for the query or match sequence in the range convered by the local alignment.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>MolAnnNote</id>
+                            <title>Molecule-specific annotation note</title>
+                            <author><name>uniprot</name></author>
+                            <published>2013-09-10T08:49:52Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Annotation specific to this molecule.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_aminoacid_properties</id>
+                            <title>BLAST amino acid properties</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-05T13:48:15Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Color the amino acids in the local alignment on the basis of their physical and chemical properties.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_selected_annotation</id>
+                            <title>BLAST selected annotation</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-05T13:48:03Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>This shows annotation of the match sequence. The shown columns are customizable using <a href="/help/customize">customize display</a>.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_graphical</id>
+                            <title>BLAST graphical</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-05T13:47:49Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>A graphical overview of the position of the alignment on the query sequence. Green means a high identity alignment, colors trending to red mean an alignment with a lower identity.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_position</id>
+                            <title>BLAST Position</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-05T13:47:32Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The position of the alignment in relation to the query and match sequence. If these positions differ greatly one should take care before drawing biological conclusions.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_match_length</id>
+                            <title>BLAST match length</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-05T13:47:18Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The full length of the hit sequence, that was found in the database, in aminoacids. That was submitted to BLAST. If this number is significantly larger than the length of the alignment one should take care before transferring annotation.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_query_length</id>
+                            <title>BLAST query length</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-05T13:47:05Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The full length of the query sequence in aminoacids. That was submitted to BLAST. If this number is significantly larger than the length of the alignment one should take care in transferring annotation.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_positives</id>
+                            <title>BLAST Positives</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-05T13:46:53Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The percentage of aminoacids that at their position in the alignment lead to a positive score in the scoring matrix. The higher this number the better.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_identity</id>
+                            <title>BLAST Identity</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-05T13:46:37Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The identity is the percentage of amino acids that are identical on their position between the query and match sequence. The higher this number the better.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_e-value</id>
+                            <title>BLAST E-value</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-05T13:46:23Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The e-value is the number of expected alignments between your query sequence and the database of the same quality as this one. In general the lower the e-value the better. The e-value indicates statistical significance not biological. If two sequences are aligned in a BLAST search against a large database the alignment will have a higher reported e-value then when the same two sequence are found in small database.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_score</id>
+                            <title>BLAST score</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-05T13:45:41Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The raw score reported by BLAST. This score depends on the scoring matrix that was used. In general longer alignments tend to have a higher score. A high score in combination with a high identity percentage tends to indicate a higher quality alignment.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_select_query_sequence</id>
+                            <title>BLAST query select box</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-04T09:06:37Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The 'select query sequence' checkbox allows you to select the sequence you submitted for further analysis. Example: you blasted a sequence and want to do a multiple alignment with the sequence you submitted and five other interesting hits.</p>
+
+<ul style="list-style-type:disc">
+    <li>Use the 'select query sequence' checkbox to select your query sequence. The query sequence identifier appears in the green bar at the bottom of the page.</li>
+    <li>Click on the checkboxes next to the five other hits of interest.</li>
+    <li>Click on the 'align' button in the green bar (bottom right). You get a multiple sequence alignment including your query sequence and the five interesting BLAST hits you selected.</li>
+</ul>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_query</id>
+                            <title>BLAST query</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-04T09:04:59Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>This shows you the query sequence that was used by BLAST, in fasta format, whatever you submitted a sequence or a UniProt identifier.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_program</id>
+                            <title>BLAST program</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-04T08:58:54Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>This gives you information on the BLAST program used (including the version and release date).</p>
+
+<ul style="list-style-type:disc">
+    <li>BlastP: search the protein database using a protein query (no translation)</li>
+    <li>BlastX: search the protein database using a translated nucleotide query. The submitted nucleotide sequence is translated in all 6 reading frames, before being compared to the protein database.</li>
+</ul>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>blast_post_filter</id>
+                            <title>Post BLAST filter</title>
+                            <author><name>uniprot</name></author>
+                            <published>2010-08-04T08:53:09Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The BLAST filter allows you to your BLAST results to specific subsets, i.e. by filtering by database section or taxonomy. When doing a BLAST against UniRef, you can also show only the seed sequence annotation. The filter can be removed by clicking on the reset button.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>seed-sequence</id>
+                            <title>Seed sequence</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-03-19T23:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            <category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The seed sequence is the longest sequence in a cluster.</p>
+
+    <p>The UniRef databases are generated in a hierarchical fashion where:</p>
+    <ul>
+     <li>UniRef100 clusters are generated first using sequences
+      from UniProtKB and UniParc databases</li>
+     <li>UniRef90 clusters are generated using UniRef100
+      seed sequences (longest sequence in a cluster)</li>
+     <li>UniRef50 clusters are generated using
+      UniRef90 seed sequences</li>
+    </ul>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>representative-sequence</id>
+                            <title>Representative sequence</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-03-19T23:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            <category term="uniref"/>
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The representative sequence is the top sequence in a cluster.</p>
+
+    <p>All the proteins in each cluster are ranked to facilitate
+    the selection of a biologically relevant representative for the cluster.
+    The representative sequence (ranked first) is selected
+    based on the following criteria: </p>
+
+    <ol>
+     <li>quality of annotation: order of preference is a member
+      from UniProtKB/Swiss-Prot then UniProtKB/TrEMBL and last is UniParc</li>
+     <li>meaningful name: members with protein names that do not
+      contain words such as hypothetical, probable etc. are preferred</li>
+     <li>organism: entries from model organisms are preferred</li>
+     <li>sequence length: longest sequence is preferred</li>
+    </ol>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>checksum</id>
+                            <title>Sequence checksum</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-03-02T23:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The checksum is a form of redundancy check that is calculated
+     from the sequence. It is useful for tracking sequence updates.</p>
+
+    <p>It should be noted that while, in theory, two different sequences could
+     have the same checksum value, the likelihood that this would happen
+     is extremely low.</p>
+
+    <p>However UniProtKB may contain entries with identical sequences in case
+     of multiple genes (paralogs).</p>
+
+    <p>The checksum is computed as the sequence 64-bit Cyclic Redundancy Check value (CRC64)
+     using the generator polynomial: x<sup>64</sup> + x<sup>4</sup> + x<sup>3</sup> + x + 1.
+     The algorithm is described in the ISO 3309 standard.
+    </p>
+
+    <p class="publication">Press W.H., Flannery B.P., Teukolsky S.A. and Vetterling W.T.<br/>
+     <strong>Cyclic redundancy and other checksums</strong><br/>
+     <a href="http://www.nrbook.com/b/bookcpdf.php">Numerical recipes in C 2nd ed., pp896-902, Cambridge University Press (1993)</a>)</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>Web resources</id>
+                            <title>Web resources</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-01-22T23:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    CC WEB RESOURCE
+    <p>Description of a cross-reference to a network database
+    or resource for a specific protein</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>FT CHAIN</id>
+                            <title>Chain</title>
+                            <author><name>uniprot</name></author>
+                            <published>2006-09-29T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>The extent of a polypeptide chain in the mature protein.</p>
+    <p>In reviewed entries, it is present:</p>
+    <ol>
+     <li>For proteins that are not processed (those for which the
+     mature protein sequence corresponds to the translated cDNA
+     sequence) the CHAIN covers the whole protein sequence.</li>
+     <li>For processed proteins, it describes the mature part of
+     the protein once preprotein parts such as propeptides and signal
+     sequences have been removed</li>
+    </ol>
+    <p>For TrEMBL, it is present only in those entries where the
+    submitters to the nucleotide sequence databases have provided this
+    information for processed proteins.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>FT DOMAIN</id>
+                            <title>Domain</title>
+                            <author><name>uniprot</name></author>
+                            <published>2006-09-29T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Extent of a domain, which is defined as a specific combination
+    of secondary structures organized into a characteristic
+    three-dimensional structure or fold.</p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO ic</id>
+                            <title>IC: Inferred by Curator</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred by Curator</p>
+
+<p>Used for cases where an annotation is not supported by any evidence but can be reasonably inferred by a curator from other GO annotations for which evidence<br/>is available.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#ic">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO iba</id>
+                            <title>IBA: Inferred from Biological aspect of Ancestor</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-07-11T09:41:46Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Biological aspect of Ancestor</p>
+
+<p>A type of phylogenetic evidence whereby an aspect of a descendent is inferred through the characterization of an aspect of a ancestral gene.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#iba">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO ibd</id>
+                            <title>IBD: Inferred from Biological aspect of Descendent</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-07-11T09:44:49Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Biological aspect of Descendant</p>
+
+<p>A type of phylogenetic evidence whereby an aspect of an ancestral gene is inferred through the characterization of an aspect of a descendant gene.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#ibd">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO ida</id>
+                            <title>IDA: Inferred from Direct Assay</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Direct Assay</p>
+
+<p>Used to indicate a direct assay for the function, process or component indicated by the GO term.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#ida">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO iea</id>
+                            <title>IEA: Inferred from Electronic Annotation</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Electronic Annotation</p>
+
+<p>Used for annotations that depend directly on computation or automated transfer of annotations from a database. These annotations have not been manually checked to verify their accuracy.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#iea">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO iep</id>
+                            <title>IEP: Inferred from Expression Pattern</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Expression Pattern</p>
+
+<p>Covers cases where the annotation is inferred from the timing or location of expression of a gene.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#iep">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO igc</id>
+                            <title>IGC: Inferred from Genomic Context</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Genomic Context</p>
+
+<p>Used when information about the genomic context of a gene product forms part of the evidence for a particular annotation. Genomic context includes, but is not limited to, such things as identity of the genes neighboring the gene product in question (i.e. synteny), operon structure, and phylogenetic or other whole genome analysis.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#igc">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO igi</id>
+                            <title>IGI: Inferred from Genetic Interaction</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Genetic Interaction</p>
+
+<p>Used to describe "traditional" genetic interactions such as suppressors and synthetic lethals as well as other techniques such as functional complementation, rescue experiments, or inferences about a gene drawn from the phenotype of a mutation in a different gene.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#igi">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO ikr</id>
+                            <title>IKR: Inferred from Key Residues</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-07-11T09:47:35Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Key Residues</p>
+
+<p>A type of phylogenetic evidence characterized by the loss of key sequence residues.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#ikr">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO imp</id>
+                            <title>IMP: Inferred from Mutant Phenotype</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Mutant Phenotype</p>
+
+<p>Describes annotations that are concluded from looking at variations or changes in a gene product such as mutations or abnormal levels and includes techniques such as knockouts, overexpression, anti-sense experiments and use of specific protein inhibitors.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#imp">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO ipi</id>
+                            <title>IPI: Inferred from Physical Interaction</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Physical Interaction</p>
+
+<p>Covers physical interactions between the gene product of interest and another molecule (or ion, or complex).</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#ipi">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO ird</id>
+                            <title>IRD: Inferred from Rapid Divergence</title>
+                            <author><name>uniprot</name></author>
+                            <published>2011-07-11T09:49:40Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Rapid Divergence</p>
+
+<p>A type of phylogenetic evidence characterized by rapid divergence from ancestral sequence.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#ird">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO iss</id>
+                            <title>ISS: Inferred from Sequence or Structural Similarity</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Sequence or Structural Similarity<br/>Used for any analysis based on sequence alignment, structure comparison, or evaluation of sequence features such as composition.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#iss">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO nas</id>
+                            <title>NAS: Non-traceable Author Statement</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Non-traceable Author Statement</p>
+
+<p>Used for statements in the abstract, introduction or discussion of a paper that cannot be traced back to another publication.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#nas">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO nd</id>
+                            <title>ND: No biological Data available</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>No biological Data available</p>
+
+<p>Used for annotations to the three GO root terms "molecular_function", "biological_process", or "cellular_component". This reference documents the fact that a database curator has reviewed the literature describing a gene product but found no biologically useful information relating to the ontology in question (molecular function, biological process, or cellular component) as of the date<br/>indicated.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#nd">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO rca</id>
+                            <title>RCA: inferred from Reviewed Computational Analysis</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Inferred from Reviewed Computational Analysis</p>
+
+<p>Used for annotations based on a non-sequence-based computational method where the results have been reviewed by an author or a curator.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#rca">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry><entry>
+                            <id>GO tas</id>
+                            <title>TAS: Traceable Author Statement</title>
+                            <author><name>uniprot</name></author>
+                            <published>2007-05-31T00:00:00Z</published>
+                            <updated>2018-04-10T17:12:54Z</updated>
+                            
+                            
+                            <content type="xhtml">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>Traceable Author Statement</p>
+
+<p>Used for information from review articles where the original experiments are traceable through that article and also for information from text books or dictionaries.</p>
+
+<p>More information in the <a href="http://geneontology.org/page/guide-go-evidence-codes#tas">GO evidence code guide</a></p>
+                                </div>
+                            </content>
+                            
+                        </entry>
+        </feed>

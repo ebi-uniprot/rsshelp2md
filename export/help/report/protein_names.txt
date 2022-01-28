@@ -1,0 +1,13 @@
+protein_names
+---
+Dead links
+http://www.uniprot.org/docs/allergen
+http://www.uniprot.org/docs/International%5FProtein%5FNomenclature%5FGuidelines.pdf
+
+Dead anchor tags
+http://www.uniprot.org/uniprot/P01189#names_and_taxonomy
+http://www.uniprot.org/uniprot/P27708#names_and_taxonomy
+
+Number tables converted to Markdown
+1
+

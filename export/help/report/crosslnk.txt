@@ -1,0 +1,25 @@
+crosslnk
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P36503#ptm_processing
+http://www.uniprot.org/uniprot/P36499#ptm_processing
+http://www.uniprot.org/uniprot/O07623#ptm_processing
+http://www.uniprot.org/uniprot/P16893#ptm_processing
+http://www.uniprot.org/uniprot/P08697#ptm_processing
+http://www.uniprot.org/uniprot/P02671#ptm_processing
+http://www.uniprot.org/uniprot/P02679#ptm_processing
+http://www.uniprot.org/uniprot/Q04119#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P62990#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/Q9H2X6#ptm_processing
+http://www.uniprot.org/uniprot/P63165#ptm_processing
+http://www.uniprot.org/uniprot/Q9H1Y0#ptm_processing
+http://www.uniprot.org/uniprot/O94817#ptm_processing
+http://www.uniprot.org/uniprot/Q94AH6#ptm_processing
+http://www.uniprot.org/uniprot/Q9SHE7#ptm_processing
+http://www.uniprot.org/uniprot/P02671#ptm_processing
+http://www.uniprot.org/uniprot/P08697#ptm_processing
+http://www.uniprot.org/uniprot/P36503#ptm_processing
+http://www.uniprot.org/uniprot/P14046#ptm_processing
+http://www.uniprot.org/uniprot/Q9MYY8#ptm_processing
+http://www.uniprot.org/uniprot/P00372#ptm_processing
+

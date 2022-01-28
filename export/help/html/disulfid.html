@@ -1,0 +1,179 @@
+<div>
+ <p>
+  This subsection of the PTM / Processing":/help/ptm_processing_section section describes the positions of cysteine residues participating in disulfide bonds.
+ </p>
+ <p>
+  Disulfide bond formation generally occurs in the endoplasmic reticulum by oxidation. Therefore disulfide bonds are mostly found in extracellular, secreted and periplasmic proteins, although they can also be formed in cytoplasmic proteins under conditions of oxidative stress.
+ </p>
+ <p>
+  In UniProtKB, we annotate intrachain and interchain disulfide bonds and redox-active centres. We annotate both experimentally determined disulfide bonds and predicted disulfide bonds which occur in specific protein families.
+ </p>
+ <p>
+  If the position of one amino acid involved in the bond is not known, a question mark may be written in the position field instead. It is frequently the case for fragments, when one of the Cys residues is missing.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P10846#ptm%5Fprocessing">
+   P10846
+  </a>
+ </p>
+ <h3 id="1__Intrachain_disulfide_bonds">
+  1. Intrachain disulfide bonds
+ </h3>
+ <p>
+  Intrachain disulfide bonds are formed between two cysteines within the same protein chain.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q43495#ptm_processing">
+   Q43495
+  </a>
+ </p>
+ <p>
+  Intrachain disulfide bonds are usually conserved and can be propagated 'By similarity' to homologous proteins.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P18844#ptm%5Fprocessing">
+   P18844
+  </a>
+ </p>
+ <p>
+  In some cases, it is unclear which cysteines participate in disulfide bond formation. In these cases, we indicate the possible alternate bonds which form using the syntax 'or C-X with C-Y'.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q9U8R2#ptm%5Fprocessing">
+   Q9U8R2
+  </a>
+ </p>
+ <p>
+  When available, specific information regarding the properties or the function of a specific disulfide bond is indicated.
+  <br/>
+  Examples:
+  <a href="http://www.uniprot.org/uniprot/P19880#ptm_processing">
+   P19880
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/P09478#ptm_processing">
+   P09478
+  </a>
+ </p>
+ <h3 id="2__Interchain_disulfide_bonds__between_homo__and_heterodimers_">
+  2. Interchain disulfide bonds (between homo- and heterodimers)
+ </h3>
+ <p>
+  Interchain disulfide bonds are formed between two cysteines of individual chains of the same protein or between two cysteines of distinct proteins. We explicitly describe interchain disulfide bonds giving the name of the second protein or chain (if it is different), and specifying the position of the second cysteine within that protein or chain.
+ </p>
+ <h4 id="a__Disulfide_bonds_between_homodimers">
+  a. Disulfide bonds between homodimers
+ </h4>
+ <p>
+  Interchain disulfide bonds within a homodimer are annotated as 'Interchain' in the 'Description' field, not specifying the name of the partner protein. The disulfide linkage is also described in the '
+  <a href="http://www.uniprot.org/manual/subunit">
+   Subunit
+  </a>
+  ' subsection of the 'Interaction' section.
+  <br/>
+  Examples:
+  <a href="http://www.uniprot.org/uniprot/P25703#ptm_processing">
+   P25703
+  </a>
+  (Parallel homodimer),
+  <a href="http://www.uniprot.org/uniprot/P83658#ptm_processing">
+   P83658
+  </a>
+  (Antiparallel homodimer)
+ </p>
+ <h4 id="b__Disulfide_bonds_between_2_chains_or_peptides_from_the_same_protein_precursor">
+  b. Disulfide bonds between 2 chains or peptides from the same protein precursor
+ </h4>
+ <p>
+  Disulfide bonds formed between 2 proteolytically generated parts of the same protein are considered as interchain. The 2 chains are named in the 'Description' field using the syntax 'between X and Y'. Note that the names of all cleavage products are given in the '
+  <a href="http://www.uniprot.org/manual/protein_names">
+   Protein names
+  </a>
+  ' subsection of the
+  <a href="http://www.uniprot.org/help/names%5Fand%5Ftaxonomy%5Fsection">
+   Names and taxonomy
+  </a>
+  section.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P11140#ptm_processing">
+   P11140
+  </a>
+ </p>
+ <p>
+  A few proteins form an intrachain disulfide bond when monomeric, and an interchain disulfide bond when dimeric.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P68432#ptm_processing">
+   P68432
+  </a>
+ </p>
+ <h4 id="c__Disulfide_bonds_between_heterodimers">
+  c. Disulfide bonds between heterodimers
+ </h4>
+ <p>
+  Disulfide bonds between cysteines of distinct proteins are described in a complementary way in both entries involved.
+  <br/>
+  For example, botrocetin alpha and beta chains form a heterodimer linked by a disulfide bond, this bond is described in the entry of botrocetin alpha chain and in that of the beta chain.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P22030#ptm_processing">
+   P22030
+  </a>
+  (alpha chain),
+  <a href="http://www.uniprot.org/uniprot/P22029#ptm_processing">
+   P22029
+  </a>
+  (beta chain).
+ </p>
+ <p>
+  If the position of the cysteine on the partner chain is unknown, we only indicate the name of the partner protein.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/O35348#ptm_processing">
+   O35348
+  </a>
+ </p>
+ <p>
+  In some cases, it is unclear which cysteines of the partner protein participate in disulfide bond formation; in these cases, we indicate the possible cysteines involved in the bond using the syntax 'or C-X with C-Y'.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/P09930#ptm_processing">
+   P09930
+  </a>
+ </p>
+ <h3 id="3__Redox_active_centers">
+  3. Redox-active centers
+ </h3>
+ <p>
+  Some disulfide bonds constitute a redox-active center and participate directly in redox reactions, usually via reversible oxidation of a
+  <br/>
+  cysteine residue leading to a cysteine-sulfenic acid.
+  <br/>
+  Examples:
+  <a href="http://www.uniprot.org/uniprot/Q96HE7#ptm_processing">
+   Q96HE7
+  </a>
+  ,
+  <a href="http://www.uniprot.org/uniprot/Q06530#ptm_processing">
+   Q06530
+  </a>
+ </p>
+ <p>
+  Related keyword:
+  <a href="http://www.uniprot.org/keywords/676">
+   Redox-active center
+  </a>
+ </p>
+ <h3 id="4__Annotation_of_predicted_disulfide_bonds">
+  4. Annotation of predicted disulfide bonds
+ </h3>
+ <p>
+  Some domains, such as Ig-like and C-lectin domains, are known to contain intrachain disulfide bonds formed between conserved cysteines. The positions of the potential disulfide bonds can therefore be predicted based on the alignment of individual sequences with the profiles describing such domains. These predicted disulfide bonds are tagged with the qualifier 'By similarity'.
+  <br/>
+  Example:
+  <a href="http://www.uniprot.org/uniprot/Q865R3#ptm_processing">
+   Q865R3
+  </a>
+ </p>
+</div>

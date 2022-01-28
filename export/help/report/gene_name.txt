@@ -1,0 +1,14 @@
+gene_name
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q04609#names_and_taxonomy
+http://www.uniprot.org/uniprot/P44942#names%5Fand%5Ftaxonomy
+http://www.uniprot.org/uniprot/Q50496#names%5Fand%5Ftaxonomy
+http://www.uniprot.org/uniprot/Q8XBC7#names%5Fand%5Ftaxonomy
+http://www.uniprot.org/uniprot/Q50496#names%5Fand%5Ftaxonomy
+http://www.uniprot.org/uniprot/P32634#names_and_taxonomy
+http://www.uniprot.org/uniprot/O14339#names_and_taxonomy
+http://www.uniprot.org/uniprot/P34296#names_and_taxonomy
+http://www.uniprot.org/uniprot/Q9VIM5#names_and_taxonomy
+http://www.uniprot.org/uniprot/P68431#names%5Fand%5Ftaxonomy
+

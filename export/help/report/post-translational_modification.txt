@@ -1,0 +1,6 @@
+post-translational_modification
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/P17590#ptm%5Fprocessing
+http://www.uniprot.org/uniprot/P56524#ptm%5Fprocessing
+

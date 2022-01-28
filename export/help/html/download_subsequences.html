@@ -1,0 +1,67 @@
+<div>
+ <h4 id="Download_the_sequences_of_all_annotated_disintegrin_domains">
+  Download the sequences of all annotated disintegrin domains
+ </h4>
+ <p>
+  Run your query, e.g. to retrieve the UniProtKB entries annotated to contain
+  <a href="http://www.uniprot.org/uniprot/?query=annotation%3a%28type%3a%22positional+domain%22+disintegrin%29&amp;sort=score&amp;format=*">
+   disintegrin domains
+  </a>
+  , (or alternatively, with a
+  <a href="http://www.uniprot.org/uniprot/?query=ADA18_HUMAN+or+ADA19_HUMAN+or+ADA21_HUMAN+or+ADA22_HUMAN+or+ADA23_HUMAN&amp;sort=score">
+   list of identifiers
+  </a>
+  ).
+ </p>
+ <p>
+  Then click on "Download" and choose to download the results in
+  <a href="http://biowiki.org/GffFormat">
+   GFF format
+  </a>
+  .
+  <br/>
+  You can modify the GFF file as follows:
+ </p>
+ <p>
+  Keep only the lines containing your domain/region, (e.g. "Disintegrin", "Cytoplasmic" or "Transit") and ignore all other lines (e.g. using grep). These lines include information about extent of the domains/regions.
+ </p>
+ <p>
+  Transform the relevant lines (e.g. using a scripting language, or a word processor) from
+ </p>
+ <pre>Q9R158 UniProtKB Domain 392 478 . . . Note=Disintegrin
+Q10741 UniProtKB Domain 457 551 . . . Note=Disintegrin
+O14672 UniProtKB Domain 457 551 . . . Note=Disintegrin
+</pre>
+ <p>
+  to
+  <pre>Q9R158[392-478]
+Q10741[457-551]
+O14672[457-551]
+</pre>
+ </p>
+ <p>
+  and ignore all other lines.
+ </p>
+ <p>
+  You will then be able to use the
+  <a href="http://www.uniprot.org/uploadlists">
+   Retrieve/ID mapping
+  </a>
+  service to upload the file you obtained from modifying the GFF, and retrieve the corresponding entries. To download the subsequences, select the format "FASTA (source list)" from the download menu.
+ </p>
+ <p>
+  If you only have a short list of entries, you can also select the domains manually from the entry views by clicking on "Add to basket" at the right hand side of the feature descriptions in the section "Family and domains" of these entries. When you have finished selecting your domains, open the
+  <a href="http://www.uniprot.org/help/basket">
+   basket
+  </a>
+  and click on "Download".
+ </p>
+ <h4 id="Download_the_sequences_of_all_mature_chains_or_peptides">
+  Download the sequences of all mature chains or peptides
+ </h4>
+ <p>
+  There is no pre-computed database carrying the sequence data for mature chains or peptides.
+  <br/>
+  However, for any given query or even for the complete database, you can proceed as described above and download the gff format and when following the subsequent steps, just replace "Domain" by "Chain" and / or "Peptide".
+ </p>
+</div>

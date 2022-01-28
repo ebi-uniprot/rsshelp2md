@@ -1,0 +1,258 @@
+<div>
+ <h2>
+  Headlines
+ </h2>
+ <h3>
+  UniProtKB/Swiss-Prot major release (44.0)
+ </h3>
+ <p>
+  Release 44.0 of Swiss-Prot contains 153'825 sequence entries, comprising
+      56'599'343  amino acids abstracted from 117'387 references.
+      6'633 sequences have been added since release 43, the sequence data of
+      582 existing entries has been updated and the annotations of
+      139'855 entries have been revised. This represents an increase of 4%.
+ </p>
+ <p>
+  Many improvements were carried out in the last 3 months at the level of the
+      GN, RX, CC and FT lines.
+ </p>
+ <p>
+  <a href="http://www.expasy.org/txt/old-rel/relnotes.44.htm">
+   Full statistics and release notes
+  </a>
+ </p>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Incorporation of new entries into the biweekly UniProtKB releases of Swiss-Prot and TrEMBL
+ </h3>
+ <p>
+  The files provided in the ftp directory /databases/uniprot/knowledgebase/new/
+(and known as TrEMBL_New) have been removed. These files contained new sequence
+entries and sequences to be used to update existing Swiss-Prot or TrEMBL entries.
+Until now, these entries were integrated into Swiss-Prot and TrEMBL mostly only
+at full releases of these databases. We now incorporate these new and updated
+sequences into the biweekly UniProtKB releases of Swiss-Prot and TrEMBL
+(/databases/uniprot/knowledgebase/uniprot_sprot* and
+/databases/uniprot/knowledgebase/uniprot_trembl*), and, therefore, the
+distribution of these files is no longer necessary.
+ </p>
+ <h3>
+  New format for the GN (Gene Name) line
+ </h3>
+ <p>
+  We have introduced a new format for the GN (Gene Name) line and all gene names
+have been converted to mixed case. The new format is more structured than the
+previous one, in order to distinguish between three types of information:
+ </p>
+ <ol>
+  <li>
+   <strong>
+    Gene names
+   </strong>
+   (a.k.a gene symbols). The names(s) used to represent a gene.
+   As there can be more than one name assigned to a gene. We make a distinction
+   between the one which we believe should be used as the official gene name
+   and the other names which are listed as "Synonyms".
+  </li>
+  <li>
+   <strong>
+    Ordered locus names
+   </strong>
+   (a.k.a. OLN, ORF numbers, CDS numbers or Gene numbers).
+   A name used to represent an ORF in a completely sequenced genome or
+   chromosome.  It is generally based on a prefix representing the organism and
+   a number which usually represents the sequential ordering of genes on the
+   chromosome. Depending on the genome sequencing center, numbers are
+   attributed only to protein-coding genes, or also to pseudogenes, or also to
+   tRNAs and other features.
+   Examples: HI0934, Rv3245c, At5g34500, YER456W.
+  </li>
+  <li>
+   <strong>
+    ORF names
+   </strong>
+   (a.k.a. Sequencing names or Contig names or Temporary ORFNames).
+   A name temporarily attributed by a sequencing project to an open reading
+   frame.  This name is generally based on a cosmid numbering system.
+   Examples: MtCY277.28c, SYGP-ORF50, SpBC2F12.04, C06E1.1, CG10954.
+  </li>
+ </ol>
+ <p>
+  The new format of the GN line is:
+ </p>
+ <pre>
+<strong>GN   Name=&lt;name&gt;; Synonyms=&lt;name1&gt;[, &lt;name2&gt;...]; OrderedLocusNames=&lt;name1&gt;[, &lt;name2&gt;...];
+GN   ORFNames=&lt;name1&gt;[, &lt;name2&gt;...];</strong>
+</pre>
+ <p>
+  None of the above four tokens are mandatory. But a
+  <strong>
+   "Synonyms"
+  </strong>
+  token can
+only be present if there is a
+  <strong>
+   "Name"
+  </strong>
+  token.
+ </p>
+ <p>
+  If there is more than one gene, GN line blocks for the different genes
+are separated by the following line:
+ </p>
+ <pre>
+<strong>GN   and</strong>
+</pre>
+ <p>
+  Wrapping is done preferentially at a semicolon, otherwise at a comma.
+ </p>
+ <p>
+  Examples:
+ </p>
+ <pre>
+GN   Name=atpG; Synonyms=uncG, papC;
+GN   OrderedLocusNames=b3733, c4659, z5231, ECs4675, SF3813, S3955;
+</pre>
+ <pre>
+GN   ORFNames=SPAC1834.11c;
+</pre>
+ <pre>
+GN   Name=cysA1; Synonyms=cysA; OrderedLocusNames=Rv3117, MT3199;
+GN   ORFNames=MTCY164.27;
+GN   and
+GN   Name=cysA2; OrderedLocusNames=Rv0815c, MT0837; ORFNames=MTV043.07c;
+</pre>
+ <h3>
+  Cross-references to IntAct
+ </h3>
+ <p>
+  We have added cross-references to
+  <a href="http://www.ebi.ac.uk/intact/">
+   IntAct
+  </a>
+  , the Protein interaction database and analysis system
+available at
+  <a href="http://www.ebi.ac.uk/intact/">
+   http://www.ebi.ac.uk/intact/
+  </a>
+  .
+ </p>
+ <p>
+  The identifiers of the appropriate DR line are:
+ </p>
+ <table>
+  <tr>
+   <th>
+    Resource abbreviation
+   </th>
+   <td>
+    IntAct
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Resource identifier
+   </th>
+   <td>
+    The Swiss-Prot primary AC number for the protein. This is used by IntAct
+  as a link to all the interactions in which that protein is involved.
+   </td>
+  </tr>
+  <tr>
+   <th>
+    Example
+   </th>
+   <td>
+    <pre><a href="http://www.uniprot.org/uniprot/P14653#section_x-ref">P14653</a>:
+DR   IntAct; P14653; -.</pre>
+   </td>
+  </tr>
+ </table>
+ <h3>
+  Change in cross-references to Reactome (former GK)
+ </h3>
+ <p>
+  The Genome Knowledgebase (GK) was renamed to
+  <a href="http://www.reactome.org/">
+   Reactome
+  </a>
+  .
+We changed the database name in the relevant cross-references (DR lines) accordingly.
+ </p>
+ <p>
+  Example:
+ </p>
+ <pre>DR   Reactome; Q9BZJ0; -.</pre>
+ <h3>
+  Changes concerning the
+  <a href="http://www.uniprot.org/docs/ptmlist">
+   controlled vocabulary for PTMs
+  </a>
+ </h3>
+ <p>
+  We are continuously overhauling the annotation of post-translational modifications (PTMs).
+For the feature key
+  <a href="http://www.uniprot.org/manual/mod_res">
+   MOD_RES
+  </a>
+  , the new introduced
+controlled vocabularies for PTMs are:
+ </p>
+ <ul>
+  <li>
+   <p>
+    Hydroxylation: All entries with annotated hydroxylation sites have the keyword
+    <a href="http://www.uniprot.org/keywords/KW-0379">
+     Hydroxylation
+    </a>
+    .
+   </p>
+   <dl>
+    <dd>
+     <pre>
+ 3,4-dihydroxyarginine
+ 3,5-dihydroxylysine
+</pre>
+    </dd>
+   </dl>
+  </li>
+  <li>
+   <p>
+    Unidentified N-terminal blocking modifications:
+   </p>
+   <dl>
+    <dd>
+     <pre>
+ Blocked amino end (Ala)
+ Blocked amino end (Arg)
+ Blocked amino end (Asp)
+ Blocked amino end (Cys)
+ Blocked amino end (Gln)
+ Blocked amino end (Glu)
+ Blocked amino end (Gly)
+ Blocked amino end (Ile)
+ Blocked amino end (Met)
+ Blocked amino end (Pro)
+ Blocked amino end (Ser)
+ Blocked amino end (Thr)
+ Blocked amino end (Val)
+</pre>
+    </dd>
+   </dl>
+  </li>
+  <li>
+   <p>
+    Unidentified N-terminal blocking modifications:
+   </p>
+   <dl>
+    <dd>
+     <pre>
+ Blocked carboxyl end (His)
+</pre>
+    </dd>
+   </dl>
+  </li>
+ </ul>
+</div>

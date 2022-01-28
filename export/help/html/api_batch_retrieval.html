@@ -1,0 +1,60 @@
+<div>
+ <p>
+  Entries can be retrieved in batch by querying our
+  <a href="http://www.uniprot.org/help/uploadlists">
+   Retrieve/ID mapping service
+  </a>
+  with a list of UniProt identifers. Here is a
+  <a href="http://www.uniprot.org/help/api_batch_retrieval#batch_retrieval_perl_example">
+   Perl example
+  </a>
+  .
+ </p>
+ <div id="batch_retrieval_perl_example" style="display: none;">
+  <pre>use strict;
+use warnings;
+use LWP::UserAgent;
+
+my $list = $ARGV[0]; # File containg list of UniProt identifiers.
+
+my $base = 'https://www.uniprot.org';
+my $tool = 'uploadlists';
+
+my $contact = ''; # Please set a contact email address here to help us debug in case of problems (see https://www.uniprot.org/help/privacy).
+my $agent = LWP::UserAgent-&gt;new(agent =&gt; "libwww-perl $contact");
+push @{$agent-&gt;requests_redirectable}, 'POST';
+
+my $response = $agent-&gt;post("$base/$tool/",
+                            [ 'file' =&gt; [$list],
+                              'format' =&gt; 'txt',
+                              'from' =&gt; 'ACC+ID',
+                              'to' =&gt; 'ACC',
+                              # If you want tab-separated output instead of full entries, specify 'tab' instead of 'txt' above
+                              # and include the following optional line to include your preferred set of columns
+                              # instead of the default from-to output:
+                              'columns' =&gt; 'id,entry name,reviewed,protein names,genes,organism,length,database(RefSeq),go(molecular function)',
+
+                            ],
+                            'Content_Type' =&gt; 'form-data');
+
+while (my $wait = $response-&gt;header('Retry-After')) {
+  print STDERR "Waiting ($wait)...\n";
+  sleep $wait;
+  $response = $agent-&gt;get($response-&gt;base);
+}
+
+$response-&gt;is_success ?
+  print $response-&gt;content :
+  die 'Failed, got ' . $response-&gt;status_line .
+    ' for ' . $response-&gt;request-&gt;uri . "\n";
+</pre>
+ </div>
+ <p>
+  See also:
+  <br/>
+  <a href="http://www.uniprot.org/help/api">
+   REST API - Access the UniProt website programmatically
+  </a>
+  - batch retrieval, ID mapping, queries, downloads, etc
+ </p>
+</div>

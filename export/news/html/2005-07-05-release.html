@@ -1,0 +1,122 @@
+<div>
+ <h2>
+  UniProtKB News
+ </h2>
+ <h3>
+  Modified wording of reldate.txt in UniProt Knowledgebase ftp directories
+ </h3>
+ <p>
+  The official names for the manually and automatically annotated sections
+of the UniProt Knowledgebase are
+  <strong>
+   UniProtKB/Swiss-Prot
+  </strong>
+  and
+  <strong>
+   UniProtKB/TrEMBL
+  </strong>
+  .
+ </p>
+ <p>
+  To reflect this, we have changed the wording of the reldate.txt file in UniProt
+Knowledgebase ftp directories:
+ </p>
+ <p>
+  from
+ </p>
+ <pre>
+UniProt Release 5.4 consists of:
+Swiss-Prot Release 47.4 of 05-Jul-2005
+TrEMBL Release 30.4 of 05-Jul-2005
+</pre>
+ <p>
+  to
+ </p>
+ <pre>
+UniProt Knowledgebase Release 5.4 consists of:
+UniProtKB/Swiss-Prot Release 47.4 of 05-Jul-2005
+UniProtKB/TrEMBL Release 30.4 of 05-Jul-2005
+</pre>
+ <h3>
+  Format change in the dbxref.txt document file
+ </h3>
+ <p>
+  The
+  <a href="http://www.uniprot.org/docs/dbxref">
+   dbxref.txt
+  </a>
+  file lists the names and abbreviations
+and URLs of all databases cross-referenced in the UniProt Knowledgebase.
+We have added a new field, "Note", which is optional.
+This field will be used, among others, to list obsolete abbreviations for the cross-referenced
+databases.
+ </p>
+ <p>
+  Example:
+ </p>
+ <pre>
+Abbrev: MGI
+Name  : Mouse genome database (MGD) from Mouse Genome Informatics (MGI)
+LinkTp: Explicit
+Server: http://www.informatics.jax.org/
+Db_URL: www.informatics.jax.org/searches/accession_report.cgi?id=%s
+<strong>Note  : Obsolete abbreviation: MGD</strong>
+</pre>
+ <h3>
+  Multiple comment line (CC) topics COFACTOR
+ </h3>
+ <p>
+  From now on, the CC line topic COFACTOR can occur more than once per
+entry. When an enzyme can bind several cofactors, each of them is
+indicated in a separate topic.
+ </p>
+ <p>
+  Example:
+ </p>
+ <pre>
+CC   -!- COFACTOR: Binds 1 2Fe-2S cluster per subunit (By similarity).
+CC   -!- COFACTOR: Binds 1 Fe(2+) ion per subunit (By similarity).
+</pre>
+ <pre>
+CC   -!- COFACTOR: Binds 5 heme groups covalently per monomer.
+CC   -!- COFACTOR: Binds 1 calcium ion per monomer.
+</pre>
+ <h3>
+  Changes concerning keywords
+ </h3>
+ <p>
+  New keyword:
+ </p>
+ <ul>
+  <li>
+   <a href="http://www.uniprot.org/keywords/KW-0930">
+    Antiviral protein
+   </a>
+  </li>
+ </ul>
+ <p>
+  Deleted keywords:
+ </p>
+ <ul>
+  <li>
+   Testosterone
+  </li>
+  <li>
+   Submandibular gland
+  </li>
+ </ul>
+ <h3>
+  Changes concerning the
+  <a href="http://www.uniprot.org/docs/ptmlist">
+   controlled vocabulary for PTMs
+  </a>
+ </h3>
+ <p>
+  New term for the feature key 'CROSSLNK':
+ </p>
+ <ul>
+  <li>
+   2-tetrahydro-2-pyridyl-5-imidazolinone (Lys-Gly)
+  </li>
+ </ul>
+</div>

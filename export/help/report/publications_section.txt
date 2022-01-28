@@ -1,0 +1,13 @@
+publications_section
+---
+Dead links
+Anchor tag: additional_bibliography
+Anchor tag: community_bibliography
+
+Dead anchor tags
+http://www.uniprot.org/help/publications%5Fsection#additional%5Fbibliography
+http://www.uniprot.org/help/publications%5Fsection#community%5Fbibliography
+
+Number tables converted to Markdown
+1
+

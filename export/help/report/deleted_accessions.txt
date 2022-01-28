@@ -1,0 +1,6 @@
+deleted_accessions
+---
+Dead links
+https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/delac%5Fsp.txt
+https://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/docs/delac%5Ftr.txt.gz
+

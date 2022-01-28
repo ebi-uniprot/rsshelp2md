@@ -1,0 +1,5 @@
+canonical_nucleotide
+---
+Dead links
+http://www.uniprot.org/uniprot/?query=reviewed:yes+keyword:KW-0903+NOT+database:embl
+

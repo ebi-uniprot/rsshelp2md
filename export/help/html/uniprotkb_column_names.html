@@ -1,0 +1,1684 @@
+<div>
+ <p>
+  This documents lists the column names for programmatic (RESTful) access to tab-separated or Excel downloads of UniProtKB search results.
+ </p>
+ <p>
+  See also:
+  <br/>
+  <a href="http://www.uniprot.org/help/api">
+   How can I access resources on this website programmatically?
+  </a>
+  <br/>
+  <a href="http://www.uniprot.org/help/customize">
+   Customize display options
+  </a>
+  <br/>
+  <a href="https://insideuniprot.blogspot.com/2015/03/">
+   Customise and share your search results (UniProt blog)
+  </a>
+ </p>
+ <h3 id="Names___38__Taxonomy">
+  Names &amp; Taxonomy
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Entry
+   </td>
+   <td>
+    id
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Entry name
+   </td>
+   <td>
+    entry name
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Gene names
+   </td>
+   <td>
+    genes
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Gene names (primary)
+   </td>
+   <td>
+    genes(PREFERRED)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Gene names (synonym)
+   </td>
+   <td>
+    genes(ALTERNATIVE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Gene names (ordered locus)
+   </td>
+   <td>
+    genes(OLN)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Gene names (ORF)
+   </td>
+   <td>
+    genes(ORF)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Organism
+   </td>
+   <td>
+    organism
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Organism ID
+   </td>
+   <td>
+    organism-id
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Protein names
+   </td>
+   <td>
+    protein names
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Proteomes
+   </td>
+   <td>
+    proteome
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage
+   </td>
+   <td>
+    lineage(ALL)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Virus hosts
+   </td>
+   <td>
+    virus hosts
+   </td>
+  </tr>
+ </table>
+ <h3 id="Sequences">
+  Sequences
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Fragment
+   </td>
+   <td>
+    fragment
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Gene encoded by
+   </td>
+   <td>
+    encodedon
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Alternative products
+   </td>
+   <td>
+    comment(ALTERNATIVE PRODUCTS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Erroneous gene model prediction
+   </td>
+   <td>
+    comment(ERRONEOUS GENE MODEL PREDICTION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Erroneous initiation
+   </td>
+   <td>
+    comment(ERRONEOUS INITIATION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Erroneous termination
+   </td>
+   <td>
+    comment(ERRONEOUS TERMINATION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Erroneous translation
+   </td>
+   <td>
+    comment(ERRONEOUS TRANSLATION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Frameshift
+   </td>
+   <td>
+    comment(FRAMESHIFT)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Mass spectrometry
+   </td>
+   <td>
+    comment(MASS SPECTROMETRY)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Polymorphism
+   </td>
+   <td>
+    comment(POLYMORPHISM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    RNA editing
+   </td>
+   <td>
+    comment(RNA EDITING)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Sequence caution
+   </td>
+   <td>
+    comment(SEQUENCE CAUTION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Length
+   </td>
+   <td>
+    length
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Mass
+   </td>
+   <td>
+    mass
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Sequence
+   </td>
+   <td>
+    sequence
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Alternative sequence
+   </td>
+   <td>
+    feature(ALTERNATIVE SEQUENCE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Natural variant
+   </td>
+   <td>
+    feature(NATURAL VARIANT)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Non-adjacent residues
+   </td>
+   <td>
+    feature(NON ADJACENT RESIDUES)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Non-standard residue
+   </td>
+   <td>
+    feature(NON STANDARD RESIDUE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Non-terminal residue
+   </td>
+   <td>
+    feature(NON TERMINAL RESIDUE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Sequence conflict
+   </td>
+   <td>
+    feature(SEQUENCE CONFLICT)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Sequence uncertainty
+   </td>
+   <td>
+    feature(SEQUENCE UNCERTAINTY)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Sequence version
+   </td>
+   <td>
+    version(sequence)
+   </td>
+  </tr>
+ </table>
+ <h3 id="Function">
+  Function
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Absorption
+   </td>
+   <td>
+    comment(ABSORPTION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Active site
+   </td>
+   <td>
+    feature(ACTIVE SITE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Binding site
+   </td>
+   <td>
+    feature(BINDING SITE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Catalytic activity
+   </td>
+   <td>
+    comment(CATALYTIC ACTIVITY)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    ChEBI
+   </td>
+   <td>
+    chebi
+   </td>
+  </tr>
+  <tr>
+   <td>
+    ChEBI (Catalytic activity)
+   </td>
+   <td>
+    chebi(Catalytic activity)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    ChEBI (Cofactor)
+   </td>
+   <td>
+    chebi(Cofactor)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    ChEBI IDs
+   </td>
+   <td>
+    chebi-id
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Cofactor
+   </td>
+   <td>
+    comment(COFACTOR)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    DNA binding
+   </td>
+   <td>
+    feature(DNA BINDING)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    EC number
+   </td>
+   <td>
+    ec
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Enzyme regulation
+   </td>
+   <td>
+    comment(ENZYME REGULATION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Function [CC]
+   </td>
+   <td>
+    comment(FUNCTION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Kinetics
+   </td>
+   <td>
+    comment(KINETICS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Metal binding
+   </td>
+   <td>
+    feature(METAL BINDING)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Nucleotide binding
+   </td>
+   <td>
+    feature(NP BIND)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Pathway
+   </td>
+   <td>
+    comment(PATHWAY)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    pH dependence
+   </td>
+   <td>
+    comment(PH DEPENDENCE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Redox potential
+   </td>
+   <td>
+    comment(REDOX POTENTIAL)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Rhea ids
+   </td>
+   <td>
+    rhea-id
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Site
+   </td>
+   <td>
+    feature(SITE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Temperature dependence
+   </td>
+   <td>
+    comment(TEMPERATURE DEPENDENCE)
+   </td>
+  </tr>
+ </table>
+ <h3 id="Miscellaneous">
+  Miscellaneous
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Annotation score
+   </td>
+   <td>
+    annotation score
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Features
+   </td>
+   <td>
+    features
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Caution
+   </td>
+   <td>
+    comment(CAUTION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Miscellaneous [CC]
+   </td>
+   <td>
+    comment(MISCELLANEOUS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Keywords
+   </td>
+   <td>
+    keywords
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Matched text
+   </td>
+   <td>
+    context
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Protein existence
+   </td>
+   <td>
+    existence
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Tools
+   </td>
+   <td>
+    tools
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Reviewed
+   </td>
+   <td>
+    reviewed
+   </td>
+  </tr>
+ </table>
+ <h3 id="Interaction">
+  Interaction
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Subunit structure [CC]
+   </td>
+   <td>
+    comment(SUBUNIT)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Interacts with
+   </td>
+   <td>
+    interactor
+   </td>
+  </tr>
+ </table>
+ <h3 id="Expression">
+  Expression
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Developmental stage
+   </td>
+   <td>
+    comment(DEVELOPMENTAL STAGE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Induction
+   </td>
+   <td>
+    comment(INDUCTION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Tissue specificity
+   </td>
+   <td>
+    comment(TISSUE SPECIFICITY)
+   </td>
+  </tr>
+ </table>
+ <h3 id="Gene_Ontology__GO_">
+  Gene Ontology (GO)
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Gene ontology (GO)
+   </td>
+   <td>
+    go
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Gene ontology (biological process)
+   </td>
+   <td>
+    go(biological process)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Gene ontology (molecular function)
+   </td>
+   <td>
+    go(molecular function)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Gene ontology (cellular component)
+   </td>
+   <td>
+    go(cellular component)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Gene ontology IDs
+   </td>
+   <td>
+    go-id
+   </td>
+  </tr>
+ </table>
+ <h3 id="Pathology___38__Biotech">
+  Pathology &amp; Biotech
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Allergenic properties
+   </td>
+   <td>
+    comment(ALLERGEN)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Biotechnological use
+   </td>
+   <td>
+    comment(BIOTECHNOLOGY)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Disruption phenotype
+   </td>
+   <td>
+    comment(DISRUPTION PHENOTYPE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Involvement in disease
+   </td>
+   <td>
+    comment(DISEASE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Pharmaceutical use
+   </td>
+   <td>
+    comment(PHARMACEUTICAL)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Toxic dose
+   </td>
+   <td>
+    comment(TOXIC DOSE)
+   </td>
+  </tr>
+ </table>
+ <h3 id="Subcellular_location">
+  Subcellular location
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Subcellular location [CC]
+   </td>
+   <td>
+    comment(SUBCELLULAR LOCATION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Intramembrane
+   </td>
+   <td>
+    feature(INTRAMEMBRANE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Topological domain
+   </td>
+   <td>
+    feature(TOPOLOGICAL DOMAIN)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Transmembrane
+   </td>
+   <td>
+    feature(TRANSMEMBRANE)
+   </td>
+  </tr>
+ </table>
+ <h3 id="PTM___Processsing">
+  PTM / Processsing
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Post-translational modification
+   </td>
+   <td>
+    comment(PTM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Chain
+   </td>
+   <td>
+    feature(CHAIN)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Cross-link
+   </td>
+   <td>
+    feature(CROSS LINK)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Disulfide bond
+   </td>
+   <td>
+    feature(DISULFIDE BOND)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Glycosylation
+   </td>
+   <td>
+    feature(GLYCOSYLATION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Initiator methionine
+   </td>
+   <td>
+    feature(INITIATOR METHIONINE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Lipidation
+   </td>
+   <td>
+    feature(LIPIDATION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Modified residue
+   </td>
+   <td>
+    feature(MODIFIED RESIDUE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Peptide
+   </td>
+   <td>
+    feature(PEPTIDE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Propeptide
+   </td>
+   <td>
+    feature(PROPEPTIDE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Signal peptide
+   </td>
+   <td>
+    feature(SIGNAL)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Transit peptide
+   </td>
+   <td>
+    feature(TRANSIT)
+   </td>
+  </tr>
+ </table>
+ <h3 id="Structure">
+  Structure
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    3D
+   </td>
+   <td>
+    3d
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Beta strand
+   </td>
+   <td>
+    feature(BETA STRAND)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Helix
+   </td>
+   <td>
+    feature(HELIX)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Turn
+   </td>
+   <td>
+    feature(TURN)
+   </td>
+  </tr>
+ </table>
+ <h3 id="Publications">
+  Publications
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Mapped PubMed ID
+   </td>
+   <td>
+    citationmapping
+   </td>
+  </tr>
+  <tr>
+   <td>
+    PubMed ID
+   </td>
+   <td>
+    citation
+   </td>
+  </tr>
+ </table>
+ <h3 id="Date_of">
+  Date of
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Date of creation
+   </td>
+   <td>
+    created
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Date of last modification
+   </td>
+   <td>
+    last-modified
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Date of last sequence modification
+   </td>
+   <td>
+    sequence-modified
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Entry version
+   </td>
+   <td>
+    version(entry)
+   </td>
+  </tr>
+ </table>
+ <h3 id="Family___38__Domains">
+  Family &amp; Domains
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Domain [CC]
+   </td>
+   <td>
+    comment(DOMAIN)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Sequence similarities
+   </td>
+   <td>
+    comment(SIMILARITY)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Protein families
+   </td>
+   <td>
+    families
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Coiled coil
+   </td>
+   <td>
+    feature(COILED COIL)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Compositional bias
+   </td>
+   <td>
+    feature(COMPOSITIONAL BIAS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Domain [FT]
+   </td>
+   <td>
+    feature(DOMAIN EXTENT)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Motif
+   </td>
+   <td>
+    feature(MOTIF)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Region
+   </td>
+   <td>
+    feature(REGION)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Repeat
+   </td>
+   <td>
+    feature(REPEAT)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Zinc finger
+   </td>
+   <td>
+    feature(ZINC FINGER)
+   </td>
+  </tr>
+ </table>
+ <h3 id="Taxonomic_lineage">
+  Taxonomic lineage
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (all)
+   </td>
+   <td>
+    lineage(all)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUPERKINGDOM)
+   </td>
+   <td>
+    lineage(SUPERKINGDOM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (KINGDOM)
+   </td>
+   <td>
+    lineage(KINGDOM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUBKINGDOM)
+   </td>
+   <td>
+    lineage(SUBKINGDOM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUPERPHYLUM)
+   </td>
+   <td>
+    lineage(SUPERPHYLUM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (PHYLUM)
+   </td>
+   <td>
+    lineage(PHYLUM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUBPHYLUM)
+   </td>
+   <td>
+    lineage(SUBPHYLUM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUPERCLASS)
+   </td>
+   <td>
+    lineage(SUPERCLASS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (CLASS)
+   </td>
+   <td>
+    lineage(CLASS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUBCLASS)
+   </td>
+   <td>
+    lineage(SUBCLASS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (INFRACLASS)
+   </td>
+   <td>
+    lineage(INFRACLASS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUPERORDER)
+   </td>
+   <td>
+    lineage(SUPERORDER)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (ORDER)
+   </td>
+   <td>
+    lineage(ORDER)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUBORDER)
+   </td>
+   <td>
+    lineage(SUBORDER)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (INFRAORDER)
+   </td>
+   <td>
+    lineage(INFRAORDER)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (PARVORDER)
+   </td>
+   <td>
+    lineage(PARVORDER)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUPERFAMILY)
+   </td>
+   <td>
+    lineage(SUPERFAMILY)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (FAMILY)
+   </td>
+   <td>
+    lineage(FAMILY)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUBFAMILY)
+   </td>
+   <td>
+    lineage(SUBFAMILY)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (TRIBE)
+   </td>
+   <td>
+    lineage(TRIBE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUBTRIBE)
+   </td>
+   <td>
+    lineage(SUBTRIBE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (GENUS)
+   </td>
+   <td>
+    lineage(GENUS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUBGENUS)
+   </td>
+   <td>
+    lineage(SUBGENUS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SPECIES GROUP)
+   </td>
+   <td>
+    lineage(SPECIES GROUP)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SPECIES SUBGROUP)
+   </td>
+   <td>
+    lineage(SPECIES SUBGROUP)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SPECIES)
+   </td>
+   <td>
+    lineage(SPECIES)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (SUBSPECIES)
+   </td>
+   <td>
+    lineage(SUBSPECIES)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (VARIETAS)
+   </td>
+   <td>
+    lineage(VARIETAS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic lineage (FORMA)
+   </td>
+   <td>
+    lineage(FORMA)
+   </td>
+  </tr>
+ </table>
+ <h3 id="Taxonomic_identifier">
+  Taxonomic identifier
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (all)
+   </td>
+   <td>
+    lineage-id(all)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUPERKINGDOM)
+   </td>
+   <td>
+    lineage-id(SUPERKINGDOM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (KINGDOM)
+   </td>
+   <td>
+    lineage-id(KINGDOM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUBKINGDOM)
+   </td>
+   <td>
+    lineage-id(SUBKINGDOM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUPERPHYLUM)
+   </td>
+   <td>
+    lineage-id(SUPERPHYLUM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (PHYLUM)
+   </td>
+   <td>
+    lineage-id(PHYLUM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUBPHYLUM)
+   </td>
+   <td>
+    lineage-id(SUBPHYLUM)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUPERCLASS)
+   </td>
+   <td>
+    lineage-id(SUPERCLASS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (CLASS)
+   </td>
+   <td>
+    lineage-id(CLASS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUBCLASS)
+   </td>
+   <td>
+    lineage-id(SUBCLASS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (INFRACLASS)
+   </td>
+   <td>
+    lineage-id(INFRACLASS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUPERORDER)
+   </td>
+   <td>
+    lineage-id(SUPERORDER)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (ORDER)
+   </td>
+   <td>
+    lineage-id(ORDER)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUBORDER)
+   </td>
+   <td>
+    lineage-id(SUBORDER)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (INFRAORDER)
+   </td>
+   <td>
+    lineage-id(INFRAORDER)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (PARVORDER)
+   </td>
+   <td>
+    lineage-id(PARVORDER)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUPERFAMILY)
+   </td>
+   <td>
+    lineage-id(SUPERFAMILY)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (FAMILY)
+   </td>
+   <td>
+    lineage-id(FAMILY)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUBFAMILY)
+   </td>
+   <td>
+    lineage-id(SUBFAMILY)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (TRIBE)
+   </td>
+   <td>
+    lineage-id(TRIBE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUBTRIBE)
+   </td>
+   <td>
+    lineage-id(SUBTRIBE)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (GENUS)
+   </td>
+   <td>
+    lineage-id(GENUS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUBGENUS)
+   </td>
+   <td>
+    lineage-id(SUBGENUS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SPECIES GROUP)
+   </td>
+   <td>
+    lineage-id(SPECIES GROUP)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SPECIES SUBGROUP)
+   </td>
+   <td>
+    lineage-id(SPECIES SUBGROUP)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SPECIES)
+   </td>
+   <td>
+    lineage-id(SPECIES)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (SUBSPECIES)
+   </td>
+   <td>
+    lineage-id(SUBSPECIES)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (VARIETAS)
+   </td>
+   <td>
+    lineage-id(VARIETAS)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    Taxonomic identifier (FORMA)
+   </td>
+   <td>
+    lineage-id(FORMA)
+   </td>
+  </tr>
+ </table>
+ <h3 id="Cross_references">
+  Cross-references
+ </h3>
+ <table>
+  <tr>
+   <th>
+    Column names as displayed on website
+   </th>
+   <th>
+    Column names as displayed in URL
+   </th>
+  </tr>
+  <tr>
+   <td>
+    db_abbrev
+   </td>
+   <td>
+    database(db_abbrev)
+   </td>
+  </tr>
+  <tr>
+   <td>
+    e.g. EMBL
+   </td>
+   <td>
+    database(EMBL)
+   </td>
+  </tr>
+ </table>
+ <p>
+  where
+  <code>
+   db_abbrev
+  </code>
+  can be found in the "Abbrev:" field of the document
+  <a href="http://www.uniprot.org/docs/dbxref">
+   Databases cross-referenced in UniProtKB
+  </a>
+  .
+ </p>
+</div>

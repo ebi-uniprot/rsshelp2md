@@ -1,0 +1,6 @@
+proteome
+---
+Dead links
+http://parasite.wormbase.org/
+http://www.uniprot.org/uniprot/?query=taxonomy:83333+AND+proteomes:%2A
+

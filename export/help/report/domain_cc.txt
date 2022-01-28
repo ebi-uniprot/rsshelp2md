@@ -1,0 +1,6 @@
+domain_cc
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q96NN9#family%5Fand%5Fdomains
+http://www.uniprot.org/uniprot/Q9BZZ5#family%5Fand%5Fdomains
+

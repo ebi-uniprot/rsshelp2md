@@ -1,0 +1,6 @@
+miscellaneous
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q96KQ4#miscellaneous
+http://www.uniprot.org/uniprot/O77459#miscellaneous
+

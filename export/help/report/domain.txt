@@ -1,0 +1,11 @@
+domain
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/Q52107#family_and_domains
+http://www.uniprot.org/uniprot/Q8TDF5#family_and_domains
+http://www.uniprot.org/uniprot/Q05193#family_and_domains
+http://www.uniprot.org/uniprot/Q8BY02#family_and_domains
+http://www.uniprot.org/uniprot/Q14978#family_and_domains
+http://www.uniprot.org/uniprot/O08919#family_and_domains
+http://www.uniprot.org/uniprot/Q96L73#family_and_domains
+

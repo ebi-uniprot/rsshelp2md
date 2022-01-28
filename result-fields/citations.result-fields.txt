@@ -1,0 +1,13 @@
+id
+doi
+title
+authors
+authoring_group
+journal
+publication_date
+first_page
+last_page
+volume
+reference
+lit_abstract
+statistics

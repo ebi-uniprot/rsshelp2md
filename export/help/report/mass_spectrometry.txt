@@ -1,0 +1,6 @@
+mass_spectrometry
+---
+Dead anchor tags
+http://www.uniprot.org/uniprot/O44185#sequences
+http://www.uniprot.org/uniprot/O44185#sequences
+
