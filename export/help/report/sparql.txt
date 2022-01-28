@@ -1,0 +1,5 @@
+sparql
+---
+Dead links
+http://www.uniprot.org/core/
+

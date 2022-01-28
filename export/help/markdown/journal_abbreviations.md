@@ -11,4 +11,4 @@ UniProtKB/TrEMBL can contain additional journals for which there is no controlle
 
 See also:
 
--   [References](http://www.uniprot.org/manual/references)
+-   [References](https://www.uniprot.org/help/references)

@@ -7,13 +7,13 @@ This section provides information on the tertiary and secondary structure of a p
 
 The information is filed in different subsections. The current subsections and their content are listed below:
 
-|                                                                                  |                                                                                 |
-|:---------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
-| **Subsection**                                                                   | **Content**                                                                     |
-| [Turn](http://www.uniprot.org/manual/turn)                                       | Turns within the experimentally determined protein structure                    |
-| [Beta strand](http://www.uniprot.org/manual/strand)                              | Beta strand regions within the experimentally determined protein structure      |
-| [Helix](http://www.uniprot.org/manual/helix)                                     | Helical regions within the experimentally determined protein structure          |
-| [3D structure databases](http://www.uniprot.org/manual/cross_references_section) | Cross-references that point to data collections other than UniProtKB (i.e. PDB) |
+|                                                                                 |                                                                                 |
+|:--------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| **Subsection**                                                                  | **Content**                                                                     |
+| [Turn](https://www.uniprot.org/help/turn)                                       | Turns within the experimentally determined protein structure                    |
+| [Beta strand](https://www.uniprot.org/help/strand)                              | Beta strand regions within the experimentally determined protein structure      |
+| [Helix](https://www.uniprot.org/help/helix)                                     | Helical regions within the experimentally determined protein structure          |
+| [3D structure databases](https://www.uniprot.org/help/cross_references_section) | Cross-references that point to data collections other than UniProtKB (i.e. PDB) |
 
 See also:
 

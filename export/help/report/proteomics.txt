@@ -1,5 +1,9 @@
 proteomics
 ---
+Dead links
+http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3Ainit%5Fmet+evidence%3AECO%5F0007744%29
+http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3Atransit+evidence%3AECO%5F0007744%29
+
 Dead anchor tags
 http://www.uniprot.org/help/evidences#ECO:0007744
 

@@ -3,6 +3,11 @@ controlled_vocabulary
 Dead links
 http://www.unipathway.org/
 http://www.uniprot.org/docs/plasmid
+http://www.uniprot.org/docs/ptmlist
+http://www.uniprot.org/docs/speclist
+http://www.uniprot.org/docs/strains
+http://www.uniprot.org/docs/tisslist
+http://www.uniprot.org/docs/humdisease
 
 Dead anchor tags
 http://www.uniprot.org/help/taxonomy#strain

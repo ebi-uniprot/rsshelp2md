@@ -1,7 +1,10 @@
 Prokaryotes
 ---
-Dead anchor tags
+Dead links
+http://www.uniprot.org/uniprot/?query=organism:83333+AND+reviewed:yes
 http://www.uniprot.org/biocuration%5Fproject/Prokaryotes/statistics#Escherichiacoli
 http://www.uniprot.org/biocuration%5Fproject/Prokaryotes/statistics#Bacillussubtilis
+
+Dead anchor tags
 http://www.uniprot.org/biocuration%5Fproject/Prokaryotes/statistics#Mycobacteriumtuberculosis
 

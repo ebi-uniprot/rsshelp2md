@@ -1,5 +1,8 @@
 chain
 ---
+Dead links
+http://www.uniprot.org/manual/protein%5Fname
+
 Dead anchor tags
 http://www.uniprot.org/uniprot/Q6UB98#ptm_processing
 http://www.uniprot.org/uniprot/P07683#ptm%5Fprocessing

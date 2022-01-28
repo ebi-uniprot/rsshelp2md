@@ -1,6 +1,6 @@
 Drosophila
 ---
-Dead anchor tags
+Dead links
 http://www.uniprot.org/biocuration%5Fproject/Drosophila/statistics/#Drosophilamelanogaster
 http://www.uniprot.org/biocuration%5Fproject/Drosophila/statistics/#Drosophilapseudoobscurapseudoobscura
 

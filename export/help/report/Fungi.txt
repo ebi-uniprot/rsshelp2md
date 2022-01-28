@@ -2,9 +2,7 @@ Fungi
 ---
 Dead links
 http://www.uniprot.org/biocuration%5Fproject/fungi/statistics/#Saccharomycescerevisiae
-http://www.uniprot.org/uniprot/?query=organism:5207+AND+reviewed:yes
-http://www.uniprot.org/news/2009/05/05/release
-
-Dead anchor tags
 http://www.uniprot.org/biocuration%5Fproject/fungi/statistics/#Schizosaccharomycespombe
+http://www.uniprot.org/uniprot/?query=organism:5141+AND+reviewed:yes
+http://www.uniprot.org/uniprot/?query=taxonomy:4932%20keyword:1185
 

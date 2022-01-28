@@ -1,8 +1,5 @@
 lipid
 ---
-Dead links
-http://www.uniprot.org/docs/ptm
-
 Dead anchor tags
 http://www.uniprot.org/uniprot/P84077#ptm%5Fprocessing
 http://www.uniprot.org/uniprot/Q09470#ptm%5Fprocessing

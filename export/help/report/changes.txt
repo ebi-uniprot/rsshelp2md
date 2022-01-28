@@ -1,6 +1,8 @@
 changes
 ---
 Dead links
+http://www.uniprot.org/news/?format=rss
+https://twitter.com/uniprot
 http://www.uniprot.org/news
 http://www.uniprot.org/changes
 

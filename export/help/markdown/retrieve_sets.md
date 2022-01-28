@@ -11,13 +11,13 @@ See also:
 
 [What is the canonical sequence? Are all isoforms described in one entry?](http://www.uniprot.org/help/canonical%5Fand%5Fisoforms)
 
-[Alternative products](http://www.uniprot.org/manual/alternative%5Fproducts)
+[Alternative products](https://www.uniprot.org/help/alternative%5fproducts)
 
-[Alternative sequence](http://www.uniprot.org/manual/var%5Fseq)
+[Alternative sequence](https://www.uniprot.org/help/var%5fseq)
 
 **Retrieving sequences from the website**
 
--   Perform your favorite query and view the resulting list of entries (e.g. this query retrieves all UniProtKB entries that are part of the human proteome: [proteome:UP000005640](http://www.uniprot.org/uniprotkb/?query=proteome:UP000005640) )
+-   Perform your favorite query and view the resulting list of entries (e.g. this query retrieves all UniProtKB entries that are part of the human proteome: [proteome:UP000005640](https://www.uniprot.org/uniprotkb/?query=proteome:UP000005640) )
 -   Click the **Download** button in the query result page
 -   Choose the desired download format (Flat Text, XML, RDF/XML, tab-delimited, Excel or FASTA if additional isoform sequences are desired)
     -   Choosing `Flat Text` , `XML` , or `RDF/XML` allows retrieval of all entries (and their canonical sequences) from the result list in the desired format.

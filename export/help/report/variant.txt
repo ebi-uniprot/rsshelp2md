@@ -1,7 +1,7 @@
 variant
 ---
 Dead links
-http://www.uniprot.org/docs/strains
+http://www.uniprot.org/www.ncbi.nlm.nih.gov/projects/SNP/
 
 Dead anchor tags
 http://www.uniprot.org/uniprot/Q96CV9#sequences

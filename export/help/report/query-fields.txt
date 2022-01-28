@@ -1,9 +1,18 @@
 query-fields
 ---
 Dead links
-http://www.uniprot.org/uniprot/?query=host:40674
-http://www.uniprot.org/uniprot/?query=annotation:(type:mutagen%20phosphorylation)
-http://www.uniprot.org/uniprot/?query=proteomecomponent:%22chromosome%201%22+organism%3A%22Homo+sapiens+%28Human%29+[9606]%22
+http://www.uniprot.org/uniprot/?query=active:no
+http://www.uniprot.org/uniprot/?query=cdantigen:CD233
+http://www.uniprot.org/uniprot/?query=reviewed%3Ayes+AND+created%3A%5Bcurrent+TO+*%5D
+http://www.uniprot.org/uniprot/?query=database:(type:pdb%201aut)
+http://www.uniprot.org/help/mapping
+http://www.uniprot.org/uniprot/?query=host:mouse
+http://www.uniprot.org/uniprot/?query=inn:Anakinra
+http://www.uniprot.org/uniprot/?query=keyword:%22Toxin%20[KW-0800]%22
+http://www.uniprot.org/uniprot/?query=method:maldi
+http://www.uniprot.org/uniprot/?query=organism%3A%22Ovis+aries%22
+http://www.uniprot.org/uniprot/?query=reviewed:yes
+http://www.uniprot.org/uniprot/?query=taxonomy:40674
 
 Dead anchor tags
 http://www.uniprot.org/help/taxonomy#strain

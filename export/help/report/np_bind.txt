@@ -5,5 +5,8 @@ http://www.uniprot.org/uniprot/Q9UJ70#function
 http://www.uniprot.org/uniprot/P16905#function
 http://www.uniprot.org/uniprot/P33164#function
 http://www.uniprot.org/uniprot/P23170#function
+http://www.uniprot.org/uniprot/P16905#function
+http://www.uniprot.org/uniprot/Q2M2I8#function
+http://www.uniprot.org/uniprot/Q00582#function
 http://www.uniprot.org/uniprot/P30621#function
 

@@ -14,4 +14,4 @@ You can access the archived version of PIR-PSD entries via UniProtKB cross-refer
 
 See also:
 
--   [Cross references](http://www.uniprot.org/manual/cross_references_section)
+-   [Cross references](https://www.uniprot.org/help/cross_references_section)

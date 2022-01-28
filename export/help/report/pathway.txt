@@ -1,5 +1,8 @@
 pathway
 ---
+Dead links
+http://www.uniprot.org/docs/pathlist
+
 Dead anchor tags
 http://www.uniprot.org/uniprot/P77731#function
 http://www.uniprot.org/uniprot/P20580#function

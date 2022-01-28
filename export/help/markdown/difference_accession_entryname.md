@@ -9,5 +9,5 @@ The 'Entry name' (formerly ID) is a unique identifier, often containing biologic
 
 See also:
 
--   [Entry name](http://www.uniprot.org/manual/entry_name)
--   [Accession number](http://www.uniprot.org/manual/accession_numbers)
+-   [Entry name](https://www.uniprot.org/help/entry_name)
+-   [Accession number](https://www.uniprot.org/help/accession_numbers)

@@ -11,16 +11,16 @@ The UniProtKB database provides for certain entries a 'Biotechnological use' sub
 
 The UniProtKB database also provides for certain entries a 'Pharmaceutical use' subsection which describes the name under which the protein is available as a the drug and the name of the firm that commercializes it.
 
-Example: [P01275](http://www.uniprot.org/uniprotkb/P01275#pathology_and_biotech)
+Example: [P01275](https://www.uniprot.org/uniprotkb/p01275#pathology_and_biotech)
 
          Available under the names Glucagon (Eli Lilly) and
          GlucaGen or Glucagon Novo Nordisk (Novo Nordisk). Used to treat
          severe hypoglycemia in insulin-dependent diabetics.
         
 
--   [List of entries with 'Biotechnological use' subsection](http://www.uniprot.org/uniprotkb/?query=annotation%3A%28type%3Abiotechnology%29)
--   [List of entries with 'Pharmaceutical use' subsection](http://www.uniprot.org/uniprotkb/?query=annotation%3A%28type%3Apharmaceutical%29)
--   [`'Restriction system'` : keyword definition](http://www.uniprot.org/keywords/680) and [related list of entries](http://www.uniprot.org/uniprotkb/?query=keyword:680)
--   [List of entries with a cross-reference to the REBASE database](http://www.uniprot.org/uniprotkb/?query=database%3Arebase)
+-   [List of entries with 'Biotechnological use' subsection](https://www.uniprot.org/uniprotkb/?query=annotation%3A%28type%3Abiotechnology%29)
+-   [List of entries with 'Pharmaceutical use' subsection](https://www.uniprot.org/uniprotkb/?query=annotation%3A%28type%3Apharmaceutical%29)
+-   [`'Restriction system'` : keyword definition](http://www.uniprot.org/keywords/680) and [related list of entries](https://www.uniprot.org/uniprotkb/?query=keyword:680)
+-   [List of entries with a cross-reference to the REBASE database](https://www.uniprot.org/uniprotkb/?query=database%3Arebase)
 
 Related terms: buy, purchase, price, cost

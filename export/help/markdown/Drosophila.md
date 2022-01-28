@@ -9,8 +9,8 @@ See: [How do we manually annotate a UniProtKB entry?](http://www.uniprot.org/faq
 
 UniProtKB works closely with [FlyBase](http://flybase.org/) , the database for Drosophila genetics and molecular biology, to ensure consistency of data between the two resources.
 
--   All manually reviewed *Drosophila melanogaster* entries can be found [here](http://www.uniprot.org/uniprotkb/?query=organism:7227+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Drosophila/statistics/#Drosophilamelanogaster) .
--   All manually reviewed *Drosophila pseudoobscura pseudoobscura* entries can be found [here](http://www.uniprot.org/uniprotkb/?query=organism:46245+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Drosophila/statistics/#Drosophilapseudoobscurapseudoobscura) .
+-   All manually reviewed *Drosophila melanogaster* entries can be found [here](https://www.uniprot.org/uniprotkb/?query=organism:7227+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Drosophila/statistics/#Drosophilamelanogaster) .
+-   All manually reviewed *Drosophila pseudoobscura pseudoobscura* entries can be found [here](https://www.uniprot.org/uniprotkb/?query=organism:46245+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Drosophila/statistics/#Drosophilapseudoobscurapseudoobscura) .
 
 ## About Drosophila
 

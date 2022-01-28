@@ -9,9 +9,9 @@ See: [How do we manually annotate a UniProtKB entry?](http://www.uniprot.org/faq
 
 Our major effort is currently directed towards the annotation of proteins from the already well-characterized model bacteria *[Escherichia coli](http://www.uniprot.org/taxonomy/83333)* and *[Bacillus subtilis](http://www.uniprot.org/taxonomy/224308)* , as well as the annotation of pathogens such as *[Mycobacterium tuberculosis](http://www.uniprot.org/taxonomy/1773)* .
 
--   All manually reviewed *Escherichia coli* entries can be found [here](http://www.uniprot.org/uniprotkb/?query=organism:83333+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Prokaryotes/statistics#Escherichiacoli)
--   All manually reviewed *Bacillus subtilis* entries can be found [here](http://www.uniprot.org/uniprotkb/?query=organism:224308+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Prokaryotes/statistics#Bacillussubtilis)
--   All manually reviewed *Mycobacterium tuberculosis* entries can be found [here](http://www.uniprot.org/uniprotkb/?query=organism:1773+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Prokaryotes/statistics#Mycobacteriumtuberculosis)
+-   All manually reviewed *Escherichia coli* entries can be found [here](https://www.uniprot.org/uniprotkb/?query=organism:83333+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Prokaryotes/statistics#Escherichiacoli)
+-   All manually reviewed *Bacillus subtilis* entries can be found [here](https://www.uniprot.org/uniprotkb/?query=organism:224308+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Prokaryotes/statistics#Bacillussubtilis)
+-   All manually reviewed *Mycobacterium tuberculosis* entries can be found [here](https://www.uniprot.org/uniprotkb/?query=organism:1773+AND+reviewed:yes) [(statistics)](http://www.uniprot.org/biocuration%5Fproject/Prokaryotes/statistics#Mycobacteriumtuberculosis)
 
 ### High-quality automated annotation propagation
 

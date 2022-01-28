@@ -1,5 +1,6 @@
 annotation_guidelines
 ---
 Dead links
-http://www.uniprot.org/docs/pe%5Fcriteria
+http://www.uniprot.org/program/
+http://www.uniprot.org/docs/nomlist
 

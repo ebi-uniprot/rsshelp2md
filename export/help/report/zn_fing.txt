@@ -5,19 +5,16 @@ http://www.uniprot.org/uniprot/Q7Z142#function
 http://www.uniprot.org/uniprot/P55197#function
 http://www.uniprot.org/uniprot/Q9P2R3#function
 http://www.uniprot.org/uniprot/Q9P2G1#function
-http://www.uniprot.org/uniprot/Q9P2S6#function
 http://www.uniprot.org/uniprot/Q8IUH5#function
 http://www.uniprot.org/uniprot/P19811#function
 http://www.uniprot.org/uniprot/Q92793#function
-http://www.uniprot.org/uniprot/O95081#function
+http://www.uniprot.org/uniprot/P36406#function
 http://www.uniprot.org/uniprot/Q9ULV3#function
 http://www.uniprot.org/uniprot/P75093#family_and_domains
-http://www.uniprot.org/uniprot/P08045#function
-http://www.uniprot.org/uniprot/P47043#function
 http://www.uniprot.org/uniprot/Q80ZQ5#function
-http://www.uniprot.org/uniprot/Q19203#function
 http://www.uniprot.org/uniprot/Q15911#function
 http://www.uniprot.org/uniprot/P10827#function
 http://www.uniprot.org/uniprot/Q8UF86#function
 http://www.uniprot.org/uniprot/P0A6H1#function
+http://www.uniprot.org/uniprot/P24277#function
 

@@ -1,8 +1,5 @@
 subcellular_location
 ---
-Dead links
-http://www.uniprot.org/docs/subcell
-
 Dead anchor tags
 http://www.uniprot.org/uniprot/Q9ULX6#subcellular%5Flocation
 http://www.uniprot.org/uniprot/Q02630#subcellular%5Flocation

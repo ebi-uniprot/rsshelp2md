@@ -14,7 +14,7 @@ categories: UniProtKB,Text_search,Names_and_taxonomy,Website,faq
 
     See also:
 
-    -   [Gene names](http://www.uniprot.org/manual/gene%5Fname)
+    -   [Gene names](https://www.uniprot.org/help/gene%5fname)
 
 2.  **gene symbols to UniProtKB identifiers**
 
@@ -24,7 +24,7 @@ categories: UniProtKB,Text_search,Names_and_taxonomy,Website,faq
 
     -   [Organism-specific databases](http://www.uniprot.org/database/?query=category:%22Organism-specific+databases%22)
     -   [Database identifier mapping (via 'Retrieve/ID mapping')](http://www.uniprot.org/help/uploadlists)
-    -   [Cross-references](http://www.uniprot.org/manual/cross%5Freferences%5Fsection)
+    -   [Cross-references](https://www.uniprot.org/help/cross%5freferences%5fsection)
 
     The identifier mapping service also has an option "Gene name" where you can submit your list of gene symbols and optionally specify an organism. Note that mapping results can also be filtered after submission, e.g. by organism or reviewed/unreviewed status.
 
@@ -40,7 +40,7 @@ categories: UniProtKB,Text_search,Names_and_taxonomy,Website,faq
 
     Prefix this with your organism criteria, e.g. `'organism:"homo sapiens"'` and `'reviewed:yes'` if you wish to restrict your results to reviewed UniProtKB/Swiss-Prot entries, or `'keyword:KW-1185'` to restrict to a reference proteome.
 
-    [organism:"homo sapiens" and (gene\_exact:braf or gene\_exact:brca1 or gene\_exact:brca2 or gene\_exact:btk or gene\_exact:casp10 or gene\_exact:casp8) and reviewed:yes](http://www.uniprot.org/uniprotkb/?query=organism%3A%22homo+sapiens%22+and+%28gene_exact%3Abraf+or+gene_exact%3Abrca1+or+gene_exact%3Abrca2+or+gene_exact%3Abtk+or+gene_exact%3Acasp10+or+gene_exact%3Acasp8%29%20and%20reviewed%3Ayes&sort=score)
+    [organism:"homo sapiens" and (gene\_exact:braf or gene\_exact:brca1 or gene\_exact:brca2 or gene\_exact:btk or gene\_exact:casp10 or gene\_exact:casp8) and reviewed:yes](https://www.uniprot.org/uniprotkb/?query=organism%3A%22homo+sapiens%22+and+%28gene_exact%3Abraf+or+gene_exact%3Abrca1+or+gene_exact%3Abrca2+or+gene_exact%3Abtk+or+gene_exact%3Acasp10+or+gene_exact%3Acasp8%29%20and%20reviewed%3Ayes&sort=score)
 
     You can use the "Columns" button and [customize](http://www.uniprot.org/help/customize) your result table to show only gene names and UniProtKB identifiers, and then download the table (see 1. above).
 

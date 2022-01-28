@@ -27,4 +27,4 @@ See also:
 -   [What are UniProtKB's criteria for defining a CDS as a protein?](http://www.uniprot.org/help/cds%5Fprotein%5Fdefinition)
 -   [Why have some UniProtKB accession numbers been deleted? How can I track them?](http://www.uniprot.org/help/deleted%5Faccessions)
 -   [Why do we keep dubious sequences in UniProtKB? How to discard them from a protein set?](http://www.uniprot.org/help/dubious%5Fsequences)
--   [Sequences](http://www.uniprot.org/manual/sequences)
+-   [Sequences](https://www.uniprot.org/help/sequences)

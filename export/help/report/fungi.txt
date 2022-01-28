@@ -1,5 +1,5 @@
 fungi
 ---
 Dead links
-http://www.uniprot.org/program/Fungi
+http://www.uniprot.org/docs/yeast14
 

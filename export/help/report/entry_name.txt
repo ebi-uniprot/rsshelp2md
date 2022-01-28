@@ -1,5 +1,8 @@
 entry_name
 ---
+Dead links
+http://www.uniprot.org/docs/speclist
+
 Dead anchor tags
 http://www.uniprot.org/uniprot/P01308#entry%5Finformation
 http://www.uniprot.org/uniprot/P01325#entry%5Finformation

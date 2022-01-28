@@ -1,6 +1,7 @@
 text-search
 ---
 Dead links
+http://www.uniprot.org/uniprot/?query=citation:%28author:Arai%20author:Chung%29
 http://www.uniprot.org/help/?query=section%3Afaq+AND+category%3A%22Text%20search%22
 
 Number tables converted to Markdown

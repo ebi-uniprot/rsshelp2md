@@ -9,6 +9,6 @@ The TrEMBL section of UniProtKB was introduced in 1996 in response to the increa
 
 See also:
 
--   [Entry status](http://www.uniprot.org/manual/entry%5Fstatus)
+-   [Entry status](https://www.uniprot.org/help/entry%5fstatus)
 -   [How do we manually annotate a UniProtKB entry?](http://www.uniprot.org/help/manual%5Fcuration)
 -   [Automatic annotation](http://www.uniprot.org/help/automatic%5Fannotation)

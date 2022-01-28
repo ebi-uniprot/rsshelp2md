@@ -1,5 +1,5 @@
 negative_datasets
 ---
 Dead links
-http://www.uniprot.org/uniprot/?query=organism%3A%22homo+sapiens%22+AND+annotation%3A%28type%3Asignal+evidence%3Aexperimental%29+reviewed%3Ayes&sort=score
+http://www.uniprot.org/uniprot/?query=annotation%3A%28type%3Aptm%20%22not%20glycosylated%22%20evidence%3Aexperimental%29&columns=id%2Centry%20name%2Creviewed%2Cprotein%20names%2Cgenes%2Clength%2Ccomment%28POST-TRANSLATIONAL%20MODIFICATION%29
 

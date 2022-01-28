@@ -18,7 +18,7 @@ Example: **Search for Saccharomyces cerevisiae membrane glycoproteins in UniProt
     -   Use the **S.cerevisiae** filter under "Popular organisms"
     -   Filter `"membrane"` as `keyword`
     -   Filter `"glycoprotein"` as `keyword`
--   [Results](http://www.uniprot.org/uniprotkb/?query=organism%3A%22saccharomyces+cerevisiae%22+AND+keyword%3Amembrane+AND+keyword%3Aglycoprotein)
+-   [Results](https://www.uniprot.org/uniprotkb/?query=organism%3A%22saccharomyces+cerevisiae%22+AND+keyword%3Amembrane+AND+keyword%3Aglycoprotein)
 -   Click **Columns** to choose the columns to show in the result table
 -   This URL can be bookmarked.
 
@@ -30,7 +30,7 @@ Example: **Search for Saccharomyces cerevisiae membrane glycoproteins in UniProt
     -   Select `Ontology -> Keyword [KW]` and type `Membrane` (use autocompletion)
     -   Select `Ontology -> Keyword [KW]` and type `Glycoprotein` (use autocompletion)
     -   Click on the search button
--   [Results](http://www.uniprot.org/uniprotkb/?query=organism%3A%22saccharomyces+cerevisiae%22+AND+keyword%3A%22Membrane+%5B472%5D%22+AND+keyword%3A%22Glycoprotein+%5B325%5D%22)
+-   [Results](https://www.uniprot.org/uniprotkb/?query=organism%3A%22saccharomyces+cerevisiae%22+AND+keyword%3A%22Membrane+%5B472%5D%22+AND+keyword%3A%22Glycoprotein+%5B325%5D%22)
 -   Click **Columns** to choose the columns to show in the result table
 -   This URL can be bookmarked.
 

@@ -2,6 +2,5 @@ linking_to_uniprot
 ---
 Dead links
 https://www.uniprot.org/uniref/?query=member:P99999+AND+identity:0.9
-https://www.uniprot.org/uniref/?query=member:P99999+AND+identity:1.0
 https://www.uniprot.org/uniprot/P99999.txt
 

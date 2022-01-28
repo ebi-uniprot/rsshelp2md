@@ -2,5 +2,6 @@ sequences
 ---
 Dead links
 http://www.iupac.org/
+http://www.iupac.org/publications/pac/1984/pdf/5605x0595.pdf
 http://dx.doi.org/doi:10.1046/j.1432-1327.1999.news99.x
 

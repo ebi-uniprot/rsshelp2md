@@ -9,4 +9,4 @@ This simple score-based filter is used in combination with a set of defined rule
 
 See also:
 
--   [Binary interactions](http://www.uniprot.org/manual/binary_interactions)
+-   [Binary interactions](https://www.uniprot.org/help/binary_interactions)

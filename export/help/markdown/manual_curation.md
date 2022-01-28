@@ -15,7 +15,7 @@ A well-defined manual curation process is essential to ensure that all manually 
 
 **(3) Literature curation.** Journal articles provide the main source of experimental protein knowledge. Relevant publications are identified by searching literature databases, such as PubMed, and using literature mining tools. The full text of each paper is read and information is extracted and added to the entry. All experimental findings and authors' statements are compared both with the current knowledge on related proteins and the results from various protein sequence analysis tools. Annotation captured from the scientific literature includes protein and gene names, function, catalytic activity, cofactors, subcellular location, protein-protein interactions, patterns of expression, diseases associated with deficiencies in a protein, locations and roles of significant domains and sites, ion-, substrate- and cofactor-binding sites, catalytic residues, the variant protein forms produced by natural genetic variation, RNA editing, alternative splicing, proteolytic processing, and post-translational modification. Relevant Gene Ontology (GO) terms are assigned based on experimental data from the literature.
 
--   [References](http://www.uniprot.org/manual/references)
+-   [References](https://www.uniprot.org/help/references)
 -   [On what basis are literature references inserted in UniProtKB/Swiss-Prot entries?](http://www.uniprot.org/help/literature_references)
 
 **(4) Family-based curation.** Reciprocal Blast searches and phylogenetic resources are used to identify putative homologs, which are evaluated and curated. Annotation is standardized and propagated across homologous proteins to ensure data consistency.
@@ -25,8 +25,8 @@ A well-defined manual curation process is essential to ensure that all manually 
 
 **(5) Evidence attribution.** All information added to an entry during the manual annotation process is linked to the original source so that users can trace back the origin of each piece of information and evaluate it.
 
--   [Evidence attribution](http://www.uniprot.org/manual/evidences)
--   [Evidence on protein existence](http://www.uniprot.org/manual/protein_existence)
+-   [Evidence attribution](https://www.uniprot.org/help/evidences)
+-   [Evidence on protein existence](https://www.uniprot.org/help/protein_existence)
 
 **(6) Quality assurance, integration and update.** Each completed entry undergoes quality assurance before integration into UniProtKB/Swiss-Prot and is updated as new data become available.
 
@@ -35,7 +35,7 @@ A well-defined manual curation process is essential to ensure that all manually 
 See also:
 
 -   [Standard operating procedure (SOP) for UniProt manual curation](http://www.uniprot.org/docs/sop_manual_curation.pdf)
--   [Entry status](http://www.uniprot.org/manual/entry_status)
+-   [Entry status](https://www.uniprot.org/help/entry_status)
 -   [Why is UniProtKB composed of 2 sections, UniProtKB/Swiss-Prot and UniProtKB/TrEMBL?](http://www.uniprot.org/help/uniprotkb_sections)
 
 Related terms: manual annotation, manual curation, reviewed entries

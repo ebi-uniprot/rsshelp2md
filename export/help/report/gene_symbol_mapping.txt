@@ -1,0 +1,6 @@
+gene_symbol_mapping
+---
+Dead links
+http://www.uniprot.org/database/?query=category:%22Organism-specific+databases%22
+http://www.uniprot.org/uniprot/?query=organism%3A%22homo+sapiens%22+and+%28gene_exact%3Abraf+or+gene_exact%3Abrca1+or+gene_exact%3Abrca2+or+gene_exact%3Abtk+or+gene_exact%3Acasp10+or+gene_exact%3Acasp8%29%20and%20reviewed%3Ayes&sort=score
+

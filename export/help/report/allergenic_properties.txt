@@ -1,5 +1,8 @@
 allergenic_properties
 ---
+Dead links
+http://www.uniprot.org/docs/allergen
+
 Dead anchor tags
 http://www.uniprot.org/uniprot/Q06811#pathology_and_biotech
 http://www.uniprot.org/uniprot/P45669#pathology%5Fand%5Fbiotech

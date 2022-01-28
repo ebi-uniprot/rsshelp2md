@@ -2,4 +2,5 @@ update_notification
 ---
 Dead links
 http://www.uniprot.org/news/
+http://www.uniprot.org/news/?format=rss
 

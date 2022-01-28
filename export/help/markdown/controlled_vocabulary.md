@@ -9,7 +9,7 @@ The [Controlled vocabulary of journals](http://www.uniprot.org/docs/jourlist) li
 
 UniProtKB/Swiss-Prot document: [Controlled vocabulary of journals](http://www.uniprot.org/docs/jourlist)  
 UniProt web page: [Literature citations](http://www.uniprot.org/citations/)  
-User manual: [References](http://www.uniprot.org/manual/references)
+User manual: [References](https://www.uniprot.org/help/references)
 
 [What journal abbreviations are used in UniProtKB?](http://www.uniprot.org/help/journal%5Fabbreviations)  
 [On what basis are literature references inserted in UniProtKB/Swiss-Prot entries?](http://www.uniprot.org/help/literature%5Freferences)
@@ -29,7 +29,7 @@ User manual: [Keywords](http://www.uniprot.org/help/keywords)
 The [Controlled vocabulary of subcellular locations and membrane topologies and orientations](http://www.uniprot.org/docs/subcell) lists the UniProtKB controlled vocabulary used for the subcellular locations (including the membrane topologies and orientations terms) in the 'Subcellular location' section.
 
 UniProtKB/Swiss-Prot document: [Controlled vocabulary of subcellular locations and membrane topologies and orientations](http://www.uniprot.org/docs/subcell)  
-User manual: [Subcellular location](http://www.uniprot.org/manual/subcellular%5Flocation)  
+User manual: [Subcellular location](https://www.uniprot.org/help/subcellular%5flocation)  
 UniProt web page: [Subcellular locations](http://www.uniprot.org/locations/)
 
 ### Pathways
@@ -39,14 +39,14 @@ The [Controlled vocabulary of metabolic pathways](http://www.uniprot.org/docs/pa
 UniProtKB/Swiss-Prot document: [Controlled vocabulary of metabolic pathways](http://www.uniprot.org/docs/pathlist)  
 UniProtKB/Swiss-Prot document: [Index of metabolic and biosynthesis pathways](http://www.uniprot.org/docs/pathway)
 
-User manual: [Pathway](http://www.uniprot.org/manual/pathway)
+User manual: [Pathway](https://www.uniprot.org/help/pathway)
 
 ### Plasmids
 
-The [Controlled vocabulary of plasmids](http://www.uniprot.org/docs/plasmid) lists the currently valid values for the plasmids cited in the [Encoded on](http://www.uniprot.org/manual/encoded%5Fon) subsection of the 'Names and origin' section and in the [Reference](http://www.uniprot.org/manual/references) section of UniProtKB/Swiss-Prot entries.
+The [Controlled vocabulary of plasmids](http://www.uniprot.org/docs/plasmid) lists the currently valid values for the plasmids cited in the [Encoded on](https://www.uniprot.org/help/encoded%5fon) subsection of the 'Names and origin' section and in the [Reference](https://www.uniprot.org/help/references) section of UniProtKB/Swiss-Prot entries.
 
 UniProtKB/Swiss-Prot document: [Controlled vocabulary of plasmids](http://www.uniprot.org/docs/plasmid)  
-User manual: [Encoded on](http://www.uniprot.org/manual/encoded%5Fon)
+User manual: [Encoded on](https://www.uniprot.org/help/encoded%5fon)
 
 ### Post-translational modifications
 
@@ -67,14 +67,14 @@ UniProt web page: [Taxonomy](http://www.uniprot.org/taxonomy/)
 
 #### Strains
 
-The [Controlled vocabulary of strains](http://www.uniprot.org/docs/strains) lists the most frequently occurring values for the 'Strain' topic in the [Reference](http://www.uniprot.org/manual/references) section of UniProtKB/Swiss-Prot entries.
+The [Controlled vocabulary of strains](http://www.uniprot.org/docs/strains) lists the most frequently occurring values for the 'Strain' topic in the [Reference](https://www.uniprot.org/help/references) section of UniProtKB/Swiss-Prot entries.
 
 UniProtKB/Swiss-Prot document: [Controlled vocabulary of strains](http://www.uniprot.org/docs/strains)  
 UniProt web page: [Taxonomy/strains](http://www.uniprot.org/help/taxonomy#strain)
 
 ### Tissues
 
-The [Controlled vocabulary of tissues](http://www.uniprot.org/docs/tisslist) lists the currently valid values and their synomym(s) for the tissues cited in the [Reference](http://www.uniprot.org/manual/references) section of UniProtKB/Swiss-Prot entries.
+The [Controlled vocabulary of tissues](http://www.uniprot.org/docs/tisslist) lists the currently valid values and their synomym(s) for the tissues cited in the [Reference](https://www.uniprot.org/help/references) section of UniProtKB/Swiss-Prot entries.
 
 UniProtKB/Swiss-Prot document: [Controlled vocabulary of tissues](http://www.uniprot.org/docs/tisslist)
 
@@ -85,7 +85,7 @@ The [Controlled vocabulary of human diseases](http://www.uniprot.org/docs/humdis
 UniProt web page: [Human diseases](http://www.uniprot.org/diseases/)  
 UniProtKB/Swiss-Prot document: [Controlled vocabulary of human diseases](http://www.uniprot.org/docs/humdisease)  
 Related keyword: [Disease variant](http://www.uniprot.org/keywords/KW-0225)  
-Relevant UniProtKB/Swiss-Prot entries [cross-referenced to the OMIM database](http://www.uniprot.org/uniprotkb/?query=database%3Amim)
+Relevant UniProtKB/Swiss-Prot entries [cross-referenced to the OMIM database](https://www.uniprot.org/uniprotkb/?query=database%3Amim)
 
 [How can I get all the proteins involved in a given disease?](http://www.uniprot.org/help/disease%5Fquery)  
 [How can I get medical advice from UniProtKB?](http://www.uniprot.org/help/medical%5Fadvice)

@@ -1,8 +1,8 @@
 Plants
 ---
 Dead links
-http://www.uniprot.org/biocuration%5Fproject/Plants/statistics/#Arabidopsisthaliana
+http://www.uniprot.org/biocuration%5Fproject/Plants/statistics/#Oryzasativasubspjaponica
 
 Dead anchor tags
-http://www.uniprot.org/biocuration%5Fproject/Plants/statistics/#Oryzasativasubspjaponica
+http://www.uniprot.org/biocuration%5Fproject/Plants/statistics/#Arabidopsisthaliana
 

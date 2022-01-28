@@ -1,0 +1,5 @@
+api
+---
+Dead links
+http://www.uniprot.org/help/api%5Frandom%5Fentry
+

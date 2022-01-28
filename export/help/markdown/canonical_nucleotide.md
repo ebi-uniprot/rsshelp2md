@@ -15,7 +15,7 @@ In most cases, in the absence of annotation of 'Sequence conflict', 'Variant', '
 
 There are some exceptions. Some entries may display a full-length protein sequence, while the available nucleic acid sequences are only fragments. In this case, the manual annotation process comes into the picture: by combining the sequences of submitted fragmentary CDS and/or of the genomic sequence, taking into account the similarity with orthologous proteins (in a closely related species), one can predict the full-length protein sequence.
 
-In addition, some [entries](http://www.uniprot.org/uniprotkb/?query=reviewed:yes+keyword:KW-0903+NOT+database:embl) exclusively contain protein sequence data resulting from direct protein sequencing and thus do not have cross-references to any nucleic acid sequence.
+In addition, some [entries](https://www.uniprot.org/uniprotkb/?query=reviewed:yes+keyword:KW-0903+NOT+database:embl) exclusively contain protein sequence data resulting from direct protein sequencing and thus do not have cross-references to any nucleic acid sequence.
 
 **How do I get the nucleotide sequence that corresponds to the UniProtKB alternative sequences?**
 
@@ -27,8 +27,8 @@ See also:
 
 -   [What is the canonical sequence? Are all isoforms described in one entry?](http://www.uniprot.org/help/canonical%5Fand%5Fisoforms)
 -   [How redundant are the UniProt databases?](http://www.uniprot.org/help/redundancy)
--   [Sequences](http://www.uniprot.org/manual/sequences)
--   [Alternative sequence](http://www.uniprot.org/manual/var%5Fseq)
--   [Sequence conflict](http://www.uniprot.org/manual/conflict)
+-   [Sequences](https://www.uniprot.org/help/sequences)
+-   [Alternative sequence](https://www.uniprot.org/help/var%5fseq)
+-   [Sequence conflict](https://www.uniprot.org/help/conflict)
 -   [Cross-references section](http://www.uniprot.org/help/cross%5Freferences%5Fsection)
 -   [Cross-references for isoform sequences](http://www.uniprot.org/help/isoform%5Fcrossreferences)

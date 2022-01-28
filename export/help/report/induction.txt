@@ -1,6 +1,7 @@
 induction
 ---
 Dead anchor tags
+http://www.uniprot.org/uniprot/Q7XTE8#expression
 http://www.uniprot.org/uniprot/P29305#expression
 http://www.uniprot.org/uniprot/Q59385#expression
 

@@ -1,5 +1,5 @@
 entries_since_rel_x
 ---
 Dead links
-http://www.uniprot.org/news
+http://www.uniprot.org/uniprot?query=taxonomy:viridiplantae+created:[20070724+TO+%2A]+reviewed:no
 

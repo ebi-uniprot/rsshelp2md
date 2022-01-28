@@ -14,13 +14,13 @@ You can use three methods to search proteins associated with a given disease.
 -   Select **Field** : `Pathology and Biotech` , or start typing "disease" in the text box with the grey text "Search for field"
 -   Type the name of a disease in the **Term** box (e.g. 'adrenal hyperplasia')
 -   Click on the looking glass icon to launch the search
--   **[result](http://www.uniprot.org/uniprotkb/?query=annotation%3A%28type%3Adisease+%22adrenal+hyperplasia%22%29)**
+-   **[result](https://www.uniprot.org/uniprotkb/?query=annotation%3A%28type%3Adisease+%22adrenal+hyperplasia%22%29)**
 
 2\) Search via the controlled vocabulary of human diseases:
 
 -   Select `Human diseases` from the dataset dropdown next to the search box, or go to the [Human diseases page](http://www.uniprot.org/diseases)
 -   Enter a search term or use the **Advanced search** (e.g. [adrenal hyperplasia](http://www.uniprot.org/diseases/?query=adrenal+hyperplasia) )
--   Browse through your results, choose a disease (e.g. Adrenal hyperplasia 4) and click on the [UniProtKB](http://www.uniprot.org/uniprotkb/?query=disease:DI-00044 "xxx") link below it.
+-   Browse through your results, choose a disease (e.g. Adrenal hyperplasia 4) and click on the [UniProtKB](https://www.uniprot.org/uniprotkb/?query=disease:DI-00044 "xxx") link below it.
 
 3\) Browse by keyword:
 
@@ -38,6 +38,6 @@ Note 2: The keyword `'Disease variant'` is used for proteins with at least one d
 
 See also:
 
--   [Involvement in disease](http://www.uniprot.org/manual/involvement%5Fin%5Fdisease)
+-   [Involvement in disease](https://www.uniprot.org/help/involvement%5fin%5fdisease)
 -   [Customize display options](http://www.uniprot.org/help/customize)
 -   [UniProtKB advanced search options](http://www.uniprot.org/help/advanced%5Fsearch)

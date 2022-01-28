@@ -6,6 +6,7 @@ http://www.uniprot.org/uniprot/P57530#interaction
 http://www.uniprot.org/uniprot/P32323#interaction
 http://www.uniprot.org/uniprot/Q4KLM5#interaction
 http://www.uniprot.org/uniprot/Q9BXJ7#interaction
+http://www.uniprot.org/uniprot/Q9Y3D6#interaction
 http://www.uniprot.org/uniprot/O60239#interaction
 http://www.uniprot.org/uniprot/O60238#interaction
 http://www.uniprot.org/uniprot/Q13098#interaction

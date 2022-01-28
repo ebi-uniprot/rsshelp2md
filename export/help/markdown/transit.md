@@ -26,31 +26,31 @@ Chromoplasts are plastids containing pigments other than chlorophyll. Found in f
 
 Transit peptides are generally cleaved from the mature protein and so will logically be found in proteins tagged with the 'Sequence processing' information: 'The displayed sequence is further processed into a mature form.'.
 
-The particular organelle to which a protein is targeted is indicated in the ['Subcellular location'](http://www.uniprot.org/manual/subcellular_location) subsection and by the presence of a specific keyword.
+The particular organelle to which a protein is targeted is indicated in the ['Subcellular location'](https://www.uniprot.org/help/subcellular_location) subsection and by the presence of a specific keyword.
 
 ### 1. Annotation of experimentally proven transit peptides: {\#1\_*Annotation\_of\_experimentally\_proven\_transit\_peptides*}
 
 We annotate experimentally proven transit peptides when the cleavage site has been determined by direct protein sequencing.  
-Example: [P15690](http://www.uniprot.org/uniprotkb/P15690#ptm_processing)
+Example: [P15690](https://www.uniprot.org/uniprotkb/p15690#ptm_processing)
 
 Large-scale proteomics data are used to annotate transit peptides through the combination of experimental and computational methods, tagged with evidence from ['Combined sources'](http://www.uniprot.org/help/evidences#ECO:00007744) .  
-Example: [P28331](http://www.uniprot.org/uniprotkb/P28331#ptm_processing)
+Example: [P28331](https://www.uniprot.org/uniprotkb/p28331#ptm_processing)
 
 This information can then be propagated ['By similarity'](http://www.uniprot.org/help/evidences#ECO:0000250) to closely related homologs provided that the transit peptide sequence is conserved.  
-Example: [Q0MQG1](http://www.uniprot.org/uniprotkb/Q0MQG1#ptm_processing)
+Example: [Q0MQG1](https://www.uniprot.org/uniprotkb/q0mqg1#ptm_processing)
 
 When a protein contains a transit peptide (according to experimental data or its similarity with a family of proteins), but the precise cleavage position has not been experimentally determined, we use a question mark instead of a precise position.  
-Example: [Q6GQ48](http://www.uniprot.org/uniprotkb/Q6GQ48#ptm%5Fprocessing)
+Example: [Q6GQ48](https://www.uniprot.org/uniprotkb/q6gq48#ptm%5Fprocessing)
 
 ### 2. Annotation of predicted transit peptides: {\#2\_*Annotation\_of\_predicted\_transit\_peptides*}
 
 We also annotate transit peptides which are predicted by the application of the predictive tools [Mitofates](http://mitf.cbrc.jp/MitoFates/cgi-bin/top.cgi) , [Predotar](http://urgi.versailles.inra.fr/predotar/predotar.html) and [TargetP](http://www.cbs.dtu.dk/services/TargetP/) , but only when such predictions are consistent with the known or presumed subcellular location of the protein concerned. The predicted positions of the transit peptide are annotated with evidence ['Sequence analysis'](http://www.uniprot.org/help/evidences#ECO:0000255) .  
-Example: [P91929](http://www.uniprot.org/uniprotkb/P91929#ptm_processing)
+Example: [P91929](https://www.uniprot.org/uniprotkb/p91929#ptm_processing)
 
 See also:
 
--   [Evidence](http://www.uniprot.org/manual/evidences)
--   [Peptide (describing small active peptides)](http://www.uniprot.org/manual/peptide)
+-   [Evidence](https://www.uniprot.org/help/evidences)
+-   [Peptide (describing small active peptides)](https://www.uniprot.org/help/peptide)
 -   [Sequence annotation (features)](http://www.uniprot.org/help/sequence%5Fannotation)
 
 Related keywords:  

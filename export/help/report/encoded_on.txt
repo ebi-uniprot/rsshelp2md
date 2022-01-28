@@ -1,8 +1,5 @@
 encoded_on
 ---
-Dead links
-http://www.uniprot.org/docs/plastid
-
 Dead anchor tags
 http://www.uniprot.org/uniprot/Q5DUX5#names%5Fand%5Ftaxonomy
 http://www.uniprot.org/uniprot/Q9SCC7#names%5Fand%5Ftaxonomy

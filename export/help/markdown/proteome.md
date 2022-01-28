@@ -9,11 +9,11 @@ UniProt provides [proteome](http://www.uniprot.org/proteomes) sets of proteins w
 
 A proteome is the set of proteins thought to be expressed by an organism. The majority of the UniProt proteomes are based on the translation of a completely sequenced genome, and will normally include sequences that derive from extra-chromosomal elements such as plasmids or organellar genomes in organisms where these occur. Some proteomes may also include protein sequences based on high quality cDNAs that cannot be mapped to the current genome assembly due to sequencing errors or gaps. These are only included in the proteome following manual review of the supporting evidence, including careful analysis of homologous sequences from closely related organisms.
 
-As more and more genomes of the same organism are being sequenced, we introduced [unique proteome identifiers](http://www.uniprot.org/help/proteome%5Fid) to distinguish individual proteomes from the same [taxonomy identifier](http://www.uniprot.org/manual/taxonomic%5Fidentifier) .
+As more and more genomes of the same organism are being sequenced, we introduced [unique proteome identifiers](http://www.uniprot.org/help/proteome%5Fid) to distinguish individual proteomes from the same [taxonomy identifier](https://www.uniprot.org/help/taxonomic%5fidentifier) .
 
 **What is the curation status of UniProt proteomes?**
 
-UniProt proteomes may include both manually reviewed (UniProtKB/Swiss-Prot) and unreviewed (UniProtKB/TrEMBL) entries. The proportion of reviewed entries varies between proteomes, and is obviously greater for the proteomes of intensively curated model organisms: some proteomes, such as those of [*Saccharomyces cerevisiae* 288C](http://www.uniprot.org/uniprotkb/?query=proteome:UP000002311) and [*Escherichia coli* strain K12](http://www.uniprot.org/uniprotkb/?query=proteome:UP000000625) consist entirely of reviewed entries. Curation is a continuing process, and proteomes are updated in a regular manner as new information becomes available: pseudogenes and other dubious uncharacterized ORFs may be removed, other newly identified and characterized sequences may be added.
+UniProt proteomes may include both manually reviewed (UniProtKB/Swiss-Prot) and unreviewed (UniProtKB/TrEMBL) entries. The proportion of reviewed entries varies between proteomes, and is obviously greater for the proteomes of intensively curated model organisms: some proteomes, such as those of [*Saccharomyces cerevisiae* 288C](https://www.uniprot.org/uniprotkb/?query=proteome:UP000002311) and [*Escherichia coli* strain K12](https://www.uniprot.org/uniprotkb/?query=proteome:UP000000625) consist entirely of reviewed entries. Curation is a continuing process, and proteomes are updated in a regular manner as new information becomes available: pseudogenes and other dubious uncharacterized ORFs may be removed, other newly identified and characterized sequences may be added.
 
 **What is the source of the sequences for proteomes?**
 
@@ -60,11 +60,11 @@ Alternatively, all entries that form a proteome, can be retrieved from UniProtKB
 
 For example, to retrieve the proteome for *Escherichia coli* (strain K12), the required query would be:
 
--   Query: [proteome:UP000000625](http://www.uniprot.org/uniprotkb/?query=proteome:UP000000625)
+-   Query: [proteome:UP000000625](https://www.uniprot.org/uniprotkb/?query=proteome:UP000000625)
 
 Please note that there may be several proteomes per [taxonomic identifier](http://www.uniprot.org/help/taxonomy%5Fidentifier) . The taxonomic identifier can be used to query the `taxonomy` field or the `organism` field, together with the cross-reference to "Proteomes". This will result in the retrieval of all proteome sequences at or below the taxonomic rank specified by the identifier. For example, to retrieve the proteome for *Escherichia coli* (strain K12) and all proteomes at lower taxonomic nodes (substrains such as *Escherichia coli* (strain K12 / DH10B)), then the required query would be:
 
--   Query: [taxonomy:83333 AND proteomes:\*](http://www.uniprot.org/uniprotkb/?query=taxonomy:83333+AND+proteomes:%2A)
+-   Query: [taxonomy:83333 AND proteomes:\*](https://www.uniprot.org/uniprotkb/?query=taxonomy:83333+AND+proteomes:%2A)
 
 **How can I download proteomes?**
 
@@ -87,6 +87,6 @@ See also:
 -   [How to retrieve sets of UniProtKB protein sequences?](http://www.uniprot.org/help/retrieve%5Fsets)
 -   [Reducing proteome redundancy](http://www.uniprot.org/help/proteome%5Fredundancy)
 -   [REST API - Access the UniProt website programmatically](http://www.uniprot.org/help/api)
--   [Sequences](http://www.uniprot.org/manual/sequences)
--   [Alternative products](http://www.uniprot.org/manual/alternative%5Fproducts)
--   [Alternative sequence](http://www.uniprot.org/manual/var%5Fseq)
+-   [Sequences](https://www.uniprot.org/help/sequences)
+-   [Alternative products](https://www.uniprot.org/help/alternative%5fproducts)
+-   [Alternative sequence](https://www.uniprot.org/help/var%5fseq)

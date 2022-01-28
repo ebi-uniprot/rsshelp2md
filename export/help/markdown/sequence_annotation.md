@@ -9,66 +9,66 @@ Sequence annotations (position-specific annotations) used to be found in the 'Se
 
 The current entry view displays annotation by subject (Function, PTM & processing, etc), and the various position-specific annotations are now distributed to the relevant new sections.
 
-|                                                                 |                                                                                                         |
-|:----------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------|
-| **Subsection**                                                  | **Content**                                                                                             |
-| **Molecule processing**                                         |                                                                                                         |
-| [Initiator methionine](http://www.uniprot.org/manual/init_met)  | Cleavage of the initiator methionine                                                                    |
-| [Signal](http://www.uniprot.org/manual/signal)                  | Sequence targeting proteins to the secretory pathway or periplasmic space                               |
-| [Transit peptide](http://www.uniprot.org/manual/transit)        | Extent of a transit peptide for organelle targeting                                                     |
-| [Propeptide](http://www.uniprot.org/manual/propep)              | Part of a protein that is cleaved during maturation or activation                                       |
-| [Chain](http://www.uniprot.org/manual/chain)                    | Extent of a polypeptide chain in the mature protein                                                     |
-| [Peptide](http://www.uniprot.org/manual/peptide)                | Extent of an active peptide in the mature protein                                                       |
-| **Regions**                                                     |                                                                                                         |
-| [Topological domain](http://www.uniprot.org/manual/topo_dom)    | Location of non-membrane regions of membrane-spanning proteins                                          |
-| [Transmembrane](http://www.uniprot.org/manual/transmem)         | Extent of a membrane-spanning region                                                                    |
-| [Intramembrane](http://www.uniprot.org/manual/intramem)         | Extent of a region located in a membrane without crossing it                                            |
-| [Domain](http://www.uniprot.org/manual/domain)                  | Position and type of each modular protein domain                                                        |
-| [Repeat](http://www.uniprot.org/manual/repeat)                  | Positions of repeated sequence motifs or repeated domains                                               |
-| [Calcium binding](http://www.uniprot.org/manual/ca_bind)        | Position(s) of calcium binding region(s) within the protein                                             |
-| [Zinc finger](http://www.uniprot.org/manual/zn_fing)            | Position(s) and type(s) of zinc fingers within the protein                                              |
-| DNA binding                                                     | Position and type of a                                                                                  |
-|                                                                 | DNA -binding domain                                                                                     |
-| [Nucleotide binding](http://www.uniprot.org/manual/np_bind)     | Nucleotide phosphate binding region                                                                     |
-| [Region](http://www.uniprot.org/manual/region)                  | Region of interest in the sequence                                                                      |
-| [Coiled coil](http://www.uniprot.org/manual/coiled)             | Positions of regions of coiled coil within the protein                                                  |
-| [Motif](http://www.uniprot.org/manual/motif)                    | Short (up to 20 amino acids) sequence motif of biological interest                                      |
-| [Compositional bias](http://www.uniprot.org/manual/compbias)    | Region of compositional bias in the protein                                                             |
-| **Sites**                                                       |                                                                                                         |
-| [Active site](http://www.uniprot.org/manual/act_site)           | Amino acid(s) directly involved in the activity of an enzyme                                            |
-| [Metal binding](http://www.uniprot.org/manual/metal)            | Binding site for a metal ion                                                                            |
-| [Binding site](http://www.uniprot.org/manual/binding)           | Binding site for any chemical group (co-enzyme, prosthetic group, etc.)                                 |
-| [Site](http://www.uniprot.org/manual/site)                      | Any interesting single amino acid site on the sequence                                                  |
-| **Amino acid modifications**                                    |                                                                                                         |
-| [Non-standard residue](http://www.uniprot.org/manual/non_std)   | Occurence of non-standard amino acids (selenocysteine and pyrrolysine) in the protein sequence          |
-| [Modified residue](http://www.uniprot.org/manual/mod_res)       | Modified residues excluding lipids, glycans and protein cross-links                                     |
-| [Lipidation](http://www.uniprot.org/manual/lipid)               | Covalently attached lipid group(s)                                                                      |
-| [Glycosylation](http://www.uniprot.org/manual/carbohyd)         | Covalently attached glycan group(s)                                                                     |
-| [Disulfide bond](http://www.uniprot.org/manual/disulfid)        | Cysteine residues participating in disulfide bonds                                                      |
-| [Cross-link](http://www.uniprot.org/manual/crosslnk)            | Residues participating in covalent linkage(s) between proteins                                          |
-| **Natural variations**                                          |                                                                                                         |
-| [Alternative sequence](http://www.uniprot.org/manual/var_seq)   | Amino acid change(s) producing alternate protein isoforms                                               |
-| [Natural variant](http://www.uniprot.org/manual/variant)        | Description of a natural variant of the protein                                                         |
-| **Experimental info**                                           |                                                                                                         |
-| [Mutagenesis](http://www.uniprot.org/manual/mutagen)            | Site which has been experimentally altered by mutagenesis                                               |
-| [Sequence uncertainty](http://www.uniprot.org/manual/unsure)    | Regions of uncertainty in the sequence                                                                  |
-| [Sequence conflict](http://www.uniprot.org/manual/conflict)     | Description of sequence discrepancies of unknown origin                                                 |
-| [Non-adjacent residues](http://www.uniprot.org/manual/non_cons) | Indicates that two residues in a sequence are not consecutive                                           |
-| [Non-terminal residue](http://www.uniprot.org/manual/non_ter)   | The sequence is incomplete. Indicate that a residue is not the terminal residue of the complete protein |
-| **Secondary structure**                                         |                                                                                                         |
-| [Helix](http://www.uniprot.org/manual/helix)                    | Helical regions within the experimentally determined protein structure                                  |
-| [Turn](http://www.uniprot.org/manual/turn)                      | Turns within the experimentally determined protein structure                                            |
-| [Beta strand](http://www.uniprot.org/manual/strand)             | Beta strand regions within the experimentally determined protein structure                              |
+|                                                                |                                                                                                         |
+|:---------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------|
+| **Subsection**                                                 | **Content**                                                                                             |
+| **Molecule processing**                                        |                                                                                                         |
+| [Initiator methionine](https://www.uniprot.org/help/init_met)  | Cleavage of the initiator methionine                                                                    |
+| [Signal](https://www.uniprot.org/help/signal)                  | Sequence targeting proteins to the secretory pathway or periplasmic space                               |
+| [Transit peptide](https://www.uniprot.org/help/transit)        | Extent of a transit peptide for organelle targeting                                                     |
+| [Propeptide](https://www.uniprot.org/help/propep)              | Part of a protein that is cleaved during maturation or activation                                       |
+| [Chain](https://www.uniprot.org/help/chain)                    | Extent of a polypeptide chain in the mature protein                                                     |
+| [Peptide](https://www.uniprot.org/help/peptide)                | Extent of an active peptide in the mature protein                                                       |
+| **Regions**                                                    |                                                                                                         |
+| [Topological domain](https://www.uniprot.org/help/topo_dom)    | Location of non-membrane regions of membrane-spanning proteins                                          |
+| [Transmembrane](https://www.uniprot.org/help/transmem)         | Extent of a membrane-spanning region                                                                    |
+| [Intramembrane](https://www.uniprot.org/help/intramem)         | Extent of a region located in a membrane without crossing it                                            |
+| [Domain](https://www.uniprot.org/help/domain)                  | Position and type of each modular protein domain                                                        |
+| [Repeat](https://www.uniprot.org/help/repeat)                  | Positions of repeated sequence motifs or repeated domains                                               |
+| [Calcium binding](https://www.uniprot.org/help/ca_bind)        | Position(s) of calcium binding region(s) within the protein                                             |
+| [Zinc finger](https://www.uniprot.org/help/zn_fing)            | Position(s) and type(s) of zinc fingers within the protein                                              |
+| DNA binding                                                    | Position and type of a                                                                                  |
+|                                                                | DNA -binding domain                                                                                     |
+| [Nucleotide binding](https://www.uniprot.org/help/np_bind)     | Nucleotide phosphate binding region                                                                     |
+| [Region](https://www.uniprot.org/help/region)                  | Region of interest in the sequence                                                                      |
+| [Coiled coil](https://www.uniprot.org/help/coiled)             | Positions of regions of coiled coil within the protein                                                  |
+| [Motif](https://www.uniprot.org/help/motif)                    | Short (up to 20 amino acids) sequence motif of biological interest                                      |
+| [Compositional bias](https://www.uniprot.org/help/compbias)    | Region of compositional bias in the protein                                                             |
+| **Sites**                                                      |                                                                                                         |
+| [Active site](https://www.uniprot.org/help/act_site)           | Amino acid(s) directly involved in the activity of an enzyme                                            |
+| [Metal binding](https://www.uniprot.org/help/metal)            | Binding site for a metal ion                                                                            |
+| [Binding site](https://www.uniprot.org/help/binding)           | Binding site for any chemical group (co-enzyme, prosthetic group, etc.)                                 |
+| [Site](https://www.uniprot.org/help/site)                      | Any interesting single amino acid site on the sequence                                                  |
+| **Amino acid modifications**                                   |                                                                                                         |
+| [Non-standard residue](https://www.uniprot.org/help/non_std)   | Occurence of non-standard amino acids (selenocysteine and pyrrolysine) in the protein sequence          |
+| [Modified residue](https://www.uniprot.org/help/mod_res)       | Modified residues excluding lipids, glycans and protein cross-links                                     |
+| [Lipidation](https://www.uniprot.org/help/lipid)               | Covalently attached lipid group(s)                                                                      |
+| [Glycosylation](https://www.uniprot.org/help/carbohyd)         | Covalently attached glycan group(s)                                                                     |
+| [Disulfide bond](https://www.uniprot.org/help/disulfid)        | Cysteine residues participating in disulfide bonds                                                      |
+| [Cross-link](https://www.uniprot.org/help/crosslnk)            | Residues participating in covalent linkage(s) between proteins                                          |
+| **Natural variations**                                         |                                                                                                         |
+| [Alternative sequence](https://www.uniprot.org/help/var_seq)   | Amino acid change(s) producing alternate protein isoforms                                               |
+| [Natural variant](https://www.uniprot.org/help/variant)        | Description of a natural variant of the protein                                                         |
+| **Experimental info**                                          |                                                                                                         |
+| [Mutagenesis](https://www.uniprot.org/help/mutagen)            | Site which has been experimentally altered by mutagenesis                                               |
+| [Sequence uncertainty](https://www.uniprot.org/help/unsure)    | Regions of uncertainty in the sequence                                                                  |
+| [Sequence conflict](https://www.uniprot.org/help/conflict)     | Description of sequence discrepancies of unknown origin                                                 |
+| [Non-adjacent residues](https://www.uniprot.org/help/non_cons) | Indicates that two residues in a sequence are not consecutive                                           |
+| [Non-terminal residue](https://www.uniprot.org/help/non_ter)   | The sequence is incomplete. Indicate that a residue is not the terminal residue of the complete protein |
+| **Secondary structure**                                        |                                                                                                         |
+| [Helix](https://www.uniprot.org/help/helix)                    | Helical regions within the experimentally determined protein structure                                  |
+| [Turn](https://www.uniprot.org/help/turn)                      | Turns within the experimentally determined protein structure                                            |
+| [Beta strand](https://www.uniprot.org/help/strand)             | Beta strand regions within the experimentally determined protein structure                              |
 
 The exact boundaries of the described sequence feature, as well as its length, are provided. When a feature is known to extend beyond the position that is given in this section, the endpoint specification will be preceded by '&lt;' (less than) for features which continue to the N-terminal direction or by '&gt;' (greater than) for features which continue to the C-terminal direction.
 
-Example: [P62756](http://www.uniprot.org/uniprotkb/P62756#ptm%5Fprocessing)
+Example: [P62756](https://www.uniprot.org/uniprotkb/p62756#ptm%5Fprocessing)
 
 Unknown endpoints are denoted by a question mark '?'.  
-Example: [P78586](http://www.uniprot.org/uniprotkb/P78586#ptm%5Fprocessing)
+Example: [P78586](https://www.uniprot.org/uniprotkb/p78586#ptm%5Fprocessing)
 
 Uncertain endpoints are denoted by a question mark '?' before the position, e.g. '?42'.  
-Example: [Q3ZC31](http://www.uniprot.org/uniprotkb/Q3ZC31#ptm%5Fprocessing)
+Example: [Q3ZC31](https://www.uniprot.org/uniprotkb/q3zc31#ptm%5Fprocessing)
 
 ### Feature identifiers
 
@@ -84,18 +84,18 @@ Feature identifiers currently exist for the following annotation topics: Propept
 
 **Molecule processing**
 
-[Propeptide](http://www.uniprot.org/manual/propep) PRO Any processed propeptide Q7XAD0
+[Propeptide](https://www.uniprot.org/help/propep) PRO Any processed propeptide Q7XAD0
 
-[Chain](http://www.uniprot.org/manual/chain)  PRO Any mature polypeptide Q9W568  
-[Peptide](http://www.uniprot.org/manual/peptide)  
+[Chain](https://www.uniprot.org/help/chain)  PRO Any mature polypeptide Q9W568  
+[Peptide](https://www.uniprot.org/help/peptide)  
 P15515
 
 **Amino acid modifications**
 
-[Glycosylation](http://www.uniprot.org/manual/carbohyd) CAR Only for residues attached to an oligosaccharide structure annotated in the [GlyConnect](https://glyconnect.expasy.org/) database P02771
+[Glycosylation](https://www.uniprot.org/help/carbohyd) CAR Only for residues attached to an oligosaccharide structure annotated in the [GlyConnect](https://glyconnect.expasy.org/) database P02771
 
 **Natural variations**
 
-[Alternative sequence](http://www.uniprot.org/manual/var_seq) VSP Any sequence with an ‘Alternative sequence’ feature P81278
+[Alternative sequence](https://www.uniprot.org/help/var_seq) VSP Any sequence with an ‘Alternative sequence’ feature P81278
 
-[Natural variant](http://www.uniprot.org/manual/variant) VAR Only for protein sequence variants of Hominidae (great apes and humans) P11171 ————————————————————— ———————– ———————————————————————————————————————————– —————–
+[Natural variant](https://www.uniprot.org/help/variant) VAR Only for protein sequence variants of Hominidae (great apes and humans) P11171 ————————————————————– ———————– ———————————————————————————————————————————– —————–

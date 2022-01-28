@@ -9,7 +9,7 @@ UniProt's Automatic Annotation pipeline enhances the unreviewed records in UniPr
 
 UniProt uses [InterPro](http://www.ebi.ac.uk/interpro) to classify sequences at superfamily, family and subfamily levels and to predict the occurrence of functional domains and important sites. InterPro integrates predictive models of protein function, so-called 'signatures', from a number of member databases. InterPro matches are automatically annotated to UniProtKB entries as database cross-references with every InterPro release.
 
-In UniProtKB/TrEMBL entries, [domains](http://www.uniprot.org/manual/domain) from the InterPro member databases PROSITE, SMART or Pfam are predicted and annotated automatically, and their [evidence/source](http://www.uniprot.org/help/evidences) labels indicate "InterPro annotation".
+In UniProtKB/TrEMBL entries, [domains](https://www.uniprot.org/help/domain) from the InterPro member databases PROSITE, SMART or Pfam are predicted and annotated automatically, and their [evidence/source](http://www.uniprot.org/help/evidences) labels indicate "InterPro annotation".
 
 ### Automatic annotation
 

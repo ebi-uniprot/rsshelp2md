@@ -3,7 +3,6 @@ organism-name
 Dead links
 http://www.ictvonline.org/
 http://www.uniprot.org/uniprotP03437#names%5Fand%5Ftaxonomy
-http://www.uniprot.org/docs/speclist
 
 Dead anchor tags
 http://www.uniprot.org/uniprot/P08877#names%5Fand%5Ftaxonomy

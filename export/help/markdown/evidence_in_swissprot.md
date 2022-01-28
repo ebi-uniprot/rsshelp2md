@@ -9,6 +9,6 @@ The website's search engine handles annotations without evidence by assigning th
 
 See also:
 
--   [Evidence attribution](http://www.uniprot.org/manual/evidences)
+-   [Evidence attribution](https://www.uniprot.org/help/evidences)
 
 Related terms: retrofit

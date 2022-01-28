@@ -1,5 +1,5 @@
 orthologs_between_two_species
 ---
 Dead links
-http://www.uniprot.org/uniprot/?query=%28organism%3a%22xenopus+laevis%22+or+%28organism%3a%22homo+sapiens%22+and+reviewed%3ayes%29+%29+and+database%3a%28type%3aorthodb%29
+http://www.uniprot.org/database/?query=category:%22Phylogenomic+databases%22
 
